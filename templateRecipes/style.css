@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+/**
+ * used in recipe page make the content centered
+ * @Edmund
+ */
+.wholeBody {
+    display: block;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/**
+ * used in recipe page, and javascript in recipe page
+ * @Edmund
+ */
+.displayNone {
+    display: none;
+}
+
+/**
+ * used in recipe page, and javascript in recipe page
+ * @Edmund
+ */
+.displayBlock {
+    display: block;
+}
+
+/**
+ * overrides bootstrap css
+ * @Edmund
+ */
+ul.nav-pills {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/**
+ * make a 1px black border
+ * @Edmund
+ */
+.border {
+    border: 1px solid #000000;
+}
+
+/**
+ * make a 1px black border on the right
+ * @Edmund
+ */
+.borderRight {
+    border-right: 1px solid #000000;
+}
+
+/**
+ * used in recipe page image
+ * @Edmund
+ */
+img {
+    width: 50%;
+}
