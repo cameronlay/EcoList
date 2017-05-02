@@ -38,6 +38,10 @@ ul.nav-pills {
     margin-bottom: 20px;
 }
 
+ul.nav-tabs {
+    z-index: 1;
+}
+
 /**
  * make a 1px black border
  * @Edmund
@@ -60,4 +64,17 @@ ul.nav-pills {
  */
 img {
     width: 50%;
+}
+
+/**
+ * Loading circle
+ */
+#loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('loader.gif') 50% 50% no-repeat rgb(249,249,249);
 }
