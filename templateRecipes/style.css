@@ -7,7 +7,7 @@
  * @Edmund
  */
 .wholeBody {
-    display: block;
+    display: none;
     width: 70%;
     margin-right: auto;
     margin-left: auto;
@@ -35,7 +35,11 @@
  */
 ul.nav-pills {
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 170px;
+}
+
+ul.nav-tabs {
+    z-index: 1;
 }
 
 /**
@@ -60,4 +64,48 @@ ul.nav-pills {
  */
 img {
     width: 50%;
+}
+
+/**
+ * Loading circle
+ */
+#loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+  margin-top: 250%;
+  z-index: 9999;
+}
+
+#backgroundRecipe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 9998;
+    padding-left: 48%;
+    padding-right: 45%;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.centered {
+    text-align: center;
 }
