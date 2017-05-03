@@ -135,6 +135,31 @@ function proteinPillsClicked(id, content) {
     y.classList.add("displayBlock");
 }
 
+function culturalPillsClicked(id, content) {
+    var x = document.getElementById(id);
+    var y = document.getElementById(content);
+    document.getElementById("culturalList1").classList.remove("active");
+    document.getElementById("culturalList2").classList.remove("active");
+    document.getElementById("culturalList3").classList.remove("active");
+    document.getElementById("culturalList4").classList.remove("active");
+    document.getElementById("culturalList5").classList.remove("active");
+    document.getElementById("culturalList6").classList.remove("active");
+    document.getElementById("culturalList7").classList.remove("active");
+    document.getElementById("culturalList8").classList.remove("active");
+    document.getElementById("culturalList9").classList.remove("active");
+    document.getElementById("culturalListContent1").classList.remove("displayBlock");
+    document.getElementById("culturalListContent2").classList.remove("displayBlock");
+    document.getElementById("culturalListContent3").classList.remove("displayBlock");
+    document.getElementById("culturalListContent4").classList.remove("displayBlock");
+    document.getElementById("culturalListContent5").classList.remove("displayBlock");
+    document.getElementById("culturalListContent6").classList.remove("displayBlock");
+    document.getElementById("culturalListContent7").classList.remove("displayBlock");
+    document.getElementById("culturalListContent8").classList.remove("displayBlock");
+    document.getElementById("culturalListContent9").classList.remove("displayBlock");
+    x.classList.add("active");
+    y.classList.add("displayBlock");
+}
+
 function TabClicked(id, id2, list, contentBlock, content) {
     var tab = document.getElementById(id);
     var firstlist = document.getElementById(id2);
@@ -260,6 +285,27 @@ function TabClicked(id, id2, list, contentBlock, content) {
     document.getElementById("proteinListContent9").classList.remove("displayBlock");
     document.getElementById("proteinListContent").classList.remove("displayBlock");
     document.getElementById("proteinListContent").classList.add("displayNone");
+	
+	document.getElementById("culturalList1").classList.remove("active");
+    document.getElementById("culturalList2").classList.remove("active");
+    document.getElementById("culturalList3").classList.remove("active");
+    document.getElementById("culturalList4").classList.remove("active");
+    document.getElementById("culturalList5").classList.remove("active");
+    document.getElementById("culturalList6").classList.remove("active");
+    document.getElementById("culturalList7").classList.remove("active");
+    document.getElementById("culturalList8").classList.remove("active");
+    document.getElementById("culturalList9").classList.remove("active");
+    document.getElementById("culturalListContent1").classList.remove("displayBlock");
+    document.getElementById("culturalListContent2").classList.remove("displayBlock");
+    document.getElementById("culturalListContent3").classList.remove("displayBlock");
+    document.getElementById("culturalListContent4").classList.remove("displayBlock");
+    document.getElementById("culturalListContent5").classList.remove("displayBlock");
+    document.getElementById("culturalListContent6").classList.remove("displayBlock");
+    document.getElementById("culturalListContent7").classList.remove("displayBlock");
+    document.getElementById("culturalListContent8").classList.remove("displayBlock");
+    document.getElementById("culturalListContent9").classList.remove("displayBlock");
+    document.getElementById("culturalListContent").classList.remove("displayBlock");
+    document.getElementById("culturalListContent").classList.add("displayNone");
 
     listblock.classList.add("displayBlock");
     tab.classList.add("active");
