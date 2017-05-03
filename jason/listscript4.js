@@ -13,6 +13,12 @@ $(function () {
             $(this).remove();
         })
     });
+
+    $("#btnRemove").on("click", function () {
+        
+            $("#TextBoxContainer").children().remove();
+        
+    });
 });
 function GetDynamicTextBox(value) {
     count++;
@@ -21,3 +27,4 @@ function GetDynamicTextBox(value) {
     + '<td><input name = "DynamicTextBox" type="text" value = "' + value + '" size ="1"  class="form-control" /></td>' 
     + '<td  style="width:1px;"><button type="button" class="btn btn-danger remove"><i class="glyphicon glyphicon-remove-sign"></i></button></td>'
 }
+
