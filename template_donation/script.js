@@ -1,3 +1,5 @@
+var marker1;
+
 function myMap() {
     
     var myCenter = new google.maps.LatLng(49.237704,-123.075846);
@@ -15,7 +17,7 @@ function myMap() {
     
     
     var myCenter1 = new google.maps.LatLng(49.2,-123.075846);
-    var marker1 = new google.maps.Marker({
+     marker1 = new google.maps.Marker({
         position:myCenter1,
         optimized:false
     });
@@ -54,3 +56,17 @@ function myMap() {
     marker1.setMap(map);
     marker2.setMap(map);
 }
+
+
+function ab() {
+    marker1.setAnimation(google.maps.Animation.BOUNCE);
+}
+
+
+
+
+
+
+
+
+
