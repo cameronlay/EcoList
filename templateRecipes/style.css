@@ -8,9 +8,6 @@
  */
 .wholeBody {
     display: none;
-    width: 70%;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 /**
@@ -62,8 +59,8 @@ ul.nav-tabs {
  * used in recipe page image
  * @Edmund
  */
-img {
-    width: 50%;
+.recipeImage {
+    width: 100%;
 }
 
 /**
@@ -114,3 +111,5 @@ img {
     pointer-events: none;
     cursor: default;
 }
+
+/*For Mobile*/
