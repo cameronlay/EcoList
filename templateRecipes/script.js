@@ -172,6 +172,7 @@ function TabClicked(id, id2, list, contentBlock, content) {
     document.getElementById("keto").classList.remove("active");
     document.getElementById("paleo").classList.remove("active");
     document.getElementById("proteinRich").classList.remove("active");
+	document.getElementById("cultural").classList.remove("active");
     tab.classList.add("active");
     
     document.getElementById("classicList").classList.remove("displayBlock");
@@ -179,6 +180,7 @@ function TabClicked(id, id2, list, contentBlock, content) {
     document.getElementById("ketoList").classList.remove("displayBlock");
     document.getElementById("paleoList").classList.remove("displayBlock");
     document.getElementById("proteinList").classList.remove("displayBlock");
+	document.getElementById("culturalList").classList.remove("displayBlock");
     listblock.classList.add("displayBlock");
 
     document.getElementById("classicList1").classList.remove("active");
