@@ -112,4 +112,8 @@ ul.nav-tabs {
     cursor: default;
 }
 
-/*For Mobile*/
+@media only screen and (max-width: 768px) {
+
+
+
+}
