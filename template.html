@@ -105,6 +105,7 @@
             height:100%;
             background-color:red;
             background-image:url('images/tomato temp.jpg');
+			background-size:cover;
         }
         #Top>* {
             width:100%;
@@ -279,15 +280,17 @@
                     
                     if(scrollLevel > titleLevel + topheight - imagebuffer) {
                         renderedDropdown.classList.add("dropdown-active");
-                        renderedDropdown.style.visibility = "visible"
+                        renderedDropdown.style.visibility = "visible";
                     } else {
                         renderedDropdown.classList.remove("dropdown-active");
                     }
                     for(i = 0;i < numberOfSections; ++i){
-                        if(scrollLevel > (section[i].getBoundingClientRect().top - section[i].clientHeight)){
-                        var paralaxAmount = (scrollLevel - section[i].offsetHeight)/3 - (200 * ((i+1) * 1.5));
+                        if(scrollLevel > (section[i].getBoundingClientRect().top - section[i].clientHeight + 200) && section[i].clientHeight <= 1440){
+                        var paralaxAmount = (scrollLevel - section[i].offsetHeight)/3 - (200 * ((i+1) * 1.5)) - 50;
                                 section[i].style.backgroundPosition = "30% "+ paralaxAmount + "px";
-                        }
+                        } else {
+							section[i].style.backgroundPosition = "30% 0px";
+						}
                     }
                 }
             }
