@@ -160,6 +160,31 @@ function culturalPillsClicked(id, content) {
     y.classList.add("displayBlock");
 }
 
+function userPillsClicked(id, content) {
+    var x = document.getElementById(id);
+    var y = document.getElementById(content);
+    document.getElementById("userList1").classList.remove("active");
+    document.getElementById("userList2").classList.remove("active");
+    document.getElementById("userList3").classList.remove("active");
+    document.getElementById("userList4").classList.remove("active");
+    document.getElementById("userList5").classList.remove("active");
+    document.getElementById("userList6").classList.remove("active");
+    document.getElementById("userList7").classList.remove("active");
+    document.getElementById("userList8").classList.remove("active");
+    document.getElementById("userList9").classList.remove("active");
+    document.getElementById("userListContent1").classList.remove("displayBlock");
+    document.getElementById("userListContent2").classList.remove("displayBlock");
+    document.getElementById("userListContent3").classList.remove("displayBlock");
+    document.getElementById("userListContent4").classList.remove("displayBlock");
+    document.getElementById("userListContent5").classList.remove("displayBlock");
+    document.getElementById("userListContent6").classList.remove("displayBlock");
+    document.getElementById("userListContent7").classList.remove("displayBlock");
+    document.getElementById("userListContent8").classList.remove("displayBlock");
+    document.getElementById("userListContent9").classList.remove("displayBlock");
+    x.classList.add("active");
+    y.classList.add("displayBlock");
+}
+
 function TabClicked(id, id2, list, contentBlock, content) {
     var tab = document.getElementById(id);
     var firstlist = document.getElementById(id2);
@@ -173,6 +198,7 @@ function TabClicked(id, id2, list, contentBlock, content) {
     document.getElementById("paleo").classList.remove("active");
     document.getElementById("proteinRich").classList.remove("active");
 	document.getElementById("cultural").classList.remove("active");
+    document.getElementById("user").classList.remove("active");
     tab.classList.add("active");
     
     document.getElementById("classicList").classList.remove("displayBlock");
@@ -181,6 +207,7 @@ function TabClicked(id, id2, list, contentBlock, content) {
     document.getElementById("paleoList").classList.remove("displayBlock");
     document.getElementById("proteinList").classList.remove("displayBlock");
 	document.getElementById("culturalList").classList.remove("displayBlock");
+    document.getElementById("userList").classList.remove("displayBlock");
     listblock.classList.add("displayBlock");
 
     document.getElementById("classicList1").classList.remove("active");
@@ -308,6 +335,27 @@ function TabClicked(id, id2, list, contentBlock, content) {
     document.getElementById("culturalListContent9").classList.remove("displayBlock");
     document.getElementById("culturalListContent").classList.remove("displayBlock");
     document.getElementById("culturalListContent").classList.add("displayNone");
+
+    document.getElementById("userList1").classList.remove("active");
+    document.getElementById("userList2").classList.remove("active");
+    document.getElementById("userList3").classList.remove("active");
+    document.getElementById("userList4").classList.remove("active");
+    document.getElementById("userList5").classList.remove("active");
+    document.getElementById("userList6").classList.remove("active");
+    document.getElementById("userList7").classList.remove("active");
+    document.getElementById("userList8").classList.remove("active");
+    document.getElementById("userList9").classList.remove("active");
+    document.getElementById("userListContent1").classList.remove("displayBlock");
+    document.getElementById("userListContent2").classList.remove("displayBlock");
+    document.getElementById("userListContent3").classList.remove("displayBlock");
+    document.getElementById("userListContent4").classList.remove("displayBlock");
+    document.getElementById("userListContent5").classList.remove("displayBlock");
+    document.getElementById("userListContent6").classList.remove("displayBlock");
+    document.getElementById("userListContent7").classList.remove("displayBlock");
+    document.getElementById("userListContent8").classList.remove("displayBlock");
+    document.getElementById("userListContent9").classList.remove("displayBlock");
+    document.getElementById("userListContent").classList.remove("displayBlock");
+    document.getElementById("userListContent").classList.add("displayNone");
 
     listblock.classList.add("displayBlock");
     tab.classList.add("active");
