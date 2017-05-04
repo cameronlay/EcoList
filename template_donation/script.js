@@ -2,7 +2,7 @@ var marker;
 var marker1;
 var marker2;
 var bounceTimer;
-var count = 0;
+var count = 2;
 
 function myMap() {
     
@@ -48,11 +48,10 @@ function myMap() {
         }
     });
     
-    // google.maps.event.addListener(marker,'dblclick',function() {
-        // count +=2;
-    // map.setZoom(10 + count);
-    // map.setCenter(marker.getPosition());
-  // });
+    google.maps.event.addListener(marker,'dblclick',function() {
+        map.setZoom(map.getZoom() + count);
+        map.setCenter(marker.getPosition());
+    });
     
     
     google.maps.event.addListener(marker, 'mouseout', function() {
@@ -116,7 +115,13 @@ function myMap() {
 
 function ab(x) {
     if (x == 'li1') {
+            clearTimeout(bounceTimer);
+             
+            bounceTimer = setTimeout(function(){
                  marker.setAnimation(google.maps.Animation.BOUNCE);
+            },500);
+            
+            document.getElementById("1").style.color="red";
             
 }
     else if(x == 'li2'){
@@ -129,9 +134,16 @@ function ab(x) {
 }
 }
 function abf() {
-    marker.setAnimation(null);
+    
+    if (marker.getAnimation() != null) {
+           marker.setAnimation(null);
+    }
+    
     marker1.setAnimation(null);
     marker2.setAnimation(null);
+    
+    clearTimeout(bounceTimer);
+    
 }
 
 
