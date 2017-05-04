@@ -48,11 +48,11 @@ function myMap() {
         }
     });
     
-    google.maps.event.addListener(marker,'dblclick',function() {
-        count +=2;
-    map.setZoom(10 + count);
-    map.setCenter(marker.getPosition());
-  });
+    // google.maps.event.addListener(marker,'dblclick',function() {
+        // count +=2;
+    // map.setZoom(10 + count);
+    // map.setCenter(marker.getPosition());
+  // });
     
     
     google.maps.event.addListener(marker, 'mouseout', function() {
