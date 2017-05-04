@@ -261,3 +261,64 @@ function TabClicked(id, id2, list, contentBlock, content) {
     listcontentblock.classList.add("displayBlock");
     listcontent.classList.add("displayBlock");
 }
+
+/**
+ * FUNCTION THAT OVERRIDE ALL FUNCTIONS IF THE BROWSER
+ * WIDTH IS LESS THAN 768
+ */
+function widthLessThan768() {
+    var width = window.innerWidth
+        || document.documentElement.clientWidth
+        || document.body.clientWidth;
+
+    if (width <= 768) {
+        var active = document.getElementsByClassName('active');
+        for (var i = 0; i < active.length; i++) {
+            active[i].classList.remove('active');
+        }
+        var displayBlock = document.getElementsByClassName('displayBlock');
+        for (var i = displayBlock.length - 1; i >= 0; i--) {
+            displayBlock[i].classList.remove('displayBlock');
+        }
+    
+        /*
+         * 1. if pill clicked, bring that specific content
+         * right after the pill. 
+         * 2. if click again, disappeared.
+         * 3. if the user tried to open multiple pills or tabs,
+         * only open what user just clicked
+         */
+        classicPillsClicked = function(id, content) {
+    
+        }
+    
+        vegetarianPillsClicked = function(id, content) {
+                        
+        }
+
+        ketoPillsClicked = function(id, content) {
+                        
+        }
+
+        paleoPillsClicked = function(id, content) {
+                        
+        }
+
+        proteinPillsClicked = function(id, content) {
+                        
+        }
+
+        culturalPillsClicked = function(id, content) {
+                        
+        }
+
+        userPillsClicked = function(id, content) {
+                        
+        }
+
+        TabClicked = function(id, id2, list, contentBlock, content) {
+
+        }
+    }
+    
+}
