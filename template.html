@@ -47,6 +47,7 @@
         }
         /* GUI and top level element section */
         #GUI {
+			height:100%;
             width:100%;
             position:fixed;
             pointer-events:none;
@@ -98,7 +99,17 @@
                     transition:opacity 0.5s ease;
                     pointer-events:none;
                 }
-                
+            /* Hamburger menu section */
+				
+				#Hamburger {
+					position:absolute;
+					top:0;
+					left:-80%;
+					width:80%;
+					height:100%;
+					background-color:purple;
+					transition: left 0.1s linear;
+				}
         /* top of homepage section */
         #Top {
             width:100%;
@@ -115,7 +126,7 @@
                 position:relative;
             }
             #Top>div.box>table {
-                padding-top:80px;
+                padding-top:2%;
                 margin:auto;
             }
             .icon {
@@ -308,18 +319,21 @@
         <div id="GUI">
             <div class="miniNav">
                 <div class="miniNav-box">
-                    <h1>Title</h1>
+                    <h1>EcoList</h1>
                 </div>
                 <div id="Dropdown" class="chevronHolder dropdown">
                     <div class="chevron down"></div>
                     <div id="AppDrawer">Our Apps</div>
                 </div>
+				<div id="Hamburger">
+					
+				</div>
             </div>
         </div>
         <div class="wrapper">
             <div id="Top">
                 <div class="box">
-                    <h1 id="Title">Title</h1>
+                    <h1 id="Title">EcoList</h1>
                     <table>
                         <tr>
                             <td>
