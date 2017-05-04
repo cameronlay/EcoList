@@ -2,6 +2,7 @@ var marker;
 var marker1;
 var marker2;
 var bounceTimer;
+var count = 0;
 
 function myMap() {
     
@@ -9,7 +10,7 @@ function myMap() {
     var mapCanvas = document.getElementById("map");
     var mapOptions = {
         center: myCenter,
-        zoom: 11,
+        zoom: 10,
     };
         
     var map = new google.maps.Map(mapCanvas, mapOptions);
@@ -42,8 +43,16 @@ function myMap() {
             bounceTimer = setTimeout(function(){
                  this_marker.setAnimation(google.maps.Animation.BOUNCE);
             },500);
+            
+            document.getElementById("1").style.color="red";
         }
     });
+    
+    google.maps.event.addListener(marker,'dblclick',function() {
+        count +=2;
+    map.setZoom(10 + count);
+    map.setCenter(marker.getPosition());
+  });
     
     
     google.maps.event.addListener(marker, 'mouseout', function() {
@@ -52,6 +61,7 @@ function myMap() {
            this.setAnimation(null);
         }
         clearTimeout(bounceTimer);
+        document.getElementById("1").style.color="black";
         
     });
     google.maps.event.addListener(marker1, 'mouseover', function() {
@@ -74,7 +84,8 @@ function myMap() {
         }
         clearTimeout(bounceTimer);
         
-    });   
+    }); 
+    
     google.maps.event.addListener(marker2, 'mouseover', function() {
         if (this.getAnimation() == null || typeof this.getAnimation() === 'undefined') {
             
