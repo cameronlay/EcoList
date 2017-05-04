@@ -100,9 +100,12 @@ thead tr th {
 .nameTableHead {
 
 }
-
+#btnAdd {
+  background-color: #77dd77;
+}
 #btnRemove {
   float: right;
+  background-color: #ff6961;
 }
 
 /*Stacking tables
