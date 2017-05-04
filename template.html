@@ -47,6 +47,7 @@
         }
         /* GUI and top level element section */
         #GUI {
+			height:100%;
             width:100%;
             position:fixed;
             pointer-events:none;
@@ -98,7 +99,18 @@
                     transition:opacity 0.5s ease;
                     pointer-events:none;
                 }
-                
+            /* Hamburger menu section */
+				
+				#Hamburger {
+					position:absolute;
+					top:0;
+					left:-80%;
+					width:80%;
+					height:100%;
+					background-color:purple;
+					pointer-events:auto;
+					transition: left 0.1s linear;
+				}
         /* top of homepage section */
         #Top {
             width:100%;
@@ -115,7 +127,7 @@
                 position:relative;
             }
             #Top>div.box>table {
-                padding-top:80px;
+                padding-top:2%;
                 margin:auto;
             }
             .icon {
@@ -211,6 +223,9 @@
             //Bottom Elements
             var numberOfSections = null;
             section = [];
+			
+			//burger Elements
+			var burgerMenu = null;
             
             window.onresize = function sizeRefactor() {
                 winHeight = window.innerHeight;
@@ -244,6 +259,9 @@
                     section[i] = document.querySelector('section:nth-of-type('+ ( 2 + i ) +')');
                 }
                 renderingLine = renderedNav.offsetHeight;
+				
+				burgerMenu = document.getElementById("Hamburger");
+				setBurger(true);
             }
             
             
@@ -302,41 +320,110 @@
                     appdrawer.style.height = 0;
                 },true);
             }
+			function setBurger(init) {
+			var toggle = false;
+			var position = -70;
+			var lastX = 0;
+			var slideAmount;
+			var isOpen = false;
+				if(init) {
+					window.addEventListener("touchstart",function(event){
+						openBurger(event);
+					},false);
+					window.addEventListener("touchmove",function(event){
+						slideBurger(toggle, event);
+					},false);
+					window.addEventListener("touchend",function(event){
+						closeBurger(event);
+					}, false);
+					window.addEventListener("touchcancel",function(event){
+						closeBurger(event);
+					}, false);
+				}
+				function openBurger(event) {
+					for(i=0;i<event.touches.length;++i){
+						lastX = event.touches[i].clientX / winWidth;
+					}
+					toggle = true;
+				}
+				function closeBurger(event) {
+					toggle = false;
+					if(slideAmount >= -30) {burgerMenu.style.left = "0%";isOpen=true;slideAmount=0;};
+					if(slideAmount < -30){burgerMenu.style.left = "-80%";isOpen=false;slideAmount=-80;};
+					if(isOpen){
+						alert("fleep");
+						for(i=0;i<event.touches.length;++i){
+							alert("whoppah");
+							/*if(event.touches[i].clientX/winWidth >0)
+							{
+								alert("hi");
+							}*/
+						}
+					}
+				}
+				function slideBurger(isHeld, event) {
+					if(lastX<0.3){
+						for(i=0;i<event.touches.length;++i){
+							interactionX = event.touches[i].clientX;
+							slideAmount = interactionX/winWidth*100 - 80;
+							if(isHeld) {
+								position = slideAmount;
+								if(position > 0) {position = 0; isOpen=true}
+								burgerMenu.style.left = position + "%";
+							}
+						}
+					} else {
+						for(i=0;i<event.touches.length;++i){
+							interactionX = event.touches[i].clientX;
+							slideAmount = interactionX/winWidth*100 - 80;
+							if(isHeld) {
+								position = slideAmount;
+								if(position > 0) {position = 0; isOpen=true}
+								burgerMenu.style.left = position + "%";
+							}
+						}
+					}
+				}
+
+			}
         </script>
     </head>
     <body onload="setHeight(true)">
         <div id="GUI">
             <div class="miniNav">
                 <div class="miniNav-box">
-                    <h1>Title</h1>
+                    <h1>EcoList</h1>
                 </div>
                 <div id="Dropdown" class="chevronHolder dropdown">
                     <div class="chevron down"></div>
                     <div id="AppDrawer">Our Apps</div>
                 </div>
+				<div id="Hamburger">
+					
+				</div>
             </div>
         </div>
         <div class="wrapper">
             <div id="Top">
-                <div class="box">
-                    <h1 id="Title">Title</h1>
+                <div class="box" draggable="false">
+                    <h1 id="Title">EcoList</h1>
                     <table>
                         <tr>
                             <td>
                                 <div class="icon">
-                                    <img height="300" width="300" src="images/shoppingcart.png">
+                                    <img height="300" width="300" src="images/shoppingcart.png"draggable="false"/>
                                     <span>Shopping Cart</span>
                                 </div>
                             </td>
                             <td>
                                 <div class="icon">
-                                    <img height="300" width="300" src="images/calandar.png">
+                                    <img height="300" width="300" src="images/calandar.png"draggable="false"/>
                                     <span>Planner</span>
                                 </div>
                             </td>
                             <td>
                                 <div class="icon">
-                                    <img height="300" width="300" src="images/cutlery.png">
+                                    <img height="300" width="300" src="images/cutlery.png"draggable="false"/>
                                     <span>Recipes</span>
                                 </div>
                             </td>
