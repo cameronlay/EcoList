@@ -82,3 +82,50 @@ thead tr th {
 
 
 /* end of custom code */
+
+/* Div of the table*/
+
+.table table-responsive {
+  width: 50%;
+}
+
+.smallTableHead {
+  width: 1px;
+}
+
+.checkBoxTableHead {
+  width: 60px;
+}
+
+.nameTableHead {
+
+}
+
+#btnRemove {
+  float: right;
+}
+
+/*Stacking tables
+.tableWrapper {
+  overflow: hidden;
+}
+
+#TableOne {
+  float: left;
+  margin-right: 10px;
+}
+
+#TableTwo {
+  overflow: hidden;
+  margin:10px;
+  margin-left: 20px;
+  width: 45%;
+}
+
+@media screen and (max-width: 400px) {
+  #one {
+    float: none;
+    margin-right: 0;
+    width: auto;
+  }
+}
