@@ -4,7 +4,8 @@
     ====================================================
     PLEASE READ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     WHEN YOU ARE ADDING RECIPES,
-    Do not edit other than "This is DIET content".
+    Do not edit other than "This is DIET content", "ingredient", "img".
+    There must be a Merge Conflict, so just be aware of that!!!!!!!!!!!!!!!!!!
     Change html element looks like this (You can copy and paste it):
     <ol class="list-group">
         <li class="list-group-item">This is Classic Content</li>
@@ -46,9 +47,21 @@
                 $("#backgroundRecipe").fadeOut("fast");
                 $(".wholeBody").fadeIn("fast");
             })
+
             $(document).ready(function(){
                 $('[data-toggle="tooltip"]').tooltip(); 
             })
+
+            var width = window.innerWidth
+                || document.documentElement.clientWidth
+                || document.body.clientWidth;
+
+            $(document).ready(function(){
+                if (width <= 768) {
+
+                }
+            })
+
         </script>
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
@@ -77,7 +90,7 @@
                 <li id="user" onclick="TabClicked('user', 'userList1', 'userList', 'userListContent', 'userListContent1')"><a href="#">Create your Own</a></li>
             </ul>
             <!--Classic List-->
-            <div class="col-sm-2 borderRight displayNone displayBlock" id="classicList">
+            <div class="col-sm-3 borderRight displayNone displayBlock" id="classicList">
                 <ul class="nav nav-pills nav-stacked">
                     <li id="classicList1" class="active" onclick="classicPillsClicked('classicList1', 'classicListContent1')"><a href="#">ClassicLIST1</a></li>
                     <li id="classicList2" onclick="classicPillsClicked('classicList2', 'classicListContent2')"><a href="#">ClassicLIST2</a></li>
@@ -91,7 +104,7 @@
                 </ul>
             </div>
             <!--Vegetarian List-->
-            <div class="col-sm-2 borderRight displayNone" id="vegetarianList">
+            <div class="col-sm-3 borderRight displayNone" id="vegetarianList">
                 <ul class="nav nav-pills nav-stacked">
                     <li id="vegetarianList1" class="active" onclick="vegetarianPillsClicked('vegetarianList1', 'vegetarianListContent1')"><a href="#">VegetarianLIST1</a></li>
                     <li id="vegetarianList2" onclick="vegetarianPillsClicked('vegetarianList2', 'vegetarianListContent2')"><a href="#">VegetarianLIST2</a></li>
@@ -105,7 +118,7 @@
                 </ul>
             </div>
             <!--Keto List-->
-            <div class="col-sm-2 borderRight displayNone" id="ketoList">
+            <div class="col-sm-3 borderRight displayNone" id="ketoList">
                 <ul class="nav nav-pills nav-stacked">
                     <li id="ketoList1" class="active" onclick="ketoPillsClicked('ketoList1', 'ketoListContent1')"><a href="#">KetoLIST1</a></li>
                     <li id="ketoList2" onclick="ketoPillsClicked('ketoList2', 'ketoListContent2')"><a href="#">KetoLIST2</a></li>
@@ -119,7 +132,7 @@
                 </ul>
             </div>
             <!--Paleo List-->
-            <div class="col-sm-2 borderRight displayNone" id="paleoList">
+            <div class="col-sm-3 borderRight displayNone" id="paleoList">
                 <ul class="nav nav-pills nav-stacked">
                     <li id="paleoList1" class="active" onclick="paleoPillsClicked('paleoList1', 'paleoListContent1')"><a href="#">paleoLIST1</a></li>
                     <li id="paleoList2" onclick="paleoPillsClicked('paleoList2', 'paleoListContent2')"><a href="#">paleoLIST2</a></li>
@@ -133,7 +146,7 @@
                 </ul>
             </div>
             <!--Protein Rich List-->
-            <div class="col-sm-2 borderRight displayNone" id="proteinList">
+            <div class="col-sm-3 borderRight displayNone" id="proteinList">
                 <ul class="nav nav-pills nav-stacked">
                     <li id="proteinList1" class="active" onclick="proteinPillsClicked('proteinList1', 'proteinListContent1')"><a href="#">proteinLIST1</a></li>
                     <li id="proteinList2" onclick="proteinPillsClicked('proteinList2', 'proteinListContent2')"><a href="#">proteinLIST2</a></li>
@@ -147,7 +160,7 @@
                 </ul>
             </div>
 		    <!-- Cultural List -->
-		    <div class="col-sm-2 borderRight displayNone" id="culturalList">
+		    <div class="col-sm-3 borderRight displayNone" id="culturalList">
                 <ul class="nav nav-pills nav-stacked">
                     <li id="culturalList1" class="active" onclick="culturalPillsClicked('culturalList1', 'culturalListContent1')"><a href="#">culturalLIST1</a></li>
                     <li id="culturalList2" onclick="culturalPillsClicked('culturalList2', 'culturalListContent2')"><a href="#">culturalLIST2</a></li>
@@ -161,7 +174,7 @@
                 </ul>
             </div>
             <!-- user List -->
-            <div class="col-sm-2 borderRight displayNone" id="userList">
+            <div class="col-sm-3 borderRight displayNone" id="userList">
                 <ul class="nav nav-pills nav-stacked">
                     <li id="userList1" class="active" onclick="userPillsClicked('userList1', 'userListContent1')"><a href="#">userLIST1</a></li>
                     <li id="userList2" onclick="userPillsClicked('userList2', 'userListContent2')"><a href="#">userLIST2</a></li>
@@ -181,11 +194,11 @@
             -->
             <div id="classicListContent">
                 <div class="row border displayNone displayBlock" id="classicListContent1">
-                    <div class="col-sm-9">
+                    <div class="col-sm-8">
                         <h2>List 1</h2>
                         <div class="col-sm-6">
                             <ol class="list-group">
-                                <li class="list-group-item">This is Classic ContentThis is Classic ContentThis is Classic ContentThis is Classic ContentThis is Classic ContentThis is Classic ContentThis is Classic ContentThis is Classic ContentThis is Classic ContentThis is Classic ContentThis is Classic ContentThis is Classic ContentThis is Classic Content</li>
+                                <li class="list-group-item">This is Classic Content</li>
                                 <li class="list-group-item">This is Classic Content</li>
                                 <li class="list-group-item">This is Classic Content</li>
                                 <li class="list-group-item">This is Classic Content</li>
@@ -206,7 +219,6 @@
                                     <td>ingredient6</td>
                                 </tr>
                             </table>
-
                         </div>
                         <div class="col-sm-6">
                             <img class="recipeImage" src="haha.jpg" alt="List1 Image">
@@ -214,48 +226,99 @@
                     </div>
                 </div>
                 <div class="row border displayNone" id="classicListContent2">
-                    <div class="col-sm-9">
+                    <div class="col-sm-12">
                         <h2>List 2</h2>
                         <div class="col-sm-6">
-                            <ol>
-                                <li>This is Classic Content</li>
-                                <li>This is Classic Content</li>
-                                <li>This is Classic Content</li>
-                                <li>This is Classic Content</li>
-                                <li>This is Classic Content</li>
+                            <ol class="list-group">
+                                <li class="list-group-item">This is Classic Content</li>
+                                <li class="list-group-item">This is Classic Content</li>
+                                <li class="list-group-item">This is Classic Content</li>
+                                <li class="list-group-item">This is Classic Content</li>
+                                <li class="list-group-item">This is Classic Content</li>
                             </ol>
+                            <table class="table table-condensed">
+                                <tr>
+                                    <th colspan="3" class="centered">Ingredients</th>
+                                </tr>
+                                <tr>
+                                    <td>ingredient1</td>
+                                    <td><a href="#" data-toggle="tooltip" data-placement="top" title="haha">ingredient2</a></td>
+                                    <td>ingredient3</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" data-toggle="tooltip" data-placement="top" title="haha">ingredient4</a></td>
+                                    <td>ingredient5</td>
+                                    <td>ingredient6</td>
+                                </tr>
+                            </table>
                         </div>
-                        <img class="recipeImage" src="haha.jpg" alt="List2 Image">
+                        <div class="col-sm-6">
+                            <img class="recipeImage" src="haha.jpg" alt="List2 Image">
+                        </div>
                     </div>
                 </div>
                 <div class="row border displayNone" id="classicListContent3">
-                    <div class="col-sm-9">
+                    <div class="col-sm-12">
                         <h2>List 3</h2>
                         <div class="col-sm-6">
-                            <ol>
-                                <li>This is Classic Content</li>
-                                <li>This is Classic Content</li>
-                                <li>This is Classic Content</li>
-                                <li>This is Classic Content</li>
-                                <li>This is Classic Content</li>
+                            <ol class="list-group">
+                                <li class="list-group-item">This is Classic Content</li>
+                                <li class="list-group-item">This is Classic Content</li>
+                                <li class="list-group-item">This is Classic Content</li>
+                                <li class="list-group-item">This is Classic Content</li>
+                                <li class="list-group-item">This is Classic Content</li>
                             </ol>
+                            <table class="table table-condensed">
+                                <tr>
+                                    <th colspan="3" class="centered">Ingredients</th>
+                                </tr>
+                                <tr>
+                                    <td>ingredient1</td>
+                                    <td><a href="#" data-toggle="tooltip" data-placement="top" title="haha">ingredient2</a></td>
+                                    <td>ingredient3</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" data-toggle="tooltip" data-placement="top" title="haha">ingredient4</a></td>
+                                    <td>ingredient5</td>
+                                    <td>ingredient6</td>
+                                </tr>
+                            </table>
                         </div>
-                        <img class="recipeImage" src="haha.jpg" alt="List3 Image">
+                        <div class="col-sm-6">
+                            <img class="recipeImage" src="haha.jpg" alt="List3 Image">
+                        </div>
                     </div>
                 </div>
                 <div class="row border displayNone" id="classicListContent4">
-                    <div class="col-sm-9">
+                    <div class="col-sm-12">
                         <h2>List 4</h2>
                         <div class="col-sm-6">
-                            <ol>
-                                <li>This is Classic Content</li>
-                                <li>This is Classic Content</li>
-                                <li>This is Classic Content</li>
-                                <li>This is Classic Content</li>
-                                <li>This is Classic Content</li>
+                            <ol class="list-group">
+                                <li class="list-group-item">This is Classic Content</li>
+                                <li class="list-group-item">This is Classic Content</li>
+                                <li class="list-group-item">This is Classic Content</li>
+                                <li class="list-group-item">This is Classic Content</li>
+                                <li class="list-group-item">This is Classic Content</li>
                             </ol>
+                            <table class="table table-condensed">
+                                <tr>
+                                    <th colspan="3" class="centered">Ingredients</th>
+                                </tr>
+                                <tr>
+                                    <td>ingredient1</td>
+                                    <td><a href="#" data-toggle="tooltip" data-placement="top" title="haha">ingredient2</a></td>
+                                    <td>ingredient3</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" data-toggle="tooltip" data-placement="top" title="haha">ingredient4</a></td>
+                                    <td>ingredient5</td>
+                                    <td>ingredient6</td>
+                                </tr>
+                            </table>
                         </div>
-                        <img class="recipeImage" src="haha.jpg" alt="List4 Image">
+                        <div class="col-sm-6">
+                            <img class="recipeImage" src="haha.jpg" alt="List4 Image">
+                        </div>
                     </div>
                 </div>
                 <div class="row border displayNone" id="classicListContent5">

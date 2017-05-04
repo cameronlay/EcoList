@@ -35,8 +35,8 @@ ul.nav-pills {
     margin-bottom: 170px;
 }
 
-ul.nav-tabs {
-    z-index: 1;
+[class*="col-"] {
+    padding: 0;
 }
 
 /**
@@ -114,6 +114,18 @@ ul.nav-tabs {
 
 @media only screen and (max-width: 768px) {
 
+    .nav-tabs {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
 
+    .nav-tabs > li{
+        float: none;
+    }
+
+    [class*="col-"] {
+        width: 100%;
+    }
 
 }
