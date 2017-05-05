@@ -9,24 +9,16 @@
 function classicPillsClicked(id, content) {
     var x = document.getElementById(id);
     var y = document.getElementById(content);
-    document.getElementById("classicList1").classList.remove("active");
-    document.getElementById("classicList2").classList.remove("active");
-    document.getElementById("classicList3").classList.remove("active");
-    document.getElementById("classicList4").classList.remove("active");
-    document.getElementById("classicList5").classList.remove("active");
-    document.getElementById("classicList6").classList.remove("active");
-    document.getElementById("classicList7").classList.remove("active");
-    document.getElementById("classicList8").classList.remove("active");
-    document.getElementById("classicList9").classList.remove("active");
-    document.getElementById("classicListContent1").classList.remove("displayBlock");
-    document.getElementById("classicListContent2").classList.remove("displayBlock");
-    document.getElementById("classicListContent3").classList.remove("displayBlock");
-    document.getElementById("classicListContent4").classList.remove("displayBlock");
-    document.getElementById("classicListContent5").classList.remove("displayBlock");
-    document.getElementById("classicListContent6").classList.remove("displayBlock");
-    document.getElementById("classicListContent7").classList.remove("displayBlock");
-    document.getElementById("classicListContent8").classList.remove("displayBlock");
-    document.getElementById("classicListContent9").classList.remove("displayBlock");
+    var classicList = document.getElementById('classicList').getElementsByTagName('li');
+    for (var i = 0; i < classicList.length; i++) {
+        classicList[i].classList.remove('active');
+    }
+
+    var classicListContent = document.getElementById('classicListContent').getElementsByClassName('row');
+    for (var i = 0; i < classicListContent.length; i++) {
+        classicListContent[i].classList.remove('displayBlock');
+    }
+
     x.classList.add("active");
     y.classList.add("displayBlock");
 }
@@ -34,28 +26,16 @@ function classicPillsClicked(id, content) {
 function vegetarianPillsClicked(id, content) {
     var x = document.getElementById(id);
     var y = document.getElementById(content);
-    document.getElementById("vegetarianList1").classList.remove("active");
-    document.getElementById("vegetarianList2").classList.remove("active");
-    document.getElementById("vegetarianList3").classList.remove("active");
-    document.getElementById("vegetarianList4").classList.remove("active");
-    document.getElementById("vegetarianList5").classList.remove("active");
-    document.getElementById("vegetarianList6").classList.remove("active");
-    document.getElementById("vegetarianList7").classList.remove("active");
-    document.getElementById("vegetarianList8").classList.remove("active");
-    document.getElementById("vegetarianList9").classList.remove("active");
-    // var z = document.querySelectorAll('div[id^="vegetarianListContent"]');
-    // for (var i = 0; i < z.length; i++) {
-    //     z[i].classList.remove("displayBlock");
-    // }
-    document.getElementById("vegetarianListContent1").classList.remove("displayBlock");
-    document.getElementById("vegetarianListContent2").classList.remove("displayBlock");
-    document.getElementById("vegetarianListContent3").classList.remove("displayBlock");
-    document.getElementById("vegetarianListContent4").classList.remove("displayBlock");
-    document.getElementById("vegetarianListContent5").classList.remove("displayBlock");
-    document.getElementById("vegetarianListContent6").classList.remove("displayBlock");
-    document.getElementById("vegetarianListContent7").classList.remove("displayBlock");
-    document.getElementById("vegetarianListContent8").classList.remove("displayBlock");
-    document.getElementById("vegetarianListContent9").classList.remove("displayBlock");
+    var vegetarianList = document.getElementById('vegetarianList').getElementsByTagName('li');
+    for (var i = 0; i < vegetarianList.length; i++) {
+        vegetarianList[i].classList.remove('active');
+    }
+
+    var vegetarianListContent = document.getElementById('vegetarianListContent').getElementsByClassName('row');
+    for (var i = 0; i < vegetarianListContent.length; i++) {
+        vegetarianListContent[i].classList.remove('displayBlock');
+    }
+
     x.classList.add("active");
     y.classList.add("displayBlock");
 }
@@ -63,24 +43,16 @@ function vegetarianPillsClicked(id, content) {
 function ketoPillsClicked(id, content) {
     var x = document.getElementById(id);
     var y = document.getElementById(content);
-    document.getElementById("ketoList1").classList.remove("active");
-    document.getElementById("ketoList2").classList.remove("active");
-    document.getElementById("ketoList3").classList.remove("active");
-    document.getElementById("ketoList4").classList.remove("active");
-    document.getElementById("ketoList5").classList.remove("active");
-    document.getElementById("ketoList6").classList.remove("active");
-    document.getElementById("ketoList7").classList.remove("active");
-    document.getElementById("ketoList8").classList.remove("active");
-    document.getElementById("ketoList9").classList.remove("active");
-    document.getElementById("ketoListContent1").classList.remove("displayBlock");
-    document.getElementById("ketoListContent2").classList.remove("displayBlock");
-    document.getElementById("ketoListContent3").classList.remove("displayBlock");
-    document.getElementById("ketoListContent4").classList.remove("displayBlock");
-    document.getElementById("ketoListContent5").classList.remove("displayBlock");
-    document.getElementById("ketoListContent6").classList.remove("displayBlock");
-    document.getElementById("ketoListContent7").classList.remove("displayBlock");
-    document.getElementById("ketoListContent8").classList.remove("displayBlock");
-    document.getElementById("ketoListContent9").classList.remove("displayBlock");
+    var ketoList = document.getElementById('ketoList').getElementsByTagName('li');
+    for (var i = 0; i < ketoList.length; i++) {
+        ketoList[i].classList.remove('active');
+    }
+    
+    var ketoListContent = document.getElementById('ketoListContent').getElementsByClassName('row');
+    for (var i = 0; i < ketoListContent.length; i++) {
+        ketoListContent[i].classList.remove('displayBlock');
+    }
+
     x.classList.add("active");
     y.classList.add("displayBlock");
 }
@@ -88,24 +60,16 @@ function ketoPillsClicked(id, content) {
 function paleoPillsClicked(id, content) {
     var x = document.getElementById(id);
     var y = document.getElementById(content);
-    document.getElementById("paleoList1").classList.remove("active");
-    document.getElementById("paleoList2").classList.remove("active");
-    document.getElementById("paleoList3").classList.remove("active");
-    document.getElementById("paleoList4").classList.remove("active");
-    document.getElementById("paleoList5").classList.remove("active");
-    document.getElementById("paleoList6").classList.remove("active");
-    document.getElementById("paleoList7").classList.remove("active");
-    document.getElementById("paleoList8").classList.remove("active");
-    document.getElementById("paleoList9").classList.remove("active");
-    document.getElementById("paleoListContent1").classList.remove("displayBlock");
-    document.getElementById("paleoListContent2").classList.remove("displayBlock");
-    document.getElementById("paleoListContent3").classList.remove("displayBlock");
-    document.getElementById("paleoListContent4").classList.remove("displayBlock");
-    document.getElementById("paleoListContent5").classList.remove("displayBlock");
-    document.getElementById("paleoListContent6").classList.remove("displayBlock");
-    document.getElementById("paleoListContent7").classList.remove("displayBlock");
-    document.getElementById("paleoListContent8").classList.remove("displayBlock");
-    document.getElementById("paleoListContent9").classList.remove("displayBlock");
+    var paleoList = document.getElementById('paleoList').getElementsByTagName('li');
+    for (var i = 0; i < paleoList.length; i++) {
+        paleoList[i].classList.remove('active');
+    }
+
+    var paleoListContent = document.getElementById('paleoListContent').getElementsByClassName('row');
+    for (var i = 0; i < paleoListContent.length; i++) {
+        paleoListContent[i].classList.remove('displayBlock');
+    }
+
     x.classList.add("active");
     y.classList.add("displayBlock");
 }
@@ -113,24 +77,16 @@ function paleoPillsClicked(id, content) {
 function proteinPillsClicked(id, content) {
     var x = document.getElementById(id);
     var y = document.getElementById(content);
-    document.getElementById("proteinList1").classList.remove("active");
-    document.getElementById("proteinList2").classList.remove("active");
-    document.getElementById("proteinList3").classList.remove("active");
-    document.getElementById("proteinList4").classList.remove("active");
-    document.getElementById("proteinList5").classList.remove("active");
-    document.getElementById("proteinList6").classList.remove("active");
-    document.getElementById("proteinList7").classList.remove("active");
-    document.getElementById("proteinList8").classList.remove("active");
-    document.getElementById("proteinList9").classList.remove("active");
-    document.getElementById("proteinListContent1").classList.remove("displayBlock");
-    document.getElementById("proteinListContent2").classList.remove("displayBlock");
-    document.getElementById("proteinListContent3").classList.remove("displayBlock");
-    document.getElementById("proteinListContent4").classList.remove("displayBlock");
-    document.getElementById("proteinListContent5").classList.remove("displayBlock");
-    document.getElementById("proteinListContent6").classList.remove("displayBlock");
-    document.getElementById("proteinListContent7").classList.remove("displayBlock");
-    document.getElementById("proteinListContent8").classList.remove("displayBlock");
-    document.getElementById("proteinListContent9").classList.remove("displayBlock");
+    var proteinList = document.getElementById('proteinList').getElementsByTagName('li');
+    for (var i = 0; i < proteinList.length; i++) {
+        proteinList[i].classList.remove('active');
+    }
+    
+    var proteinListContent = document.getElementById('proteinListContent').getElementsByClassName('row');
+    for (var i = 0; i < proteinListContent.length; i++) {
+        proteinListContent[i].classList.remove('displayBlock');
+    }
+
     x.classList.add("active");
     y.classList.add("displayBlock");
 }
@@ -138,24 +94,16 @@ function proteinPillsClicked(id, content) {
 function culturalPillsClicked(id, content) {
     var x = document.getElementById(id);
     var y = document.getElementById(content);
-    document.getElementById("culturalList1").classList.remove("active");
-    document.getElementById("culturalList2").classList.remove("active");
-    document.getElementById("culturalList3").classList.remove("active");
-    document.getElementById("culturalList4").classList.remove("active");
-    document.getElementById("culturalList5").classList.remove("active");
-    document.getElementById("culturalList6").classList.remove("active");
-    document.getElementById("culturalList7").classList.remove("active");
-    document.getElementById("culturalList8").classList.remove("active");
-    document.getElementById("culturalList9").classList.remove("active");
-    document.getElementById("culturalListContent1").classList.remove("displayBlock");
-    document.getElementById("culturalListContent2").classList.remove("displayBlock");
-    document.getElementById("culturalListContent3").classList.remove("displayBlock");
-    document.getElementById("culturalListContent4").classList.remove("displayBlock");
-    document.getElementById("culturalListContent5").classList.remove("displayBlock");
-    document.getElementById("culturalListContent6").classList.remove("displayBlock");
-    document.getElementById("culturalListContent7").classList.remove("displayBlock");
-    document.getElementById("culturalListContent8").classList.remove("displayBlock");
-    document.getElementById("culturalListContent9").classList.remove("displayBlock");
+    var culturalList = document.getElementById('culturalList').getElementsByTagName('li');
+    for (var i = 0; i < culturalList.length; i++) {
+        culturalList[i].classList.remove('active');
+    }
+    
+    var culturalListContent = document.getElementById('culturalListContent').getElementsByClassName('row');
+    for (var i = 0; i < culturalListContent.length; i++) {
+        culturalListContent[i].classList.remove('displayBlock');
+    }
+    
     x.classList.add("active");
     y.classList.add("displayBlock");
 }
@@ -163,24 +111,16 @@ function culturalPillsClicked(id, content) {
 function userPillsClicked(id, content) {
     var x = document.getElementById(id);
     var y = document.getElementById(content);
-    document.getElementById("userList1").classList.remove("active");
-    document.getElementById("userList2").classList.remove("active");
-    document.getElementById("userList3").classList.remove("active");
-    document.getElementById("userList4").classList.remove("active");
-    document.getElementById("userList5").classList.remove("active");
-    document.getElementById("userList6").classList.remove("active");
-    document.getElementById("userList7").classList.remove("active");
-    document.getElementById("userList8").classList.remove("active");
-    document.getElementById("userList9").classList.remove("active");
-    document.getElementById("userListContent1").classList.remove("displayBlock");
-    document.getElementById("userListContent2").classList.remove("displayBlock");
-    document.getElementById("userListContent3").classList.remove("displayBlock");
-    document.getElementById("userListContent4").classList.remove("displayBlock");
-    document.getElementById("userListContent5").classList.remove("displayBlock");
-    document.getElementById("userListContent6").classList.remove("displayBlock");
-    document.getElementById("userListContent7").classList.remove("displayBlock");
-    document.getElementById("userListContent8").classList.remove("displayBlock");
-    document.getElementById("userListContent9").classList.remove("displayBlock");
+    var userList = document.getElementById('userList').getElementsByTagName('li');
+    for (var i = 0; i < userList.length; i++) {
+        userList[i].classList.remove('active');
+    }
+    
+    var userListContent = document.getElementById('userListContent').getElementsByClassName('row');
+    for (var i = 0; i < userListContent.length; i++) {
+        userListContent[i].classList.remove('displayBlock');
+    }
+
     x.classList.add("active");
     y.classList.add("displayBlock");
 }
@@ -192,13 +132,10 @@ function TabClicked(id, id2, list, contentBlock, content) {
     var listcontent = document.getElementById(content);
     var listcontentblock = document.getElementById(contentBlock);
 
-    document.getElementById("classic").classList.remove("active");
-    document.getElementById("vegetarian").classList.remove("active");
-    document.getElementById("keto").classList.remove("active");
-    document.getElementById("paleo").classList.remove("active");
-    document.getElementById("proteinRich").classList.remove("active");
-	document.getElementById("cultural").classList.remove("active");
-    document.getElementById("user").classList.remove("active");
+    var navTabs = document.getElementById('navTabs').getElementsByTagName('li');
+    for (var i = 0; i < navTabs.length; i++) {
+        navTabs[i].classList.remove("active");
+    }
     tab.classList.add("active");
     
     document.getElementById("classicList").classList.remove("displayBlock");
@@ -210,156 +147,311 @@ function TabClicked(id, id2, list, contentBlock, content) {
     document.getElementById("userList").classList.remove("displayBlock");
     listblock.classList.add("displayBlock");
 
-    document.getElementById("classicList1").classList.remove("active");
-    document.getElementById("classicList2").classList.remove("active");
-    document.getElementById("classicList3").classList.remove("active");
-    document.getElementById("classicList4").classList.remove("active");
-    document.getElementById("classicList5").classList.remove("active");
-    document.getElementById("classicList6").classList.remove("active");
-    document.getElementById("classicList7").classList.remove("active");
-    document.getElementById("classicList8").classList.remove("active");
-    document.getElementById("classicList9").classList.remove("active");
-    document.getElementById("classicListContent1").classList.remove("displayBlock");
-    document.getElementById("classicListContent2").classList.remove("displayBlock");
-    document.getElementById("classicListContent3").classList.remove("displayBlock");
-    document.getElementById("classicListContent4").classList.remove("displayBlock");
-    document.getElementById("classicListContent5").classList.remove("displayBlock");
-    document.getElementById("classicListContent6").classList.remove("displayBlock");
-    document.getElementById("classicListContent7").classList.remove("displayBlock");
-    document.getElementById("classicListContent8").classList.remove("displayBlock");
-    document.getElementById("classicListContent9").classList.remove("displayBlock");
-    document.getElementById("classicListContent").classList.remove("displayBlock");
+// =========================================
+// Classic
+// =========================================
+    var classicList = document.getElementById('classicList').getElementsByTagName('li');
+    for (var i = 0; i < classicList.length; i++) {
+        classicList[i].classList.remove('active');
+    }
+
+    var classicListContent = document.getElementById('classicListContent').getElementsByClassName('row');
+    for (var i = 0; i < classicListContent.length; i++) {
+        classicListContent[i].classList.remove('displayBlock');
+    }
+
     document.getElementById("classicListContent").classList.add("displayNone");
 
-    document.getElementById("vegetarianList1").classList.remove("active");
-    document.getElementById("vegetarianList2").classList.remove("active");
-    document.getElementById("vegetarianList3").classList.remove("active");
-    document.getElementById("vegetarianList4").classList.remove("active");
-    document.getElementById("vegetarianList5").classList.remove("active");
-    document.getElementById("vegetarianList6").classList.remove("active");
-    document.getElementById("vegetarianList7").classList.remove("active");
-    document.getElementById("vegetarianList8").classList.remove("active");
-    document.getElementById("vegetarianList9").classList.remove("active");
-    document.getElementById("vegetarianListContent1").classList.remove("displayBlock");
-    document.getElementById("vegetarianListContent2").classList.remove("displayBlock");
-    document.getElementById("vegetarianListContent3").classList.remove("displayBlock");
-    document.getElementById("vegetarianListContent4").classList.remove("displayBlock");
-    document.getElementById("vegetarianListContent5").classList.remove("displayBlock");
-    document.getElementById("vegetarianListContent6").classList.remove("displayBlock");
-    document.getElementById("vegetarianListContent7").classList.remove("displayBlock");
-    document.getElementById("vegetarianListContent8").classList.remove("displayBlock");
-    document.getElementById("vegetarianListContent9").classList.remove("displayBlock");
-    document.getElementById("vegetarianListContent").classList.remove("displayBlock");
+// =========================================
+// Vegetarian
+// =========================================
+    var vegetarianList = document.getElementById('vegetarianList').getElementsByTagName('li');
+    for (var i = 0; i < vegetarianList.length; i++) {
+        vegetarianList[i].classList.remove('active');
+    }
+    
+    var vegetarianListContent = document.getElementById('vegetarianListContent').getElementsByClassName('row');
+    for (var i = 0; i < vegetarianListContent.length; i++) {
+        vegetarianListContent[i].classList.remove('displayBlock');
+    }
+
     document.getElementById("vegetarianListContent").classList.add("displayNone");
 
-    document.getElementById("ketoList1").classList.remove("active");
-    document.getElementById("ketoList2").classList.remove("active");
-    document.getElementById("ketoList3").classList.remove("active");
-    document.getElementById("ketoList4").classList.remove("active");
-    document.getElementById("ketoList5").classList.remove("active");
-    document.getElementById("ketoList6").classList.remove("active");
-    document.getElementById("ketoList7").classList.remove("active");
-    document.getElementById("ketoList8").classList.remove("active");
-    document.getElementById("ketoList9").classList.remove("active");
-    document.getElementById("ketoListContent1").classList.remove("displayBlock");
-    document.getElementById("ketoListContent2").classList.remove("displayBlock");
-    document.getElementById("ketoListContent3").classList.remove("displayBlock");
-    document.getElementById("ketoListContent4").classList.remove("displayBlock");
-    document.getElementById("ketoListContent5").classList.remove("displayBlock");
-    document.getElementById("ketoListContent6").classList.remove("displayBlock");
-    document.getElementById("ketoListContent7").classList.remove("displayBlock");
-    document.getElementById("ketoListContent8").classList.remove("displayBlock");
-    document.getElementById("ketoListContent9").classList.remove("displayBlock");
-    document.getElementById("ketoListContent").classList.remove("displayBlock");
+// =========================================
+// Keto
+// =========================================
+    var ketoList = document.getElementById('ketoList').getElementsByTagName('li');
+    for (var i = 0; i < ketoList.length; i++) {
+        ketoList[i].classList.remove('active');
+    }
+    
+    var ketoListContent = document.getElementById('ketoListContent').getElementsByClassName('row');
+    for (var i = 0; i < ketoListContent.length; i++) {
+        ketoListContent[i].classList.remove('displayBlock');
+    }
+
     document.getElementById("ketoListContent").classList.add("displayNone");
 
-    document.getElementById("paleoList1").classList.remove("active");
-    document.getElementById("paleoList2").classList.remove("active");
-    document.getElementById("paleoList3").classList.remove("active");
-    document.getElementById("paleoList4").classList.remove("active");
-    document.getElementById("paleoList5").classList.remove("active");
-    document.getElementById("paleoList6").classList.remove("active");
-    document.getElementById("paleoList7").classList.remove("active");
-    document.getElementById("paleoList8").classList.remove("active");
-    document.getElementById("paleoList9").classList.remove("active");
-    document.getElementById("paleoListContent1").classList.remove("displayBlock");
-    document.getElementById("paleoListContent2").classList.remove("displayBlock");
-    document.getElementById("paleoListContent3").classList.remove("displayBlock");
-    document.getElementById("paleoListContent4").classList.remove("displayBlock");
-    document.getElementById("paleoListContent5").classList.remove("displayBlock");
-    document.getElementById("paleoListContent6").classList.remove("displayBlock");
-    document.getElementById("paleoListContent7").classList.remove("displayBlock");
-    document.getElementById("paleoListContent8").classList.remove("displayBlock");
-    document.getElementById("paleoListContent9").classList.remove("displayBlock");
-    document.getElementById("paleoListContent").classList.remove("displayBlock");
+// =========================================
+// Paleo
+// =========================================
+    var paleoList = document.getElementById('paleoList').getElementsByTagName('li');
+    for (var i = 0; i < paleoList.length; i++) {
+        paleoList[i].classList.remove('active');
+    }
+
+    var paleoListContent = document.getElementById('paleoListContent').getElementsByClassName('row');
+    for (var i = 0; i < paleoListContent.length; i++) {
+        paleoListContent[i].classList.remove('displayBlock');
+    }
+
     document.getElementById("paleoListContent").classList.add("displayNone");
 
-    document.getElementById("proteinList1").classList.remove("active");
-    document.getElementById("proteinList2").classList.remove("active");
-    document.getElementById("proteinList3").classList.remove("active");
-    document.getElementById("proteinList4").classList.remove("active");
-    document.getElementById("proteinList5").classList.remove("active");
-    document.getElementById("proteinList6").classList.remove("active");
-    document.getElementById("proteinList7").classList.remove("active");
-    document.getElementById("proteinList8").classList.remove("active");
-    document.getElementById("proteinList9").classList.remove("active");
-    document.getElementById("proteinListContent1").classList.remove("displayBlock");
-    document.getElementById("proteinListContent2").classList.remove("displayBlock");
-    document.getElementById("proteinListContent3").classList.remove("displayBlock");
-    document.getElementById("proteinListContent4").classList.remove("displayBlock");
-    document.getElementById("proteinListContent5").classList.remove("displayBlock");
-    document.getElementById("proteinListContent6").classList.remove("displayBlock");
-    document.getElementById("proteinListContent7").classList.remove("displayBlock");
-    document.getElementById("proteinListContent8").classList.remove("displayBlock");
-    document.getElementById("proteinListContent9").classList.remove("displayBlock");
-    document.getElementById("proteinListContent").classList.remove("displayBlock");
+// =========================================
+// Protein Rich
+// =========================================
+    var proteinList = document.getElementById('proteinList').getElementsByTagName('li');
+    for (var i = 0; i < proteinList.length; i++) {
+        proteinList[i].classList.remove('active');
+    }
+   
+    var proteinListContent = document.getElementById('proteinListContent').getElementsByClassName('row');
+    for (var i = 0; i < proteinListContent.length; i++) {
+        proteinListContent[i].classList.remove('displayBlock');
+    }
+    
     document.getElementById("proteinListContent").classList.add("displayNone");
 	
-	document.getElementById("culturalList1").classList.remove("active");
-    document.getElementById("culturalList2").classList.remove("active");
-    document.getElementById("culturalList3").classList.remove("active");
-    document.getElementById("culturalList4").classList.remove("active");
-    document.getElementById("culturalList5").classList.remove("active");
-    document.getElementById("culturalList6").classList.remove("active");
-    document.getElementById("culturalList7").classList.remove("active");
-    document.getElementById("culturalList8").classList.remove("active");
-    document.getElementById("culturalList9").classList.remove("active");
-    document.getElementById("culturalListContent1").classList.remove("displayBlock");
-    document.getElementById("culturalListContent2").classList.remove("displayBlock");
-    document.getElementById("culturalListContent3").classList.remove("displayBlock");
-    document.getElementById("culturalListContent4").classList.remove("displayBlock");
-    document.getElementById("culturalListContent5").classList.remove("displayBlock");
-    document.getElementById("culturalListContent6").classList.remove("displayBlock");
-    document.getElementById("culturalListContent7").classList.remove("displayBlock");
-    document.getElementById("culturalListContent8").classList.remove("displayBlock");
-    document.getElementById("culturalListContent9").classList.remove("displayBlock");
-    document.getElementById("culturalListContent").classList.remove("displayBlock");
+// =========================================
+// Cultural
+// =========================================
+	var culturalList = document.getElementById('culturalList').getElementsByTagName('li');
+    for (var i = 0; i < culturalList.length; i++) {
+        culturalList[i].classList.remove('active');
+    }
+    
+    var culturalListContent = document.getElementById('culturalListContent').getElementsByClassName('row');
+    for (var i = 0; i < culturalListContent.length; i++) {
+        culturalListContent[i].classList.remove('displayBlock');
+    }
+    
     document.getElementById("culturalListContent").classList.add("displayNone");
 
-    document.getElementById("userList1").classList.remove("active");
-    document.getElementById("userList2").classList.remove("active");
-    document.getElementById("userList3").classList.remove("active");
-    document.getElementById("userList4").classList.remove("active");
-    document.getElementById("userList5").classList.remove("active");
-    document.getElementById("userList6").classList.remove("active");
-    document.getElementById("userList7").classList.remove("active");
-    document.getElementById("userList8").classList.remove("active");
-    document.getElementById("userList9").classList.remove("active");
-    document.getElementById("userListContent1").classList.remove("displayBlock");
-    document.getElementById("userListContent2").classList.remove("displayBlock");
-    document.getElementById("userListContent3").classList.remove("displayBlock");
-    document.getElementById("userListContent4").classList.remove("displayBlock");
-    document.getElementById("userListContent5").classList.remove("displayBlock");
-    document.getElementById("userListContent6").classList.remove("displayBlock");
-    document.getElementById("userListContent7").classList.remove("displayBlock");
-    document.getElementById("userListContent8").classList.remove("displayBlock");
-    document.getElementById("userListContent9").classList.remove("displayBlock");
-    document.getElementById("userListContent").classList.remove("displayBlock");
+// =========================================
+// User
+// =========================================
+    var userList = document.getElementById('userList').getElementsByTagName('li');
+    for (var i = 0; i < userList.length; i++) {
+        userList[i].classList.remove('active');
+    }
+    
+    var userListContent = document.getElementById('userListContent').getElementsByClassName('row');
+    for (var i = 0; i < userListContent.length; i++) {
+        userListContent[i].classList.remove('displayBlock');
+    }
+    
     document.getElementById("userListContent").classList.add("displayNone");
 
+// ====================================
+// variables from the parameters
+//=====================================
     listblock.classList.add("displayBlock");
     tab.classList.add("active");
     firstlist.classList.add("active");
     listcontentblock.classList.add("displayBlock");
     listcontent.classList.add("displayBlock");
+//END OF FUNCTION
+}
+
+/**
+ * FUNCTION THAT OVERRIDE ALL FUNCTIONS IF THE BROWSER
+ * WIDTH IS LESS THAN 768
+ */
+function widthLessThan768() {
+    var width = window.innerWidth
+        || document.documentElement.clientWidth
+        || document.body.clientWidth;
+
+    if (width <= 768) {
+        var active = document.getElementsByClassName('active');
+        for (var i = 0; i < active.length; i++) {
+            active[i].classList.remove('active');
+        }
+        var displayBlock = document.getElementsByClassName('displayBlock');
+        for (var i = displayBlock.length - 1; i >= 0; i--) {
+            displayBlock[i].classList.remove('displayBlock');
+        }
+    
+        /*
+         * 1. if pill clicked, bring that specific content
+         * right after the pill and remove all current
+         * active and displayBlock
+         * 2. if click again, disappeared.
+         */
+        classicPillsClicked = function(id, content) {
+            
+        }
+    
+        vegetarianPillsClicked = function(id, content) {
+                        
+        }
+
+        ketoPillsClicked = function(id, content) {
+                        
+        }
+
+        paleoPillsClicked = function(id, content) {
+                        
+        }
+
+        proteinPillsClicked = function(id, content) {
+                        
+        }
+
+        culturalPillsClicked = function(id, content) {
+                        
+        }
+
+        userPillsClicked = function(id, content) {
+                        
+        }
+
+        /**
+         * 1. if tab clicked, bring the specific lists of that tab
+         * and remove all current active and displayBlock
+         * 2. if it clicked again, disappered
+         */
+        TabClicked = function(id, id2, list, contentBlock, content) {
+            var tab = document.getElementById(id);
+            var firstlist = document.getElementById(id2);
+            var listblock = document.getElementById(list);
+            var listcontent = document.getElementById(content);
+            var listcontentblock = document.getElementById(contentBlock);
+
+            var navTabs = document.getElementById('navTabs').getElementsByTagName('li');
+            for (var i = 0; i < navTabs.length; i++) {
+                navTabs[i].classList.remove("active");
+            }
+    
+            document.getElementById("classicList").classList.remove("displayBlock");
+            document.getElementById("vegetarianList").classList.remove("displayBlock");
+            document.getElementById("ketoList").classList.remove("displayBlock");
+            document.getElementById("paleoList").classList.remove("displayBlock");
+            document.getElementById("proteinList").classList.remove("displayBlock");
+            document.getElementById("culturalList").classList.remove("displayBlock");
+            document.getElementById("userList").classList.remove("displayBlock");
+
+            // =========================================
+            // Classic
+            // =========================================
+            var classicList = document.getElementById('classicList').getElementsByTagName('li');
+            for (var i = 0; i < classicList.length; i++) {
+                classicList[i].classList.remove('active');
+            }
+
+            var classicListContent = document.getElementById('classicListContent').getElementsByClassName('row');
+            for (var i = 0; i < classicListContent.length; i++) {
+                classicListContent[i].classList.remove('displayBlock');
+            }
+
+            // =========================================
+            // Vegetarian
+            // =========================================
+            var vegetarianList = document.getElementById('vegetarianList').getElementsByTagName('li');
+            for (var i = 0; i < vegetarianList.length; i++) {
+                vegetarianList[i].classList.remove('active');
+            }
+    
+            var vegetarianListContent = document.getElementById('vegetarianListContent').getElementsByClassName('row');
+            for (var i = 0; i < vegetarianListContent.length; i++) {
+                vegetarianListContent[i].classList.remove('displayBlock');
+            }
+
+            // =========================================
+            // Keto
+            // =========================================
+            var ketoList = document.getElementById('ketoList').getElementsByTagName('li');
+            for (var i = 0; i < ketoList.length; i++) {
+                ketoList[i].classList.remove('active');
+            }
+    
+            var ketoListContent = document.getElementById('ketoListContent').getElementsByClassName('row');
+            for (var i = 0; i < ketoListContent.length; i++) {
+                ketoListContent[i].classList.remove('displayBlock');
+            }
+
+            // =========================================
+            // Paleo
+            // =========================================
+            var paleoList = document.getElementById('paleoList').getElementsByTagName('li');
+            for (var i = 0; i < paleoList.length; i++) {
+                paleoList[i].classList.remove('active');
+            }
+
+            var paleoListContent = document.getElementById('paleoListContent').getElementsByClassName('row');
+            for (var i = 0; i < paleoListContent.length; i++) {
+                paleoListContent[i].classList.remove('displayBlock');
+            }
+
+            // =========================================
+            // Protein Rich
+            // =========================================
+            var proteinList = document.getElementById('proteinList').getElementsByTagName('li');
+            for (var i = 0; i < proteinList.length; i++) {
+                proteinList[i].classList.remove('active');
+            }
+   
+            var proteinListContent = document.getElementById('proteinListContent').getElementsByClassName('row');
+            for (var i = 0; i < proteinListContent.length; i++) {
+                proteinListContent[i].classList.remove('displayBlock');
+            }
+
+            // =========================================
+            // Cultural
+            // =========================================
+            var culturalList = document.getElementById('culturalList').getElementsByTagName('li');
+            for (var i = 0; i < culturalList.length; i++) {
+                culturalList[i].classList.remove('active');
+            }
+    
+            var culturalListContent = document.getElementById('culturalListContent').getElementsByClassName('row');
+            for (var i = 0; i < culturalListContent.length; i++) {
+                culturalListContent[i].classList.remove('displayBlock');
+            }
+
+            // =========================================
+            // User
+            // =========================================
+            var userList = document.getElementById('userList').getElementsByTagName('li');
+            for (var i = 0; i < userList.length; i++) {
+                userList[i].classList.remove('active');
+            }
+    
+            var userListContent = document.getElementById('userListContent').getElementsByClassName('row');
+            for (var i = 0; i < userListContent.length; i++) {
+                userListContent[i].classList.remove('displayBlock');
+            }
+
+            if (tab.classList.contains('active')) {
+                
+            } else {
+                //========================
+                //bring the lists right after the tab!!
+                //========================
+                tab.classList.add('active');
+                listblock.classList.add('displayBlock');
+                tab.appendChild(listblock);
+            }
+
+
+
+
+
+        //END OF TABCLICKED FUNCTION OVERRIDING
+        }
+
+
+    //END OF IF STATEMENT
+    }
+//END OF FUNCTION
 }

@@ -106,7 +106,7 @@
 					top:0;
 					left:-80%;
 					width:80%;
-					height:100%;
+					height:200%;
 					background-color:purple;
 					pointer-events:auto;
 					transition: left 0.1s linear;
@@ -323,9 +323,13 @@
 			function setBurger(init) {
 			var toggle = false;
 			var position = -70;
+			var lastXPos = 0;
 			var lastX = 0;
 			var slideAmount;
 			var isOpen = false;
+			var numTouchLogged = 0;
+			var lastKnownTouch = 0;
+			
 				if(init) {
 					window.addEventListener("touchstart",function(event){
 						openBurger(event);
@@ -341,41 +345,50 @@
 					}, false);
 				}
 				function openBurger(event) {
-					for(i=0;i<event.touches.length;++i){
-						lastX = event.touches[i].clientX / winWidth;
+					numTouchLogged = event.touches.length;
+					for(i=0;i<numTouchLogged;++i){
+						lastXPos = event.touches[i].clientX/winWidth;
+						lastX = true;
+						lastKnownTouch = lastX;
 					}
 					toggle = true;
 				}
 				function closeBurger(event) {
 					toggle = false;
-					if(slideAmount >= -30) {burgerMenu.style.left = "0%";isOpen=true;slideAmount=0;};
-					if(slideAmount < -30){burgerMenu.style.left = "-80%";isOpen=false;slideAmount=-80;};
 					if(isOpen){
-						alert("fleep");
-						for(i=0;i<event.touches.length;++i){
-							alert("whoppah");
-							/*if(event.touches[i].clientX/winWidth >0)
-							{
-								alert("hi");
-							}*/
+						if (lastXPos > 0.8){
+							for(i=0;i<numTouchLogged;++i){
+								if(lastKnownTouch == lastX){burgerMenu.style.left = "-80%";isOpen=false;slideAmount=-80;};
+							}
+							numTouchLogged = 0;
 						}
+						
+						if(slideAmount < -15){burgerMenu.style.left = "-80%";isOpen=false;slideAmount=-80;}
+						else{burgerMenu.style.left = "0%";isOpen=true;slideAmount=0;};
+					} else {
+					
+					if(slideAmount >= -43) {burgerMenu.style.left = "0%";isOpen=true;slideAmount=0;};
+					if(slideAmount < -43){burgerMenu.style.left = "-80%";isOpen=false;slideAmount=-80;};
 					}
 				}
 				function slideBurger(isHeld, event) {
-					if(lastX<0.3){
+					if(lastXPos<0.35 && !isOpen){
 						for(i=0;i<event.touches.length;++i){
 							interactionX = event.touches[i].clientX;
-							slideAmount = interactionX/winWidth*100 - 80;
-							if(isHeld) {
-								position = slideAmount;
-								if(position > 0) {position = 0; isOpen=true}
-								burgerMenu.style.left = position + "%";
+							if((interactionX/winWidth - lastXPos) > 0.10){
+								slideAmount = interactionX/winWidth*100 - 80;
+								if(isHeld) {
+									position = slideAmount;
+									if(position > 0) {position = 0; isOpen=true}
+									burgerMenu.style.left = position + "%";
+								}
 							}
 						}
-					} else {
+					} else if(lastXPos > 0.45 && isOpen){
 						for(i=0;i<event.touches.length;++i){
 							interactionX = event.touches[i].clientX;
 							slideAmount = interactionX/winWidth*100 - 80;
+							lastKnownTouch = false;
 							if(isHeld) {
 								position = slideAmount;
 								if(position > 0) {position = 0; isOpen=true}
