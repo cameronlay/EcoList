@@ -1,0 +1,12 @@
+/* Hamburger menu section */
+				
+				#Hamburger {
+					position:absolute;
+					top:0;
+					left:-80%;
+					width:80%;
+					height:200%;
+					background-color:purple;
+					pointer-events:auto;
+					transition: left 0.1s linear;
+				}

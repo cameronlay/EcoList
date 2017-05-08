@@ -1,3 +1,5 @@
+<meta name="viewport" 
+  content="width=device-width, initial-scale=1.0, user-scalable=no">
 <script>
 let host = document.createElement("div");
 let root = host.attachShadow({ mode: 'closed' });
@@ -9,29 +11,61 @@ let lastX = null;
 let lastY = null;
 let mouseX = null;
 let mouseY = null;
-
+let canvasX = null;
+let canvasY = null;
+let pointCounter = 0;
+let XHDlist = [];
+let YHDlist = [];
 //global flags
 let drawingMouseDragged = false;
 let lifted = false;
 
 window.onload = function init() {
 	canvas = document.createElement("canvas");
-	canvas.height = canvas.width = 500;
+	canvas.height = canvas.width = 300;
 	resetCanvas();
 	document.body.appendChild(canvas);
+	//mouse events
 	canvas.addEventListener("mousedown", function(event) {
 		drawingMouseDragged = true;
+		if(drawingMouseDragged) {
+			updateMouseLocation(event, true);
+		}
+		paint(true);
 	}, true);
 	canvas.addEventListener("mousemove", function(event) {
 		if(drawingMouseDragged) {
-			updateMouseLocation(event);
+			updateMouseLocation(event, true);
 		}
 		paint(true);
 	}, true);
 	window.addEventListener("mouseup", function() {
 		drawingMouseDragged = false;
+		refinedStroke();
+		lifted = true;
+		canvas.style.cursor = "auto";
+	}, true);
+	//touch events;
+	canvas.addEventListener("touchstart", function(event) {
+		drawingMouseDragged = true;
+		if(drawingMouseDragged) {
+			updateMouseLocation(event);
+		}
+	}, true);
+	canvas.addEventListener("touchmove", function(event) {
+		event.preventDefault();
+		if(drawingMouseDragged) {
+			updateMouseLocation(event);
+		}
+		paint(false);
+	}, true);
+	window.addEventListener("touchend", function() {
+		drawingMouseDragged = false;
+		paint(false);
+		refinedStroke();
 		lifted = true;
 	}, true);
+	canvas.setAttribute("id","currentCanvas");
 	//unneeded for if out of canvas.
 	/*canvas.addEventListener("mouseout", function() {
 		drawingMouseDragged = false;
@@ -40,19 +74,19 @@ window.onload = function init() {
 		// appended root expected for when canvas is done painting.
 		root.appendChild(canvas);
 		document.body.appendChild(host);
-
 }
 
 function resetCanvas() {
 	var bg = canvas.getContext("2d");
-	bg.fillStyle = "rgb(255,238,190)"; //yellow paper color
+	bg.fillStyle = "rgb(255,245,200)"; //yellow paper color
     bg.fillRect(0,0,canvas.width,canvas.height);
 	bg.fill();
 }
 function paint(isPC) {
 	if(drawingMouseDragged) {
 		var pen = canvas.getContext("2d");
-		
+		pen.lineWidth = 15;
+		pen.fillStyle = pen.strokeStyle = "black";
 		//prototype particle dot drawing method.
 		/*pen.fillStyle = "rgba(0,0,0,0.35)";
 		pen.fillRect(mouseX-10,mouseY-10, 4, 4);
@@ -60,32 +94,75 @@ function paint(isPC) {
 		pen.fillRect(mouseX-9,mouseY-9, 2, 2);
 		pen.fill();*/
 		
-		//new line conenct method.
+		//new line connect method.
 		if(isPC) {
-			pen.beginPath();
-			pen.moveTo(lastX - 10,lastY - 10);
-			pen.lineTo(mouseX - 10,mouseY - 10)
-			pen.stroke();
-		} else {
-			pen.beginPath();
-			pen.moveTo(lastX,lastY);
-			pen.lineTo(mouseX,mouseY)
-			pen.stroke();
+		canvas.style.cursor = "crosshair";
 		}
+			pen.beginPath();
+			pen.moveTo(lastX - canvasX,lastY - canvasY);
+			pen.lineTo(mouseX - canvasX,mouseY - canvasY)
+			pen.stroke();
+			if(lastX - mouseX < 1 || lastY - mouseY < 1){ 
+				pen.arc(lastX - canvasX,lastY - canvasY,pen.lineWidth/2 - 1,0,2 * Math.PI);
+				pen.fill();
+			}
 	}
 }
 
-function updateMouseLocation(event) {
-	if(lifted || mouseX == null & mouseY == null) {
-		lastX = mouseX = event.clientX;
-		lastY = mouseY = event.clientT;
-		lifted = false;
-	} else {
-		lastX = mouseX;
-		lastY = mouseY;
-		mouseX = event.clientX;
-		mouseY = event.clientY;
+function refinedStroke() {
+	var pen = canvas.getContext("2d");
+	pen.lineWidth = 15;
+	pen.beginPath();
+	for(i=0;i<XHDlist.length;++i){
+		if(i == 0) {
+			pen.moveTo(XHDlist[i] - canvasX,YHDlist[i] - canvasY);
+		}
+		pen.lineTo(XHDlist[i] - canvasX,YHDlist[i] - canvasY);
 	}
+	pen.stroke();
+	XHDlist = [];
+	YHDlist = [];
+	pointCounter = 0;
+}
+function updateMouseLocation(event, isPC) {
+	canvasX = canvas.getBoundingClientRect().left;
+	canvasY = canvas.getBoundingClientRect().top;
+	if(isPC){
+		if(lifted || mouseX == null & mouseY == null) {
+			lastX = mouseX = event.clientX;
+			lastY = mouseY = event.clientY;
+			lifted = false;
+		} else {
+			lastX = mouseX;
+			lastY = mouseY;
+			mouseX = event.clientX;
+			mouseY = event.clientY;
+		}
+		XHDlist[pointCounter] = lastX;
+		YHDlist[pointCounter] = lastY;
+		++pointCounter;
+	} else {
+		if(event.touches.length == 1) {
+			if(lifted || mouseX == null & mouseY == null) {
+				lastX = mouseX = event.touches[0].clientX;
+				lastY = mouseY = event.touches[0].clientY;
+				lifted = false;
+			} else {
+				lastX = mouseX;
+				lastY = mouseY;
+				mouseX = event.touches[0].clientX;
+				mouseY = event.touches[0].clientY;
+			}
+			XHDlist[pointCounter] = lastX;
+			YHDlist[pointCounter] = lastY;
+			++pointCounter;
+		}
+	}
+}
+function saveCanvas(invoker) {
+	image = document.getElementById("currentCanvas").toDataURL("image/png");
+	invoker.src = image;
 }
 </script>
 <input type="button" onclick="resetCanvas()" value ="clear board" style="position:fixed;top:50%;"/>
+<img onClick="saveCanvas(this)" alt="save Canvas"/>
