@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Eco List - Login</title>
+    <title>EcoList - Login</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Sunguk (Edmund) Ham">
+    <meta name="author" content="Cameron Lay">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <!--<script src="script.js"></script>-->
 </head>
 <body>
+<div class="wholeBody">
     <div id="LoginLogo">
-        <a href="#"><img src ="#" alt="Logo"/></a>
+        <a href="#"><img src ="../images/Logo3.jpg" alt="Logo"/></a>
     </div>
 
-    <form id="LoginForm" name="LoginForm" method="post" action="post">
+    <div id="LoginLeft">
+    <form id="LoginForm" name="LoginForm" method="post">
         <table id="LoginTable">
             <tbody>
             <tr>
@@ -28,7 +30,7 @@
             </tr>-->
             <tr>
                 <td><label for="Password">Password:</label></td>
-                <td><input type="password" placeholder="********"onblur="warnPassword()" id="Password" name="Password" class="formfield"/></td>
+                <td><input type="password" placeholder="********" onblur="warnPassword()" id="Password" name="Password" class="formfield"/></td>
             </tr>
             <!--<tr>
                 <td colspan="2" id="ErrLogPassword">Password must be between 8 and 16 characters in length</td>
@@ -41,7 +43,9 @@
             </tbody>
         </table>
     </form>
-    <form id="SignupForm" name="SignupForm" method="post" action="post">
+    </div>
+    <div id="SignupRight">
+    <form id="SignupForm" name="SignupForm" method="post">
         <table id="SignupTable">
             <tbody>
             <tr>
@@ -60,7 +64,7 @@
             </tr>
             <tr>
                 <td><label for="SignupPassword">Password:</label></td>
-                <td><input type="password" placeholder="********"onblur="warnPassword()" id="SignupPassword" name="Password" class="formfield"/></td>
+                <td><input type="password" placeholder="********" onblur="warnPassword()" id="SignupPassword" name="Password" class="formfield"/></td>
             </tr>
             <tr>
                 <td colspan="2" id="ErrPassword">Password must be between 8 and 16 characters in length</td>
@@ -81,3 +85,5 @@
             </tbody>
         </table>
     </form>
+    </div>
+</div>

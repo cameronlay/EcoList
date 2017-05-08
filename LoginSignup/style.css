@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%
+}
+
+.wholeBody {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#loginlogo {
+    margin: auto;
+
+}
+
+#LoginLeft {
+    float: left;
+    width: 25%;
+    margin-right: 15%;
+    margin-left: 20%;
+    margin-top: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#SignupRight {
+    margin-left: 50%;
+    margin-top: 3%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    border-left: 1px solid;
+}
+
+#ErrEmail{
+    display: none;
+}
+
+#ErrUsername {
+    display: none;
+}
+
+#ErrPassword {
+    display: none;
+}
+
+#ErrConfirm {
+    display: none;
+}
