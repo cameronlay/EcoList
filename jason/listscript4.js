@@ -1,13 +1,6 @@
 
 var count =0;
 var c = 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-var n = 0;
->>>>>>> Jason-feature
-=======
->>>>>>> Jason-feature
 var a;
 
 
@@ -34,18 +27,6 @@ $(function () {
         $("body").on("click",".list", function (){
                 var id = $(this).attr('id');
                 a = parseInt(id);
-<<<<<<< HEAD
-                var toAdd = $("#" + a).val();
-                 $('ol').append('<li>' + toAdd + '</li>');
-                 $(this).closest("tr").remove();
-            });
-       
-       $("input[name=DynamicTextBox]").keyup(function(event){
-          if(event.keyCode == 13){
-            $("body").click();
-          }         
-      });
-=======
                 var toAdd = $("#" + a + "item").val();
                 var toAdd2 = $('#' + a + "quantity").val();
                 var icon = document.createElement("span");
@@ -57,13 +38,8 @@ $(function () {
   
             });
       
-<<<<<<< HEAD
->>>>>>> Jason-feature
-      
-=======
     
       //double click to remove list item
->>>>>>> Jason-feature
       $(document).on('dblclick','li', function(){
         $(this).toggleClass('strike').fadeOut("fast");    
       });
@@ -72,11 +48,7 @@ $(function () {
         $(this).val('');
       });
       
-<<<<<<< HEAD
-      $('ol').sortable();  
-=======
       $('ul').sortable();  
->>>>>>> Jason-feature
       
     }
 );
@@ -85,14 +57,10 @@ $(function () {
     $("#btnRemove").on("click", function () {
             $("#TextBoxContainer").children().remove();
     });
-<<<<<<< HEAD
-    
-=======
     //clears cart
      $("#btnClear").on("click", function () {
             $(".list-group").children().remove();
     });
->>>>>>> Jason-feature
 
 });
 
@@ -101,13 +69,8 @@ function GetDynamicTextBox(value) {
     count++;
     c++;
     return '<td><button type="button" id="'+c+'btn" class="btn btn-info list"><span class="glyphicon glyphicon-shopping-cart"></span></button></td>'
-<<<<<<< HEAD
-    +'<td><input name = "DynamicTextBox" id="'+count+'" type="text" value = "' + value + '" class="form-control" /></td>' 
-    + '<td><input name = "DynamicTextBox" type="text" value = "' + value + '"  class="form-control" /></td>' 
-=======
     +'<td><input name = "DynamicTextBox" id="'+count+'item" type="text" value = "' + value + '" class="form-control" /></td>' 
     + '<td><input name = "DynamicTextBox" id="'+count+'quantity" type="text" value = "' + value + '"  class="form-control" /></td>' 
->>>>>>> Jason-feature
     + '<td><button type="button" class="btn btn-danger remove"><i class="glyphicon glyphicon-remove-sign"></i></button></td>'
 }
 
