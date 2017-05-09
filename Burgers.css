@@ -46,6 +46,17 @@
 					#Hamburger ul li div {
 						margin-left:5%;
 					}
+					#Hamburger ul>li>ul.dropDownHamburger {
+						opacity:0;
+						height:0;
+						visibility:hidden;
+						transition: opacity 0.2s linear, height 0.2s linear, visibility 0.2s linear;
+					}
+					#Hamburger ul>li:hover ul.dropDownHamburger{
+						height:440px;
+						opacity:1;
+						visibility:visible;
+					}
 					#Hamburger a {
 						width:100%;
 						display:block;
