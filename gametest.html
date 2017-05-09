@@ -1,0 +1,19 @@
+<script>
+	class gameArea extends HTMLElement {
+		constructor() {
+			super();
+			let root = this.attachShadow({mode: 'open'});
+			let play = document.createElement("canvas");
+			play.height = play.width = 300;
+			root.appendChild(play);
+			var input = document.createElement("score","form");
+				input.innerHTML = 
+				'<br/><input type="text" name="name" id="Name" placeholder="uname"/>' + 
+				'<input type="text"  name="score" id="Score" placeholder="score"/>';
+			root.appendChild(input);
+		}
+	}
+	customElements.define('game-area', gameArea);
+</script>
+<body style="background-Color:black">
+<game-area>
