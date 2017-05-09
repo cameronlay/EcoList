@@ -1,5 +1,8 @@
 
 var count =0;
+var c = 0;
+var n = 0;
+var a;
 
 $(function () {
     //button adds new rows to table 1
@@ -8,6 +11,7 @@ $(function () {
         div.fadeIn("slow");
         div.html(GetDynamicTextBox(""));
         $("#TextBoxContainer").prepend(div);
+        $('#btnRemove').css('visibility', 'visible');
     });
     //removes individual rows
     $("body").on("click", ".remove", function () {
@@ -21,11 +25,16 @@ $(function () {
     $(document).ready(
     function(){
         $("body").on("click",".list", function (){
-                var toAdd = $('input[name=DynamicTextBox]').clone();
-                 $('ol').append('<li>' + toAdd.val() + '</li>');
+                var id = $(this).attr('id');
+                a = parseInt(id);
+                var toAdd = $("#" + a + "item").val();
+                var toAdd2 = $('#' + a + "quantity").val();
+                 $('.list-group').append('<li class="list-group-item list-group-item-success">' + toAdd2 + " " + toAdd + '</li>');
+                 $('#cartTitle').css('visibility','visible');
+                 $('#btnClear').css('visibility', 'visible');
                  $(this).closest("tr").remove();
             });
-       
+      
       
       $(document).on('dblclick','li', function(){
         $(this).toggleClass('strike').fadeOut("fast");    
@@ -35,26 +44,28 @@ $(function () {
         $(this).val('');
       });
       
-      $('ol').sortable();  
+      $('ul').sortable();  
       
     }
 );
-
-
 
     //removes all rows 
     $("#btnRemove").on("click", function () {
             $("#TextBoxContainer").children().remove();
     });
-    
+    //clears cart
+     $("#btnClear").on("click", function () {
+            $(".list-group").children().remove();
+    });
 
 });
 
 function GetDynamicTextBox(value) {
     count++;
-    return '<td><button type="button" class="btn btn-info list"><span class="glyphicon glyphicon-shopping-cart"></span></button></td>'
-    +'<td><input name = "DynamicTextBox" type="text" value = "' + value + '" class="form-control" /></td>' 
-    + '<td><input name = "DynamicTextBox" type="text" value = "' + value + '"  class="form-control" /></td>' 
+    c++;
+    return '<td><button type="button" id="'+c+'btn" class="btn btn-info list"><span class="glyphicon glyphicon-shopping-cart"></span></button></td>'
+    +'<td><input name = "DynamicTextBox" id="'+count+'item" type="text" value = "' + value + '" class="form-control" /></td>' 
+    + '<td><input name = "DynamicTextBox" id="'+count+'quantity" type="text" value = "' + value + '"  class="form-control" /></td>' 
     + '<td><button type="button" class="btn btn-danger remove"><i class="glyphicon glyphicon-remove-sign"></i></button></td>'
 }
 
