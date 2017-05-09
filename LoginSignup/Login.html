@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EcoList - Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Cameron Lay">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8" id="LoginLogo">
+            <a href="#"><img src ="../images/Logo3.jpg" alt="Logo"/></a>
+        </div>
+    </div>
+    <div class="row" id="FormContent">
+        <div class="col-md-2 col-sm-12 col-xs-12"></div>
+        <div class="col-md-4 col-sm-12 col-xs-12" id="LoginLeft">
+            <form id="LoginForm" name="LoginForm" method="post">
+                <table id="LoginTable">
+                    <tbody>
+                    <tr>
+                        <td><label for="LoginUsername">Username:</label></td>
+                        <td><input type="text" id="LoginUsername" name="Username" class="formfield"/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Password">Password:</label></td>
+                        <td><input type="password" placeholder="********" id="Password" name="Password" class="formfield"/></td>
+                    </tr>
+
+                    <tr class="submitButton">
+                        <td></td>
+                        <td><input id="LoginButton" name="Submit" value="Login" type="submit"/></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        <div class="col-md-5 col-sm-12 col-xs-12"  id="SignupRight">
+            <form id="SignupForm" name="SignupForm" method="post" onsubmit="return formValidate()">
+                <table id="SignupTable">
+                    <tbody>
+                    <tr>
+                        <td><label for="Email">Email:</label></td>
+                        <td><input type="email" placeholder="abc@example.abc" onblur="warnEmailType()" id="Email" name="Email" class="formfield"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" id="ErrEmail">Please enter a valid email</td>
+                    </tr>
+                    <tr>
+                        <td><label for="SignupUsername">Username:</label></td>
+                        <td><input type="text" id="SignupUsername" name="Username" onblur="warnUsername()" class="formfield"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"  id="ErrUsername">Please enter a valid username</td>
+                    </tr>
+                    <tr>
+                        <td><label for="SignupPassword">Password:</label></td>
+                        <td><input type="password" placeholder="********" onblur="warnPassword()" id="SignupPassword" name="Password" class="formfield"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" id="ErrPassword">Password must be between 8 and 16 characters in length</td>
+                    </tr>
+                    <tr>
+                        <td><label for="Password2">Confirm Password:</label></td>
+                        <td><input type="password" placeholder="********" onblur="warnConfirm()" id="Password2" name="Password" class="formfield"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"  id="ErrConfirm">Does not match password</td>
+                    </tr>
+                    <tr class="submitButton">
+                        <td></td>
+                        <td><input id="SignupButton" name="Submit" value="Register" type="submit"/></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
