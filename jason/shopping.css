@@ -1,5 +1,7 @@
 /* Custom Code Here */
-
+h5{
+  width:100%;
+}
 .container .check input {
   display: none;
 }
@@ -85,12 +87,25 @@ thead tr th {
 
 /* Div of the table*/
 
-.table table-responsive {
-  width: 50%;
+.container {
+  width:100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
 }
 
+@media only screen and (min-width:500px){
+  .container{
+
+    width:50%;
+  }
+
+}
+
+
+
 .smallTableHead {
-  width: 1px;
+  width: 70px;
 }
 
 .checkBoxTableHead {
@@ -106,6 +121,35 @@ thead tr th {
 #btnRemove {
   float: right;
   background-color: #ff6961;
+<<<<<<< HEAD
+=======
+  visibility: hidden;
+}
+
+#btnClear {
+   float: right;
+  background-color: #ff6961;
+  visibility: hidden;
+}
+}
+
+.strike {
+  text-decoration:line-through;
+}
+
+#btnAddContainer {
+  display: inline;
+  width:40%;
+}
+
+
+#list-container {
+  margin:0 auto;
+}
+
+#cartTitle{
+  visibility: hidden;
+>>>>>>> Jason-feature
 }
 
 /*Stacking tables
