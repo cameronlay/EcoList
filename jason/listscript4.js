@@ -1,8 +1,8 @@
 
 var count =0;
 var c = 0;
-var n = 0;
 var a;
+
 
 $(function () {
     //button adds new rows to table 1
@@ -29,13 +29,17 @@ $(function () {
                 a = parseInt(id);
                 var toAdd = $("#" + a + "item").val();
                 var toAdd2 = $('#' + a + "quantity").val();
+                var icon = document.createElement("span");
+                icon.className ="glyphicon glyphicon-ok";
                  $('.list-group').append('<li class="list-group-item list-group-item-success">' + toAdd2 + " " + toAdd + '</li>');
-                 $('#cartTitle').css('visibility','visible');
+                 $('#cartTitle').css('visibility', 'visible');
                  $('#btnClear').css('visibility', 'visible');
                  $(this).closest("tr").remove();
+  
             });
       
-      
+    
+      //double click to remove list item
       $(document).on('dblclick','li', function(){
         $(this).toggleClass('strike').fadeOut("fast");    
       });
@@ -59,6 +63,7 @@ $(function () {
     });
 
 });
+
 
 function GetDynamicTextBox(value) {
     count++;
