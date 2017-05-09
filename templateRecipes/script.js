@@ -263,6 +263,7 @@ function TabClicked(id, id2, list, contentBlock, content) {
 //END OF FUNCTION
 }
 
+
 /**
  * FUNCTION THAT OVERRIDE ALL FUNCTIONS IF THE BROWSER
  * WIDTH IS LESS THAN 768
