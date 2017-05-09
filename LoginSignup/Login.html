@@ -20,63 +20,75 @@
         </div>
     </div>
     <div class="row" id="FormContent">
-        <div class="col-md-2 col-sm-12 col-xs-12"></div>
-        <div class="col-md-4 col-sm-12 col-xs-12" id="LoginLeft">
+        <div class="col-md-2"></div>
+        <div class="col-md-4" id="LoginLeft">
             <form id="LoginForm" name="LoginForm" method="post">
                 <table id="LoginTable">
                     <tbody>
                     <tr>
                         <td><label for="LoginUsername">Username:</label></td>
-                        <td><input type="text" id="LoginUsername" name="Username" class="formfield"/></td>
+                        <td><input type="text" id="LoginUsername" name="username" class="formfield"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="spacingRow">Just here for spacing</td>
                     </tr>
                     <tr>
                         <td><label for="Password">Password:</label></td>
-                        <td><input type="password" placeholder="********" id="Password" name="Password" class="formfield"/></td>
+                        <td><input type="password" placeholder="********" id="Password" name="password" class="formfield"/></td>
                     </tr>
-
+                    <tr>
+                        <td colspan="2" class="spacingRow">Just here for spacing</td>
+                    </tr>
                     <tr class="submitButton">
                         <td></td>
-                        <td><input id="LoginButton" name="Submit" value="Login" type="submit"/></td>
+                        <td><input id="LoginButton" name="submit" value="Login" type="submit"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="spacingRow">Just here for spacing</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" value="Sign-Up" onclick="SignUpShow()"/></td>
                     </tr>
                     </tbody>
                 </table>
             </form>
         </div>
-        <div class="col-md-5 col-sm-12 col-xs-12"  id="SignupRight">
-            <form id="SignupForm" name="SignupForm" method="post" onsubmit="return formValidate()">
+        <div class="col-md-5"  id="SignupRight">
+            <form id="SignupForm" name="signupform" method="post" onsubmit="return formValidate()">
                 <table id="SignupTable">
                     <tbody>
                     <tr>
                         <td><label for="Email">Email:</label></td>
-                        <td><input type="email" placeholder="abc@example.abc" onblur="warnEmailType()" id="Email" name="Email" class="formfield"/></td>
+                        <td><input type="email" placeholder="abc@example.abc" onblur="warnEmailType()" id="Email" name="email" class="formfield"/></td>
                     </tr>
                     <tr>
                         <td colspan="2" id="ErrEmail">Please enter a valid email</td>
                     </tr>
                     <tr>
                         <td><label for="SignupUsername">Username:</label></td>
-                        <td><input type="text" id="SignupUsername" name="Username" onblur="warnUsername()" class="formfield"/></td>
+                        <td><input type="text" id="SignupUsername" name="username" onblur="warnUsername()" class="formfield"/></td>
                     </tr>
                     <tr>
                         <td colspan="2"  id="ErrUsername">Please enter a valid username</td>
                     </tr>
                     <tr>
                         <td><label for="SignupPassword">Password:</label></td>
-                        <td><input type="password" placeholder="********" onblur="warnPassword()" id="SignupPassword" name="Password" class="formfield"/></td>
+                        <td><input type="password" placeholder="********" onblur="warnPassword()" id="SignupPassword" name="password" class="formfield"/></td>
                     </tr>
                     <tr>
                         <td colspan="2" id="ErrPassword">Password must be between 8 and 16 characters in length</td>
                     </tr>
                     <tr>
                         <td><label for="Password2">Confirm Password:</label></td>
-                        <td><input type="password" placeholder="********" onblur="warnConfirm()" id="Password2" name="Password" class="formfield"/></td>
+                        <td><input type="password" placeholder="********" onblur="warnConfirm()" id="Password2" name="password" class="formfield"/></td>
                     </tr>
                     <tr>
                         <td colspan="2"  id="ErrConfirm">Does not match password</td>
                     </tr>
                     <tr class="submitButton">
                         <td></td>
-                        <td><input id="SignupButton" name="Submit" value="Register" type="submit"/></td>
+                        <td><input id="SignupButton" name="submit" value="Register" type="submit"/></td>
                     </tr>
                     </tbody>
                 </table>
