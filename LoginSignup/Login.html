@@ -20,8 +20,8 @@
         </div>
     </div>
     <div class="row" id="FormContent">
-        <div class="col-md-2"></div>
-        <div class="col-md-4" id="LoginLeft">
+        <div class="col-md-2 col-sm-12 col-xs-12"></div>
+        <div class="col-md-4 col-sm-12 col-xs-12" id="LoginLeft">
             <form id="LoginForm" name="LoginForm" method="post">
                 <table id="LoginTable">
                     <tbody>
@@ -29,18 +29,12 @@
                         <td><label for="LoginUsername">Username:</label></td>
                         <td><input type="text" id="LoginUsername" name="Username" class="formfield"/></td>
                     </tr>
-                    <!--<tr>
-                        <td colspan="2"  id="ErrLogUsername">Please enter a valid username</td>
-                    </tr>-->
                     <tr>
                         <td><label for="Password">Password:</label></td>
                         <td><input type="password" placeholder="********" id="Password" name="Password" class="formfield"/></td>
                     </tr>
-                    <!--<tr>
-                        <td colspan="2" id="ErrLogPassword">Password must be between 8 and 16 characters in length</td>
-                    </tr>-->
+
                     <tr class="submitButton">
-                        <!-- Currently the button cannot be centered because it is in a table-->
                         <td></td>
                         <td><input id="LoginButton" name="Submit" value="Login" type="submit"/></td>
                     </tr>
@@ -48,7 +42,7 @@
                 </table>
             </form>
         </div>
-        <div class="col-md-5"  id="SignupRight">
+        <div class="col-md-5 col-sm-12 col-xs-12"  id="SignupRight">
             <form id="SignupForm" name="SignupForm" method="post" onsubmit="return formValidate()">
                 <table id="SignupTable">
                     <tbody>
@@ -74,7 +68,6 @@
                         <td colspan="2" id="ErrPassword">Password must be between 8 and 16 characters in length</td>
                     </tr>
                     <tr>
-                        <!-- to do : confirm password == password2 -->
                         <td><label for="Password2">Confirm Password:</label></td>
                         <td><input type="password" placeholder="********" onblur="warnConfirm()" id="Password2" name="Password" class="formfield"/></td>
                     </tr>
@@ -82,7 +75,6 @@
                         <td colspan="2"  id="ErrConfirm">Does not match password</td>
                     </tr>
                     <tr class="submitButton">
-                        <!-- Currently the button cannot be centered because it is in a table-->
                         <td></td>
                         <td><input id="SignupButton" name="Submit" value="Register" type="submit"/></td>
                     </tr>
