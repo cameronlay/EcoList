@@ -161,7 +161,7 @@ thead tr th {
   font-size: 50px;
 }
 
-.table {
+.table th{
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 20px;
 }
