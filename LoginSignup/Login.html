@@ -26,29 +26,25 @@
                 <table id="LoginTable">
                     <tbody>
                     <tr>
-                        <td><label for="LoginUsername">Username:</label></td>
-                        <td><input type="text" id="LoginUsername" name="username" class="formfield"/></td>
+                        <td><input type="text" id="LoginUsername" name="username" placeholder="Username" class="formfield"/></td>
                     </tr>
                     <tr>
-                        <td colspan="2" class="spacingRow">Just here for spacing</td>
+                        <td class="spacingRow">Just here for spacing</td>
                     </tr>
                     <tr>
-                        <td><label for="Password">Password:</label></td>
-                        <td><input type="password" placeholder="********" id="Password" name="password" class="formfield"/></td>
+                        <td><input type="password" placeholder="Password" id="Password" name="password" class="formfield"/></td>
                     </tr>
                     <tr>
-                        <td colspan="2" class="spacingRow">Just here for spacing</td>
+                        <td class="spacingRow">Just here for spacing</td>
                     </tr>
                     <tr class="submitButton">
-                        <td></td>
                         <td><input id="LoginButton" name="submit" value="Login" type="submit"/></td>
                     </tr>
                     <tr>
-                        <td colspan="2" class="spacingRow">Just here for spacing</td>
+                        <td class="spacingRow">Just here for spacing</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td><input type="button" value="Sign-Up" onclick="SignUpShow()"/></td>
+                        <td><input type="button" value="Sign-Up" onclick="SignUpShow()" id="RegisterButton"/></td>
                     </tr>
                     </tbody>
                 </table>
@@ -59,36 +55,37 @@
                 <table id="SignupTable">
                     <tbody>
                     <tr>
-                        <td><label for="Email">Email:</label></td>
-                        <td><input type="email" placeholder="abc@example.abc" onblur="warnEmailType()" id="Email" name="email" class="formfield"/></td>
+                        <td><input type="email" placeholder="Email" onblur="warnEmailType()" id="Email" name="email" class="formfield"/></td>
                     </tr>
                     <tr>
-                        <td colspan="2" id="ErrEmail">Please enter a valid email</td>
+                        <td id="ErrEmail">Please enter a valid email</td>
                     </tr>
                     <tr>
-                        <td><label for="SignupUsername">Username:</label></td>
-                        <td><input type="text" id="SignupUsername" name="username" onblur="warnUsername()" class="formfield"/></td>
+                        <td><input type="text" id="SignupUsername" placeholder="Username" name="username" onblur="warnUsername()" class="formfield"/></td>
                     </tr>
                     <tr>
-                        <td colspan="2"  id="ErrUsername">Please enter a valid username</td>
+                        <td id="ErrUsername">Please enter a valid username</td>
                     </tr>
                     <tr>
-                        <td><label for="SignupPassword">Password:</label></td>
-                        <td><input type="password" placeholder="********" onblur="warnPassword()" id="SignupPassword" name="password" class="formfield"/></td>
+                        <td><input type="password" placeholder="Password" onblur="warnPassword()" id="SignupPassword" name="password" class="formfield"/></td>
                     </tr>
                     <tr>
-                        <td colspan="2" id="ErrPassword">Password must be between 8 and 16 characters in length</td>
+                        <td id="ErrPassword">Password must be between 8 and 16 characters in length</td>
                     </tr>
                     <tr>
-                        <td><label for="Password2">Confirm Password:</label></td>
-                        <td><input type="password" placeholder="********" onblur="warnConfirm()" id="Password2" name="password" class="formfield"/></td>
+                        <td><input type="password" placeholder="Confirm Password" onblur="warnConfirm()" id="Password2" name="password" class="formfield"/></td>
                     </tr>
                     <tr>
-                        <td colspan="2"  id="ErrConfirm">Does not match password</td>
+                        <td id="ErrConfirm">Does not match password</td>
                     </tr>
                     <tr class="submitButton">
-                        <td></td>
                         <td><input id="SignupButton" name="submit" value="Register" type="submit"/></td>
+                    </tr>
+                    <tr>
+                        <td class="spacingRow">Just here for spacing</td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="Sign-In" onclick="LoginShow()" id="SignInButton"/></td>
                     </tr>
                     </tbody>
                 </table>
