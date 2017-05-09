@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%
+}
+
+/*.wholeBody {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}*/
+
+img{
+    width: 100%;
+}
+
+#LoginLogo {
+    margin-top: 8%;
+}
+
+#FormContent {
+    margin-top: 5%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#LoginForm {
+    margin: auto;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+}
+
+#SignupForm {
+    margin: auto;
+    width: 100%;
+}
+
+#LoginLeft {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin: auto;
+}
+
+#SignupRight {
+    padding-bottom: 3%;
+    padding-top: 3%;
+    padding-left: 5%;
+    border-left: 1px solid;
+    margin: auto;
+}
+@media only screen and (max-width:991.5px) {
+    #SignupRight {
+        padding-left:15px;
+        border-left:0;
+        overflow-x: hidden;
+    }
+
+    #LoginLeft {
+        overflow-x: hidden;
+    }
+}
+
+#ErrEmail{
+    visibility: hidden;
+}
+
+#ErrUsername {
+    visibility: hidden;
+}
+
+#ErrPassword {
+    visibility: hidden;
+}
+
+#ErrConfirm {
+    visibility: hidden;
+}
