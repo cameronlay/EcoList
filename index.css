@@ -139,14 +139,14 @@
             }
             
         /* Bottom of homepage section */
-		@media only screen and (min-width:700px){
+		.mobileContentless {
+				display:none;
+			}
+		@media only screen and (min-device-width: 700px){
 			div.mobileContentless {
 				display:block;
 			}
 		}
-		div.mobileContentless {
-				display:none;
-			}
         section:not(:first-of-type){
             background-color: rgba(255,255,255,0.4);
             padding-top:500px;
@@ -155,7 +155,7 @@
             background-size: auto 900px;
             background-position:0 0;	
         }
-        @media only screen and (min-width:1290px){
+        @media only screen and (min-device-width: 1290px) {
             section:not(:first-of-type) {background-size: 100% auto;}
         }
         
