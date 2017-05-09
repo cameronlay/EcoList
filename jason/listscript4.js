@@ -2,10 +2,14 @@
 var count =0;
 var c = 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 var n = 0;
 >>>>>>> Jason-feature
+=======
+>>>>>>> Jason-feature
 var a;
+
 
 $(function () {
     //button adds new rows to table 1
@@ -44,14 +48,22 @@ $(function () {
 =======
                 var toAdd = $("#" + a + "item").val();
                 var toAdd2 = $('#' + a + "quantity").val();
+                var icon = document.createElement("span");
+                icon.className ="glyphicon glyphicon-ok";
                  $('.list-group').append('<li class="list-group-item list-group-item-success">' + toAdd2 + " " + toAdd + '</li>');
-                 $('#cartTitle').css('visibility','visible');
+                 $('#cartTitle').css('visibility', 'visible');
                  $('#btnClear').css('visibility', 'visible');
                  $(this).closest("tr").remove();
+  
             });
       
+<<<<<<< HEAD
 >>>>>>> Jason-feature
       
+=======
+    
+      //double click to remove list item
+>>>>>>> Jason-feature
       $(document).on('dblclick','li', function(){
         $(this).toggleClass('strike').fadeOut("fast");    
       });
@@ -83,6 +95,7 @@ $(function () {
 >>>>>>> Jason-feature
 
 });
+
 
 function GetDynamicTextBox(value) {
     count++;
