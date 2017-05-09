@@ -6,47 +6,56 @@ html, body {
     height: 100%
 }
 
-.wholeBody {
+/*.wholeBody {
     width: 70%;
     margin-right: auto;
     margin-left: auto;
+}*/
+
+img{
+    width: 100%;
 }
 
-#loginlogo {
-    margin: auto;
+#LoginLogo {
+    margin-top: 8%;
+}
 
+#FormContent {
+    margin-top: 5%;
 }
 
 #LoginLeft {
-    float: left;
-    width: 25%;
-    margin-right: 15%;
-    margin-left: 20%;
-    margin-top: 3%;
     padding-top: 3%;
     padding-bottom: 3%;
+    margin: auto;
 }
 
 #SignupRight {
-    margin-left: 50%;
-    margin-top: 3%;
     padding-bottom: 3%;
     padding-top: 3%;
+    padding-left: 5%;
     border-left: 1px solid;
+    margin: auto;
+}
+@media only screen and (max-width:991.5px) {
+    #SignupRight {
+        padding-left:15px;
+        border-left:0px;
+    }
 }
 
 #ErrEmail{
-    display: none;
+    visibility: hidden;
 }
 
 #ErrUsername {
-    display: none;
+    visibility: hidden;
 }
 
 #ErrPassword {
-    display: none;
+    visibility: hidden;
 }
 
 #ErrConfirm {
-    display: none;
+    visibility: hidden;
 }
