@@ -6,13 +6,15 @@ html, body {
     height: 100%
 }
 
-/*.wholeBody {
-    width: 70%;
-    margin-right: auto;
-    margin-left: auto;
-}*/
-
 img{
+    width: 100%;
+}
+
+input {
+    width: 100%;
+}
+
+table {
     width: 100%;
 }
 
@@ -28,22 +30,17 @@ img{
 
 #LoginForm {
     margin: auto;
-    width: 100%;
-}
-
-input {
-    width: 100%;
 }
 
 #SignupForm {
     margin: auto;
-    width: 100%;
 }
 
 #LoginLeft {
     padding-top: 3%;
     padding-bottom: 3%;
     margin: auto;
+    display: block;
 }
 
 #SignupRight {
@@ -52,16 +49,22 @@ input {
     padding-left: 5%;
     border-left: 1px solid;
     margin: auto;
+    display: block;
 }
 @media only screen and (max-width:991.5px) {
     #SignupRight {
-        padding-left:15px;
-        border-left:0;
-        overflow-x: hidden;
+        display: none;
+        border: 0;
+        margin-top: 10%
     }
 
     #LoginLeft {
         overflow-x: hidden;
+        margin-top: 10%;
+    }
+
+    .container {
+        margin-top: 15%;
     }
 }
 
@@ -78,5 +81,9 @@ input {
 }
 
 #ErrConfirm {
+    visibility: hidden;
+}
+
+.spacingRow {
     visibility: hidden;
 }

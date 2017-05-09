@@ -103,3 +103,13 @@ function formValidate() {
         return false;
     }
 }
+
+function SignUpShow() {
+    if ($("SignupRight").style.display = 'none') {
+        $("SignupRight").style.display = 'block'
+        $("LoginLeft").style.display = 'none'
+    } else {
+        $("SignupRight").style.display = 'hidden'
+        $("LoginLeft").style.display = 'block'
+    }
+}
