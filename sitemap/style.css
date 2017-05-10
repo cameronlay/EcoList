@@ -2,19 +2,9 @@
     box-sizing: border-box;
 }
 
-.wholeBody {
-    display: block;
-    width: 70%;
-    margin-right: auto;
-    margin-left: auto;
-}
-
 .siteMapBlock li {
 	vertical-align: top;
 	padding: 2px 0 0 20px;
-	width: 40%;
-	clear: both;
-	overflow: auto;
 	background: #f3f3f3 url("sitemap-node.gif") no-repeat 0 0;
 }
 
