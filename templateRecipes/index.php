@@ -14,7 +14,7 @@
     ====================================================
 -->
     <head>
-        <title>Eco List - Eats</title>
+        <title>EcoList - Meal Plan</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Sunguk (Edmund) Ham">
@@ -23,6 +23,9 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
+        <link rel="stylesheet" href="../Burgers.css"/>
+        <script src="../hamburger.js"></script>
+        <link rel="stylesheet" href="../index.css"/>
         <!-- making  -->
         <script>
             $(window).on("load", function() {
@@ -35,7 +38,12 @@
             })
         </script>
     </head>
-    <body onload="widthLessThan768()">
+    <body onload="widthLessThan768();setBurger(true);">
+    <div id="GUI">
+        <?php
+            include('../burgerMenuGUI.html');
+        ?>
+    </div>
     <div id="backgroundRecipe">
         <div id="loader"></div>
         <span>Loading Recipes...<br>Some Information</span>
