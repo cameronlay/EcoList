@@ -53,7 +53,7 @@
         </div>
         <main class="col-md-8">
             <div class="row">
-                <div class="col-md-3">
+                <div>
                     <h1>Eco Eats</h1>
                 </div>
             </div>
@@ -97,9 +97,9 @@
             <!--Keto List-->
             <div class="col-md-3 displayNone" id="ketoList">
                 <ul class="nav nav-pills nav-stacked">
-                    <li id="ketoList1" class="active" onclick="ketoPillsClicked('ketoList1', 'ketoListContent1')"><a href="javascript:void(0);">KetoLIST1</a></li>
-                    <li id="ketoList2" onclick="ketoPillsClicked('ketoList2', 'ketoListContent2')"><a href="javascript:void(0);">KetoLIST2</a></li>
-                    <li id="ketoList3" onclick="ketoPillsClicked('ketoList3', 'ketoListContent3')"><a href="javascript:void(0);">KetoLIST3</a></li>
+                    <li id="ketoList1" class="active" onclick="ketoPillsClicked('ketoList1', 'ketoListContent1')"><a href="javascript:void(0);">Bacon Avocado Salad</a></li>
+                    <li id="ketoList2" onclick="ketoPillsClicked('ketoList2', 'ketoListContent2')"><a href="javascript:void(0);">Baked Salmon</a></li>
+                    <li id="ketoList3" onclick="ketoPillsClicked('ketoList3', 'ketoListContent3')"><a href="javascript:void(0);">Scrambled Eggs</a></li>
                     <li id="ketoList4" onclick="ketoPillsClicked('ketoList4', 'ketoListContent4')"><a href="javascript:void(0);">KetoLIST4</a></li>
                     <li id="ketoList5" onclick="ketoPillsClicked('ketoList5', 'ketoListContent5')"><a href="javascript:void(0);">KetoLIST5</a></li>
                     <li id="ketoList6" onclick="ketoPillsClicked('ketoList6', 'ketoListContent6')"><a href="javascript:void(0);">KetoLIST6</a></li>
@@ -184,7 +184,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="first" class="ingredientCheckbox"><label for="first" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="first" class="ingredientCheckbox"><label for="first" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -217,7 +217,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstClassic1" class="ingredientCheckbox"><label for="firstClassic1" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstClassic1" class="ingredientCheckbox"><label for="firstClassic1" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -250,7 +250,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstClassic3" class="ingredientCheckbox"><label for="firstClassic3" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstClassic3" class="ingredientCheckbox"><label for="firstClassic3" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -283,7 +283,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstClassic4" class="ingredientCheckbox"><label for="firstClassic4" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstClassic4" class="ingredientCheckbox"><label for="firstClassic4" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -316,7 +316,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstClassic5" class="ingredientCheckbox"><label for="firstClassic5" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstClassic5" class="ingredientCheckbox"><label for="firstClassic5" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -349,7 +349,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstClassic6" class="ingredientCheckbox"><label for="firstClassic6" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstClassic6" class="ingredientCheckbox"><label for="firstClassic6" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -382,7 +382,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstClassic7" class="ingredientCheckbox"><label for="firstClassic7" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstClassic7" class="ingredientCheckbox"><label for="firstClassic7" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -415,7 +415,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstClassic8" class="ingredientCheckbox"><label for="firstClassic8" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstClassic8" class="ingredientCheckbox"><label for="firstClassic8" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -448,7 +448,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstClassic9" class="ingredientCheckbox"><label for="firstClassic9" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstClassic9" class="ingredientCheckbox"><label for="firstClassic9" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -488,7 +488,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstVegetarian1" class="ingredientCheckbox"><label for="firstVegetarian1" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstVegetarian1" class="ingredientCheckbox"><label for="firstVegetarian1" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -521,7 +521,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstVegetarian2" class="ingredientCheckbox"><label for="firstVegetarian2" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstVegetarian2" class="ingredientCheckbox"><label for="firstVegetarian2" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -554,7 +554,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstVegetarian3" class="ingredientCheckbox"><label for="firstVegetarian3" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstVegetarian3" class="ingredientCheckbox"><label for="firstVegetarian3" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -587,7 +587,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstVegetarian4" class="ingredientCheckbox"><label for="firstVegetarian4" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstVegetarian4" class="ingredientCheckbox"><label for="firstVegetarian4" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -620,7 +620,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstVegetarian5" class="ingredientCheckbox"><label for="firstVegetarian5" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstVegetarian5" class="ingredientCheckbox"><label for="firstVegetarian5" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -653,7 +653,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstVegetarian6" class="ingredientCheckbox"><label for="firstVegetarian6" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstVegetarian6" class="ingredientCheckbox"><label for="firstVegetarian6" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -686,7 +686,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstVegetarian7" class="ingredientCheckbox"><label for="firstVegetarian7" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstVegetarian7" class="ingredientCheckbox"><label for="firstVegetarian7" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -719,7 +719,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstVegetarian8" class="ingredientCheckbox"><label for="firstVegetarian8" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstVegetarian8" class="ingredientCheckbox"><label for="firstVegetarian8" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -752,7 +752,7 @@
                                 <tr>
                                     <td colspan="3">
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstVegetarian9" class="ingredientCheckbox"><label for="firstVegetarian9" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstVegetarian9" class="ingredientCheckbox"><label for="firstVegetarian9" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -773,16 +773,16 @@
             <div id="ketoListContent">
                 <div class="row displayNone" id="ketoListContent1">
                     <div class="col-md-8 borderLeft">
-                        <h2>List 1</h2>
+                        <h2>Bacon Avocado Salad</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
-                            <dd class="ddmargin">I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description<br><br><br></dd>
+                            <dd class="ddmargin">A delicious and strict low-carb salad for those who love avocados, goat cheese and nuts. Great for lunch or as a light dinner.<br><br><br></dd>
                             <ol class="">
-                                <li class="">This is Keto Content</li>
-                                <li class="">This is Keto Content</li>
-                                <li class="">This is Keto Content</li>
-                                <li class="">This is Keto Content</li>
-                                <li class="">This is Keto Content</li>
+                                <li class="">Preheat oven to 400 degrees fahrenheit (200 celsius) and place parchment paper in a baking dish.</li>
+                                <li class="">Cut the goat cheese into round half inch slices and place in the baking dish. Bake on upper rack until golden.</li>
+                                <li class="">Fry bacon in a pan until crispy</li>
+                                <li class="">Cut the avocado into pieces and put on top of the arugula lettuce. Add the fried bacon and goat cheese. Sprinkle nuts on top.</li>
+                                <li class="">Make a salad dressing with the juice from the lemon, mayo and olive oil. Salt and pepper to taste. You can also add fresh herbs.</li>
                             </ol>
                             <br>
                             <table class="table table-condensed">
@@ -792,7 +792,14 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstKeto1" class="ingredientCheckbox"><label for="firstKeto1" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="1Keto1" class="ingredientCheckbox"><label for="1Keto1" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;2 oz goat cheese</label><br>
+                                        <input type="checkbox" id="1Keto2" class="ingredientCheckbox"><label for="1Keto2" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;2 oz bacon</label><br>
+                                        <input type="checkbox" id="1Keto3" class="ingredientCheckbox"><label for="1Keto3" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;1/2 avocado</label><br>
+                                        <input type="checkbox" id="1Keto4" class="ingredientCheckbox"><label for="1Keto4" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;1 oz walnuts</label><br>
+                                        <input type="checkbox" id="1Keto5" class="ingredientCheckbox"><label for="1Keto5" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;2 oz arugula lettuce</label><br>
+                                        <input type="checkbox" id="1Keto6" class="ingredientCheckbox"><label for="1Keto6" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;1/8 lemon juice</label><br>
+                                        <input type="checkbox" id="1Keto7" class="ingredientCheckbox"><label for="1Keto7" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;1 3/4 tbsp mayonnaise</label><br>
+                                        <input type="checkbox" id="1Keto8" class="ingredientCheckbox"><label for="1Keto8" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;1 3/4 tbsp olive oil</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -806,16 +813,17 @@
                 </div>
                 <div class="row displayNone" id="ketoListContent2">
                     <div class="col-md-8 borderLeft">
-                        <h2>List 2</h2>
+                        <h2>Baked Salmon</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
                             <dd class="ddmargin">I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description<br><br><br></dd>
                             <ol class="">
-                                <li class="">This is Keto Content</li>
-                                <li class="">This is Keto Content</li>
-                                <li class="">This is Keto Content</li>
-                                <li class="">This is Keto Content</li>
-                                <li class="">This is Keto Content</li>
+                                <li class="">Preheat oven to 400 degrees fahrenheit (200 celsius)</li>
+                                <li class="">Place the salmon with the skin down in a greased baking dish, salt and pepper generously</li>
+                                <li class="">Slice the lemon thinly and place on top of the salmon. Cover with half of the butter in think slices</li>
+                                <li class="">Bake on the middle rack for about 20-30 minutes, depending on size.</li>
+                                <li class="">Heat the rest of the butter in a small sauce pan until it starts to bubble. Remove from heat and let cool a little and add some lemon juice</li>
+                                <li>Serve the fish with the lemon butter and a side dish of choice (garden salad)</li>
                             </ol>
                             <br>
                             <table class="table table-condensed">
@@ -825,7 +833,12 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstKeto2" class="ingredientCheckbox"><label for="firstKeto2" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="2Keto1" class="ingredientCheckbox"><label for="2Keto1" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;1/2 tsp olive oil</label><br>
+                                        <input type="checkbox" id="2Keto2" class="ingredientCheckbox"><label for="2Keto2" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;6-8 oz salmon</label><br>
+                                        <input type="checkbox" id="2Keto3" class="ingredientCheckbox"><label for="2Keto3" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;1/6 tsp sea salt</label><br>
+                                        <input type="checkbox" id="2Keto4" class="ingredientCheckbox"><label for="2Keto4" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;Ground black pepper</label><br>
+                                        <input type="checkbox" id="2Keto5" class="ingredientCheckbox"><label for="2Keto5" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;1 1/4 oz butter</label><br>
+                                        <input type="checkbox" id="2Keto6" class="ingredientCheckbox"><label for="2Keto5" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;1/6 lemon</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -858,7 +871,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstKeto3" class="ingredientCheckbox"><label for="firstKeto3" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstKeto3" class="ingredientCheckbox"><label for="firstKeto3" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -891,7 +904,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstKeto4" class="ingredientCheckbox"><label for="firstKeto4" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstKeto4" class="ingredientCheckbox"><label for="firstKeto4" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -924,7 +937,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstKeto5" class="ingredientCheckbox"><label for="firstKeto5" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstKeto5" class="ingredientCheckbox"><label for="firstKeto5" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -957,7 +970,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstKeto6" class="ingredientCheckbox"><label for="firstKeto6" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstKeto6" class="ingredientCheckbox"><label for="firstKeto6" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -990,7 +1003,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstKeto7" class="ingredientCheckbox"><label for="firstKeto7" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstKeto7" class="ingredientCheckbox"><label for="firstKeto7" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -1023,7 +1036,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstKeto8" class="ingredientCheckbox"><label for="firstKeto8" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstKeto8" class="ingredientCheckbox"><label for="firstKeto8" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -1056,7 +1069,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstKeto9" class="ingredientCheckbox"><label for="firstKeto9" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstKeto9" class="ingredientCheckbox"><label for="firstKeto9" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -1096,7 +1109,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstPaleo1" class="ingredientCheckbox"><label for="firstPaleo1" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstPaleo1" class="ingredientCheckbox"><label for="firstPaleo1" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -1129,7 +1142,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstPaleo2" class="ingredientCheckbox"><label for="firstPaleo2" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstPaleo2" class="ingredientCheckbox"><label for="firstPaleo2" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -1162,7 +1175,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstPaleo3" class="ingredientCheckbox"><label for="firstPaleo3" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstPaleo3" class="ingredientCheckbox"><label for="firstPaleo3" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -1195,7 +1208,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstPaleo4" class="ingredientCheckbox"><label for="firstPaleo4" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstPaleo4" class="ingredientCheckbox"><label for="firstPaleo4" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -1228,7 +1241,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstPaleo5" class="ingredientCheckbox"><label for="firstPaleo5" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstPaleo5" class="ingredientCheckbox"><label for="firstPaleo5" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -1261,7 +1274,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstPaleo6" class="ingredientCheckbox"><label for="firstPaleo6" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstPaleo6" class="ingredientCheckbox"><label for="firstPaleo6" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -1294,7 +1307,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstPaleo7" class="ingredientCheckbox"><label for="firstPaleo7" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstPaleo7" class="ingredientCheckbox"><label for="firstPaleo7" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -1327,7 +1340,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstPaleo8" class="ingredientCheckbox"><label for="firstPaleo8" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstPaleo8" class="ingredientCheckbox"><label for="firstPaleo8" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -1360,7 +1373,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstPaleo9" class="ingredientCheckbox"><label for="firstPaleo9" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstPaleo9" class="ingredientCheckbox"><label for="firstPaleo9" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -1400,7 +1413,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstProtein1" class="ingredientCheckbox"><label for="firstProtein1" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstProtein1" class="ingredientCheckbox"><label for="firstProtein1" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -1433,7 +1446,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstProtein2" class="ingredientCheckbox"><label for="firstProtein2" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstProtein2" class="ingredientCheckbox"><label for="firstProtein2" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -1466,7 +1479,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstProtein3" class="ingredientCheckbox"><label for="firstProtein3" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstProtein3" class="ingredientCheckbox"><label for="firstProtein3" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -1499,7 +1512,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstProtein4" class="ingredientCheckbox"><label for="firstProtein4" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstProtein4" class="ingredientCheckbox"><label for="firstProtein4" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -1532,7 +1545,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstProtein5" class="ingredientCheckbox"><label for="firstProtein5" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstProtein5" class="ingredientCheckbox"><label for="firstProtein5" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -1565,7 +1578,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstProtein6" class="ingredientCheckbox"><label for="firstProtein6" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstProtein6" class="ingredientCheckbox"><label for="firstProtein6" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -1598,7 +1611,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstProtein7" class="ingredientCheckbox"><label for="firstProtein7" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstProtein7" class="ingredientCheckbox"><label for="firstProtein7" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -1631,7 +1644,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstProtein8" class="ingredientCheckbox"><label for="firstProtein8" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstProtein8" class="ingredientCheckbox"><label for="firstProtein8" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -1664,7 +1677,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstProtein9" class="ingredientCheckbox"><label for="firstProtein9" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstProtein9" class="ingredientCheckbox"><label for="firstProtein9" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -1704,7 +1717,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstCultural1" class="ingredientCheckbox"><label for="firstCultural1" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstCultural1" class="ingredientCheckbox"><label for="firstCultural1" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -1737,7 +1750,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstCultural2" class="ingredientCheckbox"><label for="firstCultural2" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstCultural2" class="ingredientCheckbox"><label for="firstCultural2" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -1770,7 +1783,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstCultural3" class="ingredientCheckbox"><label for="firstCultural3" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstCultural3" class="ingredientCheckbox"><label for="firstCultural3" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -1803,7 +1816,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstCultural4" class="ingredientCheckbox"><label for="firstCultural4" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstCultural4" class="ingredientCheckbox"><label for="firstCultural4" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -1836,7 +1849,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstCultural5" class="ingredientCheckbox"><label for="firstCultural5" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstCultural5" class="ingredientCheckbox"><label for="firstCultural5" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -1869,7 +1882,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstCultural6" class="ingredientCheckbox"><label for="firstCultural6" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstCultural6" class="ingredientCheckbox"><label for="firstCultural6" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -1902,7 +1915,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstCultural7" class="ingredientCheckbox"><label for="firstCultural7" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstCultural7" class="ingredientCheckbox"><label for="firstCultural7" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -1935,7 +1948,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstCultural8" class="ingredientCheckbox"><label for="firstCultural8" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstCultural8" class="ingredientCheckbox"><label for="firstCultural8" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -1968,7 +1981,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstCultural9" class="ingredientCheckbox"><label for="firstCultural9" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstCultural9" class="ingredientCheckbox"><label for="firstCultural9" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -2008,7 +2021,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstUser1" class="ingredientCheckbox"><label for="firstUser1" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
+                                        <input type="checkbox" id="firstUser1" class="ingredientCheckbox"><label for="firstUser1" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
@@ -2029,7 +2042,7 @@
                                 <input class="recipetextarea form-control inputSteps" type="text" placeholder="Enter the simple step">
                                 <input class="recipetextarea form-control inputSteps" type="text" placeholder="Enter the simple step">
                                 <input class="recipetextarea form-control inputSteps" type="text" placeholder="Enter the simple step">
-                                <button type="button" id="addStepId" class="btn btn-primary" data-toggle="tooltip"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;&nbsp;Add Step</button>
+                                <button type="button" id="addStepId" class="btn btn-primary" data-toggle="tooltip"><i class="glyphicon glyphicon-plus-sign-sign"></i>&nbsp;&nbsp;Add Step</button>
                                 <button type="button" id="removeStepId" class="btn btn-danger remove"><i class="glyphicon glyphicon-remove-sign"></i>&nbsp;&nbsp;Delete Step</button>
                             <br><br>
                             <table class="table table-condensed">
@@ -2041,7 +2054,7 @@
                                         <input class="recipetextarea form-control inputIngredients" type="text" placeholder="Enter the ingredient">
                                         <input class="recipetextarea form-control inputIngredients" type="text" placeholder="Enter the ingredient">
                                         <input class="recipetextarea form-control inputIngredients" type="text" placeholder="Enter the ingredient">
-                                        <button type="button" id="addIngredientId" class="btn btn-primary" data-toggle="tooltip"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;&nbsp;Add Ingredient</button>
+                                        <button type="button" id="addIngredientId" class="btn btn-primary" data-toggle="tooltip"><i class="glyphicon glyphicon-plus-sign-sign"></i>&nbsp;&nbsp;Add Ingredient</button>
                                         <button type="button" id="removeIngredientId" class="btn btn-danger remove"><i class="glyphicon glyphicon-remove-sign"></i>&nbsp;&nbsp;Delete Ingredient</button>
                                     </td>
                                 </tr>

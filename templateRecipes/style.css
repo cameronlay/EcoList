@@ -130,15 +130,24 @@ ul.nav-pills {
     display: none;
 }
 
-.glyphicon-minus {
-  display: none;
+.glyphicon-plus-sign {
+    color: #77dd77;
 }
 
-.ingredientCheckbox:checked + .ingredientLabel .glyphicon-minus {
+.glyphicon-minus-sign {
+  display: none;
+  color: #ff6961;
+}
+
+.btn-primary, .btn-primary:hover {
+    background-color: #77dd77;
+}
+
+.ingredientCheckbox:checked + .ingredientLabel .glyphicon-minus-sign {
   display: inline;
 }
 
-.ingredientCheckbox:checked + .ingredientLabel .glyphicon-plus {
+.ingredientCheckbox:checked + .ingredientLabel .glyphicon-plus-sign {
   display: none;
 }
 
