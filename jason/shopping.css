@@ -50,6 +50,11 @@ thead tr th {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 20px;
 }
+
+#btnAdd:hover {
+  background-color: #77cc77;
+}
+
 #btnRemove {
   float: right;
   background-color: #ff6961;
@@ -64,6 +69,14 @@ thead tr th {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 20px;
   float:right;
+}
+
+#btnRemove:hover {
+  background-color: #ff5561;
+}
+
+#btnClear:hover {
+  background-color: #ff5561;
 }
 
 #btnCart {
