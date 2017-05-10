@@ -51,9 +51,16 @@ thead tr th {
   font-size: 20px;
 }
 
+<<<<<<< HEAD
 #btnAdd:hover{
   background-color: #77cc77;
 }
+=======
+#btnAdd:hover {
+  background-color: #77cc77;
+}
+
+>>>>>>> Jason-feature
 #btnRemove {
   float: right;
   background-color: #ff6961;
@@ -70,10 +77,20 @@ thead tr th {
   float:right;
 }
 
+<<<<<<< HEAD
 #btnClear:hover {
   background-color:red;
 }
 
+=======
+#btnRemove:hover {
+  background-color: #ff5561;
+}
+
+#btnClear:hover {
+  background-color: #ff5561;
+}
+>>>>>>> Jason-feature
 
 #btnCart {
   float: right;
