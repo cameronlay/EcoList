@@ -7,12 +7,14 @@ var a;
 $(function () {
     //button adds new rows to table 1
     $("#btnAdd").bind("click", function () {
-        var div = $("<tr />");
+        var div = $("<tr>");
         div.fadeIn("slow");
         div.html(GetDynamicTextBox(""));
         $("#TextBoxContainer").prepend(div);
         $('#btnRemove').css('visibility', 'visible');
     });
+
+    
     //removes individual rows
     $("body").on("click", ".remove", function () {
         $(this).closest("tr").fadeTo(280,0.4, function(){
@@ -20,11 +22,10 @@ $(function () {
         })
     });
 
-
-    //shopping cart button that removes row and adds to new one 
+    //shopping cart button that removes row and adds to new list
     $(document).ready(
     function(){
-        $("body").on("click",".list", function (){
+      $("body").on("click",".list", function (){
                 var id = $(this).attr('id');
                 a = parseInt(id);
                 var toAdd = $("#" + a + "item").val();
@@ -32,26 +33,22 @@ $(function () {
                 var icon = document.createElement("span");
                 icon.className ="glyphicon glyphicon-ok";
                  $('.list-group').append('<li class="list-group-item list-group-item-success">' + toAdd2 + " " + toAdd + '</li>');
-                 $('#cartTitle').css('visibility', 'visible');
                  $('#btnClear').css('visibility', 'visible');
                  $(this).closest("tr").remove();
   
             });
       
+    //cart title transitions only once 
+    $("body").one("click",".list", function(){
+                $('#cartTitle').css('visibility', 'visible').hide().fadeIn("slow");
+        })
+      
     
       //double click to remove list item
-      $(document).on('dblclick','li', function(){
+    $(document).on('dblclick','li', function(){
         $(this).toggleClass('strike').fadeOut("fast");    
+          });
       });
-      
-      $('input').focus(function() {
-        $(this).val('');
-      });
-      
-      $('ul').sortable();  
-      
-    }
-);
 
     //removes all rows 
     $("#btnRemove").on("click", function () {
