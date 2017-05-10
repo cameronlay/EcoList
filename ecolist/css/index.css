@@ -19,6 +19,12 @@
             pointer-events: none;
             user-select:none;
         }
+		.logo {
+            margin:auto;
+            padding:0 15%;
+            pointer-events: none;
+            user-select:none;
+		}
         
         .chevronHolder {
             padding-top:9px;

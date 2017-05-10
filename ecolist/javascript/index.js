@@ -6,7 +6,7 @@
             topElement1 = null;
             topElement2 = null;
             titleElement = null;
-            let offsetAmount = 30; //percentage x/100
+            let offsetAmount = 15; //percentage x/100
             let topheight = null;
             let passedFlag = false;
             let passedFlag2 = false;

@@ -13,7 +13,7 @@
         <div id="GUI">
             <div class="miniNav">
                 <div class="miniNav-box">
-                    <h1>EcoList</h1>
+                    <img class="logo" src="/images/Logo3.jpg"></img>
                 </div>
                 <div id="Dropdown" class="chevronHolder dropdown">
                     <div class="chevron down"></div>
@@ -25,7 +25,7 @@
         <div class="wrapper">
             <div id="Top">
                 <div class="box" draggable="false">
-                    <h1 id="Title">EcoList</h1>
+                    <img id="Title" class="logo" src="/images/Logo3.jpg"></img>
                     <table>
                         <tr>
                             <td>
