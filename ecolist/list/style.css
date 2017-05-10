@@ -94,15 +94,12 @@ thead tr th {
   overflow: hidden;
 }
 
-@media only screen and (min-width:500px){
+@media only screen and (min-width:640px){
   .container{
 
     width:50%;
   }
-
 }
-
-
 
 .smallTableHead {
   width: 70px;
@@ -117,21 +114,25 @@ thead tr th {
 }
 #btnAdd {
   background-color: #77dd77;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
 }
 #btnRemove {
   float: right;
   background-color: #ff6961;
-<<<<<<< HEAD
-=======
   visibility: hidden;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
 }
 
 #btnClear {
    float: right;
   background-color: #ff6961;
   visibility: hidden;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
 }
-}
+
 
 .strike {
   text-decoration:line-through;
@@ -147,10 +148,31 @@ thead tr th {
   margin:0 auto;
 }
 
+.list-group li:hover {
+  background-color: #facdcf;
+  text-decoration-color: #ff6961;
+}
 #cartTitle{
   visibility: hidden;
->>>>>>> Jason-feature
 }
+
+.text-center {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 50px;
+}
+
+.table th{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+}
+
+.list-group li {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+}
+
+
+
 
 /*Stacking tables
 .tableWrapper {

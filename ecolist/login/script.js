@@ -105,11 +105,24 @@ function formValidate() {
 }
 
 function SignUpShow() {
-    if ($("SignupRight").style.display = 'none') {
         $("SignupRight").style.display = 'block'
         $("LoginLeft").style.display = 'none'
-    } else {
-        $("SignupRight").style.display = 'hidden'
+
+}
+
+function LoginShow() {
+        $("SignupRight").style.display = 'none'
         $("LoginLeft").style.display = 'block'
+}
+
+window.onresize=function() {
+
+    var w = window.innerWidth;
+    if (w > 991.5) {
+        $("SignupRight").style.display = 'block';
+        $("LoginLeft").style.display = 'block';
+    }
+    if (w < 991.5) {
+        $("SignupRight").style.display = 'none';
     }
 }
