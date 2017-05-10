@@ -139,8 +139,12 @@ ul.nav-pills {
   color: #ff6961;
 }
 
-.btn-primary, .btn-primary:hover {
+.btn-primary {
     background-color: #77dd77;
+}
+
+.btn-primary:hover {
+    background-color: #77cc77;
 }
 
 .ingredientCheckbox:checked + .ingredientLabel .glyphicon-minus-sign {
