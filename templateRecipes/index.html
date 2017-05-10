@@ -59,7 +59,7 @@
                 <li id="user" onclick="TabClicked('user', 'userList1', 'userList', 'userListContent', 'userListContent1')"><a href="javascript:void(0);">Create your Own</a></li>
             </ul>
             <!--Classic List-->
-            <div class="col-md-3 borderRight displayNone displayBlock" id="classicList">
+            <div class="col-md-3 displayNone displayBlock" id="classicList">
                 <ul class="nav nav-pills nav-stacked">
                     <li id="classicList1" class="active" onclick="classicPillsClicked('classicList1', 'classicListContent1')"><a href="javascript:void(0);">ClassicLIST1</a></li>
                     <li id="classicList2" onclick="classicPillsClicked('classicList2', 'classicListContent2')"><a href="javascript:void(0);">ClassicLIST2</a></li>
@@ -73,7 +73,7 @@
                 </ul>
             </div>
             <!--Vegetarian List-->
-            <div class="col-md-3 borderRight displayNone" id="vegetarianList">
+            <div class="col-md-3 displayNone" id="vegetarianList">
                 <ul class="nav nav-pills nav-stacked">
                     <li id="vegetarianList1" class="active" onclick="vegetarianPillsClicked('vegetarianList1', 'vegetarianListContent1')"><a href="javascript:void(0);">VegetarianLIST1</a></li>
                     <li id="vegetarianList2" onclick="vegetarianPillsClicked('vegetarianList2', 'vegetarianListContent2')"><a href="javascript:void(0);">VegetarianLIST2</a></li>
@@ -87,7 +87,7 @@
                 </ul>
             </div>
             <!--Keto List-->
-            <div class="col-md-3 borderRight displayNone" id="ketoList">
+            <div class="col-md-3 displayNone" id="ketoList">
                 <ul class="nav nav-pills nav-stacked">
                     <li id="ketoList1" class="active" onclick="ketoPillsClicked('ketoList1', 'ketoListContent1')"><a href="javascript:void(0);">KetoLIST1</a></li>
                     <li id="ketoList2" onclick="ketoPillsClicked('ketoList2', 'ketoListContent2')"><a href="javascript:void(0);">KetoLIST2</a></li>
@@ -101,7 +101,7 @@
                 </ul>
             </div>
             <!--Paleo List-->
-            <div class="col-md-3 borderRight displayNone" id="paleoList">
+            <div class="col-md-3 displayNone" id="paleoList">
                 <ul class="nav nav-pills nav-stacked">
                     <li id="paleoList1" class="active" onclick="paleoPillsClicked('paleoList1', 'paleoListContent1')"><a href="javascript:void(0);">paleoLIST1</a></li>
                     <li id="paleoList2" onclick="paleoPillsClicked('paleoList2', 'paleoListContent2')"><a href="javascript:void(0);">paleoLIST2</a></li>
@@ -115,7 +115,7 @@
                 </ul>
             </div>
             <!--Protein Rich List-->
-            <div class="col-md-3 borderRight displayNone" id="proteinList">
+            <div class="col-md-3 displayNone" id="proteinList">
                 <ul class="nav nav-pills nav-stacked">
                     <li id="proteinList1" class="active" onclick="proteinPillsClicked('proteinList1', 'proteinListContent1')"><a href="javascript:void(0);">proteinLIST1</a></li>
                     <li id="proteinList2" onclick="proteinPillsClicked('proteinList2', 'proteinListContent2')"><a href="javascript:void(0);">proteinLIST2</a></li>
@@ -129,7 +129,7 @@
                 </ul>
             </div>
 		    <!-- Cultural List -->
-		    <div class="col-md-3 borderRight displayNone" id="culturalList">
+		    <div class="col-md-3 displayNone" id="culturalList">
                 <ul class="nav nav-pills nav-stacked">
                     <li id="culturalList1" class="active" onclick="culturalPillsClicked('culturalList1', 'culturalListContent1')"><a href="javascript:void(0);">culturalLIST1</a></li>
                     <li id="culturalList2" onclick="culturalPillsClicked('culturalList2', 'culturalListContent2')"><a href="javascript:void(0);">culturalLIST2</a></li>
@@ -143,7 +143,7 @@
                 </ul>
             </div>
             <!-- user List -->
-            <div class="col-md-3 borderRight displayNone" id="userList">
+            <div class="col-md-3 displayNone" id="userList">
                 <ul class="nav nav-pills nav-stacked">
                     <li id="userList1" class="active" onclick="userPillsClicked('userList1', 'userListContent1')"><a href="javascript:void(0);">userLIST1</a></li>
                     <li id="userList9" onclick="userPillsClicked('userList9', 'userListContentCreate')"><a href="javascript:void(0);">Create</a></li>
@@ -156,7 +156,7 @@
             -->
             <div id="classicListContent">
                 <div class="row displayNone displayBlock" id="classicListContent1">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft borderLeft">
                         <h2>List 1</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -177,7 +177,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="first" class="ingredientCheckbox"><label for="first" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -189,7 +189,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="classicListContent2">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 2</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -210,7 +210,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstClassic1" class="ingredientCheckbox"><label for="firstClassic1" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -222,7 +222,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="classicListContent3">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 3</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -243,7 +243,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstClassic3" class="ingredientCheckbox"><label for="firstClassic3" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -255,7 +255,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="classicListContent4">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 4</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -276,7 +276,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstClassic4" class="ingredientCheckbox"><label for="firstClassic4" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -288,7 +288,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="classicListContent5">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 5</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -309,7 +309,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstClassic5" class="ingredientCheckbox"><label for="firstClassic5" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -321,7 +321,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="classicListContent6">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 6</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -342,7 +342,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstClassic6" class="ingredientCheckbox"><label for="firstClassic6" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -354,7 +354,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="classicListContent7">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 7</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -375,7 +375,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstClassic7" class="ingredientCheckbox"><label for="firstClassic7" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -387,7 +387,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="classicListContent8">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 8</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -408,7 +408,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstClassic8" class="ingredientCheckbox"><label for="firstClassic8" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -420,7 +420,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="classicListContent9">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 9</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -441,7 +441,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstClassic9" class="ingredientCheckbox"><label for="firstClassic9" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -460,7 +460,7 @@
             -->
             <div id="vegetarianListContent">
                 <div class="row displayNone" id="vegetarianListContent1">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 1</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -481,7 +481,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstVegetarian1" class="ingredientCheckbox"><label for="firstVegetarian1" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -493,7 +493,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="vegetarianListContent2">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 2</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -514,7 +514,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstVegetarian2" class="ingredientCheckbox"><label for="firstVegetarian2" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -526,7 +526,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="vegetarianListContent3">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 3</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -547,7 +547,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstVegetarian3" class="ingredientCheckbox"><label for="firstVegetarian3" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -559,7 +559,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="vegetarianListContent4">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 4</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -580,7 +580,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstVegetarian4" class="ingredientCheckbox"><label for="firstVegetarian4" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -592,7 +592,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="vegetarianListContent5">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 5</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -613,7 +613,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstVegetarian5" class="ingredientCheckbox"><label for="firstVegetarian5" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -625,7 +625,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="vegetarianListContent6">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 6</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -646,7 +646,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstVegetarian6" class="ingredientCheckbox"><label for="firstVegetarian6" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -658,7 +658,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="vegetarianListContent7">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 7</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -679,7 +679,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstVegetarian7" class="ingredientCheckbox"><label for="firstVegetarian7" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -691,7 +691,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="vegetarianListContent8">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 8</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -712,7 +712,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstVegetarian8" class="ingredientCheckbox"><label for="firstVegetarian8" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -724,7 +724,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="vegetarianListContent9">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 9</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -745,7 +745,7 @@
                                     <td colspan="3">
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstVegetarian9" class="ingredientCheckbox"><label for="firstVegetarian9" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -764,7 +764,7 @@
             -->
             <div id="ketoListContent">
                 <div class="row displayNone" id="ketoListContent1">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 1</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -785,7 +785,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstKeto1" class="ingredientCheckbox"><label for="firstKeto1" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -797,7 +797,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="ketoListContent2">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 2</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -818,7 +818,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstKeto2" class="ingredientCheckbox"><label for="firstKeto2" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -830,7 +830,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="ketoListContent3">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 3</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -851,7 +851,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstKeto3" class="ingredientCheckbox"><label for="firstKeto3" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -863,7 +863,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="ketoListContent4">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 4</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -884,7 +884,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstKeto4" class="ingredientCheckbox"><label for="firstKeto4" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -896,7 +896,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="ketoListContent5">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 5</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -917,7 +917,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstKeto5" class="ingredientCheckbox"><label for="firstKeto5" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -929,7 +929,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="ketoListContent6">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 6</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -950,7 +950,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstKeto6" class="ingredientCheckbox"><label for="firstKeto6" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -962,7 +962,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="ketoListContent7">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 7</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -983,7 +983,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstKeto7" class="ingredientCheckbox"><label for="firstKeto7" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -995,7 +995,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="ketoListContent8">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 8</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -1016,7 +1016,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstKeto8" class="ingredientCheckbox"><label for="firstKeto8" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -1028,7 +1028,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="ketoListContent9">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 9</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -1049,7 +1049,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstKeto9" class="ingredientCheckbox"><label for="firstKeto9" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -1068,7 +1068,7 @@
             -->
             <div id="paleoListContent">
                 <div class="row displayNone" id="paleoListContent1">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 1</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -1089,7 +1089,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstPaleo1" class="ingredientCheckbox"><label for="firstPaleo1" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -1101,7 +1101,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="paleoListContent2">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 2</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -1122,7 +1122,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstPaleo2" class="ingredientCheckbox"><label for="firstPaleo2" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -1134,7 +1134,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="paleoListContent3">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 3</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -1155,7 +1155,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstPaleo3" class="ingredientCheckbox"><label for="firstPaleo3" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -1167,7 +1167,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="paleoListContent4">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 1</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -1188,7 +1188,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstPaleo4" class="ingredientCheckbox"><label for="firstPaleo4" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -1200,7 +1200,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="paleoListContent5">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 5</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -1221,7 +1221,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstPaleo5" class="ingredientCheckbox"><label for="firstPaleo5" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -1233,7 +1233,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="paleoListContent6">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 6</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -1254,7 +1254,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstPaleo6" class="ingredientCheckbox"><label for="firstPaleo6" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -1266,7 +1266,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="paleoListContent7">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 7</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -1287,7 +1287,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstPaleo7" class="ingredientCheckbox"><label for="firstPaleo7" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -1299,7 +1299,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="paleoListContent8">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 8</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -1320,7 +1320,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstPaleo8" class="ingredientCheckbox"><label for="firstPaleo8" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -1332,7 +1332,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="paleoListContent9">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 9</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -1353,7 +1353,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstPaleo9" class="ingredientCheckbox"><label for="firstPaleo9" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -1372,7 +1372,7 @@
             -->
             <div id="proteinListContent">
                 <div class="row displayNone" id="proteinListContent1">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 1</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -1393,7 +1393,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstProtein1" class="ingredientCheckbox"><label for="firstProtein1" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -1405,7 +1405,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="proteinListContent2">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 2</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -1426,7 +1426,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstProtein2" class="ingredientCheckbox"><label for="firstProtein2" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -1438,7 +1438,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="proteinListContent3">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 3</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -1459,7 +1459,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstProtein3" class="ingredientCheckbox"><label for="firstProtein3" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -1471,7 +1471,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="proteinListContent4">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 4</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -1492,7 +1492,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstProtein4" class="ingredientCheckbox"><label for="firstProtein4" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -1504,7 +1504,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="proteinListContent5">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 5</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -1525,7 +1525,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstProtein5" class="ingredientCheckbox"><label for="firstProtein5" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -1537,7 +1537,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="proteinListContent6">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 6</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -1558,7 +1558,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstProtein6" class="ingredientCheckbox"><label for="firstProtein6" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -1570,7 +1570,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="proteinListContent7">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 7</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -1591,7 +1591,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstProtein7" class="ingredientCheckbox"><label for="firstProtein7" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -1603,7 +1603,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="proteinListContent8">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 8</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -1624,7 +1624,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstProtein8" class="ingredientCheckbox"><label for="firstProtein8" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -1636,7 +1636,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="proteinListContent9">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 9</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -1657,7 +1657,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstProtein9" class="ingredientCheckbox"><label for="firstProtein9" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -1676,7 +1676,7 @@
             -->
     		<div id="culturalListContent">
                 <div class="row displayNone" id="culturalListContent1">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 1</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -1697,7 +1697,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstCultural1" class="ingredientCheckbox"><label for="firstCultural1" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -1709,7 +1709,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="culturalListContent2">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 2</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -1730,7 +1730,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstCultural2" class="ingredientCheckbox"><label for="firstCultural2" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -1742,7 +1742,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="culturalListContent3">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 3</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -1763,7 +1763,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstCultural3" class="ingredientCheckbox"><label for="firstCultural3" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -1775,7 +1775,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="culturalListContent4">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 4</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -1796,7 +1796,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstCultural4" class="ingredientCheckbox"><label for="firstCultural4" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -1808,7 +1808,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="culturalListContent5">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 5</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -1829,7 +1829,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstCultural5" class="ingredientCheckbox"><label for="firstCultural5" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -1841,7 +1841,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="culturalListContent6">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 6</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -1862,7 +1862,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstCultural6" class="ingredientCheckbox"><label for="firstCultural6" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -1874,7 +1874,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="culturalListContent7">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 7</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -1895,7 +1895,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstCultural7" class="ingredientCheckbox"><label for="firstCultural7" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -1907,7 +1907,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="culturalListContent8">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 8</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -1928,7 +1928,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstCultural8" class="ingredientCheckbox"><label for="firstCultural8" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -1940,7 +1940,7 @@
                     </div>
                 </div>
                 <div class="row displayNone" id="culturalListContent9">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 9</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -1961,7 +1961,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstCultural9" class="ingredientCheckbox"><label for="firstCultural9" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -1980,7 +1980,7 @@
             -->
             <div id="userListContent">
                 <div class="row displayNone" id="userListContent1">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2>List 1</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
@@ -2001,7 +2001,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstUser1" class="ingredientCheckbox"><label for="firstUser1" class="ingredientLabel"><span class="glyphicon glyphicon-plus"></span><span class="glyphicon glyphicon-minus"></span>ingredient1</label><br>
-                                        <input type="submit" value="Save">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                                         </form>
                                     </td>
                                 </tr>
@@ -2014,7 +2014,7 @@
                 </div>
                 <div class="row displayNone" id="userListContentCreate">
                     <form action="" method="post">
-                    <div class="col-md-8">
+                    <div class="col-md-8 borderLeft">
                         <h2><input type="text" class="form-control" placeholder="Recipe Name"></h2>
                         <div class="col-md-12">
                             <textarea class="recipetextarea form-control" placeholder="Short Recipe Description" rows="8"></textarea>
@@ -2023,7 +2023,7 @@
                                 <input class="recipetextarea form-control inputSteps" type="text" placeholder="Enter the simple step">
                                 <button type="button" id="addStepId" class="btn btn-primary" data-toggle="tooltip"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;&nbsp;Add Step</button>
                                 <button type="button" id="removeStepId" class="btn btn-danger remove"><i class="glyphicon glyphicon-remove-sign"></i>&nbsp;&nbsp;Delete Step</button>
-                            <br>
+                            <br><br>
                             <table class="table table-condensed">
                                 <tr>
                                     <th colspan="3" class="centered">Ingredients</th>

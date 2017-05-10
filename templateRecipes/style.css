@@ -47,8 +47,8 @@ ul.nav-pills {
  * make a 1px black border on the right
  * @Edmund
  */
-.borderRight {
-    border-right: 1px solid #000000;
+.borderLeft {
+    border-left: 1px solid #000000;
 }
 
 /**
@@ -181,6 +181,15 @@ ul.nav-pills {
 
     [class*="col-"] {
         width: 100%;
+    }
+
+    .active {
+        pointer-events: auto;
+        cursor: wait;
+    }
+
+    .borderLeft {
+        border: none;
     }
 
 }

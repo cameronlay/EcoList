@@ -314,7 +314,30 @@ function widthLessThan768() {
          * 2. if click again, disappeared.
          */
         classicPillsClicked = function(id, content) {
-            
+            var x = document.getElementById(id);
+            var y = document.getElementById(content);
+
+            if (x.classList.contains('active')) {
+                x.classList.remove('active');
+                y.classList.remove('displayBlock');
+            } else {
+
+                var classicList = document.getElementById('classicList').getElementsByTagName('li');
+                for (var i = 0; i < classicList.length; i++) {
+                    classicList[i].classList.remove('active');
+                }
+
+                var classicListContent = document.getElementById('classicListContent').getElementsByClassName('row');
+                for (var i = 0; i < classicListContent.length; i++) {
+                    classicListContent[i].classList.remove('displayBlock');
+                }
+                //========================
+                //bring the lists right after the tab!!
+                //========================
+                x.classList.add('active');
+                y.classList.add('displayBlock');
+                x.after(y);
+            }
         }
     
         vegetarianPillsClicked = function(id, content) {
@@ -352,11 +375,6 @@ function widthLessThan768() {
             var listblock = document.getElementById(list);
             var listcontent = document.getElementById(content);
             var listcontentblock = document.getElementById(contentBlock);
-
-            var navTabs = document.getElementById('navTabs').getElementsByTagName('li');
-            for (var i = 0; i < navTabs.length; i++) {
-                navTabs[i].classList.remove("active");
-            }
     
             document.getElementById("classicList").classList.remove("displayBlock");
             document.getElementById("vegetarianList").classList.remove("displayBlock");
@@ -458,14 +476,20 @@ function widthLessThan768() {
             }
 
             if (tab.classList.contains('active')) {
-                
+                tab.classList.remove('active');
+                listblock.classList.remove('displayBlock');
             } else {
+
+                var navTabs = document.getElementById('navTabs').getElementsByTagName('li');
+                for (var i = 0; i < navTabs.length; i++) {
+                    navTabs[i].classList.remove("active");
+                }
                 //========================
                 //bring the lists right after the tab!!
                 //========================
                 tab.classList.add('active');
                 listblock.classList.add('displayBlock');
-                tab.appendChild(listblock);
+                tab.after(listblock);
             }
 
 
