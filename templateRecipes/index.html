@@ -2015,15 +2015,14 @@
                 <div class="row displayNone" id="userListContentCreate">
                     <form action="" method="post">
                     <div class="col-md-8">
-                        <h2><input type="text" placeholder="Recipe Name"></h2>
-                        <div class="col-md-6">
-                            <dd class="ddmargin"><textarea class="recipetextarea" placeholder="Short Recipe Description" rows="8"></textarea></dd>
-                            <ol class="">
-                                <li class=""><input class="recipetextarea" type="text" placeholder="Enter the simple step"></li>
-                                <li class=""><input class="recipetextarea" type="text" placeholder="Enter the simple step"></li>
-                                <li class=""><input class="recipetextarea" type="text" placeholder="Enter the simple step"></li>
-                                <button>Add</button>
-                            </ol>
+                        <h2><input type="text" class="form-control" placeholder="Recipe Name"></h2>
+                        <div class="col-md-12">
+                            <textarea class="recipetextarea form-control" placeholder="Short Recipe Description" rows="8"></textarea>
+                                <input class="recipetextarea form-control inputSteps" type="text" placeholder="Enter the simple step">
+                                <input class="recipetextarea form-control inputSteps" type="text" placeholder="Enter the simple step">
+                                <input class="recipetextarea form-control inputSteps" type="text" placeholder="Enter the simple step">
+                                <button type="button" id="addStepId" class="btn btn-primary" data-toggle="tooltip"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;&nbsp;Add Step</button>
+                                <button type="button" id="removeStepId" class="btn btn-danger remove"><i class="glyphicon glyphicon-remove-sign"></i>&nbsp;&nbsp;Delete Step</button>
                             <br>
                             <table class="table table-condensed">
                                 <tr>
@@ -2031,13 +2030,15 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input type="submit" value="Save">
+                                        <input class="recipetextarea form-control inputIngredients" type="text" placeholder="Enter the ingredient">
+                                        <input class="recipetextarea form-control inputIngredients" type="text" placeholder="Enter the ingredient">
+                                        <input class="recipetextarea form-control inputIngredients" type="text" placeholder="Enter the ingredient">
+                                        <button type="button" id="addIngredientId" class="btn btn-primary" data-toggle="tooltip"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;&nbsp;Add Ingredient</button>
+                                        <button type="button" id="removeIngredientId" class="btn btn-danger remove"><i class="glyphicon glyphicon-remove-sign"></i>&nbsp;&nbsp;Delete Ingredient</button>
                                     </td>
                                 </tr>
                             </table>
-                        </div>
-                        <div class="col-md-6">
-                            <img class="recipeImage" src="haha.jpg" alt="List1 Image">
+                                        <input type="submit" class="btn btn-primary" value="Save">
                         </div>
                     </div>
                     </form>
