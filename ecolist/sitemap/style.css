@@ -16,3 +16,11 @@ ul li {
 	list-style: none;
 	list-style-image: none;
 }
+
+#GUI {
+	height:100%;
+	width:100%;
+	position:fixed;
+	pointer-events:none;
+	z-index:3;
+}

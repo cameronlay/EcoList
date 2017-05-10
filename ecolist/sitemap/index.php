@@ -7,14 +7,15 @@
         <meta name="author" content="Cameron Lay">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/css/Burgers.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="/javascript/hamburger.js"></script>
 		<script src="/javascript/functionHiding.js" id="SelfDestruct"></script>
     </head>
-	<body onload="setHeight(true);setBurger(true);hide_function()">
+	<body onload="setBurger(true);hide_function()">
 	<div id="GUI">
-		<?php include('burgerMenuGUI.html');?>
+		<?php include('../burgerMenuGUI.html');?>
 	</div>
 		<div class="container">
 		<div class="row">
