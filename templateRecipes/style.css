@@ -130,24 +130,7 @@ ul.nav-pills {
     display: none;
 }
 
-.glyphicon {
-  color: white;
-  line-height: 16px;
-  border-radius: 4px;
-}
-
-.glyphicon-plus {
-  padding-top: 1px;
-  padding-right: 2px;
-  padding-left: 2px;
-  background-color: #3AC5C9;
-}
-
 .glyphicon-minus {
-  padding-top: 1px;
-  padding-right: 2px;
-  padding-left: 2px;
-  background-color: #E85764;
   display: none;
 }
 

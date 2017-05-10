@@ -322,15 +322,55 @@ function widthLessThan768() {
                 y.classList.remove('displayBlock');
             } else {
 
-                var classicList = document.getElementById('classicList').getElementsByTagName('li');
+                var classicList = document.getElementById('classicList').querySelectorAll('li');
                 for (var i = 0; i < classicList.length; i++) {
                     classicList[i].classList.remove('active');
                 }
 
-                var classicListContent = document.getElementById('classicListContent').getElementsByClassName('row');
-                for (var i = 0; i < classicListContent.length; i++) {
-                    classicListContent[i].classList.remove('displayBlock');
+                document.getElementById('classicListContent1').classList.remove('displayBlock');
+                document.getElementById('classicListContent2').classList.remove('displayBlock');
+                document.getElementById('classicListContent3').classList.remove('displayBlock');
+                document.getElementById('classicListContent4').classList.remove('displayBlock');
+                document.getElementById('classicListContent5').classList.remove('displayBlock');
+                document.getElementById('classicListContent6').classList.remove('displayBlock');
+                document.getElementById('classicListContent7').classList.remove('displayBlock');
+                document.getElementById('classicListContent8').classList.remove('displayBlock');
+                document.getElementById('classicListContent9').classList.remove('displayBlock');
+
+                //========================
+                //bring the lists right after the tab!!
+                //========================
+                x.classList.add('active');
+                y.classList.add('displayBlock');
+                x.after(y);
+            }
+
+        }
+    
+        vegetarianPillsClicked = function(id, content) {
+            var x = document.getElementById(id);
+            var y = document.getElementById(content);
+
+            if (x.classList.contains('active')) {
+                x.classList.remove('active');
+                y.classList.remove('displayBlock');
+            } else {
+
+                var vegetarianList = document.getElementById('vegetarianList').querySelectorAll('li');
+                for (var i = 0; i < vegetarianList.length; i++) {
+                    vegetarianList[i].classList.remove('active');
                 }
+
+                document.getElementById('vegetarianListContent1').classList.remove('displayBlock');
+                document.getElementById('vegetarianListContent2').classList.remove('displayBlock');
+                document.getElementById('vegetarianListContent3').classList.remove('displayBlock');
+                document.getElementById('vegetarianListContent4').classList.remove('displayBlock');
+                document.getElementById('vegetarianListContent5').classList.remove('displayBlock');
+                document.getElementById('vegetarianListContent6').classList.remove('displayBlock');
+                document.getElementById('vegetarianListContent7').classList.remove('displayBlock');
+                document.getElementById('vegetarianListContent8').classList.remove('displayBlock');
+                document.getElementById('vegetarianListContent9').classList.remove('displayBlock');
+
                 //========================
                 //bring the lists right after the tab!!
                 //========================
@@ -339,29 +379,164 @@ function widthLessThan768() {
                 x.after(y);
             }
         }
-    
-        vegetarianPillsClicked = function(id, content) {
-                        
-        }
 
         ketoPillsClicked = function(id, content) {
-                        
+            var x = document.getElementById(id);
+            var y = document.getElementById(content);
+
+            if (x.classList.contains('active')) {
+                x.classList.remove('active');
+                y.classList.remove('displayBlock');
+            } else {
+
+                var ketoList = document.getElementById('ketoList').querySelectorAll('li');
+                for (var i = 0; i < ketoList.length; i++) {
+                    ketoList[i].classList.remove('active');
+                }
+
+                document.getElementById('ketoListContent1').classList.remove('displayBlock');
+                document.getElementById('ketoListContent2').classList.remove('displayBlock');
+                document.getElementById('ketoListContent3').classList.remove('displayBlock');
+                document.getElementById('ketoListContent4').classList.remove('displayBlock');
+                document.getElementById('ketoListContent5').classList.remove('displayBlock');
+                document.getElementById('ketoListContent6').classList.remove('displayBlock');
+                document.getElementById('ketoListContent7').classList.remove('displayBlock');
+                document.getElementById('ketoListContent8').classList.remove('displayBlock');
+                document.getElementById('ketoListContent9').classList.remove('displayBlock');
+
+                //========================
+                //bring the lists right after the tab!!
+                //========================
+                x.classList.add('active');
+                y.classList.add('displayBlock');
+                x.after(y);
+            }
         }
 
         paleoPillsClicked = function(id, content) {
-                        
+            var x = document.getElementById(id);
+            var y = document.getElementById(content);
+
+            if (x.classList.contains('active')) {
+                x.classList.remove('active');
+                y.classList.remove('displayBlock');
+            } else {
+
+                var paleoList = document.getElementById('paleoList').querySelectorAll('li');
+                for (var i = 0; i < paleoList.length; i++) {
+                    paleoList[i].classList.remove('active');
+                }
+
+                document.getElementById('paleoListContent1').classList.remove('displayBlock');
+                document.getElementById('paleoListContent2').classList.remove('displayBlock');
+                document.getElementById('paleoListContent3').classList.remove('displayBlock');
+                document.getElementById('paleoListContent4').classList.remove('displayBlock');
+                document.getElementById('paleoListContent5').classList.remove('displayBlock');
+                document.getElementById('paleoListContent6').classList.remove('displayBlock');
+                document.getElementById('paleoListContent7').classList.remove('displayBlock');
+                document.getElementById('paleoListContent8').classList.remove('displayBlock');
+                document.getElementById('paleoListContent9').classList.remove('displayBlock');
+
+                //========================
+                //bring the lists right after the tab!!
+                //========================
+                x.classList.add('active');
+                y.classList.add('displayBlock');
+                x.after(y);
+            }
         }
 
         proteinPillsClicked = function(id, content) {
-                        
+            var x = document.getElementById(id);
+            var y = document.getElementById(content);
+
+            if (x.classList.contains('active')) {
+                x.classList.remove('active');
+                y.classList.remove('displayBlock');
+            } else {
+
+                var proteinList = document.getElementById('proteinList').querySelectorAll('li');
+                for (var i = 0; i < proteinList.length; i++) {
+                    proteinList[i].classList.remove('active');
+                }
+
+                document.getElementById('proteinListContent1').classList.remove('displayBlock');
+                document.getElementById('proteinListContent2').classList.remove('displayBlock');
+                document.getElementById('proteinListContent3').classList.remove('displayBlock');
+                document.getElementById('proteinListContent4').classList.remove('displayBlock');
+                document.getElementById('proteinListContent5').classList.remove('displayBlock');
+                document.getElementById('proteinListContent6').classList.remove('displayBlock');
+                document.getElementById('proteinListContent7').classList.remove('displayBlock');
+                document.getElementById('proteinListContent8').classList.remove('displayBlock');
+                document.getElementById('proteinListContent9').classList.remove('displayBlock');
+
+                //========================
+                //bring the lists right after the tab!!
+                //========================
+                x.classList.add('active');
+                y.classList.add('displayBlock');
+                x.after(y);
+            }
         }
 
         culturalPillsClicked = function(id, content) {
-                        
+            var x = document.getElementById(id);
+            var y = document.getElementById(content);
+
+            if (x.classList.contains('active')) {
+                x.classList.remove('active');
+                y.classList.remove('displayBlock');
+            } else {
+
+                var culturalList = document.getElementById('culturalList').querySelectorAll('li');
+                for (var i = 0; i < culturalList.length; i++) {
+                    culturalList[i].classList.remove('active');
+                }
+
+                document.getElementById('culturalListContent1').classList.remove('displayBlock');
+                document.getElementById('culturalListContent2').classList.remove('displayBlock');
+                document.getElementById('culturalListContent3').classList.remove('displayBlock');
+                document.getElementById('culturalListContent4').classList.remove('displayBlock');
+                document.getElementById('culturalListContent5').classList.remove('displayBlock');
+                document.getElementById('culturalListContent6').classList.remove('displayBlock');
+                document.getElementById('culturalListContent7').classList.remove('displayBlock');
+                document.getElementById('culturalListContent8').classList.remove('displayBlock');
+                document.getElementById('culturalListContent9').classList.remove('displayBlock');
+
+                //========================
+                //bring the lists right after the tab!!
+                //========================
+                x.classList.add('active');
+                y.classList.add('displayBlock');
+                x.after(y);
+            }
         }
 
+        //NEED TO FIX FOR INTERACTIVE!!!!!!!!!!!!!!!!!!!
         userPillsClicked = function(id, content) {
-                        
+            var x = document.getElementById(id);
+            var y = document.getElementById(content);
+
+            if (x.classList.contains('active')) {
+                x.classList.remove('active');
+                y.classList.remove('displayBlock');
+            } else {
+
+                var userList = document.getElementById('userList').querySelectorAll('li');
+                for (var i = 0; i < userList.length; i++) {
+                    userList[i].classList.remove('active');
+                }
+
+                document.getElementById('userListContent1').classList.remove('displayBlock');
+                document.getElementById('userListContentCreate').classList.remove('displayBlock');
+
+                //========================
+                //bring the lists right after the tab!!
+                //========================
+                x.classList.add('active');
+                y.classList.add('displayBlock');
+                x.after(y);
+            }
         }
 
         /**
@@ -392,10 +567,6 @@ function widthLessThan768() {
                 classicList[i].classList.remove('active');
             }
 
-            var classicListContent = document.getElementById('classicListContent').getElementsByClassName('row');
-            for (var i = 0; i < classicListContent.length; i++) {
-                classicListContent[i].classList.remove('displayBlock');
-            }
 
             // =========================================
             // Vegetarian
