@@ -13,7 +13,7 @@
         <div id="GUI">
             <div class="miniNav">
                 <div class="miniNav-box">
-                    <img class="logo" src="/images/Logo3.jpg"></img>
+                    <img class="logo" height="100%" src="/logo/LOGO2.png"></img>
                 </div>
                 <div id="Dropdown" class="chevronHolder dropdown">
                     <div class="chevron down"></div>
@@ -25,24 +25,24 @@
         <div class="wrapper">
             <div id="Top">
                 <div class="box" draggable="false">
-                    <img id="Title" class="logo" src="/images/Logo3.jpg"></img>
+                    <img id="Title" height="100%" class="logo" src="/logo/LOGO2.png"></img>
                     <table>
                         <tr>
                             <td>
                                 <div class="icon">
-                                    <img height="300" width="300" src="images/shoppingcart.png"draggable="false"/>
+                                    <img height="300" width="300" src="images/shoppingcart.png" draggable="false"/>
                                     <span>Shopping Cart</span>
                                 </div>
                             </td>
                             <td>
                                 <div class="icon">
-                                    <img height="300" width="300" src="images/calandar.png"draggable="false"/>
+                                    <img height="300" width="300" src="images/calandar.png" draggable="false"/>
                                     <span>Planner</span>
                                 </div>
                             </td>
                             <td>
                                 <div class="icon">
-                                    <img height="300" width="300" src="images/cutlery.png"draggable="false"/>
+                                    <img height="300" width="300" src="images/cutlery.png" draggable="false"/>
                                     <span>Recipes</span>
                                 </div>
                             </td>
