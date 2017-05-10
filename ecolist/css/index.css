@@ -98,7 +98,7 @@
             width:100%;
             height:100%;
             background-color:red;
-            background-image:url('images/tomato temp.jpg');
+            background-image:url('../images/tomato temp.jpg');
 			background-size:cover;
         }
         #Top>* {
@@ -155,19 +155,19 @@
             background-size: auto 900px;
             background-position:0 0;	
         }
-        @media only screen and (min-device-width: 1290px) {
+        @media only screen and (min-width: 1290px) {
             section:not(:first-of-type) {background-size: 100% auto;}
         }
         
             /*images for descriptions*/
             section:nth-of-type(2) {
-                    background-image:url('images/groceries temp.jpg');
+                    background-image:url('../images/groceries temp.jpg');
                 }
             section:nth-of-type(3) {
-                    background-image:url('images/food temp 1.jpg');
+                    background-image:url('../images/food temp 1.jpg');
                 }
             section:nth-of-type(4) {
-                    background-image:url('images/fruit temp.jpg');
+                    background-image:url('../images/fruit temp.jpg');
                 }
                 
             /*description boxes*/

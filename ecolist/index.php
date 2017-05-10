@@ -3,11 +3,11 @@
     <head>
         <meta charset="UTF-8"/>
         <title>template</title>
-        <link rel="stylesheet" href="index.css"/>
-		<link rel="stylesheet" href="Burgers.css"/>
-        <script src="index.js"></script>
-        <script src="hamburger.js"></script>
-		<script src="functionHiding.js" id="SelfDestruct"></script>
+        <link rel="stylesheet" href="/css/index.css"/>
+		<link rel="stylesheet" href="/css/Burgers.css"/>
+        <script src="/javascript/index.js"></script>
+        <script src="/javascript/hamburger.js"></script>
+		<script src="/javascript/functionHiding.js" id="SelfDestruct"></script>
     </head>
     <body onload="setHeight(true);setBurger(true);hide_function()">
         <div id="GUI">
