@@ -5,6 +5,8 @@ var a;
 
 
 $(function () {
+
+
     //button adds new rows to table 1
     $("#btnAdd").bind("click", function () {
         var div = $("<tr>");
@@ -30,23 +32,33 @@ $(function () {
                 a = parseInt(id);
                 var toAdd = $("#" + a + "item").val();
                 var toAdd2 = $('#' + a + "quantity").val();
-                var icon = document.createElement("span");
-                icon.className ="glyphicon glyphicon-ok";
-                 $('.list-group').append('<li class="list-group-item list-group-item-success">' + toAdd2 + " " + toAdd + '</li>');
-                 $('#btnClear').css('visibility', 'visible');
+                 $('.list-group').append('<li class="list-group-item">' + toAdd2 + " " + toAdd + '</li>');
                  $(this).closest("tr").remove();
   
             });
       
-    //cart title transitions only once 
+    //cart title and clear transitions only once 
     $("body").one("click",".list", function(){
                 $('#cartTitle').css('visibility', 'visible').hide().fadeIn("slow");
+                $('#btnClear').css('visibility', 'visible').hide().fadeIn("slow");
+                $('#btnCart').css('visibility', 'visible').hide().fadeIn("slow");
+
         })
-      
+
+    //View cart button scrolls down to cart list
+
+    $('#btnCart').on("click", function(){
+        $('html, body').animate({
+            scrollTop: $("#cartTitle").offset().top
+        }, 1000);
+    });
+
     
       //double click to remove list item
     $(document).on('dblclick','li', function(){
-        $(this).toggleClass('strike').fadeOut("fast");    
+        $(this).toggleClass('strike').fadeOut("fast", function(){
+          $(this).remove();
+              });    
           });
       });
 
@@ -59,6 +71,16 @@ $(function () {
             $(".list-group").children().remove();
     });
 
+     $('list-group-item').on('tapHold', function(){
+        $('list-group-item li').css('text-decoration', 'line-through')
+     });
+
+      $('list-group-item').on('swipeleft', function(){
+        $(this).toggleClass('strike').fadeOut("fast", function(){
+          $(this).remove();
+              });    
+     });
+
 });
 
 
@@ -68,6 +90,6 @@ function GetDynamicTextBox(value) {
     return '<td><button type="button" id="'+c+'btn" class="btn btn-info list"><span class="glyphicon glyphicon-shopping-cart"></span></button></td>'
     +'<td><input name = "DynamicTextBox" id="'+count+'item" type="text" value = "' + value + '" class="form-control" /></td>' 
     + '<td><input name = "DynamicTextBox" id="'+count+'quantity" type="text" value = "' + value + '"  class="form-control" /></td>' 
-    + '<td><button type="button" class="btn btn-danger remove"><i class="glyphicon glyphicon-remove-sign"></i></button></td>'
+    + '<td><button type="button" class="btn btn-danger remove"><i class="glyphicon glyphicon-minus-sign"></i></button></td>'
 }
 
