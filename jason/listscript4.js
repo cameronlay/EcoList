@@ -75,7 +75,7 @@ $(function () {
         $('list-group-item li').css('text-decoration', 'line-through')
      });
 
-      $('list-group-item').on('swipeleft', function(){
+      $('list-group-item li').on('swipeleft', function(){
         $(this).toggleClass('strike').fadeOut("fast", function(){
           $(this).remove();
               });    
@@ -88,8 +88,8 @@ function GetDynamicTextBox(value) {
     count++;
     c++;
     return '<td><button type="button" id="'+c+'btn" class="btn btn-info list"><span class="glyphicon glyphicon-shopping-cart"></span></button></td>'
-    +'<td><input name = "DynamicTextBox" id="'+count+'item" type="text" value = "' + value + '" class="form-control" /></td>' 
-    + '<td><input name = "DynamicTextBox" id="'+count+'quantity" type="text" value = "' + value + '"  class="form-control" /></td>' 
+    +'<td><input name = "DynamicTextBox" id="'+count+'item" type="text" value = "' + value + '" class="form-control" placeholder="Name of item"/></td>' 
+    + '<td><input name = "DynamicTextBox" id="'+count+'quantity" type="text" value = "' + value + '"  class="form-control" placeholder="#"/></td>' 
     + '<td><button type="button" class="btn btn-danger remove"><i class="glyphicon glyphicon-minus-sign"></i></button></td>'
 }
 
