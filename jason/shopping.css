@@ -1,85 +1,5 @@
-/* Custom Code Here */
-h5{
-  width:100%;
-}
-.container .check input {
-  display: none;
-}
-.container .check input:checked + label .box {
-  -webkit-animation: animOn 0.6s 1 forwards;
-          animation: animOn 0.6s 1 forwards;
-  background: rgba(0, 0, 0, 0.5);
-}
-.container .check input:checked + label .box i {
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  opacity: 1;
-  color:#fff;
-}
-.container .check label {
-  /* min-width: 100px; */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  /* min-height: 60px; */
-  cursor: pointer;
-}
-.container .check label .box {
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-  position: relative;
-  width: 39px;
-  height: 33px;
-  -webkit-transition: background 300ms ease;
-  transition: background 300ms ease;
-}
-.container .check label .box:hover {
-  background: rgba(0, 0, 0, 0.5);
-}
-.container .check label .box i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 20px;
-  display: inline-block;
-  opacity: 0;
-  pointer-events: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  -webkit-transition-delay: 200ms;
-          transition-delay: 200ms;
-  -webkit-transform: translate(-50%, -50%) scale(6);
-          transform: translate(-50%, -50%) scale(6);
-}
 
-.fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
 
-.fa-check:before {
-    content: "\f00c";
-}
-
-thead tr th {
-    text-align:center;
-}
 
 
 
@@ -101,6 +21,7 @@ thead tr th {
   }
 }
 
+/* table css */
 .smallTableHead {
   width: 70px;
 }
@@ -109,9 +30,21 @@ thead tr th {
   width: 60px;
 }
 
-.nameTableHead {
-
+thead tr th {
+    text-align:center;
 }
+
+.text-center {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 50px;
+}
+
+.table th{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+}
+
+/*buttons css*/
 #btnAdd {
   background-color: #77dd77;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -126,16 +59,20 @@ thead tr th {
 }
 
 #btnClear {
-   float: right;
   background-color: #ff6961;
   visibility: hidden;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 20px;
+  float:right;
 }
 
+#btnCart {
+  float: right;
+  margin-left: 100px;
+  font-size: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  visibility: hidden;
 
-.strike {
-  text-decoration:line-through;
 }
 
 #btnAddContainer {
@@ -143,58 +80,73 @@ thead tr th {
   width:40%;
 }
 
+#btnCartContainer {
+  float:right;
+  width: 40%;
+}
+
+
+/*cart list css*/
 
 #list-container {
   margin:0 auto;
 }
 
-.list-group li:hover {
-  background-color: #facdcf;
-  text-decoration-color: #ff6961;
-}
 #cartTitle{
   visibility: hidden;
 }
 
-.text-center {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 50px;
-}
-
-.table th{
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 20px;
-}
-
 .list-group li {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Coming Soon', cursive;
   font-size: 20px;
 }
 
-
-
-
-/*Stacking tables
-.tableWrapper {
-  overflow: hidden;
+.list-group-item {
+  background-color: #f4fac0;
+  border-style:solid;
+  border-width: 1px;
+  border-color: black;
+}
+.list-group li:hover {
+  text-decoration: line-through;
+}
+/*on hover animated strikethrough
+.list-group li {
+  position: relative;
+  display: block;
+  cursor: pointer;
 }
 
-#TableOne {
-  float: left;
-  margin-right: 10px;
+.list-group li:before, .list-group li:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: black;
 }
 
-#TableTwo {
-  overflow: hidden;
-  margin:10px;
-  margin-left: 20px;
-  width: 45%;
+.list-group li:before {
+  left: -2px;
+}
+.list-group li:after {
+  right: 2.5px;
+  background: black;
+  transition: width 1.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-@media screen and (max-width: 400px) {
-  #one {
-    float: none;
-    margin-right: 0;
-    width: auto;
-  }
+.list-group li:hover:before {
+  background: black;
+  width: 100%;
+  transition: width 1.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
+
+.list-group li:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+*/
+
+
