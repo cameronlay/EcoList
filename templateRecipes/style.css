@@ -40,7 +40,7 @@ ul.nav-pills {
  * @Edmund
  */
 .border {
-    /*border: 1px solid #000000;*/
+    border: 1px solid #000000;
 }
 
 /**
@@ -106,6 +106,65 @@ ul.nav-pills {
 .active {
     pointer-events: none;
     cursor: default;
+}
+
+.h4margin {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ddmargin {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ingredientLabel {
+  cursor: pointer;
+}
+
+.ingredientCheckbox {
+    display: none;
+}
+
+.glyphicon {
+  color: white;
+  line-height: 16px;
+  border-radius: 4px;
+}
+
+.glyphicon-plus {
+  padding-top: 1px;
+  padding-right: 2px;
+  padding-left: 2px;
+  background-color: #3AC5C9;
+}
+
+.glyphicon-minus {
+  padding-top: 1px;
+  padding-right: 2px;
+  padding-left: 2px;
+  background-color: #E85764;
+  display: none;
+}
+
+.ingredientCheckbox:checked + .ingredientLabel .glyphicon-minus {
+  display: inline;
+}
+
+.ingredientCheckbox:checked + .ingredientLabel .glyphicon-plus {
+  display: none;
+}
+
+.recipetextarea {
+    max-width: 100%;
+    width: 100%;
+    min-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 768px) {

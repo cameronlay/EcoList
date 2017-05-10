@@ -50,7 +50,7 @@
                     </table>
                 </div>
             </div>
-        <div class="below" style="background-color: black">
+        <div class="below mobileContentless" style="background-color: black">
             <section>
                 <div class="descriptions">
                 <h2>About Title</h2>
@@ -89,7 +89,7 @@
                 </div>
             </section>
         </div>
-        <div class="home-footer">
+        <div class="home-footer mobileContentless">
             Footer content &copy;
         </div>
     </body>

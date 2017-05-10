@@ -92,18 +92,7 @@
                     transition:opacity 0.5s ease;
                     pointer-events:none;
                 }
-            /* Hamburger menu section */
-				
-				#Hamburger {
-					position:absolute;
-					top:0;
-					left:-80%;
-					width:80%;
-					height:200%;
-					background-color:purple;
-					pointer-events:auto;
-					transition: left 0.1s linear;
-				}
+            
         /* top of homepage section */
         #Top {
             width:100%;
@@ -150,15 +139,23 @@
             }
             
         /* Bottom of homepage section */
+		.mobileContentless {
+				display:none;
+			}
+		@media only screen and (min-device-width: 700px){
+			div.mobileContentless {
+				display:block;
+			}
+		}
         section:not(:first-of-type){
             background-color: rgba(255,255,255,0.4);
             padding-top:500px;
             background-repeat:no-repeat;
             background-origin:padding-box;
             background-size: auto 900px;
-            background-position:0 0;
+            background-position:0 0;	
         }
-        @media screen and (min-width:1290px){
+        @media only screen and (min-device-width: 1290px) {
             section:not(:first-of-type) {background-size: 100% auto;}
         }
         

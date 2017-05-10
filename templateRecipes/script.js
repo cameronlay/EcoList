@@ -263,6 +263,31 @@ function TabClicked(id, id2, list, contentBlock, content) {
 //END OF FUNCTION
 }
 
+$(document).ready(function() {
+    $("#addStepId").click(function() {
+        $("#addStepId").before(GetInputRecipe());
+    })
+    $("#removeStepId").click(function() {
+        var inputArray = document.getElementsByClassName("inputSteps");
+        inputArray[inputArray.length - 1].remove();
+    })
+    $("#addIngredientId").click(function() {
+        $("#addIngredientId").before(GetIngredientsRecipe());
+    })
+    $("#removeIngredientId").click(function() {
+        var inputArray = document.getElementsByClassName("inputIngredients");
+        inputArray[inputArray.length - 1].remove();
+    })
+})
+
+function GetInputRecipe() {
+    return '<input class="recipetextarea form-control inputSteps" type="text" placeholder="Enter the simple step">';
+}
+
+function GetIngredientsRecipe() {
+    return '<input class="recipetextarea form-control inputIngredients" type="text" placeholder="Enter the ingredient">';
+}
+
 /**
  * FUNCTION THAT OVERRIDE ALL FUNCTIONS IF THE BROWSER
  * WIDTH IS LESS THAN 768
