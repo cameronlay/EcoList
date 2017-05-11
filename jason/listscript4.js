@@ -36,7 +36,7 @@ $(function () {
                  $(this).closest("tr").remove();
   
             });
-      
+        
     //cart title and clear transitions only once 
     $("body").one("click",".list", function(){
                 $('#cartTitle').css('visibility', 'visible').hide().fadeIn("slow");
@@ -53,12 +53,17 @@ $(function () {
             scrollTop: $("#cartTitle").offset().top
         }, 1000);
     });
-
-    
+    //double click warning when hover
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip({
+          trigger:'hover'
+        });   
+    });
       //double click to remove list item
     $(document).on('dblclick','li', function(){
         $(this).toggleClass('strike').fadeOut("fast", function(){
           $(this).remove();
+          $('.list-group').tooltip('hide');
               });    
           });
       });
@@ -71,16 +76,16 @@ $(function () {
      $("#btnClear").on("click", function () {
             $(".list-group").children().remove();
     });
-
-     $('list-group-item').on('tapHold', function(){
-        $('list-group-item li').css('text-decoration', 'line-through')
+    //touch delete functions (notworking)
+     $('.list-group-item').on('tapHold', function(){
+        $('.list-group-item li').css('text-decoration', 'line-through')
      });
 
-      $('list-group-item li').on('swipeleft', function(){
-        $(this).toggleClass('strike').fadeOut("fast", function(){
-          $(this).remove();
-              });    
+      $('.list-group-item li').on('swipeleft', function(){
+          $(this).remove();  
      });
+
+      //save button for later use 
 
 });
 

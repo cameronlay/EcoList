@@ -16,13 +16,14 @@
 <body>
 <p>&nbsp;</p>
 <h1 class="text-center ecolistTitle">My EcoList</h1>
+<p>&nbsp;</p>
   <section class="container">
 
     <div id="btnAddContainer">
-      <button id="btnAdd" type="button" class="btn btn-primary" data-toggle="tooltip" data-original-title="Add more controls"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp; Add Item&nbsp;</button>
+      <button id="btnAdd" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp; Add Item&nbsp;</button>
     </div>
     <div id="btnCartContainer">
-      <button id="btnCart" type="button" class="btn btn-info" data-toggle="tooltip" data-original-title="Add more controls"><i class="glyphicon glyphicon-shopping-cart"></i>&nbsp; View Cart&nbsp;</button>
+      <button id="btnCart" type="button" class="btn btn-info"><i class="glyphicon glyphicon-shopping-cart"></i>&nbsp; View Cart&nbsp;</button>
     </div>
 
     <!--
@@ -51,7 +52,7 @@
           <tfoot>
             <tr>
               <th colspan="4">
-                  <button id="btnRemove" type="button" class="btn btn-primary" data-toggle="tooltip" data-original-title="Add more controls"><i class="glyphicon glyphicon-minus-sign"></i>&nbsp; Remove All Items&nbsp;</button>
+                  <button id="btnRemove" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-minus-sign"></i>&nbsp; Remove All Items&nbsp;</button>
               </th>
             </tr>
           </tfoot>
@@ -59,14 +60,18 @@
       </div>
       <div id="cartContainer">
           <div id="cartTitle">
-              <h5 class="text-center">Cart</h5>
+              <h1 class="text-center">Cart</h1>
+              </div>
+
+              <div id="removeWarning">
+              <p>double tap to remove</p>
               </div>
                  
               <div id="listContainer">
-                <ul class="list-group">
+                <ul class="list-group" data-toggle="tooltip" title="double tap to remove" data-placement="top">
                 </ul>
-                 <button id="btnSave" type="button" class="btn btn-primary" data-toggle="tooltip" data-original-title="Add more controls"><i class="glyphicon glyphicon-ok-circle"></i>&nbsp; Save Cart&nbsp;</button>
-                 <button id="btnClear" type="button" class="btn btn-primary" data-toggle="tooltip" data-original-title="Add more controls"><i class="glyphicon glyphicon-minus-sign"></i>&nbsp; Clear Cart&nbsp;</button>
+                 <button id="btnSave" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-ok-circle"></i>&nbsp; Save Cart&nbsp;</button>
+                 <button id="btnClear" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-minus-sign"></i>&nbsp; Clear Cart&nbsp;</button>
               </div>
           </div>
       </div>
