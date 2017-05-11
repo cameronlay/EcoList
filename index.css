@@ -189,7 +189,7 @@
             height:100px;
             background-color:green;
             text-align:center;
-            
+            font-size: 0.8em;
         }
 
         .home-footer li {
@@ -201,7 +201,7 @@
             color: ;
         }*/
 
-        footer li a {
+        .home-footer li a {
             text-decoration: none;
         }
 
