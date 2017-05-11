@@ -52,14 +52,14 @@
             </div>
         <div class="below mobileContentless" style="background-color: black">
             <section>
-                <div class="descriptions">
+                <div class="descriptions" id="OurPurpose">
                 <h2>Our Purpose</h2>
                     <p>The purpose of this project to us was to help reduce food waste through planning and organization.
                         We felt that this was a reachable goal through meal planning and shopping list organization.</p>
                 </div>
             </section>
             <section>
-                <div class="descriptions">
+                <div class="descriptions" id="OurApps">
                 <h2>Our Apps</h2>
                     <p>Our site features two main apps; EcoEats, a meal planner where you are able to choose recipes from a few premade diet plans or add
                         your own recipes to our site. From each recipe you can add the ingredients directly to our second app EcoList, which is a simple
@@ -70,7 +70,7 @@
             </section>
             </section>
             <section>
-                <div class="descriptions">
+                <div class="descriptions" id="AboutUs">
                 <h2>About Us</h2>
                     <p>We are five level one  Computer Systems Technology students studying at BCIT. For the majority of us this is our first time
                         working on a project of this scale with minimal amounts of direction. Our group consists of Cameron Lay, Sunguk ‘Edmund’ Ham,
@@ -79,7 +79,7 @@
                 </div>
             </section>
             <section>
-                <div class="descriptions">
+                <div class="descriptions" id="AboutProject">
                 <h2>About the Project</h2>
                     <p>Over the course of five weeks we were tasked with building a web app to help reduce or inform people about food waste and
                         Metro Vancouver’s goal to reach zero food waste. For our group we felt that the best option to reach our target audience
@@ -88,7 +88,36 @@
             </section>
         </div>
         <div class="home-footer mobileContentless">
-            Footer content &copy;
+            <div class="footerconstraint">
+            <div class="bottomleftcolumn">
+                <ul>
+                    <li><a href="/index.php">Home</a></li>
+                    <li><a href="/index.php#OurPurpose">Our Purpose</a></li>
+                    <li><a href="/index.php#OurApps">About our Apps</a></li>
+                    <li><a href="/index.php#AboutUs">About Us</a></li>
+                    <li><a href="/index.php#AboutProject">About the Project</a></li>
+                </ul>
+            </div>
+            <div class="middleleftcolumn">
+                <ul>
+                    <li><a href="/list/index.php">Shopping List</a></li>
+                    <li><a href="/planner/index.php">Meal Planner</a></li>
+                    <li><a href="/donations/index.php">Donate Food</a></li>
+                </ul>
+            </div>
+            <div class="middlerightcolumn">
+                <ul>
+                    <li><a href="/appshome/index.php">Affiliated Apps</a></li>
+                </ul>
+            </div>
+            <div class="bottomrightcolumn">
+                <ul>
+                    <li><a href="/login/index.php">Login</a></li>
+                    <li><a href="/sitemap/index.php">Sitemap</a></li>
+                </ul>
+            </div>
+            <p>&copy; Copyright 2017 | EcoList, All Rights Reserved </p>
+        </div>
         </div>
     </body>
 </html>
