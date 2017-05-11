@@ -136,10 +136,10 @@ ul.nav-pills {
 
 .glyphicon-plus-sign {
     color: #77dd77;
+  display: none;
 }
 
 .glyphicon-minus-sign {
-  display: none;
   color: #ff6961;
 }
 
@@ -152,11 +152,11 @@ ul.nav-pills {
 }
 
 .ingredientCheckbox:checked + .ingredientLabel .glyphicon-minus-sign {
-  display: inline;
+  display: none;
 }
 
 .ingredientCheckbox:checked + .ingredientLabel .glyphicon-plus-sign {
-  display: none;
+  display: inline;
 }
 
 .recipetextarea {
