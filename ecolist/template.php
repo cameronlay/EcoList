@@ -52,45 +52,73 @@
             </div>
         <div class="below mobileContentless" style="background-color: black">
             <section>
-                <div class="descriptions">
-                <h2>About Title</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, a egestas nonummy congue. In magnis nam nunc purus eget ridiculus. Fusce nibh laoreet interdum posuere elit urna, tellus vestibulum lobortis nulla ligula, vulputate eu varius urna dui sem. Consectetuer a lorem faucibus tortor donec id, mattis sem enim urna et, pellentesque vitae eu lobortis urna molestie maecenas, mi duis euismod molestie quis sagittis interdum, nec neque. Morbi orci mauris, a erat et praesent tellus, ac wisi at ut scelerisque aptent, nunc justo et dis rerum et. Amet aliquam vitae mauris vestibulum eu, id scelerisque, nulla elit urna a nec risus pulvinar. Ridiculus leo velit elementum, id neque habitant ac, odio suspendisse arcu turpis libero, leo non purus ipsum, per at per aliquam.
-    Egestas lacus arcu gravida, dui viverra sit tincidunt nisl in libero. Eros dapibus voluptate nascetur, pellentesque quisque, diam et phasellus, neque aliquet nibh faucibus nulla accumsan donec, nec eleifend id. Placerat diam aliquet in, tortor ullamco justo et, vitae odio mi integer pellentesque lobortis vel, turpis imperdiet dui tellus lectus ut. Praesent placerat venenatis id, sit commodo felis faucibus molestie conubia, dictumst in. Nunc in amet elementum. Massa tempus nam tristique amet elementum in, tristique at vivamus pellentesque. Amet blandit sit magna, erat laoreet, at varius sodales ligula.
-                    </p>
+                <div class="descriptions" id="OurPurpose">
+                <h2>Our Purpose</h2>
+                    <p>The purpose of this project to us was to help reduce food waste through planning and organization.
+                        We felt that this was a reachable goal through meal planning and shopping list organization.</p>
                 </div>
             </section>
             <section>
-                <div class="descriptions">
+                <div class="descriptions" id="OurApps">
                 <h2>Our Apps</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, a egestas nonummy congue. In magnis nam nunc purus eget ridiculus. Fusce nibh laoreet interdum posuere elit urna, tellus vestibulum lobortis nulla ligula, vulputate eu varius urna dui sem. Consectetuer a lorem faucibus tortor donec id, mattis sem enim urna et, pellentesque vitae eu lobortis urna molestie maecenas, mi duis euismod molestie quis sagittis interdum, nec neque. Morbi orci mauris, a erat et praesent tellus, ac wisi at ut scelerisque aptent, nunc justo et dis rerum et. Amet aliquam vitae mauris vestibulum eu, id scelerisque, nulla elit urna a nec risus pulvinar. Ridiculus leo velit elementum, id neque habitant ac, odio suspendisse arcu turpis libero, leo non purus ipsum, per at per aliquam.
-    Egestas lacus arcu gravida, dui viverra sit tincidunt nisl in libero. Eros dapibus voluptate nascetur, pellentesque quisque, diam et phasellus, neque aliquet nibh faucibus nulla accumsan donec, nec eleifend id. Placerat diam aliquet in, tortor ullamco justo et, vitae odio mi integer pellentesque lobortis vel, turpis imperdiet dui tellus lectus ut. Praesent placerat venenatis id, sit commodo felis faucibus molestie conubia, dictumst in. Nunc in amet elementum. Massa tempus nam tristique amet elementum in, tristique at vivamus pellentesque. Amet blandit sit magna, erat laoreet, at varius sodales ligula.
-                    </p>
+                    <p>Our site features two main apps; EcoEats, a meal planner where you are able to choose recipes from a few premade diet plans or add
+                        your own recipes to our site. From each recipe you can add the ingredients directly to our second app EcoList, which is a simple
+                        shopping list app that allows you to add items and quantity. Once an item is on your list you will be able to check it off, delete
+                        items or edit existing items. When an item has been checked it will move to a different list at the bottom of the page that contains
+                        all the checked items.</p>
                 </div>
             </section>
             </section>
             <section>
-                <div class="descriptions">
-                <h2>Topic3</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, a egestas nonummy congue. In magnis nam nunc purus eget ridiculus. Fusce nibh laoreet interdum posuere elit urna, tellus vestibulum lobortis nulla ligula, vulputate eu varius urna dui sem. Consectetuer a lorem faucibus tortor donec id, mattis sem enim urna et, pellentesque vitae eu lobortis urna molestie maecenas, mi duis euismod molestie quis sagittis interdum, nec neque. Morbi orci mauris, a erat et praesent tellus, ac wisi at ut scelerisque aptent, nunc justo et dis rerum et. Amet aliquam vitae mauris vestibulum eu, id scelerisque, nulla elit urna a nec risus pulvinar. Ridiculus leo velit elementum, id neque habitant ac, odio suspendisse arcu turpis libero, leo non purus ipsum, per at per aliquam.
-    Egestas lacus arcu gravida, dui viverra sit tincidunt nisl in libero. Eros dapibus voluptate nascetur, pellentesque quisque, diam et phasellus, neque aliquet nibh faucibus nulla accumsan donec, nec eleifend id. Placerat diam aliquet in, tortor ullamco justo et, vitae odio mi integer pellentesque lobortis vel, turpis imperdiet dui tellus lectus ut. Praesent placerat venenatis id, sit commodo felis faucibus molestie conubia, dictumst in. Nunc in amet elementum. Massa tempus nam tristique amet elementum in, tristique at vivamus pellentesque. Amet blandit sit magna, erat laoreet, at varius sodales ligula.
-                    </p>
+                <div class="descriptions" id="AboutUs">
+                <h2>About Us</h2>
+                    <p>We are five level one  Computer Systems Technology students studying at BCIT. For the majority of us this is our first time
+                        working on a project of this scale with minimal amounts of direction. Our group consists of Cameron Lay, Sunguk ‘Edmund’ Ham,
+                        Jason Huang, Ian Lo, and Karanveer Singh Khanna. If you have any questions or comments feel free to send us an email at
+                        ecolist2017@gmail.com</p>
                 </div>
             </section>
             <section>
-                <div class="descriptions">
-                <h2>Other Topics here(template)</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, a egestas nonummy congue. In magnis nam nunc purus eget ridiculus. Fusce nibh laoreet interdum posuere elit urna, tellus vestibulum lobortis nulla ligula, vulputate eu varius urna dui sem. Consectetuer a lorem faucibus tortor donec id, mattis sem enim urna et, pellentesque vitae eu lobortis urna molestie maecenas, mi duis euismod molestie quis sagittis interdum, nec neque. Morbi orci mauris, a erat et praesent tellus, ac wisi at ut scelerisque aptent, nunc justo et dis rerum et. Amet aliquam vitae mauris vestibulum eu, id scelerisque, nulla elit urna a nec risus pulvinar. Ridiculus leo velit elementum, id neque habitant ac, odio suspendisse arcu turpis libero, leo non purus ipsum, per at per aliquam.
-    Egestas lacus arcu gravida, dui viverra sit tincidunt nisl in libero. Eros dapibus voluptate nascetur, pellentesque quisque, diam et phasellus, neque aliquet nibh faucibus nulla accumsan donec, nec eleifend id. Placerat diam aliquet in, tortor ullamco justo et, vitae odio mi integer pellentesque lobortis vel, turpis imperdiet dui tellus lectus ut. Praesent placerat venenatis id, sit commodo felis faucibus molestie conubia, dictumst in. Nunc in amet elementum. Massa tempus nam tristique amet elementum in, tristique at vivamus pellentesque. Amet blandit sit magna, erat laoreet, at varius sodales ligula.
-                    </p>
+                <div class="descriptions" id="AboutProject">
+                <h2>About the Project</h2>
+                    <p>Over the course of five weeks we were tasked with building a web app to help reduce or inform people about food waste and
+                        Metro Vancouver’s goal to reach zero food waste. For our group we felt that the best option to reach our target audience
+                        of students and parents was through proper planning and organization.</p>
                 </div>
             </section>
         </div>
         <div class="home-footer mobileContentless">
-            Footer content &copy;
+            <div class="footerconstraint">
+            <div class="bottomleftcolumn">
+                <ul>
+                    <li><a href="/index.php">Home</a></li>
+                    <li><a href="/index.php#OurPurpose">Our Purpose</a></li>
+                    <li><a href="/index.php#OurApps">About our Apps</a></li>
+
+                </ul>
+            </div>
+            <div class="middleleftcolumn">
+                <ul>
+                    <li><a href="/list/index.php">Shopping List</a></li>
+                    <li><a href="/planner/index.php">Meal Planner</a></li>
+                    <li><a href="/donations/index.php">Donate Food</a></li>
+                </ul>
+            </div>
+            <div class="middlerightcolumn">
+                <ul>
+                    <li><a href="/appshome/index.php">Affiliated Apps</a></li>
+                    <li><a href="/index.php#AboutUs">About Us</a></li>
+                    <li><a href="/index.php#AboutProject">About the Project</a></li>
+                </ul>
+            </div>
+            <div class="bottomrightcolumn">
+                <ul>
+                    <li><a href="/login/index.php">Login</a></li>
+                    <li><a href="/sitemap/index.php">Sitemap</a></li>
+                </ul>
+            </div>
+            <p>&copy; Copyright 2017 | EcoList, All Rights Reserved </p>
+        </div>
         </div>
     </body>
 </html>
