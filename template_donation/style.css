@@ -13,13 +13,14 @@ body {
     width: 70%;
     margin-right: auto;
     margin-left: auto;
+    background-image: url("backgroundimage.jpg");
 }
 
 
 #sideList {
     height:400px;
     overflow-y:scroll;
-    background-color:#F5F5F5;
+
     padding:10px 0px 10px 0px;
 }
 
