@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url('background2.jpg');
+}
+
 /**
  * used in recipe page make the content centered
  * @Edmund
