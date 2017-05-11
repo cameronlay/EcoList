@@ -5,10 +5,19 @@
 				margin:0;
 				padding:0;
 			}
+			body {
+				background-image:url('');
+				background-size:cover;
+			}
 			#GUI {
 				height:100%;
 				width:100%;
 				position:fixed;
+				pointer-events:none;
+			}
+			img {
+				width:100%;
+				height:auto;
 			}
 			.wrapper {
 				margin:auto;
