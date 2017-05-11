@@ -13,6 +13,7 @@ h1 {
 
 body {
     margin:0;
+    background-image: url("backgroundimage.jpg");
 }
 
 main {
@@ -20,7 +21,6 @@ main {
     width: 70%;
     margin-right: auto;
     margin-left: auto;
-    background-image: url("backgroundimage.jpg");
 }
 
 #sideList {
