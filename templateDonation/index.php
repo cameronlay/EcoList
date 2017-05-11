@@ -8,10 +8,19 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="style.css">
-        
+        <link rel="stylesheet" href="../Burgers.css"/>
+        <script src="../hamburger.js"></script>
     </head>
     
     <body>
+        
+        <div id="GUI">
+            <?php
+                include('../burgerMenuGUI.html');
+            ?>
+        </div>
+        
+    
         <header>
                 <h1>Donate Today</h1>
         </header>
@@ -40,5 +49,6 @@
                         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1ypP9TWn_8TSLnbX3PyCCyE9jc_eFS7A&callback=myMap"></script>
                     </div>
                 </div>
+                </main>
     </body>
 </html>
