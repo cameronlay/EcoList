@@ -5,6 +5,7 @@
         <title>template</title>
         <link rel="stylesheet" href="index.css"/>
 		<link rel="stylesheet" href="Burgers.css"/>
+        <link rel="stylesheet" href="footer.css"/>
         <script src="index.js"></script>
         <script src="hamburger.js"></script>
 		<script src="functionHiding.js" id="SelfDestruct"></script>
