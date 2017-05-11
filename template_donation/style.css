@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    padding:0;
+}
+
+h1 {
+    text-align:center;
+}
+
+
+body {
+    display: block;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+#sideList {
+    height:400px;
+    overflow-y:scroll;
+    background-color:#F5F5F5;
+    padding:10px 0px 10px 0px;
+}
+
+#googleMap {
+    padding:0;
+}
+
+.row {
+    padding-top:10px
+}
+
+.well {
+    margin-bottom:0;
+}
+
+
+
+
+
+
+
+
+
