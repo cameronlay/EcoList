@@ -8,7 +8,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src = "listscript4.js"></script>
+<script src="/javascript/hamburger.js"></script>
 <link rel="stylesheet" href="shopping.css">
+<link rel="stylesheet" href="/css/Burgers.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Coming+Soon" rel="stylesheet">
