@@ -187,7 +187,8 @@
         .home-footer {
             width:100%;
             height:100px;
-            background-color:green;
+            color: #f6f6e8;
+            background-color:#404040;
             text-align:center;
             font-size: 0.8em;
         }
@@ -196,10 +197,11 @@
             list-style: none;
         }
 
-        /*footer li a:hover {
-            background-color: ;
-            color: ;
-        }*/
+        .home-footer li a:hover {
+            background-color: #f6f6e8;
+            color: #404040;
+        }
+
 
         .home-footer li a {
             text-decoration: none;
