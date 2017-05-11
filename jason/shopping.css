@@ -14,7 +14,9 @@ input[type=number]::-webkit-outer-spin-button {
     appearance: none;
     margin: 0; 
 }
-
+html {
+  overflow-y: scroll;
+}
 body {
   background-image: url('backgroundimage.jpg');
 }
@@ -28,7 +30,6 @@ body {
 
 @media only screen and (min-width:640px){
   .container{
-
     width:50%;
   }
 }
@@ -120,6 +121,11 @@ thead tr th {
   font-family: 'Open Sans Condensed', sans-serif;
   visibility: hidden;
 
+}
+
+#removeWarning {
+  visibility: hidden;
+  opacity: 0.4;
 }
 
 

@@ -48,15 +48,6 @@
 					<div class="col-med-4"></div>
 					<div class="siteMapBlock col-med-3">
 						<h2><a href="#">Meal Plans</a></h2>
-						<ul>
-							<li><a href="#">Clasic</a></li>
-							<li class="alt"><a href="#">Vegetarian</a></li>
-							<li><a href="#">Keto</a></li>
-							<li class="alt"><a href="#">Paleo</a></li>
-							<li><a href="#">Protein Rich</a></li>
-							<li class="alt"><a href="#">Cultural</a></li>
-							<li><a href="#">Create your Own</a></li>
-						</ul>
 					</div>
 				</div>
 			</div>

@@ -281,11 +281,11 @@ $(document).ready(function() {
 })
 
 function GetInputRecipe() {
-    return '<input class="recipetextarea form-control inputSteps" type="text" placeholder="Enter the simple step">';
+    return '<input class="recipetextarea form-control inputSteps" type="text" placeholder="Enter the simple step" required>';
 }
 
 function GetIngredientsRecipe() {
-    return '<input class="recipetextarea form-control inputIngredients" type="text" placeholder="Enter the ingredient">';
+    return '<input class="recipetextarea form-control inputIngredients" type="text" placeholder="Enter the ingredient" required>';
 }
 
 /**

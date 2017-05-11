@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url('background2.jpg');
+}
+
 /**
  * used in recipe page make the content centered
  * @Edmund
@@ -130,12 +134,12 @@ ul.nav-pills {
     display: none;
 }
 
-.glyphicon-plus-sign {
+.glyphicon-ok-circle {
     color: #77dd77;
+  display: none;
 }
 
-.glyphicon-minus-sign {
-  display: none;
+.glyphicon-remove-circle {
   color: #ff6961;
 }
 
@@ -147,12 +151,12 @@ ul.nav-pills {
     background-color: #77cc77;
 }
 
-.ingredientCheckbox:checked + .ingredientLabel .glyphicon-minus-sign {
-  display: inline;
+.ingredientCheckbox:checked + .ingredientLabel .glyphicon-remove-circle {
+  display: none;
 }
 
-.ingredientCheckbox:checked + .ingredientLabel .glyphicon-plus-sign {
-  display: none;
+.ingredientCheckbox:checked + .ingredientLabel .glyphicon-ok-circle {
+  display: inline;
 }
 
 .recipetextarea {

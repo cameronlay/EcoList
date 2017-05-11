@@ -94,8 +94,7 @@
                     <li><a href="/index.php">Home</a></li>
                     <li><a href="/index.php#OurPurpose">Our Purpose</a></li>
                     <li><a href="/index.php#OurApps">About our Apps</a></li>
-                    <li><a href="/index.php#AboutUs">About Us</a></li>
-                    <li><a href="/index.php#AboutProject">About the Project</a></li>
+
                 </ul>
             </div>
             <div class="middleleftcolumn">
@@ -108,6 +107,8 @@
             <div class="middlerightcolumn">
                 <ul>
                     <li><a href="/appshome/index.php">Affiliated Apps</a></li>
+                    <li><a href="/index.php#AboutUs">About Us</a></li>
+                    <li><a href="/index.php#AboutProject">About the Project</a></li>
                 </ul>
             </div>
             <div class="bottomrightcolumn">
