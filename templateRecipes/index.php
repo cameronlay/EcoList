@@ -192,12 +192,12 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="1classic1" class="ingredientCheckbox"><label for="1classic1" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 Fillet Steak</label><br>
-                                        <input type="checkbox" id="1classic2" class="ingredientCheckbox"><label for="1classic2" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 tbsp Olive Oil</label><br>
-                                        <input type="checkbox" id="1classic3" class="ingredientCheckbox"><label for="1classic3" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 Whole Garlic Clove</label><br>
-                                        <input type="checkbox" id="1classic4" class="ingredientCheckbox"><label for="1classic4" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;Herb Sprig</label><br>
-                                        <input type="checkbox" id="1classic5" class="ingredientCheckbox"><label for="1classic5" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;Sea Salt</label><br>
-                                        <input type="checkbox" id="1classic6" class="ingredientCheckbox"><label for="1classic6" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;Ground Black Pepper</label><br>
+                                        <input type="checkbox" id="1classic1" class="ingredientCheckbox"><label for="1classic1" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 Fillet Steak</label><br>
+                                        <input type="checkbox" id="1classic2" class="ingredientCheckbox"><label for="1classic2" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 tbsp Olive Oil</label><br>
+                                        <input type="checkbox" id="1classic3" class="ingredientCheckbox"><label for="1classic3" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 Whole Garlic Clove</label><br>
+                                        <input type="checkbox" id="1classic4" class="ingredientCheckbox"><label for="1classic4" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Herb Sprig</label><br>
+                                        <input type="checkbox" id="1classic5" class="ingredientCheckbox"><label for="1classic5" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Sea Salt</label><br>
+                                        <input type="checkbox" id="1classic6" class="ingredientCheckbox"><label for="1classic6" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Ground Black Pepper</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -230,7 +230,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstClassic1" class="ingredientCheckbox"><label for="firstClassic1" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstClassic1" class="ingredientCheckbox"><label for="firstClassic1" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -263,7 +263,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstClassic3" class="ingredientCheckbox"><label for="firstClassic3" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstClassic3" class="ingredientCheckbox"><label for="firstClassic3" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -296,7 +296,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstClassic4" class="ingredientCheckbox"><label for="firstClassic4" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstClassic4" class="ingredientCheckbox"><label for="firstClassic4" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -329,7 +329,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstClassic5" class="ingredientCheckbox"><label for="firstClassic5" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstClassic5" class="ingredientCheckbox"><label for="firstClassic5" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -362,7 +362,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstClassic6" class="ingredientCheckbox"><label for="firstClassic6" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstClassic6" class="ingredientCheckbox"><label for="firstClassic6" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -395,7 +395,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstClassic7" class="ingredientCheckbox"><label for="firstClassic7" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstClassic7" class="ingredientCheckbox"><label for="firstClassic7" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -428,7 +428,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstClassic8" class="ingredientCheckbox"><label for="firstClassic8" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstClassic8" class="ingredientCheckbox"><label for="firstClassic8" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -461,7 +461,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstClassic9" class="ingredientCheckbox"><label for="firstClassic9" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstClassic9" class="ingredientCheckbox"><label for="firstClassic9" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -502,17 +502,17 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="1Vegetarian1" class="ingredientCheckbox"><label for="1Vegetarian1" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;2 cups Sprouted Mung Beans</label><br>
-                                        <input type="checkbox" id="1Vegetarian2" class="ingredientCheckbox"><label for="1Vegetarian2" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 Finely Chopped Onion</label><br>
-                                        <input type="checkbox" id="1Vegetarian3" class="ingredientCheckbox"><label for="1Vegetarian3" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 Finely Chopped Tomato</label><br>
-                                        <input type="checkbox" id="1Vegetarian4" class="ingredientCheckbox"><label for="1Vegetarian4" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 Finely Chopped Green Chilli</label><br>
-                                        <input type="checkbox" id="1Vegetarian5" class="ingredientCheckbox"><label for="1Vegetarian5" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/4 tsp Red Chilli Powder</label><br>
-                                        <input type="checkbox" id="1Vegetarian6" class="ingredientCheckbox"><label for="1Vegetarian6" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/2 tsp Chaat Masala</label><br>
-                                        <input type="checkbox" id="1Vegetarian7" class="ingredientCheckbox"><label for="1Vegetarian7" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 tsp Lemon Juice</label><br>
-                                        <input type="checkbox" id="1Vegetarian8" class="ingredientCheckbox"><label for="1Vegetarian8" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 Boiled Potato</label><br>
-                                        <input type="checkbox" id="1Vegetarian9" class="ingredientCheckbox"><label for="1Vegetarian9" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 Boiled Sweet Potato</label><br>
-                                        <input type="checkbox" id="1Vegetarian10" class="ingredientCheckbox"><label for="1Vegetarian10" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;Coriander Leaves and Lemon Slices</label><br>
-                                        <input type="checkbox" id="1Vegetarian11" class="ingredientCheckbox"><label for="1Vegetarian11" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;Sea Salt</label><br>
+                                        <input type="checkbox" id="1Vegetarian1" class="ingredientCheckbox"><label for="1Vegetarian1" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;2 cups Sprouted Mung Beans</label><br>
+                                        <input type="checkbox" id="1Vegetarian2" class="ingredientCheckbox"><label for="1Vegetarian2" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 Finely Chopped Onion</label><br>
+                                        <input type="checkbox" id="1Vegetarian3" class="ingredientCheckbox"><label for="1Vegetarian3" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 Finely Chopped Tomato</label><br>
+                                        <input type="checkbox" id="1Vegetarian4" class="ingredientCheckbox"><label for="1Vegetarian4" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 Finely Chopped Green Chilli</label><br>
+                                        <input type="checkbox" id="1Vegetarian5" class="ingredientCheckbox"><label for="1Vegetarian5" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 tsp Red Chilli Powder</label><br>
+                                        <input type="checkbox" id="1Vegetarian6" class="ingredientCheckbox"><label for="1Vegetarian6" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/2 tsp Chaat Masala</label><br>
+                                        <input type="checkbox" id="1Vegetarian7" class="ingredientCheckbox"><label for="1Vegetarian7" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 tsp Lemon Juice</label><br>
+                                        <input type="checkbox" id="1Vegetarian8" class="ingredientCheckbox"><label for="1Vegetarian8" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 Boiled Potato</label><br>
+                                        <input type="checkbox" id="1Vegetarian9" class="ingredientCheckbox"><label for="1Vegetarian9" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 Boiled Sweet Potato</label><br>
+                                        <input type="checkbox" id="1Vegetarian10" class="ingredientCheckbox"><label for="1Vegetarian10" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Coriander Leaves and Lemon Slices</label><br>
+                                        <input type="checkbox" id="1Vegetarian11" class="ingredientCheckbox"><label for="1Vegetarian11" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Sea Salt</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -545,15 +545,15 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="2Vegetarian1" class="ingredientCheckbox"><label for="2Vegetarian1" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;4 Boiled Eggs</label><br>
-                                        <input type="checkbox" id="2Vegetarian2" class="ingredientCheckbox"><label for="2Vegetarian2" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;2 Finely Chopped Onions</label><br>
-                                        <input type="checkbox" id="2Vegetarian3" class="ingredientCheckbox"><label for="2Vegetarian3" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;2 tbsp Oil</label><br>
-                                        <input type="checkbox" id="2Vegetarian4" class="ingredientCheckbox"><label for="2Vegetarian4" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/2 tsp Turmeric Powder</label><br>
-                                        <input type="checkbox" id="2Vegetarian5" class="ingredientCheckbox"><label for="2Vegetarian5" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/2 tsp Kashmiri Red Chilli Powder</label><br>
-                                        <input type="checkbox" id="2Vegetarian6" class="ingredientCheckbox"><label for="2Vegetarian6" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 tsp Coriander Powder</label><br>
-                                        <input type="checkbox" id="2Vegetarian7" class="ingredientCheckbox"><label for="2Vegetarian7" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 tbsp Ginger-garlic Paste</label><br>
-                                        <input type="checkbox" id="2Vegetarian8" class="ingredientCheckbox"><label for="2Vegetarian8" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;3 Pureed Tomatoes</label><br>
-                                        <input type="checkbox" id="2Vegetarian9" class="ingredientCheckbox"><label for="2Vegetarian9" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;2 tbsp Finely Chopped Fresh coriander leaves</label><br>
+                                        <input type="checkbox" id="2Vegetarian1" class="ingredientCheckbox"><label for="2Vegetarian1" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;4 Boiled Eggs</label><br>
+                                        <input type="checkbox" id="2Vegetarian2" class="ingredientCheckbox"><label for="2Vegetarian2" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;2 Finely Chopped Onions</label><br>
+                                        <input type="checkbox" id="2Vegetarian3" class="ingredientCheckbox"><label for="2Vegetarian3" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;2 tbsp Oil</label><br>
+                                        <input type="checkbox" id="2Vegetarian4" class="ingredientCheckbox"><label for="2Vegetarian4" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/2 tsp Turmeric Powder</label><br>
+                                        <input type="checkbox" id="2Vegetarian5" class="ingredientCheckbox"><label for="2Vegetarian5" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/2 tsp Kashmiri Red Chilli Powder</label><br>
+                                        <input type="checkbox" id="2Vegetarian6" class="ingredientCheckbox"><label for="2Vegetarian6" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 tsp Coriander Powder</label><br>
+                                        <input type="checkbox" id="2Vegetarian7" class="ingredientCheckbox"><label for="2Vegetarian7" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 tbsp Ginger-garlic Paste</label><br>
+                                        <input type="checkbox" id="2Vegetarian8" class="ingredientCheckbox"><label for="2Vegetarian8" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;3 Pureed Tomatoes</label><br>
+                                        <input type="checkbox" id="2Vegetarian9" class="ingredientCheckbox"><label for="2Vegetarian9" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;2 tbsp Finely Chopped Fresh coriander leaves</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -590,20 +590,20 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="3Vegetarian1" class="ingredientCheckbox"><label for="3Vegetarian1" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1x9" unbaked deep dish pie crust</label><br>
-                                        <input type="checkbox" id="3Vegetarian2" class="ingredientCheckbox"><label for="3Vegetarian2" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 tbsp Olive Oil</label><br>
-                                        <input type="checkbox" id="3Vegetarian3" class="ingredientCheckbox"><label for="3Vegetarian3" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/2 cup Sliced Onions</label><br>
-                                        <input type="checkbox" id="3Vegetarian4" class="ingredientCheckbox"><label for="3Vegetarian4" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/2 cup Chopped Green Bell Peppers</label><br>
-                                        <input type="checkbox" id="3Vegetarian5" class="ingredientCheckbox"><label for="3Vegetarian5" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/2 cup Sliced Mushrooms</label><br>
-                                        <input type="checkbox" id="3Vegetarian6" class="ingredientCheckbox"><label for="3Vegetarian6" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/2 cup Sliced Zucchini</label><br>
-                                        <input type="checkbox" id="3Vegetarian7" class="ingredientCheckbox"><label for="3Vegetarian7" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 Sliced Tomato</label><br>
-                                        <input type="checkbox" id="3Vegetarian8" class="ingredientCheckbox"><label for="3Vegetarian8" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;2 tbsp All-purpose Flour</label><br>
-                                        <input type="checkbox" id="3Vegetarian9" class="ingredientCheckbox"><label for="3Vegetarian9" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;2 tbsp Dried Basil</label><br>
-                                        <input type="checkbox" id="3Vegetarian10" class="ingredientCheckbox"><label for="3Vegetarian10" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;3 Beaten Eggs</label><br>
-                                        <input type="checkbox" id="3Vegetarian11" class="ingredientCheckbox"><label for="3Vegetarian11" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/2 cup Milk</label><br>
-                                        <input type="checkbox" id="3Vegetarian12" class="ingredientCheckbox"><label for="3Vegetarian12" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 1/2 Shredded Colby-Monterey Jack Cheese</label><br>
-                                        <input type="checkbox" id="3Vegetarian13" class="ingredientCheckbox"><label for="3Vegetarian13" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;Sea Salt</label><br>
-                                        <input type="checkbox" id="3Vegetarian14" class="ingredientCheckbox"><label for="3Vegetarian14" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;Ground Black Pepper</label><br>
+                                        <input type="checkbox" id="3Vegetarian1" class="ingredientCheckbox"><label for="3Vegetarian1" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1x9" unbaked deep dish pie crust</label><br>
+                                        <input type="checkbox" id="3Vegetarian2" class="ingredientCheckbox"><label for="3Vegetarian2" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 tbsp Olive Oil</label><br>
+                                        <input type="checkbox" id="3Vegetarian3" class="ingredientCheckbox"><label for="3Vegetarian3" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/2 cup Sliced Onions</label><br>
+                                        <input type="checkbox" id="3Vegetarian4" class="ingredientCheckbox"><label for="3Vegetarian4" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/2 cup Chopped Green Bell Peppers</label><br>
+                                        <input type="checkbox" id="3Vegetarian5" class="ingredientCheckbox"><label for="3Vegetarian5" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/2 cup Sliced Mushrooms</label><br>
+                                        <input type="checkbox" id="3Vegetarian6" class="ingredientCheckbox"><label for="3Vegetarian6" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/2 cup Sliced Zucchini</label><br>
+                                        <input type="checkbox" id="3Vegetarian7" class="ingredientCheckbox"><label for="3Vegetarian7" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 Sliced Tomato</label><br>
+                                        <input type="checkbox" id="3Vegetarian8" class="ingredientCheckbox"><label for="3Vegetarian8" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;2 tbsp All-purpose Flour</label><br>
+                                        <input type="checkbox" id="3Vegetarian9" class="ingredientCheckbox"><label for="3Vegetarian9" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;2 tbsp Dried Basil</label><br>
+                                        <input type="checkbox" id="3Vegetarian10" class="ingredientCheckbox"><label for="3Vegetarian10" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;3 Beaten Eggs</label><br>
+                                        <input type="checkbox" id="3Vegetarian11" class="ingredientCheckbox"><label for="3Vegetarian11" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/2 cup Milk</label><br>
+                                        <input type="checkbox" id="3Vegetarian12" class="ingredientCheckbox"><label for="3Vegetarian12" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 1/2 Shredded Colby-Monterey Jack Cheese</label><br>
+                                        <input type="checkbox" id="3Vegetarian13" class="ingredientCheckbox"><label for="3Vegetarian13" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Sea Salt</label><br>
+                                        <input type="checkbox" id="3Vegetarian14" class="ingredientCheckbox"><label for="3Vegetarian14" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Ground Black Pepper</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -635,11 +635,11 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="4Vegetarian1" class="ingredientCheckbox"><label for="4Vegetarian1" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;2 oz Spinach</label><br>
-                                        <input type="checkbox" id="4Vegetarian2" class="ingredientCheckbox"><label for="4Vegetarian2" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/4 clove Garlic</label><br>
-                                        <input type="checkbox" id="4Vegetarian3" class="ingredientCheckbox"><label for="4Vegetarian3" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;3 oz Greek Yoghurt</label><br>
-                                        <input type="checkbox" id="4Vegetarian4" class="ingredientCheckbox"><label for="4Vegetarian4" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;Olive Oil</label><br>
-                                        <input type="checkbox" id="4Vegetarian5" class="ingredientCheckbox"><label for="4Vegetarian5" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 oz raisins</label><br>
+                                        <input type="checkbox" id="4Vegetarian1" class="ingredientCheckbox"><label for="4Vegetarian1" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;2 oz Spinach</label><br>
+                                        <input type="checkbox" id="4Vegetarian2" class="ingredientCheckbox"><label for="4Vegetarian2" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 clove Garlic</label><br>
+                                        <input type="checkbox" id="4Vegetarian3" class="ingredientCheckbox"><label for="4Vegetarian3" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;3 oz Greek Yoghurt</label><br>
+                                        <input type="checkbox" id="4Vegetarian4" class="ingredientCheckbox"><label for="4Vegetarian4" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Olive Oil</label><br>
+                                        <input type="checkbox" id="4Vegetarian5" class="ingredientCheckbox"><label for="4Vegetarian5" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 oz raisins</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -673,14 +673,14 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="5Vegetarian1" class="ingredientCheckbox"><label for="5Vegetarian1" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/2 lb Tomatoes</label><br>
-                                        <input type="checkbox" id="5Vegetarian2" class="ingredientCheckbox"><label for="5Vegetarian2" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 clove Sliced Garlic</label><br>
-                                        <input type="checkbox" id="5Vegetarian3" class="ingredientCheckbox"><label for="5Vegetarian3" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/4 tsp Chili Flakes</label><br>
-                                        <input type="checkbox" id="5Vegetarian4" class="ingredientCheckbox"><label for="5Vegetarian4" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/4 Olive Oil</label><br>
-                                        <input type="checkbox" id="5Vegetarian5" class="ingredientCheckbox"><label for="5Vegetarian5" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/4 cup Basil Leaves</label><br>
-                                        <input type="checkbox" id="5Vegetarian6" class="ingredientCheckbox"><label for="5Vegetarian6" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;5 oz Fettuccine</label><br>
-                                        <input type="checkbox" id="5Vegetarian7" class="ingredientCheckbox"><label for="5Vegetarian7" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;Sea Salt</label><br>
-                                        <input type="checkbox" id="5Vegetarian8" class="ingredientCheckbox"><label for="5Vegetarian8" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;Ground Black Pepper</label><br>
+                                        <input type="checkbox" id="5Vegetarian1" class="ingredientCheckbox"><label for="5Vegetarian1" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/2 lb Tomatoes</label><br>
+                                        <input type="checkbox" id="5Vegetarian2" class="ingredientCheckbox"><label for="5Vegetarian2" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 clove Sliced Garlic</label><br>
+                                        <input type="checkbox" id="5Vegetarian3" class="ingredientCheckbox"><label for="5Vegetarian3" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 tsp Chili Flakes</label><br>
+                                        <input type="checkbox" id="5Vegetarian4" class="ingredientCheckbox"><label for="5Vegetarian4" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 Olive Oil</label><br>
+                                        <input type="checkbox" id="5Vegetarian5" class="ingredientCheckbox"><label for="5Vegetarian5" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 cup Basil Leaves</label><br>
+                                        <input type="checkbox" id="5Vegetarian6" class="ingredientCheckbox"><label for="5Vegetarian6" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;5 oz Fettuccine</label><br>
+                                        <input type="checkbox" id="5Vegetarian7" class="ingredientCheckbox"><label for="5Vegetarian7" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Sea Salt</label><br>
+                                        <input type="checkbox" id="5Vegetarian8" class="ingredientCheckbox"><label for="5Vegetarian8" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Ground Black Pepper</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -713,7 +713,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstVegetarian6" class="ingredientCheckbox"><label for="firstVegetarian6" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstVegetarian6" class="ingredientCheckbox"><label for="firstVegetarian6" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -746,7 +746,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstVegetarian7" class="ingredientCheckbox"><label for="firstVegetarian7" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstVegetarian7" class="ingredientCheckbox"><label for="firstVegetarian7" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -779,7 +779,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstVegetarian8" class="ingredientCheckbox"><label for="firstVegetarian8" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstVegetarian8" class="ingredientCheckbox"><label for="firstVegetarian8" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -812,7 +812,7 @@
                                 <tr>
                                     <td colspan="3">
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstVegetarian9" class="ingredientCheckbox"><label for="firstVegetarian9" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstVegetarian9" class="ingredientCheckbox"><label for="firstVegetarian9" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -852,14 +852,14 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="1Keto1" class="ingredientCheckbox"><label for="1Keto1" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;2 oz Goat Cheese</label><br>
-                                        <input type="checkbox" id="1Keto2" class="ingredientCheckbox"><label for="1Keto2" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;2 oz Bacon</label><br>
-                                        <input type="checkbox" id="1Keto3" class="ingredientCheckbox"><label for="1Keto3" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/2 Avocado</label><br>
-                                        <input type="checkbox" id="1Keto4" class="ingredientCheckbox"><label for="1Keto4" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 oz Walnuts</label><br>
-                                        <input type="checkbox" id="1Keto5" class="ingredientCheckbox"><label for="1Keto5" class="ingredientLabel" data-toggle="tooltip" title="Or just Lettuce"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;2 oz Arugula Lettuce</label><br>
-                                        <input type="checkbox" id="1Keto6" class="ingredientCheckbox"><label for="1Keto6" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/8 Lemon Juice</label><br>
-                                        <input type="checkbox" id="1Keto7" class="ingredientCheckbox"><label for="1Keto7" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 3/4 tbsp Mayonnaise</label><br>
-                                        <input type="checkbox" id="1Keto8" class="ingredientCheckbox"><label for="1Keto8" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 3/4 tbsp Olive Oil</label><br>
+                                        <input type="checkbox" id="1Keto1" class="ingredientCheckbox"><label for="1Keto1" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;2 oz Goat Cheese</label><br>
+                                        <input type="checkbox" id="1Keto2" class="ingredientCheckbox"><label for="1Keto2" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;2 oz Bacon</label><br>
+                                        <input type="checkbox" id="1Keto3" class="ingredientCheckbox"><label for="1Keto3" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/2 Avocado</label><br>
+                                        <input type="checkbox" id="1Keto4" class="ingredientCheckbox"><label for="1Keto4" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 oz Walnuts</label><br>
+                                        <input type="checkbox" id="1Keto5" class="ingredientCheckbox"><label for="1Keto5" class="ingredientLabel" data-toggle="tooltip" title="Or just Lettuce"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;2 oz Arugula Lettuce</label><br>
+                                        <input type="checkbox" id="1Keto6" class="ingredientCheckbox"><label for="1Keto6" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/8 Lemon Juice</label><br>
+                                        <input type="checkbox" id="1Keto7" class="ingredientCheckbox"><label for="1Keto7" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 3/4 tbsp Mayonnaise</label><br>
+                                        <input type="checkbox" id="1Keto8" class="ingredientCheckbox"><label for="1Keto8" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 3/4 tbsp Olive Oil</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -893,12 +893,12 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="2Keto1" class="ingredientCheckbox"><label for="2Keto1" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/2 tsp Olive Oil</label><br>
-                                        <input type="checkbox" id="2Keto2" class="ingredientCheckbox"><label for="2Keto2" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;6-8 oz Salmon</label><br>
-                                        <input type="checkbox" id="2Keto3" class="ingredientCheckbox"><label for="2Keto3" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 1/4 oz Butter</label><br>
-                                        <input type="checkbox" id="2Keto4" class="ingredientCheckbox"><label for="2Keto4" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/6 Lemon</label><br>
-                                        <input type="checkbox" id="2Keto5" class="ingredientCheckbox"><label for="2Keto5" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;Sea Salt</label><br>
-                                        <input type="checkbox" id="2Keto6" class="ingredientCheckbox"><label for="2Keto6" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;Ground Black Pepper</label><br>
+                                        <input type="checkbox" id="2Keto1" class="ingredientCheckbox"><label for="2Keto1" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/2 tsp Olive Oil</label><br>
+                                        <input type="checkbox" id="2Keto2" class="ingredientCheckbox"><label for="2Keto2" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;6-8 oz Salmon</label><br>
+                                        <input type="checkbox" id="2Keto3" class="ingredientCheckbox"><label for="2Keto3" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 1/4 oz Butter</label><br>
+                                        <input type="checkbox" id="2Keto4" class="ingredientCheckbox"><label for="2Keto4" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/6 Lemon</label><br>
+                                        <input type="checkbox" id="2Keto5" class="ingredientCheckbox"><label for="2Keto5" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Sea Salt</label><br>
+                                        <input type="checkbox" id="2Keto6" class="ingredientCheckbox"><label for="2Keto6" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Ground Black Pepper</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -929,11 +929,11 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="3Keto1" class="ingredientCheckbox"><label for="3Keto1" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;3 Eggs</label><br>
-                                        <input type="checkbox" id="3Keto2" class="ingredientCheckbox"><label for="3Keto2" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;2 oz Butter</label><br>
-                                        <input type="checkbox" id="3Keto3" class="ingredientCheckbox"><label for="3Keto3" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/6 Lemon</label><br>
-                                        <input type="checkbox" id="3Keto4" class="ingredientCheckbox"><label for="3Keto4" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;Sea Salt</label><br>
-                                        <input type="checkbox" id="3Keto5" class="ingredientCheckbox"><label for="3Keto5" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;Ground Black Pepper</label><br>
+                                        <input type="checkbox" id="3Keto1" class="ingredientCheckbox"><label for="3Keto1" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;3 Eggs</label><br>
+                                        <input type="checkbox" id="3Keto2" class="ingredientCheckbox"><label for="3Keto2" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;2 oz Butter</label><br>
+                                        <input type="checkbox" id="3Keto3" class="ingredientCheckbox"><label for="3Keto3" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/6 Lemon</label><br>
+                                        <input type="checkbox" id="3Keto4" class="ingredientCheckbox"><label for="3Keto4" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Sea Salt</label><br>
+                                        <input type="checkbox" id="3Keto5" class="ingredientCheckbox"><label for="3Keto5" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Ground Black Pepper</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -966,7 +966,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstKeto4" class="ingredientCheckbox"><label for="firstKeto4" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstKeto4" class="ingredientCheckbox"><label for="firstKeto4" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -999,7 +999,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstKeto5" class="ingredientCheckbox"><label for="firstKeto5" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstKeto5" class="ingredientCheckbox"><label for="firstKeto5" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -1032,7 +1032,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstKeto6" class="ingredientCheckbox"><label for="firstKeto6" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstKeto6" class="ingredientCheckbox"><label for="firstKeto6" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -1065,7 +1065,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstKeto7" class="ingredientCheckbox"><label for="firstKeto7" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstKeto7" class="ingredientCheckbox"><label for="firstKeto7" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -1098,7 +1098,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstKeto8" class="ingredientCheckbox"><label for="firstKeto8" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstKeto8" class="ingredientCheckbox"><label for="firstKeto8" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -1131,7 +1131,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstKeto9" class="ingredientCheckbox"><label for="firstKeto9" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstKeto9" class="ingredientCheckbox"><label for="firstKeto9" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -1172,18 +1172,18 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="1paleo1" class="ingredientCheckbox"><label for="1paleo1" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;4 oz Smoked Salmon</label><br>
-                                        <input type="checkbox" id="1paleo2" class="ingredientCheckbox"><label for="1paleo2" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 cup Tomatoes</label><br>
-                                        <input type="checkbox" id="1paleo3" class="ingredientCheckbox"><label for="1paleo3" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/2 Chopped Cucumber</label><br>
-                                        <input type="checkbox" id="1paleo4" class="ingredientCheckbox"><label for="1paleo4" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/2 Sliced Onion</label><br>
-                                        <input type="checkbox" id="1paleo5" class="ingredientCheckbox"><label for="1paleo5" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;3 tbsp Olive Oil</label><br>
-                                        <input type="checkbox" id="1paleo6" class="ingredientCheckbox"><label for="1paleo6" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 tbsp Lemon Juice</label><br>
-                                        <input type="checkbox" id="1paleo7" class="ingredientCheckbox"><label for="1paleo7" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/4 tsp minced Garlic</label><br>
-                                        <input type="checkbox" id="1paleo8" class="ingredientCheckbox"><label for="1paleo8" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/2 tsp Balsamic Vinegar</label><br>
-                                        <input type="checkbox" id="1paleo9" class="ingredientCheckbox"><label for="1paleo9" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/4 tsp Dried Oregano</label><br>
-                                        <input type="checkbox" id="1paleo10" class="ingredientCheckbox"><label for="1paleo10" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;Minced Dill</label><br>
-                                        <input type="checkbox" id="1paleo11" class="ingredientCheckbox"><label for="1paleo11" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;Sea Salt</label><br>
-                                        <input type="checkbox" id="1paleo12" class="ingredientCheckbox"><label for="1paleo12" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;Ground Black Pepper</label><br>
+                                        <input type="checkbox" id="1paleo1" class="ingredientCheckbox"><label for="1paleo1" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;4 oz Smoked Salmon</label><br>
+                                        <input type="checkbox" id="1paleo2" class="ingredientCheckbox"><label for="1paleo2" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 cup Tomatoes</label><br>
+                                        <input type="checkbox" id="1paleo3" class="ingredientCheckbox"><label for="1paleo3" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/2 Chopped Cucumber</label><br>
+                                        <input type="checkbox" id="1paleo4" class="ingredientCheckbox"><label for="1paleo4" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/2 Sliced Onion</label><br>
+                                        <input type="checkbox" id="1paleo5" class="ingredientCheckbox"><label for="1paleo5" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;3 tbsp Olive Oil</label><br>
+                                        <input type="checkbox" id="1paleo6" class="ingredientCheckbox"><label for="1paleo6" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 tbsp Lemon Juice</label><br>
+                                        <input type="checkbox" id="1paleo7" class="ingredientCheckbox"><label for="1paleo7" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 tsp minced Garlic</label><br>
+                                        <input type="checkbox" id="1paleo8" class="ingredientCheckbox"><label for="1paleo8" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/2 tsp Balsamic Vinegar</label><br>
+                                        <input type="checkbox" id="1paleo9" class="ingredientCheckbox"><label for="1paleo9" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 tsp Dried Oregano</label><br>
+                                        <input type="checkbox" id="1paleo10" class="ingredientCheckbox"><label for="1paleo10" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Minced Dill</label><br>
+                                        <input type="checkbox" id="1paleo11" class="ingredientCheckbox"><label for="1paleo11" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Sea Salt</label><br>
+                                        <input type="checkbox" id="1paleo12" class="ingredientCheckbox"><label for="1paleo12" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Ground Black Pepper</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -1216,7 +1216,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstPaleo2" class="ingredientCheckbox"><label for="firstPaleo2" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstPaleo2" class="ingredientCheckbox"><label for="firstPaleo2" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -1249,7 +1249,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstPaleo3" class="ingredientCheckbox"><label for="firstPaleo3" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstPaleo3" class="ingredientCheckbox"><label for="firstPaleo3" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -1282,7 +1282,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstPaleo4" class="ingredientCheckbox"><label for="firstPaleo4" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstPaleo4" class="ingredientCheckbox"><label for="firstPaleo4" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -1315,7 +1315,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstPaleo5" class="ingredientCheckbox"><label for="firstPaleo5" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstPaleo5" class="ingredientCheckbox"><label for="firstPaleo5" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -1348,7 +1348,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstPaleo6" class="ingredientCheckbox"><label for="firstPaleo6" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstPaleo6" class="ingredientCheckbox"><label for="firstPaleo6" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -1381,7 +1381,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstPaleo7" class="ingredientCheckbox"><label for="firstPaleo7" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstPaleo7" class="ingredientCheckbox"><label for="firstPaleo7" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -1414,7 +1414,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstPaleo8" class="ingredientCheckbox"><label for="firstPaleo8" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstPaleo8" class="ingredientCheckbox"><label for="firstPaleo8" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -1447,7 +1447,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstPaleo9" class="ingredientCheckbox"><label for="firstPaleo9" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstPaleo9" class="ingredientCheckbox"><label for="firstPaleo9" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -1487,17 +1487,17 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="1protein1" class="ingredientCheckbox"><label for="1protein1" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 tbsp Dry Breadcrumbs</label><br>
-                                        <input type="checkbox" id="1protein2" class="ingredientCheckbox"><label for="1protein2" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/4 tsp Olive Oil</label><br>
-                                        <input type="checkbox" id="1protein3" class="ingredientCheckbox"><label for="1protein3" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/4 tsp Paprika</label><br>
-                                        <input type="checkbox" id="1protein4" class="ingredientCheckbox"><label for="1protein4" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;3 oz Frozen Spinach</label><br>
-                                        <input type="checkbox" id="1protein5" class="ingredientCheckbox"><label for="1protein5" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/2 cup Milk</label><br>
-                                        <input type="checkbox" id="1protein6" class="ingredientCheckbox"><label for="1protein6" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 tbsp All-purpose Flour</label><br>
-                                        <input type="checkbox" id="1protein7" class="ingredientCheckbox"><label for="1protein7" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/2 cup Shredded Cheddar Cheese</label><br>
-                                        <input type="checkbox" id="1protein8" class="ingredientCheckbox"><label for="1protein8" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/4 cup Cottage Cheese</label><br>
-                                        <input type="checkbox" id="1protein9" class="ingredientCheckbox"><label for="1protein9" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;2 cups Macaroni or Penne</label><br>
-                                        <input type="checkbox" id="1protein10" class="ingredientCheckbox"><label for="1protein10" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;Sea Salt</label><br>
-                                        <input type="checkbox" id="1protein11" class="ingredientCheckbox"><label for="1protein11" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;Ground Black Pepper</label><br>
+                                        <input type="checkbox" id="1protein1" class="ingredientCheckbox"><label for="1protein1" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 tbsp Dry Breadcrumbs</label><br>
+                                        <input type="checkbox" id="1protein2" class="ingredientCheckbox"><label for="1protein2" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 tsp Olive Oil</label><br>
+                                        <input type="checkbox" id="1protein3" class="ingredientCheckbox"><label for="1protein3" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 tsp Paprika</label><br>
+                                        <input type="checkbox" id="1protein4" class="ingredientCheckbox"><label for="1protein4" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;3 oz Frozen Spinach</label><br>
+                                        <input type="checkbox" id="1protein5" class="ingredientCheckbox"><label for="1protein5" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/2 cup Milk</label><br>
+                                        <input type="checkbox" id="1protein6" class="ingredientCheckbox"><label for="1protein6" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 tbsp All-purpose Flour</label><br>
+                                        <input type="checkbox" id="1protein7" class="ingredientCheckbox"><label for="1protein7" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/2 cup Shredded Cheddar Cheese</label><br>
+                                        <input type="checkbox" id="1protein8" class="ingredientCheckbox"><label for="1protein8" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 cup Cottage Cheese</label><br>
+                                        <input type="checkbox" id="1protein9" class="ingredientCheckbox"><label for="1protein9" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;2 cups Macaroni or Penne</label><br>
+                                        <input type="checkbox" id="1protein10" class="ingredientCheckbox"><label for="1protein10" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Sea Salt</label><br>
+                                        <input type="checkbox" id="1protein11" class="ingredientCheckbox"><label for="1protein11" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Ground Black Pepper</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -1530,23 +1530,23 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="2protein1" class="ingredientCheckbox"><label for="2protein1" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/2 lb Chicken</label><br>
-                                        <input type="checkbox" id="2protein2" class="ingredientCheckbox"><label for="2protein2" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/2 tbsp Olive Oil</label><br>
-                                        <input type="checkbox" id="2protein3" class="ingredientCheckbox"><label for="2protein3" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/4 tbsp Butter</label><br>
-                                        <input type="checkbox" id="2protein4" class="ingredientCheckbox"><label for="2protein4" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 cup Finely Diced Onion</label><br>
-                                        <input type="checkbox" id="2protein5" class="ingredientCheckbox"><label for="2protein5" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;Pinch of Sugar</label><br>
-                                        <input type="checkbox" id="2protein6" class="ingredientCheckbox"><label for="2protein6" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/4 cup Diced Red Bell Pepper</label><br>
-                                        <input type="checkbox" id="2protein7" class="ingredientCheckbox"><label for="2protein7" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/8 cup Diced Green Bell Pepper</label><br>
-                                        <input type="checkbox" id="2protein8" class="ingredientCheckbox"><label for="2protein8" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/4 tbsp Tomato Paste</label><br>
-                                        <input type="checkbox" id="2protein9" class="ingredientCheckbox"><label for="2protein9" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/4 tbsp Sweet Paprika</label><br>
-                                        <input type="checkbox" id="2protein10" class="ingredientCheckbox"><label for="2protein10" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/4 tsp Cushed Red Pepper</label><br>
-                                        <input type="checkbox" id="2protein11" class="ingredientCheckbox"><label for="2protein11" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/4 tsp Dried Marjoram</label><br>
-                                        <input type="checkbox" id="2protein12" class="ingredientCheckbox"><label for="2protein12" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/4 cup Chicken Broth</label><br>
-                                        <input type="checkbox" id="2protein13" class="ingredientCheckbox"><label for="2protein13" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/8 cup Sour Cream</label><br>
-                                        <input type="checkbox" id="2protein14" class="ingredientCheckbox"><label for="2protein14" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/4 tbsp All-purpose Flour</label><br>
-                                        <input type="checkbox" id="2protein15" class="ingredientCheckbox"><label for="2protein15" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/4 tbsp Finely Minced Parsley, Dill or Chives</label><br>
-                                        <input type="checkbox" id="2protein16" class="ingredientCheckbox"><label for="2protein16" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;Sea Salt</label><br>
-                                        <input type="checkbox" id="2protein17" class="ingredientCheckbox"><label for="2protein17" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;Ground Black Pepper</label><br>
+                                        <input type="checkbox" id="2protein1" class="ingredientCheckbox"><label for="2protein1" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/2 lb Chicken</label><br>
+                                        <input type="checkbox" id="2protein2" class="ingredientCheckbox"><label for="2protein2" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/2 tbsp Olive Oil</label><br>
+                                        <input type="checkbox" id="2protein3" class="ingredientCheckbox"><label for="2protein3" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 tbsp Butter</label><br>
+                                        <input type="checkbox" id="2protein4" class="ingredientCheckbox"><label for="2protein4" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 cup Finely Diced Onion</label><br>
+                                        <input type="checkbox" id="2protein5" class="ingredientCheckbox"><label for="2protein5" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Pinch of Sugar</label><br>
+                                        <input type="checkbox" id="2protein6" class="ingredientCheckbox"><label for="2protein6" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 cup Diced Red Bell Pepper</label><br>
+                                        <input type="checkbox" id="2protein7" class="ingredientCheckbox"><label for="2protein7" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/8 cup Diced Green Bell Pepper</label><br>
+                                        <input type="checkbox" id="2protein8" class="ingredientCheckbox"><label for="2protein8" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 tbsp Tomato Paste</label><br>
+                                        <input type="checkbox" id="2protein9" class="ingredientCheckbox"><label for="2protein9" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 tbsp Sweet Paprika</label><br>
+                                        <input type="checkbox" id="2protein10" class="ingredientCheckbox"><label for="2protein10" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 tsp Cushed Red Pepper</label><br>
+                                        <input type="checkbox" id="2protein11" class="ingredientCheckbox"><label for="2protein11" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 tsp Dried Marjoram</label><br>
+                                        <input type="checkbox" id="2protein12" class="ingredientCheckbox"><label for="2protein12" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 cup Chicken Broth</label><br>
+                                        <input type="checkbox" id="2protein13" class="ingredientCheckbox"><label for="2protein13" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/8 cup Sour Cream</label><br>
+                                        <input type="checkbox" id="2protein14" class="ingredientCheckbox"><label for="2protein14" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 tbsp All-purpose Flour</label><br>
+                                        <input type="checkbox" id="2protein15" class="ingredientCheckbox"><label for="2protein15" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 tbsp Finely Minced Parsley, Dill or Chives</label><br>
+                                        <input type="checkbox" id="2protein16" class="ingredientCheckbox"><label for="2protein16" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Sea Salt</label><br>
+                                        <input type="checkbox" id="2protein17" class="ingredientCheckbox"><label for="2protein17" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Ground Black Pepper</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -1579,7 +1579,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstProtein3" class="ingredientCheckbox"><label for="firstProtein3" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstProtein3" class="ingredientCheckbox"><label for="firstProtein3" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -1612,7 +1612,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstProtein4" class="ingredientCheckbox"><label for="firstProtein4" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstProtein4" class="ingredientCheckbox"><label for="firstProtein4" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -1645,7 +1645,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstProtein5" class="ingredientCheckbox"><label for="firstProtein5" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstProtein5" class="ingredientCheckbox"><label for="firstProtein5" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -1678,7 +1678,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstProtein6" class="ingredientCheckbox"><label for="firstProtein6" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstProtein6" class="ingredientCheckbox"><label for="firstProtein6" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -1711,7 +1711,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstProtein7" class="ingredientCheckbox"><label for="firstProtein7" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstProtein7" class="ingredientCheckbox"><label for="firstProtein7" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -1744,7 +1744,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstProtein8" class="ingredientCheckbox"><label for="firstProtein8" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstProtein8" class="ingredientCheckbox"><label for="firstProtein8" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -1777,7 +1777,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstProtein9" class="ingredientCheckbox"><label for="firstProtein9" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstProtein9" class="ingredientCheckbox"><label for="firstProtein9" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -1816,23 +1816,23 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="1Cultural1" class="ingredientCheckbox"><label for="1Cultural1" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/4 Cup Yogurt</label><br>
-                                        <input type="checkbox" id="1Cultural2" class="ingredientCheckbox"><label for="1Cultural2" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;3/4 tsp Lemon Juice</label><br>
-                                        <input type="checkbox" id="1Cultural3" class="ingredientCheckbox"><label for="1Cultural3" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/2 tsp Fresh Ground Cumin</label><br>
-                                        <input type="checkbox" id="1Cultural4" class="ingredientCheckbox"><label for="1Cultural4" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/4 tsp Ground Cinnamon</label><br>
-                                        <input type="checkbox" id="1Cultural5" class="ingredientCheckbox"><label for="1Cultural5" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/2 tsp Cayenne Pepper</label><br>
-                                        <input type="checkbox" id="1Cultural6" class="ingredientCheckbox"><label for="1Cultural6" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;3/4 tsp Minced Fresh Ginger</label><br>
-                                        <input type="checkbox" id="1Cultural7" class="ingredientCheckbox"><label for="1Cultural7" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;3/4 Chicken Breasts</label><br>
-                                        <input type="checkbox" id="1Cultural8" class="ingredientCheckbox"><label for="1Cultural8" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 Long Skewers</label><br>
-                                        <input type="checkbox" id="1Cultural9" class="ingredientCheckbox"><label for="1Cultural9" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;3/4 tsp Butter</label><br>
-                                        <input type="checkbox" id="1Cultural10" class="ingredientCheckbox"><label for="1Cultural10" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/4 Minced Garlic</label><br>
-                                        <input type="checkbox" id="1Cultural11" class="ingredientCheckbox"><label for="1Cultural11" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/4 Finely Chopped Jalapeno Pepper</label><br>
-                                        <input type="checkbox" id="1Cultural12" class="ingredientCheckbox"><label for="1Cultural12" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/2 tsp Paprika</label><br>
-                                        <input type="checkbox" id="1Cultural13" class="ingredientCheckbox"><label for="1Cultural13" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/4 can Tomato Sauce</label><br>
-                                        <input type="checkbox" id="1Cultural14" class="ingredientCheckbox"><label for="1Cultural14" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/4 cup Heavy Cream</label><br>
-                                        <input type="checkbox" id="1Cultural15" class="ingredientCheckbox"><label for="1Cultural15" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 tbsp Chopped Fresh Cilantro</label><br>
-                                        <input type="checkbox" id="1Cultural16" class="ingredientCheckbox"><label for="1Cultural16" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;Sea Salt</label><br>
-                                        <input type="checkbox" id="1Cultural17" class="ingredientCheckbox"><label for="1Cultural17" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;Ground Black Pepper</label><br>
+                                        <input type="checkbox" id="1Cultural1" class="ingredientCheckbox"><label for="1Cultural1" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 Cup Yogurt</label><br>
+                                        <input type="checkbox" id="1Cultural2" class="ingredientCheckbox"><label for="1Cultural2" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;3/4 tsp Lemon Juice</label><br>
+                                        <input type="checkbox" id="1Cultural3" class="ingredientCheckbox"><label for="1Cultural3" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/2 tsp Fresh Ground Cumin</label><br>
+                                        <input type="checkbox" id="1Cultural4" class="ingredientCheckbox"><label for="1Cultural4" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 tsp Ground Cinnamon</label><br>
+                                        <input type="checkbox" id="1Cultural5" class="ingredientCheckbox"><label for="1Cultural5" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/2 tsp Cayenne Pepper</label><br>
+                                        <input type="checkbox" id="1Cultural6" class="ingredientCheckbox"><label for="1Cultural6" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;3/4 tsp Minced Fresh Ginger</label><br>
+                                        <input type="checkbox" id="1Cultural7" class="ingredientCheckbox"><label for="1Cultural7" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;3/4 Chicken Breasts</label><br>
+                                        <input type="checkbox" id="1Cultural8" class="ingredientCheckbox"><label for="1Cultural8" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 Long Skewers</label><br>
+                                        <input type="checkbox" id="1Cultural9" class="ingredientCheckbox"><label for="1Cultural9" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;3/4 tsp Butter</label><br>
+                                        <input type="checkbox" id="1Cultural10" class="ingredientCheckbox"><label for="1Cultural10" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 Minced Garlic</label><br>
+                                        <input type="checkbox" id="1Cultural11" class="ingredientCheckbox"><label for="1Cultural11" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 Finely Chopped Jalapeno Pepper</label><br>
+                                        <input type="checkbox" id="1Cultural12" class="ingredientCheckbox"><label for="1Cultural12" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/2 tsp Paprika</label><br>
+                                        <input type="checkbox" id="1Cultural13" class="ingredientCheckbox"><label for="1Cultural13" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 can Tomato Sauce</label><br>
+                                        <input type="checkbox" id="1Cultural14" class="ingredientCheckbox"><label for="1Cultural14" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 cup Heavy Cream</label><br>
+                                        <input type="checkbox" id="1Cultural15" class="ingredientCheckbox"><label for="1Cultural15" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 tbsp Chopped Fresh Cilantro</label><br>
+                                        <input type="checkbox" id="1Cultural16" class="ingredientCheckbox"><label for="1Cultural16" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Sea Salt</label><br>
+                                        <input type="checkbox" id="1Cultural17" class="ingredientCheckbox"><label for="1Cultural17" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Ground Black Pepper</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -1865,20 +1865,20 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="2Cultural1" class="ingredientCheckbox"><label for="2Cultural1" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 1/2 tbsp Butter</label><br>
-                                        <input type="checkbox" id="2Cultura2" class="ingredientCheckbox"><label for="2Cultura2" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/2 lbs Chicken Breast</label><br>
-                                        <input type="checkbox" id="2Cultura3" class="ingredientCheckbox"><label for="2Cultura3" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/4 Diced Yellow Onion</label><br>
-                                        <input type="checkbox" id="2Cultura4" class="ingredientCheckbox"><label for="2Cultura4" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 Minced Garlic Clove</label><br>
-                                        <input type="checkbox" id="2Cultura5" class="ingredientCheckbox"><label for="2Cultura5" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 tsp Garam Masala</label><br>
-                                        <input type="checkbox" id="2Cultura6" class="ingredientCheckbox"><label for="2Cultura6" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 tsp Fresh Grated Ginger</label><br>
-                                        <input type="checkbox" id="2Cultura7" class="ingredientCheckbox"><label for="2Cultura7" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/4 tsp Chili Powder</label><br>
-                                        <input type="checkbox" id="2Cultura8" class="ingredientCheckbox"><label for="2Cultura8" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/4 tsp Ground Cumin</label><br>
-                                        <input type="checkbox" id="2Cultura9" class="ingredientCheckbox"><label for="2Cultura9" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1/4 tsp Cayenne Pepper</label><br>
-                                        <input type="checkbox" id="2Cultural0" class="ingredientCheckbox"><label for="2Cultural0" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;1 1/2 cups Tomato Sauce</label><br>
-                                        <input type="checkbox" id="2Cultural1" class="ingredientCheckbox"><label for="2Cultural1" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;2 cups Cream</label><br>
-                                        <input type="checkbox" id="2Cultural2" class="ingredientCheckbox"><label for="2Cultural2" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;lime and cilantro, for garnish</label><br>
-                                        <input type="checkbox" id="2Cultural3" class="ingredientCheckbox"><label for="2Cultural3" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;Sea Salt</label><br>
-                                        <input type="checkbox" id="2Cultural4" class="ingredientCheckbox"><label for="2Cultural4" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;Ground Black Pepper</label><br>
+                                        <input type="checkbox" id="2Cultural1" class="ingredientCheckbox"><label for="2Cultural1" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 1/2 tbsp Butter</label><br>
+                                        <input type="checkbox" id="2Cultura2" class="ingredientCheckbox"><label for="2Cultura2" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/2 lbs Chicken Breast</label><br>
+                                        <input type="checkbox" id="2Cultura3" class="ingredientCheckbox"><label for="2Cultura3" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 Diced Yellow Onion</label><br>
+                                        <input type="checkbox" id="2Cultura4" class="ingredientCheckbox"><label for="2Cultura4" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 Minced Garlic Clove</label><br>
+                                        <input type="checkbox" id="2Cultura5" class="ingredientCheckbox"><label for="2Cultura5" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 tsp Garam Masala</label><br>
+                                        <input type="checkbox" id="2Cultura6" class="ingredientCheckbox"><label for="2Cultura6" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 tsp Fresh Grated Ginger</label><br>
+                                        <input type="checkbox" id="2Cultura7" class="ingredientCheckbox"><label for="2Cultura7" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 tsp Chili Powder</label><br>
+                                        <input type="checkbox" id="2Cultura8" class="ingredientCheckbox"><label for="2Cultura8" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 tsp Ground Cumin</label><br>
+                                        <input type="checkbox" id="2Cultura9" class="ingredientCheckbox"><label for="2Cultura9" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 tsp Cayenne Pepper</label><br>
+                                        <input type="checkbox" id="2Cultural0" class="ingredientCheckbox"><label for="2Cultural0" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 1/2 cups Tomato Sauce</label><br>
+                                        <input type="checkbox" id="2Cultural1" class="ingredientCheckbox"><label for="2Cultural1" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;2 cups Cream</label><br>
+                                        <input type="checkbox" id="2Cultural2" class="ingredientCheckbox"><label for="2Cultural2" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;lime and cilantro, for garnish</label><br>
+                                        <input type="checkbox" id="2Cultural3" class="ingredientCheckbox"><label for="2Cultural3" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Sea Salt</label><br>
+                                        <input type="checkbox" id="2Cultural4" class="ingredientCheckbox"><label for="2Cultural4" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Ground Black Pepper</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -1911,7 +1911,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstCultural3" class="ingredientCheckbox"><label for="firstCultural3" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstCultural3" class="ingredientCheckbox"><label for="firstCultural3" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -1944,7 +1944,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstCultural4" class="ingredientCheckbox"><label for="firstCultural4" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstCultural4" class="ingredientCheckbox"><label for="firstCultural4" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -1977,7 +1977,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstCultural5" class="ingredientCheckbox"><label for="firstCultural5" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstCultural5" class="ingredientCheckbox"><label for="firstCultural5" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -2010,7 +2010,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstCultural6" class="ingredientCheckbox"><label for="firstCultural6" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstCultural6" class="ingredientCheckbox"><label for="firstCultural6" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -2043,7 +2043,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstCultural7" class="ingredientCheckbox"><label for="firstCultural7" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstCultural7" class="ingredientCheckbox"><label for="firstCultural7" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -2076,7 +2076,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstCultural8" class="ingredientCheckbox"><label for="firstCultural8" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstCultural8" class="ingredientCheckbox"><label for="firstCultural8" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -2109,7 +2109,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstCultural9" class="ingredientCheckbox"><label for="firstCultural9" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstCultural9" class="ingredientCheckbox"><label for="firstCultural9" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -2149,7 +2149,7 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstUser1" class="ingredientCheckbox"><label for="firstUser1" class="ingredientLabel"><span class="glyphicon glyphicon-minus-sign"></span><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="firstUser1" class="ingredientCheckbox"><label for="firstUser1" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -2171,7 +2171,7 @@
                                 <input class="recipetextarea form-control inputSteps" type="text" placeholder="Enter the simple step" required>
                                 <input class="recipetextarea form-control inputSteps" type="text" placeholder="Enter the simple step" required>
                                 <input class="recipetextarea form-control inputSteps" type="text" placeholder="Enter the simple step" required>
-                                <button type="button" id="addStepId" class="btn btn-primary" data-toggle="tooltip"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;&nbsp;Add Step</button>
+                                <button type="button" id="addStepId" class="btn btn-primary"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;&nbsp;Add Step</button>
                                 <button type="button" id="removeStepId" class="btn btn-danger remove"><i class="glyphicon glyphicon-remove-sign"></i>&nbsp;&nbsp;Delete Step</button>
                             <br><br>
                             <table class="table table-condensed">
@@ -2183,7 +2183,7 @@
                                         <input class="recipetextarea form-control inputIngredients" type="text" placeholder="Enter the ingredient" required>
                                         <input class="recipetextarea form-control inputIngredients" type="text" placeholder="Enter the ingredient" required>
                                         <input class="recipetextarea form-control inputIngredients" type="text" placeholder="Enter the ingredient" required>
-                                        <button type="button" id="addIngredientId" class="btn btn-primary" data-toggle="tooltip"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;&nbsp;Add Ingredient</button>
+                                        <button type="button" id="addIngredientId" class="btn btn-primary"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;&nbsp;Add Ingredient</button>
                                         <button type="button" id="removeIngredientId" class="btn btn-danger remove"><i class="glyphicon glyphicon-remove-sign"></i>&nbsp;&nbsp;Delete Ingredient</button>
                                     </td>
                                 </tr>

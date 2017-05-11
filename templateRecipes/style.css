@@ -134,12 +134,12 @@ ul.nav-pills {
     display: none;
 }
 
-.glyphicon-plus-sign {
+.glyphicon-ok-circle {
     color: #77dd77;
   display: none;
 }
 
-.glyphicon-minus-sign {
+.glyphicon-remove-circle {
   color: #ff6961;
 }
 
@@ -151,11 +151,11 @@ ul.nav-pills {
     background-color: #77cc77;
 }
 
-.ingredientCheckbox:checked + .ingredientLabel .glyphicon-minus-sign {
+.ingredientCheckbox:checked + .ingredientLabel .glyphicon-remove-circle {
   display: none;
 }
 
-.ingredientCheckbox:checked + .ingredientLabel .glyphicon-plus-sign {
+.ingredientCheckbox:checked + .ingredientLabel .glyphicon-ok-circle {
   display: inline;
 }
 
