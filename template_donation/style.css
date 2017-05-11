@@ -3,43 +3,15 @@
     padding:0;
 }
 
-h1 {
-    text-align:center;
-}
-
-
 body {
     display: block;
-    width: 70%;
+    width: 80%;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: auto;  
+    background-color:#ebeef4
 }
 
 
-#sideList {
-    height:400px;
-    overflow-y:scroll;
-    background-color:#F5F5F5;
-    padding:10px 0px 10px 0px;
+p {
+    padding-bottom:30px;
 }
-
-#googleMap {
-    padding:0;
-}
-
-.row {
-    padding-top:10px
-}
-
-.well {
-    margin-bottom:0;
-}
-
-
-
-
-
-
-
-
-

@@ -6,11 +6,11 @@ var count = 2;
 
 function myMap() {
     
-    var myCenter = new google.maps.LatLng(49.209631, -122.928385);
+    var myCenter = new google.maps.LatLng(49.237704,-123.075846);
     var mapCanvas = document.getElementById("map");
     var mapOptions = {
         center: myCenter,
-        zoom: 11,
+        zoom: 10,
     };
         
     var map = new google.maps.Map(mapCanvas, mapOptions);
@@ -20,7 +20,7 @@ function myMap() {
     });
     
     
-    var myCenter1 = new google.maps.LatLng(49.1977, -122.8487);
+    var myCenter1 = new google.maps.LatLng(49.2,-123.075846);
     marker1 = new google.maps.Marker({
         position:myCenter1,
         optimized:false
@@ -43,7 +43,8 @@ function myMap() {
             bounceTimer = setTimeout(function(){
                  this_marker.setAnimation(google.maps.Animation.BOUNCE);
             },500);
-           
+            
+            document.getElementById("1").style.color="red";
         }
     });
     
@@ -59,7 +60,7 @@ function myMap() {
            this.setAnimation(null);
         }
         clearTimeout(bounceTimer);
-        
+        document.getElementById("1").style.color="black";
         
     });
     google.maps.event.addListener(marker1, 'mouseover', function() {
@@ -71,8 +72,6 @@ function myMap() {
             bounceTimer = setTimeout(function(){
                  this_marker.setAnimation(google.maps.Animation.BOUNCE);
             },500);
-             
-            document.getElementById("1").style.color="red";
         }
     });
     
@@ -83,7 +82,6 @@ function myMap() {
            this.setAnimation(null);
         }
         clearTimeout(bounceTimer);
-        document.getElementById("1").style.color="black";
         
     }); 
     
@@ -115,43 +113,35 @@ function myMap() {
 }
 
 
-function bounceMarker(x) {
+function ab(x) {
     if (x == 'li1') {
             clearTimeout(bounceTimer);
              
             bounceTimer = setTimeout(function(){
                  marker.setAnimation(google.maps.Animation.BOUNCE);
             },500);
+            
+            document.getElementById("1").style.color="red";
+            
 }
     else if(x == 'li2'){
-            clearTimeout(bounceTimer);
-             
-            bounceTimer = setTimeout(function(){
-                 marker1.setAnimation(google.maps.Animation.BOUNCE);
-            },500);
+              marker1.setAnimation(google.maps.Animation.BOUNCE);
     }         
   
   else if(x == 'li3') {
-           clearTimeout(bounceTimer);
-             
-            bounceTimer = setTimeout(function(){
-                 marker2.setAnimation(google.maps.Animation.BOUNCE);
-            },500);
+           marker2.setAnimation(google.maps.Animation.BOUNCE);
        
 }
 }
-function stopBounce() {
+function abf() {
     
     if (marker.getAnimation() != null) {
            marker.setAnimation(null);
     }
     
-    if (marker1.getAnimation() != null) {
-           marker1.setAnimation(null);
-    }
-    if (marker2.getAnimation() != null) {
-           marker2.setAnimation(null);
-    }
+    marker1.setAnimation(null);
+    marker2.setAnimation(null);
+    
     clearTimeout(bounceTimer);
     
 }
