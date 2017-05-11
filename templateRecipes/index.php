@@ -205,7 +205,7 @@
                             </table>
                         </div>
                         <div class="col-md-6">
-                            <img class="recipeImage" src="haha.jpg" alt="List1 Image">
+                            <img class="recipeImage" src="images/classic1.jpg" alt="Steak">
                         </div>
                     </div>
                 </div>
