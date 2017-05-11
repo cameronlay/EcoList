@@ -144,8 +144,8 @@
                 <ul class="nav nav-pills nav-stacked">
                     <li id="culturalList1" class="active" onclick="culturalPillsClicked('culturalList1', 'culturalListContent1')"><a href="javascript:void(0);">Chicken Tikka - Punjabi</a></li>
                     <li id="culturalList2" onclick="culturalPillsClicked('culturalList2', 'culturalListContent2')"><a href="javascript:void(0);">Butter Chicken - Punjabi</a></li>
-                    <li id="culturalList3" onclick="culturalPillsClicked('culturalList3', 'culturalListContent3')"><a href="javascript:void(0);">culturalLIST3</a></li>
-                    <li id="culturalList4" onclick="culturalPillsClicked('culturalList4', 'culturalListContent4')"><a href="javascript:void(0);">culturalLIST4</a></li>
+                    <li id="culturalList3" onclick="culturalPillsClicked('culturalList3', 'culturalListContent3')"><a href="javascript:void(0);">Yang Chow - Hong Kong</a></li>
+                    <li id="culturalList4" onclick="culturalPillsClicked('culturalList4', 'culturalListContent4')"><a href="javascript:void(0);">Chow Mien - Hong Kong</a></li>
                     <li id="culturalList5" onclick="culturalPillsClicked('culturalList5', 'culturalListContent5')"><a href="javascript:void(0);">culturalLIST5</a></li>
                     <li id="culturalList6" onclick="culturalPillsClicked('culturalList6', 'culturalListContent6')"><a href="javascript:void(0);">culturalLIST6</a></li>
                     <li id="culturalList7" onclick="culturalPillsClicked('culturalList7', 'culturalListContent7')"><a href="javascript:void(0);">culturalLIST7</a></li>
@@ -1866,14 +1866,14 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="2Cultural1" class="ingredientCheckbox"><label for="2Cultural1" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 1/2 tbsp Butter</label><br>
-                                        <input type="checkbox" id="2Cultura2" class="ingredientCheckbox"><label for="2Cultura2" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/2 lbs Chicken Breast</label><br>
-                                        <input type="checkbox" id="2Cultura3" class="ingredientCheckbox"><label for="2Cultura3" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 Diced Yellow Onion</label><br>
-                                        <input type="checkbox" id="2Cultura4" class="ingredientCheckbox"><label for="2Cultura4" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 Minced Garlic Clove</label><br>
-                                        <input type="checkbox" id="2Cultura5" class="ingredientCheckbox"><label for="2Cultura5" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 tsp Garam Masala</label><br>
-                                        <input type="checkbox" id="2Cultura6" class="ingredientCheckbox"><label for="2Cultura6" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 tsp Fresh Grated Ginger</label><br>
-                                        <input type="checkbox" id="2Cultura7" class="ingredientCheckbox"><label for="2Cultura7" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 tsp Chili Powder</label><br>
-                                        <input type="checkbox" id="2Cultura8" class="ingredientCheckbox"><label for="2Cultura8" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 tsp Ground Cumin</label><br>
-                                        <input type="checkbox" id="2Cultura9" class="ingredientCheckbox"><label for="2Cultura9" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 tsp Cayenne Pepper</label><br>
+                                        <input type="checkbox" id="2Cultural2" class="ingredientCheckbox"><label for="2Cultural2" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/2 lbs Chicken Breast</label><br>
+                                        <input type="checkbox" id="2Cultural3" class="ingredientCheckbox"><label for="2Cultural3" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 Diced Yellow Onion</label><br>
+                                        <input type="checkbox" id="2Cultural4" class="ingredientCheckbox"><label for="2Cultural4" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 Minced Garlic Clove</label><br>
+                                        <input type="checkbox" id="2Cultural5" class="ingredientCheckbox"><label for="2Cultural5" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 tsp Garam Masala</label><br>
+                                        <input type="checkbox" id="2Cultural6" class="ingredientCheckbox"><label for="2Cultural6" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 tsp Fresh Grated Ginger</label><br>
+                                        <input type="checkbox" id="2Cultural7" class="ingredientCheckbox"><label for="2Cultural7" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 tsp Chili Powder</label><br>
+                                        <input type="checkbox" id="2Cultural8" class="ingredientCheckbox"><label for="2Cultural8" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 tsp Ground Cumin</label><br>
+                                        <input type="checkbox" id="2Cultural9" class="ingredientCheckbox"><label for="2Cultural9" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1/4 tsp Cayenne Pepper</label><br>
                                         <input type="checkbox" id="2Cultural0" class="ingredientCheckbox"><label for="2Cultural0" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 1/2 cups Tomato Sauce</label><br>
                                         <input type="checkbox" id="2Cultural1" class="ingredientCheckbox"><label for="2Cultural1" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;2 cups Cream</label><br>
                                         <input type="checkbox" id="2Cultural2" class="ingredientCheckbox"><label for="2Cultural2" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;lime and cilantro, for garnish</label><br>
@@ -1892,16 +1892,15 @@
                 </div>
                 <div class="row displayNone" id="culturalListContent3">
                     <div class="col-md-8 borderLeft">
-                        <h2>List 3</h2>
+                        <h2>Yang Chow</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
-                            <dd class="ddmargin">I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description<br><br><br></dd>
+                            <dd class="ddmargin">Yangzhou fried rice or Yang Chow fried rice is a popular Chinese-style wok fried rice dish in many Chinese restaurants throughout the world. It is commonly sold in the UK as special fried rice and in the US as house fried rice.<br><br><br></dd>
                             <ol class="">
-                                <li class="">This is Cultural Content</li>
-                                <li class="">This is Cultural Content</li>
-                                <li class="">This is Cultural Content</li>
-                                <li class="">This is Cultural Content</li>
-                                <li class="">This is Cultural Content</li>
+                                <li class="">Heat 2 tbsp of oil medium high heat in a wok. Add eggs and immedieately add 4 cups of cooked rice to the eggs.</li>
+                                <li class="">Stir and cover each grain of rice with the egg, and continue to stir fry on high heat for 5 minutes or until the rice is seperated into individual grains.</li>
+                                <li class="">Add the BBQ pork, shrimps, green onions and peas to the rice and continue to stir fry for 3 minutes.</li>
+                                <li class="">Add light soy sauce and mix well. Serve immediately.</li>
                             </ol>
                             <br>
                             <table class="table table-condensed">
@@ -1911,7 +1910,13 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstCultural3" class="ingredientCheckbox"><label for="firstCultural3" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="3Cultural1" class="ingredientCheckbox"><label for="3Cultural1" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;10 oz Diced BBQ Pork</label><br>
+                                        <input type="checkbox" id="3Cultural2" class="ingredientCheckbox"><label for="3Cultural2" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;30 Frozen Shrimp</label><br>
+                                        <input type="checkbox" id="3Cultural3" class="ingredientCheckbox"><label for="3Cultural3" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;4 cups Cooked Rice</label><br>
+                                        <input type="checkbox" id="3Cultural4" class="ingredientCheckbox"><label for="3Cultural4" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;2 Finely Chopped Green Onions</label><br>
+                                        <input type="checkbox" id="3Cultural5" class="ingredientCheckbox"><label for="3Cultural5" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;3 oz Green Peas</label><br>
+                                        <input type="checkbox" id="3Cultural6" class="ingredientCheckbox"><label for="3Cultural6" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;5 Beaten Eggs</label><br>
+                                        <input type="checkbox" id="3Cultural7" class="ingredientCheckbox"><label for="3Cultural7" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;2 tsp Soy Sauce</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -1919,22 +1924,22 @@
                             </table>
                         </div>
                         <div class="col-md-6">
-                            <img class="recipeImage" src="haha.jpg" alt="List3 Image">
+                            <img class="recipeImage" src="images/culture3.jpg" alt="Yang Chow Fried Rice">
                         </div>
                     </div>
                 </div>
                 <div class="row displayNone" id="culturalListContent4">
                     <div class="col-md-8 borderLeft">
-                        <h2>List 4</h2>
+                        <h2>Chow Mien</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
-                            <dd class="ddmargin">I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description<br><br><br></dd>
+                            <dd class="ddmargin">Chow mein and in Chinese and Chinese English are stir-fried noodles, the name being the romanization of the Taishanese chāu-mèing. The dish is popular throughout the Chinese diaspora and appears on the menus of Chinese restaurants.<br><br><br></dd>
                             <ol class="">
-                                <li class="">This is Cultural Content</li>
-                                <li class="">This is Cultural Content</li>
-                                <li class="">This is Cultural Content</li>
-                                <li class="">This is Cultural Content</li>
-                                <li class="">This is Cultural Content</li>
+                                <li class="">Marinate the chicken slices with 1 tsp of sugar and 1 tsp of dark soy sauce, for 1 hour. Keep in the refrigerator until later.</li>
+                                <li class="">In a large pot, boil water and put noodles in and cook for 3 minutes. Drain and put aside.</li>
+                                <li class="">In a wok, heat 2 tsp of oil and add in Ko-Le cabbege to cook until soft. Add 1/8 tsp of salt and stir fry for 2 minutes. Remove to a plate for later.</li>
+                                <li class="">In the same wok, heat 2 tsp of oil and add the chicken slices and cooked on medium high heat for 7 minutes or until no more pink.</li>
+                                <li class="">Add noodles to the wok and stir fry a bit. Add 2 tbsp of oyster to the noodles and chicken and stir fry for 2 minutes. Then add the cabbage and mix well. Serve immedietely.</li>
                             </ol>
                             <br>
                             <table class="table table-condensed">
@@ -1944,7 +1949,14 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstCultural4" class="ingredientCheckbox"><label for="firstCultural4" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="4Cultural1" class="ingredientCheckbox"><label for="4Cultural1" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;7 oz Sliced Ko-Le Cabbage</label><br>
+                                        <input type="checkbox" id="4Cultural2" class="ingredientCheckbox"><label for="4Cultural2" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;10 oz Sliced Chicken Thigh</label><br>
+                                        <input type="checkbox" id="4Cultural3" class="ingredientCheckbox"><label for="4Cultural3" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;20 oz Shanghai Noodles</label><br>
+                                        <input type="checkbox" id="4Cultural4" class="ingredientCheckbox"><label for="4Cultural4" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 tsp Sugar</label><br>
+                                        <input type="checkbox" id="4Cultural5" class="ingredientCheckbox"><label for="4Cultural5" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;1 tsp Soy Sauce</label><br>
+                                        <input type="checkbox" id="4Cultural6" class="ingredientCheckbox"><label for="4Cultural6" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;2 tbsp Oyster Sauce</label><br>
+                                        <input type="checkbox" id="4Cultural7" class="ingredientCheckbox"><label for="4Cultural7" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;4 tsp Oil</label><br>
+                                        <input type="checkbox" id="4Cultural8" class="ingredientCheckbox"><label for="4Cultural8" class="ingredientLabel"><span class="glyphicon glyphicon-remove-circle"></span><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Sea Salt</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -1952,7 +1964,7 @@
                             </table>
                         </div>
                         <div class="col-md-6">
-                            <img class="recipeImage" src="haha.jpg" alt="List4 Image">
+                            <img class="recipeImage" src="images/culture4.jpg" alt="Chow Mien">
                         </div>
                     </div>
                 </div>
