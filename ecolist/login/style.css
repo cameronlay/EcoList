@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%
+}
+
+img{
+    width: 100%;
+}
+
+#GUI {
+    height:100%;
+    width:100%;
+    position:fixed;
+    pointer-events:none;
+    z-index:3;
+}
+
+input {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+}
+
+#LoginLogo {
+    margin-top: 5%;
+}
+
+#FormContent {
+    margin-top: 5%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#LoginForm {
+    margin: auto;
+}
+
+#SignupForm {
+    margin: auto;
+}
+
+#LoginLeft {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin: auto;
+    display: block;
+}
+
+.btn-primary {
+    background-color: #77DD77;
+}
+
+.btn-primary:visited {
+    background-color: #77EE77;
+}
+
+.btn-primary:hover {
+    background-color: #77CC77;
+}
+
+.btn-primary:active {
+    background-color: #77EE77;
+}
+
+#SignupRight {
+    padding-bottom: 3%;
+    padding-top: 3%;
+    padding-left: 1.5%;
+    border-left: 1px solid;
+    margin: auto;
+    display: block;
+}
+
+@media only screen and (max-width:991.5px) {
+    #SignupRight {
+        display: none;
+        border: 0;
+        margin-top: 10%
+    }
+
+    #LoginLeft {
+        overflow-x: hidden;
+        margin-top: 10%;
+    }
+
+    .container {
+        margin-top: 15%;
+    }
+}
+
+@media only screen and (min-width:991.5px) {
+    #RegisterButton {
+        display: none;
+    }
+    #SignupRight {
+        display: block;
+    }
+
+    #SignInButton {
+        display: none;
+    }
+}
+
+#ErrEmail{
+    visibility: hidden;
+}
+
+#ErrUsername {
+    visibility: hidden;
+}
+
+#ErrPassword {
+    visibility: hidden;
+}
+
+#ErrConfirm {
+    visibility: hidden;
+}
+
+.spacingRow {
+    visibility: hidden;
+}

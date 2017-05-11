@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+.siteMapBlock li {
+	vertical-align: top;
+	padding: 2px 0 0 20px;
+	background: #f3f3f3 url("sitemap-node.gif") no-repeat 0 0;
+}
+
+.siteMapBlock li.alt {
+	background: #fff url("sitemap-node.gif") no-repeat 0 0;
+}
+
+ul li {
+	list-style: none;
+	list-style-image: none;
+}
