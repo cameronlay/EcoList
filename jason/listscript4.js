@@ -42,6 +42,7 @@ $(function () {
                 $('#cartTitle').css('visibility', 'visible').hide().fadeIn("slow");
                 $('#btnClear').css('visibility', 'visible').hide().fadeIn("slow");
                 $('#btnCart').css('visibility', 'visible').hide().fadeIn("slow");
+                $('#btnSave').css('visibility', 'visible').hide().fadeIn("slow");
 
         })
 
