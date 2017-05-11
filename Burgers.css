@@ -6,11 +6,11 @@
 					left:-80%;
 					width:80%;
 					height:200%;
-					background-color:purple;
+					background-color:#404040;
 					pointer-events:auto;
 					transition: left 0.1s linear;
 					font-size:4em;
-					color:white;
+					color:#f6f6e8;
 					text-align:center;
 				}
 				#Hamburger *{
