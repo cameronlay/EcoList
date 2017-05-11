@@ -12,9 +12,12 @@
     OR INGREDIENTS AS WELL.
     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     ====================================================
+
+
+     data-toggle="tooltip" title="Or just Lettuce"
 -->
     <head>
-        <title>EcoList - Meal Plan</title>
+        <title>EcoList - Eco Eats</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Sunguk (Edmund) Ham">
@@ -69,7 +72,7 @@
             <!--Classic List-->
             <div class="col-md-3 displayNone displayBlock" id="classicList">
                 <ul class="nav nav-pills nav-stacked">
-                    <li id="classicList1" class="active" onclick="classicPillsClicked('classicList1', 'classicListContent1')"><a href="javascript:void(0);">ClassicLIST1</a></li>
+                    <li id="classicList1" class="active" onclick="classicPillsClicked('classicList1', 'classicListContent1')"><a href="javascript:void(0);">Steak</a></li>
                     <li id="classicList2" onclick="classicPillsClicked('classicList2', 'classicListContent2')"><a href="javascript:void(0);">ClassicLIST2</a></li>
                     <li id="classicList3" onclick="classicPillsClicked('classicList3', 'classicListContent3')"><a href="javascript:void(0);">ClassicLIST3</a></li>
                     <li id="classicList4" onclick="classicPillsClicked('classicList4', 'classicListContent4')"><a href="javascript:void(0);">ClassicLIST4</a></li>
@@ -139,8 +142,8 @@
 		    <!-- Cultural List -->
 		    <div class="col-md-3 displayNone" id="culturalList">
                 <ul class="nav nav-pills nav-stacked">
-                    <li id="culturalList1" class="active" onclick="culturalPillsClicked('culturalList1', 'culturalListContent1')"><a href="javascript:void(0);">culturalLIST1</a></li>
-                    <li id="culturalList2" onclick="culturalPillsClicked('culturalList2', 'culturalListContent2')"><a href="javascript:void(0);">culturalLIST2</a></li>
+                    <li id="culturalList1" class="active" onclick="culturalPillsClicked('culturalList1', 'culturalListContent1')"><a href="javascript:void(0);">Chicken Tikka - Punjabi</a></li>
+                    <li id="culturalList2" onclick="culturalPillsClicked('culturalList2', 'culturalListContent2')"><a href="javascript:void(0);">Butter Chicken - Punjabi</a></li>
                     <li id="culturalList3" onclick="culturalPillsClicked('culturalList3', 'culturalListContent3')"><a href="javascript:void(0);">culturalLIST3</a></li>
                     <li id="culturalList4" onclick="culturalPillsClicked('culturalList4', 'culturalListContent4')"><a href="javascript:void(0);">culturalLIST4</a></li>
                     <li id="culturalList5" onclick="culturalPillsClicked('culturalList5', 'culturalListContent5')"><a href="javascript:void(0);">culturalLIST5</a></li>
@@ -151,6 +154,7 @@
                 </ul>
             </div>
             <!-- user List -->
+            <!-- NEED TO FIX FOR USER INTERACTION -->
             <div class="col-md-3 displayNone" id="userList">
                 <ul class="nav nav-pills nav-stacked">
                     <li id="userList1" class="active" onclick="userPillsClicked('userList1', 'userListContent1')"><a href="javascript:void(0);">userLIST1</a></li>
@@ -165,16 +169,20 @@
             <div id="classicListContent">
                 <div class="row displayNone displayBlock" id="classicListContent1">
                     <div class="col-md-8 borderLeft borderLeft">
-                        <h2>List 1</h2>
+                        <h2>Steak</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
-                            <dd class="ddmargin">I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description<br><br><br></dd>
+                            <dd class="ddmargin">Gordon Ramsay’s method for cooking a perfect, yet simple fillet that pairs well with many sides of your liking.<br><br><br></dd>
                             <ol class="">
-                                <li class="">This is Classic Content</li>
-                                <li class="">This is Classic Content</li>
-                                <li class="">This is Classic Content</li>
-                                <li class="">This is Classic Content</li>
-                                <li class="">This is Classic Content</li>
+                                <li class="">Prepare 1 fillet of steak at room temperature.</li>
+                                <li class="">Heat frying pan to medium heat.</li>
+                                <li class="">Add 15ml oil, whole garlic clove, and herb sprig.</li>
+                                <li class="">Season both sides of fillet with salt and pepper.</li>
+                                <li class="">Cook each side for 2-3 minutes.</li>
+                                <li class="">Sear the rounded edges and add a knob of butter.</li>
+                                <li class="">Allow the butter to foam and baste both sides of steak thoroughly.</li>
+                                <li class="">Move steak to a plate and allow it to rest for at least 5 minutes.</li>
+                                <li class="">Serve along with any sides of your liking.</li>
                             </ol>
                             <br>
                             <table class="table table-condensed">
@@ -184,7 +192,12 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="first" class="ingredientCheckbox"><label for="first" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="1classic1" class="ingredientCheckbox"><label for="1classic1" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;1 Fillet Steak</label><br>
+                                        <input type="checkbox" id="1classic2" class="ingredientCheckbox"><label for="1classic2" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;1 tbsp Olive Oil</label><br>
+                                        <input type="checkbox" id="1classic3" class="ingredientCheckbox"><label for="1classic3" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;1 Whole Garlic Clove</label><br>
+                                        <input type="checkbox" id="1classic4" class="ingredientCheckbox"><label for="1classic4" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;Herb Sprig</label><br>
+                                        <input type="checkbox" id="1classic5" class="ingredientCheckbox"><label for="1classic5" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;Sea Salt</label><br>
+                                        <input type="checkbox" id="1classic6" class="ingredientCheckbox"><label for="1classic6" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;Ground Black Pepper</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -792,14 +805,14 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="1Keto1" class="ingredientCheckbox"><label for="1Keto1" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;2 oz goat cheese</label><br>
-                                        <input type="checkbox" id="1Keto2" class="ingredientCheckbox"><label for="1Keto2" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;2 oz bacon</label><br>
-                                        <input type="checkbox" id="1Keto3" class="ingredientCheckbox"><label for="1Keto3" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;1/2 avocado</label><br>
-                                        <input type="checkbox" id="1Keto4" class="ingredientCheckbox"><label for="1Keto4" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;1 oz walnuts</label><br>
-                                        <input type="checkbox" id="1Keto5" class="ingredientCheckbox"><label for="1Keto5" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;2 oz arugula lettuce</label><br>
-                                        <input type="checkbox" id="1Keto6" class="ingredientCheckbox"><label for="1Keto6" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;1/8 lemon juice</label><br>
-                                        <input type="checkbox" id="1Keto7" class="ingredientCheckbox"><label for="1Keto7" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;1 3/4 tbsp mayonnaise</label><br>
-                                        <input type="checkbox" id="1Keto8" class="ingredientCheckbox"><label for="1Keto8" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;1 3/4 tbsp olive oil</label><br>
+                                        <input type="checkbox" id="1Keto1" class="ingredientCheckbox"><label for="1Keto1" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;2 oz Goat Cheese</label><br>
+                                        <input type="checkbox" id="1Keto2" class="ingredientCheckbox"><label for="1Keto2" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;2 oz Bacon</label><br>
+                                        <input type="checkbox" id="1Keto3" class="ingredientCheckbox"><label for="1Keto3" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;1/2 Avocado</label><br>
+                                        <input type="checkbox" id="1Keto4" class="ingredientCheckbox"><label for="1Keto4" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;1 oz Walnuts</label><br>
+                                        <input type="checkbox" id="1Keto5" class="ingredientCheckbox"><label for="1Keto5" class="ingredientLabel" data-toggle="tooltip" title="Or just Lettuce"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;2 oz Arugula Lettuce</label><br>
+                                        <input type="checkbox" id="1Keto6" class="ingredientCheckbox"><label for="1Keto6" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;1/8 Lemon Juice</label><br>
+                                        <input type="checkbox" id="1Keto7" class="ingredientCheckbox"><label for="1Keto7" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;1 3/4 tbsp Mayonnaise</label><br>
+                                        <input type="checkbox" id="1Keto8" class="ingredientCheckbox"><label for="1Keto8" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;1 3/4 tbsp Olive Oil</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -807,7 +820,7 @@
                             </table>
                         </div>
                         <div class="col-md-6">
-                            <img class="recipeImage" src="haha.jpg" alt="List1 Image">
+                            <img class="recipeImage" src="images/keto1.jpg" alt="Bacon Avocado Salad">
                         </div>
                     </div>
                 </div>
@@ -816,14 +829,14 @@
                         <h2>Baked Salmon</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
-                            <dd class="ddmargin">I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description<br><br><br></dd>
+                            <dd class="ddmargin">This lip-smacking Lemon Butter Salmon from Karla Seville of Waynesboro, Pennsylvania makes for an easy, breezy supper to serve family or friends out on the patio some warm night. As an extra-special touch, you might add a 4-ounce package of salad shrimp to the remaining lemon butter, then spoon over the salmon before serving.<br><br><br></dd>
                             <ol class="">
-                                <li class="">Preheat oven to 400 degrees fahrenheit (200 celsius)</li>
-                                <li class="">Place the salmon with the skin down in a greased baking dish, salt and pepper generously</li>
-                                <li class="">Slice the lemon thinly and place on top of the salmon. Cover with half of the butter in think slices</li>
+                                <li class="">Preheat oven to 400 degrees fahrenheit (200 celsius).</li>
+                                <li class="">Place the salmon with the skin down in a greased baking dish, salt and pepper generously.</li>
+                                <li class="">Slice the lemon thinly and place on top of the salmon. Cover with half of the butter in think slices.</li>
                                 <li class="">Bake on the middle rack for about 20-30 minutes, depending on size.</li>
-                                <li class="">Heat the rest of the butter in a small sauce pan until it starts to bubble. Remove from heat and let cool a little and add some lemon juice</li>
-                                <li>Serve the fish with the lemon butter and a side dish of choice (garden salad)</li>
+                                <li class="">Heat the rest of the butter in a small sauce pan until it starts to bubble. Remove from heat and let cool a little and add some lemon juice.</li>
+                                <li>Serve the fish with the lemon butter and a side dish of choice (garden salad).</li>
                             </ol>
                             <br>
                             <table class="table table-condensed">
@@ -833,12 +846,12 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="2Keto1" class="ingredientCheckbox"><label for="2Keto1" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;1/2 tsp olive oil</label><br>
-                                        <input type="checkbox" id="2Keto2" class="ingredientCheckbox"><label for="2Keto2" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;6-8 oz salmon</label><br>
-                                        <input type="checkbox" id="2Keto3" class="ingredientCheckbox"><label for="2Keto3" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;1/6 tsp sea salt</label><br>
-                                        <input type="checkbox" id="2Keto4" class="ingredientCheckbox"><label for="2Keto4" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;Ground black pepper</label><br>
-                                        <input type="checkbox" id="2Keto5" class="ingredientCheckbox"><label for="2Keto5" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;1 1/4 oz butter</label><br>
-                                        <input type="checkbox" id="2Keto6" class="ingredientCheckbox"><label for="2Keto5" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;1/6 lemon</label><br>
+                                        <input type="checkbox" id="2Keto1" class="ingredientCheckbox"><label for="2Keto1" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;1/2 tsp Olive Oil</label><br>
+                                        <input type="checkbox" id="2Keto2" class="ingredientCheckbox"><label for="2Keto2" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;6-8 oz Salmon</label><br>
+                                        <input type="checkbox" id="2Keto3" class="ingredientCheckbox"><label for="2Keto3" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;1 1/4 oz Butter</label><br>
+                                        <input type="checkbox" id="2Keto4" class="ingredientCheckbox"><label for="2Keto4" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;1/6 Lemon</label><br>
+                                        <input type="checkbox" id="2Keto5" class="ingredientCheckbox"><label for="2Keto5" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;Sea Salt</label><br>
+                                        <input type="checkbox" id="2Keto6" class="ingredientCheckbox"><label for="2Keto6" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;Ground Black Pepper</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -846,22 +859,20 @@
                             </table>
                         </div>
                         <div class="col-md-6">
-                            <img class="recipeImage" src="haha.jpg" alt="List2 Image">
+                            <img class="recipeImage" src="images/keto2.jpg" alt="Baked Salmon">
                         </div>
                     </div>
                 </div>
                 <div class="row displayNone" id="ketoListContent3">
                     <div class="col-md-8 borderLeft">
-                        <h2>List 3</h2>
+                        <h2>Scrambled Eggs</h2>
                         <div class="col-md-6">
                             <h4 class="h4margin">Recipe Description</h4>
-                            <dd class="ddmargin">I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description<br><br><br></dd>
+                            <dd class="ddmargin">Butter plus eggs equals the perfect breakfast. Start your day off right with our especially buttery and satisfying version of this breakfast classic. Ready in minutes!<br><br><br></dd>
                             <ol class="">
-                                <li class="">This is Keto Content</li>
-                                <li class="">This is Keto Content</li>
-                                <li class="">This is Keto Content</li>
-                                <li class="">This is Keto Content</li>
-                                <li class="">This is Keto Content</li>
+                                <li class="">Whisk the eggs together with some salt and pepper using a fork.</li>
+                                <li class="">Melt the butter in a non-stick skillet over medium heat. Watch carefully — the butter shouldn’t turn brown!</li>
+                                <li class="">Pour the eggs into the skillet and stir for 1–2 minutes, until they are creamy and cooked just shy of how you like them. Remember that the eggs will still be cooking even after you’ve put them on your plate.</li>
                             </ol>
                             <br>
                             <table class="table table-condensed">
@@ -871,7 +882,11 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstKeto3" class="ingredientCheckbox"><label for="firstKeto3" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="3Keto1" class="ingredientCheckbox"><label for="3Keto1" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;3 Eggs</label><br>
+                                        <input type="checkbox" id="3Keto2" class="ingredientCheckbox"><label for="3Keto2" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;2 oz Butter</label><br>
+                                        <input type="checkbox" id="3Keto3" class="ingredientCheckbox"><label for="3Keto3" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;1/6 Lemon</label><br>
+                                        <input type="checkbox" id="3Keto4" class="ingredientCheckbox"><label for="3Keto4" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;Sea Salt</label><br>
+                                        <input type="checkbox" id="3Keto5" class="ingredientCheckbox"><label for="3Keto5" class="ingredientLabel"><span class="glyphicon glyphicon-plus-sign"></span><span class="glyphicon glyphicon-minus-sign"></span>&nbsp;Ground Black Pepper</label><br>
                                         <input type="submit" class="btn btn-info" value="Save">
                                         </form>
                                     </td>
@@ -879,7 +894,7 @@
                             </table>
                         </div>
                         <div class="col-md-6">
-                            <img class="recipeImage" src="haha.jpg" alt="List3 Image">
+                            <img class="recipeImage" src="images/keto3.jpg" alt="List3 Image">
                         </div>
                     </div>
                 </div>
