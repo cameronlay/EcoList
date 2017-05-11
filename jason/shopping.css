@@ -15,6 +15,10 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0; 
 }
 
+body {
+  background-image: url('backgroundimage.jpg');
+}
+
 .container {
   width:100%;
   margin-left: auto;
@@ -53,6 +57,11 @@ thead tr th {
 }
 
 /*buttons css*/
+#btnAddContainer {
+  display: inline;
+  width:40%;
+}
+
 #btnAdd {
   background-color: #77dd77;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -71,20 +80,37 @@ thead tr th {
   font-size: 20px;
 }
 
+#btnRemove:hover {
+  background-color: #ff5561;
+}
+
 #btnClear {
   background-color: #ff6961;
   visibility: hidden;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 20px;
   float:right;
-}
-
-#btnRemove:hover {
-  background-color: #ff5561;
+  margin-left: 100px;
 }
 
 #btnClear:hover {
   background-color: #ff5561;
+}
+
+#btnSave {
+  background-color: #77dd77;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+  visibility: hidden;
+}
+
+#btnSave:hover {
+  background-color: #77cc77;
+}
+
+#btnCartContainer {
+  float:right;
+  width: 40%;
 }
 
 #btnCart {
@@ -96,15 +122,9 @@ thead tr th {
 
 }
 
-#btnAddContainer {
-  display: inline;
-  width:40%;
-}
 
-#btnCartContainer {
-  float:right;
-  width: 40%;
-}
+
+
 
 
 /*cart list css*/
