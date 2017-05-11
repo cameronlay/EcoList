@@ -10,6 +10,14 @@ img{
     width: 100%;
 }
 
+#GUI {
+    height:100%;
+    width:100%;
+    position:fixed;
+    pointer-events:none;
+    z-index:3;
+}
+
 input {
     width: 100%;
 }
@@ -43,10 +51,28 @@ table {
     display: block;
 }
 
+.btn-primary {
+    background-color: #77DD77;
+}
+
+.btn-primary:visited {
+    background-color: #77EE77;
+}
+
+.btn-primary:hover {
+    background-color: #77CC77;
+}
+
+.btn-primary:active {
+    background-color: #77EE77;
+}
+
+
+
 #SignupRight {
     padding-bottom: 3%;
     padding-top: 3%;
-    padding-left: 5%;
+    padding-left: 1.5%;
     border-left: 1px solid;
     margin: auto;
     display: block;
