@@ -14,6 +14,15 @@ input[type=number]::-webkit-outer-spin-button {
     appearance: none;
     margin: 0; 
 }
+<<<<<<< HEAD
+=======
+html {
+  overflow-y: scroll;
+}
+body {
+  background-image: url('backgroundimage.jpg');
+}
+>>>>>>> Jason-feature
 
 .container {
   width:100%;
@@ -24,7 +33,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (min-width:640px){
   .container{
-
     width:50%;
   }
 }
@@ -96,10 +104,18 @@ thead tr th {
 
 }
 
+<<<<<<< HEAD
 #btnAddContainer {
   display: inline;
   width:40%;
 }
+=======
+#removeWarning {
+  visibility: hidden;
+  opacity: 0.4;
+}
+
+>>>>>>> Jason-feature
 
 #btnCartContainer {
   float:right;
