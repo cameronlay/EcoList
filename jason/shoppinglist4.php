@@ -79,10 +79,6 @@
                  <button id="btnClear" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-minus-sign"></i>&nbsp; Clear Cart&nbsp;</button>
               </div>
           </div>
-      </div>
-
-      
-
     </div>
   </section>
   </body>
