@@ -280,10 +280,12 @@ $(document).ready(function() {
     })
 })
 
+// NEED TO ADD NAME FOR SERVER
 function GetInputRecipe() {
     return '<input class="recipetextarea form-control inputSteps" type="text" placeholder="Enter the simple step" required>';
 }
 
+// NEED TO ADD NAME FOR SERVER
 function GetIngredientsRecipe() {
     return '<input class="recipetextarea form-control inputIngredients" type="text" placeholder="Enter the ingredient" required>';
 }

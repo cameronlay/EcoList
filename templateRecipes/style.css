@@ -7,7 +7,7 @@ body {
 }
 
 /**
- * used in recipe page make the content centered
+ * DISPLAY NONE AFTER PAGE HAS BEEN LOADED
  * @Edmund
  */
 .wholeBody {
@@ -52,7 +52,7 @@ ul.nav-pills {
  * @Edmund
  */
 .borderLeft {
-    border-left: 1px solid #000000;
+    border-left: 1px solid #404040;
 }
 
 /**
@@ -102,6 +102,7 @@ ul.nav-pills {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+/*LOADING CIRCLE DONE*/
 
 .centered {
     text-align: center;
@@ -114,49 +115,51 @@ ul.nav-pills {
 
 .h4margin {
     display: block;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .ddmargin {
     display: block;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
 }
 
 .ingredientLabel {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .ingredientCheckbox {
     display: none;
 }
 
-.glyphicon-ok-circle {
+/*OVERRIDES GLYPHICON*/
+.glyphicon-check {
     color: #77dd77;
-  display: none;
+    display: none;
 }
 
-.glyphicon-remove-circle {
-  color: #ff6961;
+.glyphicon-unchecked {
+    color: #404040;
 }
 
 .btn-primary {
     background-color: #77dd77;
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary:active {
     background-color: #77cc77;
 }
 
-.ingredientCheckbox:checked + .ingredientLabel .glyphicon-remove-circle {
-  display: none;
+.ingredientCheckbox:checked + .ingredientLabel .glyphicon-unchecked {
+    display: none;
 }
 
-.ingredientCheckbox:checked + .ingredientLabel .glyphicon-ok-circle {
-  display: inline;
+.ingredientCheckbox:checked + .ingredientLabel .glyphicon-check {
+    display: inline;
 }
 
 .recipetextarea {
@@ -165,6 +168,15 @@ ul.nav-pills {
     min-width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.noMargin {
+    margin: 0;
+    padding: 0;
+}
+
+.lessPadding {
+    padding: 15px;
 }
 
 @media only screen and (max-width: 768px) {
