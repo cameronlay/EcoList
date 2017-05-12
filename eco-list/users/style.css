@@ -28,6 +28,13 @@ table {
     width: 100%;
 }
 
+main {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0px auto -100px;
+}
+
 #GUI {
     height:100%;
     width:100%;

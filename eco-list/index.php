@@ -36,20 +36,20 @@
                         <tr>
                             <td>
                                 <div class="icon">
-                                    <img height="300" width="300" src="images/shoppingcart1.png"draggable="false"/>
-                                    <span>Shopping Cart</span>
+                                    <a href="/ecolist/index.php"><img height="300" width="300" src="images/shoppingcart1.png"draggable="false"/>
+                                    <span>Shopping Cart</span></a>
                                 </div>
                             </td>
                             <td>
                                 <div class="icon">
-                                    <img height="300" width="300" src="images/cutlery1.png"draggable="false"/>
-                                    <span>Recipes</span>
+                                    <a href="/ecoeats/index.php"></a><img height="300" width="300" src="images/cutlery1.png"draggable="false"/>
+                                    <span>Recipes</span></a>
                                 </div>
                             </td>
                             <td>
                                 <div class="icon">
-                                    <img height="300" width="300" src="images/location1.png"draggable="false"/>
-                                    <span>Donation</span>
+                                    <a href="/donation/index.php"></a><img height="300" width="300" src="images/location1.png"draggable="false"/>
+                                    <span>Donation</span></a>
                                 </div>
                             </td>
                         </tr>

@@ -20,6 +20,7 @@
     <script src="/functionHiding.js" id="SelfDestruct"></script>
 </head>
 <body onload="setBurger(true);hide_function()">
+<main>
 <div class="col-md-12">
     <div id="GUI">
         <?php include('../navMenu.html');?>
@@ -107,6 +108,7 @@
         </div>
     </div>
 </div>
+</main>
 <div class="home-footer mobileContentless">
     <div class="footerconstraint">
         <div class="bottomleftcolumn">
