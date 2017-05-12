@@ -6,6 +6,11 @@ html, body {
     height: 100%
 }
 
+body {
+    background-image: url('../images/background2.jpg');
+    overflow-y: hidden;
+}
+
 img{
     width: 100%;
 }
@@ -18,8 +23,8 @@ table {
     width: 100%;
 }
 
-#LoginLogo {
-    margin-top: 5%;
+.panel {
+    margin-top: 2%;
 }
 
 #FormContent {
@@ -46,7 +51,7 @@ table {
 #SignupRight {
     padding-bottom: 3%;
     padding-top: 3%;
-    padding-left: 5%;
+    padding-left: 3%;
     border-left: 1px solid;
     margin: auto;
     display: block;
