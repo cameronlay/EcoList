@@ -314,6 +314,8 @@ function widthLessThan768() {
          * right after the pill and remove all current
          * active and displayBlock
          * 2. if click again, disappeared.
+
+         * ADDED, BRING PICTURES LOCATED ABOVE THE CONTENT
          */
         classicPillsClicked = function(id, content) {
             var x = document.getElementById(id);
@@ -343,6 +345,10 @@ function widthLessThan768() {
                 x.classList.add('active');
                 y.classList.add('displayBlock');
                 x.after(y);
+
+                // BRING IMAGE
+                var content0Img1 = y.getElementsByClassName('col-md-6');
+                content0Img1[0].before(content0Img1[1]);
             }
 
         }
@@ -375,6 +381,10 @@ function widthLessThan768() {
                 x.classList.add('active');
                 y.classList.add('displayBlock');
                 x.after(y);
+
+                // BRING IMAGE
+                var content0Img1 = y.getElementsByClassName('col-md-6');
+                content0Img1[0].before(content0Img1[1]);
             }
         }
 
@@ -406,6 +416,10 @@ function widthLessThan768() {
                 x.classList.add('active');
                 y.classList.add('displayBlock');
                 x.after(y);
+
+                // BRING IMAGE
+                var content0Img1 = y.getElementsByClassName('col-md-6');
+                content0Img1[0].before(content0Img1[1]);
             }
         }
 
@@ -437,6 +451,10 @@ function widthLessThan768() {
                 x.classList.add('active');
                 y.classList.add('displayBlock');
                 x.after(y);
+
+                // BRING IMAGE
+                var content0Img1 = y.getElementsByClassName('col-md-6');
+                content0Img1[0].before(content0Img1[1]);
             }
         }
 
@@ -468,6 +486,10 @@ function widthLessThan768() {
                 x.classList.add('active');
                 y.classList.add('displayBlock');
                 x.after(y);
+
+                // BRING IMAGE
+                var content0Img1 = y.getElementsByClassName('col-md-6');
+                content0Img1[0].before(content0Img1[1]);
             }
         }
 
@@ -502,6 +524,10 @@ function widthLessThan768() {
                 x.classList.add('active');
                 y.classList.add('displayBlock');
                 x.after(y);
+
+                // BRING IMAGE
+                var content0Img1 = y.getElementsByClassName('col-md-6');
+                content0Img1[0].before(content0Img1[1]);
             }
         }
 
