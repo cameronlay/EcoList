@@ -17,29 +17,32 @@
 <link rel="stylesheet" href="../fonts/font.css">
 <script src="../functionHiding.js" id="SelfDestruct"></script>
 </head>
+
+<!--The burger navigation in the top left of the page-->
 <body onload="setBurger(true);hide_function()">
 <div id="GUI">
     <?php include('../navMenu.html');?>
     <?php include('../navButton.html');?>
 </div>
+
+<!--Title of the page-->
 <p>&nbsp;</p>
 <h1 class="text-center ecolistTitle">My EcoList</h1>
 <p>&nbsp;</p>
+
   <section class="container">
+
+<!--Buttons at the top of the table-->
 
     <div id="btnAddContainer">
       <button id="btnAdd" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp; Add Item&nbsp;</button>
     </div>
+
     <div id="btnCartContainer">
       <button id="btnCart" type="button" class="btn btn-info"><i class="glyphicon glyphicon-shopping-cart"></i>&nbsp; View Cart&nbsp;</button>
     </div>
 
-    <!--
-    <div id="btnRemoveContainer">
-     <button id="btnRemove" type="button" class="btn btn-primary" data-toggle="tooltip" data-original-title="Add more controls"><i class="glyphicon glyphicon-minus-sign"></i>&nbsp; Remove All Items&nbsp;</button>
-    </div>
-    -->
-
+<!--The table/shopping list main component-->
 
     <div class="TableWrapper">
       <div class="table table-responsive" id="TableOne">
@@ -66,24 +69,30 @@
           </tfoot>
         </table>
       </div>
-      <div id="cartContainer">
-          <div id="cartTitle">
-              <h1 class="text-center">Cart</h1>
+
+      <!--The container for the cart list-->
+        <div id="cartContainer">
+              <div id="cartTitle">
+                <h1 class="text-center">Cart</h1>
               </div>
 
               <div id="removeWarning">
-              <p>double tap to remove</p>
+               <p>double tap to remove</p>
               </div>
                  
               <div id="listContainer">
-                <ul class="list-group" data-toggle="tooltip" title="double tap to remove" data-placement="top">
-                </ul>
+                 <ul class="list-group" data-toggle="tooltip" title="double tap to remove" data-placement="top">
+                 </ul>
                  <button id="btnSave" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-ok-circle"></i>&nbsp; Save Cart&nbsp;</button>
                  <button id="btnClear" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-minus-sign"></i>&nbsp; Clear Cart&nbsp;</button>
               </div>
-          </div>
+        </div>
+
     </div>
   </section>
+
+  <!--footer-->
+  
   <div class="home-footer mobileContentless">
             <div class="footerconstraint">
                 <div class="bottomleftcolumn">
