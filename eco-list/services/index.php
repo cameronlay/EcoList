@@ -6,35 +6,18 @@
         <link rel="stylesheet" href="../footer.css"/>
         <link rel="stylesheet" href="../navButton.css"/>
         <link rel="stylesheet" href="../navMenu.css">
-        <script src="../navScript.js"></script>
         <link rel="stylesheet" href="../fonts/font.css">
+        <script src="../navScript.js"></script>
         <script src="../functionHiding.js" id="SelfDestruct"></script>
 	</head>
 	<body>
-		<div id="GUI">
-            <div id="BurgerButton" onmouseclick="setBurger(false,true)">
-                <img src="../images/transparent.png" class="square"/>
-                <img src="../images/burger.png" class="innerButtonBGR"/>
-            </div>
-      <div id="Hamburger">
-                <span class="menuTop">Menu</span>
-                <ul>
-                    <li><a href="../index.php">Home</a></li>
-                    <li><a href="../services/index.php">Our Services</a>
-                        <ul class="dropDownHamburger">
-                            <li><div><a href="../ecolist/index.php">Eco-List</a></div></li>
-                            <li><div><a href="../ecoeats/index.php">EcoEats</a></div></li>
-                            <li><div><a href="../donation/index.php">Donations</a></div></li>
-                        </ul>
-                    </li>
-                    <li><a href="../users/index.php">Login</a></li>
-                    <li><a href="../index.php#AboutUs">About Us</a></li>
-                </ul>
-            </div>
-        </div>
+    <div id="GUI">
+        <?php include('../navMenu.html');?>
+        <?php include('../navButton.html');?>
+    </div>
 		<div class="wrapper">
 			<div id="AppsHomeHeader">
-				<img src="../LOGO/Logo2.png" alt="EcoList"></img>
+				<img src="/eco-list/images/realLogo.png" alt="EcoList"></img>
 			</div>
             
 			<!--our app start-->
@@ -96,9 +79,10 @@
 					<div class="content">
 						<table>
 							<tr>
-							<td><img src="..images/FreshnessLogo.png" alt="appicon" width=500 height=500/></td>
+							<td><img src="/eco-list/images/FreshnessLogo.png" alt="appicon" width=500 height=500/></td>
 							<td><h2>Freshness</h2><p>
-							If you have any excess ingredients you can head over to our friends at Take 2. Their app allows you to input two ingredients and they will try to give you recipe recommendations that incorporates both of those ingredients.
+							If you have any excess ingredients you can head over to our friends at Take 2. Their app allows you to input two ingredients
+                                    and they will try to give you recipe recommendations that incorporates both of those ingredients.
 							</p>
 							</td>
 							</tr>
@@ -112,9 +96,10 @@
 					<div class="content">
 						<table>
 							<tr>
-							<td><img src="images/Take2Logo.png" alt="appicon" width=500 height=500/></td>
+							<td><img src="/eco-list/images/Take2Logo.png" alt="appicon" width=500 height=500/></td>
 							<td><h2>Take2</h2><p>
-							If you have any excess ingredients you can head over to our friends at Take 2. Their app allows you to input two ingredients and they will try to give you recipe recommendations that incorporates both of those ingredients.
+							If you have any excess ingredients you can head over to our friends at Take 2. Their app allows you to input two ingredients
+                                    and they will try to give you recipe recommendations that incorporates both of those ingredients.
 							</p>
 							</td>
 							</tr>
@@ -127,9 +112,11 @@
 					<div class="content">
 						<table>
 							<tr>
-							<td><img src="images/RefrigdateLogo.png" alt="appicon" width=500 height=500/></td>
+							<td><img src="/eco-list/images/RefrigdateLogo.png" alt="appicon" width=500 height=500/></td>
 							<td><h2>Refrigdate</h2><p>
-							If you are worried about keeping track of your leftovers and how old they may be we highly recommend checking out our friends at Refrigedate. Their app tracks how long your it has been since you stored your leftovers and lets you assign ownership to your food if you find your roommates are often eating your leftovers!
+							If you are worried about keeping track of your leftovers and how old they may be we highly recommend checking out our friends at
+                                    Refrigedate. Their app tracks how long your it has been since you stored your leftovers and lets you assign ownership to
+                                    your food if you find your roommates are often eating your leftovers!
 							</p>
 							</td>
 							</tr>
