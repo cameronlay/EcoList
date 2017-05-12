@@ -8,7 +8,13 @@ html, body {
 
 body {
     background-image: url('../images/background2.jpg');
+    font-family: Content, sans-serif;
     overflow-y: hidden;
+}
+
+h1, h2, h3, h4, h5, button, input, textarea {
+    font-family: Title, sans-serif;
+    font-weight: bold;
 }
 
 img{

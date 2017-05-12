@@ -15,6 +15,7 @@ function $$(className) {
     return element;
 }
 
+/*Form validation and warning funtions for the register form*/
 function testUsername(){
     var x = $("SignupUsername").value;
     var patt = /^(?:\S\w*_*)$/i;
@@ -75,6 +76,7 @@ function warnEmailType(id) {
     }
 }
 
+/*Validates the register form when the submit button is clicked*/
 function formValidate() {
     if (testEmailValid() && testUsername()
         && testPassword() && testConfirm()) {
@@ -104,16 +106,17 @@ function formValidate() {
     }
 }
 
+/*Toggles from the login to the sign up page on smaller screen sizes*/
 function SignUpShow() {
     document.getElementsByClassName('toggleForm')[1].style.display = 'block';
     document.getElementsByClassName('toggleForm')[0].style.display = 'none';
 }
-
+/*Toggles from the sign up to the login page on smaller screen sizes*/
 function LoginShow() {
     document.getElementsByClassName('toggleForm')[1].style.display = 'none';
     document.getElementsByClassName('toggleForm')[0].style.display = 'block';
 }
-
+/*When a screen is resized to larger than a specified width will show login/sign up side by side*/
 function windowResize(){
 
     var winSize = window.innerWidth;
@@ -126,4 +129,5 @@ function windowResize(){
     }
 }
 
+/*Runs the previous function on window resize*/
 window.onresize = function() { windowResize()};
