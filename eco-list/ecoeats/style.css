@@ -98,9 +98,17 @@ ul.nav-pills {
     background-color: white;
     margin-right: auto;
     margin-left: auto;
-    z-index: 9998;
+    z-index: 9997;
     padding-left: 48%;
     padding-right: 45%;
+}
+
+#GUI {
+    height:100%;
+    width:100%;
+    position:fixed;
+    pointer-events:none;
+    z-index:9998;
 }
 
 @-webkit-keyframes spin {
