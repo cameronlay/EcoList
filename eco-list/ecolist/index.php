@@ -7,16 +7,20 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src = "script.js"></script>
-<script src="/javascript/hamburger.js"></script>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="/css/Burgers.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src = "script.js"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../footer.css"/>
+<link rel="stylesheet" href="../navButton.css"/>
+<link rel="stylesheet" href="../navMenu.css">
+<script src="navScript.js"></script>
 <link rel="stylesheet" href="../fonts/font.css">
+<script src="../functionHiding.js" id="SelfDestruct"></script>
 </head>
 <body onload="setBurger(true);hide_function()">
     <div id="GUI">
-        <?php include('burgerMenuGUI.html');?>
+        <?php include('../navButton.html');
+            include('../navMenu.html');?>
     </div>
 <p>&nbsp;</p>
 <h1 class="text-center ecolistTitle">My EcoList</h1>
@@ -80,5 +84,8 @@
           </div>
     </div>
   </section>
+  <?php
+    include('../footer.html');
+  ?>
   </body>
 <html>
