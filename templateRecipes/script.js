@@ -280,10 +280,12 @@ $(document).ready(function() {
     })
 })
 
+// NEED TO ADD NAME FOR SERVER
 function GetInputRecipe() {
     return '<input class="recipetextarea form-control inputSteps" type="text" placeholder="Enter the simple step" required>';
 }
 
+// NEED TO ADD NAME FOR SERVER
 function GetIngredientsRecipe() {
     return '<input class="recipetextarea form-control inputIngredients" type="text" placeholder="Enter the ingredient" required>';
 }
@@ -312,6 +314,8 @@ function widthLessThan768() {
          * right after the pill and remove all current
          * active and displayBlock
          * 2. if click again, disappeared.
+
+         * ADDED, BRING PICTURES LOCATED ABOVE THE CONTENT
          */
         classicPillsClicked = function(id, content) {
             var x = document.getElementById(id);
@@ -334,8 +338,6 @@ function widthLessThan768() {
                 document.getElementById('classicListContent5').classList.remove('displayBlock');
                 document.getElementById('classicListContent6').classList.remove('displayBlock');
                 document.getElementById('classicListContent7').classList.remove('displayBlock');
-                document.getElementById('classicListContent8').classList.remove('displayBlock');
-                document.getElementById('classicListContent9').classList.remove('displayBlock');
 
                 //========================
                 //bring the lists right after the tab!!
@@ -343,6 +345,10 @@ function widthLessThan768() {
                 x.classList.add('active');
                 y.classList.add('displayBlock');
                 x.after(y);
+
+                // BRING IMAGE
+                var content0Img1 = y.getElementsByClassName('col-md-6');
+                content0Img1[0].before(content0Img1[1]);
             }
 
         }
@@ -368,8 +374,6 @@ function widthLessThan768() {
                 document.getElementById('vegetarianListContent5').classList.remove('displayBlock');
                 document.getElementById('vegetarianListContent6').classList.remove('displayBlock');
                 document.getElementById('vegetarianListContent7').classList.remove('displayBlock');
-                document.getElementById('vegetarianListContent8').classList.remove('displayBlock');
-                document.getElementById('vegetarianListContent9').classList.remove('displayBlock');
 
                 //========================
                 //bring the lists right after the tab!!
@@ -377,6 +381,10 @@ function widthLessThan768() {
                 x.classList.add('active');
                 y.classList.add('displayBlock');
                 x.after(y);
+
+                // BRING IMAGE
+                var content0Img1 = y.getElementsByClassName('col-md-6');
+                content0Img1[0].before(content0Img1[1]);
             }
         }
 
@@ -401,8 +409,6 @@ function widthLessThan768() {
                 document.getElementById('ketoListContent5').classList.remove('displayBlock');
                 document.getElementById('ketoListContent6').classList.remove('displayBlock');
                 document.getElementById('ketoListContent7').classList.remove('displayBlock');
-                document.getElementById('ketoListContent8').classList.remove('displayBlock');
-                document.getElementById('ketoListContent9').classList.remove('displayBlock');
 
                 //========================
                 //bring the lists right after the tab!!
@@ -410,6 +416,10 @@ function widthLessThan768() {
                 x.classList.add('active');
                 y.classList.add('displayBlock');
                 x.after(y);
+
+                // BRING IMAGE
+                var content0Img1 = y.getElementsByClassName('col-md-6');
+                content0Img1[0].before(content0Img1[1]);
             }
         }
 
@@ -434,8 +444,6 @@ function widthLessThan768() {
                 document.getElementById('paleoListContent5').classList.remove('displayBlock');
                 document.getElementById('paleoListContent6').classList.remove('displayBlock');
                 document.getElementById('paleoListContent7').classList.remove('displayBlock');
-                document.getElementById('paleoListContent8').classList.remove('displayBlock');
-                document.getElementById('paleoListContent9').classList.remove('displayBlock');
 
                 //========================
                 //bring the lists right after the tab!!
@@ -443,6 +451,10 @@ function widthLessThan768() {
                 x.classList.add('active');
                 y.classList.add('displayBlock');
                 x.after(y);
+
+                // BRING IMAGE
+                var content0Img1 = y.getElementsByClassName('col-md-6');
+                content0Img1[0].before(content0Img1[1]);
             }
         }
 
@@ -467,8 +479,6 @@ function widthLessThan768() {
                 document.getElementById('proteinListContent5').classList.remove('displayBlock');
                 document.getElementById('proteinListContent6').classList.remove('displayBlock');
                 document.getElementById('proteinListContent7').classList.remove('displayBlock');
-                document.getElementById('proteinListContent8').classList.remove('displayBlock');
-                document.getElementById('proteinListContent9').classList.remove('displayBlock');
 
                 //========================
                 //bring the lists right after the tab!!
@@ -476,6 +486,10 @@ function widthLessThan768() {
                 x.classList.add('active');
                 y.classList.add('displayBlock');
                 x.after(y);
+
+                // BRING IMAGE
+                var content0Img1 = y.getElementsByClassName('col-md-6');
+                content0Img1[0].before(content0Img1[1]);
             }
         }
 
@@ -502,6 +516,7 @@ function widthLessThan768() {
                 document.getElementById('culturalListContent7').classList.remove('displayBlock');
                 document.getElementById('culturalListContent8').classList.remove('displayBlock');
                 document.getElementById('culturalListContent9').classList.remove('displayBlock');
+                document.getElementById('culturalListContent10').classList.remove('displayBlock');
 
                 //========================
                 //bring the lists right after the tab!!
@@ -509,6 +524,10 @@ function widthLessThan768() {
                 x.classList.add('active');
                 y.classList.add('displayBlock');
                 x.after(y);
+
+                // BRING IMAGE
+                var content0Img1 = y.getElementsByClassName('col-md-6');
+                content0Img1[0].before(content0Img1[1]);
             }
         }
 
