@@ -30,7 +30,7 @@
         </div>
         <div class="row" id="FormContent">
             <div class="col-md-2"></div>
-            <div class="col-md-4" id="LoginLeft">
+            <div class="col-md-4 toggleForm" id="LoginLeft">
                 <form id="LoginForm" name="LoginForm" method="post">
                     <table id="LoginTable">
                         <tbody>
@@ -53,13 +53,13 @@
                             <td class="spacingRow">Just here for spacing</td>
                         </tr>
                         <tr>
-                            <td><input type="button" value="Sign-Up" onmousedown="SignUpShow()" id="RegisterButton" class="btn btn-info"/></td>
+                            <td><input type="button" value="Sign-Up" onclick="SignUpShow()" id="RegisterButton" class="btn btn-info"/></td>
                         </tr>
                         </tbody>
                     </table>
                 </form>
             </div>
-            <div class="col-md-5"  id="SignupRight">
+            <div class="col-md-5 toggleForm"  id="SignupRight">
                 <form id="SignupForm" name="signupform" method="post" onsubmit="return formValidate()">
                     <table id="SignupTable">
                         <tbody>
@@ -94,7 +94,7 @@
                             <td class="spacingRow">Just here for spacing</td>
                         </tr>
                         <tr>
-                            <td><input type="button" value="Sign-In" onmousedown="LoginShow()" id="SignInButton" class="btn btn-info"/></td>
+                            <td><input type="button" value="Sign-In" onclick="LoginShow()" id="SignInButton" class="btn btn-info"/></td>
                         </tr>
                         </tbody>
                     </table>

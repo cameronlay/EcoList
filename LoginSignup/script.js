@@ -105,23 +105,25 @@ function formValidate() {
 }
 
 function SignUpShow() {
-        $("SignupRight").display = 'block';
-        $("LoginLeft").display = 'none';
+    document.getElementsByClassName('toggleForm')[1].style.display = 'block';
+    document.getElementsByClassName('toggleForm')[0].style.display = 'none';
 }
 
 function LoginShow() {
-        $("SignupRight").style.display = 'none';
-        $("LoginLeft").style.display = 'block';
+    document.getElementsByClassName('toggleForm')[1].style.display = 'none';
+    document.getElementsByClassName('toggleForm')[0].style.display = 'block';
 }
 
-window.onresize=function() {
+function windowResize(){
 
-    var w = window.innerWidth;
-    if (w > 991.5) {
-        $("SignupRight").style.display = 'block';
-        $("LoginLeft").style.display = 'block';
+    var winSize = window.innerWidth;
+    if (winSize > 991.5) {
+        document.getElementsByClassName('toggleForm')[1].style.display = 'block';
+        document.getElementsByClassName('toggleForm')[0].style.display = 'block';
     }
-    if (w < 991.5) {
-        $("SignupRight").style.display = 'none';
+    if (winSize < 991.5) {
+        document.getElementsByClassName('toggleForm')[0].style.display = 'none';
     }
-};
+}
+
+window.onresize = function() { windowResize()};
