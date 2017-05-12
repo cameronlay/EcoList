@@ -1,0 +1,26 @@
+#BurgerButton {
+	position:absolute;
+	top:0;
+	left:0;
+	pointer-events:auto;
+	width:18%;
+	height:auto;
+	max-width:225px;
+	display:block;
+	overflow:auto;
+}
+@media only screen and (min-width:800px) and (min-device-width:1025px){
+	#BurgerButton {
+		width:5%;
+	}
+}
+#BurgerButton .square {
+	width:100%;
+	height:auto;
+}
+.innerButtonBGR {
+	width:85%;
+	position:absolute;
+	bottom:0;
+	right:0;
+}

@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    padding:0;
+}
+
+h1 {
+    text-align:center;
+    margin:auto;
+    padding:0;
+    pointer-events: none;
+    user-select:none;
+}
+
+body {
+    margin:0;
+    background-image: url("backgroundimage.jpg");
+}
+
+main {
+    display: block;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#sideList {
+    height:400px;
+    overflow-y:scroll;
+
+    padding:10px 0px 10px 0px;
+}
+
+#googleMap {
+    padding:0;
+}
+
+.row {
+    padding-top:10px
+}
+
+.well {
+    margin-bottom:0;
+}
+
+/* GUI and top level element section */
+#GUI {
+    height:100%;
+    width:100%;
+    position:fixed;
+    pointer-events:none;
+    z-index:3;
+}

@@ -1,0 +1,184 @@
+/* general styles */
+        * {
+            box-sizing:border-box;
+        }
+        .wrapper {
+            width: 100%;
+            overflow-y:hidden;
+        }
+        html, body {
+            padding:0;
+            border:0;
+            margin:0;
+        }
+        h1 {
+            text-align:center;
+            font-size:4em;
+            margin:auto;
+            padding:0;
+            pointer-events: none;
+            user-select:none;
+        }
+        
+        .chevronHolder {
+            padding-top:9px;
+            margin:auto;
+            height:30px;
+            width:40px;
+        }
+        
+        .chevron {
+            margin:auto;
+            width:0;
+            height:0;
+            border-style:solid;
+            border-color:transparent;
+        }
+        .chevron.down {
+            border-width:9px;
+            border-top-color:black;
+        }
+        /* GUI and top level element section */
+        #GUI {
+			height:100%;
+            width:100%;
+            position:fixed;
+            pointer-events:none;
+            z-index:3;
+        }
+        
+            /* gui - top banner (when passed homepage) */
+            
+            div.miniNav div.miniNav-box{
+            visibility:hidden;
+            position:relative;
+            border-bottom-width:4px;
+            border-bottom-color:rgba(0,0,0,0);
+            border-bottom-style:solid;
+            top:0;
+            left:0;
+            }
+            
+            /* Dropdown menu section*/
+                
+                .dropdown {
+                    visibility:hidden;
+                    opacity:0;
+                    transition:opacity 0.5s ease;
+                    pointer-events:none;
+                }
+                .dropdown-active {
+                    opacity:1;
+                    pointer-events:auto;
+                }
+                
+                /* open drawer */
+                .dropdown-active:hover #AppDrawer {
+                    opacity:1;
+                    pointer-events:auto;
+                }
+                
+                /* Drawer style */
+                #AppDrawer {
+                    border: 10px solid transparent;
+                    border-radius:50px;
+                    background-color:rgba(0,0,0,0.3);
+                    color:white;
+                    text-align:center;
+                    position:relative;
+                    top:0;
+                    left:0;
+                    opacity:0;
+                    transition:opacity 0.5s ease;
+                    pointer-events:none;
+                }
+            
+        /* top of homepage section */
+        #Top {
+            height:100%;
+            background-color:red;
+            background-image:url('images/background1.jpg');
+			background-size:cover;
+        }
+        #Top>* {
+            width:100%;
+            overflow:hidden;
+        }
+            #Top>div.box {
+                position:relative;
+            }
+            #Top>div.box>table {
+                padding-top:2%;
+                margin:auto;
+            }
+            .icon {
+            height:300px;
+            width:300px;
+            text-align:center;
+            user-select:none;
+            }
+            div.icon span {
+                color:#404040;
+                font-size:1.5em;
+                position:relative;
+                bottom:1.5em;
+                opacity:0;
+                transition: opacity 0.5s ease;
+            }
+            div.icon img {
+                position:relative;
+                top:0;
+                transition: top 0.5s ease;
+            }
+            div.icon:hover img, div.icon:hover img:hover {
+                top:-50px;
+            }
+            div.icon:hover span, span:hover {
+                opacity:1;
+            }
+            
+        /* Bottom of homepage section */
+		.mobileContentless {
+				display:none;
+			}
+		@media only screen and (min-device-width: 700px){
+			div.mobileContentless {
+				display:block;
+			}
+		}
+        section:not(:first-of-type){
+            background-color: rgba(255,255,255,0.4);
+            padding-top:500px;
+            background-repeat:no-repeat;
+            background-origin:padding-box;
+            background-size: auto 900px;
+            background-position:0 0;	
+        }
+        @media only screen and (min-device-width: 1290px) {
+            section:not(:first-of-type) {background-size: 100% auto;}
+        }
+        
+            /*images for descriptions*/
+            section:nth-of-type(2) {
+                    background-image:url('images/temp1.jpg');
+                }
+            section:nth-of-type(3) {
+                    background-image:url('images/temp2.jpg');
+                }
+            section:nth-of-type(4) {
+                    background-image:url('images/temp3.jpg');
+                }
+                
+            /*description boxes*/
+            .descriptions {
+                border-top: 6px solid black;
+                padding: 2em 0 3em;
+                background-color:white;
+                min-height:400px;
+            }
+        
+            .descriptions>* {
+                margin-left:2em;
+                margin-right:2em;
+            }
+        

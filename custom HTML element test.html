@@ -1,0 +1,14 @@
+<script id="fell">
+	class notePad extends HTMLElement {
+		constructor() {
+		
+			super();
+			var shadow = this.attachShadow({mode: 'open'});
+			
+			shadow.innerHTML = "hi";
+			
+		}
+	}
+	customElements.define('note-pad', notePad);
+</script>
+<note-pad></note-pad>

@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+	font-family: Content, sans-serif;
+}
+
+h1, h2, h3, h4, h5, button, input, textarea {
+	font-family: Title, sans-serif;
+	font-weight: bold;
+}
+
+.siteMapBlock li {
+	vertical-align: top;
+	padding: 2px 0 0 20px;
+	background: #f3f3f3 url("sitemap-node.gif") no-repeat 0 0;
+}
+
+.siteMapBlock li.alt {
+	background: #fff url("sitemap-node.gif") no-repeat 0 0;
+}
+
+ul li {
+	list-style: none;
+	list-style-image: none;
+}
+
+#GUI {
+	height:100%;
+	width:100%;
+	position:fixed;
+	pointer-events:none;
+	z-index:3;
+}
+
+.container {
+	margin-top: 3%;
+}
+
