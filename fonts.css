@@ -1,0 +1,11 @@
+/*Fonts*/
+@font-face {
+  font-family: 'Open Sans Condensed', sans-serif;
+  src:url(./fonts/Open_Sans_Condensed/OpenSans-CondLight.ttf);
+}
+
+@font-face {
+  font-family: 'Coming Soon'; 
+  src:url(./fonts/Coming_Soon/ComingSoon.ttf);
+}
+

@@ -85,10 +85,11 @@ $(function () {
           $(this).remove();  
      });
 
-      //save button for later use 
+    //save button for later use 
 
 });
 
+//function for incrementing ids and elements for creating new rows
 
 function GetDynamicTextBox(value) {
     count++;
