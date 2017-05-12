@@ -8,8 +8,8 @@
         <link rel="stylesheet" href="footer.css"/>
 		<link rel="stylesheet" href="navMenu.css"/>
         <link rel="stylesheet" href="fonts/font.css">
-        <script src="index.js"></script>
-        <script src="hamburger.js"></script>
+        <script src="script.js"></script>
+        <script src="navScript.js"></script>
 		<script src="functionHiding.js" id="SelfDestruct"></script>
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="icon" href="images/favicon.ico" type="image/x-icon">
