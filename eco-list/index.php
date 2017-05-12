@@ -42,13 +42,13 @@
                             </td>
                             <td>
                                 <div class="icon">
-                                    <a href="/ecoeats/index.php"></a><img height="300" width="300" src="images/cutlery1.png"draggable="false"/>
+                                    <a href="/ecoeats/index.php"><img height="300" width="300" src="images/cutlery1.png"draggable="false"/>
                                     <span>Recipes</span></a>
                                 </div>
                             </td>
                             <td>
                                 <div class="icon">
-                                    <a href="/donation/index.php"></a><img height="300" width="300" src="images/location1.png"draggable="false"/>
+                                    <a href="/donation/index.php"><img height="300" width="300" src="images/location1.png"draggable="false"/>
                                     <span>Donation</span></a>
                                 </div>
                             </td>
