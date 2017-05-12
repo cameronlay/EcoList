@@ -5,25 +5,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Cameron Lay">
-    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../navMenu.css"/>
-    <link rel="stylesheet" href="../navButton.css"/>
-    <link rel="stylesheet" href="../footer.css"/>
-    <link rel="stylesheet" href="../fonts/font.css">
+    <link rel="stylesheet" href="/navMenu.css"/>
+    <link rel="stylesheet" href="/navButton.css"/>
+    <link rel="stylesheet" href="/footer.css"/>
+    <link rel="stylesheet" href="/fonts/font.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="../navScript.js"></script>
-    <script src="../functionHiding.js" id="SelfDestruct"></script>
+    <script src="/navScript.js"></script>
+    <script src="/functionHiding.js" id="SelfDestruct"></script>
 </head>
 <body onload="setBurger(true);hide_function()">
 <div class="col-md-12">
     <div id="GUI">
-        <?php include('../navMenu.html');?>
-        <?php include('../navButton.html');?>
+        <?php include('/navMenu.html');?>
+        <?php include('/navButton.html');?>
     </div>
     <div class="container panel panel-default">
         <div class="row">
@@ -119,21 +119,21 @@
         </div>
         <div class="middleleftcolumn">
             <ul>
-                <li><a href="/list/index.php">Shopping List</a></li>
-                <li><a href="/planner/index.php">Meal Planner</a></li>
-                <li><a href="/donations/index.php">Donate Food</a></li>
+                <li><a href="/ecolist/index.php">Shopping List</a></li>
+                <li><a href="/ecoeats/index.php">Meal Planner</a></li>
+                <li><a href="/donation/index.php">Donate Food</a></li>
             </ul>
         </div>
         <div class="middlerightcolumn">
             <ul>
-                <li><a href="/appshome/index.php">Affiliated Apps</a></li>
+                <li><a href="/services/index.php">Affiliated Apps</a></li>
                 <li><a href="/index.php#AboutUs">About Us</a></li>
                 <li><a href="/index.php#AboutProject">About the Project</a></li>
             </ul>
         </div>
         <div class="bottomrightcolumn">
             <ul>
-                <li><a href="/login/index.php">Login</a></li>
+                <li><a href="/users/index.php">Login</a></li>
                 <li><a href="/sitemap/index.php">Sitemap</a></li>
             </ul>
         </div>

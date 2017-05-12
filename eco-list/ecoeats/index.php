@@ -27,12 +27,12 @@
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
         <!-- OUTSOURCING -->
-        <link rel="stylesheet" href="../footer.css"/>
-        <link rel="stylesheet" href="../navButton.css"/>
-        <link rel="stylesheet" href="../navMenu.css">
-        <script src="../navScript.js"></script>
-        <link rel="stylesheet" href="../fonts/font.css">
-        <script src="../functionHiding.js" id="SelfDestruct"></script>
+        <link rel="stylesheet" href="/footer.css"/>
+        <link rel="stylesheet" href="/navButton.css"/>
+        <link rel="stylesheet" href="/navMenu.css">
+        <script src="/navScript.js"></script>
+        <link rel="stylesheet" href="/fonts/font.css">
+        <script src="/functionHiding.js" id="SelfDestruct"></script>
         <!-- JQUERY INSTEAD OF AJAX -->
         <script>
             $(window).on("load", function() {
@@ -47,8 +47,8 @@
     </head>
     <body onload="widthLessThan768();setBurger(true);">
     <div id="GUI">
-        <?php include('../navMenu.html');?>
-        <?php include('../navButton.html');?>
+        <?php include('/navMenu.html');?>
+        <?php include('/navButton.html');?>
     </div>
     <div id="backgroundRecipe">
         <div id="loader"></div>

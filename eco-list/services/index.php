@@ -7,17 +7,17 @@
         <link rel="stylesheet" href="../navButton.css"/>
         <link rel="stylesheet" href="../navMenu.css">
         <link rel="stylesheet" href="../fonts/font.css">
-        <script src="../navScript.js"></script>
-        <script src="../functionHiding.js" id="SelfDestruct"></script>
+        <script src="/navScript.js"></script>
+        <script src="/functionHiding.js" id="SelfDestruct"></script>
 	</head>
 	<body>
     <div id="GUI">
-        <?php include('../navMenu.html');?>
-        <?php include('../navButton.html');?>
+        <?php include('/navMenu.html');?>
+        <?php include('/navButton.html');?>
     </div>
 		<div class="wrapper">
 			<div id="AppsHomeHeader">
-				<img src="/eco-list/images/realLogo.png" alt="EcoList"></img>
+				<img src="/images/realLogo.png" alt="EcoList"></img>
 			</div>
             
 			<!--our app start-->
@@ -28,7 +28,7 @@
 					<div class="content">
 						<table>
 							<tr>
-                                <td><img src="../images/cutlery1.png" alt="appicon" width=500 height=500/></td>
+                                <td><img src="/images/cutlery1.png" alt="appicon" width=500 height=500/></td>
                                 <td><h2>EcoList</h2>
                                     <p>EcoList is a shopping list which enables you to add items and quantities to your list and check them off as you go.
                                         When an item has been checked it moves down to a separate list where you can double click or swipe to delete it.</p>
@@ -43,7 +43,7 @@
 					<div class="content">
 						<table>
 							<tr>
-                                <td><img src="../images/calandar1.png" alt="appicon" width=500 height=500/></td>
+                                <td><img src="/images/calandar1.png" alt="appicon" width=500 height=500/></td>
                                 <td><h2>EcoEats</h2>
                                     <p>EcoEats is a meal planner that features seven different diets that you can choose from each with many simple yet
                                         delicious recipes to choose from. The ingredients on that page can be added to your shopping list with just a couple clicks.
@@ -59,7 +59,7 @@
 					<div class="content">
 						<table>
 							<tr>
-                                <td><img src="../images/location1.png" alt="appicon" width=500 height=500/></td>
+                                <td><img src="/images/location1.png" alt="appicon" width=500 height=500/></td>
                                 <td><h2>Donation</h2>
                                     <p>We also feature a donations page where you can find all the places in the Vancouver area where you can go to donate food.</p>
                                 </td>
@@ -79,7 +79,7 @@
 					<div class="content">
 						<table>
 							<tr>
-							<td><img src="/eco-list/images/FreshnessLogo.png" alt="appicon" width=500 height=500/></td>
+							<td><img src="/images/FreshnessLogo.png" alt="appicon" width=500 height=500/></td>
 							<td><h2>Freshness</h2><p>
 							If you have any excess ingredients you can head over to our friends at Take 2. Their app allows you to input two ingredients
                                     and they will try to give you recipe recommendations that incorporates both of those ingredients.
@@ -96,7 +96,7 @@
 					<div class="content">
 						<table>
 							<tr>
-							<td><img src="/eco-list/images/Take2Logo.png" alt="appicon" width=500 height=500/></td>
+							<td><img src="/images/Take2Logo.png" alt="appicon" width=500 height=500/></td>
 							<td><h2>Take2</h2><p>
 							If you have any excess ingredients you can head over to our friends at Take 2. Their app allows you to input two ingredients
                                     and they will try to give you recipe recommendations that incorporates both of those ingredients.
@@ -112,7 +112,7 @@
 					<div class="content">
 						<table>
 							<tr>
-							<td><img src="/eco-list/images/RefrigdateLogo.png" alt="appicon" width=500 height=500/></td>
+							<td><img src="/images/RefrigdateLogo.png" alt="appicon" width=500 height=500/></td>
 							<td><h2>Refrigdate</h2><p>
 							If you are worried about keeping track of your leftovers and how old they may be we highly recommend checking out our friends at
                                     Refrigedate. Their app tracks how long your it has been since you stored your leftovers and lets you assign ownership to
@@ -127,38 +127,38 @@
 			</div>
 			<!--end of our friends-->
 		</div>
-		<div class="home-footer mobileContentless">
-            <div class="footerconstraint">
-                <div class="bottomleftcolumn">
-                    <ul>
-                        <li><a href="../index.php">Home</a></li>
-                        <li><a href="../index.php#OurPurpose">Our Purpose</a></li>
-                        <li><a href="../index.php#OurApps">About our Apps</a></li>
+    <div class="home-footer mobileContentless">
+        <div class="footerconstraint">
+            <div class="bottomleftcolumn">
+                <ul>
+                    <li><a href="/index.php">Home</a></li>
+                    <li><a href="/index.php#OurPurpose">Our Purpose</a></li>
+                    <li><a href="/index.php#OurApps">About our Apps</a></li>
 
-                    </ul>
-                </div>
-                <div class="middleleftcolumn">
-                    <ul>
-                        <li><a href="../ecolist/index.php">Shopping List</a></li>
-                        <li><a href="../ecoeats/index.php">Meal Planner</a></li>
-                        <li><a href="../donation/index.php">Donate Food</a></li>
-                    </ul>
-                </div>
-                <div class="middlerightcolumn">
-                    <ul>
-                        <li><a href="../services/index.php">Affiliated Apps</a></li>
-                        <li><a href="../index.php#AboutUs">About Us</a></li>
-                        <li><a href="../index.php#AboutProject">About the Project</a></li>
-                    </ul>
-                </div>
-                <div class="bottomrightcolumn">
-                    <ul>
-                        <li><a href="../users/index.php">Login</a></li>
-                        <li><a href="../sitemap/index.php">Sitemap</a></li>
-                    </ul>
-                </div>
-                <p>&copy; Copyright 2017 | EcoList, All Rights Reserved </p>
+                </ul>
             </div>
+            <div class="middleleftcolumn">
+                <ul>
+                    <li><a href="/ecolist/index.php">Shopping List</a></li>
+                    <li><a href="/ecoeats/index.php">Meal Planner</a></li>
+                    <li><a href="/donation/index.php">Donate Food</a></li>
+                </ul>
+            </div>
+            <div class="middlerightcolumn">
+                <ul>
+                    <li><a href="/services/index.php">Affiliated Apps</a></li>
+                    <li><a href="/index.php#AboutUs">About Us</a></li>
+                    <li><a href="/index.php#AboutProject">About the Project</a></li>
+                </ul>
+            </div>
+            <div class="bottomrightcolumn">
+                <ul>
+                    <li><a href="/users/index.php">Login</a></li>
+                    <li><a href="/sitemap/index.php">Sitemap</a></li>
+                </ul>
+            </div>
+            <p>&copy; Copyright 2017 | EcoList, All Rights Reserved </p>
         </div>
+    </div>
 	</body>
 </html>
