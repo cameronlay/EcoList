@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="index.css"/>
 		<link rel="stylesheet" href="Burgers.css"/>
         <link rel="stylesheet" href="footer.css"/>
+		<link rel="stylesheet" href="burgerbuttonGUI.css"/>
         <script src="index.js"></script>
         <script src="hamburger.js"></script>
 		<script src="functionHiding.js" id="SelfDestruct"></script>
@@ -22,6 +23,7 @@
                 </div>
             </div>
 			<?php include('burgerMenuGUI.html');?>
+			<?php include('burgerButtonGUI.html');?>
         </div>
         <div class="wrapper">
             <div id="Top">

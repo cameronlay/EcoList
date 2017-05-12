@@ -131,7 +131,7 @@
                 top:0;
                 transition: top 0.5s ease;
             }
-            div.icon:hover img,img:hover {
+            div.icon:hover img, div.icon:hover img:hover {
                 top:-50px;
             }
             div.icon:hover span, span:hover {
