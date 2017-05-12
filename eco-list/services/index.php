@@ -30,11 +30,11 @@
 					<div class="content">
 						<table>
 							<tr>
-							<td><img src="../images/cutlery1.png" alt="appicon" width=500 height=500/></td>
-							<td><h2>Shopping List</h2><p>
-							desc.
-							</p>
-							</td>
+                                <td><img src="../images/cutlery1.png" alt="appicon" width=500 height=500/></td>
+                                <td><h2>EcoList</h2>
+                                    <p>EcoList is a shopping list which enables you to add items and quantities to your list and check them off as you go.
+                                        When an item has been checked it moves down to a separate list where you can double click or swipe to delete it.</p>
+                                </td>
 							</tr>
 						</table>
 					</div>
@@ -45,11 +45,12 @@
 					<div class="content">
 						<table>
 							<tr>
-							<td><img src="../images/calandar1.png" alt="appicon" width=500 height=500/></td>
-							<td><h2>EcoEats</h2><p>
-							desc.
-							</p>
-							</td>
+                                <td><img src="../images/calandar1.png" alt="appicon" width=500 height=500/></td>
+                                <td><h2>EcoEats</h2>
+                                    <p>EcoEats is a meal planner that features seven different diets that you can choose from each with many simple yet
+                                        delicious recipes to choose from. The ingredients on that page can be added to your shopping list with just a couple clicks.
+                                        You are also able to make your own meal plans and save them on our site.</p>
+                                </td>
 							</tr>
 						</table>
 					</div>
@@ -60,11 +61,10 @@
 					<div class="content">
 						<table>
 							<tr>
-							<td><img src="../images/location1.png" alt="appicon" width=500 height=500/></td>
-							<td><h2>Donation</h2><p>
-							desc.
-							</p>
-							</td>
+                                <td><img src="../images/location1.png" alt="appicon" width=500 height=500/></td>
+                                <td><h2>Donation</h2>
+                                    <p>We also feature a donations page where you can find all the places in the Vancouver area where you can go to donate food.</p>
+                                </td>
 							</tr>
 						</table>
 					</div>
