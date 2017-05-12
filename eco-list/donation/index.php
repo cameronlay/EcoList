@@ -51,7 +51,7 @@
                     </div>
                 </div>
                 </main>
-    <div class="home-footer mobileContentless">
+    <!--<div class="home-footer mobileContentless">
         <div class="footerconstraint">
             <div class="bottomleftcolumn">
                 <ul>
@@ -83,6 +83,6 @@
             </div>
             <p>&copy; Copyright 2017 | EcoList, All Rights Reserved </p>
         </div>
-    </div>
+    </div>-->
     </body>
 </html>

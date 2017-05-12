@@ -29,7 +29,7 @@
 					<h1>Site Map</h1>
 				</div>
 			</div>
-			<div id="SiteMap">
+			<!--<div id="SiteMap">
 				<div class="row" >
                     <div class="col-md-1"></div>
 					<div class="siteMapBlock col-md-3">
@@ -61,7 +61,7 @@
                         <h2><a href="/donation/index.php">Donation</a></h2>
                     </div>
                 </div>
-			</div>
+			</div>-->
 		</div>
 	</body>
 </html>

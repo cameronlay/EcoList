@@ -42,13 +42,13 @@
                             </td>
                             <td>
                                 <div class="icon">
-                                    <a href="/ecoeats/index.php"></a><img height="300" width="300" src="images/cutlery1.png"draggable="false"/>
+                                    <a href="/ecoeats/index.php"><img height="300" width="300" src="images/cutlery1.png"draggable="false"/>
                                     <span>Recipes</span></a>
                                 </div>
                             </td>
                             <td>
                                 <div class="icon">
-                                    <a href="/donation/index.php"></a><img height="300" width="300" src="images/location1.png"draggable="false"/>
+                                    <a href="/donation/index.php"><img height="300" width="300" src="images/location1.png"draggable="false"/>
                                     <span>Donation</span></a>
                                 </div>
                             </td>
@@ -91,39 +91,5 @@
                         of students and parents was through proper planning and organization.</p>
                 </div>
             </section>
-        </div>
-            <div class="home-footer mobileContentless">
-                <div class="footerconstraint">
-                    <div class="bottomleftcolumn">
-                        <ul>
-                            <li><a href="/index.php">Home</a></li>
-                            <li><a href="/index.php#OurPurpose">Our Purpose</a></li>
-                            <li><a href="/index.php#OurApps">About our Apps</a></li>
-
-                        </ul>
-                    </div>
-                    <div class="middleleftcolumn">
-                        <ul>
-                            <li><a href="/list/index.php">Shopping List</a></li>
-                            <li><a href="/planner/index.php">Meal Planner</a></li>
-                            <li><a href="/donations/index.php">Donate Food</a></li>
-                        </ul>
-                    </div>
-                    <div class="middlerightcolumn">
-                        <ul>
-                            <li><a href="/appshome/index.php">Affiliated Apps</a></li>
-                            <li><a href="/index.php#AboutUs">About Us</a></li>
-                            <li><a href="/index.php#AboutProject">About the Project</a></li>
-                        </ul>
-                    </div>
-                    <div class="bottomrightcolumn">
-                        <ul>
-                            <li><a href="/login/index.php">Login</a></li>
-                            <li><a href="/sitemap/index.php">Sitemap</a></li>
-                        </ul>
-                    </div>
-                    <p>&copy; Copyright 2017 | EcoList, All Rights Reserved </p>
-                </div>
-            </div>
     </body>
 </html>
