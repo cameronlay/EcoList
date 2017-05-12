@@ -37,19 +37,19 @@
                             <td>
                                 <div class="icon">
                                     <a href="/ecolist/index.php"><img height="300" width="300" src="images/shoppingcart1.png"draggable="false"/>
-                                    <span>Shopping Cart</span></a>
+                                    <span class="noDecoration">Shopping Cart</span></a>
                                 </div>
                             </td>
                             <td>
                                 <div class="icon">
                                     <a href="/ecoeats/index.php"><img height="300" width="300" src="images/cutlery1.png"draggable="false"/>
-                                    <span>Recipes</span></a>
+                                    <span class="noDecoration">Recipes</span></a>
                                 </div>
                             </td>
                             <td>
                                 <div class="icon">
                                     <a href="/donation/index.php"><img height="300" width="300" src="images/location1.png"draggable="false"/>
-                                    <span>Donation</span></a>
+                                    <span class="noDecoration">Donation</span></a>
                                 </div>
                             </td>
                         </tr>

@@ -7,8 +7,8 @@
         <link rel="stylesheet" href="../navButton.css"/>
         <link rel="stylesheet" href="../navMenu.css">
         <link rel="stylesheet" href="../fonts/font.css">
-        <script src="/navScript.js"></script>
-        <script src="/functionHiding.js" id="SelfDestruct"></script>
+        <script src="../navScript.js"></script>
+        <script src="../functionHiding.js" id="SelfDestruct"></script>
 	</head>
 	<body>
     <div id="GUI">
@@ -80,10 +80,10 @@
 						<table>
 							<tr>
 							<td><a href="https://freshness.000webhostapp.com/"><img href="https://freshness.000webhostapp.com/" src="/images/FreshnessLogo.png" alt="appicon" width=500 height=500/></a></td>
-							<td><a href="https://freshness.000webhostapp.com/"><h2>Freshness</h2></a><p>
-							If you have any excess ingredients you can head over to our friends at Take 2. Their app allows you to input two ingredients
-                                    and they will try to give you recipe recommendations that incorporates both of those ingredients.
-							</p>
+							<td><a href="https://freshness.000webhostapp.com/"><h2>Freshness</h2></a>
+                                <p>Have you ever found yourself throwing away food or having your groceries go bad sooner than you expected?
+                                    If so we recommend checking out Freshness. They provide you with the best ways to preserve your food and
+                                    keep it fresh for as long as possible.</p>
 							</td>
 							</tr>
 						</table>
@@ -97,10 +97,9 @@
 						<table>
 							<tr>
 							<td><a href="http://take2foods.com"><img href="http://take2foods.com" src="/images/Take2Logo.png" alt="appicon" width=500 height=500/></a></td>
-							<td><a href="http://take2foods.com"><h2>Take2</h2></a><p>
-							If you have any excess ingredients you can head over to our friends at Take 2. Their app allows you to input two ingredients
-                                    and they will try to give you recipe recommendations that incorporates both of those ingredients.
-							</p>
+							<td><a href="http://take2foods.com"><h2>Take2</h2></a>
+                                <p>If you have any excess ingredients you can head over to our friends at Take 2. Their app allows you to input two ingredients
+                                    and they will try to give you recipe recommendations that incorporates both of those ingredients.</p>
 							</td>
 							</tr>
 						</table>
@@ -113,11 +112,10 @@
 						<table>
 							<tr>
 							<td><a href="http://refrigedate.me/"><img href="http://refrigedate.me/" src="/images/RefrigdateLogo.png" alt="appicon" width=500 height=500/></td></a>
-							<td><a href="http://refrigedate.me/"><h2>Refrigdate</h2></a><p>
-							If you are worried about keeping track of your leftovers and how old they may be we highly recommend checking out our friends at
+							<td><a href="http://refrigedate.me/"><h2>Refrigdate</h2></a>
+                                <p>If you are worried about keeping track of your leftovers and how old they may be we highly recommend checking out our friends at
                                     Refrigedate. Their app tracks how long your it has been since you stored your leftovers and lets you assign ownership to
-                                    your food if you find your roommates are often eating your leftovers!
-							</p>
+                                    your food if you find your roommates are often eating your leftovers!</p>
 							</td>
 							</tr>
 						</table>
