@@ -15,7 +15,7 @@ function $$(className) {
     return element;
 }
 
-/*Form validation and warning funtions for the register form*/
+/*Form validation and warning functions for the register form*/
 function testUsername(){
     var x = $("SignupUsername").value;
     var patt = /^(?:\S\w*_*)$/i;

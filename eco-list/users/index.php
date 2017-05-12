@@ -34,6 +34,8 @@
         </div>
         <div class="row" id="FormContent">
             <div class="col-md-2"></div>
+
+            <!--Start of the login form-->
             <div class="col-md-4 toggleForm" id="LoginLeft">
                 <form id="LoginForm" name="LoginForm" method="post">
                     <table id="LoginTable">
@@ -63,6 +65,8 @@
                     </table>
                 </form>
             </div>
+
+            <!--Start of the Registration Form-->
             <div class="col-md-5 toggleForm"  id="SignupRight">
                 <form id="SignupForm" name="signupform" method="post" onsubmit="return formValidate()">
                     <table id="SignupTable">
@@ -107,6 +111,7 @@
         </div>
     </div>
 </div>
+    <!--Footer currently not working-->
 <!--<div class="home-footer mobileContentless">
     <div class="footerconstraint">
         <div class="bottomleftcolumn">

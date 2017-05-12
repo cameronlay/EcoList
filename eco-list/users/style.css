@@ -29,6 +29,7 @@ table {
     width: 100%;
 }
 
+/*GUI styling for the burger nav*/
 #GUI {
     height:100%;
     width:100%;
@@ -67,6 +68,8 @@ table {
     margin: auto;
     display: block;
 }
+
+/*When the screen is smaller than 991px only shows login form*/
 @media only screen and (max-width:991.5px) {
     #SignupRight {
         display: none;
@@ -80,6 +83,7 @@ table {
     }
 }
 
+/*When the screen is made larger than 991px hides the button that toggles login/signup and displays both*/
 @media only screen and (min-width:991.5px) {
     #RegisterButton {
         display: none;
@@ -93,6 +97,7 @@ table {
     }
 }
 
+/*By default hides user validation for the sign up page*/
 #ErrEmail{
     visibility: hidden;
 }
