@@ -79,8 +79,8 @@
 					<div class="content">
 						<table>
 							<tr>
-							<td><img src="/images/FreshnessLogo.png" alt="appicon" width=500 height=500/></td>
-							<td><h2>Freshness</h2><p>
+							<td><img href="https://freshness.000webhostapp.com/" src="/images/FreshnessLogo.png" alt="appicon" width=500 height=500/></td>
+							<td><h2 href="https://freshness.000webhostapp.com/">Freshness</h2><p>
 							If you have any excess ingredients you can head over to our friends at Take 2. Their app allows you to input two ingredients
                                     and they will try to give you recipe recommendations that incorporates both of those ingredients.
 							</p>
@@ -96,8 +96,8 @@
 					<div class="content">
 						<table>
 							<tr>
-							<td><img src="/images/Take2Logo.png" alt="appicon" width=500 height=500/></td>
-							<td><h2>Take2</h2><p>
+							<td><img href="http://take2foods.com" src="/images/Take2Logo.png" alt="appicon" width=500 height=500/></td>
+							<td><h2 href="http://take2foods.com">Take2</h2><p>
 							If you have any excess ingredients you can head over to our friends at Take 2. Their app allows you to input two ingredients
                                     and they will try to give you recipe recommendations that incorporates both of those ingredients.
 							</p>
@@ -112,8 +112,8 @@
 					<div class="content">
 						<table>
 							<tr>
-							<td><img src="/images/RefrigdateLogo.png" alt="appicon" width=500 height=500/></td>
-							<td><h2>Refrigdate</h2><p>
+							<td><img href="http://refrigedate.me/" src="/images/RefrigdateLogo.png" alt="appicon" width=500 height=500/></td>
+							<td><h2 href="http://refrigedate.me/">Refrigdate</h2><p>
 							If you are worried about keeping track of your leftovers and how old they may be we highly recommend checking out our friends at
                                     Refrigedate. Their app tracks how long your it has been since you stored your leftovers and lets you assign ownership to
                                     your food if you find your roommates are often eating your leftovers!
