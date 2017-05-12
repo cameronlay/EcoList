@@ -2,10 +2,14 @@
 
 
 
+html {
+  overflow-y: scroll;
+}
+body {
+  background-image: url('../images/background2.jpg');
+}
 
-/* end of custom code */
-
-/* Div of the table*/
+/*input number field for quantity*/
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
@@ -13,12 +17,6 @@ input[type=number]::-webkit-outer-spin-button {
     -moz-appearance: none;
     appearance: none;
     margin: 0; 
-}
-html {
-  overflow-y: scroll;
-}
-body {
-  background-image: url('../images/background2.jpg');
 }
 
 #GUI {
@@ -36,13 +34,18 @@ body {
   overflow: hidden;
 }
 
+/*adjusts screen size for mobile view at 640px*/
+
 @media only screen and (min-width:640px){
   .container{
     width:50%;
   }
 }
 
+
+
 /* table css */
+
 .smallTableHead {
   width: 70px;
 }
@@ -65,7 +68,12 @@ thead tr th {
   font-size: 20px;
 }
 
+
+
+
+
 /*buttons css*/
+
 #btnAddContainer {
   display: inline;
   width:40%;
@@ -165,43 +173,6 @@ thead tr th {
 .list-group li:hover {
   text-decoration: line-through;
 }
-/*on hover animated strikethrough
-.list-group li {
-  position: relative;
-  display: block;
-  cursor: pointer;
-}
 
-.list-group li:before, .list-group li:after {
-  content: '';
-  position: absolute;
-  width: 0%;
-  height: 1px;
-  top: 50%;
-  margin-top: -0.5px;
-  background: black;
-}
-
-.list-group li:before {
-  left: -2px;
-}
-.list-group li:after {
-  right: 2.5px;
-  background: black;
-  transition: width 1.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-.list-group li:hover:before {
-  background: black;
-  width: 100%;
-  transition: width 1.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-.list-group li:hover:after {
-  background: transparent;
-  width: 100%;
-  transition: 0s;
-}
-*/
 
 

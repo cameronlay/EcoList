@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Cameron Lay">
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/navMenu.css"/>
-    <link rel="stylesheet" href="/navButton.css"/>
-    <link rel="stylesheet" href="/footer.css"/>
-    <link rel="stylesheet" href="/fonts/font.css">
+    <link rel="stylesheet" href="../navMenu.css"/>
+    <link rel="stylesheet" href="../navButton.css"/>
+    <link rel="stylesheet" href="../footer.css"/>
+    <link rel="stylesheet" href="../fonts/font.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -20,12 +20,11 @@
     <script src="/functionHiding.js" id="SelfDestruct"></script>
 </head>
 <body onload="setBurger(true);hide_function()">
-
-<div class="col-md-12">
     <div id="GUI">
         <?php include('../navMenu.html');?>
         <?php include('../navButton.html');?>
     </div>
+<div class="col-md-12">
     <div class="container panel panel-default">
         <div class="row">
             <div class="col-md-2"></div>
@@ -35,6 +34,8 @@
         </div>
         <div class="row" id="FormContent">
             <div class="col-md-2"></div>
+
+            <!--Start of the login form-->
             <div class="col-md-4 toggleForm" id="LoginLeft">
                 <form id="LoginForm" name="LoginForm" method="post">
                     <table id="LoginTable">
@@ -64,6 +65,8 @@
                     </table>
                 </form>
             </div>
+
+            <!--Start of the Registration Form-->
             <div class="col-md-5 toggleForm"  id="SignupRight">
                 <form id="SignupForm" name="signupform" method="post" onsubmit="return formValidate()">
                     <table id="SignupTable">
@@ -108,6 +111,7 @@
         </div>
     </div>
 </div>
+    <!--Footer currently not working-->
 <!--<div class="home-footer mobileContentless">
     <div class="footerconstraint">
         <div class="bottomleftcolumn">

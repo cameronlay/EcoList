@@ -20,6 +20,9 @@
             user-select:none;
         }
         
+        .noDecoration {
+            text-decoration: none;
+        }
         .chevronHolder {
             padding-top:9px;
             margin:auto;

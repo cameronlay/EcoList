@@ -76,7 +76,7 @@ img {
     height:auto;
 }
 .content table td h2, p{
-    font-size:1.9em;
+    font-size:1.4em;
     margin-left:0.2em
 }
 h2 {
@@ -87,4 +87,8 @@ h2 {
 #AppsHomeHeader {
     text-align:center;
     margin:auto;
+}
+
+td a {
+    text-decoration: none;
 }

@@ -34,6 +34,26 @@
                 <div class="col-sm-16">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae lobortis est. Sed mattis pretium nibh, quis sodales eros elementum ornare. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum elit urna, ornare vel aliquet eget, laoreet non lectus. Pellentesque vulputate ultrices leo eu pharetra. Duis rhoncus arcu enim, et ornare ipsum aliquam id. Aliquam ante magna, pretium in ante blandit, vehicula porttitor felis. Mauris a libero mollis, luctus augue non, tempor turpis. Fusce eget hendrerit leo, vel semper erat. Fusce convallis finibus velit non sollicitudin.
                 </div>
+<<<<<<< HEAD
+=======
+                </main>
+    <!--<div class="home-footer mobileContentless">
+        <div class="footerconstraint">
+            <div class="bottomleftcolumn">
+                <ul>
+                    <li><a href="/index.php">Home</a></li>
+                    <li><a href="/index.php#OurPurpose">Our Purpose</a></li>
+                    <li><a href="/index.php#OurApps">About our Apps</a></li>
+
+                </ul>
+            </div>
+            <div class="middleleftcolumn">
+                <ul>
+                    <li><a href="/ecolist/index.php">Shopping List</a></li>
+                    <li><a href="/ecoeats/index.php">Meal Planner</a></li>
+                    <li><a href="/donation/index.php">Donate Food</a></li>
+                </ul>
+>>>>>>> 45e9d306125550e83555cf2030a627c9ccb8b1ff
             </div>
             <div class="row"> 
                 <!-- Addresses for places -->
@@ -87,5 +107,9 @@
                 <p>&copy; Copyright 2017 | EcoList, All Rights Reserved </p>
             </div>
         </div>
+<<<<<<< HEAD
+=======
+    </div>-->
+>>>>>>> 45e9d306125550e83555cf2030a627c9ccb8b1ff
     </body>
 </html>
