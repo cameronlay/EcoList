@@ -12,6 +12,10 @@ h1, h2, h3, h4, h5, .nav-tabs, .nav-pills, button, input, textarea {
     font-weight: bold;
 }
 
+.nav-tabs {
+    font-size: 1.5em;
+}
+
 /**
  * DISPLAY NONE AFTER PAGE HAS BEEN LOADED
  * @Edmund
