@@ -1,3 +1,4 @@
+			//initialize variable scope outside to null, so errors don't occur
 			winHeight = window.innerHeight;
             winWidth = window.innerWidth;
 			isNotIndex = null;
@@ -20,6 +21,7 @@
             var numberOfSections = null;
             section = [];
             
+			//reize all relative functions when the window resizes
             window.onresize = function sizeRefactor() {
                 winHeight = window.innerHeight;
                 winWidth = window.innerWidth;
@@ -28,6 +30,8 @@
 				}
             }
             
+			//initialize the element references and set relative heights based on the screen
+			//runOnce : (single time initialization, true or false)
             function setHeight(runOnce){
                 if(runOnce) {
                     topElement1 = document.getElementById("Top");
@@ -43,7 +47,7 @@
                 appdrawer.style.left = (-winWidth/4 + 18) + "px";
             }
             
-            
+            //called when setHeight is run to create references required
             function setElements() {
                 titleElement = document.getElementById("Title");
                 renderedNav = document.getElementsByClassName("miniNav")[0].firstElementChild;
@@ -57,14 +61,20 @@
 				
             }
             
-            
+            //runs runscroll when event of window scrolling occurs
             window.onscroll = function(){
                 runScroll();
             }
             
+			/*initialize scrolling events
+			test 1: make visible nav and logo stay always at top
+			test 2:  change the color of the GUI nav(renderedNav) as the page passes a rendering line
+					relative to the browser window height and top section screen
+			test 3: test for if paralax scrolling occurs based on scroll positions for all sections of the page*/
             function runScroll() {
                 var scrollLevel = window.scrollY;
                 var titleLevel = winHeight * offsetAmount / 100;
+				//test 1:
                 if(scrollLevel > titleLevel && !passedFlag) {
                     renderedNav.style.visibility = "visible";
                     titleElement.style.visibility = "hidden";
@@ -75,7 +85,7 @@
                         titleElement.style.visibility = "visible";
                         passedFlag = false;
                     }
-
+					//test 2:
                     if(scrollLevel >= winHeight - renderingLine * 3) {
                         var distanceRatio =  ((renderingLine * 2) - (winHeight - scrollLevel))/renderingLine
                         if(distanceRatio <= 0.7) {
@@ -88,7 +98,7 @@
                     } else {
                         renderedNav.style.backgroundColor = "rgba(0,0,0,0)";
                     }
-                    
+                    //test 3:
                     if(scrollLevel > titleLevel + topheight - imagebuffer) {
                         renderedDropdown.classList.add("dropdown-active");
                         renderedDropdown.style.visibility = "visible";
@@ -105,6 +115,8 @@
                     }
                 }
             }
+			//mouse event for app drawer appearing when mouse is over the chevron to prevent mouse cursor conflics of
+			//default css:hover pseudo
             function setDrawer(){
                 appdrawer.addEventListener(mouse-over, function() {
                     setHeight(false);
@@ -113,7 +125,7 @@
                     appdrawer.style.height = 0;
                 },true);
             }
-
+			//temporary self destruct on nav -- unused
             function hide_function() {
                 document.getElementsByTagName("body")[0].removeAttribute("onLoad");
                 document.getElementById("SelfDestruct").remove();
