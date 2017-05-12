@@ -59,4 +59,8 @@
     .footerHide {
         display: none;
     }
+
+    .home-footer {
+        display: none;
+    }
 }

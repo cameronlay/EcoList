@@ -5,29 +5,31 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Cameron Lay">
-    <link rel="shortcut icon" href="/logo/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/logo/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/nav.css"/>
+    <link rel="stylesheet" href="/navMenu.css"/>
+    <link rel="stylesheet" href="/navButton.css"/>
     <link rel="stylesheet" href="/footer.css"/>
     <link rel="stylesheet" href="../fonts/font.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="/nav.js"></script>
+    <script src="/navScript.js"></script>
     <script src="/functionHiding.js" id="SelfDestruct"></script>
 </head>
 <body onload="setBurger(true);hide_function()">
 <div class="col-md-12">
     <div id="GUI">
-        <?php include('/burgerMenuGUI.html');?>
+        <?php include('/navMenu.html');?>
+        <?php include('/navButton.html');?>
     </div>
     <div class="container panel panel-default">
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8" id="LoginLogo">
-                <a href="#"><img src ="LOGO2.png" alt="Logo"/></a>
+                <a href="#"><img src ="/images/realLogo.png" alt="Logo"/></a>
             </div>
         </div>
         <div class="row" id="FormContent">
@@ -105,6 +107,6 @@
         </div>
     </div>
 </div>
-<span class="footerHide">
+<div class="footerHide">
 <?php include('/footer.html');?>
-</span>
+</div>
