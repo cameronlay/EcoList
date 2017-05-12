@@ -1,9 +1,12 @@
-//burger Elements
+//burger Elements global variables and backup onload
 var isOpen = false;
 var burgerMenu = null;
 window.onload = function() {
 	setBurger(true);
 }
+//add the events to the burger on the gui based on screen movements after they exists
+//init (if event listeners are being added true/false)
+//force (if the burger is being forced to open or close)
 function setBurger(init, force) {
 			winHeight = window.innerHeight;
             winWidth = window.innerWidth;
@@ -15,7 +18,7 @@ function setBurger(init, force) {
 			var numTouchLogged = 0;
 			var lastKnownTouch = 0;
 			var justToggled = false;
-			
+				//initialization of the burger. addes event listeners, should be run once
 				if(init) {
 					burgerMenu = document.getElementById("Hamburger");
 					burgerButton = document.getElementById("BurgerButton");
@@ -47,6 +50,7 @@ function setBurger(init, force) {
 					}, false);
 					
 				}
+				//button/debugging force. opens/closes burger forcefully
 				if(force){
 					if(isOpen == false) {
 						burgerMenu.style.left = "0%";isOpen=true;slideAmount=null;
@@ -54,6 +58,9 @@ function setBurger(init, force) {
 						burgerMenu.style.left = "-80%";isOpen=false;slideAmount=null;
 					}
 				}
+				//touch event triggered, start toggling the burger to move out.
+				//event is touch event
+				//button is if button has been pressed (broken)
 				function openBurger(event, button) {
 						numTouchLogged = event.touches.length;
 						for(i=0;i<numTouchLogged;++i){
@@ -67,6 +74,9 @@ function setBurger(init, force) {
 						}
 						justToggled = false;
 				}
+				//event when the burger is released(touch) 
+				//event is touch event
+				//button is if button has been pressed (broken)
 				function closeBurger(event, button) {
 						toggle = false;
 						if(isOpen){
@@ -89,6 +99,9 @@ function setBurger(init, force) {
 							burgerMenu.style.left = "-80%";isOpen=false;slideAmount=null;
 						}
 				}
+				//if the touch event is moving slide the burger out as needed
+				//isHeld: only happens between touch and release
+				//event is touch event
 				function slideBurger(isHeld, event) {
 					if(lastXPos<0.35 && !isOpen){
 						for(i=0;i<event.touches.length;++i){
