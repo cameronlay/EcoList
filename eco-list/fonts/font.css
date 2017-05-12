@@ -1,0 +1,16 @@
+/*YOU CAN USE THESE FONTS BY CALLING TAG {FONT-FAMILY: TITLE, CONTENT;}*/
+
+@font-face {
+    font-family: Title;
+    src: url(Open_Sans_Condensed/OpenSans-CondLight.ttf);
+}
+
+@font-face {
+    font-family: Content;
+    src: url(Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: List;
+    src: url(Coming_Soon/ComingSoon.ttf);
+}
