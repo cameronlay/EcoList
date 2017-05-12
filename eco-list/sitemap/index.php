@@ -19,8 +19,25 @@
     </head>
 	<body onload="setBurger(true);hide_function()">
 		<div id="GUI">
-			<?php include('../navMenu.html');?>
-            <?php include('../navButton.html');?>
+			<div id="BurgerButton" onmouseclick="setBurger(false,true)">
+                <img src="../images/transparent.png" class="square"/>
+                <img src="../images/burger.png" class="innerButtonBGR"/>
+            </div>
+      <div id="Hamburger">
+                <span class="menuTop">Menu</span>
+                <ul>
+                    <li><a href="../index.php">Home</a></li>
+                    <li><a href="../services/index.php">Our Services</a>
+                        <ul class="dropDownHamburger">
+                            <li><div><a href="../ecolist/index.php">Eco-List</a></div></li>
+                            <li><div><a href="../ecoeats/index.php">EcoEats</a></div></li>
+                            <li><div><a href="../donation/index.php">Donations</a></div></li>
+                        </ul>
+                    </li>
+                    <li><a href="../users/index.php">Login</a></li>
+                    <li><a href="../index.php#AboutUs">About Us</a></li>
+                </ul>
+            </div>
 		</div>
 		<div class="container">
 			<div class="row">

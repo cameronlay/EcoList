@@ -95,7 +95,6 @@
             
         /* top of homepage section */
         #Top {
-            width:100%;
             height:100%;
             background-color:red;
             background-image:url('images/background1.jpg');
@@ -162,6 +161,7 @@
             /*images for descriptions*/
             section:nth-of-type(2) {
                     background-image:url('images/info1.jpg');
+                    height: 100%;
                 }
             section:nth-of-type(3) {
                     background-image:url('images/info2.jpg');
