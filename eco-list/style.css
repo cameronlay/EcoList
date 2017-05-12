@@ -160,14 +160,13 @@
         
             /*images for descriptions*/
             section:nth-of-type(2) {
-                    background-image:url('images/info1.jpg');
-                    height: 100%;
+                    background-image:url('images/temp1.jpg');
                 }
             section:nth-of-type(3) {
-                    background-image:url('images/info2.jpg');
+                    background-image:url('images/temp2.jpg');
                 }
             section:nth-of-type(4) {
-                    background-image:url('images/info3.jpg');
+                    background-image:url('images/temp3.jpg');
                 }
                 
             /*description boxes*/
