@@ -1,12 +1,20 @@
+// displaying position on maps
 var marker;
 var marker1;
 var marker2;
+var marker3;
+var marker4;
+var marker5;
+
+// timer for bouncing the marker
 var bounceTimer;
 var count = 2;
 
+
+// Setting the whole map
 function myMap() {
     
-    //maps
+    // map with center at given latitude and longitude
     var myCenter = new google.maps.LatLng(49.209631, -122.928385);
     var mapCanvas = document.getElementById("map");
     var mapOptions = {
@@ -14,49 +22,53 @@ function myMap() {
         zoom: 10,
     };
     var map = new google.maps.Map(mapCanvas, mapOptions);
-            
-    //surrey
+    
+    
+    //marker on surrey food bank
     var myCenter1 = new google.maps.LatLng(49.1977, -122.8487);
     marker = new google.maps.Marker({
         position:myCenter1,
         optimized:false
     });
     
-    //covenant house
+    //marker on covenant house
     var myCenter2 = new google.maps.LatLng(49.2754,-123.1265);
     marker1 = new google.maps.Marker({
         position:myCenter2,
         optimized:false
     });
     
-    // langley
+    //marker on langley food bank
     var myCenter3 = new google.maps.LatLng(49.1074, -122.6596);
     marker2 = new google.maps.Marker({
         position:myCenter3,
         optimized:false
     });
     
-    // quest food exchange
+    //marker on quest food exchange
     var myCenter4 = new google.maps.LatLng(49.2207, -122.9303);
     marker3 = new google.maps.Marker({
         position:myCenter4,
         optimized:false
     });
     
-    // outreach society
+    //marker on outreach society
     var myCenter5 = new google.maps.LatLng(49.281123, -123.096309);
     marker4 = new google.maps.Marker({
         position:myCenter5,
         optimized:false
     });
     
-    // richmond food bank
+    //marker on richmond food bank
     var myCenter6 = new google.maps.LatLng(49.172892, -123.141725);
     marker5 = new google.maps.Marker({
         position:myCenter6,
         optimized:false
     });
     
+    
+    /* This makes the marker bounce, when we hover over markers. SetAnimation() function set the 
+       markers to bounce after every 500 millisec.*/
     google.maps.event.addListener(marker, 'mouseover', function() {
         if (this.getAnimation() == null || typeof this.getAnimation() === 'undefined') {
             
@@ -70,12 +82,14 @@ function myMap() {
         }
     });
     
+    /* This helps to zoom the map when ckicked on markers.*/
     google.maps.event.addListener(marker,'dblclick',function() {
         map.setZoom(map.getZoom() + count);
         map.setCenter(marker.getPosition());
     });
     
     
+    /* This stop the marker to bounce when we mouse out. */
     google.maps.event.addListener(marker, 'mouseout', function() {
         
         if (this.getAnimation() != null) {
@@ -214,7 +228,7 @@ function myMap() {
         clearTimeout(bounceTimer);
     });
 
-    
+    // Officially setting the map with markers on it.
     marker.setMap(map);
     marker1.setMap(map);
     marker2.setMap(map);
@@ -227,7 +241,7 @@ function myMap() {
 
 
 
-
+// this function makes the marker to bounce when we hover over the addresses.
 
 function bounceMarker(x) {
     if (x == 'm') {
@@ -276,7 +290,7 @@ function bounceMarker(x) {
     }
 }
 
-
+// this function makes markers stop bouncing when we mouseout the cursor from the address
 function stopBounce() {
     
     if (marker.getAnimation() != null) {
