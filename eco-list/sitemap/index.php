@@ -19,8 +19,8 @@
     </head>
 	<body onload="setBurger(true);hide_function()">
     <div id="GUI">
-        <?php include('/navMenu.html');?>
-        <?php include('/navButton.html');?>
+        <?php include('../navMenu.html');?>
+        <?php include('../navButton.html');?>
     </div>
 		<div class="container">
 			<div class="row">

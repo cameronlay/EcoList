@@ -22,8 +22,8 @@
 <body onload="setBurger(true);hide_function()">
 <div class="col-md-12">
     <div id="GUI">
-        <?php include('/navMenu.html');?>
-        <?php include('/navButton.html');?>
+        <?php include('../navMenu.html');?>
+        <?php include('../navButton.html');?>
     </div>
     <div class="container panel panel-default">
         <div class="row">

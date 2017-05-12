@@ -25,8 +25,8 @@
                     <div id="AppDrawer">Our Apps</div>
                 </div>
             </div>
-			<?php include('/navButton.html');?>
-			<?php include('/navMenu.html');?>
+			<?php include('navButton.html');?>
+			<?php include('navMenu.html');?>
         </div>
         <div class="wrapper">
             <div id="Top">

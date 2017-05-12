@@ -47,8 +47,8 @@
     </head>
     <body onload="widthLessThan768();setBurger(true);">
     <div id="GUI">
-        <?php include('/navMenu.html');?>
-        <?php include('/navButton.html');?>
+        <?php include('../navMenu.html');?>
+        <?php include('../navButton.html');?>
     </div>
     <div id="backgroundRecipe">
         <div id="loader"></div>
