@@ -3,7 +3,13 @@
 }
 
 body {
-    background-image: url('background2.jpg');
+    background-image: url('../images/background2.jpg');
+    font-family: Content, sans-serif;
+}
+
+h1, h2, h3, h4, h5, .nav-tabs, .nav-pills, button, input, textarea {
+    font-family: Title, sans-serif;
+    font-weight: bold;
 }
 
 /**

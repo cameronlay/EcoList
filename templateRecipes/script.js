@@ -336,8 +336,6 @@ function widthLessThan768() {
                 document.getElementById('classicListContent5').classList.remove('displayBlock');
                 document.getElementById('classicListContent6').classList.remove('displayBlock');
                 document.getElementById('classicListContent7').classList.remove('displayBlock');
-                document.getElementById('classicListContent8').classList.remove('displayBlock');
-                document.getElementById('classicListContent9').classList.remove('displayBlock');
 
                 //========================
                 //bring the lists right after the tab!!
@@ -370,8 +368,6 @@ function widthLessThan768() {
                 document.getElementById('vegetarianListContent5').classList.remove('displayBlock');
                 document.getElementById('vegetarianListContent6').classList.remove('displayBlock');
                 document.getElementById('vegetarianListContent7').classList.remove('displayBlock');
-                document.getElementById('vegetarianListContent8').classList.remove('displayBlock');
-                document.getElementById('vegetarianListContent9').classList.remove('displayBlock');
 
                 //========================
                 //bring the lists right after the tab!!
@@ -403,8 +399,6 @@ function widthLessThan768() {
                 document.getElementById('ketoListContent5').classList.remove('displayBlock');
                 document.getElementById('ketoListContent6').classList.remove('displayBlock');
                 document.getElementById('ketoListContent7').classList.remove('displayBlock');
-                document.getElementById('ketoListContent8').classList.remove('displayBlock');
-                document.getElementById('ketoListContent9').classList.remove('displayBlock');
 
                 //========================
                 //bring the lists right after the tab!!
@@ -436,8 +430,6 @@ function widthLessThan768() {
                 document.getElementById('paleoListContent5').classList.remove('displayBlock');
                 document.getElementById('paleoListContent6').classList.remove('displayBlock');
                 document.getElementById('paleoListContent7').classList.remove('displayBlock');
-                document.getElementById('paleoListContent8').classList.remove('displayBlock');
-                document.getElementById('paleoListContent9').classList.remove('displayBlock');
 
                 //========================
                 //bring the lists right after the tab!!
@@ -469,8 +461,6 @@ function widthLessThan768() {
                 document.getElementById('proteinListContent5').classList.remove('displayBlock');
                 document.getElementById('proteinListContent6').classList.remove('displayBlock');
                 document.getElementById('proteinListContent7').classList.remove('displayBlock');
-                document.getElementById('proteinListContent8').classList.remove('displayBlock');
-                document.getElementById('proteinListContent9').classList.remove('displayBlock');
 
                 //========================
                 //bring the lists right after the tab!!
@@ -504,6 +494,7 @@ function widthLessThan768() {
                 document.getElementById('culturalListContent7').classList.remove('displayBlock');
                 document.getElementById('culturalListContent8').classList.remove('displayBlock');
                 document.getElementById('culturalListContent9').classList.remove('displayBlock');
+                document.getElementById('culturalListContent10').classList.remove('displayBlock');
 
                 //========================
                 //bring the lists right after the tab!!
