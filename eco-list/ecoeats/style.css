@@ -12,6 +12,7 @@ h1, h2, h3, h4, h5, .nav-tabs, .nav-pills, button, input, textarea {
     font-weight: bold;
 }
 
+/*TABS*/
 .nav-tabs {
     font-size: 1.5em;
 }
@@ -103,14 +104,6 @@ ul.nav-pills {
     padding-right: 45%;
 }
 
-#GUI {
-    height:100%;
-    width:100%;
-    position:fixed;
-    pointer-events:none;
-    z-index:9998;
-}
-
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
   100% { -webkit-transform: rotate(360deg); }
@@ -122,15 +115,26 @@ ul.nav-pills {
 }
 /*LOADING CIRCLE DONE*/
 
+/*HAMBURGER NAV*/
+#GUI {
+    height:100%;
+    width:100%;
+    position:fixed;
+    pointer-events:none;
+    z-index:9998;
+}
+
 .centered {
     text-align: center;
 }
 
+/*OVERRIDING BOOTSTRAP*/
 .active {
     pointer-events: none;
     cursor: default;
 }
 
+/*LITERALLY MARGIN*/
 .h4margin {
     display: block;
     width: 100%;
@@ -150,6 +154,7 @@ ul.nav-pills {
     cursor: pointer;
 }
 
+/*TO USE GLYPHICON FOR CHECKBOX*/
 .ingredientCheckbox {
     display: none;
 }
@@ -179,6 +184,7 @@ ul.nav-pills {
 .ingredientCheckbox:checked + .ingredientLabel .glyphicon-check {
     display: inline;
 }
+/*FINISH OVERRIDING GLYPHICONS*/
 
 .recipetextarea {
     max-width: 100%;
@@ -186,6 +192,7 @@ ul.nav-pills {
     min-width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
+    resize: none;
 }
 
 .noMargin {
@@ -197,14 +204,17 @@ ul.nav-pills {
     padding: 15px;
 }
 
+/*FOR MOBILE*/
 @media only screen and (max-width: 768px) {
 
+    /*CONCRETE-LOOKING BUTTON*/
     .nav-tabs {
         width: 100%;
         margin: 0;
         border-radius: 0;
     }
 
+    /*OVERRDING BOOTSTRAP*/
     .nav-tabs > li{
         float: none;
     }
@@ -213,11 +223,13 @@ ul.nav-pills {
         width: 100%;
     }
 
+    /*OVERRIDING BOOTSTRAP*/
     .active {
         pointer-events: auto;
         cursor: wait;
     }
 
+    /*BORDER NONE*/
     .borderLeft {
         border: none;
     }

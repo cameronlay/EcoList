@@ -125,6 +125,12 @@ function userPillsClicked(id, content) {
     y.classList.add("displayBlock");
 }
 
+/* Pseudo:
+ *      1. Remove all active from tabs
+ *      2. Remove all lists
+ *      3. Remove all contents
+ *      4. Add active and displayblock to the clicked tabs
+ */
 function TabClicked(id, id2, list, contentBlock, content) {
     var tab = document.getElementById(id);
     var firstlist = document.getElementById(id2);
@@ -263,6 +269,7 @@ function TabClicked(id, id2, list, contentBlock, content) {
 //END OF FUNCTION
 }
 
+// ADDING INPUTS
 $(document).ready(function() {
     $("#addStepId").click(function() {
         $("#addStepId").before(GetInputRecipe());

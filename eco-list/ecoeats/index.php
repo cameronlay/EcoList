@@ -3,13 +3,12 @@
 <!-- 
     ====================================================
     PLEASE READ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    WHEN YOU ARE ADDING RECIPES,
-    THERE MIGHT BE A MERGE CONFLICT, SO JUST BE AWARE OF
-    THAT.
-    ADD EACH RECIPE STEP IN ONE LINE PLEASE!
-    IF RECIPE STEPS ARE NOT EXACTLY 5, THERE MUST BE A 
-    MERGE CONFLICT.
-    OR INGREDIENTS AS WELL.
+    THINGS YOU NEED TO FIX:
+    1. LISTS FOR EACH DIET TO RECIPE NAME
+    2. RECIPE CONTENT
+    3. INGREDIENTS ID SHOULD BE #DIET#. FIRST NUMBER REPRESENTS
+    THE ORDER OF RECIPES. SECOND NUMBER REPRESENTS THE ORDER OF
+    INGREDIENTS.
     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     ====================================================
 
@@ -63,6 +62,7 @@
                     <h1>EcoEats</h1>
                 </div>
             </div>
+            <!-- TABS -->
             <div class="panel panel-default">
             <ul class="nav nav-tabs" id="navTabs">
                 <li id="classic" class="active" onclick="TabClicked('classic', 'classicList1', 'classicList', 'classicListContent', 'classicListContent1')"><a href="javascript:void(0);">Classic</a></li>
