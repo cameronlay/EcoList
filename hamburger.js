@@ -1,9 +1,10 @@
 //burger Elements
+var isOpen = false;
 var burgerMenu = null;
 window.onload = function() {
 	setBurger(true);
 }
-function setBurger(init) {
+function setBurger(init, force) {
 			winHeight = window.innerHeight;
             winWidth = window.innerWidth;
 			var toggle = false;
@@ -11,14 +12,27 @@ function setBurger(init) {
 			var lastXPos = 0;
 			var lastX = 0;
 			var slideAmount;
-			var isOpen = false;
 			var numTouchLogged = 0;
 			var lastKnownTouch = 0;
+			var justToggled = false;
 			
 				if(init) {
 					burgerMenu = document.getElementById("Hamburger");
+					burgerButton = document.getElementById("BurgerButton");
 					winHeight = window.innerHeight;
 					winWidth = window.innerWidth;
+					burgerButton.addEventListener("touchstart",function(event)
+					{
+						openBurger(event, true)
+					},false)
+					burgerButton.addEventListener("touchend",function(event)
+					{
+						closeBurger(event, true)
+					},false)
+					burgerButton.addEventListener("touchcancel",function(event)
+					{
+						closeBurger(event, true)
+					},false)
 					window.addEventListener("touchstart",function(event){
 						openBurger(event);
 					},false);
@@ -31,33 +45,49 @@ function setBurger(init) {
 					window.addEventListener("touchcancel",function(event){
 						closeBurger(event);
 					}, false);
-				}
-				function openBurger(event) {
-					numTouchLogged = event.touches.length;
-					for(i=0;i<numTouchLogged;++i){
-						lastXPos = event.touches[i].clientX/winWidth;
-						lastX = true;
-						lastKnownTouch = lastX;
-					}
-					toggle = true;
-				}
-				function closeBurger(event) {
-					toggle = false;
-					if(isOpen){
-						if (lastXPos > 0.8){
-							for(i=0;i<numTouchLogged;++i){
-								if(lastKnownTouch == lastX){burgerMenu.style.left = "-80%";isOpen=false;slideAmount=-80;};
-							}
-							numTouchLogged = 0;
-						}
-						
-						if(slideAmount < -15){burgerMenu.style.left = "-80%";isOpen=false;slideAmount=-80;}
-						else{burgerMenu.style.left = "0%";isOpen=true;slideAmount=0;};
-					} else {
 					
-					if(slideAmount >= -43) {burgerMenu.style.left = "0%";isOpen=true;slideAmount=0;};
-					if(slideAmount < -43){burgerMenu.style.left = "-80%";isOpen=false;slideAmount=-80;};
+				}
+				if(force){
+					if(isOpen == false) {
+						burgerMenu.style.left = "0%";isOpen=true;slideAmount=null;
+					} else {
+						burgerMenu.style.left = "-80%";isOpen=false;slideAmount=null;
 					}
+				}
+				function openBurger(event, button) {
+						numTouchLogged = event.touches.length;
+						for(i=0;i<numTouchLogged;++i){
+							lastXPos = event.touches[i].clientX/winWidth;
+							lastX = true;
+							lastKnownTouch = lastX;
+						}
+						toggle = true;
+						if(button && !isOpen && !justToggled){
+							burgerMenu.style.left = "0%";isOpen=true;slideAmount=null;
+						}
+						justToggled = false;
+				}
+				function closeBurger(event, button) {
+						toggle = false;
+						if(isOpen){
+							if (lastXPos > 0.8){
+								for(i=0;i<numTouchLogged;++i){
+									if(lastKnownTouch == lastX){burgerMenu.style.left = "-80%";isOpen=false;slideAmount=-80;};
+								}
+								numTouchLogged = 0;
+							}
+							
+							if(slideAmount < -15){burgerMenu.style.left = "-80%";isOpen=false;slideAmount=-80;}
+							else{burgerMenu.style.left = "0%";isOpen=true;slideAmount=0;};
+						} else {
+						
+						if(slideAmount >= -43) {burgerMenu.style.left = "0%";isOpen=true;slideAmount=0;Button=false;};
+						if(slideAmount < -43){burgerMenu.style.left = "-80%";isOpen=false;slideAmount=-80;};
+						}
+						if(button && isOpen) {
+							justToggled = true;
+							burgerMenu.style.left = "-80%";isOpen=false;slideAmount=null;
+						}
 				}
 				function slideBurger(isHeld, event) {
 					if(lastXPos<0.35 && !isOpen){
@@ -85,5 +115,4 @@ function setBurger(init) {
 						}
 					}
 				}
-
 			}
