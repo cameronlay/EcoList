@@ -105,14 +105,13 @@ function formValidate() {
 }
 
 function SignUpShow() {
-        $("SignupRight").style.display = 'block'
-        $("LoginLeft").style.display = 'none'
-
+        $("SignupRight").display = 'block';
+        $("LoginLeft").display = 'none';
 }
 
 function LoginShow() {
-        $("SignupRight").style.display = 'none'
-        $("LoginLeft").style.display = 'block'
+        $("SignupRight").style.display = 'none';
+        $("LoginLeft").style.display = 'block';
 }
 
 window.onresize=function() {
@@ -125,4 +124,4 @@ window.onresize=function() {
     if (w < 991.5) {
         $("SignupRight").style.display = 'none';
     }
-}
+};

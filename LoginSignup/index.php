@@ -8,23 +8,24 @@
     <link rel="shortcut icon" href="/LOGO/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/LOGO/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/css/Burgers.css"/>
+    <link rel="stylesheet" href="Burgers.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="/javascript/hamburger.js"></script>
-    <script src="/javascript/functionHiding.js" id="SelfDestruct"></script>
+    <script src="../hamburger.js"></script>
+    <script src="../functionHiding.js" id="SelfDestruct"></script>
 </head>
 <body onload="setBurger(true);hide_function()">
+<div class="col-md-12">
     <div id="GUI">
-        <?php include('burgerMenuGUI.html');?>
+        <?php include('/burgerMenuGUI.html');?>
     </div>
-    <div class="container">
+    <div class="container panel panel-default">
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8" id="LoginLogo">
-                <a href="#"><img src ="../images/Logo3.jpg" alt="Logo"/></a>
+                <a href="#"><img src ="LOGO2.png" alt="Logo"/></a>
             </div>
         </div>
         <div class="row" id="FormContent">
@@ -46,13 +47,13 @@
                             <td class="spacingRow">Just here for spacing</td>
                         </tr>
                         <tr class="submitButton">
-                            <td><input id="LoginButton" name="submit" value="Login" type="submit" class="btn btn-primary"/></td>
+                            <td><input id="LoginButton" name="submit" value="Login" type="submit" class="btn btn-info"/></td>
                         </tr>
                         <tr>
                             <td class="spacingRow">Just here for spacing</td>
                         </tr>
                         <tr>
-                            <td><input type="button" value="Sign-Up" onclick="SignUpShow()" id="RegisterButton" class="btn btn-primary"/></td>
+                            <td><input type="button" value="Sign-Up" onmousedown="SignUpShow()" id="RegisterButton" class="btn btn-info"/></td>
                         </tr>
                         </tbody>
                     </table>
@@ -87,13 +88,13 @@
                             <td id="ErrConfirm">Does not match password</td>
                         </tr>
                         <tr class="submitButton">
-                            <td><input id="SignupButton" name="submit" value="Register" type="submit" class="btn btn-primary"/></td>
+                            <td><input id="SignupButton" name="submit" value="Register" type="submit" class="btn btn-info"/></td>
                         </tr>
                         <tr>
                             <td class="spacingRow">Just here for spacing</td>
                         </tr>
                         <tr>
-                            <td><input type="button" value="Sign-In" onclick="LoginShow()" id="SignInButton" class="btn btn-primary"/></td>
+                            <td><input type="button" value="Sign-In" onmousedown="LoginShow()" id="SignInButton" class="btn btn-info"/></td>
                         </tr>
                         </tbody>
                     </table>
@@ -101,3 +102,5 @@
             </div>
         </div>
     </div>
+</div>
+
