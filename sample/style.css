@@ -61,9 +61,7 @@ div#myNavbar ul.navbar-nav ul.dropdown-menu a:hover {
 
 .info {
     background-image: url('mobile.png');
-    background-position: left;
     background-repeat: no-repeat;
-    padding-left: 500px;
 }
 
 .info1 {
