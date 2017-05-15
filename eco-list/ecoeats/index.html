@@ -46,8 +46,6 @@
     </head>
     <body onload="widthLessThan768();setBurger(true);">
     <div id="GUI">
-        <?php include('../navMenu.html');?>
-        <?php include('../navButton.html');?>
     </div>
     <div id="backgroundRecipe">
         <div id="loader"></div>
@@ -2361,6 +2359,21 @@
             </div>
         </main>
     </section>
+
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyC82ZRbf--52RkwFWRCvCBRN7zLSMCAqV8",
+            authDomain: "ecolist-d3e23.firebaseapp.com",
+            databaseURL: "https://ecolist-d3e23.firebaseio.com",
+            projectId: "ecolist-d3e23",
+            storageBucket: "ecolist-d3e23.appspot.com",
+            messagingSenderId: "347349975058"
+        };
+        firebase.initializeApp(config);
+    </script>
+
     <!--<div class="home-footer mobileContentless">
             <div class="footerconstraint">
                 <div class="bottomleftcolumn">
