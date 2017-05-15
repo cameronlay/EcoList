@@ -297,6 +297,16 @@ function GetIngredientsRecipe() {
     return '<input class="recipetextarea form-control inputIngredients" type="text" placeholder="Enter the ingredient" required>';
 }
 
+// RESET ALL CHECKBOXES IN INGREDIENTS
+$(document).ready(function() {
+    var checkBox = $('.ingredientCheckbox');
+    $(".resetBtn").on("click", function() {
+        checkBox.prop('checked', false);
+        $(".glyphicon-unchecked").classList.add("displayInline");
+        $(".glyphicon-check").classList.add('displayNone');
+    });
+});
+
 /**
  * FUNCTION THAT OVERRIDE ALL FUNCTIONS IF THE BROWSER
  * WIDTH IS LESS THAN 768
