@@ -83,8 +83,15 @@
               <div id="listContainer">
                  <ul class="list-group" data-toggle="tooltip" title="double tap to remove" data-placement="top">
                  </ul>
-                 <button id="btnSave" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-ok-circle"></i>&nbsp; Save Cart&nbsp;</button>
-                 <button id="btnClear" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-minus-sign"></i>&nbsp; Clear Cart&nbsp;</button>
+
+                 <div id="btnSaveContainer">
+                   <button id="btnSave" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-ok-circle"></i>&nbsp; Save Cart&nbsp;</button>
+                 </div>  
+
+                 <div id="btnClearContainer">
+                   <button id="btnClear" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-minus-sign"></i>&nbsp; Clear Cart&nbsp;</button>
+                </div>
+
               </div>
         </div>
 

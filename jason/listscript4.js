@@ -6,7 +6,6 @@ var a;
 
 $(function () {
 
-
     //button adds new rows to table 1
     $("#btnAdd").bind("click", function () {
         var div = $("<tr>");
@@ -34,6 +33,7 @@ $(function () {
                 var toAdd2 = $('#' + a + "quantity").val();
                  $('.list-group').append('<li class="list-group-item">' + toAdd2 + " " + toAdd + '</li>');
                  $(this).closest("tr").remove();
+                 if(toAdd )
   
             });
         
@@ -85,9 +85,21 @@ $(function () {
           $(this).remove();  
      });
 
-      //save button for later use 
+      //easter egg that changes background image to easter eggs when user types easter egg
+      $(document).ready(function(){
+          $("#" + a + "item").on("input", function(){
+            var eastereggitem = $(this).val();
+            if(eastereggitem == "easteregg") {
+              $('.container').css('background-image', 'url(easteregg.jpg)')
+            }
+            else {
+              $('.container').css('background-image', 'none')
+            }
+          })
+      })
 
 });
+
 
 
 function GetDynamicTextBox(value) {
@@ -99,3 +111,4 @@ function GetDynamicTextBox(value) {
     + '<td><button type="button" class="btn btn-danger remove"><i class="glyphicon glyphicon-minus-sign"></i></button></td>'
 }
 
+//mobile swipe delete function
