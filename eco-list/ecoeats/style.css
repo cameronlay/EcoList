@@ -93,7 +93,6 @@ ul.nav-pills {
 }
 
 #backgroundRecipe {
-    width: 100%;
     height: 100%;
     display: block;
     background-color: white;
@@ -122,6 +121,7 @@ ul.nav-pills {
     position:fixed;
     pointer-events:none;
     z-index:9998;
+    display: none;
 }
 
 .centered {
