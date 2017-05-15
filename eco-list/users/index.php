@@ -18,6 +18,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="/navScript.js"></script>
     <script src="/functionHiding.js" id="SelfDestruct"></script>
+     <!--Load google Platform library-->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!--Google API client Id-->
+    <meta name="google-signin-client_id" content="450409508964-v5n0smsict6lk05c8rue1tcieshf9noc.apps.googleusercontent.com">
 </head>
 <body onload="setBurger(true);hide_function()">
     <div id="GUI">
@@ -63,6 +67,9 @@
                         </tr>
                         </tbody>
                     </table>
+                    <!--Sign in/ out buttons-->
+                    <div class="g-signin2" data-onsuccess="onSignIn" style="padding-left:115px"></div>
+                    <a href="#" onclick="signOut();"  style="padding-left:150px">Sign out</a>
                 </form>
             </div>
 
@@ -111,6 +118,34 @@
         </div>
     </div>
 </div>
+
+ <!--Script to get the users id, name, email -->
+        <script>
+        function onSignIn(googleUser) {
+          var profile = googleUser.getBasicProfile();
+          console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+          console.log('Name: ' + profile.getName());
+          console.log('Image URL: ' + profile.getImageUrl());
+          console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+        }
+        
+        </script>
+        
+        <!--Sign out button/(link)-->
+        
+        
+        <script>
+          function signOut() {
+            var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+              console.log('User signed out.');
+            });
+          }
+        </script>
+
+
+
+
     <!--Footer currently not working-->
 <!--<div class="home-footer mobileContentless">
     <div class="footerconstraint">
