@@ -46,8 +46,25 @@
     </head>
     <body onload="widthLessThan768();setBurger(true);">
     <div id="GUI">
-        <?php include('../navMenu.html');?>
-        <?php include('../navButton.html');?>
+        <div id="Hamburger">
+            <span class="menuTop">Menu</span>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../services/index.html">Our Services</a>
+                    <ul class="dropDownHamburger">
+                        <li><div><a href="../ecolist/index.html">EcoList</a></div></li>
+                        <li><div><a href="../ecoeats/index.html">EcoEats</a></div></li>
+                        <li><div><a href="../donation/index.html">Donations</a></div></li>
+                    </ul>
+                </li>
+                <li><a href="../users/index.html">Login</a></li>
+                <li><a href="../index.html#AboutUs">About Us</a></li>
+            </ul>
+        </div>
+        <div id="BurgerButton" onclick="setBurger(false,true)">
+            <img src="../images/transparent.png" class="square"/>
+            <img src="../images/burger.png" class="innerButtonBGR"/>
+        </div>
     </div>
     <div id="backgroundRecipe">
         <div id="loader"></div>
@@ -186,7 +203,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <form action="" method="post">
+                                        <form action="" method="post" id="1classicIngredients">
                                         <input type="checkbox" id="1classic1" class="ingredientCheckbox"><label for="1classic1" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 Fillet Steak</label><br>
                                         <input type="checkbox" id="1classic2" class="ingredientCheckbox"><label for="1classic2" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 tbsp Olive Oil</label><br>
                                         <input type="checkbox" id="1classic3" class="ingredientCheckbox"><label for="1classic3" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 Whole Garlic Clove</label><br>
@@ -194,6 +211,7 @@
                                         <input type="checkbox" id="1classic5" class="ingredientCheckbox"><label for="1classic5" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
                                         <input type="checkbox" id="1classic6" class="ingredientCheckbox"><label for="1classic6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Ground Black Pepper</label><br>
                                         <input type="submit" class="btn btn-info" value="Add Items to List">
+                                        <button type="button" class="resetBtn btn btn-primary">Reset Checkboxes</button>
                                         </form>
                                     </td>
                                 </tr>
@@ -238,6 +256,7 @@
                                         <input type="checkbox" id="2classic9" class="ingredientCheckbox"><label for="2classic9" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
                                         <input type="checkbox" id="2classic10" class="ingredientCheckbox"><label for="2classic10" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Ground Black Pepper</label><br>
                                         <input type="submit" class="btn btn-info" value="Add Items to List">
+                                        <button type="button" class="resetBtn btn btn-primary">Reset Checkboxes</button>
                                         </form>
                                     </td>
                                 </tr>
