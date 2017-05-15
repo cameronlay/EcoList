@@ -26,11 +26,13 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
-        <!-- HAMBURGER MENU -->
-        <link rel="stylesheet" href="../Burgers.css"/>
-        <script src="../hamburger.js"></script>
-        <link rel="stylesheet" href="../index.css"/>
+        <!-- OUTSOURCING -->
+        <link rel="stylesheet" href="../footer.css"/>
+        <link rel="stylesheet" href="../navButton.css"/>
+        <link rel="stylesheet" href="../navMenu.css">
+        <script src="../navScript.js"></script>
         <link rel="stylesheet" href="../fonts/font.css">
+        <script src="../functionHiding.js" id="SelfDestruct"></script>
         <!-- JQUERY INSTEAD OF AJAX -->
         <script>
             $(window).on("load", function() {
@@ -46,7 +48,8 @@
     <body onload="widthLessThan768();setBurger(true);">
     <div id="GUI">
         <?php
-            include('../burgerMenuGUI.html');
+            include('../navMenu.html');
+            include('../navButton.html');
         ?>
     </div>
     <div id="backgroundRecipe">
@@ -62,6 +65,7 @@
                     <h1>EcoEats</h1>
                 </div>
             </div>
+            <!-- TABS -->
             <div class="panel panel-default">
             <ul class="nav nav-tabs" id="navTabs">
                 <li id="classic" class="active" onclick="TabClicked('classic', 'classicList1', 'classicList', 'classicListContent', 'classicListContent1')"><a href="javascript:void(0);">Classic</a></li>
@@ -2065,5 +2069,38 @@
             </div>
         </main>
     </section>
+    <!--<div class="home-footer mobileContentless">
+            <div class="footerconstraint">
+                <div class="bottomleftcolumn">
+                    <ul>
+                        <li><a href="../index.php">Home</a></li>
+                        <li><a href="../index.php#OurPurpose">Our Purpose</a></li>
+                        <li><a href="../index.php#OurApps">About our Apps</a></li>
+
+                    </ul>
+                </div>
+                <div class="middleleftcolumn">
+                    <ul>
+                        <li><a href="../ecolist/index.php">Shopping List</a></li>
+                        <li><a href="../ecoeats/index.php">Meal Planner</a></li>
+                        <li><a href="../donation/index.php">Donate Food</a></li>
+                    </ul>
+                </div>
+                <div class="middlerightcolumn">
+                    <ul>
+                        <li><a href="../services/index.php">Affiliated Apps</a></li>
+                        <li><a href="../index.php#AboutUs">About Us</a></li>
+                        <li><a href="../index.php#AboutProject">About the Project</a></li>
+                    </ul>
+                </div>
+                <div class="bottomrightcolumn">
+                    <ul>
+                        <li><a href="../users/index.php">Login</a></li>
+                        <li><a href="../sitemap/index.php">Sitemap</a></li>
+                    </ul>
+                </div>
+                <p>&copy; Copyright 2017 | EcoList, All Rights Reserved </p>
+            </div>
+        </div>-->
     </body>
 </html>
