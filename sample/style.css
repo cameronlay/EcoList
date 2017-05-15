@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+/*MAKE NAV BAR RECTANGLE, OVERLAP BOOTSTRAP*/
+.indexNavNoBorderRadius {
+    border-radius: 0;
+}
+
+.indexNavBackground {
+    background-color: #404040;
+    border-color: #404040;
+}
+
+div#myNavbar ul.navbar-nav a:hover {
+    background-color: #505050;
+    color: #f6f6e8;
+}
+
+div#myNavbar ul.navbar-nav a {
+    color: #e6e6d8;
+}
+
+div#myNavbar ul.navbar-nav ul.dropdown-menu a {
+    color: #404040;
+}
+
+div#myNavbar ul.navbar-nav ul.dropdown-menu a:hover {
+    color: #f6f6e8;
+}
+
+.indexNavLogo {
+    height: 90%;
+    display: block;
+    float: left;
+    margin-left: 80px;
+    padding-top: 5px;
+}
+
+.indexNavLogoText {
+    padding: 15px;
+    display: block;
+    float: right;
+    padding-left: 10px;
+    color: #e6e6d8;
+    padding-right: 40px;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.dropdown-menu a {
+    color: #404040;
+}
+
+.textCentered {
+    text-align: center;
+}
+/*END OF NAV BAR*/
+
+.info {
+    background-image: url('mobile.png');
+    background-repeat: no-repeat;
+}
+
+.info1 {
+    background-image: url('info1-3.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-right: 500px;
+}
+
+.info2 {
+    background-image: url('info2-3.jpg');
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-left: 500px;
+}
+
+.info3 {
+    background-image: url('info3-3.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-right: 500px;
+}
+
+.indexBox {
+    display: block;
+    height: 500px;
+}
+
+.row {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    div#myNavbar ul.navbar-nav ul.dropdown-menu a {
+        color: #f6f6e8;
+    }
+
+    .indexNavLogo {
+        margin-left: 30px;
+    }
+}

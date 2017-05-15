@@ -19,7 +19,25 @@
     <body>
         <!-- hamburger menu -->
         <div id="GUI">
-
+            <div id="Hamburger">
+                <span class="menuTop">Menu</span>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../services/index.html">Our Services</a>
+                        <ul class="dropDownHamburger">
+                            <li><div><a href="../ecolist/index.html">EcoList</a></div></li>
+                            <li><div><a href="../ecoeats/index.html">EcoEats</a></div></li>
+                            <li><div><a href="../donation/index.html">Donations</a></div></li>
+                        </ul>
+                    </li>
+                    <li><a href="../users/index.html">Login</a></li>
+                    <li><a href="../index.html#AboutUs">About Us</a></li>
+                </ul>
+            </div>
+            <div id="BurgerButton" onclick="setBurger(false,true)">
+                <img src="../images/transparent.png" class="square"/>
+                <img src="../images/burger.png" class="innerButtonBGR"/>
+            </div>
         </div>
         
     
@@ -33,7 +51,8 @@
                 <div class="col-sm-16">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae lobortis est. Sed mattis pretium nibh, quis sodales eros elementum ornare. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum elit urna, ornare vel aliquet eget, laoreet non lectus. Pellentesque vulputate ultrices leo eu pharetra. Duis rhoncus arcu enim, et ornare ipsum aliquam id. Aliquam ante magna, pretium in ante blandit, vehicula porttitor felis. Mauris a libero mollis, luctus augue non, tempor turpis. Fusce eget hendrerit leo, vel semper erat. Fusce convallis finibus velit non sollicitudin.
                 </div>
-
+            </div>
+            <div class="row">
                 <!-- Addresses for places -->
                 <div class="col-sm-4" id="sideList">
                     <p onmouseover="bounceMarker('m')" onmouseout="stopBounce()" class="well well-sm" id="1"><b>Surrey Food bank society</b><br>10732 City Pkwy<br>Surrey, BC V3T 4C7</p>
@@ -56,9 +75,14 @@
             <div class="footerconstraint">
                 <div class="bottomleftcolumn">
                     <ul>
+
                         <li><a href="/index.html">Home</a></li>
                         <li><a href="/index.html#OurPurpose">Our Purpose</a></li>
                         <li><a href="/index.html#OurApps">About our Apps</a></li>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#OurPurpose">Our Purpose</a></li>
+                        <li><a href="../index.html#OurApps">About our Apps</a></li>
+
 
                     </ul>
                 </div>
@@ -86,7 +110,6 @@
             </div>
         </div>
 
-
         <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
         <script>
             // Initialize Firebase
@@ -100,5 +123,6 @@
             };
             firebase.initializeApp(config);
         </script>
+
     </body>
 </html>
