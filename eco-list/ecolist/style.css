@@ -101,6 +101,12 @@ thead tr th {
   background-color: #ff5561;
 }
 
+#btnClearContainer {
+  float: right;
+  width: 40%;
+}
+
+
 #btnClear {
   background-color: #ff6961;
   visibility: hidden;
@@ -112,6 +118,11 @@ thead tr th {
 
 #btnClear:hover {
   background-color: #ff5561;
+}
+
+#btnSaveContainer {
+  display:inline;
+  width: 40%;
 }
 
 #btnSave {
@@ -143,7 +154,6 @@ thead tr th {
   visibility: hidden;
   opacity: 0.4;
 }
-
 
 
 

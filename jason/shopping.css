@@ -17,6 +17,8 @@ input[type=number]::-webkit-outer-spin-button {
 html {
   overflow-y: scroll;
 }
+
+
 body {
   background-image: url('backgroundimage.jpg');
 }
@@ -93,6 +95,12 @@ thead tr th {
   background-color: #ff5561;
 }
 
+#btnClearContainer {
+  float: right;
+  width: 40%;
+
+}
+
 #btnClear {
   background-color: #ff6961;
   visibility: hidden;
@@ -104,6 +112,11 @@ thead tr th {
 
 #btnClear:hover {
   background-color: #ff5561;
+}
+
+#btnSaveContainer {
+  display: inline;
+  width: 40%;
 }
 
 #btnSave {
@@ -138,17 +151,18 @@ thead tr th {
 
 
 
-
-
-
 /*cart list css*/
+
+#bigCartIcon {
+  color: #5BC0DE;
+}
 
 #list-container {
   margin:0 auto;
 }
 
 #cartTitle{
-  visibility: hidden;
+  
 }
 
 .list-group li {
@@ -165,43 +179,31 @@ thead tr th {
 .list-group li:hover {
   text-decoration: line-through;
 }
-/*on hover animated strikethrough
-.list-group li {
-  position: relative;
-  display: block;
-  cursor: pointer;
-}
-
-.list-group li:before, .list-group li:after {
-  content: '';
-  position: absolute;
-  width: 0%;
-  height: 1px;
-  top: 50%;
-  margin-top: -0.5px;
-  background: black;
-}
-
-.list-group li:before {
-  left: -2px;
-}
-.list-group li:after {
-  right: 2.5px;
-  background: black;
-  transition: width 1.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-.list-group li:hover:before {
-  background: black;
-  width: 100%;
-  transition: width 1.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-.list-group li:hover:after {
-  background: transparent;
-  width: 100%;
-  transition: 0s;
-}
-*/
 
 
+    .behind {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .behind a.ui-btn {
+        width: 68px;
+        margin: 0px;
+        float: right;
+        border: none;
+    }
+    .behind a.delete-btn, .behind a.delete-btn:active, .behind a.delete-btn:visited, .behind a.delete-btn:focus, .behind a.delete-btn:hover {
+        color: white;
+        background-color: red;
+        text-shadow: none;
+    }
+    .behind a.ui-btn.pull-left {
+        float: left;
+    }
+    .behind a.edit-btn, .behind a.edit-btn:active, .behind a.edit-btn:visited, .behind a.edit-btn:focus, .behind a.edit-btn:hover {
+        color: white;
+        background-color: orange;
+        text-shadow: none;
+    }
