@@ -18,10 +18,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="/navScript.js"></script>
     <script src="/functionHiding.js" id="SelfDestruct"></script>
-     <!--Load google Platform library-->
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <!--Google API client Id-->
-    <meta name="google-signin-client_id" content="450409508964-v5n0smsict6lk05c8rue1tcieshf9noc.apps.googleusercontent.com">
+     
 </head>
 <body onload="setBurger(true);hide_function()">
     <div id="GUI">
@@ -84,9 +81,7 @@
                         </tr>
                         </tbody>
                     </table>
-                    <!--Sign in/ out buttons-->
-                    <div class="g-signin2" data-onsuccess="onSignIn" style="padding-left:115px"></div>
-                    <a href="#" onclick="signOut();"  style="padding-left:150px">Sign out</a>
+                    <div id="firebaseui-auth-container"></div>
                 </form>
             </div>
 
@@ -136,31 +131,44 @@
     </div>
 </div>
 
- <!--Script to get the users id, name, email -->
-        <script>
-        function onSignIn(googleUser) {
-          var profile = googleUser.getBasicProfile();
-          console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-          console.log('Name: ' + profile.getName());
-          console.log('Image URL: ' + profile.getImageUrl());
-          console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-        }
-        
-        </script>
-        
-        <!--Sign out button/(link)-->
-        
-        
-        <script>
-          function signOut() {
-            var auth2 = gapi.auth2.getAuthInstance();
-            auth2.signOut().then(function () {
-              console.log('User signed out.');
-            });
-          }
-        </script>
 
 
+<!-- Below is the initialisation code for firebase project.-->
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDbbQhEgMs6GJhDRccVTWk5ibUNgzGhE2s",
+    authDomain: "comp2910-9d392.firebaseapp.com",
+    databaseURL: "https://comp2910-9d392.firebaseio.com",
+    projectId: "comp2910-9d392",
+    storageBucket: "comp2910-9d392.appspot.com",
+    messagingSenderId: "758365219906"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<!-- The code below initialise the sign in widget. -->
+<script src="https://cdn.firebase.com/libs/firebaseui/1.0.1/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/1.0.1/firebaseui.css" />
+    <script type="text/javascript">
+      // FirebaseUI config.
+      var uiConfig = {
+        signInSuccessUrl: 'https://www.google.com',
+        signInOptions: [
+          // Leave the lines as is for the providers you want to offer your users.
+          firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+          //firebase.auth.EmailAuthProvider.PROVIDER_ID
+        ],
+        // Terms of service url.
+        tosUrl: '<your-tos-url>'
+      };
+
+      // Initialize the FirebaseUI Widget using Firebase.
+      var ui = new firebaseui.auth.AuthUI(firebase.auth());
+      // The start method will wait until the DOM is loaded.
+      ui.start('#firebaseui-auth-container', uiConfig);
+    </script>
 
 
     <!--Footer currently not working-->
