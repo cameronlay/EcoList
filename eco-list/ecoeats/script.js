@@ -307,6 +307,22 @@ $(document).ready(function() {
     });
 });
 
+function recipeTimerInformation() {
+    var timer = setInterval(infoFunction1, 2000, infoFunction2, infoFunction3);
+}
+
+function infoFunction1() {
+    $('#recipeInformation').innerHTML = "47% of food waste is coming from household!"
+}
+
+function infoFunction2() {
+    $('#recipeInformation').innerHTML = ""
+}
+
+function infoFunction3() {
+    $('#recipeInformation').innerHTML = ""
+}
+
 /**
  * FUNCTION THAT OVERRIDE ALL FUNCTIONS IF THE BROWSER
  * WIDTH IS LESS THAN 768

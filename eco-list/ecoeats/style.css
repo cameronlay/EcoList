@@ -77,6 +77,19 @@ ul.nav-pills {
 /**
  * Loading circle
  */
+#backgroundRecipe {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    z-index: 9997;
+}
+
 #loader {
   border: 16px solid #f3f3f3;
   border-radius: 50%;
@@ -85,22 +98,10 @@ ul.nav-pills {
   height: 120px;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0;
-  margin-top: 250%;
+  -webkit-appearance: none;
+  appearance: none;
+  margin-bottom: none;
   z-index: 9999;
-}
-
-#backgroundRecipe {
-    height: 100%;
-    display: block;
-    background-color: white;
-    margin-right: auto;
-    margin-left: auto;
-    z-index: 9997;
-    padding-left: 48%;
-    padding-right: 45%;
 }
 
 @-webkit-keyframes spin {
@@ -212,6 +213,63 @@ ul.nav-pills {
     padding: 15px;
 }
 
+/*MAKE NAV BAR RECTANGLE, OVERLAP BOOTSTRAP*/
+.indexNavNoBorderRadius {
+    border-radius: 0;
+}
+
+.indexNavBackground {
+    background-color: #404040;
+    border-color: #404040;
+}
+
+div#myNavbar ul.navbar-nav a:hover {
+    background-color: #505050;
+    color: white;
+}
+
+div#myNavbar ul.navbar-nav a {
+    color: white;
+}
+
+div#myNavbar ul.navbar-nav ul.dropdown-menu a {
+    color: #404040;
+}
+
+div#myNavbar ul.navbar-nav ul.dropdown-menu a:hover {
+    color: #f6f6e8;
+}
+
+.indexNavLogo {
+    height: 90%;
+    display: block;
+    float: left;
+    margin-left: 80px;
+    padding-top: 5px;
+}
+
+.indexNavLogoText {
+    padding: 15px;
+    display: block;
+    float: right;
+    padding-left: 10px;
+    color: white;
+    padding-right: 40px;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.dropdown-menu a {
+    color: #404040;
+}
+
+.textCentered {
+    text-align: center;
+}
+/*END OF NAV BAR*/
+
 /*FOR MOBILE*/
 @media only screen and (max-width: 768px) {
 
@@ -241,5 +299,15 @@ ul.nav-pills {
     .borderLeft {
         border: none;
     }
+
+    /*NAV BAR*/
+    div#myNavbar ul.navbar-nav ul.dropdown-menu a {
+        color: #f6f6e8;
+    }
+
+    .indexNavLogo {
+        margin-left: 30px;
+    }
+    /*END OF NAV BAR*/
 
 }
