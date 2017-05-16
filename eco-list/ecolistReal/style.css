@@ -64,26 +64,26 @@ div#myNavbar ul.navbar-nav ul.dropdown-menu a:hover {
 /*END OF NAV BAR*/
 
 .info {
-    background-image: url('./images/mobile.png');
+    background-image: url('mobile.png');
     background-repeat: no-repeat;
 }
 
 .info1 {
-    background-image: url('./images/info1-3.jpg');
+    background-image: url('info1-3.jpg');
     background-position: right;
     background-repeat: no-repeat;
     padding-right: 500px;
 }
 
 .info2 {
-    background-image: url('./images/info2-3.jpg');
+    background-image: url('info2-3.jpg');
     background-position: left;
     background-repeat: no-repeat;
     padding-left: 500px;
 }
 
 .info3 {
-    background-image: url('./images/info3-3.jpg');
+    background-image: url('info3-3.jpg');
     background-position: right;
     background-repeat: no-repeat;
     padding-right: 500px;
