@@ -144,6 +144,15 @@ thead tr th {
 
 }
 
+.btnCartRemove {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  border: 0;
+  background: transparent;
+}
+
 #removeWarning {
   visibility: hidden;
   opacity: 0.4;
