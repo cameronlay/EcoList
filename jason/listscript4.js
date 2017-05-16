@@ -6,7 +6,6 @@ var a;
 
 $(function () {
 
-
     //button adds new rows to table 1
     $("#btnAdd").bind("click", function () {
         var div = $("<tr>");
@@ -30,19 +29,27 @@ $(function () {
       $("body").on("click",".list", function (){
                 var id = $(this).attr('id');
                 a = parseInt(id);
+                var btnCartRemove = '<button class="btnCartRemove"><i class="glphyicon glyphicon-remove"></i></button>';
                 var toAdd = $("#" + a + "item").val();
                 var toAdd2 = $('#' + a + "quantity").val();
-                 $('.list-group').append('<li class="list-group-item">' + toAdd2 + " " + toAdd + '</li>');
+                 $('.list-group').append('<li class="list-group-item">' + toAdd2 + " " + toAdd + " " + btnCartRemove +'</li>');
                  $(this).closest("tr").remove();
-  
+                 var patt = /easter\s?egg/ig;
+                 if(patt.test(toAdd)) {
+                  $('body').css('background-image', 'url(easteregg.jpg)');
+                 }
+                 else{
+                  $('body').css('background-image', 'url(backgroundimage.jpg)');
+                 } 
+                  $('#cTitle').html('Cart').hide().fadeIn("fast");
             });
         
     //cart title and clear transitions only once 
     $("body").one("click",".list", function(){
-                $('#cartTitle').css('visibility', 'visible').hide().fadeIn("slow");
-                $('#btnClear').css('visibility', 'visible').hide().fadeIn("slow");
+                
+                $('#btnClear').css('visibility', 'visible').hide().fadeIn("fast");
                 $('#btnCart').css('visibility', 'visible').hide().fadeIn("slow");
-                $('#btnSave').css('visibility', 'visible').hide().fadeIn("slow");
+                $('#btnSave').css('visibility', 'visible').hide().fadeIn("fast");
 
         })
 
@@ -59,14 +66,31 @@ $(function () {
           trigger:'hover'
         });   
     });
+
+    $(document).ready(function () {
+    $(document).on('mouseenter', '.divbutton', function () {
+        $(this).find(":button").show();
+    }).on('mouseleave', '.list-group li', function () {
+        $(this).find(":button").hide();
+    });
+});
+
+
+
       //double click to remove list item
     $(document).on('dblclick','li', function(){
         $(this).toggleClass('strike').fadeOut("fast", function(){
           $(this).remove();
+          if($(".list-group-item").text().length === 0){
+              $('#cTitle').html('Your cart is empty!').hide().fadeIn("fast");
+            };
+            if($(".list-group-item").text().length > 0){
+              $('#cTitle').html('Cart');
+            };
           $('.list-group').tooltip('hide');
               });    
           });
-      });
+      }); 
 
     //removes all rows 
     $("#btnRemove").on("click", function () {
@@ -75,19 +99,14 @@ $(function () {
     //clears cart
      $("#btnClear").on("click", function () {
             $(".list-group").children().remove();
-    });
-    //touch delete functions (notworking)
-     $('.list-group-item').on('tapHold', function(){
-        $('.list-group-item li').css('text-decoration', 'line-through')
-     });
+            $('#cTitle').html('Your cart is empty!').hide().fadeIn("fast");
+            });
 
-      $('.list-group-item li').on('swipeleft', function(){
-          $(this).remove();  
-     });
-
-      //save button for later use 
-
+   
+      
+  //end tag    
 });
+
 
 
 function GetDynamicTextBox(value) {
@@ -99,3 +118,4 @@ function GetDynamicTextBox(value) {
     + '<td><button type="button" class="btn btn-danger remove"><i class="glyphicon glyphicon-minus-sign"></i></button></td>'
 }
 
+//mobile swipe delete function

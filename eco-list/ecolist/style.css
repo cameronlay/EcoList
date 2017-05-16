@@ -101,6 +101,12 @@ thead tr th {
   background-color: #ff5561;
 }
 
+#btnClearContainer {
+  float: right;
+  width: 40%;
+}
+
+
 #btnClear {
   background-color: #ff6961;
   visibility: hidden;
@@ -112,6 +118,11 @@ thead tr th {
 
 #btnClear:hover {
   background-color: #ff5561;
+}
+
+#btnSaveContainer {
+  display:inline;
+  width: 40%;
 }
 
 #btnSave {
@@ -139,6 +150,7 @@ thead tr th {
 
 }
 
+
 #removeWarning {
   visibility: hidden;
   opacity: 0.4;
@@ -148,15 +160,18 @@ thead tr th {
 
 
 
-
 /*cart list css*/
+
+#bigCartIcon {
+  color: #5BC0DE;
+}
 
 #list-container {
   margin:0 auto;
 }
 
 #cartTitle{
-  visibility: hidden;
+  
 }
 
 .list-group li {
@@ -170,8 +185,18 @@ thead tr th {
   border-width: 1px;
   border-color: black;
 }
+
 .list-group li:hover {
   text-decoration: line-through;
+
+}
+
+
+.btnCartRemove {
+  outline: none;
+  border: 0;
+  background: transparent;
+  float:right;
 }
 
 
