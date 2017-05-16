@@ -15,7 +15,7 @@ firebase.initializeApp(config);
 // get elements
 
     const listObject = document.getElementById('listContainer');
-    const cartList = document.getElementById('cartItem');
+    const cartList = document.getElementById('cartItems');
 
 // create references
     const dbRefList = firebase.database().ref().child('list');
@@ -23,7 +23,7 @@ firebase.initializeApp(config);
 
 // sync object changes
     dbRefList.on('value', snap => {
-        listObject.innerText = JSON.stringify(snap.val(), null, 3)
+        listObject.innerText = JSON.stringify(snap.val(), null, 1)
     });
 
     //sync list changes
