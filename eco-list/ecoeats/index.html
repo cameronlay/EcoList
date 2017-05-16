@@ -33,16 +33,6 @@
         <link rel="stylesheet" href="../fonts/font.css">
         <script src="../functionHiding.js" id="SelfDestruct"></script>
         <!-- JQUERY INSTEAD OF AJAX -->
-        <script>
-            $(window).on("load", function() {
-                $("#backgroundRecipe").fadeOut("fast");
-                $(".wholeBody").fadeIn("slow");
-            })
-            // INFO OF INGREDIENTS
-            $(document).ready(function(){
-                $('[data-toggle="tooltip"]').tooltip(); 
-            })
-        </script>
     </head>
     <body onload="widthLessThan768();setBurger(true);">
     <div id="GUI">
@@ -2086,19 +2076,7 @@
         </main>
     </section>
 
-    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
-    <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyC82ZRbf--52RkwFWRCvCBRN7zLSMCAqV8",
-            authDomain: "ecolist-d3e23.firebaseapp.com",
-            databaseURL: "https://ecolist-d3e23.firebaseio.com",
-            projectId: "ecolist-d3e23",
-            storageBucket: "ecolist-d3e23.appspot.com",
-            messagingSenderId: "347349975058"
-        };
-        firebase.initializeApp(config);
-    </script>
+
 
     <!--<div class="home-footer mobileContentless">
             <div class="footerconstraint">
@@ -2133,5 +2111,30 @@
                 <p>&copy; Copyright 2017 | EcoList, All Rights Reserved </p>
             </div>
         </div>-->
+
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyC82ZRbf--52RkwFWRCvCBRN7zLSMCAqV8",
+            authDomain: "ecolist-d3e23.firebaseapp.com",
+            databaseURL: "https://ecolist-d3e23.firebaseio.com",
+            projectId: "ecolist-d3e23",
+            storageBucket: "ecolist-d3e23.appspot.com",
+            messagingSenderId: "347349975058"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <script>
+        $(window).on("load", function() {
+            $("#backgroundRecipe").fadeOut("fast");
+            $(".wholeBody").fadeIn("slow");
+        })
+        // INFO OF INGREDIENTS
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        })
+    </script>
     </body>
 </html>

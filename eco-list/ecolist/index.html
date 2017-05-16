@@ -7,15 +7,14 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src = "script.js"></script>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="../footer.css"/>
         <link rel="stylesheet" href="../navButton.css"/>
         <link rel="stylesheet" href="../navMenu.css">
-        <script src="../navScript.js"></script>
         <link rel="stylesheet" href="../fonts/font.css">
-        <script src="../functionHiding.js" id="SelfDestruct"></script>
+
     </head>
 
 <!--The burger navigation in the top left of the page-->
@@ -98,7 +97,7 @@
                   </div>
 
                   <div id="listContainer">
-                     <ul class="list-group" data-toggle="tooltip" title="double tap to remove" data-placement="top">
+                     <ul class="list-group" id="cartItems" data-toggle="tooltip" title="double tap to remove" data-placement="top">
                      </ul>
                      <button id="btnSave" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-ok-circle"></i>&nbsp; Save Cart&nbsp;</button>
                      <button id="btnClear" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-minus-sign"></i>&nbsp; Clear Cart&nbsp;</button>
@@ -142,18 +141,12 @@
                     </div>
                 </div>
 
-        <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+
         <script>
-            // Initialize Firebase
-            var config = {
-                apiKey: "AIzaSyC82ZRbf--52RkwFWRCvCBRN7zLSMCAqV8",
-                authDomain: "ecolist-d3e23.firebaseapp.com",
-                databaseURL: "https://ecolist-d3e23.firebaseio.com",
-                projectId: "ecolist-d3e23",
-                storageBucket: "ecolist-d3e23.appspot.com",
-                messagingSenderId: "347349975058"
-            };
-            firebase.initializeApp(config);
+
         </script>
+        <script src = "script.js"></script>
+        <script src="../functionHiding.js" id="SelfDestruct"></script>
+        <script src="../navScript.js"></script>
     </body>
 <html>
