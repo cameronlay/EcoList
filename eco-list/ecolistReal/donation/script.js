@@ -316,7 +316,17 @@ function stopBounce() {
     
 }
 
+function widthLessThan768() {
+    var width = window.innerWidth
+        || document.documentElement.clientWidth
+        || document.body.clientWidth;
+    var info = document.getElementById('informationForDonation');
+    var mapInfo = document.getElementById('googleMap');
 
+    if (width <= 768) {
+        info.before(mapInfo);
+    }
+}
 
 
 
