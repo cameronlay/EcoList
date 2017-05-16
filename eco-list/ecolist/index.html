@@ -4,18 +4,21 @@
 <title>Eco list - Shopping list</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="http://code.jquery.com/jquery-latest.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <script src = "script.js"></script>
+<script src="../navScript.js"></script>
+<script src="../functionHiding.js" id="SelfDestruct"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="../footer.css"/>
 <link rel="stylesheet" href="../navButton.css"/>
 <link rel="stylesheet" href="../navMenu.css">
-<script src="../navScript.js"></script>
 <link rel="stylesheet" href="../fonts/font.css">
-<script src="../functionHiding.js" id="SelfDestruct"></script>
+
 </head>
 
 <!--The burger navigation in the top left of the page-->
@@ -88,17 +91,19 @@
       </div>
 
       <!--The container for the cart list-->
+      <div class="panel panel-default">
         <div id="cartContainer">
-              <div id="cartTitle">
-                <h1 class="text-center">Cart</h1>
-              </div>
+               <div id="cartTitle">
+                 <h1 class="text-center"><span><i id ="bigCartIcon" class="glyphicon glyphicon-shopping-cart"></i>&nbsp; <p id="cTitle">Your cart is empty!</p></span></h1>
+                </div>
+
 
               <div id="removeWarning">
                <p>double tap to remove</p>
               </div>
                  
               <div id="listContainer">
-                 <ul class="list-group" data-toggle="tooltip" title="double tap to remove" data-placement="top">
+                 <ul class="list-group" data-toggle="tooltip" title="x to remove" data-placement="top">
                  </ul>
 
                  <div id="btnSaveContainer">
@@ -111,9 +116,10 @@
 
               </div>
         </div>
-
+      </div>
     </div>
   </section>
+
 <div class="home-footer mobileContentless">
             <div class="footerconstraint">
                 <div class="bottomleftcolumn">
