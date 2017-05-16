@@ -7,7 +7,7 @@ var a;
 $(function () {
 
     //button adds new rows to table 1
-    $("#btnAdd").bind("click", function () {
+    $("#btnAdd").on("click", function () {
         var div = $("<tr>");
         div.fadeIn("slow");
         div.html(GetDynamicTextBox(""));
@@ -62,25 +62,9 @@ $(function () {
         }, 1000);
     });
 
-    //delete prompt when hovering over list item
-    $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip({
-          trigger:'hover'
-        });   
-    });
-
-    //mouse hover shows button and hides when leaving
-    $(document).ready(function () {
-      $(document).on('mouseenter', '.list-group li', function () {
-            $(this).find(":button").show();
-        }).on('mouseleave', '.list-group li', function () {
-            $(this).find(":button").hide();
-        });
-    });
-
-      //double click to remove list item
+      // click to remove list item
     $("body").on('click','.btnCartRemove', function(){
-        $(this).toggleClass('strike').fadeOut("fast", function(){
+        $(this).fadeOut("fast", function(){
           $(this).parent().remove();
           if($(".list-group-item").text().length === 0){
               $('#cTitle').html('Your cart is empty!').hide().fadeIn("fast");
@@ -103,6 +87,23 @@ $(function () {
             $(".list-group").children().remove();
             $('#cTitle').html('Your cart is empty!').hide().fadeIn("fast");
     });
+
+      //delete prompt when hovering over list item
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip({
+          trigger:'hover'
+        });   
+    });
+
+    //mouse hover shows button and hides when leaving
+    $(document).ready(function () {
+      $(document).on('mouseenter', '.list-group li', function () {
+            $(this).find(":button").show();
+        }).on('mouseleave', '.list-group li', function () {
+            $(this).find(":button").hide();
+        });
+    });
+
       
   //end tag    
 });
