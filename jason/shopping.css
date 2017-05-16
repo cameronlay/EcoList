@@ -153,12 +153,16 @@ thead tr th {
 
 /*cart list css*/
 
+#bigCartIcon {
+  color: #5BC0DE;
+}
+
 #list-container {
   margin:0 auto;
 }
 
 #cartTitle{
-  visibility: hidden;
+  
 }
 
 .list-group li {

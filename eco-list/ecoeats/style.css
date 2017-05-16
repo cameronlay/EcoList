@@ -184,6 +184,10 @@ ul.nav-pills {
 .ingredientCheckbox:checked + .ingredientLabel .glyphicon-check {
     display: inline;
 }
+
+.displayInline {
+    display: inline;
+}
 /*FINISH OVERRIDING GLYPHICONS*/
 
 .recipetextarea {

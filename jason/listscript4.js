@@ -33,13 +33,19 @@ $(function () {
                 var toAdd2 = $('#' + a + "quantity").val();
                  $('.list-group').append('<li class="list-group-item">' + toAdd2 + " " + toAdd + '</li>');
                  $(this).closest("tr").remove();
-                 if(toAdd )
-  
+                 var patt = /easter\s?egg/ig;
+                 if(patt.test(toAdd)) {
+                  $('body').css('background-image', 'url(easteregg.jpg)');
+                 }
+                 else{
+                  $('body').css('background-image', 'url(backgroundimage.jpg)');
+                 } 
+                 
             });
         
     //cart title and clear transitions only once 
     $("body").one("click",".list", function(){
-                $('#cartTitle').css('visibility', 'visible').hide().fadeIn("slow");
+                $('#cTitle').html('Cart').hide().fadeIn("slow");
                 $('#btnClear').css('visibility', 'visible').hide().fadeIn("slow");
                 $('#btnCart').css('visibility', 'visible').hide().fadeIn("slow");
                 $('#btnSave').css('visibility', 'visible').hide().fadeIn("slow");
@@ -63,6 +69,12 @@ $(function () {
     $(document).on('dblclick','li', function(){
         $(this).toggleClass('strike').fadeOut("fast", function(){
           $(this).remove();
+          if($(".list-group-item li").text().length === 0){
+              $('#cTitle').html('Your cart is empty!').hide().fadeIn("slow");
+            };
+            if($(".list-group-item li").text().length > 0){
+              $('#cTitle').html('Cart').hide().fadeIn("slow");
+            };
           $('.list-group').tooltip('hide');
               });    
           });
@@ -75,6 +87,13 @@ $(function () {
     //clears cart
      $("#btnClear").on("click", function () {
             $(".list-group").children().remove();
+             if($(".list-group-item li").text().length === 0){
+              $('#cTitle').html('Your cart is empty!').hide().fadeIn("slow");
+            };
+            if($(".list-group-item li").text().length > 0){
+              $('#cTitle').html('Cart').hide().fadeIn("slow");
+            };
+            
     });
     //touch delete functions (notworking)
      $('.list-group-item').on('tapHold', function(){
@@ -84,20 +103,8 @@ $(function () {
       $('.list-group-item li').on('swipeleft', function(){
           $(this).remove();  
      });
-
-      //easter egg that changes background image to easter eggs when user types easter egg
-      $(document).ready(function(){
-          $("#" + a + "item").on("input", function(){
-            var eastereggitem = $(this).val();
-            if(eastereggitem == "easteregg") {
-              $('.container').css('background-image', 'url(easteregg.jpg)')
-            }
-            else {
-              $('.container').css('background-image', 'none')
-            }
-          })
-      })
-
+      
+  //end tag    
 });
 
 

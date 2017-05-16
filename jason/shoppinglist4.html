@@ -6,6 +6,7 @@
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <script src = "listscript4.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="shopping.css">
@@ -62,9 +63,11 @@
                     </table>
                   </div>
 
+<div class="panel panel-default">
                <div id="cartContainer">
+
                       <div id="cartTitle">
-                        <h1 class="text-center">Cart</h1>
+                        <h1 class="text-center"><span><i id ="bigCartIcon" class="glyphicon glyphicon-shopping-cart"></i>&nbsp; <p id="cTitle">Your cart is empty!</p></span></h1>
                       </div>
 
                       <div id="removeWarning">
@@ -86,6 +89,7 @@
                       </div>
                 </div>
             </div>
+ </div>
 
   </section>
   

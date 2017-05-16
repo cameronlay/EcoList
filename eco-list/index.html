@@ -25,8 +25,25 @@
                     <div id="AppDrawer">Our Apps</div>
                 </div>
             </div>
-			<?php include('navMenu.html');?>
-			<?php include('navButton.html');?>
+			<div id="Hamburger">
+                <span class="menuTop">Menu</span>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services/index.html">Our Services</a>
+                        <ul class="dropDownHamburger">
+                            <li><div><a href="ecolist/index.html">EcoList</a></div></li>
+                            <li><div><a href="ecoeats/index.html">EcoEats</a></div></li>
+                            <li><div><a href="donation/index.html">Donations</a></div></li>
+                        </ul>
+                    </li>
+                    <li><a href="users/index.html">Login</a></li>
+                    <li><a href="index.html#AboutUs">About Us</a></li>
+                </ul>
+            </div>
+            <div id="BurgerButton" onclick="setBurger(false,true)">
+                <img src="images/transparent.png" class="square"/>
+                <img src="images/burger.png" class="innerButtonBGR"/>
+            </div>
         </div>
         <div class="wrapper">
             <div id="Top">
@@ -36,19 +53,19 @@
                         <tr>
                             <td>
                                 <div class="icon">
-                                    <a href="/ecolist/index.php"><img height="300" width="300" src="images/shoppingcart1.png"draggable="false"/>
+                                    <a href="ecolist/index.html"><img height="300" width="300" src="images/shoppingcart1.png"draggable="false"/>
                                     <span class="noDecoration">Shopping Cart</span></a>
                                 </div>
                             </td>
                             <td>
                                 <div class="icon">
-                                    <a href="/ecoeats/index.php"><img height="300" width="300" src="images/cutlery1.png"draggable="false"/>
+                                    <a href="ecoeats/index.html"><img height="300" width="300" src="images/cutlery1.png"draggable="false"/>
                                     <span class="noDecoration">Recipes</span></a>
                                 </div>
                             </td>
                             <td>
                                 <div class="icon">
-                                    <a href="/donation/index.php"><img height="300" width="300" src="images/location1.png"draggable="false"/>
+                                    <a href="donation/index.html"><img height="300" width="300" src="images/location1.png"draggable="false"/>
                                     <span class="noDecoration">Donation</span></a>
                                 </div>
                             </td>

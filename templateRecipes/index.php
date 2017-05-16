@@ -26,11 +26,13 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
-        <!-- HAMBURGER MENU -->
-        <link rel="stylesheet" href="../Burgers.css"/>
-        <script src="../hamburger.js"></script>
-        <link rel="stylesheet" href="../index.css"/>
+        <!-- OUTSOURCING -->
+        <link rel="stylesheet" href="../footer.css"/>
+        <link rel="stylesheet" href="../navButton.css"/>
+        <link rel="stylesheet" href="../navMenu.css">
+        <script src="../navScript.js"></script>
         <link rel="stylesheet" href="../fonts/font.css">
+        <script src="../functionHiding.js" id="SelfDestruct"></script>
         <!-- JQUERY INSTEAD OF AJAX -->
         <script>
             $(window).on("load", function() {
@@ -46,7 +48,8 @@
     <body onload="widthLessThan768();setBurger(true);">
     <div id="GUI">
         <?php
-            include('../burgerMenuGUI.html');
+            include('../navMenu.html');
+            include('../navButton.html');
         ?>
     </div>
     <div id="backgroundRecipe">
@@ -62,6 +65,7 @@
                     <h1>EcoEats</h1>
                 </div>
             </div>
+            <!-- TABS -->
             <div class="panel panel-default">
             <ul class="nav nav-tabs" id="navTabs">
                 <li id="classic" class="active" onclick="TabClicked('classic', 'classicList1', 'classicList', 'classicListContent', 'classicListContent1')"><a href="javascript:void(0);">Classic</a></li>
@@ -93,7 +97,7 @@
                     <li id="vegetarianList4" onclick="vegetarianPillsClicked('vegetarianList4', 'vegetarianListContent4')"><a href="javascript:void(0);">Spinach with Yoghurt</a></li>
                     <li id="vegetarianList5" onclick="vegetarianPillsClicked('vegetarianList5', 'vegetarianListContent5')"><a href="javascript:void(0);">Tomato Fettuccine</a></li>
                     <li id="vegetarianList6" onclick="vegetarianPillsClicked('vegetarianList6', 'vegetarianListContent6')"><a href="javascript:void(0);">Mushroom Soup</a></li>
-                    <li id="vegetarianList7" onclick="vegetarianPillsClicked('vegetarianList7', 'vegetarianListContent7')"><a href="javascript:void(0);">Slow cooker butternut squash porter chilli</a></li>
+                    <li id="vegetarianList7" onclick="vegetarianPillsClicked('vegetarianList7', 'vegetarianListContent7')"><a href="javascript:void(0);">Butternut Squash Porter Chilli</a></li>
                 </ul>
             </div>
             <!--Keto List-->
@@ -117,7 +121,7 @@
                     <li id="paleoList4" onclick="paleoPillsClicked('paleoList4', 'paleoListContent4')"><a href="javascript:void(0);">Chipotle Chicken Wings</a></li>
                     <li id="paleoList5" onclick="paleoPillsClicked('paleoList5', 'paleoListContent5')"><a href="javascript:void(0);">Beets &amp; Berry Smoothie</a></li>
                     <li id="paleoList6" onclick="paleoPillsClicked('paleoList6', 'paleoListContent6')"><a href="javascript:void(0);">Chipotle Lime Salmon</a></li>
-                    <li id="paleoList7" onclick="paleoPillsClicked('paleoList7', 'paleoListContent7')"><a href="javascript:void(0);">Baked chicken on cauliflower rice</a></li>
+                    <li id="paleoList7" onclick="paleoPillsClicked('paleoList7', 'paleoListContent7')"><a href="javascript:void(0);">Baked chicken on Cauliflower</a></li>
                 </ul>
             </div>
             <!--Protein Rich List-->
@@ -127,9 +131,9 @@
                     <li id="proteinList2" onclick="proteinPillsClicked('proteinList2', 'proteinListContent2')"><a href="javascript:void(0);">Braised Paprika Chicken</a></li>
                     <li id="proteinList3" onclick="proteinPillsClicked('proteinList3', 'proteinListContent3')"><a href="javascript:void(0);">Spiced Scrambled Eggs</a></li>
                     <li id="proteinList4" onclick="proteinPillsClicked('proteinList4', 'proteinListContent4')"><a href="javascript:void(0);">Fruit &amp; Nut Yogurt</a></li>
-                    <li id="proteinList5" onclick="proteinPillsClicked('proteinList5', 'proteinListContent5')"><a href="javascript:void(0);">Slow Cooked Corned Beef and Cabbage</a></li>
-                    <li id="proteinList6" onclick="proteinPillsClicked('proteinList6', 'proteinListContent6')"><a href="javascript:void(0);">Griddled chicken with quinoa Greek salad</a></li>
-                    <li id="proteinList7" onclick="proteinPillsClicked('proteinList7', 'proteinListContent7')"><a href="javascript:void(0);">Thai salmon kebabs with sweet chilli & lime dip</a></li>
+                    <li id="proteinList5" onclick="proteinPillsClicked('proteinList5', 'proteinListContent5')"><a href="javascript:void(0);">Corned Beef and Cabbage</a></li>
+                    <li id="proteinList6" onclick="proteinPillsClicked('proteinList6', 'proteinListContent6')"><a href="javascript:void(0);">Griddled Chicken with Greek Salad</a></li>
+                    <li id="proteinList7" onclick="proteinPillsClicked('proteinList7', 'proteinListContent7')"><a href="javascript:void(0);">Thai Salmon Kebabs &amp; Lime Dip</a></li>
                 </ul>
             </div>
 		    <!-- Cultural List -->
@@ -434,72 +438,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="row displayNone" id="classicListContent8">
-                    <div class="col-md-8 borderLeft">
-                        <h2>List 8</h2>
-                        <div class="col-md-6 noMargin">
-                            <h4 class="h4margin">Recipe Description</h4>
-                            <div class="ddmargin">I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description<br><br><br></div>
-                            <ol class="lessPadding">
-                                <li class="">This is Classic Content</li>
-                                <li class="">This is Classic Content</li>
-                                <li class="">This is Classic Content</li>
-                                <li class="">This is Classic Content</li>
-                                <li class="">This is Classic Content</li>
-                            </ol>
-                            <br>
-                            <table class="table table-condensed">
-                                <tr>
-                                    <th colspan="3" class="centered">Ingredients</th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <form action="" method="post">
-                                        <input type="checkbox" id="firstClassic8" class="ingredientCheckbox"><label for="firstClassic8" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;ingredient1</label><br>
-                                        <input type="submit" class="btn btn-info" value="Add Items to List">
-                                        </form>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="col-md-6">
-                            <img class="recipeImage" src="haha.jpg" alt="List8 Image">
-                        </div>
-                    </div>
-                </div>
-                <div class="row displayNone" id="classicListContent9">
-                    <div class="col-md-8 borderLeft">
-                        <h2>List 9</h2>
-                        <div class="col-md-6 noMargin">
-                            <h4 class="h4margin">Recipe Description</h4>
-                            <div class="ddmargin">I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description<br><br><br></div>
-                            <ol class="lessPadding">
-                                <li class="">This is Classic Content</li>
-                                <li class="">This is Classic Content</li>
-                                <li class="">This is Classic Content</li>
-                                <li class="">This is Classic Content</li>
-                                <li class="">This is Classic Content</li>
-                            </ol>
-                            <br>
-                            <table class="table table-condensed">
-                                <tr>
-                                    <th colspan="3" class="centered">Ingredients</th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <form action="" method="post">
-                                        <input type="checkbox" id="firstClassic9" class="ingredientCheckbox"><label for="firstClassic9" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;ingredient1</label><br>
-                                        <input type="submit" class="btn btn-info" value="Add Items to List">
-                                        </form>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="col-md-6">
-                            <img class="recipeImage" src="haha.jpg" alt="List9 Image">
-                        </div>
-                    </div>
-                </div>
             </div>
             <!-- 
             ===============================================
@@ -784,15 +722,15 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstVegetarian7" class="ingredientCheckbox"><label for="firstVegetarian7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 medium onions, diced</label><br>
-                                        <input type="checkbox" id="firstVegetarian7" class="ingredientCheckbox"><label for="firstVegetarian7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 jalapeno pepper, seeded and minced</label><br>
-                                        <input type="checkbox" id="firstVegetarian7" class="ingredientCheckbox"><label for="firstVegetarian7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;4 tablespoons chilli powder</label><br>
-                                        <input type="checkbox" id="firstVegetarian7" class="ingredientCheckbox"><label for="firstVegetarian7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 tablespoon ground cumin</label><br>
-                                        <input type="checkbox" id="firstVegetarian7" class="ingredientCheckbox"><label for="firstVegetarian7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 teaspoon ground coriander</label><br>
-                                        <input type="checkbox" id="firstVegetarian7" class="ingredientCheckbox"><label for="firstVegetarian7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 cup porter beer</label><br>
-                                        <input type="checkbox" id="firstVegetarian7" class="ingredientCheckbox"><label for="firstVegetarian7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 can diced tomatoes </label><br>
-                                        <input type="checkbox" id="firstVegetarian7" class="ingredientCheckbox"><label for="firstVegetarian7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;6 cups cooked black beans, rinsed and drained (or about 4 cans)</label><br>
-                                        <input type="checkbox" id="firstVegetarian7" class="ingredientCheckbox"><label for="firstVegetarian7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 small butternut squash (3 pounds), peeled, seeded and cubed</label><br>
+                                        <input type="checkbox" id="7Vegetarian1" class="ingredientCheckbox"><label for="7Vegetarian1" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 medium onions, diced</label><br>
+                                        <input type="checkbox" id="7Vegetarian2" class="ingredientCheckbox"><label for="7Vegetarian2" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 jalapeno pepper, seeded and minced</label><br>
+                                        <input type="checkbox" id="7Vegetarian3" class="ingredientCheckbox"><label for="7Vegetarian3" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;4 tablespoons chilli powder</label><br>
+                                        <input type="checkbox" id="7Vegetarian4" class="ingredientCheckbox"><label for="7Vegetarian4" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 tablespoon ground cumin</label><br>
+                                        <input type="checkbox" id="7Vegetarian5" class="ingredientCheckbox"><label for="7Vegetarian5" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 teaspoon ground coriander</label><br>
+                                        <input type="checkbox" id="7Vegetarian6" class="ingredientCheckbox"><label for="7Vegetarian6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 cup porter beer</label><br>
+                                        <input type="checkbox" id="7Vegetarian7" class="ingredientCheckbox"><label for="7Vegetarian7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 can diced tomatoes </label><br>
+                                        <input type="checkbox" id="7Vegetarian8" class="ingredientCheckbox"><label for="7Vegetarian7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;6 cups cooked black beans, rinsed and drained (or about 4 cans)</label><br>
+                                        <input type="checkbox" id="7Vegetarian9" class="ingredientCheckbox"><label for="7Vegetarian8" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 small butternut squash (3 pounds), peeled, seeded and cubed</label><br>
                                         <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
@@ -801,70 +739,6 @@
                         </div>
                         <div class="col-md-6">
                             <img class="recipeImage" src="haha.jpg" alt="List7 Image">
-                        </div>
-                    </div>
-                </div>
-                <div class="row displayNone" id="vegetarianListContent8">
-                    <div class="col-md-8 borderLeft">
-                        <h2>List 8</h2>
-                        <div class="col-md-6 noMargin">
-                            <h4 class="h4margin">Recipe Description</h4>
-                            <div class="ddmargin">I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description<br><br><br></div>
-                            <ol class="lessPadding">
-                                <li class="">This is Vegetarian Content</li>
-                                <li class="">This is Vegetarian Content</li>
-                                <li class="">This is Vegetarian Content</li>
-                                <li class="">This is Vegetarian Content</li>
-                                <li class="">This is Vegetarian Content</li>
-                            </ol>
-                            <br>
-                            <table class="table table-condensed">
-                                <tr>
-                                    <th colspan="3" class="centered">Ingredients</th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <form action="" method="post">
-                                        <input type="checkbox" id="firstVegetarian8" class="ingredientCheckbox"><label for="firstVegetarian8" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;ingredient1</label><br>
-                                        <input type="submit" class="btn btn-info" value="Add Items to List">
-                                        </form>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="col-md-6">
-                            <img class="recipeImage" src="haha.jpg" alt="List8 Image">
-                        </div>
-                    </div>
-                </div>
-                <div class="row displayNone" id="vegetarianListContent9">
-                    <div class="col-md-8 borderLeft">
-                        <h2></h2>
-                        <div class="col-md-6 noMargin">
-                            <h4 class="h4margin">Recipe Description</h4>
-                            <div class="ddmargin"><br><br><br></div>
-                            <ol class="lessPadding">
-                                <li class=""></li>
-                                <li class=""></li>
-                                <li class=""></li>
-                            </ol>
-                            <br>
-                            <table class="table table-condensed">
-                                <tr>
-                                    <th colspan="3" class="centered">Ingredients</th>
-                                </tr>
-                                <tr>
-                                    <td colspan="3">
-                                        <form action="" method="post">
-                                        <input type="checkbox" id="firstVegetarian9" class="ingredientCheckbox"><label for="firstVegetarian9" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;ingredient1</label><br>
-                                        <input type="submit" class="btn btn-info" value="Add Items to List">
-                                        </form>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="col-md-6">
-                            <img class="recipeImage" src="haha.jpg" alt="List9 Image">
                         </div>
                     </div>
                 </div>
@@ -1147,72 +1021,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="row displayNone" id="ketoListContent8">
-                    <div class="col-md-8 borderLeft">
-                        <h2>List 8</h2>
-                        <div class="col-md-6 noMargin">
-                            <h4 class="h4margin">Recipe Description</h4>
-                            <div class="ddmargin">I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description<br><br><br></div>
-                            <ol class="lessPadding">
-                                <li class="">This is Keto Content</li>
-                                <li class="">This is Keto Content</li>
-                                <li class="">This is Keto Content</li>
-                                <li class="">This is Keto Content</li>
-                                <li class="">This is Keto Content</li>
-                            </ol>
-                            <br>
-                            <table class="table table-condensed">
-                                <tr>
-                                    <th colspan="3" class="centered">Ingredients</th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <form action="" method="post">
-                                        <input type="checkbox" id="firstKeto8" class="ingredientCheckbox"><label for="firstKeto8" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;ingredient1</label><br>
-                                        <input type="submit" class="btn btn-info" value="Add Items to List">
-                                        </form>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="col-md-6">
-                            <img class="recipeImage" src="haha.jpg" alt="List8 Image">
-                        </div>
-                    </div>
-                </div>
-                <div class="row displayNone" id="ketoListContent9">
-                    <div class="col-md-8 borderLeft">
-                        <h2>List 9</h2>
-                        <div class="col-md-6 noMargin">
-                            <h4 class="h4margin">Recipe Description</h4>
-                            <div class="ddmargin">I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description<br><br><br></div>
-                            <ol class="lessPadding">
-                                <li class="">This is Keto Content</li>
-                                <li class="">This is Keto Content</li>
-                                <li class="">This is Keto Content</li>
-                                <li class="">This is Keto Content</li>
-                                <li class="">This is Keto Content</li>
-                            </ol>
-                            <br>
-                            <table class="table table-condensed">
-                                <tr>
-                                    <th colspan="3" class="centered">Ingredients</th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <form action="" method="post">
-                                        <input type="checkbox" id="firstKeto9" class="ingredientCheckbox"><label for="firstKeto9" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;ingredient1</label><br>
-                                        <input type="submit" class="btn btn-info" value="Add Items to List">
-                                        </form>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="col-md-6">
-                            <img class="recipeImage" src="haha.jpg" alt="List9 Image">
-                        </div>
-                    </div>
-                </div>
             </div>
             <!-- 
             ===============================================
@@ -1479,17 +1287,17 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstPaleo7" class="ingredientCheckbox"><label for="firstPaleo7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;14 cups finely chopped raw cauliflower</label><br>
-                                        <input type="checkbox" id="firstPaleo7" class="ingredientCheckbox"><label for="firstPaleo7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1/2 cup chopped parsley</label><br>
-                                        <input type="checkbox" id="firstPaleo7" class="ingredientCheckbox"><label for="firstPaleo7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 cup pitted green olives (I used Castelanata), quartered</label><br>
-                                        <input type="checkbox" id="firstPaleo7" class="ingredientCheckbox"><label for="firstPaleo7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;4 Tbsp lemon zest</label><br>
-                                        <input type="checkbox" id="firstPaleo7" class="ingredientCheckbox"><label for="firstPaleo7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;4 Tbsp lemon juice</label><br>
-                                        <input type="checkbox" id="firstPaleo7" class="ingredientCheckbox"><label for="firstPaleo7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 cup chicken stock</label><br>
-                                        <input type="checkbox" id="firstPaleo7" class="ingredientCheckbox"><label for="firstPaleo7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 tsp garlic powder</label><br>
-                                        <input type="checkbox" id="firstPaleo7" class="ingredientCheckbox"><label for="firstPaleo7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;4 Tbsp olive oil</label><br>
-                                        <input type="checkbox" id="firstPaleo7" class="ingredientCheckbox"><label for="firstPaleo7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;4 lbs chicken pieces (drumsticks, thighs, or breasts)</label><br>
-                                        <input type="checkbox" id="firstPaleo7" class="ingredientCheckbox"><label for="firstPaleo7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 tsp garlic powder</label><br>
-                                        <input type="checkbox" id="firstPaleo7" class="ingredientCheckbox"><label for="firstPaleo7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 tsp onion powder</label><br>
+                                        <input type="checkbox" id="7Paleo1" class="ingredientCheckbox"><label for="7Paleo1" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;14 cups finely chopped raw cauliflower</label><br>
+                                        <input type="checkbox" id="7Paleo2" class="ingredientCheckbox"><label for="7Paleo2" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1/2 cup chopped parsley</label><br>
+                                        <input type="checkbox" id="7Paleo3" class="ingredientCheckbox"><label for="7Paleo3" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 cup pitted green olives (I used Castelanata), quartered</label><br>
+                                        <input type="checkbox" id="7Paleo4" class="ingredientCheckbox"><label for="7Paleo4" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;4 Tbsp lemon zest</label><br>
+                                        <input type="checkbox" id="7Paleo5" class="ingredientCheckbox"><label for="7Paleo5" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;4 Tbsp lemon juice</label><br>
+                                        <input type="checkbox" id="7Paleo6" class="ingredientCheckbox"><label for="7Paleo6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 cup chicken stock</label><br>
+                                        <input type="checkbox" id="7Paleo7" class="ingredientCheckbox"><label for="7Paleo7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 tsp garlic powder</label><br>
+                                        <input type="checkbox" id="7Paleo8" class="ingredientCheckbox"><label for="7Paleo8" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;4 Tbsp olive oil</label><br>
+                                        <input type="checkbox" id="7Paleo9" class="ingredientCheckbox"><label for="7Paleo9" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;4 lbs chicken pieces (drumsticks, thighs, or breasts)</label><br>
+                                        <input type="checkbox" id="7Paleo10" class="ingredientCheckbox"><label for="7Paleo10" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 tsp garlic powder</label><br>
+                                        <input type="checkbox" id="7Paleo11" class="ingredientCheckbox"><label for="7Paleo11" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 tsp onion powder</label><br>
                                         <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
@@ -1498,72 +1306,6 @@
                         </div>
                         <div class="col-md-6">
                             <img class="recipeImage" src="haha.jpg" alt="List7 Image">
-                        </div>
-                    </div>
-                </div>
-                <div class="row displayNone" id="paleoListContent8">
-                    <div class="col-md-8 borderLeft">
-                        <h2>List 8</h2>
-                        <div class="col-md-6 noMargin">
-                            <h4 class="h4margin">Recipe Description</h4>
-                            <div class="ddmargin">I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description<br><br><br></div>
-                            <ol class="lessPadding">
-                                <li class="">This is Paleo Content</li>
-                                <li class="">This is Paleo Content</li>
-                                <li class="">This is Paleo Content</li>
-                                <li class="">This is Paleo Content</li>
-                                <li class="">This is Paleo Content</li>
-                            </ol>
-                            <br>
-                            <table class="table table-condensed">
-                                <tr>
-                                    <th colspan="3" class="centered">Ingredients</th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <form action="" method="post">
-                                        <input type="checkbox" id="firstPaleo8" class="ingredientCheckbox"><label for="firstPaleo8" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;ingredient1</label><br>
-                                        <input type="submit" class="btn btn-info" value="Add Items to List">
-                                        </form>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="col-md-6">
-                            <img class="recipeImage" src="haha.jpg" alt="List8 Image">
-                        </div>
-                    </div>
-                </div>
-                <div class="row displayNone" id="paleoListContent9">
-                    <div class="col-md-8 borderLeft">
-                        <h2>List 9</h2>
-                        <div class="col-md-6 noMargin">
-                            <h4 class="h4margin">Recipe Description</h4>
-                            <div class="ddmargin">I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description<br><br><br></div>
-                            <ol class="lessPadding">
-                                <li class="">This is Paleo Content</li>
-                                <li class="">This is Paleo Content</li>
-                                <li class="">This is Paleo Content</li>
-                                <li class="">This is Paleo Content</li>
-                                <li class="">This is Paleo Content</li>
-                            </ol>
-                            <br>
-                            <table class="table table-condensed">
-                                <tr>
-                                    <th colspan="3" class="centered">Ingredients</th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <form action="" method="post">
-                                        <input type="checkbox" id="firstPaleo9" class="ingredientCheckbox"><label for="firstPaleo9" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;ingredient1</label><br>
-                                        <input type="submit" class="btn btn-info" value="Add Items to List">
-                                        </form>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="col-md-6">
-                            <img class="recipeImage" src="haha.jpg" alt="List9 Image">
                         </div>
                     </div>
                 </div>
@@ -1743,7 +1485,7 @@
                 </div>
                 <div class="row displayNone" id="proteinListContent5">
                     <div class="col-md-8 borderLeft">
-                        <h2>Slow Cooked Corned Beef and Cabbage</h2>
+                        <h2>Corned Beef and Cabbage</h2>
                         <div class="col-md-6 noMargin">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">Inexpensive, easy to cook, and delightfully tender and satisfying, Corned Beef and Cabbage proves a pleasing meal any time—not just on St. Patrick’s Day. At the grocery, look for corned beef brisket. In some cases, the meat will come with a spice packet, which you’ll add to the slow cooker. But some brands cure the meat before packaging; if it’s labeled as “corned,” you’re set. We developed a recipe that cooks over 7 or 8 hours on low, but is also ready after 4 to 5 hours of cooking on high, for quicker preparation, or even a warming Sunday supper.<br><br><br></div>
@@ -1760,19 +1502,19 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstProtein5" class="ingredientCheckbox"><label for="firstProtein5" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;4 fresh thyme sprigs, plus leaves for serving</label><br>
+                                        <input type="checkbox" id="5Protein1" class="ingredientCheckbox"><label for="5Protein1" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;4 fresh thyme sprigs, plus leaves for serving</label><br>
                                         <input type="submit" class="btn btn-info" value="Add Items to List">
-                                        <input type="checkbox" id="firstProtein5" class="ingredientCheckbox"><label for="firstProtein5" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 teaspoon caraway seeds</label><br>
+                                        <input type="checkbox" id="5Protein2" class="ingredientCheckbox"><label for="5Protein2" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 teaspoon caraway seeds</label><br>
                                         <input type="submit" class="btn btn-info" value="Add Items to List">
-                                        <input type="checkbox" id="firstProtein5" class="ingredientCheckbox"><label for="firstProtein5" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 3-pound piece corned beef brisket (with spice packet, if included)</label><br>
+                                        <input type="checkbox" id="5Protein3" class="ingredientCheckbox"><label for="5Protein3" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 3-pound piece corned beef brisket (with spice packet, if included)</label><br>
                                         <input type="submit" class="btn btn-info" value="Add Items to List">
-                                        <input type="checkbox" id="firstProtein5" class="ingredientCheckbox"><label for="firstProtein5" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 pound carrots, cut in half crosswise (and in half lengthwise if thick)</label><br>
+                                        <input type="checkbox" id="5Protein4" class="ingredientCheckbox"><label for="5Protein4" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 pound carrots, cut in half crosswise (and in half lengthwise if thick)</label><br>
                                         <input type="submit" class="btn btn-info" value="Add Items to List">
-                                        <input type="checkbox" id="firstProtein5" class="ingredientCheckbox"><label for="firstProtein5" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;½ small green cabbage, cut into thin wedges</label><br>
+                                        <input type="checkbox" id="5Protein5" class="ingredientCheckbox"><label for="5Protein5" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;½ small green cabbage, cut into thin wedges</label><br>
                                         <input type="submit" class="btn btn-info" value="Add Items to List">
-                                        <input type="checkbox" id="firstProtein5" class="ingredientCheckbox"><label for="firstProtein5" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 pound small red potatoes</label><br>
+                                        <input type="checkbox" id="5Protein6" class="ingredientCheckbox"><label for="5Protein6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 pound small red potatoes</label><br>
                                         <input type="submit" class="btn btn-info" value="Add Items to List">
-                                        <input type="checkbox" id="firstProtein5" class="ingredientCheckbox"><label for="firstProtein5" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Dijon mustard, for serving</label><br>
+                                        <input type="checkbox" id="5Protein7" class="ingredientCheckbox"><label for="5Protein7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Dijon mustard, for serving</label><br>
                                         </form>
                                     </td>
                                 </tr>
@@ -1785,7 +1527,7 @@
                 </div>
                 <div class="row displayNone" id="proteinListContent6">
                     <div class="col-md-8 borderLeft">
-                        <h2>Griddled chicken with quinoa Greek salad</h2>
+                        <h2>Griddled chicken with Greek salad</h2>
                         <div class="col-md-6 noMargin">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">A light dish of grilled chicken fillets and authentic salad with Kalamata olives, feta cheese, tomato and mint<br><br><br></div>
@@ -1804,18 +1546,18 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstProtein6" class="ingredientCheckbox"><label for="firstProtein6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;225g quinoa</label><br>
-                                        <input type="checkbox" id="firstProtein6" class="ingredientCheckbox"><label for="firstProtein6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;25g butter</label><br>
-                                        <input type="checkbox" id="firstProtein6" class="ingredientCheckbox"><label for="firstProtein6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 red chilli, deseeded and finely chopped</label><br>
-                                        <input type="checkbox" id="firstProtein6" class="ingredientCheckbox"><label for="firstProtein6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 garlic clove, crushed</label><br>
-                                        <input type="checkbox" id="firstProtein6" class="ingredientCheckbox"><label for="firstProtein6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;400g chicken</label><br>
-                                        <input type="checkbox" id="firstProtein6" class="ingredientCheckbox"><label for="firstProtein6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1½ tbsp extra-virgin olive oil</label><br>
-                                        <input type="checkbox" id="firstProtein6" class="ingredientCheckbox"><label for="firstProtein6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;300g vine tomato, roughly chopped</label><br>
-                                        <input type="checkbox" id="firstProtein6" class="ingredientCheckbox"><label for="firstProtein6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;handful pitted black kalamata olives</label><br>
-                                        <input type="checkbox" id="firstProtein6" class="ingredientCheckbox"><label for="firstProtein6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 red onion, finely sliced</label><br>
-                                        <input type="checkbox" id="firstProtein6" class="ingredientCheckbox"><label for="firstProtein6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;100g feta cheese, crumbled</label><br>
-                                        <input type="checkbox" id="firstProtein6" class="ingredientCheckbox"><label for="firstProtein6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;small bunch mint</label><br>
-                                        <input type="checkbox" id="firstProtein6" class="ingredientCheckbox"><label for="firstProtein6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;juice and zest ½ lemon</label><br>
+                                        <input type="checkbox" id="6Protein1" class="ingredientCheckbox"><label for="6Protein1" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;225g quinoa</label><br>
+                                        <input type="checkbox" id="6Protein2" class="ingredientCheckbox"><label for="6Protein2" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;25g butter</label><br>
+                                        <input type="checkbox" id="6Protein3" class="ingredientCheckbox"><label for="6Protein3" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 red chilli, deseeded and finely chopped</label><br>
+                                        <input type="checkbox" id="6Protein4" class="ingredientCheckbox"><label for="6Protein4" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 garlic clove, crushed</label><br>
+                                        <input type="checkbox" id="6Protein5" class="ingredientCheckbox"><label for="6Protein5" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;400g chicken</label><br>
+                                        <input type="checkbox" id="6Protein6" class="ingredientCheckbox"><label for="6Protein6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1½ tbsp extra-virgin olive oil</label><br>
+                                        <input type="checkbox" id="6Protein7" class="ingredientCheckbox"><label for="6Protein7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;300g vine tomato, roughly chopped</label><br>
+                                        <input type="checkbox" id="6Protein8" class="ingredientCheckbox"><label for="6Protein8" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;handful pitted black kalamata olives</label><br>
+                                        <input type="checkbox" id="6Protein9" class="ingredientCheckbox"><label for="6Protein9" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 red onion, finely sliced</label><br>
+                                        <input type="checkbox" id="6Protein10" class="ingredientCheckbox"><label for="6Protein10" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;100g feta cheese, crumbled</label><br>
+                                        <input type="checkbox" id="6Protein11" class="ingredientCheckbox"><label for="6Protein11" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;small bunch mint</label><br>
+                                        <input type="checkbox" id="6Protein12" class="ingredientCheckbox"><label for="6Protein12" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;juice and zest ½ lemon</label><br>
                                         <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
@@ -1829,13 +1571,13 @@
                 </div>
                 <div class="row displayNone" id="proteinListContent7">
                     <div class="col-md-8 borderLeft">
-                        <h2>Thai salmon kebabs with sweet chilli & lime dip</h2>
+                        <h2>Thai salmon kebabs &amp; lime dip</h2>
                         <div class="col-md-6 noMargin">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">These Asian inspired salmon kebabs are a simple, easy to make, protein rich dish that is great for all occasions.If you’re not a fan of salmon then chicken works perfectly fine as well! Serve on a bed of rice or eat it right off the griddle (when it cools of course).<br><br><br></div>
                             <ol class="lessPadding">
-                                <li class="">1.	Combine the sweet chilli sauce and lime juice in a bowl. Pour half the mixture into a bowl for serving. Thread the salmon onto 4 skewers and brush with the remaining chilli sauce. Marinate for 20 mins.</li>
-                                <li class="">2.	Heat a griddle pan until very hot. Shake excess marinade from the kebabs, then drizzle with oil, season and griddle for 8 mins, turning occasionally until the salmon is opaque and comes away easily from the pan. Serve hot with the dipping sauce.</li>
+                                <li class="">Combine the sweet chilli sauce and lime juice in a bowl. Pour half the mixture into a bowl for serving. Thread the salmon onto 4 skewers and brush with the remaining chilli sauce. Marinate for 20 mins.</li>
+                                <li class="">Heat a griddle pan until very hot. Shake excess marinade from the kebabs, then drizzle with oil, season and griddle for 8 mins, turning occasionally until the salmon is opaque and comes away easily from the pan. Serve hot with the dipping sauce.</li>
                             </ol>
                             <br>
                             <table class="table table-condensed">
@@ -1845,10 +1587,10 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstProtein7" class="ingredientCheckbox"><label for="firstProtein7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;4 tablespoon sweet chili sauce</label><br>
-                                         <input type="checkbox" id="firstProtein7" class="ingredientCheckbox"><label for="firstProtein7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;juice of 1 lime</label><br>
-                                         <input type="checkbox" id="firstProtein7" class="ingredientCheckbox"><label for="firstProtein7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;4 140g skinless salmon fillet, cut into large chunks</label><br>
-                                         <input type="checkbox" id="firstProtein7" class="ingredientCheckbox"><label for="firstProtein7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;oil, for drizzling</label><br>
+                                        <input type="checkbox" id="7Protein1" class="ingredientCheckbox"><label for="7Protein1" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;4 tablespoon sweet chili sauce</label><br>
+                                        <input type="checkbox" id="7Protein2" class="ingredientCheckbox"><label for="7Protein2" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;juice of 1 lime</label><br>
+                                        <input type="checkbox" id="7Protein3" class="ingredientCheckbox"><label for="7Protein3" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;4 140g skinless salmon fillet, cut into large chunks</label><br>
+                                        <input type="checkbox" id="7Protein4" class="ingredientCheckbox"><label for="7Protein4" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;oil, for drizzling</label><br>
                                         <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
@@ -1857,72 +1599,6 @@
                         </div>
                         <div class="col-md-6">
                             <img class="recipeImage" src="haha.jpg" alt="List7 Image">
-                        </div>
-                    </div>
-                </div>
-                <div class="row displayNone" id="proteinListContent8">
-                    <div class="col-md-8 borderLeft">
-                        <h2>List 8</h2>
-                        <div class="col-md-6 noMargin">
-                            <h4 class="h4margin">Recipe Description</h4>
-                            <div class="ddmargin">I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description<br><br><br></div>
-                            <ol class="lessPadding">
-                                <li class="">This is Protein Content</li>
-                                <li class="">This is Protein Content</li>
-                                <li class="">This is Protein Content</li>
-                                <li class="">This is Protein Content</li>
-                                <li class="">This is Protein Content</li>
-                            </ol>
-                            <br>
-                            <table class="table table-condensed">
-                                <tr>
-                                    <th colspan="3" class="centered">Ingredients</th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <form action="" method="post">
-                                        <input type="checkbox" id="firstProtein8" class="ingredientCheckbox"><label for="firstProtein8" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;ingredient1</label><br>
-                                        <input type="submit" class="btn btn-info" value="Add Items to List">
-                                        </form>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="col-md-6">
-                            <img class="recipeImage" src="haha.jpg" alt="List8 Image">
-                        </div>
-                    </div>
-                </div>
-                <div class="row displayNone" id="proteinListContent9">
-                    <div class="col-md-8 borderLeft">
-                        <h2>List 9</h2>
-                        <div class="col-md-6 noMargin">
-                            <h4 class="h4margin">Recipe Description</h4>
-                            <div class="ddmargin">I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description<br><br><br></div>
-                            <ol class="lessPadding">
-                                <li class="">This is Protein Content</li>
-                                <li class="">This is Protein Content</li>
-                                <li class="">This is Protein Content</li>
-                                <li class="">This is Protein Content</li>
-                                <li class="">This is Protein Content</li>
-                            </ol>
-                            <br>
-                            <table class="table table-condensed">
-                                <tr>
-                                    <th colspan="3" class="centered">Ingredients</th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <form action="" method="post">
-                                        <input type="checkbox" id="firstProtein9" class="ingredientCheckbox"><label for="firstProtein9" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;ingredient1</label><br>
-                                        <input type="submit" class="btn btn-info" value="Add Items to List">
-                                        </form>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="col-md-6">
-                            <img class="recipeImage" src="haha.jpg" alt="List9 Image">
                         </div>
                     </div>
                 </div>
@@ -2393,5 +2069,38 @@
             </div>
         </main>
     </section>
+    <!--<div class="home-footer mobileContentless">
+            <div class="footerconstraint">
+                <div class="bottomleftcolumn">
+                    <ul>
+                        <li><a href="../index.php">Home</a></li>
+                        <li><a href="../index.php#OurPurpose">Our Purpose</a></li>
+                        <li><a href="../index.php#OurApps">About our Apps</a></li>
+
+                    </ul>
+                </div>
+                <div class="middleleftcolumn">
+                    <ul>
+                        <li><a href="../ecolist/index.php">Shopping List</a></li>
+                        <li><a href="../ecoeats/index.php">Meal Planner</a></li>
+                        <li><a href="../donation/index.php">Donate Food</a></li>
+                    </ul>
+                </div>
+                <div class="middlerightcolumn">
+                    <ul>
+                        <li><a href="../services/index.php">Affiliated Apps</a></li>
+                        <li><a href="../index.php#AboutUs">About Us</a></li>
+                        <li><a href="../index.php#AboutProject">About the Project</a></li>
+                    </ul>
+                </div>
+                <div class="bottomrightcolumn">
+                    <ul>
+                        <li><a href="../users/index.php">Login</a></li>
+                        <li><a href="../sitemap/index.php">Sitemap</a></li>
+                    </ul>
+                </div>
+                <p>&copy; Copyright 2017 | EcoList, All Rights Reserved </p>
+            </div>
+        </div>-->
     </body>
 </html>
