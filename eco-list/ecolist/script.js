@@ -7,7 +7,7 @@ var a;
 $(function () {
 
     //button adds new rows to table 1
-    $("#btnAdd").bind("click", function () {
+    $("#btnAdd").on("click", function () {
         var div = $("<tr>");
         div.fadeIn("slow");
         div.html(GetDynamicTextBox(""));
@@ -26,6 +26,18 @@ $(function () {
             $(this).remove();
         })
     });
+
+    //empty field validation
+
+     $(document).ready(function () {
+      $('<tr>').on('blur','.list', function () {
+            if($.trim($("#" + a + "item").val()).length > 0|| $.trim($('#' + a + "quantity").val()).length > 0) {
+              $('body').prop('disabled',false);
+              alert('test');
+            }
+        });
+    });
+
 
     //shopping cart button that removes row and adds to new list
     $(document).ready(
@@ -49,6 +61,15 @@ $(function () {
                   $(".list-group li").find(":button").hide();
 
             });
+
+
+    //shows button when added to the cart list
+    $(document).ready(function () {
+      $('body').on('click', '.list', function () {
+            $(".list-group li").find(":button").show();
+        });
+    });
+
         
     //cart title and clear transitions only once 
     $("body").one("click",".list", function(){
@@ -66,28 +87,12 @@ $(function () {
         }, 1000);
     });
 
-    //delete prompt when hovering over list item
-    $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip({
-          trigger:'hover'
-        });   
-    });
-
-    //mouse hover shows button and hides when leaving
-    $(document).ready(function () {
-      $(document).on('mouseenter', '.list-group li', function () {
-            $(this).find(":button").show();
-        }).on('mouseleave', '.list-group li', function () {
-            $(this).find(":button").hide();
-        });
-    });
-
-      //double click to remove list item
+      // click to remove list item
     $("body").on('click','.btnCartRemove', function(){
-        $(this).toggleClass('strike').fadeOut("fast", function(){
+        $(this).fadeOut("fast", function(){
           $(this).parent().remove();
           if($(".list-group-item").text().length === 0){
-              $('#cTitle').html('Your cart is empty!').hide().fadeIn("fast");
+              $('#cTitle').html('Cart is empty!').hide().fadeIn("fast");
             };
             if($(".list-group-item").text().length > 0){
               $('#cTitle').html('Cart');
@@ -105,8 +110,9 @@ $(function () {
     //clears cart
      $("#btnClear").on("click", function () {
             $(".list-group").children().remove();
-            $('#cTitle').html('Your cart is empty!').hide().fadeIn("fast");
+            $('#cTitle').html('Cart is empty!').hide().fadeIn("fast");
     });
+
       
   //end tag    
 });
@@ -116,7 +122,7 @@ $(function () {
 function GetDynamicTextBox(value) {
     count++;
     c++;
-    return '<td><button type="button" id="'+c+'btn" class="btn btn-info list"><span class="glyphicon glyphicon-shopping-cart"></span></button></td>'
+    return '<td><button disabled type="button" id="'+c+'btn" class="btn btn-info list"><span class="glyphicon glyphicon-shopping-cart"></span></button></td>'
     +'<td><input name = "DynamicTextBox" id="'+count+'item" type="text" value = "' + value + '" class="form-control" placeholder="Name of item"/></td>' 
     + '<td><input name = "DynamicTextBox" id="'+count+'quantity" type="number" value = "' + value + '"  class="form-control" placeholder="#"/></td>' 
     + '<td><button type="button" id="'+c+'" class="btn btn-danger remove"><i class="glyphicon glyphicon-minus-sign"></i></button></td>'
