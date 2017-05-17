@@ -264,6 +264,8 @@ thead tr th {
 
 #cTitle{
   margin-right: 80px;
+  font-size:80%;
+  text-align: center;
 }
 
 .list-group li {
@@ -289,6 +291,10 @@ thead tr th {
   border: 0;
   background: transparent;
   float:right;
+}
+
+.xToRemove {
+  font-size: 40%;
 }
 
 
