@@ -98,25 +98,25 @@
                     <table id="SignupTable">
                         <tbody>
                         <tr>
-                            <td><input type="email" placeholder="Email" onblur="warnEmailType()" id="Email" name="email" class="form-control"/></td>
+                            <td><input type="email" placeholder="Email" onblur="warnEmailType()" id="Email" name="email" class="form-control" required/></td>
                         </tr>
                         <tr>
                             <td id="ErrEmail">Please enter a valid email</td>
                         </tr>
                         <tr>
-                            <td><input type="text" id="SignupUsername" placeholder="Username" name="username" onblur="warnUsername()" class="form-control"/></td>
+                            <td><input type="text" id="SignupUsername" placeholder="Username" name="username" onblur="warnUsername()" class="form-control" required/></td>
                         </tr>
                         <tr>
                             <td id="ErrUsername">Please enter a valid username</td>
                         </tr>
                         <tr>
-                            <td><input type="password" placeholder="Password" onblur="warnPassword()" id="SignupPassword" name="password" class="form-control"/></td>
+                            <td><input type="password" placeholder="Password" onblur="warnPassword()" id="SignupPassword" name="password" class="form-control" required/></td>
                         </tr>
                         <tr>
                             <td id="ErrPassword">Password must be between 8 and 16 characters in length</td>
                         </tr>
                         <tr>
-                            <td><input type="password" placeholder="Confirm Password" onblur="warnConfirm()" id="Password2" name="password" class="form-control"/></td>
+                            <td><input type="password" placeholder="Confirm Password" onblur="warnConfirm()" id="Password2" name="password" class="form-control" required/></td>
                         </tr>
                         <tr>
                             <td id="ErrConfirm">Does not match password</td>
@@ -169,12 +169,12 @@
 <script>
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyDbbQhEgMs6GJhDRccVTWk5ibUNgzGhE2s",
-    authDomain: "comp2910-9d392.firebaseapp.com",
-    databaseURL: "https://comp2910-9d392.firebaseio.com",
-    projectId: "comp2910-9d392",
-    storageBucket: "comp2910-9d392.appspot.com",
-    messagingSenderId: "758365219906"
+    apiKey: "AIzaSyC82ZRbf--52RkwFWRCvCBRN7zLSMCAqV8",
+    authDomain: "ecolist-d3e23.firebaseapp.com",
+    databaseURL: "https://ecolist-d3e23.firebaseio.com",
+    projectId: "ecolist-d3e23",
+    storageBucket: "ecolist-d3e23.appspot.com",
+    messagingSenderId: "347349975058"
   };
   firebase.initializeApp(config);
   
@@ -208,4 +208,48 @@
       // The start method will wait until the DOM is loaded.
       ui.start('#firebaseui-auth-container', uiConfig);
 		
+    </script>
+
+
+    <!-- EDMUND, EMAIL LOGIN AND SIGNUP -->
+    <script>
+        var emailSignUpEmail = document.getElementById('Email');
+        var emailSignUpName = document.getElementById('SignupUsername');
+        var emailSignUpPassword = document.getElementById('SignupPassword');
+        var emailLogInEmail = document.getElementById('LoginUsername');
+        var emailLogInPassword = document.getElementById('Password');
+        var emailLogInBtn = document.getElementById('LoginButton');
+        var emailSignUpBtn = document.getElementById('SignupButton');
+
+        // ADD LOGIN EVENT
+        emailLogInBtn.addEventListener('click', e => {
+
+            var email = emailLogInEmail.value;
+            var password = emailLogInPassword.value;
+            var auth = firebase.auth();
+            // SIGN IN
+            var promise = auth.signInWithEmailAndPassword(email, password);
+            promise.catch(e => console.log(e.message));
+        });
+
+        // ADD SIGNUP EVENT
+        emailSignUpBtn.addEventListener('click', e => {
+            var email = emailSignUpEmail.value;
+            var password = emailSignUpPassword.value;
+            var auth = firebase.auth();
+            // SIGN IN
+            var promise = auth.createUserWithEmailAndPassword(email, password);
+            promise.catch(e => console.log(e.message));
+        });
+
+        // ADD A REALTIME LISTENER
+        firebase.auth().onAuthStateChanged(firebaseUser => {
+            if (firebaseUser) {
+                console.log(firebaseUser);
+            }   else {
+                console.log('not logged in');
+            }
+        });
+
+
     </script>
