@@ -115,16 +115,6 @@ ul.nav-pills {
 }
 /*LOADING CIRCLE DONE*/
 
-/*HAMBURGER NAV*/
-#GUI {
-    height:100%;
-    width:100%;
-    position:fixed;
-    pointer-events:none;
-    z-index:9998;
-    display: none;
-}
-
 .centered {
     text-align: center;
 }
@@ -213,6 +203,16 @@ ul.nav-pills {
     padding: 15px;
 }
 
+.h1Special {
+    margin-top: 80px;
+}
+
+main.container-fluid {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 /*MAKE NAV BAR RECTANGLE, OVERLAP BOOTSTRAP*/
 .indexNavNoBorderRadius {
     border-radius: 0;
@@ -225,11 +225,11 @@ ul.nav-pills {
 
 div#myNavbar ul.navbar-nav a:hover {
     background-color: #505050;
-    color: white;
+    color: #f6f6e8;
 }
 
 div#myNavbar ul.navbar-nav a {
-    color: white;
+    color: #e6e6d8;
 }
 
 div#myNavbar ul.navbar-nav ul.dropdown-menu a {
@@ -253,7 +253,7 @@ div#myNavbar ul.navbar-nav ul.dropdown-menu a:hover {
     display: block;
     float: right;
     padding-left: 10px;
-    color: white;
+    color: #e6e6d8;
     padding-right: 40px;
 }
 
@@ -268,7 +268,37 @@ div#myNavbar ul.navbar-nav ul.dropdown-menu a:hover {
 .textCentered {
     text-align: center;
 }
+
+.navbar-toggle {
+    float: left;
+}
 /*END OF NAV BAR*/
+
+/*FOOTER START*/
+footer div.container-fluid {
+    display: block;
+    width: 100%;
+    background-color: #404040;
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer table {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer table a, footer table a:link, footer table a:hover, footer table a:visited, footer table a:active, footer table td {
+    color: white;
+    text-decoration: none;
+}
+
+footer table tr {
+    width: 100%;
+}
+/*FOOTER FINISH*/
 
 /*FOR MOBILE*/
 @media only screen and (max-width: 768px) {
@@ -304,10 +334,22 @@ div#myNavbar ul.navbar-nav ul.dropdown-menu a:hover {
     div#myNavbar ul.navbar-nav ul.dropdown-menu a {
         color: #f6f6e8;
     }
-
-    .indexNavLogo {
-        margin-left: 30px;
-    }
     /*END OF NAV BAR*/
+
+    /*FOOTER*/
+    footer {
+        display: none;
+    }
+    /*END OF FOOTER*/
+
+    .h1Special {
+        margin-top: 80px;
+    }
+
+    main.container-fluid {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
 
 }

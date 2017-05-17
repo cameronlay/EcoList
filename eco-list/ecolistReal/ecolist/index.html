@@ -8,42 +8,52 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <script src = "script.js"></script>
-<script src="../navScript.js"></script>
-<script src="../functionHiding.js" id="SelfDestruct"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="../footer.css"/>
-<link rel="stylesheet" href="../navButton.css"/>
-<link rel="stylesheet" href="../navMenu.css">
 <link rel="stylesheet" href="../fonts/font.css">
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
 
 </head>
 
 <!--The burger navigation in the top left of the page-->
 <body onload="setBurger(true);hide_function()">
-<div id="GUI">
-    <div id="Hamburger">
-        <span class="menuTop">Menu</span>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../services/index.html">Our Services</a>
-                <ul class="dropDownHamburger">
-                    <li><div><a href="../ecolist/index.html">EcoList</a></div></li>
-                    <li><div><a href="../ecoeats/index.html">EcoEats</a></div></li>
-                    <li><div><a href="../donation/index.html">Donations</a></div></li>
+<nav class="navbar navbar-inverse navbar-fixed-top indexNavNoBorderRadius indexNavBackground">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                      
+                </button>
+                <a class="navbar-brand" href="../index.html"><img class="indexNavLogo" src="../images/logo.png" alt="Logo"><div class="indexNavLogoText">EcoList</div></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <!-- DROPDOWN MENU -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Apps<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../ecolist/index.html">Eco List</a></li>
+                            <li><a href="../ecoeats/index.html">Eco Eats</a></li>
+                            <li><a href="../donation/index.html">Donation</a></li>
+                        </ul>
+                    </li>
+                    <!-- FINISH DROPDOWN MENU -->
+                    <li><a href="../services/index.html">Services</a></li>
+                    <li><a href="../index.html#AboutUs">About Us</a></li>
                 </ul>
-            </li>
-            <li><a href="../users/index.html">Login</a></li>
-            <li><a href="../index.html#AboutUs">About Us</a></li>
-        </ul>
-    </div>
-    <div id="BurgerButton" onclick="setBurger(false,true)">
-        <img src="../images/transparent.png" class="square"/>
-        <img src="../images/burger.png" class="innerButtonBGR"/>
-    </div>
-</div>
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- WILL BE DISAPPEARED WHEN USER ISN'T LOGGED IN -->
+                    <li><a href="#"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Log Out</a></li>
+                    <!-- WILL BE CHANGED TO PHP VARIABLE FOR USER NAME -->
+                    <li><a href="../users/index.html"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login/Sign up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
 <!--Title of the page-->
 <p>&nbsp;</p>
@@ -120,38 +130,31 @@
     </div>
   </section>
 
-<div class="home-footer mobileContentless">
-            <div class="footerconstraint">
-                <div class="bottomleftcolumn">
-                    <ul>
-                        <li><a href="../index.php">Home</a></li>
-                        <li><a href="../index.php#OurPurpose">Our Purpose</a></li>
-                        <li><a href="../index.php#OurApps">About our Apps</a></li>
-
-                    </ul>
-                </div>
-                <div class="middleleftcolumn">
-                    <ul>
-                        <li><a href="../ecolist/index.php">Shopping List</a></li>
-                        <li><a href="../ecoeats/index.php">Meal Planner</a></li>
-                        <li><a href="../donation/index.php">Donate Food</a></li>
-                    </ul>
-                </div>
-                <div class="middlerightcolumn">
-                    <ul>
-                        <li><a href="../services/index.php">Affiliated Apps</a></li>
-                        <li><a href="../index.php#AboutUs">About Us</a></li>
-                        <li><a href="../index.php#AboutProject">About the Project</a></li>
-                    </ul>
-                </div>
-                <div class="bottomrightcolumn">
-                    <ul>
-                        <li><a href="../users/index.php">Login</a></li>
-                        <li><a href="../sitemap/index.php">Sitemap</a></li>
-                    </ul>
-                </div>
-                <p>&copy; Copyright 2017 | EcoList, All Rights Reserved </p>
-            </div>
+<footer>
+        <div class="container-fluid textCentered">
+            <table>
+                <tr>
+                    <td><a href="./index.html">Home</a></td>
+                    <td><a href="./ecolist/index.html">Eco List</a></td>
+                    <td><a href="./services/index.html">Affiliated Apps</a></td>
+                    <td><a href="./users/index.html">Login</a></td>
+                </tr>
+                <tr>
+                    <td><a href="./index.html#OurPurpose">Our Purpose</a></td>
+                    <td><a href="./ecoeats/index.html">Eco Eats</a></td>
+                    <td><a href="./index.html#AboutUs">About Us</a></td>
+                    <td><a href="./sitemap/index.html">Site Map</a></td>
+                </tr>
+                <tr>
+                    <td><a href="./index.html#OurApps">About our Apps</a></td>
+                    <td><a href="./donation/index.html">Donation</a></td>
+                    <td><a href="./index.html#AboutProject">About the Project</a></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><br>&copy; Copyright 2017 | EcoList, All Rights Reserved</td>
+                </tr>
+            </table>
         </div>
+    </footer>
   </body>
 <html>
