@@ -264,6 +264,8 @@ thead tr th {
 
 #cTitle{
   margin-right: 80px;
+  text-align:center;
+  font-size: 80%;
 }
 
 .list-group li {

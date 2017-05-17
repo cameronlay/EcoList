@@ -143,6 +143,15 @@ footer table a, footer table a:link, footer table a:hover, footer table a:visite
 footer table tr {
     width: 100%;
 }
+
+footer tr td{
+    font-size: 0.8em;
+}
+
+footer tr td a:hover {
+    background-color: #f6f6e8;
+    color: #404040;
+}
 /*FOOTER FINISH*/
 
 @media screen and (max-width: 768px) {
