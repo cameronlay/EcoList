@@ -130,4 +130,4 @@ function windowResize(){
 }
 
 /*Runs the previous function on window resize*/
-window.onresize = function() { windowResize()};
+window.onload = function() { windowResize()};
