@@ -1,5 +1,50 @@
 * {
     box-sizing: border-box;
+    padding:0;
+}
+
+h1 {
+    text-align:center;
+    margin:auto;
+    padding:0;
+    pointer-events: none;
+    user-select:none;
+}
+
+header {
+    margin-top: 80px;
+}
+
+body {
+    margin:0;
+    background-image: url("../images/background2.jpg");
+}
+
+main {
+    display: block;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+}
+
+#sideList {
+    height:400px;
+    overflow-y:scroll;
+
+    padding:10px 0px 10px 0px;
+}
+
+#googleMap {
+    padding:0;
+}
+
+.row {
+    padding-top:10px
+}
+
+.well {
+    margin-bottom:0;
 }
 
 /*MAKE NAV BAR RECTANGLE, OVERLAP BOOTSTRAP*/
@@ -63,62 +108,6 @@ div#myNavbar ul.navbar-nav ul.dropdown-menu a:hover {
 }
 /*END OF NAV BAR*/
 
-.info {
-    background-image: url('./images/mobile.png');
-    background-repeat: no-repeat;
-}
-
-.info1 {
-    background-image: url('./images/info1-3.jpg');
-    background-position: right;
-    background-repeat: no-repeat;
-    padding-right: 500px;
-}
-
-.info2 {
-    background-image: url('./images/info2-3.jpg');
-    background-position: left;
-    background-repeat: no-repeat;
-    padding-left: 500px;
-}
-
-.info3 {
-    background-image: url('./images/info3-3.jpg');
-    background-position: right;
-    background-repeat: no-repeat;
-    padding-right: 500px;
-}
-
-.indexBox {
-    display: block;
-    height: 500px;
-}
-
-.limitedWidthForIndex {
-    width: 60%;
-}
-
-.jumbotron {
-    background-color: rgba(246, 246, 232, 0.3);
-    margin-top: 30px;
-}
-
-.btn-success {
-    background-color: #77dd77;
-}
-
-.btn-success:hover, .btn-success:active {
-    background-color: #77cc77;
-}
-
-.onlyVisibleMobile {
-    display: none;
-}
-
-.displayBlock {
-    display: block;
-}
-
 /*FOOTER START*/
 footer div.container-fluid {
     display: block;
@@ -129,18 +118,18 @@ footer div.container-fluid {
     padding-bottom: 30px;
 }
 
-table {
+footer table {
     width: 50%;
     margin-right: auto;
     margin-left: auto;
 }
 
-table a, table a:link, table a:hover, table a:visited, table a:active, table td {
+footer table a, footer table a:link, footer table a:hover, footer table a:visited, footer table a:active, footer table td {
     color: white;
     text-decoration: none;
 }
 
-table tr {
+footer table tr {
     width: 100%;
 }
 /*FOOTER FINISH*/
@@ -151,37 +140,15 @@ table tr {
     div#myNavbar ul.navbar-nav ul.dropdown-menu a {
         color: #f6f6e8;
     }
-
-    .indexNavLogo {
-        margin-left: auto;
-        margin-right: auto;
-    }
     /*END OF NAV BAR*/
 
-    .onlyVisibleDesktop {
-        display: none;
-    }
-
-    .onlyVisibleMobile {
-        display: block;
-    }
-
-    p {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-
-    div.panel img {
-        display: inline-block;
-        width: 50%;
-    }
-
-    div.panel a {
-        color: black;
-        text-decoration: none;
-    }
-
+    /*FOOTER*/
     footer {
         display: none;
+    }
+    /*END OF FOOTER*/
+
+    #googleMap {
+        margin-top: 50px;
     }
 }

@@ -129,18 +129,18 @@ footer div.container-fluid {
     padding-bottom: 30px;
 }
 
-table {
+footer table {
     width: 50%;
     margin-right: auto;
     margin-left: auto;
 }
 
-table a, table a:link, table a:hover, table a:visited, table a:active, table td {
+footer table a, footer table a:link, footer table a:hover, footer table a:visited, footer table a:active, footer table td {
     color: white;
     text-decoration: none;
 }
 
-table tr {
+footer table tr {
     width: 100%;
 }
 /*FOOTER FINISH*/
@@ -150,11 +150,6 @@ table tr {
     /*NAV BAR*/
     div#myNavbar ul.navbar-nav ul.dropdown-menu a {
         color: #f6f6e8;
-    }
-
-    .indexNavLogo {
-        margin-left: auto;
-        margin-right: auto;
     }
     /*END OF NAV BAR*/
 
@@ -181,7 +176,21 @@ table tr {
         text-decoration: none;
     }
 
+    /*FOOTER*/
     footer {
         display: none;
+    }
+    /*END OF FOOTER*/
+}
+
+@media screen and (min-width: 769px) {
+    .jumbotron {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .onlyVisibleDesktop {
+        padding-left: 100px;
+        padding-right: 100px;
     }
 }
