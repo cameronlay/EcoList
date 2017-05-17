@@ -189,6 +189,15 @@ ul.nav-pills {
 }
 /*FINISH OVERRIDING GLYPHICONS*/
 
+.btn-lg {
+    margin: 2px;
+}
+
+.nav-stacked a {
+    color: #404040;
+    font-size: 1.3em;
+}
+
 .recipetextarea {
     max-width: 100%;
     width: 100%;
@@ -306,6 +315,15 @@ footer table a, footer table a:link, footer table a:hover, footer table a:visite
 footer table tr {
     width: 100%;
 }
+
+footer tr td{
+    font-size: 0.8em;
+}
+
+footer tr td a:hover {
+    background-color: #f6f6e8;
+    color: #404040;
+}
 /*FOOTER FINISH*/
 
 /*FOR MOBILE*/
@@ -341,6 +359,10 @@ footer table tr {
     /*NAV BAR*/
     div#myNavbar ul.navbar-nav ul.dropdown-menu a {
         color: #f6f6e8;
+    }
+
+    .indexNavLogo {
+        margin-left: 10px;
     }
     /*END OF NAV BAR*/
 
