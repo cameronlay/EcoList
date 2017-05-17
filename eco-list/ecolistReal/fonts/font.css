@@ -22,3 +22,23 @@ body {
 h1, h2, h3, h4, h5 {
     font-family: Title;
 }
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.3em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.8em;
+}
+
+button {
+    font-size: 3em;
+}

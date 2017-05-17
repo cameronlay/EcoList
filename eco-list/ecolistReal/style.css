@@ -151,6 +151,10 @@ footer table tr {
     div#myNavbar ul.navbar-nav ul.dropdown-menu a {
         color: #f6f6e8;
     }
+
+    .indexNavLogo {
+        margin-left: 10px;
+    }
     /*END OF NAV BAR*/
 
     .onlyVisibleDesktop {
@@ -181,6 +185,10 @@ footer table tr {
         display: none;
     }
     /*END OF FOOTER*/
+
+    .limitedWidthForIndex {
+        width: 95%;
+    }
 }
 
 @media screen and (min-width: 769px) {

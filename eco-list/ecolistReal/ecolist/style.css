@@ -104,6 +104,15 @@ footer table a, footer table a:link, footer table a:hover, footer table a:visite
 footer table tr {
     width: 100%;
 }
+
+footer tr td{
+    font-size: 0.8em;
+}
+
+footer tr td a:hover {
+    background-color: #f6f6e8;
+    color: #404040;
+}
 /*FOOTER FINISH*/
 
 .container {
@@ -115,22 +124,21 @@ footer table tr {
 
 /*adjusts screen size for mobile view at 640px*/
 
-@media only screen and (min-width:640px){
+@media only screen and (min-width:769px){
   .container{
     width:50%;
   }
-}
 
+}
+  .checkBoxTableHead {
+    width: 60px;
+  }
 
 
 /* table css */
 
 .smallTableHead {
   width: 70px;
-}
-
-.checkBoxTableHead {
-  width: 60px;
 }
 
 thead tr th {
@@ -164,6 +172,7 @@ thead tr th {
   background-color: #77dd77;
   font-family: Title, sans-serif;
   font-size: 20px;
+  text-align: center;
 }
 
 #btnAdd:hover {
@@ -282,11 +291,31 @@ thead tr th {
 
 
 
+#quantity {
+  display: inline;
+}
+
+#qty {
+  display: none;
+}
+
+#delete {
+  display: inline;
+}
+
+#del {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
 
     /*NAV BAR*/
     div#myNavbar ul.navbar-nav ul.dropdown-menu a {
         color: #f6f6e8;
+    }
+
+    .indexNavLogo {
+        margin-left: 10px;
     }
     /*END OF NAV BAR*/
 
@@ -296,7 +325,36 @@ thead tr th {
     }
     /*END OF FOOTER*/
 
-    #googleMap {
-        margin-top: 50px;
+    .smallTableHead {
+        width: 45px;
     }
+
+    .checkBoxTableHead {
+    width: 45px;
+    }
+
+    .btn {
+        padding: 4px 6px;
+    }
+
+    .form-control {
+        padding: 2px 4px;
+    }
+
+    #quantity {
+      display: none;
+    }
+
+    #qty {
+      display: inline;
+    }
+
+    #delete {
+      display: none;
+    }
+
+    #del {
+      display: inline;
+    }
+    
 }
