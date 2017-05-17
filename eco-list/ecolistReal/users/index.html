@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EcoList - Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Cameron Lay">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../fonts/font.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+     
+</head>
+<body onload="setBurger(true);hide_function()">
+    <nav class="navbar navbar-inverse navbar-fixed-top indexNavNoBorderRadius indexNavBackground">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                      
+                </button>
+                <a class="navbar-brand" href="../index.html"><img class="indexNavLogo" src="../images/logo.png" alt="Logo"><div class="indexNavLogoText">EcoList</div></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <!-- DROPDOWN MENU -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Apps<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../ecolist/index.html">Eco List</a></li>
+                            <li><a href="../ecoeats/index.html">Eco Eats</a></li>
+                            <li><a href="../donation/index.html">Donation</a></li>
+                        </ul>
+                    </li>
+                    <!-- FINISH DROPDOWN MENU -->
+                    <li><a href="../services/index.html">Services</a></li>
+                    <li><a href="../index.html#AboutUs">About Us</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- WILL BE DISAPPEARED WHEN USER ISN'T LOGGED IN -->
+                    <li><a href="#"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Log Out</a></li>
+                    <!-- WILL BE CHANGED TO PHP VARIABLE FOR USER NAME -->
+                    <li><a href="../users/index.html"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login/Sign up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container panel panel-default">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8" id="LoginLogo">
+                <a href="#"><img class="loginLogo" src ="../images/logotext.png" alt="Logo"/></a>
+            </div>
+        </div>
+        <div class="row" id="FormContent">
+            <div class="col-md-2"></div>
+
+            <!--Start of the login form-->
+            <div class="col-md-4 toggleForm" id="LoginLeft">
+                <form id="LoginForm" name="LoginForm" method="post">
+                    <table id="LoginTable">
+                        <tbody>
+                        <tr>
+                            <td><input type="text" id="LoginUsername" name="username" placeholder="Username" class="form-control"/></td>
+                        </tr>
+                        <tr>
+                            <td class="spacingRow">Just here for spacing</td>
+                        </tr>
+                        <tr>
+                            <td><input type="password" placeholder="Password" id="Password" name="password" class="form-control"/></td>
+                        </tr>
+                        <tr>
+                            <td class="spacingRow">Just here for spacing</td>
+                        </tr>
+                        <tr class="submitButton">
+                            <td><input id="LoginButton" name="submit" value="Login" type="submit" class="btn btn-info"/></td>
+                        </tr>
+                        <tr>
+                            <td class="spacingRow">Just here for spacing</td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="Sign-Up" onclick="SignUpShow()" id="RegisterButton" class="btn btn-info"/></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div id="firebaseui-auth-container"></div>
+                </form>
+            </div>
+
+            <!--Start of the Registration Form-->
+            <div class="col-md-5 toggleForm"  id="SignupRight">
+                <form id="SignupForm" name="signupform" method="post" onsubmit="return formValidate()">
+                    <table id="SignupTable">
+                        <tbody>
+                        <tr>
+                            <td><input type="email" placeholder="Email" onblur="warnEmailType()" id="Email" name="email" class="form-control" required/></td>
+                        </tr>
+                        <tr>
+                            <td id="ErrEmail">Please enter a valid email</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="SignupUsername" placeholder="Username" name="username" onblur="warnUsername()" class="form-control" required/></td>
+                        </tr>
+                        <tr>
+                            <td id="ErrUsername">Please enter a valid username</td>
+                        </tr>
+                        <tr>
+                            <td><input type="password" placeholder="Password" onblur="warnPassword()" id="SignupPassword" name="password" class="form-control" required/></td>
+                        </tr>
+                        <tr>
+                            <td id="ErrPassword">Password must be between 8 and 16 characters in length</td>
+                        </tr>
+                        <tr>
+                            <td><input type="password" placeholder="Confirm Password" onblur="warnConfirm()" id="Password2" name="password" class="form-control" required/></td>
+                        </tr>
+                        <tr>
+                            <td id="ErrConfirm">Does not match password</td>
+                        </tr>
+                        <tr class="submitButton">
+                            <td><input id="SignupButton" name="submit" value="Register" type="submit" class="btn btn-info"/></td>
+                        </tr>
+                        <tr>
+                            <td class="spacingRow">Just here for spacing</td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="Sign-In" onclick="LoginShow()" id="SignInButton" class="btn btn-info"/></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+<footer>
+        <div class="container-fluid textCentered">
+            <table>
+                <tr>
+                    <td><a href="./index.html">Home</a></td>
+                    <td><a href="./ecolist/index.html">Eco List</a></td>
+                    <td><a href="./services/index.html">Affiliated Apps</a></td>
+                    <td><a href="./users/index.html">Login</a></td>
+                </tr>
+                <tr>
+                    <td><a href="./index.html#OurPurpose">Our Purpose</a></td>
+                    <td><a href="./ecoeats/index.html">Eco Eats</a></td>
+                    <td><a href="./index.html#AboutUs">About Us</a></td>
+                    <td><a href="./sitemap/index.html">Site Map</a></td>
+                </tr>
+                <tr>
+                    <td><a href="./index.html#OurApps">About our Apps</a></td>
+                    <td><a href="./donation/index.html">Donation</a></td>
+                    <td><a href="./index.html#AboutProject">About the Project</a></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><br>&copy; Copyright 2017 | EcoList, All Rights Reserved</td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+
+
+<!-- Below is the initialisation code for firebase project.-->
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC82ZRbf--52RkwFWRCvCBRN7zLSMCAqV8",
+    authDomain: "ecolist-d3e23.firebaseapp.com",
+    databaseURL: "https://ecolist-d3e23.firebaseio.com",
+    projectId: "ecolist-d3e23",
+    storageBucket: "ecolist-d3e23.appspot.com",
+    messagingSenderId: "347349975058"
+  };
+  firebase.initializeApp(config);
+  
+  firebase.auth().onAuthStateChanged( function() {
+		const user = firebase.auth().currentUser;
+			if(user != null) {
+				firebase.database().ref("users/" + user.uid).set({name:user.displayName});
+			} else console.log("not signed in");
+			
+		});
+</script>
+
+<!-- The code below initialise the sign in widget. -->
+<script src="https://cdn.firebase.com/libs/firebaseui/1.0.1/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/1.0.1/firebaseui.css" />
+    <script type="text/javascript">
+      // FirebaseUI config.
+      var uiConfig = {
+        signInSuccessUrl: '#',
+        signInOptions: [
+          // Leave the lines as is for the providers you want to offer your users.
+          firebase.auth.GoogleAuthProvider.PROVIDER_ID
+          //firebase.auth.EmailAuthProvider.PROVIDER_ID
+        ],
+        // Terms of service url.
+        tosUrl: '<your-tos-url>'
+      };
+	  
+      // Initialize the FirebaseUI Widget using Firebase.
+      var ui = new firebaseui.auth.AuthUI(firebase.auth());
+      // The start method will wait until the DOM is loaded.
+      ui.start('#firebaseui-auth-container', uiConfig);
+		
+    </script>
+
+
+    <!-- EDMUND, EMAIL LOGIN AND SIGNUP -->
+    <script>
+        var emailSignUpEmail = document.getElementById('Email');
+        var emailSignUpName = document.getElementById('SignupUsername');
+        var emailSignUpPassword = document.getElementById('SignupPassword');
+        var emailLogInEmail = document.getElementById('LoginUsername');
+        var emailLogInPassword = document.getElementById('Password');
+        var emailLogInBtn = document.getElementById('LoginButton');
+        var emailSignUpBtn = document.getElementById('SignupButton');
+
+        // ADD LOGIN EVENT
+        emailLogInBtn.addEventListener('click', e => {
+
+            var email = emailLogInEmail.value;
+            var password = emailLogInPassword.value;
+            var auth = firebase.auth();
+            // SIGN IN
+            var promise = auth.signInWithEmailAndPassword(email, password);
+            promise.catch(e => console.log(e.message));
+        });
+
+        // ADD SIGNUP EVENT
+        emailSignUpBtn.addEventListener('click', e => {
+            var email = emailSignUpEmail.value;
+            var password = emailSignUpPassword.value;
+            var auth = firebase.auth();
+            // SIGN IN
+            var promise = auth.createUserWithEmailAndPassword(email, password);
+            promise.catch(e => console.log(e.message));
+        });
+
+        // ADD A REALTIME LISTENER
+        firebase.auth().onAuthStateChanged(firebaseUser => {
+            if (firebaseUser) {
+                console.log(firebaseUser);
+            }   else {
+                console.log('not logged in');
+            }
+        });
+
+
+    </script>
