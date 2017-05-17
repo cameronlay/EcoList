@@ -18,6 +18,10 @@ $(function () {
     
     //removes individual rows
     $("body").on("click", ".remove", function () {
+        var id = $(this).attr('id');
+        alert(id);
+        var toAdd = $("#" + id + "item").val();
+        alert(toAdd);
         $(this).closest("tr").fadeTo(280,0.4, function(){
             $(this).remove();
         })
