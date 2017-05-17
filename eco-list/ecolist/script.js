@@ -23,6 +23,19 @@ $(function () {
         })
     });
 
+    //empty field validation
+
+     $(document).ready(function () {
+      $('body').on('blur','.list', function () {
+            if($.trim($("#" + a + "item").val()).length || $.trim($('#' + a + "quantity").val()).length === 0) {
+              $('.list').attr('disabled',true);
+              alert('Input cannot be empty!');
+              return false;
+            }
+        });
+    });
+
+
     //shopping cart button that removes row and adds to new list
     $(document).ready(
     function(){
@@ -45,6 +58,15 @@ $(function () {
                   $(".list-group li").find(":button").hide();
 
             });
+
+
+    //shows button when added to the cart list
+    $(document).ready(function () {
+      $('body').on('click', '.list', function () {
+            $(".list-group li").find(":button").show();
+        });
+    });
+
         
     //cart title and clear transitions only once 
     $("body").one("click",".list", function(){
@@ -67,7 +89,7 @@ $(function () {
         $(this).fadeOut("fast", function(){
           $(this).parent().remove();
           if($(".list-group-item").text().length === 0){
-              $('#cTitle').html('Your cart is empty!').hide().fadeIn("fast");
+              $('#cTitle').html('Cart is empty!').hide().fadeIn("fast");
             };
             if($(".list-group-item").text().length > 0){
               $('#cTitle').html('Cart');
@@ -85,23 +107,7 @@ $(function () {
     //clears cart
      $("#btnClear").on("click", function () {
             $(".list-group").children().remove();
-            $('#cTitle').html('Your cart is empty!').hide().fadeIn("fast");
-    });
-
-      //delete prompt when hovering over list item
-    $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip({
-          trigger:'hover'
-        });   
-    });
-
-    //mouse hover shows button and hides when leaving
-    $(document).ready(function () {
-      $(document).on('mouseenter', '.list-group li', function () {
-            $(this).find(":button").show();
-        }).on('mouseleave', '.list-group li', function () {
-            $(this).find(":button").hide();
-        });
+            $('#cTitle').html('Cart is empty!').hide().fadeIn("fast");
     });
 
       
