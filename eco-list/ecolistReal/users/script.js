@@ -120,14 +120,14 @@ function LoginShow() {
 function windowResize(){
 
     var winSize = window.innerWidth;
-    if (winSize > 991.5) {
+    if (winSize > 992) {
         document.getElementsByClassName('toggleForm')[1].style.display = 'block';
         document.getElementsByClassName('toggleForm')[0].style.display = 'block';
     }
-    if (winSize < 991.5) {
-        document.getElementsByClassName('toggleForm')[0].style.display = 'none';
+    if (winSize < 992) {
+        document.getElementsByClassName('toggleForm')[1].style.display = 'none';
     }
 }
 
 /*Runs the previous function on window resize*/
-window.onresize = function() { windowResize()};
+window.onload = function() { windowResize()};
