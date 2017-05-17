@@ -308,7 +308,7 @@ $(document).ready(function() {
 });
 
 function recipeTimerInformation() {
-    var timer = setInterval(infoFunction1, 2000, infoFunction2, infoFunction3);
+    var timer = setInterval(infoFunction1, 1500, infoFunction2, infoFunction3);
 }
 
 function infoFunction1() {
@@ -316,11 +316,11 @@ function infoFunction1() {
 }
 
 function infoFunction2() {
-    $('#recipeInformation').innerHTML = ""
+    $('#recipeInformation').innerHTML = "Try our intuitive shopping list!"
 }
 
 function infoFunction3() {
-    $('#recipeInformation').innerHTML = ""
+    $('#recipeInformation').innerHTML = "You can save $700 per year not wasting food!"
 }
 
 /**

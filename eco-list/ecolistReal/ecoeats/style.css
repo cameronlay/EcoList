@@ -213,6 +213,10 @@ main.container-fluid {
     margin-left: auto;
 }
 
+.btn-lg {
+    float: right;
+}
+
 /*MAKE NAV BAR RECTANGLE, OVERLAP BOOTSTRAP*/
 .indexNavNoBorderRadius {
     border-radius: 0;
