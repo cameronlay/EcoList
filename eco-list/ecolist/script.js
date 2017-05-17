@@ -30,11 +30,10 @@ $(function () {
     //empty field validation
 
      $(document).ready(function () {
-      $('body').on('blur','.list', function () {
-            if($.trim($("#" + a + "item").val()).length || $.trim($('#' + a + "quantity").val()).length === 0) {
-              $('.list').attr('disabled',true);
-              alert('Input cannot be empty!');
-              return false;
+      $('<tr>').on('blur','.list', function () {
+            if($.trim($("#" + a + "item").val()).length > 0|| $.trim($('#' + a + "quantity").val()).length > 0) {
+              $('body').prop('disabled',false);
+              alert('test');
             }
         });
     });
@@ -123,7 +122,7 @@ $(function () {
 function GetDynamicTextBox(value) {
     count++;
     c++;
-    return '<td><button type="button" id="'+c+'btn" class="btn btn-info list"><span class="glyphicon glyphicon-shopping-cart"></span></button></td>'
+    return '<td><button disabled type="button" id="'+c+'btn" class="btn btn-info list"><span class="glyphicon glyphicon-shopping-cart"></span></button></td>'
     +'<td><input name = "DynamicTextBox" id="'+count+'item" type="text" value = "' + value + '" class="form-control" placeholder="Name of item"/></td>' 
     + '<td><input name = "DynamicTextBox" id="'+count+'quantity" type="number" value = "' + value + '"  class="form-control" placeholder="#"/></td>' 
     + '<td><button type="button" id="'+c+'" class="btn btn-danger remove"><i class="glyphicon glyphicon-minus-sign"></i></button></td>'
