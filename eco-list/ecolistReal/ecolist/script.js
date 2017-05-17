@@ -18,6 +18,10 @@ $(function () {
     
     //removes individual rows
     $("body").on("click", ".remove", function () {
+        var id = $(this).attr('id');
+        alert(id);
+        var toAdd = $("#" + id + "item").val();
+        alert(toAdd);
         $(this).closest("tr").fadeTo(280,0.4, function(){
             $(this).remove();
         })
@@ -115,7 +119,7 @@ function GetDynamicTextBox(value) {
     return '<td><button type="button" id="'+c+'btn" class="btn btn-info list"><span class="glyphicon glyphicon-shopping-cart"></span></button></td>'
     +'<td><input name = "DynamicTextBox" id="'+count+'item" type="text" value = "' + value + '" class="form-control" placeholder="Name of item"/></td>' 
     + '<td><input name = "DynamicTextBox" id="'+count+'quantity" type="number" value = "' + value + '"  class="form-control" placeholder="#"/></td>' 
-    + '<td><button type="button" class="btn btn-danger remove"><i class="glyphicon glyphicon-minus-sign"></i></button></td>'
+    + '<td><button type="button" id="'+c+'" class="btn btn-danger remove"><i class="glyphicon glyphicon-minus-sign"></i></button></td>'
 }
 
 //mobile swipe delete function
