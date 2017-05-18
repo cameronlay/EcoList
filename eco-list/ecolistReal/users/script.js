@@ -120,11 +120,11 @@ function LoginShow() {
 function windowResize(){
 
     var winSize = window.innerWidth;
-    if (winSize > 992) {
+    if (winSize > 991.5) {
         document.getElementsByClassName('toggleForm')[1].style.display = 'block';
         document.getElementsByClassName('toggleForm')[0].style.display = 'block';
     }
-    if (winSize < 992) {
+    if (winSize < 991.5) {
         document.getElementsByClassName('toggleForm')[1].style.display = 'none';
     }
 }

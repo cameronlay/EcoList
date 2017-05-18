@@ -369,5 +369,9 @@ thead tr th {
     #del {
       display: inline;
     }
+
+    .ecolistTitle {
+        margin-top: 40px;
+    }
     
 }

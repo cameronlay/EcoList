@@ -36,7 +36,7 @@ $(function () {
                 var toAdd = $("#" + a + "item").val();
                 var toAdd2 = $('#' + a + "quantity").val();
                 if(toAdd === '' || toAdd2 === '' ){
-                  alert("An input is empty!");
+                  return false;
                 }
                 else{
                    $('.list-group').append('<li class="list-group-item">' + toAdd2 + " " + toAdd + btnCartRemove +'</li>');
