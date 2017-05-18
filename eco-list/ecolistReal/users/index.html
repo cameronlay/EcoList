@@ -63,7 +63,7 @@
 
             <!--Start of the login form-->
             <div class="col-md-4 toggleForm" id="LoginLeft">
-                <form id="LoginForm" name="LoginForm" method="post">
+                <div id="LoginForm">
                     <table id="LoginTable">
                         <tbody>
                         <tr>
@@ -90,12 +90,12 @@
                         </tbody>
                     </table>
                     <div id="firebaseui-auth-container"></div>
-                </form>
+                </div>
             </div>
 
             <!--Start of the Registration Form-->
             <div class="col-md-5 toggleForm"  id="SignupRight">
-                <form id="SignupForm" name="signupform" method="post" onsubmit="return formValidate()">
+                <div id="SignupForm">
                     <table id="SignupTable">
                         <tbody>
                         <tr>
@@ -104,12 +104,12 @@
                         <tr>
                             <td id="ErrEmail">Please enter a valid email</td>
                         </tr>
-                        <!-- <tr> -->
-                            <!-- <td><input type="text" id="SignupUsername" placeholder="Username" name="username" onblur="warnUsername()" class="form-control" required/></td> -->
-                        <!-- </tr> -->
-                        <!-- <tr> -->
-                            <!-- <td id="ErrUsername">Please enter a valid username</td> -->
-                        <!-- </tr> -->
+                        <tr>
+                            <td><input type="text" id="SignupUsername" placeholder="Username" name="username" onblur="warnUsername()" class="form-control" required/></td>
+                        </tr>
+                        <tr>
+                            <td id="ErrUsername">Please enter a valid username</td>
+                        </tr>
                         <tr>
                             <td><input type="password" placeholder="Password" onblur="warnPassword()" id="SignupPassword" name="password" class="form-control" required/></td>
                         </tr>
@@ -126,14 +126,14 @@
                             <td><input id="SignupButton" name="submit" value="Register" type="submit" class="btn btn-info"/></td>
                         </tr>
                         <tr>
-                            <td class="spacingRow">Just here for spacing</td>
+                            <td class="spacingRow">Sign Up Failed</td>
                         </tr>
                         <tr>
                             <td><input type="button" value="Sign-In" onclick="LoginShow()" id="SignInButton" class="btn btn-info"/></td>
                         </tr>
                         </tbody>
                     </table>
-                </form>
+                </div>
             </div>
         </div>
     </div>
@@ -205,7 +205,7 @@
     <!-- EDMUND, EMAIL LOGIN AND SIGNUP -->
     <script>
         var emailSignUpEmail = document.getElementById('Email');
-        // <!-- var emailSignUpName = document.getElementById('SignupUsername'); -->
+        var emailSignUpName = document.getElementById('SignupUsername');
         var emailSignUpPassword = document.getElementById('SignupPassword');
         var emailLogInEmail = document.getElementById('LoginUsername');
         var emailLogInPassword = document.getElementById('Password');
@@ -215,32 +215,60 @@
         // ADD LOGIN EVENT
         emailLogInBtn.addEventListener('click', e => {
 
+            // GET VALUE FROM ID
             var email = emailLogInEmail.value;
             var password = emailLogInPassword.value;
-            var auth = firebase.auth();
+
             // SIGN IN
-            var promise = auth.signInWithEmailAndPassword(email, password);
-            promise.catch(e => console.log(e.message));
+            firebase.auth().signInWithEmailAndPassword(email, password).then(function() {
+
+                // REDIRECT TO HOMEPAGE
+                window.location.href = "../";
+
+            }).catch(function(error) {
+
+                alert(error);
+
+            })
+
         });
 
         // ADD SIGNUP EVENT
         emailSignUpBtn.addEventListener('click', e => {
             var email = emailSignUpEmail.value;
+            var name = emailSignUpName.value;
             var password = emailSignUpPassword.value;
-            var auth = firebase.auth();
-            // SIGN IN
-            var promise = auth.createUserWithEmailAndPassword(email, password);
-            promise.catch(e => console.log(e.message));
+            
+            // IF USER INPUT IS INVALID, DO NOT RUN THE FUNCTION
+            if (testEmailValid() && testUsername()
+                && testPassword() && testConfirm()) {
+
+                // SIGN IN
+                firebase.auth().createUserWithEmailAndPassword(email, password).then(function() {
+
+                    // UPDATE PROFILE USING USER NAME
+                    var user = firebase.auth().currentUser;
+                    user.updateProfile({
+                        'displayName':name
+                    });
+
+                    // REDIRECT TO HOMEPAGE
+                    window.location.href = "../";
+
+                    // ONAUTHSTATECHANGED FUNCTION SHOULD RUN AUTOMATICALLY
+
+                    // CATCH ANY ERRORS
+                }).catch(function(error) {
+                
+                    alert(error);
+
+                });
+
+            }
+
         });
 
-        // ADD A REALTIME LISTENER
-        firebase.auth().onAuthStateChanged(firebaseUser => {
-            if (firebaseUser) {
-                console.log(firebaseUser);
-            }   else {
-                console.log('not logged in');
-            }
-        });
+
 
 
     </script>
