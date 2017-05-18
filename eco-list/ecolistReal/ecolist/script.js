@@ -32,7 +32,7 @@ $(function () {
       $("body").on("click",".list", function (){
                 var id = $(this).attr('id');
                 a = parseInt(id);
-                var btnCartRemove = '<button class="btnCartRemove">'+'X'+'</button>';
+                var btnCartRemove = '<button class="btnCartRemove">'+'<p class="xToRemove">'+'X'+'</p>'+'</button>';
                 var toAdd = $("#" + a + "item").val();
                 var toAdd2 = $('#' + a + "quantity").val();
                 if(toAdd === '' || toAdd2 === '' ){
@@ -55,7 +55,7 @@ $(function () {
     
     //shows button when added to the cart list
     
-      $('body').on('click', '.list', function () {
+    $('body').on('click', '.list', function () {
             $(".list-group li").find(":button").show();
         });
     
@@ -81,7 +81,7 @@ $(function () {
         $(this).toggleClass('strike').fadeOut("fast", function(){
           $(this).parent().remove();
           if($(".list-group-item").text().length === 0){
-              $('#cTitle').html('Cart is empty!').hide().fadeIn("fast");
+              $('#cTitle').html('   Cart is empty!').hide().fadeIn("fast");
             };
             if($(".list-group-item").text().length > 0){
               $('#cTitle').html('Cart');
@@ -99,7 +99,7 @@ $(function () {
     //clears cart
      $("#btnClear").on("click", function () {
             $(".list-group").children().remove();
-            $('#cTitle').html('Cart is empty!').hide().fadeIn("fast");
+            $('#cTitle').html('   Cart is empty!').hide().fadeIn("fast");
     });
       
   //end tag    
