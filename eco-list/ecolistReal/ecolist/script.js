@@ -49,7 +49,7 @@ $(function () {
                  var patt = /easter\s?egg/ig;
                  var patt2 = /turkey\s?stuffing/ig;
                  var patt3 = /halloween\s?candy/ig;
-                 var patt4 = /christmas\s?decorations/ig;
+                 var patt4 = /christmas\s?lights/ig;
                  if(patt.test(toAdd)) {
                   $('body').css('background-image', 'url(../images/easteregg.jpg)');
                  }
@@ -67,6 +67,7 @@ $(function () {
                      $('.ecolistTitle').css('color', 'black');
                  }
 
+
       });
 
         //shows button when added to the cart list
@@ -78,10 +79,10 @@ $(function () {
 
     //cart title and clear transitions only once 
     $("body").one("click",".list", function(){
-                
+
                 $('#btnClear').css('visibility', 'visible').hide().fadeIn("fast");
-                $('#btnCart').css('visibility', 'visible').hide().fadeIn("slow");
                 $('#btnSave').css('visibility', 'visible').hide().fadeIn("fast");
+                $('#btnCart').css('visibility', 'visible').hide().fadeIn("slow");
 
         })
 
@@ -94,7 +95,7 @@ $(function () {
 
       //double click to remove list item
     $("body").on('click','.btnCartRemove', function(){
-        $(this).toggleClass('strike').fadeOut("fast", function(){
+        $(this).fadeOut("fast", function(){
           $(this).parent().remove();
           if($(".list-group-item").text().length === 0){
               $('#cTitle').html('   Cart is empty!').hide().fadeIn("fast");
