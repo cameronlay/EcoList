@@ -3,14 +3,14 @@
 <head>
 <title>EcoList - Eco List</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <script src = "script.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
 <link rel="stylesheet" href="style.css">
 <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
 <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
@@ -46,10 +46,13 @@
                     <li><a href="../#AboutUs">About Us</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+
+                    <!-- <li id="p" style="display:none;font-size:15px;color:white;padding-top:15px"></li> -->
                     <!-- WILL BE DISAPPEARED WHEN USER ISN'T LOGGED IN -->
-                    <li><a href="#"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Log Out</a></li>
+                    <li><a href="http://localhost/eco-list/ecolistReal/" onclick="logOut()" id="logOut"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Log Out</a></li>
                     <!-- WILL BE CHANGED TO PHP VARIABLE FOR USER NAME -->
-                    <li><a href="../users/"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login/Sign up</a></li>
+                    <li><a href="../users/" id="logIn"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login/Sign up</a></li>
+
                 </ul>
             </div>
         </div>
@@ -156,5 +159,10 @@
             </table>
         </div>
     </footer>
+
+    <!-- Below is the initialisation code for firebase project.-->
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+<script src="../loginscript.js"></script>
+
   </body>
 <html>
