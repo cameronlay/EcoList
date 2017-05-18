@@ -159,6 +159,9 @@ thead tr th {
   margin-top: 80px;
 }
 
+.placeHolderColor::-webkit-input-placeholder {
+    color:red;
+}
 
 
 /*buttons css*/
