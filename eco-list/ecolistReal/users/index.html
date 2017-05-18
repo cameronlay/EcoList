@@ -42,13 +42,11 @@
                     <li><a href="../#AboutUs">About Us</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-
                     <!-- <li id="p" style="display:none;font-size:15px;color:white;padding-top:15px"></li> -->
                     <!-- WILL BE DISAPPEARED WHEN USER ISN'T LOGGED IN -->
                     <li><a href="http://localhost/eco-list/ecolistReal/" onclick="logOut()" id="logOut"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Log Out</a></li>
                     <!-- WILL BE CHANGED TO PHP VARIABLE FOR USER NAME -->
                     <li><a href="../users/" id="logIn"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login/Sign up</a></li>
-
                 </ul>
             </div>
         </div>
@@ -169,30 +167,9 @@
 
 <!-- Below is the initialisation code for firebase project.-->
 <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
-<<<<<<< HEAD
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyC82ZRbf--52RkwFWRCvCBRN7zLSMCAqV8",
-    authDomain: "ecolist-d3e23.firebaseapp.com",
-    databaseURL: "https://ecolist-d3e23.firebaseio.com",
-    projectId: "ecolist-d3e23",
-    storageBucket: "ecolist-d3e23.appspot.com",
-    messagingSenderId: "347349975058"
-  };
-  firebase.initializeApp(config);
-  
-  firebase.auth().onAuthStateChanged( function() {
-		const user = firebase.auth().currentUser;
-			if(user != null) {
-				firebase.database().ref("users/" + user.uid).set({name:user.displayName});
-			} else console.log("not signed in");
-			
-		});
-</script>
-=======
+
 <script src="../loginscript.js"></script>
->>>>>>> Karan-feature
+
 
 <!-- The code below initialise the sign in widget. -->
 <script src="https://cdn.firebase.com/libs/firebaseui/1.0.1/firebaseui.js"></script>
@@ -200,11 +177,9 @@
     <script type="text/javascript">
       // FirebaseUI config.
       var uiConfig = {
-<<<<<<< HEAD
-        signInSuccessUrl: '#',
-=======
+
         signInSuccessUrl: 'http://localhost/eco-list/ecolistReal/',
->>>>>>> Karan-feature
+
         signInOptions: [
           // Leave the lines as is for the providers you want to offer your users.
           firebase.auth.GoogleAuthProvider.PROVIDER_ID
@@ -221,36 +196,6 @@
 		
     </script>
 
-<<<<<<< HEAD
-=======
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
->>>>>>> Karan-feature
 
     <!-- EDMUND, EMAIL LOGIN AND SIGNUP -->
     <script>
