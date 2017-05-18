@@ -159,6 +159,9 @@ thead tr th {
   margin-top: 80px;
 }
 
+.placeHolderColor::-webkit-input-placeholder {
+    color:red;
+}
 
 
 /*buttons css*/
@@ -264,8 +267,8 @@ thead tr th {
 
 #cTitle{
   margin-right: 80px;
-  text-align:center;
-  font-size: 80%;
+  font-size:80%;
+  text-align: center;
 }
 
 .list-group li {
@@ -295,6 +298,8 @@ thead tr th {
 
 .xToRemove {
   font-size: 40%;
+  font-family: List, cursive;
+
 }
 
 
