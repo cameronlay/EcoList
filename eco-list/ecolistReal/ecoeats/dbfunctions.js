@@ -1,24 +1,6 @@
 /**
  * Created by Cameron on 2017-05-18.
  */
-// ADDING INPUTS
-$(document).ready(function() {
-    $("#addStepId").click(function() {
-        $("#addStepId").before(GetInputRecipe());
-    });
-    $("#removeStepId").click(function() {
-        var inputArray = document.getElementsByClassName("inputSteps");
-        inputArray[inputArray.length - 1].remove();
-    });
-    $("#addIngredientId").click(function() {
-        $("#addIngredientId").before(GetIngredientsRecipe());
-    });
-    $("#removeIngredientId").click(function() {
-        var inputArray = document.getElementsByClassName("inputIngredients");
-        inputArray[inputArray.length - 1].remove();
-    })
-});
-
 var listref = null;
 var user = null;
 var itemName = null;
@@ -33,18 +15,27 @@ firebase.auth().onAuthStateChanged(function () {
 });
 
 function updateList() {
-    var currentList = document.getElementsByClassName("form-control");
-    var currentListLength = currentList.length - 1;
+    var recipeDescrip = document.getElementById("CustomRecipeDesc").value;
+    var stepsList = document.getElementsByClassName("inputSteps");
+    var ingredientsList = document.getElementsByClassName("inputIngredients");
+    var stepsListLength = stepsList.length - 1;
+    var ingredientsListLength = ingredientsList.length - 1;
     var dblist = [];
-    listref.once("value").then(snapshot = > {
+    var counterSteps = 0;
+    var counterIngredients = 0;
+    listref.once("value").then(snapshot => {
         if(snapshot.exists() && snapshot.hasChildren()){
         snapshot.forEach(childSnapshot = > {
             dblist[dblist.length] = childSnapshot.key;
     });
+        listref.update({
+            description: recipeDescrip
+        });
+        console.log("ran");
         for (a = 0; a < dblist.length; a++) {
-            for (j = 0; j < currentListLength; j += 2) {
+            for (j = 0; j < stepsListLength; j += 2) {
                 if (j % 2 == 0) {
-                    if (dblist[a] == currentList[j].value) {
+                    if (dblist[a] == stepsList[j].value) {
                         dblist[a] = true;
                     }
                 }
@@ -58,11 +49,37 @@ function updateList() {
         }
     }
 });
-    for (i = 0; i < currentListLength; i += 2) {
+    for (i = 0; i < stepsListLength; i += 2) {
         if (user != null) {
-            if (currentList[i].value != "" && currentList[i].value != null &&
-                currentList[i + 1].value != "" && currentList[i + 1].value != null) {
-                listref.update({[currentList[i].value]: currentList[i + 1].value});
+            if (stepsList[i].value != "" && stepsList[i].value != null) {
+                listref.update({[++counterSteps]: stepsList[i].value});
+                console.log("ran");
+            }
+        }
+    }
+    console.log("saved");
+};
+        for (a = 0; a < dblist.length; a++) {
+            for (j = 0; j < ingredientsListLength; j += 2) {
+                if (j % 2 == 0) {
+                    if (dblist[a] == ingredientsList[j].value) {
+                        dblist[a] = true;
+                    }
+                }
+            }
+        }
+        for (var key of dblist) {
+            console.log(key);
+            if (key !== true) {
+                listref.child(key).remove();
+            }
+        }
+    }
+});
+    for (i = 0; i < ingredientsListLength; i += 2) {
+        if (user != null) {
+            if (ingredientsList[i].value != "" && ingredientsList[i].value != null) {
+                listref.update({[++counterIngredients]: ingredientsList[i].value});
                 console.log("ran");
             }
         }
