@@ -94,7 +94,7 @@
       <div class="panel panel-default">
         <div id="cartContainer">
                <div id="cartTitle">
-                 <h1 class="text-center"><span><p><i id ="bigCartIcon" class="glyphicon glyphicon-shopping-cart"></i><p id="cTitle">Cart is empty!</p></p></span></h1>
+                 <h1 class="text-center"><span><i id ="bigCartIcon" class="glyphicon glyphicon-shopping-cart"></i>&nbsp; <p id="cTitle">Your cart is empty!</p></span></h1>
                 </div>
 
 
@@ -103,7 +103,7 @@
               </div>
                  
               <div id="listContainer">
-                 <ul class="list-group">
+                 <ul class="list-group" data-toggle="tooltip" title="x to remove" data-placement="top">
                  </ul>
 
                  <div id="btnSaveContainer">
@@ -171,50 +171,57 @@
   firebase.auth().onAuthStateChanged( function() {
 		user = firebase.auth().currentUser;
 			if(user != null) {
+				var returnedRows;
 				firebase.database().ref("users/" + user.uid).set({name:user.displayName});
 				listref = firebase.database().ref("shoppinglist/" + user.uid + "/");
 				console.log("logged in");
+				listref.once("value").then(snapshot => {
+					if(snapshot.exists() && snapshot.hasChildren()){
+						snapshot.forEach( childSnapshot => {
+							addRow(childSnapshot.key, childSnapshot.val());
+						});
+						} 
+						else {
+							returnedRows = 0;
+							firebase.database().ref("shoppinglist/").update({[user.uid]: ""});
+							console.log("created user list");
+							};
+							});
 			} else console.log("not signed in");
 		});
-		function updateList() {
-			var currentList = document.getElementsByClassName("form-control");
-			var currentListLength = currentList.length - 1;
-			var dblist = [];
-			listref.once("value").then( snapshot=> {
-				if(snapshot.exists() && snapshot.hasChildren()){
-					snapshot.forEach(childSnapshot => {
-						dblist[dblist.length] = childSnapshot.key;
+		function updateList() {var currentList = document.getElementsByClassName("form-control");
+		var currentListLength = currentList.length - 1;
+		var dblist = [];
+		listref.once("value").then( snapshot=> {
+			if(snapshot.exists() && snapshot.hasChildren()){
+				snapshot.forEach(childSnapshot => {
+					dblist[dblist.length] = childSnapshot.key;
 					});
 					for(a = 0; a < dblist.length; a++){
 						for(j = 0; j < currentListLength; j += 2){
 							if(j % 2 == 0){
 								if(dblist[a] == currentList[j].value){
 									dblist[a] = true;
-								}
-							}
-						}
-					}
-					for(var key of dblist){
-						console.log(key);
-						if(key !== true){
-							listref.child(key).remove();
-						}
-					}
-				}
-				
-				
-			});
-			for(i = 0;i < currentListLength; i += 2){
-				if (user != null){
-					if(currentList[i].value != "" && currentList[i].value !=  null &&
-					currentList[i+1].value != "" && currentList[i+1].value != null){
-						listref.update({[currentList[i].value] : currentList[i+1].value});
-						console.log("ran");
-					}
-				}
-			}
-			console.log("saved");
-		};
+									};
+									};
+									};
+									};
+									for(var key of dblist){if(key !== true){
+										listref.child(key).remove();
+										};
+										};
+										};
+										});
+										for(i = 0;i < currentListLength; i += 2){
+											if (user != null){
+												if(currentList[i].value != "" && currentList[i].value !=  null &&currentList[i+1].value != "" && currentList[i+1].value != null){
+													listref.update({[currentList[i].value] : currentList[i+1].value});
+													console.log("ran");
+													};
+													};
+													};
+													console.log("saved");
+													};
 </script>
   </body>
 <html>

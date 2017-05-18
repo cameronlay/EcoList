@@ -164,16 +164,14 @@ thead tr th {
 
 #bigCartIcon {
   color: #5BC0DE;
-  float: left;
-  margin-left: 20px;
 }
 
 #list-container {
   margin:0 auto;
 }
 
-#cTitle{
-  margin-right: 80px;
+#cartTitle{
+  
 }
 
 .list-group li {
