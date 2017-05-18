@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>EcoList - Donation</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../fonts/font.css">
+    </head>
+    
+    <body onload="widthLessThan768()">
+        <nav class="navbar navbar-inverse navbar-fixed-top indexNavNoBorderRadius indexNavBackground">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                      
+                </button>
+                <a class="navbar-brand" href="../"><img class="indexNavLogo" src="../images/logo.png" alt="Logo"><div class="indexNavLogoText">EcoList</div></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <!-- DROPDOWN MENU -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Apps<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../ecolist/">Eco List</a></li>
+                            <li><a href="../ecoeats/">Eco Eats</a></li>
+                            <li><a href="../donation/">Donation</a></li>
+                        </ul>
+                    </li>
+                    <!-- FINISH DROPDOWN MENU -->
+                    <li><a href="../services/">Services</a></li>
+                    <li><a href="../#AboutUs">About Us</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- WILL BE DISAPPEARED WHEN USER ISN'T LOGGED IN -->
+                    <li><a href="#"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Log Out</a></li>
+                    <!-- WILL BE CHANGED TO PHP VARIABLE FOR USER NAME -->
+                    <li><a href="../users/"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login/Sign up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        
+    
+        <header>
+                <h1>Donate Today</h1>
+        </header>
+        
+        <main>
+            <div class="panel panel-default">
+            <!-- Place holder for content -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae lobortis est. Sed mattis pretium nibh, quis sodales eros elementum ornare. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum elit urna, ornare vel aliquet eget, laoreet non lectus. Pellentesque vulputate ultrices leo eu pharetra. Duis rhoncus arcu enim, et ornare ipsum aliquam id. Aliquam ante magna, pretium in ante blandit, vehicula porttitor felis. Mauris a libero mollis, luctus augue non, tempor turpis. Fusce eget hendrerit leo, vel semper erat. Fusce convallis finibus velit non sollicitudin.</p>
+            <div class="row" id="informationForDonation"> 
+                <!-- Addresses for places -->
+                <div class="col-sm-4" id="sideList">
+                    <p onmouseover="bounceMarker('m')" onmouseout="stopBounce()" class="well well-sm" id="1"><b>Surrey Food bank society</b><br>10732 City Pkwy<br>Surrey, BC V3T 4C7</p>
+                    <p onmouseover="bounceMarker('m1')" onmouseout="stopBounce()" class="well well-sm" ><b>Covenant House</b><br>575 Drake St<br>Vancouver, BC V6B 4K8</p>
+                    <p onmouseover="bounceMarker('m2')" onmouseout="stopBounce()" class="well well-sm" ><b>Langley Food Bank</b><br>5768 203 St<br>Langley, BC V3A 1W3</p>
+                    <p onmouseover="bounceMarker('m3')" onmouseout="stopBounce()" class="well well-sm" ><b>Quest Food Exchange</b><br>7753 Sixth St<br>New Westminster, BC V3L 3C8</p>
+                    <p onmouseover="bounceMarker('m4')" onmouseout="stopBounce()" class="well well-sm" ><b>Quest Outreach Society</b><br>346 E Hastings St<br>Vancouver, BC V6A 1P4</p>
+                    <p onmouseover="bounceMarker('m5')" onmouseout="stopBounce()" class="well well-sm" ><b>Richmond Food Bank Society</b><br>5800 Cedarbridge Way #100<br>Richmond, BC V6X 2A7</p>
+                    <p onmouseover="bounceMarker('m')" onmouseout="stopBounce()" class="well well-sm" ><b>Surrey Food bank society</b><br>10732 City Pkwy<br>Surrey, BC V3T 4C7</p>
+                </div>
+                <div class="col-sm-8" id="googleMap">
+                    <div id="map" style="height:400px;"></div>
+                    <script src="script.js"></script>
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1ypP9TWn_8TSLnbX3PyCCyE9jc_eFS7A&callback=myMap"></script>
+                </div>
+            </div>
+            </div>
+        </main>
+        <footer>
+        <div class="container-fluid textCentered">
+            <table>
+                <tr>
+                    <td><a href="../">Home</a></td>
+                    <td><a href="../ecolist/">Eco List</a></td>
+                    <td><a href="../services/">Affiliated Apps</a></td>
+                    <td><a href="../users/">Login</a></td>
+                </tr>
+                <tr>
+                    <td><a href="../#OurPurpose">Our Purpose</a></td>
+                    <td><a href="../ecoeats/">Eco Eats</a></td>
+                    <td><a href="../#AboutUs">About Us</a></td>
+                    <td><a href="../sitemap/">Site Map</a></td>
+                </tr>
+                <tr>
+                    <td><a href="../#OurApps">About our Apps</a></td>
+                    <td><a href="./">Donation</a></td>
+                    <td><a href="../#AboutProject">About the Project</a></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><br>&copy; Copyright 2017 | EcoList, All Rights Reserved</td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+    </body>
+</html>

@@ -1,0 +1,313 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../images/background2.jpg');
+    font-family: Content, sans-serif;
+}
+
+h1, h2, h3, h4, h5, .nav-tabs, .nav-pills, button, input, textarea {
+    font-family: Title, sans-serif;
+    font-weight: bold;
+}
+
+/*TABS*/
+.nav-tabs {
+    font-size: 1.5em;
+}
+
+/**
+ * DISPLAY NONE AFTER PAGE HAS BEEN LOADED
+ * @Edmund
+ */
+.wholeBody {
+    display: none;
+}
+
+/**
+ * used in recipe page, and javascript in recipe page
+ * @Edmund
+ */
+.displayNone {
+    display: none;
+}
+
+/**
+ * used in recipe page, and javascript in recipe page
+ * @Edmund
+ */
+.displayBlock {
+    display: block;
+}
+
+/**
+ * overrides bootstrap css
+ * @Edmund
+ */
+ul.nav-pills {
+    margin-top: 20px;
+    /*margin-bottom: 170px;*/
+}
+
+/**
+ * make a 1px black border
+ * @Edmund
+ */
+.border {
+    border: 1px solid #000000;
+}
+
+/**
+ * make a 1px black border on the right
+ * @Edmund
+ */
+.borderLeft {
+    border-left: 1px solid #404040;
+}
+
+/**
+ * used in recipe page image
+ * @Edmund
+ */
+.recipeImage {
+    width: 100%;
+}
+
+/**
+ * Loading circle
+ */
+#backgroundRecipe {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    z-index: 9997;
+}
+
+#loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  -webkit-appearance: none;
+  appearance: none;
+  margin-bottom: none;
+  z-index: 9999;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/*LOADING CIRCLE DONE*/
+
+/*HAMBURGER NAV*/
+#GUI {
+    height:100%;
+    width:100%;
+    position:fixed;
+    pointer-events:none;
+    z-index:9998;
+    display: none;
+}
+
+.centered {
+    text-align: center;
+}
+
+.rightAligned {
+    text-align: right;
+}
+
+/*OVERRIDING BOOTSTRAP*/
+.active {
+    pointer-events: none;
+    cursor: default;
+}
+
+/*LITERALLY MARGIN*/
+.h4margin {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.ddmargin {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+}
+
+.ingredientLabel {
+    cursor: pointer;
+}
+
+/*TO USE GLYPHICON FOR CHECKBOX*/
+.ingredientCheckbox {
+    display: none;
+}
+
+/*OVERRIDES GLYPHICON*/
+.glyphicon-check {
+    color: #77dd77;
+    display: none;
+}
+
+.glyphicon-unchecked {
+    color: #404040;
+}
+
+.btn-primary {
+    background-color: #77dd77;
+}
+
+.btn-primary:hover, .btn-primary:active {
+    background-color: #77cc77;
+}
+
+.ingredientCheckbox:checked + .ingredientLabel .glyphicon-unchecked {
+    display: none;
+}
+
+.ingredientCheckbox:checked + .ingredientLabel .glyphicon-check {
+    display: inline;
+}
+
+.displayInline {
+    display: inline;
+}
+/*FINISH OVERRIDING GLYPHICONS*/
+
+.recipetextarea {
+    max-width: 100%;
+    width: 100%;
+    min-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+.noMargin {
+    margin: 0;
+    padding: 0;
+}
+
+.lessPadding {
+    padding: 15px;
+}
+
+/*MAKE NAV BAR RECTANGLE, OVERLAP BOOTSTRAP*/
+.indexNavNoBorderRadius {
+    border-radius: 0;
+}
+
+.indexNavBackground {
+    background-color: #404040;
+    border-color: #404040;
+}
+
+div#myNavbar ul.navbar-nav a:hover {
+    background-color: #505050;
+    color: white;
+}
+
+div#myNavbar ul.navbar-nav a {
+    color: white;
+}
+
+div#myNavbar ul.navbar-nav ul.dropdown-menu a {
+    color: #404040;
+}
+
+div#myNavbar ul.navbar-nav ul.dropdown-menu a:hover {
+    color: #f6f6e8;
+}
+
+.indexNavLogo {
+    height: 90%;
+    display: block;
+    float: left;
+    margin-left: 80px;
+    padding-top: 5px;
+}
+
+.indexNavLogoText {
+    padding: 15px;
+    display: block;
+    float: right;
+    padding-left: 10px;
+    color: white;
+    padding-right: 40px;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.dropdown-menu a {
+    color: #404040;
+}
+
+.textCentered {
+    text-align: center;
+}
+/*END OF NAV BAR*/
+
+/*FOR MOBILE*/
+@media only screen and (max-width: 768px) {
+
+    /*CONCRETE-LOOKING BUTTON*/
+    .nav-tabs {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    /*OVERRDING BOOTSTRAP*/
+    .nav-tabs > li{
+        float: none;
+    }
+
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    /*OVERRIDING BOOTSTRAP*/
+    .active {
+        pointer-events: auto;
+        cursor: wait;
+    }
+
+    /*BORDER NONE*/
+    .borderLeft {
+        border: none;
+    }
+
+    /*NAV BAR*/
+    div#myNavbar ul.navbar-nav ul.dropdown-menu a {
+        color: #f6f6e8;
+    }
+
+    .indexNavLogo {
+        margin-left: 30px;
+    }
+    /*END OF NAV BAR*/
+
+}

@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+	font-family: Content, sans-serif;
+}
+
+h1, h2, h3, h4, h5, button, input, textarea {
+	font-family: Title, sans-serif;
+	font-weight: bold;
+}
+
+h2 a, ul li a {
+    font-family: sans-serif;
+}
+
+.siteMapBlock li {
+	vertical-align: top;
+	padding: 2px 0 0 20px;
+	background: #f3f3f3 url("sitemap-node.gif") no-repeat 0 0;
+}
+
+.siteMapBlock li.alt {
+	background: #fff url("sitemap-node.gif") no-repeat 0 0;
+}
+
+ul li {
+	list-style: none;
+	list-style-image: none;
+}
+
+ul li a, h2 a {
+    text-decoration: none;
+    color: #404040;
+}
+
+ul li a:hover, h2 a:hover {
+    color: #f6f6e8;
+    background-color: #404040;
+    text-decoration: none;
+}
+
+.container {
+	margin-top: 80px;
+}
+
+/*MAKE NAV BAR RECTANGLE, OVERLAP BOOTSTRAP*/
+.indexNavNoBorderRadius {
+    border-radius: 0;
+}
+
+.indexNavBackground {
+    background-color: #404040;
+    border-color: #404040;
+}
+
+div#myNavbar ul.navbar-nav a:hover {
+    background-color: #505050;
+    color: #f6f6e8;
+}
+
+div#myNavbar ul.navbar-nav a {
+    color: #e6e6d8;
+}
+
+div#myNavbar ul.navbar-nav ul.dropdown-menu a {
+    color: #404040;
+}
+
+div#myNavbar ul.navbar-nav ul.dropdown-menu a:hover {
+    color: #f6f6e8;
+}
+
+.indexNavLogo {
+    height: 90%;
+    display: block;
+    float: left;
+    margin-left: 80px;
+    padding-top: 5px;
+}
+
+.indexNavLogoText {
+    padding: 15px;
+    display: block;
+    float: right;
+    padding-left: 10px;
+    color: #e6e6d8;
+    padding-right: 40px;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.dropdown-menu a {
+    color: #404040;
+}
+
+.textCentered {
+    text-align: center;
+}
+
+.navbar-toggle {
+    float: left;
+}
+/*END OF NAV BAR*/
+
+/*FOOTER START*/
+footer div.container-fluid {
+    display: block;
+    width: 100%;
+    background-color: #404040;
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer table {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer table a, footer table a:link, footer table a:hover, footer table a:visited, footer table a:active, footer table td {
+    color: white;
+    text-decoration: none;
+}
+
+footer table tr {
+    width: 100%;
+}
+
+footer tr td{
+    font-size: 0.8em;
+}
+
+footer tr td a:hover {
+    background-color: #f6f6e8;
+    color: #404040;
+}
+/*FOOTER FINISH*/
+
+@media screen and (max-width: 768px) {
+
+    /*NAV BAR*/
+    div#myNavbar ul.navbar-nav ul.dropdown-menu a {
+        color: #f6f6e8;
+    }
+
+    .indexNavLogo {
+        margin-left: 10px;
+    }
+    /*END OF NAV BAR*/
+
+    /*FOOTER*/
+    footer {
+        display: none;
+    }
+    /*END OF FOOTER*/
+}
