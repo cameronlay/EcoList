@@ -15,22 +15,22 @@ function $$(className) {
     return element;
 }
 
-/*Form validation and warning functions for the register form*/
-// function testUsername(){
-    // var x = $("SignupUsername").value;
-    // var patt = /^(?:\S\w*_*)$/i;
-    // var res = patt.test(x);
-       // will return true if input is valid
-    // return res;
-// }
+// Form validation and warning functions for the register form
+function testUsername(){
+    var x = $("SignupUsername").value;
+    var patt = /^(?:\S\w*_*)$/i;
+    var res = patt.test(x);
+       will return true if input is valid
+    return res;
+}
 
-// function warnUsername() {
-    // if(!testUsername()){
-        // $("ErrUsername").style.visibility = 'visible';
-    // } else {
-        // $("ErrUsername").style.visibility = 'hidden';
-    // }
-// }
+function warnUsername() {
+    if(!testUsername()){
+        $("ErrUsername").style.visibility = 'visible';
+    } else {
+        $("ErrUsername").style.visibility = 'hidden';
+    }
+}
 
 function testPassword(){
     var x = $("SignupPassword").value.length;
@@ -87,11 +87,11 @@ function formValidate() {
         }   else {
             $("ErrEmail").style.visibility = 'hidden';
         }
-        // if (!testUsername()) {
-            // $("ErrUsername").style.visibility = 'visible';
-        // }   else {
-            // $("ErrUsername").style.visibility = 'hidden';
-        // }
+        if (!testUsername()) {
+            $("ErrUsername").style.visibility = 'visible';
+        }   else {
+            $("ErrUsername").style.visibility = 'hidden';
+        }
         if (!testPassword()) {
             $("ErrPassword").style.visibility = 'visible';
         }   else {
