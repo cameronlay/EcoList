@@ -13,9 +13,7 @@ function updateList() {
     var currentListLength = currentList.length - 1;
     var dblist = [];
     listref.once("value").then(snapshot = > {
-        if(snapshot.exists() && snapshot.hasChildren()
-)
-    {
+        if(snapshot.exists() && snapshot.hasChildren()){
         snapshot.forEach(childSnapshot = > {
             dblist[dblist.length] = childSnapshot.key;
     });
