@@ -55,7 +55,7 @@ $(function () {
     
     //shows button when added to the cart list
     
-      $('body').on('click', '.list', function () {
+    $('body').on('click', '.list', function () {
             $(".list-group li").find(":button").show();
         });
     
