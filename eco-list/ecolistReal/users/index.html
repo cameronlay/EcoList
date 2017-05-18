@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <link rel="stylesheet" href="../fonts/font.css">
-     
+    
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top indexNavNoBorderRadius indexNavBackground">
@@ -42,10 +42,11 @@
                     <li><a href="../#AboutUs">About Us</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+                    <!-- <li id="p" style="display:none;font-size:15px;color:white;padding-top:15px"></li> -->
                     <!-- WILL BE DISAPPEARED WHEN USER ISN'T LOGGED IN -->
-                    <li><a href="#"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Log Out</a></li>
+                    <li><a href="http://localhost/eco-list/ecolistReal/" onclick="logOut()" id="logOut"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Log Out</a></li>
                     <!-- WILL BE CHANGED TO PHP VARIABLE FOR USER NAME -->
-                    <li><a href="../users/"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login/Sign up</a></li>
+                    <li><a href="../users/" id="logIn"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login/Sign up</a></li>
                 </ul>
             </div>
         </div>
@@ -103,12 +104,12 @@
                         <tr>
                             <td id="ErrEmail">Please enter a valid email</td>
                         </tr>
-                        <tr>
-                            <td><input type="text" id="SignupUsername" placeholder="Username" name="username" onblur="warnUsername()" class="form-control" required/></td>
-                        </tr>
-                        <tr>
-                            <td id="ErrUsername">Please enter a valid username</td>
-                        </tr>
+                        <!-- <tr> -->
+                            <!-- <td><input type="text" id="SignupUsername" placeholder="Username" name="username" onblur="warnUsername()" class="form-control" required/></td> -->
+                        <!-- </tr> -->
+                        <!-- <tr> -->
+                            <!-- <td id="ErrUsername">Please enter a valid username</td> -->
+                        <!-- </tr> -->
                         <tr>
                             <td><input type="password" placeholder="Password" onblur="warnPassword()" id="SignupPassword" name="password" class="form-control" required/></td>
                         </tr>
@@ -166,31 +167,45 @@
 
 <!-- Below is the initialisation code for firebase project.-->
 <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyC82ZRbf--52RkwFWRCvCBRN7zLSMCAqV8",
-    authDomain: "ecolist-d3e23.firebaseapp.com",
-    databaseURL: "https://ecolist-d3e23.firebaseio.com",
-    projectId: "ecolist-d3e23",
-    storageBucket: "ecolist-d3e23.appspot.com",
-    messagingSenderId: "347349975058"
-  };
-  firebase.initializeApp(config);
-  
-  firebase.auth().onAuthStateChanged( function() {
-		const user = firebase.auth().currentUser;
-			if(user != null) {
-				firebase.database().ref("users/" + user.uid).set({name:user.displayName});
-			} else console.log("not signed in");
-			
-        });
-</script>
+
+
+
+<script src="../loginscript.js"></script>
+
+
+
+<!-- The code below initialise the sign in widget. -->
+<script src="https://cdn.firebase.com/libs/firebaseui/1.0.1/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/1.0.1/firebaseui.css" />
+    <script type="text/javascript">
+      // FirebaseUI config.
+      var uiConfig = {
+
+
+        signInSuccessUrl: 'http://localhost/eco-list/ecolistReal/',
+
+        signInOptions: [
+          // Leave the lines as is for the providers you want to offer your users.
+          firebase.auth.GoogleAuthProvider.PROVIDER_ID
+          //firebase.auth.EmailAuthProvider.PROVIDER_ID
+        ],
+        // Terms of service url.
+        tosUrl: '<your-tos-url>'
+      };
+	  
+      // Initialize the FirebaseUI Widget using Firebase.
+      var ui = new firebaseui.auth.AuthUI(firebase.auth());
+      // The start method will wait until the DOM is loaded.
+      ui.start('#firebaseui-auth-container', uiConfig);
+		
+    </script>
+
+
 
     <!-- EDMUND, EMAIL LOGIN AND SIGNUP -->
     <script>
         var emailSignUpEmail = document.getElementById('Email');
-        var emailSignUpName = document.getElementById('SignupUsername');
+        // <!-- var emailSignUpName = document.getElementById('SignupUsername'); -->
         var emailSignUpPassword = document.getElementById('SignupPassword');
         var emailLogInEmail = document.getElementById('LoginUsername');
         var emailLogInPassword = document.getElementById('Password');
@@ -215,22 +230,8 @@
             var auth = firebase.auth();
             // SIGN IN
             var promise = auth.createUserWithEmailAndPassword(email, password);
-            promise = auth.signInWithEmailAndPassword(email, password);
-
-            var user = firebase.auth().currentUser;
-            writeUserData(user.uid, emailSignUpName, emailSignUpEmail);
-
-
             promise.catch(e => console.log(e.message));
         });
-
-            // WRITE USER INFO IN DATABASE
-            function writeUserData(userId, name, email) {
-                firebase.database().ref('users/' + userId).set({
-                    username: name,
-                    email: email,
-                });
-            }
 
         // ADD A REALTIME LISTENER
         firebase.auth().onAuthStateChanged(firebaseUser => {
@@ -243,28 +244,3 @@
 
 
     </script>
-
-    
-<!-- The code below initialise the sign in widget. -->
-<script src="https://cdn.firebase.com/libs/firebaseui/1.0.1/firebaseui.js"></script>
-    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/1.0.1/firebaseui.css" />
-    <script type="text/javascript">
-      // FirebaseUI config.
-      var uiConfig = {
-        signInSuccessUrl: '#',
-        signInOptions: [
-          // Leave the lines as is for the providers you want to offer your users.
-          firebase.auth.GoogleAuthProvider.PROVIDER_ID
-          //firebase.auth.EmailAuthProvider.PROVIDER_ID
-        ],
-        // Terms of service url.
-        tosUrl: '<your-tos-url>'
-      };
-      
-      // Initialize the FirebaseUI Widget using Firebase.
-      var ui = new firebaseui.auth.AuthUI(firebase.auth());
-      // The start method will wait until the DOM is loaded.
-      ui.start('#firebaseui-auth-container', uiConfig);
-        
-    </script>
-
