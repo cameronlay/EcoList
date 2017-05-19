@@ -6,7 +6,6 @@
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <script src = "script.js"></script>
 <script src="../navScript.js"></script>
 <script src="../functionHiding.js" id="SelfDestruct"></script>
@@ -167,26 +166,42 @@
   };
   firebase.initializeApp(config);
   var listref = null;
+  var cartref = null;
   var user = null;
-  firebase.auth().onAuthStateChanged( function() {
+  var primedLists = false;
+  firebase.auth().onAuthStateChanged( () => {
 		user = firebase.auth().currentUser;
 			if(user != null) {
-				var returnedRows;
 				firebase.database().ref("users/" + user.uid).set({name:user.displayName});
 				listref = firebase.database().ref("shoppinglist/" + user.uid + "/");
+				cartref = firebase.database().ref("shoppingcart/" + user.uid + "/");
 				console.log("logged in");
+				if(!primedLists){
 				listref.once("value").then(snapshot => {
 					if(snapshot.exists() && snapshot.hasChildren()){
 						snapshot.forEach( childSnapshot => {
 							addRow(childSnapshot.key, childSnapshot.val());
 						});
-						} 
+						}
 						else {
-							returnedRows = 0;
-							firebase.database().ref("shoppinglist/").update({[user.uid]: ""});
-							console.log("created user list");
+							firebase.database().ref("shoppinglist/").update({[user.uid]: "empty"});
+							console.log("created "+ user.displayName + "'s ecolist");
 							};
-							});
+				});
+				cartref.once("value").then(snapshot => {
+					if(snapshot.exists() && snapshot.hasChildren()){
+						snapshot.forEach( childSnapshot => {
+							addToCart(childSnapshot.key,childSnapshot.val());
+						});
+						$('#cTitle').html('Cart').hide().fadeIn("fast");
+					}
+					else {
+						firebase.database().ref("shoppingcart/").update({[user.uid]: "empty"});
+						console.log("created "+ user.displayName + "'s shoppingcart");
+					};
+				});
+				primedLists = true;
+				};
 			} else console.log("not signed in");
 		});
 		function updateList() {var currentList = document.getElementsByClassName("form-control");
@@ -199,10 +214,11 @@
 					});
 					for(a = 0; a < dblist.length; a++){
 						for(j = 0; j < currentListLength; j += 2){
-							if(j % 2 == 0){
+								if(currentList[j].value == undefined || currentList[j].value == null){
+									currentList[j].value = "";
+								};
 								if(dblist[a] == currentList[j].value){
 									dblist[a] = true;
-									};
 									};
 									};
 									};
@@ -214,9 +230,14 @@
 										});
 										for(i = 0;i < currentListLength; i += 2){
 											if (user != null){
-												if(currentList[i].value != "" && currentList[i].value !=  null &&currentList[i+1].value != "" && currentList[i+1].value != null){
-													listref.update({[currentList[i].value] : currentList[i+1].value});
-													console.log("ran");
+												if(currentList[i].value != "" && currentList[i].value !=  null){
+													var qnty = null;
+													if(currentList[i+1].value == undefined || currentList[i+1].value == null || currentList[i+1].value == ""){
+														qnty = 0;
+													}else {
+														qnty = parseInt(currentList[i+1].value);
+													}
+													listref.update({[currentList[i].value] : qnty});
 													};
 													};
 													};
