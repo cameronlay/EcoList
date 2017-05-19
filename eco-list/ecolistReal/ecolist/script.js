@@ -49,7 +49,7 @@ $(function () {
                  var patt = /easter\s?egg/ig;
                  var patt2 = /turkey\s?stuffing/ig;
                  var patt3 = /halloween\s?candy/ig;
-                 var patt4 = /christmas\s?decorations/ig;
+                 var patt4 = /christmas\s?lights/ig;
                  if(patt.test(toAdd)) {
                   $('body').css('background-image', 'url(../images/easteregg.jpg)');
                  }
