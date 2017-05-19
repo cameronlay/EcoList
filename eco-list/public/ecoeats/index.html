@@ -16,107 +16,59 @@
      data-toggle="tooltip" title="Optional"
 -->
     <head>
-        <title>EcoList - Eco Eats</title>
+        <title>EcoList - EcoEats</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Sunguk (Edmund) Ham">
-        <!-- OUTSOURCING -->
-        <script src="../functionHiding.js" id="SelfDestruct"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
-<<<<<<< HEAD:ecolistReal/ecoeats/index.html
-=======
         <!-- OUTSOURCING -->
         <link rel="stylesheet" href="../footer.css"/>
         <link rel="stylesheet" href="../navButton.css"/>
         <link rel="stylesheet" href="../navMenu.css">
         <script src="../navScript.js"></script>
->>>>>>> Develop:templateRecipes/index.php
         <link rel="stylesheet" href="../fonts/font.css">
         <script src="../functionHiding.js" id="SelfDestruct"></script>
         <!-- JQUERY INSTEAD OF AJAX -->
-        <script>
-            $(window).on("load", function() {
-                $("#backgroundRecipe").fadeOut("fast");
-                $(".wholeBody").fadeIn("slow");
-                $("#GUI").fadeIn("slow");
-            });
-            // INFO OF INGREDIENTS
-            $(document).ready(function(){
-                $('[data-toggle="tooltip"]').tooltip(); 
-            });
-
-            var app = angular.module("mealPlan", []);
-        </script>
     </head>
-<<<<<<< HEAD:ecolistReal/ecoeats/index.html
-    <body onload="widthLessThan768()" ng-app="mealPlan">
-
-    <!-- SPINNING LOADER -->
-=======
     <body onload="widthLessThan768();setBurger(true);">
     <div id="GUI">
-        <?php
-            include('../navMenu.html');
-            include('../navButton.html');
-        ?>
+        <div id="Hamburger">
+            <span class="menuTop">Menu</span>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../services/index.html">Our Services</a>
+                    <ul class="dropDownHamburger">
+                        <li><div><a href="../ecolist/index.html">EcoList</a></div></li>
+                        <li><div><a href="../ecoeats/index.html">EcoEats</a></div></li>
+                        <li><div><a href="../donation/index.html">Donations</a></div></li>
+                    </ul>
+                </li>
+                <li><a href="../users/index.html">Login</a></li>
+                <li><a href="../index.html#AboutUs">About Us</a></li>
+            </ul>
+        </div>
+        <div id="BurgerButton" onclick="setBurger(false,true)">
+            <img src="../images/transparent.png" class="square"/>
+            <img src="../images/burger.png" class="innerButtonBGR"/>
+        </div>
     </div>
->>>>>>> Develop:templateRecipes/index.php
     <div id="backgroundRecipe">
         <div id="loader"></div>
-        <span class="centered">Loading Recipes...<div onload="recipeTimerInformation()" id="recipeInformation">You can save $700 per year not wasting food!</div></span>
+        <span>Loading Recipes...<br>Some Information</span>
     </div>
-    <!-- FINISH SPINNING LOADER -->
-    <div class="wholeBody">
-    <!-- HAMBURGER -->
-    <nav class="navbar navbar-inverse navbar-fixed-top indexNavNoBorderRadius indexNavBackground">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>                      
-                </button>
-                <a class="navbar-brand" href="../"><img class="indexNavLogo" src="../images/logo.png" alt="Logo"><div class="indexNavLogoText">EcoList</div></a>
-                <div id="t" style="font-size:15px;color:#e6e6d8;padding-top:15px;position:absolute;right:20px"></div>
-            </div>
-<<<<<<< HEAD:ecolistReal/ecoeats/index.html
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <!-- DROPDOWN MENU -->
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Apps<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../ecolist/">Eco List</a></li>
-                            <li><a href="../ecoeats/">Eco Eats</a></li>
-                            <li><a href="../donation/">Donation</a></li>
-                        </ul>
-                    </li>
-                    <!-- FINISH DROPDOWN MENU -->
-                    <li><a href="../services/">Services</a></li>
-                    <li><a href="../#AboutUs">About Us</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li id="p" style="display:none;font-size:15px;color:#e6e6d8;padding-top:15px"></li>
-                    <!-- WILL BE DISAPPEARED WHEN USER ISN'T LOGGED IN -->
-                    <li><a href="./" onclick="logOut()" id="logOut"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Log Out</a></li>
-                    <!-- WILL BE CHANGED TO PHP VARIABLE FOR USER NAME -->
-                    <li><a href="../users/" id="logIn"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login/Sign up</a></li>
-                </ul>
-            </div>
+    <section class="wholeBody">
+        <div class="col-md-2">
         </div>
-    </nav>
-        <main class="container-fluid">
-            <h1 class="noMargin h1Special">EcoEats</h1>
-=======
->>>>>>> Develop:templateRecipes/index.php
+        <main class="col-md-8">
+            <div class="row">
+                <div>
+                    <h1>EcoEats</h1>
+                </div>
+            </div>
             <!-- TABS -->
             <div class="panel panel-default">
             <ul class="nav nav-tabs" id="navTabs">
@@ -127,181 +79,6 @@
                 <li id="proteinRich" onclick="TabClicked('proteinRich', 'proteinList1', 'proteinList', 'proteinListContent', 'proteinListContent1')"><a href="javascript:void(0);">Protein Rich</a></li>
                 <li id="cultural" onclick="TabClicked('cultural', 'culturalList1', 'culturalList', 'culturalListContent', 'culturalListContent1')"><a href="javascript:void(0);">Cultural</a></li>
                 <li id="user" onclick="TabClicked('user', 'userList1', 'userList', 'userListContent', 'userListContent1')"><a href="javascript:void(0);">Create your Own</a></li>
-                    <!-- CONVERTER START -->
-                        <span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Converter</button></span>
-                            <div class="modal fade" id="myModal" role="dialog">
-                                <div class="modal-dialog">
-                        
-                                    <!-- Modal content-->
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">Measurement Converter</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" ng-model="firstNumber" placeholder="#" required>
-                                                        <select ng-model="firstMeasure" class="form-control">
-                                                            <option value="" selected disabled>
-                                                            <option value="oz">Ounce
-                                                            <option value="g">Gram
-                                                            <option value="lb">Pound
-                                                            <option value="tbsp">Table Spoon
-                                                            <option value="tsp">Tea Spoon
-                                                            <option value="ml">ML
-                                                        </select>
-                                                        <div class="displayInline">to</div>
-                                                            <div ng-switch="firstMeasure" class="displayInline">
-                                                            <!-- 1 OUNCE = 28.3495 GRAM -->
-                                                            <!-- 1 OUNCE = 0.0625 POUND -->
-                                                            <!-- 1 OUNCE = 29.5735 ML -->
-                                                            <!-- 1 GRAM = 0.035274 OUNCE -->
-                                                            <!-- 1 GRAM = 0.00220462 POUND -->
-                                                            <!-- 1 POUND = 16 OUNCE -->
-                                                            <!-- 1 POUND = 453.592 GRAM -->
-                                                            <!-- 1 TBSP = 3 TSP -->
-                                                            <!-- 1 TBSP = 14.7868 ML -->
-                                                            <!-- 1 TSP = 0.333333 TBSP -->
-                                                            <!-- 1 TSP = 4.92892 ML -->
-                                                            <!-- 1 ML = 0.033814 OZ -->
-                                                            <!-- 1 ML = 0.067628 TBSP -->
-                                                            <!-- 1 ML = 0.202884 ML -->
-                                                            <div ng-switch-when="oz" class="displayInline">
-                                                                <select ng-model="secondMeasure" class="form-control">
-                                                                    <option value="" selected disabled>
-                                                                    <option value="oz">Ounce
-                                                                    <option value="g">Gram
-                                                                    <option value="lb">Pound
-                                                                    <option value="ml">ML
-                                                                </select>
-                                                                <div ng-switch="secondMeasure" class="displayInline">
-                                                                    <div ng-switch-when="oz">
-                                                                        <input type="text" class="form-control" value="{{firstNumber * 1 | number:2}} OZ" disabled>
-                                                                    </div>
-                                                                    <div ng-switch-when="g">
-                                                                        <input type="text" class="form-control" value="{{firstNumber * 28.3495 | number:2}} G" disabled>
-                                                                    </div>
-                                                                    <div ng-switch-when="lb">
-                                                                        <input type="text" class="form-control" value="{{firstNumber * 0.0625 | number:2}} LB" disabled>
-                                                                    </div>
-                                                                    <div ng-switch-when="ml">
-                                                                        <input type="text" class="form-control" value="{{firstNumber * 29.5735 | number:2}} ML" disabled>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div ng-switch-when="g" class="displayInline">
-                                                                <select ng-model="secondMeasure" class="form-control">
-                                                                    <option value="" selected disabled>
-                                                                    <option value="oz">Ounce
-                                                                    <option value="g">Gram
-                                                                    <option value="lb">Pound
-                                                                </select>
-                                                                <div ng-switch="secondMeasure" class="displayInline">
-                                                                    <div ng-switch-when="oz">
-                                                                        <input type="text" class="form-control" value="{{firstNumber * 0.035274 | number:2}} OZ" disabled>
-                                                                    </div>
-                                                                    <div ng-switch-when="g">
-                                                                        <input type="text" class="form-control" value="{{firstNumber * 1 | number:2}} G" disabled>
-                                                                    </div>
-                                                                    <div ng-switch-when="lb">
-                                                                        <input type="text" class="form-control" value="{{firstNumber * 0.00220462 | number:2}} LB" disabled>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div ng-switch-when="lb" class="displayInline">
-                                                                <select ng-model="secondMeasure" class="form-control">
-                                                                    <option value="" selected disabled>
-                                                                    <option value="oz">Ounce
-                                                                    <option value="g">Gram
-                                                                    <option value="lb">Pound
-                                                                </select>
-                                                                <div ng-switch="secondMeasure" class="displayInline">
-                                                                    <div ng-switch-when="oz">
-                                                                        <input type="text" class="form-control" value="{{firstNumber * 16 | number:2}} OZ" disabled>
-                                                                    </div>
-                                                                    <div ng-switch-when="g">
-                                                                        <input type="text" class="form-control" value="{{firstNumber * 453.592 | number:2}} G" disabled>
-                                                                    </div>
-                                                                    <div ng-switch-when="lb">
-                                                                        <input type="text" class="form-control" value="{{firstNumber * 1 | number:2}} LB" disabled>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div ng-switch-when="tbsp" class="displayInline">
-                                                                <select ng-model="secondMeasure" class="form-control">
-                                                                    <option value="" selected disabled>
-                                                                    <option value="tbsp">Table Spoon
-                                                                    <option value="tsp">Tea Spoon
-                                                                    <option value="ml">ML
-                                                                </select>
-                                                                <div ng-switch="secondMeasure" class="displayInline">
-                                                                    <div ng-switch-when="tbsp">
-                                                                        <input type="text" class="form-control" value="{{firstNumber * 1 | number:2}} Table Spoon" disabled>
-                                                                    </div>
-                                                                    <div ng-switch-when="tsp">
-                                                                        <input type="text" class="form-control" value="{{firstNumber * 3 | number:2}} Tea Spoon" disabled>
-                                                                    </div>
-                                                                    <div ng-switch-when="ml">
-                                                                        <input type="text" class="form-control" value="{{firstNumber * 14.7868 | number:2}} ML" disabled>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div ng-switch-when="tsp" class="displayInline">
-                                                                <select ng-model="secondMeasure" class="form-control">
-                                                                    <option value="" selected disabled>
-                                                                    <option value="tbsp">Table Spoon
-                                                                    <option value="tsp">Tea Spoon
-                                                                    <option value="ml">ML
-                                                                </select>
-                                                                <div ng-switch="secondMeasure" class="displayInline">
-                                                                    <div ng-switch-when="tbsp">
-                                                                        <input type="text" class="form-control" value="{{firstNumber * 0.333333 | number:2}} Table Spoon" disabled>
-                                                                    </div>
-                                                                    <div ng-switch-when="tsp">
-                                                                        <input type="text" class="form-control" value="{{firstNumber * 1 | number:2}} Tea Spoon" disabled>
-                                                                    </div>
-                                                                    <div ng-switch-when="ml">
-                                                                        <input type="text" class="form-control" value="{{firstNumber * 4.92892 | number:2}} ML" disabled>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div ng-switch-when="ml" class="displayInline">
-                                                                <select ng-model="secondMeasure" class="form-control">
-                                                                    <option value="" selected disabled>
-                                                                    <option value="oz">Ounce
-                                                                    <option value="tbsp">Table Spoon
-                                                                    <option value="tsp">Tea Spoon
-                                                                    <option value="ml">ML
-                                                                </select>
-                                                                <div ng-switch="secondMeasure" class="displayInline">
-                                                                    <div ng-switch-when="oz">
-                                                                        <input type="text" class="form-control" value="{{firstNumber * 0.033814 | number:2}} OZ" disabled>
-                                                                    </div>
-                                                                    <div ng-switch-when="tbsp">
-                                                                        <input type="text" class="form-control" value="{{firstNumber * 0.067628 | number:2}} Table Spoon" disabled>
-                                                                    </div>
-                                                                    <div ng-switch-when="tsp">
-                                                                        <input type="text" class="form-control" value="{{firstNumber * 0.202884 | number:2}} Tea Spoon" disabled>
-                                                                    </div>
-                                                                    <div ng-switch-when="ml">
-                                                                        <input type="text" class="form-control" value="{{firstNumber * 1 | number:2}} ML" disabled>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-
-
-                                                <!-- END OF MODAL BODY -->
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        </div>
-                                        <!-- END OF MODAL -->
             </ul>
             <!--Classic List-->
             <div class="col-md-3 displayNone displayBlock" id="classicList">
@@ -412,8 +189,7 @@
                             <br>
                             <table class="table table-condensed">
                                 <tr>
-                                    <th colspan="3" class="centered">Ingredients
-                                    </th>
+                                    <th colspan="3" class="centered">Ingredients</th>
                                 </tr>
                                 <tr>
                                     <td>
@@ -424,8 +200,8 @@
                                         <input type="checkbox" id="1classic4" class="ingredientCheckbox"><label for="1classic4" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Herb Sprig</label><br>
                                         <input type="checkbox" id="1classic5" class="ingredientCheckbox"><label for="1classic5" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
                                         <input type="checkbox" id="1classic6" class="ingredientCheckbox"><label for="1classic6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Ground Black Pepper</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
+                                        <button type="button" class="resetBtn btn btn-primary">Reset Checkboxes</button>
                                         </form>
                                     </td>
                                 </tr>
@@ -469,8 +245,8 @@
                                         <input type="checkbox" id="2classic8" class="ingredientCheckbox"><label for="2classic8" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 cup Panko</label><br>
                                         <input type="checkbox" id="2classic9" class="ingredientCheckbox"><label for="2classic9" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
                                         <input type="checkbox" id="2classic10" class="ingredientCheckbox"><label for="2classic10" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Ground Black Pepper</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
+                                        <button type="button" class="resetBtn btn btn-primary">Reset Checkboxes</button>
                                         </form>
                                     </td>
                                 </tr>
@@ -512,8 +288,7 @@
                                         <input type="checkbox" id="3classic8" class="ingredientCheckbox"><label for="3classic8" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp; 1 Chopped Tomatoes</label><br>
                                         <input type="checkbox" id="3classic9" class="ingredientCheckbox"><label for="3classic9" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
                                         <input type="checkbox" id="3classic10" class="ingredientCheckbox"><label for="3classic10" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Ground Black Pepper</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -554,8 +329,7 @@
                                         <input type="checkbox" id="4classic7" class="ingredientCheckbox"><label for="4classic7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1/3 cup Parmesan Cheese</label><br>
                                         <input type="checkbox" id="4classic8" class="ingredientCheckbox"><label for="4classic8" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp; Chopped Parsley</label><br>
                                         <input type="checkbox" id="4classic9" class="ingredientCheckbox"><label for="4classic9" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Ground Black Pepper</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -593,8 +367,7 @@
                                         <input type="checkbox" id="5classic3" class="ingredientCheckbox"><label for="5classic3" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 tsp Paprika</label><br>
                                         <input type="checkbox" id="5classic4" class="ingredientCheckbox"><label for="5classic4" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
                                         <input type="checkbox" id="5classic5" class="ingredientCheckbox"><label for="5classic5" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Ground Black Pepper</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -627,8 +400,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstClassic6" class="ingredientCheckbox"><label for="firstClassic6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;ingredient1</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -661,8 +433,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstClassic7" class="ingredientCheckbox"><label for="firstClassic7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;ingredient1</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -713,8 +484,7 @@
                                         <input type="checkbox" id="1Vegetarian9" class="ingredientCheckbox"><label for="1Vegetarian9" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 Boiled Sweet Potato</label><br>
                                         <input type="checkbox" id="1Vegetarian10" class="ingredientCheckbox"><label for="1Vegetarian10" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Coriander Leaves and Lemon Slices</label><br>
                                         <input type="checkbox" id="1Vegetarian11" class="ingredientCheckbox"><label for="1Vegetarian11" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -755,8 +525,7 @@
                                         <input type="checkbox" id="2Vegetarian7" class="ingredientCheckbox"><label for="2Vegetarian7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 tbsp Ginger-garlic Paste</label><br>
                                         <input type="checkbox" id="2Vegetarian8" class="ingredientCheckbox"><label for="2Vegetarian8" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;3 Pureed Tomatoes</label><br>
                                         <input type="checkbox" id="2Vegetarian9" class="ingredientCheckbox"><label for="2Vegetarian9" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 tbsp Finely Chopped Fresh coriander leaves</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -806,8 +575,7 @@
                                         <input type="checkbox" id="3Vegetarian12" class="ingredientCheckbox"><label for="3Vegetarian12" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 1/2 Shredded Colby-Monterey Jack Cheese</label><br>
                                         <input type="checkbox" id="3Vegetarian13" class="ingredientCheckbox"><label for="3Vegetarian13" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
                                         <input type="checkbox" id="3Vegetarian14" class="ingredientCheckbox"><label for="3Vegetarian14" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Ground Black Pepper</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -843,8 +611,7 @@
                                         <input type="checkbox" id="4Vegetarian3" class="ingredientCheckbox"><label for="4Vegetarian3" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;3 oz Greek Yoghurt</label><br>
                                         <input type="checkbox" id="4Vegetarian4" class="ingredientCheckbox"><label for="4Vegetarian4" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Olive Oil</label><br>
                                         <input type="checkbox" id="4Vegetarian5" class="ingredientCheckbox"><label for="4Vegetarian5" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 oz raisins</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -885,8 +652,7 @@
                                         <input type="checkbox" id="5Vegetarian6" class="ingredientCheckbox"><label for="5Vegetarian6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;5 oz Fettuccine</label><br>
                                         <input type="checkbox" id="5Vegetarian7" class="ingredientCheckbox"><label for="5Vegetarian7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
                                         <input type="checkbox" id="5Vegetarian8" class="ingredientCheckbox"><label for="5Vegetarian8" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Ground Black Pepper</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -932,8 +698,7 @@
                                         <input type="checkbox" id="6Vegetarian9" class="ingredientCheckbox"><label for="6Vegetarian9" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1/2 tbsp Soy Sauce</label><br>
                                         <input type="checkbox" id="6Vegetarian10" class="ingredientCheckbox"><label for="6Vegetarian10" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
                                         <input type="checkbox" id="6Vegetarian11" class="ingredientCheckbox"><label for="6Vegetarian11" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Ground Black Pepper</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -972,12 +737,7 @@
                                         <input type="checkbox" id="7Vegetarian7" class="ingredientCheckbox"><label for="7Vegetarian7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 can diced tomatoes </label><br>
                                         <input type="checkbox" id="7Vegetarian8" class="ingredientCheckbox"><label for="7Vegetarian7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;6 cups cooked black beans, rinsed and drained (or about 4 cans)</label><br>
                                         <input type="checkbox" id="7Vegetarian9" class="ingredientCheckbox"><label for="7Vegetarian8" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 small butternut squash (3 pounds), peeled, seeded and cubed</label><br>
-<<<<<<< HEAD:ecolistReal/ecoeats/index.html
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
-=======
                                         <input type="submit" class="btn btn-info" value="Add Items to List">
->>>>>>> Develop:templateRecipes/index.php
                                         </form>
                                     </td>
                                 </tr>
@@ -1024,8 +784,7 @@
                                         <input type="checkbox" id="1Keto6" class="ingredientCheckbox"><label for="1Keto6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1/8 Lemon Juice</label><br>
                                         <input type="checkbox" id="1Keto7" class="ingredientCheckbox"><label for="1Keto7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 3/4 tbsp Mayonnaise</label><br>
                                         <input type="checkbox" id="1Keto8" class="ingredientCheckbox"><label for="1Keto8" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 3/4 tbsp Olive Oil</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -1064,8 +823,7 @@
                                         <input type="checkbox" id="2Keto4" class="ingredientCheckbox"><label for="2Keto4" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1/6 Lemon</label><br>
                                         <input type="checkbox" id="2Keto5" class="ingredientCheckbox"><label for="2Keto5" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
                                         <input type="checkbox" id="2Keto6" class="ingredientCheckbox"><label for="2Keto6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Ground Black Pepper</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -1100,8 +858,7 @@
                                         <input type="checkbox" id="3Keto3" class="ingredientCheckbox"><label for="3Keto3" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1/6 Lemon</label><br>
                                         <input type="checkbox" id="3Keto4" class="ingredientCheckbox"><label for="3Keto4" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
                                         <input type="checkbox" id="3Keto5" class="ingredientCheckbox"><label for="3Keto5" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Ground Black Pepper</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -1153,8 +910,7 @@
                                         <input type="checkbox" id="4Keto12" class="ingredientCheckbox"><label for="4Keto12" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1/2 cup Shredded Mozzarella</label><br>
                                         <input type="checkbox" id="4Keto13" class="ingredientCheckbox"><label for="4Keto13" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
                                         <input type="checkbox" id="4Keto14" class="ingredientCheckbox"><label for="4Keto14" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Ground Black Pepper</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -1190,8 +946,7 @@
                                         <input type="checkbox" id="5Keto3" class="ingredientCheckbox"><label for="5Keto3" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 tbsp Cinnamon</label><br>
                                         <input type="checkbox" id="5Keto4" class="ingredientCheckbox"><label for="5Keto4" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 1/2 tsp Vanilla Extract</label><br>
                                         <input type="checkbox" id="5Keto5" class="ingredientCheckbox"><label for="5Keto5" class="ingredientLabel" data-toggle="tooltip" title="Or just Lettuce"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -1228,8 +983,7 @@
                                         <input type="checkbox" id="6Keto3" class="ingredientCheckbox"><label for="6Keto3" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1/2 cup Shredded Parmesan Cheese</label><br>
                                         <input type="checkbox" id="6Keto4" class="ingredientCheckbox"><label for="6Keto4" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 tsp Herb Seasoning</label><br>
                                         <input type="checkbox" id="6Keto5" class="ingredientCheckbox"><label for="6Keto5" class="ingredientLabel" data-toggle="tooltip" title="Or just Lettuce"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 slices White Cheddar Cheese</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -1262,8 +1016,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstKeto7" class="ingredientCheckbox"><label for="firstKeto7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;ingredient1</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -1315,8 +1068,7 @@
                                         <input type="checkbox" id="1paleo10" class="ingredientCheckbox"><label for="1paleo10" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Minced Dill</label><br>
                                         <input type="checkbox" id="1paleo11" class="ingredientCheckbox"><label for="1paleo11" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
                                         <input type="checkbox" id="1paleo12" class="ingredientCheckbox"><label for="1paleo12" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Ground Black Pepper</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -1360,8 +1112,7 @@
                                         <input type="checkbox" id="2paleo8" class="ingredientCheckbox"><label for="2paleo8" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 tbsp Coconut Oil</label><br>
                                         <input type="checkbox" id="2paleo9" class="ingredientCheckbox"><label for="2paleo9" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
                                         <input type="checkbox" id="2paleo10" class="ingredientCheckbox"><label for="2paleo10" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Ground Black Pepper</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -1402,8 +1153,7 @@
                                         <input type="checkbox" id="3paleo8" class="ingredientCheckbox"><label for="3paleo8" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 tbsp Cumin</label><br>
                                         <input type="checkbox" id="3paleo9" class="ingredientCheckbox"><label for="3paleo9" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
                                         <input type="checkbox" id="3paleo10" class="ingredientCheckbox"><label for="3paleo10" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Ground Black Pepper</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -1442,8 +1192,7 @@
                                         <input type="checkbox" id="4paleo6" class="ingredientCheckbox"><label for="4paleo6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 tsp Garlic Powder</label><br>
                                         <input type="checkbox" id="4paleo7" class="ingredientCheckbox"><label for="4paleo7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
                                         <input type="checkbox" id="4paleo8" class="ingredientCheckbox"><label for="4paleo8" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Ground Black Pepper</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -1476,8 +1225,7 @@
                                         <input type="checkbox" id="5paleo3" class="ingredientCheckbox"><label for="5paleo3" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1/2 Avocado</label><br>
                                         <input type="checkbox" id="5paleo4" class="ingredientCheckbox"><label for="5paleo4" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 Peeled Beet</label><br>
                                         <input type="checkbox" id="5paleo5" class="ingredientCheckbox"><label for="5paleo5" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 cup Almond Milk</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -1514,8 +1262,7 @@
                                         <input type="checkbox" id="6paleo3" class="ingredientCheckbox"><label for="6paleo3" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 limes</label><br>
                                         <input type="checkbox" id="6paleo4" class="ingredientCheckbox"><label for="6paleo4" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1/2 tsp Chipotle Powder</label><br>
                                         <input type="checkbox" id="6paleo5" class="ingredientCheckbox"><label for="6paleo5" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -1557,12 +1304,7 @@
                                         <input type="checkbox" id="7Paleo9" class="ingredientCheckbox"><label for="7Paleo9" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;4 lbs chicken pieces (drumsticks, thighs, or breasts)</label><br>
                                         <input type="checkbox" id="7Paleo10" class="ingredientCheckbox"><label for="7Paleo10" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 tsp garlic powder</label><br>
                                         <input type="checkbox" id="7Paleo11" class="ingredientCheckbox"><label for="7Paleo11" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 tsp onion powder</label><br>
-<<<<<<< HEAD:ecolistReal/ecoeats/index.html
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
-=======
                                         <input type="submit" class="btn btn-info" value="Add Items to List">
->>>>>>> Develop:templateRecipes/index.php
                                         </form>
                                     </td>
                                 </tr>
@@ -1612,8 +1354,7 @@
                                         <input type="checkbox" id="1protein9" class="ingredientCheckbox"><label for="1protein9" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 cups Macaroni or Penne</label><br>
                                         <input type="checkbox" id="1protein10" class="ingredientCheckbox"><label for="1protein10" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
                                         <input type="checkbox" id="1protein11" class="ingredientCheckbox"><label for="1protein11" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Ground Black Pepper</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -1662,8 +1403,7 @@
                                         <input type="checkbox" id="2protein15" class="ingredientCheckbox"><label for="2protein15" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1/4 tbsp Finely Minced Parsley, Dill or Chives</label><br>
                                         <input type="checkbox" id="2protein16" class="ingredientCheckbox"><label for="2protein16" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
                                         <input type="checkbox" id="2protein17" class="ingredientCheckbox"><label for="2protein17" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Ground Black Pepper</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -1704,8 +1444,7 @@
                                         <input type="checkbox" id="3protein7" class="ingredientCheckbox"><label for="3protein7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1/2 tsp Mustard Seeds</label><br>
                                         <input type="checkbox" id="3protein8" class="ingredientCheckbox"><label for="3protein8" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1/2 tsp Garam Masala</label><br>
                                         <input type="checkbox" id="3protein9" class="ingredientCheckbox"><label for="3protein9" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -1739,8 +1478,7 @@
                                         <input type="checkbox" id="4protein4" class="ingredientCheckbox"><label for="4protein4" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 Sliced Banana</label><br>
                                         <input type="checkbox" id="4protein5" class="ingredientCheckbox"><label for="4protein5" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 Handfuls Berries</label><br>
                                         <input type="checkbox" id="4protein6" class="ingredientCheckbox"><label for="4protein6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;7 oz Vanilla Yogurt</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -1771,25 +1509,6 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="5Protein1" class="ingredientCheckbox"><label for="5Protein1" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;4 fresh thyme sprigs, plus leaves for serving</label><br>
-<<<<<<< HEAD:ecolistReal/ecoeats/index.html
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
-                                        <input type="checkbox" id="5Protein2" class="ingredientCheckbox"><label for="5Protein2" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 teaspoon caraway seeds</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
-                                        <input type="checkbox" id="5Protein3" class="ingredientCheckbox"><label for="5Protein3" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 3-pound piece corned beef brisket (with spice packet, if included)</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
-                                        <input type="checkbox" id="5Protein4" class="ingredientCheckbox"><label for="5Protein4" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 pound carrots, cut in half crosswise (and in half lengthwise if thick)</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
-                                        <input type="checkbox" id="5Protein5" class="ingredientCheckbox"><label for="5Protein5" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;½ small green cabbage, cut into thin wedges</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
-                                        <input type="checkbox" id="5Protein6" class="ingredientCheckbox"><label for="5Protein6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 pound small red potatoes</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
-=======
                                         <input type="submit" class="btn btn-info" value="Add Items to List">
                                         <input type="checkbox" id="5Protein2" class="ingredientCheckbox"><label for="5Protein2" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 teaspoon caraway seeds</label><br>
                                         <input type="submit" class="btn btn-info" value="Add Items to List">
@@ -1801,7 +1520,6 @@
                                         <input type="submit" class="btn btn-info" value="Add Items to List">
                                         <input type="checkbox" id="5Protein6" class="ingredientCheckbox"><label for="5Protein6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 pound small red potatoes</label><br>
                                         <input type="submit" class="btn btn-info" value="Add Items to List">
->>>>>>> Develop:templateRecipes/index.php
                                         <input type="checkbox" id="5Protein7" class="ingredientCheckbox"><label for="5Protein7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Dijon mustard, for serving</label><br>
                                         </form>
                                     </td>
@@ -1846,12 +1564,7 @@
                                         <input type="checkbox" id="6Protein10" class="ingredientCheckbox"><label for="6Protein10" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;100g feta cheese, crumbled</label><br>
                                         <input type="checkbox" id="6Protein11" class="ingredientCheckbox"><label for="6Protein11" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;small bunch mint</label><br>
                                         <input type="checkbox" id="6Protein12" class="ingredientCheckbox"><label for="6Protein12" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;juice and zest ½ lemon</label><br>
-<<<<<<< HEAD:ecolistReal/ecoeats/index.html
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
-=======
                                         <input type="submit" class="btn btn-info" value="Add Items to List">
->>>>>>> Develop:templateRecipes/index.php
                                         </form>
                                     </td>
                                 </tr>
@@ -1884,12 +1597,7 @@
                                         <input type="checkbox" id="7Protein2" class="ingredientCheckbox"><label for="7Protein2" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;juice of 1 lime</label><br>
                                         <input type="checkbox" id="7Protein3" class="ingredientCheckbox"><label for="7Protein3" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;4 140g skinless salmon fillet, cut into large chunks</label><br>
                                         <input type="checkbox" id="7Protein4" class="ingredientCheckbox"><label for="7Protein4" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;oil, for drizzling</label><br>
-<<<<<<< HEAD:ecolistReal/ecoeats/index.html
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
-=======
                                         <input type="submit" class="btn btn-info" value="Add Items to List">
->>>>>>> Develop:templateRecipes/index.php
                                         </form>
                                     </td>
                                 </tr>
@@ -1944,8 +1652,7 @@
                                         <input type="checkbox" id="1Cultural15" class="ingredientCheckbox"><label for="1Cultural15" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 tbsp Chopped Fresh Cilantro</label><br>
                                         <input type="checkbox" id="1Cultural16" class="ingredientCheckbox"><label for="1Cultural16" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
                                         <input type="checkbox" id="1Cultural17" class="ingredientCheckbox"><label for="1Cultural17" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Ground Black Pepper</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -1987,12 +1694,11 @@
                                         <input type="checkbox" id="2Cultural8" class="ingredientCheckbox"><label for="2Cultural8" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1/4 tsp Ground Cumin</label><br>
                                         <input type="checkbox" id="2Cultural9" class="ingredientCheckbox"><label for="2Cultural9" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1/4 tsp Cayenne Pepper</label><br>
                                         <input type="checkbox" id="2Cultural0" class="ingredientCheckbox"><label for="2Cultural0" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 1/2 cups Tomato Sauce</label><br>
-                                        <input type="checkbox" id="2Cultural11" class="ingredientCheckbox"><label for="2Cultural11" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 cups Cream</label><br>
-                                        <input type="checkbox" id="2Cultural12" class="ingredientCheckbox"><label for="2Cultural12" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;lime and cilantro, for garnish</label><br>
-                                        <input type="checkbox" id="2Cultural13" class="ingredientCheckbox"><label for="2Cultural13" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
-                                        <input type="checkbox" id="2Cultural14" class="ingredientCheckbox"><label for="2Cultural14" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Ground Black Pepper</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="checkbox" id="2Cultural1" class="ingredientCheckbox"><label for="2Cultural1" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 cups Cream</label><br>
+                                        <input type="checkbox" id="2Cultural2" class="ingredientCheckbox"><label for="2Cultural2" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;lime and cilantro, for garnish</label><br>
+                                        <input type="checkbox" id="2Cultural3" class="ingredientCheckbox"><label for="2Cultural3" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
+                                        <input type="checkbox" id="2Cultural4" class="ingredientCheckbox"><label for="2Cultural4" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Ground Black Pepper</label><br>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -2030,8 +1736,7 @@
                                         <input type="checkbox" id="3Cultural5" class="ingredientCheckbox"><label for="3Cultural5" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;3 oz Green Peas</label><br>
                                         <input type="checkbox" id="3Cultural6" class="ingredientCheckbox"><label for="3Cultural6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;5 Beaten Eggs</label><br>
                                         <input type="checkbox" id="3Cultural7" class="ingredientCheckbox"><label for="3Cultural7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 tsp Soy Sauce</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -2071,8 +1776,7 @@
                                         <input type="checkbox" id="4Cultural6" class="ingredientCheckbox"><label for="4Cultural6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 tbsp Oyster Sauce</label><br>
                                         <input type="checkbox" id="4Cultural7" class="ingredientCheckbox"><label for="4Cultural7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;4 tsp Oil</label><br>
                                         <input type="checkbox" id="4Cultural8" class="ingredientCheckbox"><label for="4Cultural8" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -2109,8 +1813,7 @@
                                         <input type="checkbox" id="5Cultural3" class="ingredientCheckbox"><label for="5Cultural3" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1/4 cup Melted Butter</label><br>
                                         <input type="checkbox" id="5Cultural4" class="ingredientCheckbox"><label for="5Cultural4" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 1/2 cups Water</label><br>
                                         <input type="checkbox" id="5Cultural5" class="ingredientCheckbox"><label for="5Cultural5" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 tsp Salt</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -2142,8 +1845,7 @@
                                         <input type="checkbox" id="6Cultural1" class="ingredientCheckbox"><label for="6Cultural1" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 fillet Salmon</label><br>
                                         <input type="checkbox" id="6Cultural2" class="ingredientCheckbox"><label for="6Cultural2" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Soy Sauce</label><br>
                                         <input type="checkbox" id="6Cultural3" class="ingredientCheckbox"><label for="6Cultural3" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -2182,8 +1884,7 @@
                                         <input type="checkbox" id="7Cultural4" class="ingredientCheckbox"><label for="7Cultural4" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 tsp Rice Vinegar</label><br>
                                         <input type="checkbox" id="7Cultural5" class="ingredientCheckbox"><label for="7Cultural5" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 tsp Cornstarch</label><br>
                                         <input type="checkbox" id="7Cultural6" class="ingredientCheckbox"><label for="7Cultural6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 Chopped Green Onion</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -2222,8 +1923,7 @@
                                         <input type="checkbox" id="8Cultural8" class="ingredientCheckbox"><label for="8Cultural8" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1/2 Chopped Cabbage</label><br>
                                         <input type="checkbox" id="8Cultural9" class="ingredientCheckbox"><label for="8Cultural9" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 chopped Carrots</label><br>
                                         <input type="checkbox" id="8Cultural10" class="ingredientCheckbox"><label for="8Cultural10" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;8 oz Soba Noodles</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -2256,8 +1956,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstCultural9" class="ingredientCheckbox"><label for="firstCultural9" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;ingredient1</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -2290,9 +1989,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstCultural10" class="ingredientCheckbox"><label for="firstCultural10" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;ingredient1</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -2332,8 +2029,7 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="firstUser1" class="ingredientCheckbox"><label for="firstUser1" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;ingredient1</label><br>
-                                        <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
-                                        <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
+                                        <input type="submit" class="btn btn-info" value="Add Items to List">
                                         </form>
                                     </td>
                                 </tr>
@@ -2343,15 +2039,15 @@
                 </div>
                 <!-- NEED TO ADD NAME FOR EACH INPUT!!!!! -->
                 <div class="row displayNone" id="userListContentCreate">
-                    <form onsubmit="updateList()" method="post">
+                    <form action="" method="post">
                     <div class="col-md-8 borderLeft">
-                        <h2><input type="text" class="form-control" id="CustomRecipeName" placeholder="Recipe Name" required></h2>
+                        <h2><input type="text" class="form-control" placeholder="Recipe Name" required></h2>
                         <div class="col-md-12">
-                            <textarea class="recipetextarea form-control" id="CustomRecipeDesc" placeholder="Short Recipe Description" rows="8"></textarea>
+                            <textarea class="recipetextarea form-control" placeholder="Short Recipe Description" rows="8"></textarea>
                                 <input class="recipetextarea form-control inputSteps" type="text" placeholder="Enter the simple step" required>
                                 <input class="recipetextarea form-control inputSteps" type="text" placeholder="Enter the simple step" required>
                                 <input class="recipetextarea form-control inputSteps" type="text" placeholder="Enter the simple step" required>
-                                <button type="button" id="addStepId" class="btn btn-success"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;&nbsp;Add Step</button>
+                                <button type="button" id="addStepId" class="btn btn-primary"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;&nbsp;Add Step</button>
                                 <button type="button" id="removeStepId" class="btn btn-danger remove"><i class="glyphicon glyphicon-remove-sign"></i>&nbsp;&nbsp;Delete Step</button>
                             <br><br>
                             <table class="table table-condensed">
@@ -2363,12 +2059,12 @@
                                         <input class="recipetextarea form-control inputIngredients" type="text" placeholder="Enter the ingredient" required>
                                         <input class="recipetextarea form-control inputIngredients" type="text" placeholder="Enter the ingredient" required>
                                         <input class="recipetextarea form-control inputIngredients" type="text" placeholder="Enter the ingredient" required>
-                                        <button type="button" id="addIngredientId" class="btn btn-success"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;&nbsp;Add Ingredient</button>
+                                        <button type="button" id="addIngredientId" class="btn btn-primary"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp;&nbsp;Add Ingredient</button>
                                         <button type="button" id="removeIngredientId" class="btn btn-danger remove"><i class="glyphicon glyphicon-remove-sign"></i>&nbsp;&nbsp;Delete Ingredient</button>
                                     </td>
                                 </tr>
                             </table>
-                                        <input type="submit" class="btn btn-info" value="Save" onclick="updateList()">
+                                        <input type="submit" class="btn btn-info" value="Save">
                         </div>
                     </div>
                     </form>
@@ -2378,82 +2074,10 @@
 
             </div>
         </main>
-<<<<<<< HEAD:ecolistReal/ecoeats/index.html
-    </div>
-    <footer>
-        <div class="container-fluid textCentered">
-            <table>
-                <tr>
-                    <td><a href="../">Home</a></td>
-                    <td><a href="../ecolist/">Eco List</a></td>
-                    <td><a href="../services/">Affiliated Apps</a></td>
-                    <td><a href="../users/">Login</a></td>
-                </tr>
-                <tr>
-                    <td><a href="../#OurPurpose">Our Purpose</a></td>
-                    <td><a href="./">Eco Eats</a></td>
-                    <td><a href="../#AboutUs">About Us</a></td>
-                    <td><a href="../sitemap/">Site Map</a></td>
-                </tr>
-                <tr>
-                    <td><a href="../#OurApps">About our Apps</a></td>
-                    <td><a href="../donation/">Donation</a></td>
-                    <td><a href="../#AboutProject">About the Project</a></td>
-                </tr>
-                <tr>
-                    <td colspan="4"><br>&copy; Copyright 2017 | EcoList, All Rights Reserved</td>
-                </tr>
-            </table>
-        </div>
-    </footer>
-
-        <!-- Below is the initialisation code for firebase project.-->
-    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
-    <script src="../loginscript.js"></script>
-    <script src="dbfunctions.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- EDMUND, GET INGREDIENTS FROM PRE-DEFINED RECIPES AND ADD TO SHOPPING LIST -->
-<script>
-    $(document).ready(function() {
-        $('input.saveBtn').click(function() {
-
-            // GET FIREBASE REFERENCE
-            var fbRefList = firebase.database().ref("shoppinglist/" + user.uid);//.set({name:user.displayName});
-
-            // GET CHECKBOXES WHICH IS SIBLINGS OF SAVE BUTTON
-            // CURRENTLY, IT'S AN ARRAY WITH 400+ ELEMENTS
-            var arrayOfSiblings = $(this).siblings('.ingredientCheckbox');
-            var trueArrayOfSiblings = undefined;
-
-            // FOR LOOP FIRST
-            // IF CHECKBOXES ARE TRUE ORGANIZE ITEMS USING NAME AND QUANTITY
-            // NAME OF CHECKBOXES WILL BE #.###NAME
-            for (var i = 0; i < arrayOfSiblings.length; i++) {
-                if (arrayOfSiblings[i] == true) {
-                    trueArrayOfSiblings[i] = arrayOfSiblings[i];
-                }
-            }
-            
-
-            // IF SUCCESS TO ORGANIZE ITEMS, SEND TO FIREBASE REF
-
-        })
-    })
-</script>
-
-=======
     </section>
+
+
+
     <!--<div class="home-footer mobileContentless">
             <div class="footerconstraint">
                 <div class="bottomleftcolumn">
@@ -2487,6 +2111,30 @@
                 <p>&copy; Copyright 2017 | EcoList, All Rights Reserved </p>
             </div>
         </div>-->
->>>>>>> Develop:templateRecipes/index.php
+
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyC82ZRbf--52RkwFWRCvCBRN7zLSMCAqV8",
+            authDomain: "ecolist-d3e23.firebaseapp.com",
+            databaseURL: "https://ecolist-d3e23.firebaseio.com",
+            projectId: "ecolist-d3e23",
+            storageBucket: "ecolist-d3e23.appspot.com",
+            messagingSenderId: "347349975058"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <script>
+        $(window).on("load", function() {
+            $("#backgroundRecipe").fadeOut("fast");
+            $(".wholeBody").fadeIn("slow");
+        })
+        // INFO OF INGREDIENTS
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        })
+    </script>
     </body>
 </html>

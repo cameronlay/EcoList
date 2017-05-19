@@ -15,12 +15,12 @@ function $$(className) {
     return element;
 }
 
-/*Form validation and warning functions for the register form*/
+// Form validation and warning functions for the register form
 function testUsername(){
     var x = $("SignupUsername").value;
-    var patt = /^(?:\S\w*_*)$/i;
+    var patt = /^\w*\s?\w*$/i;
     var res = patt.test(x);
-//        will return true if input is valid
+      // will return true if input is valid
     return res;
 }
 
@@ -130,4 +130,4 @@ function windowResize(){
 }
 
 /*Runs the previous function on window resize*/
-window.onresize = function() { windowResize()};
+window.onload = function() { windowResize()};
