@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EcoList - Eco List</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../fonts/font.css">
+
+</head>
+
+<!--The burger navigation in the top left of the page-->
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top indexNavNoBorderRadius indexNavBackground">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                      
+                </button>
+                <a class="navbar-brand" href="../"><img class="indexNavLogo" src="../images/logo.png" alt="Logo"><div class="indexNavLogoText">EcoList</div></a>
+                <div id="t" style="font-size:15px;color:#e6e6d8;padding-top:15px;position:absolute;right:20px"></div>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <!-- DROPDOWN MENU -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Apps<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../ecolist/">Eco List</a></li>
+                            <li><a href="../ecoeats/">Eco Eats</a></li>
+                            <li><a href="../donation/">Donation</a></li>
+                        </ul>
+                    </li>
+                    <!-- FINISH DROPDOWN MENU -->
+                    <li><a href="../services/">Services</a></li>
+                    <li><a href="../#AboutUs">About Us</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li id="p" style="display:none;font-size:15px;color:#e6e6d8;padding-top:15px"></li>
+                    <!-- WILL BE DISAPPEARED WHEN USER ISN'T LOGGED IN -->
+                    <li><a href="../" onclick="logOut()" id="logOut"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Log Out</a></li>
+                    <!-- WILL BE CHANGED TO PHP VARIABLE FOR USER NAME -->
+                    <li><a href="../users/" id="logIn"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login/Sign up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!--Title of the page-->
+<p>&nbsp;</p>
+<h1 class="text-center ecolistTitle">My EcoList</h1>
+<p>&nbsp;</p>
+
+  <section class="container">
+
+<!--Buttons at the top of the table-->
+
+    <div id="btnAddContainer">
+      <button id="btnAdd" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp; Add Item&nbsp;</button>
+    </div>
+
+    <div id="btnCartContainer">
+      <button id="btnCart" type="button" class="btn btn-info"><i class="glyphicon glyphicon-shopping-cart"></i>&nbsp; View Cart&nbsp;</button>
+    </div>
+
+<!--The table/shopping list main component-->
+
+    <div class="TableWrapper">
+      <div class="table table-responsive" id="TableOne">
+        <table class="table table-responsive table-striped table-bordered">
+          <thead>
+      	     <tr>
+          	    <th class="checkBoxTableHead">Cart</th>
+               	<th class="nameTableHead">Name</th>
+              	<th class="smallTableHead"><span id="quantity">Quantity</span><span id="qty">Qty</span></th>
+              	<th class="smallTableHead"><span id="delete">Delete</span><span id="del">Del</span></th>
+              </tr>
+          </thead>
+
+          <tbody id="TextBoxContainer">
+          <!--new rows appear here-->
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <th colspan="4">
+                  <button id="btnRemove" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-minus-sign"></i>&nbsp; Remove All Items&nbsp;</button>
+              </th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <!--The container for the cart list-->
+      <div class="panel panel-default">
+        <div id="cartContainer">
+               <div id="cartTitle">
+                <h1 class="text-center"><span><p><i id ="bigCartIcon" class="glyphicon glyphicon-shopping-cart"></i><p id="cTitle">Cart is empty!</p></p></span></h1>
+                </div>
+
+
+              <div id="removeWarning">
+               <p>double tap to remove</p>
+              </div>
+                 
+              <div id="listContainer">
+                 <ul class="list-group" data-toggle="tooltip" title="x to remove" data-placement="top">
+                 </ul>
+
+                 <div id="btnSaveContainer">
+                   <button id="btnSave" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-ok-circle"></i>&nbsp; Save Cart&nbsp;</button>
+                 </div>
+
+                 <div id="btnClearContainer">
+                   <button id="btnClear" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-minus-sign"></i>&nbsp; Clear Cart&nbsp;</button>
+                </div>
+
+              </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<footer>
+        <div class="container-fluid textCentered">
+            <table>
+                <tr>
+                    <td><a href="../">Home</a></td>
+                    <td><a href="./">Eco List</a></td>
+                    <td><a href="../services/">Affiliated Apps</a></td>
+                    <td><a href="../users/">Login</a></td>
+                </tr>
+                <tr>
+                    <td><a href="../#OurPurpose">Our Purpose</a></td>
+                    <td><a href="../ecoeats/">Eco Eats</a></td>
+                    <td><a href="../#AboutUs">About Us</a></td>
+                    <td><a href="../sitemap/">Site Map</a></td>
+                </tr>
+                <tr>
+                    <td><a href="../#OurApps">About our Apps</a></td>
+                    <td><a href="../donation/">Donation</a></td>
+                    <td><a href="../#AboutProject">About the Project</a></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><br>&copy; Copyright 2017 | EcoList, All Rights Reserved</td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+
+    <!-- Below is the initialisation code for firebase project.-->
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+<script src="../loginscript.js"></script>
+<script> // Initialize Firebase
+var config = {
+    apiKey: "AIzaSyDbbQhEgMs6GJhDRccVTWk5ibUNgzGhE2s",
+    authDomain: "comp2910-9d392.firebaseapp.com",
+    databaseURL: "https://comp2910-9d392.firebaseio.com",
+    projectId: "comp2910-9d392",
+    storageBucket: "comp2910-9d392.appspot.com",
+    messagingSenderId: "758365219906"
+};
+firebase.initializeApp(config);
+var listref = null;
+var cartref = null;
+var user = null;
+var primedLists = false;
+firebase.auth().onAuthStateChanged( () => {
+    user = firebase.auth().currentUser;
+if(user != null) {
+    firebase.database().ref("users/" + user.uid).set({name:user.displayName});
+    listref = firebase.database().ref("shoppinglist/" + user.uid + "/");
+    cartref = firebase.database().ref("shoppingcart/" + user.uid + "/");
+    console.log("logged in");
+    if(!primedLists){
+        listref.once("value").then(snapshot => {
+            if(snapshot.exists() && snapshot.hasChildren()){
+            snapshot.forEach( childSnapshot => {
+                addRow(childSnapshot.key, childSnapshot.val());
+        });
+        }
+    else {
+            firebase.database().ref("shoppinglist/").update({[user.uid]: "empty"});
+            console.log("created "+ user.displayName + "'s ecolist");
+        };
+    });
+        cartref.once("value").then(snapshot => {
+            if(snapshot.exists() && snapshot.hasChildren()){
+            snapshot.forEach( childSnapshot => {
+                addToCart(childSnapshot.key,childSnapshot.val());
+        });
+            $('#cTitle').html('Cart').hide().fadeIn("fast");
+        }
+    else {
+            firebase.database().ref("shoppingcart/").update({[user.uid]: "empty"});
+            console.log("created "+ user.displayName + "'s shoppingcart");
+        };
+    });
+        primedLists = true;
+    };
+} else console.log("not signed in");
+});
+function updateList() {var currentList = document.getElementsByClassName("form-control");
+    var currentListLength = currentList.length - 1;
+    var dblist = [];
+    listref.once("value").then( snapshot=> {
+        if(snapshot.exists() && snapshot.hasChildren()){
+        snapshot.forEach(childSnapshot => {
+            dblist[dblist.length] = childSnapshot.key;
+    });
+        for(a = 0; a < dblist.length; a++){
+            for(j = 0; j < currentListLength; j += 2){
+                if(currentList[j].value == undefined || currentList[j].value == null){
+                    currentList[j].value = "";
+                };
+                if(dblist[a] == currentList[j].value){
+                    dblist[a] = true;
+                };
+            };
+        };
+        for(var key of dblist){if(key !== true){
+            listref.child(key).remove();
+        };
+        };
+    };
+});
+    for(i = 0;i < currentListLength; i += 2){
+        if (user != null){
+            if(currentList[i].value != "" && currentList[i].value !=  null){
+                var qnty = null;
+                if(currentList[i+1].value == undefined || currentList[i+1].value == null || currentList[i+1].value == ""){
+                    qnty = 0;
+                }else {
+                    qnty = parseInt(currentList[i+1].value);
+                }
+                listref.update({[currentList[i].value] : qnty});
+            };
+        };
+    };
+    console.log("saved");
+};
+</script>
+
+<script>
+    var listref = null;
+    var cartref = null;
+    var user = null;
+    var primedLists = false;
+    firebase.auth().onAuthStateChanged( () => {
+        user = firebase.auth().currentUser;
+    if(user != null) {
+        firebase.database().ref("users/" + user.uid).set({name:user.displayName});
+        listref = firebase.database().ref("shoppinglist/" + user.uid + "/");
+        cartref = firebase.database().ref("shoppingcart/" + user.uid + "/");
+        console.log("logged in");
+        if(!primedLists){
+            listref.once("value").then(snapshot => {
+                if(snapshot.exists() && snapshot.hasChildren()){
+                snapshot.forEach( childSnapshot => {
+                    addRow(childSnapshot.key, childSnapshot.val());
+            });
+            }
+        else {
+                firebase.database().ref("shoppinglist/").update({[user.uid]: "empty"});
+                console.log("created "+ user.displayName + "'s ecolist");
+            };
+        });
+            cartref.once("value").then(snapshot => {
+                if(snapshot.exists() && snapshot.hasChildren()){
+                snapshot.forEach( childSnapshot => {
+                    addToCart(childSnapshot.key,childSnapshot.val());
+            });
+                $('#cTitle').html('Cart').hide().fadeIn("fast");
+            }
+        else {
+                firebase.database().ref("shoppingcart/").update({[user.uid]: "empty"});
+                console.log("created "+ user.displayName + "'s shoppingcart");
+            };
+        });
+            primedLists = true;
+        };
+    } else console.log("not signed in");
+    });
+    function updateList() {var currentList = document.getElementsByClassName("form-control");
+        var currentListLength = currentList.length - 1;
+        var dblist = [];
+        listref.once("value").then( snapshot=> {
+            if(snapshot.exists() && snapshot.hasChildren()){
+            snapshot.forEach(childSnapshot => {
+                dblist[dblist.length] = childSnapshot.key;
+        });
+            for(a = 0; a < dblist.length; a++){
+                for(j = 0; j < currentListLength; j += 2){
+                    if(currentList[j].value == undefined || currentList[j].value == null){
+                        currentList[j].value = "";
+                    };
+                    if(dblist[a] == currentList[j].value){
+                        dblist[a] = true;
+                    };
+                };
+            };
+            for(var key of dblist){if(key !== true){
+                listref.child(key).remove();
+            };
+            };
+        };
+    });
+        for(i = 0;i < currentListLength; i += 2){
+            if (user != null){
+                if(currentList[i].value != "" && currentList[i].value !=  null){
+                    var qnty = null;
+                    if(currentList[i+1].value == undefined || currentList[i+1].value == null || currentList[i+1].value == ""){
+                        qnty = 0;
+                    }else {
+                        qnty = parseInt(currentList[i+1].value);
+                    }
+                    listref.update({[currentList[i].value] : qnty});
+                };
+            };
+        };
+        console.log("saved");
+    };
+</script>
+<script src = "script.js"></script>
+
+  </body>
+<html>
