@@ -273,19 +273,19 @@ function TabClicked(id, id2, list, contentBlock, content) {
 $(document).ready(function() {
     $("#addStepId").click(function() {
         $("#addStepId").before(GetInputRecipe());
-    })
+    });
     $("#removeStepId").click(function() {
         var inputArray = document.getElementsByClassName("inputSteps");
         inputArray[inputArray.length - 1].remove();
-    })
+    });
     $("#addIngredientId").click(function() {
         $("#addIngredientId").before(GetIngredientsRecipe());
-    })
+    });
     $("#removeIngredientId").click(function() {
         var inputArray = document.getElementsByClassName("inputIngredients");
         inputArray[inputArray.length - 1].remove();
     })
-})
+});
 
 // NEED TO ADD NAME FOR SERVER
 function GetInputRecipe() {

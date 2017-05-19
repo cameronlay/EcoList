@@ -54,8 +54,8 @@ $(function () {
                   $('body').css('background-image', 'url(../images/easteregg.jpg)');
                  }
                  else if(patt2.test(toAdd)){
-                     $('body').css('background-image', 'url(../images/thanksgiving.png)');
-                     $('.ecolistTitle').css('color', 'yellow');
+                     $('body').css('background-image', 'url(../images/turkey.jpg)');
+                     $('.ecolistTitle').css('color', 'black');
                  }else if(patt3.test(toAdd)){
                      $('body').css('background-image', 'url(../images/halloween.png)');
                      $('.ecolistTitle').css('color', 'white');
