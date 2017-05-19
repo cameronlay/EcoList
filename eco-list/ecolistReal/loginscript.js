@@ -42,6 +42,6 @@ if(user && winSize > 786) {
     document.getElementById("p").innerHTML = "Welcome, " + user.displayName;
 } else {
     document.getElementById("p").style.display = "none";
-    document.getElementById("t").innerHTML = "Welcome, " + user.displayName;
+    document.getElementById("t").innerHTML = "Hey, " + user.displayName;
 }  
 });
