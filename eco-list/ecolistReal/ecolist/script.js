@@ -6,21 +6,21 @@ var a;
 
 $(function () {
 
-    //button adds new rows to table 1
+    //buttonclick to call add row
     $("#btnAdd").bind("click", function () {
-        var div = $("<tr>");
-        div.fadeIn("slow");
-        div.html(GetDynamicTextBox(""));
-        $("#TextBoxContainer").prepend(div);
-        $('#btnRemove').css('visibility', 'visible');
+        addRow("","");
+		updateList();
     });
     
     //removes individual rows
     $("body").on("click", ".remove", function () {
         var id = $(this).attr('id');
-        alert(id);
+        //alert(id);
         var toAdd = $("#" + id + "item").val();
-        alert(toAdd);
+		if(toAdd != "" && toAdd != null){
+			listref.child(toAdd).remove();
+		}
+        //alert(toAdd);
         $(this).closest("tr").fadeTo(280,0.4, function(){
             $(this).remove();
         })
@@ -32,58 +32,30 @@ $(function () {
       $("body").on("click",".list", function (){
                 var id = $(this).attr('id');
                 a = parseInt(id);
-                var btnCartRemove = '<button class="btnCartRemove">'+'<p class="xToRemove">'+'X'+'</p>'+'</button>';
                 var toAdd = $("#" + a + "item").val();
-                var toAddName = $("#" + a + "item");
                 var toAdd2 = $('#' + a + "quantity").val();
-                if(toAdd === ''){
-                    toAddName.addClass('placeHolderColor').attr('placeholder', "Please enter an item!");
-                  return false;
-                }
-                else{
-                   $('.list-group').append('<li class="list-group-item">' + toAdd2 + " " + toAdd + btnCartRemove +'</li>');
-                   $(this).closest("tr").remove();
-                   $('#cTitle').html('Cart').hide().fadeIn("fast");
-                   $(".list-group li").find(":button").hide();
-                 }
+				if(toAdd2 == "" || toAdd2 == null){
+					toAdd2 = 0;
+				}
+				toAdd2 = parseInt(toAdd2);
+				listref.child(toAdd).remove();
+				cartref.update({[toAdd] : toAdd2});
+                 addToCart(toAdd,toAdd2);
+                 $(this).closest("tr").remove();
                  var patt = /easter\s?egg/ig;
-                 var patt2 = /turkey\s?stuffing/ig;
-                 var patt3 = /halloween\s?candy/ig;
-                 var patt4 = /christmas\s?lights/ig;
                  if(patt.test(toAdd)) {
                   $('body').css('background-image', 'url(../images/easteregg.jpg)');
                  }
-                 else if(patt2.test(toAdd)){
-                     $('body').css('background-image', 'url(../images/turkey.jpg)');
-                     $('.ecolistTitle').css('color', 'black');
-                 }else if(patt3.test(toAdd)){
-                     $('body').css('background-image', 'url(../images/halloween.png)');
-                     $('.ecolistTitle').css('color', 'white');
-                 }else if(patt4.test(toAdd)){
-                     $('body').css('background-image', 'url(../images/christmas.jpg)');
-                     $('.ecolistTitle').css('color', 'black');
-                 }else {
-                     $('body').css('background-image', 'url(../images/background2.jpg)');
-                     $('.ecolistTitle').css('color', 'black');
-                 }
-
-
-      });
-
-        //shows button when added to the cart list
-    
-    $('body').on('click', '.list', function () {
-            $(".list-group li").find(":button").show();
-        });
-    
-
+                 else{
+                  $('body').css('background-image', 'url(../images/background2.jpg)');  
+                 } 
+                  $('#cTitle').html('Cart').hide().fadeIn("fast");
+                  $(".list-group li").find(":button").hide();
+            });
+        
     //cart title and clear transitions only once 
     $("body").one("click",".list", function(){
-
-                $('#btnClear').css('visibility', 'visible').hide().fadeIn("fast");
-                $('#btnSave').css('visibility', 'visible').hide().fadeIn("fast");
-                $('#btnCart').css('visibility', 'visible').hide().fadeIn("slow");
-
+			loadCartButtons();
         })
 
     //View cart button scrolls down to cart list
@@ -93,12 +65,32 @@ $(function () {
         }, 1000);
     });
 
-      //double click to remove list item
+    //delete prompt when hovering over list item
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip({
+          trigger:'hover'
+        });   
+    });
+
+    //mouse hover shows button and hides when leaving
+    $(document).ready(function () {
+      $(document).on('mouseenter', '.list-group li', function () {
+            $(this).find(":button").show();
+        }).on('mouseleave', '.list-group li', function () {
+            $(this).find(":button").hide();
+        });
+    });
+
+      //click to remove shoppingcart item
     $("body").on('click','.btnCartRemove', function(){
-        $(this).fadeOut("fast", function(){
+        $(this).toggleClass('strike').fadeOut("fast", function(){
+			var item = $(this).parent()[0].innerText;
+			item = item.replace(/^\d+\s/,'');
+			console.log(item);
+			cartref.child(item).remove();
           $(this).parent().remove();
           if($(".list-group-item").text().length === 0){
-              $('#cTitle').html('   Cart is empty!').hide().fadeIn("fast");
+              $('#cTitle').html('Your cart is empty!').hide().fadeIn("fast");
             };
             if($(".list-group-item").text().length > 0){
               $('#cTitle').html('Cart');
@@ -111,25 +103,50 @@ $(function () {
     //removes all rows 
     $("#btnRemove").on("click", function () {
             $("#TextBoxContainer").children().remove();
+			listref.remove();
     });
 
     //clears cart
      $("#btnClear").on("click", function () {
             $(".list-group").children().remove();
-            $('#cTitle').html('   Cart is empty!').hide().fadeIn("fast");
+			cartref.remove();
+            $('#cTitle').html('Your cart is empty!').hide().fadeIn("fast");
     });
       
   //end tag    
 });
+//
+	function addToCart(item, qnty) {
+		$('.list-group').append('<li class="list-group-item">' + qnty + " " + item + '<button class="btnCartRemove">'+'X'+'</button></li>');
+		loadCartButtons();
+	}
 
+//button adds new rows to table 1
+	function addRow(value1, value2){
+		if(value1 == null){
+			value1 = "";
+		};
+		if(value2 == null){
+			value2 = "";
+		};
+		var div = $("<tr>");
+        div.fadeIn("slow");
+        div.html(GetDynamicTextBox(value1, value2));
+        $("#TextBoxContainer").prepend(div);
+        $('#btnRemove').css('visibility', 'visible');
+	}
+	function loadCartButtons() {
+		$('#btnClear').css('visibility', 'visible').hide().fadeIn("fast");
+		$('#btnCart').css('visibility', 'visible').hide().fadeIn("slow");
+		$('#btnSave').css('visibility', 'visible').hide().fadeIn("fast");
+	}
 
-
-function GetDynamicTextBox(value) {
+function GetDynamicTextBox(value1, value2) {
     count++;
     c++;
     return '<td><button type="button" id="'+c+'btn" class="btn btn-info list"><span class="glyphicon glyphicon-shopping-cart"></span></button></td>'
-    +'<td><input name = "DynamicTextBox" id="'+count+'item" type="text" value = "' + value + '" class="form-control" placeholder="Name of item" ></td>' 
-    + '<td><input name = "DynamicTextBox" id="'+count+'quantity" type="number" value = "' + value + '"  class="form-control" placeholder="#" ></td>' 
+    + '<td><input name = "DynamicTextBox" id="'+count+'item" type="text" value = "' + value1 + '" class="form-control" placeholder="Name of item"onChange="updateList()"/></td>' 
+    + '<td><input name = "DynamicTextBox" id="'+count+'quantity" type="number" value = "' + value2 + '"  class="form-control" placeholder="#"onChange="updateList()"/></td>' 
     + '<td><button type="button" id="'+c+'" class="btn btn-danger remove"><i class="glyphicon glyphicon-minus-sign"></i></button></td>'
 }
 
