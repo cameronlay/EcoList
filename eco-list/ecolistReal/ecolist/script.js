@@ -6,21 +6,21 @@ var a;
 
 $(function () {
 
-    //button adds new rows to table 1
+    //buttonclick to call add row
     $("#btnAdd").bind("click", function () {
-        var div = $("<tr>");
-        div.fadeIn("slow");
-        div.html(GetDynamicTextBox(""));
-        $("#TextBoxContainer").prepend(div);
-        $('#btnRemove').css('visibility', 'visible');
+        addRow("","");
+        updateList();
     });
+
+
     
     //removes individual rows
     $("body").on("click", ".remove", function () {
         var id = $(this).attr('id');
-        alert(id);
         var toAdd = $("#" + id + "item").val();
-        alert(toAdd);
+        if(toAdd != "" && toAdd != null){
+            listref.child(toAdd).remove();
+        }
         $(this).closest("tr").fadeTo(280,0.4, function(){
             $(this).remove();
         })
@@ -32,20 +32,24 @@ $(function () {
       $("body").on("click",".list", function (){
                 var id = $(this).attr('id');
                 a = parseInt(id);
-                var btnCartRemove = '<button class="btnCartRemove">'+'<p class="xToRemove">'+'X'+'</p>'+'</button>';
                 var toAdd = $("#" + a + "item").val();
                 var toAddName = $("#" + a + "item");
                 var toAdd2 = $('#' + a + "quantity").val();
                 if(toAdd === ''){
-                    toAddName.addClass('placeHolderColor').attr('placeholder', "Please enter an item!");
+                  toAddName.addClass('placeHolderColor').attr('placeholder', "Please enter an item!");
                   return false;
+                 }
+                if(toAdd2 == "" || toAdd2 == null){
+                      toAdd2 = 0;
                 }
-                else{
-                   $('.list-group').append('<li class="list-group-item">' + toAdd2 + " " + toAdd + btnCartRemove +'</li>');
+                toAdd2 = parseInt(toAdd2);
+                listref.child(toAdd).remove();
+                cartref.update({[toAdd] : toAdd2});
+                addToCart(toAdd,toAdd2);
                    $(this).closest("tr").remove();
                    $('#cTitle').html('Cart').hide().fadeIn("fast");
                    $(".list-group li").find(":button").hide();
-                 }
+
                  var patt = /easter\s?egg/ig;
                  var patt2 = /turkey\s?stuffing/ig;
                  var patt3 = /halloween\s?candy/ig;
@@ -75,15 +79,9 @@ $(function () {
     $('body').on('click', '.list', function () {
             $(".list-group li").find(":button").show();
         });
-    
 
-    //cart title and clear transitions only once 
-    $("body").one("click",".list", function(){
-
-                $('#btnClear').css('visibility', 'visible').hide().fadeIn("fast");
-                $('#btnSave').css('visibility', 'visible').hide().fadeIn("fast");
-                $('#btnCart').css('visibility', 'visible').hide().fadeIn("slow");
-
+        $("body").one("click",".list", function(){
+            loadCartButtons();
         })
 
     //View cart button scrolls down to cart list
@@ -96,6 +94,10 @@ $(function () {
       //double click to remove list item
     $("body").on('click','.btnCartRemove', function(){
         $(this).fadeOut("fast", function(){
+            var item = $(this).parent()[0].innerText;
+            item = item.replace(/^\d+\s/,'');
+            console.log(item);
+            cartref.child(item).remove();
           $(this).parent().remove();
           if($(".list-group-item").text().length === 0){
               $('#cTitle').html('   Cart is empty!').hide().fadeIn("fast");
@@ -111,16 +113,45 @@ $(function () {
     //removes all rows 
     $("#btnRemove").on("click", function () {
             $("#TextBoxContainer").children().remove();
+            listref.remove();
     });
 
     //clears cart
      $("#btnClear").on("click", function () {
             $(".list-group").children().remove();
+            cartref.remove();
             $('#cTitle').html('   Cart is empty!').hide().fadeIn("fast");
     });
       
-  //end tag    
+  //end tag
 });
+
+    //
+    function addToCart(item, qnty) {
+        $('.list-group').append('<li class="list-group-item">' + qnty + " " + item + '<button class="btnCartRemove">'+'X'+'</button></li>');
+        loadCartButtons();
+    }
+
+    //button adds new rows to table 1
+    function addRow(value1, value2){
+        if(value1 == null){
+            value1 = "";
+        };
+        if(value2 == null){
+            value2 = "";
+        };
+        var div = $("<tr>");
+        div.fadeIn("slow");
+        div.html(GetDynamicTextBox(value1, value2));
+        $("#TextBoxContainer").prepend(div);
+        $('#btnRemove').css('visibility', 'visible');
+    }
+
+    function loadCartButtons() {
+        $('#btnClear').css('visibility', 'visible').hide().fadeIn("fast");
+        $('#btnCart').css('visibility', 'visible').hide().fadeIn("slow");
+        $('#btnSave').css('visibility', 'visible').hide().fadeIn("fast");
+    }
 
 
 
