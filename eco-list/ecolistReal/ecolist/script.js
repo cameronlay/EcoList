@@ -14,7 +14,7 @@ $(function () {
         $("#TextBoxContainer").prepend(div);
         $('#btnRemove').css('visibility', 'visible');
     });
-    
+
     //removes individual rows
     $("body").on("click", ".remove", function () {
         var id = $(this).attr('id');
