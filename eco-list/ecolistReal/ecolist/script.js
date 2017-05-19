@@ -128,7 +128,7 @@ $(function () {
 
     //
     function addToCart(item, qnty) {
-        $('.list-group').append('<li class="list-group-item">' + qnty + " " + item + '<button class="btnCartRemove">'+'X'+'</button></li>');
+        $('.list-group').append('<li class="list-group-item">' + qnty + " " + item + '<button class="btnCartRemove">'+'<p class="xToRemove">'+'X'+'</p>'+'</button></li>');
         loadCartButtons();
     }
 
