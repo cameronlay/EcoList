@@ -9,7 +9,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
 <link rel="stylesheet" href="style.css">
 <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
 <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
@@ -161,6 +160,95 @@
     <!-- Below is the initialisation code for firebase project.-->
 <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
 <script src="../loginscript.js"></script>
+<script> // Initialize Firebase
+var config = {
+    apiKey: "AIzaSyDbbQhEgMs6GJhDRccVTWk5ibUNgzGhE2s",
+    authDomain: "comp2910-9d392.firebaseapp.com",
+    databaseURL: "https://comp2910-9d392.firebaseio.com",
+    projectId: "comp2910-9d392",
+    storageBucket: "comp2910-9d392.appspot.com",
+    messagingSenderId: "758365219906"
+};
+firebase.initializeApp(config);
+var listref = null;
+var cartref = null;
+var user = null;
+var primedLists = false;
+firebase.auth().onAuthStateChanged( () => {
+    user = firebase.auth().currentUser;
+if(user != null) {
+    firebase.database().ref("users/" + user.uid).set({name:user.displayName});
+    listref = firebase.database().ref("shoppinglist/" + user.uid + "/");
+    cartref = firebase.database().ref("shoppingcart/" + user.uid + "/");
+    console.log("logged in");
+    if(!primedLists){
+        listref.once("value").then(snapshot => {
+            if(snapshot.exists() && snapshot.hasChildren()){
+            snapshot.forEach( childSnapshot => {
+                addRow(childSnapshot.key, childSnapshot.val());
+        });
+        }
+    else {
+            firebase.database().ref("shoppinglist/").update({[user.uid]: "empty"});
+            console.log("created "+ user.displayName + "'s ecolist");
+        };
+    });
+        cartref.once("value").then(snapshot => {
+            if(snapshot.exists() && snapshot.hasChildren()){
+            snapshot.forEach( childSnapshot => {
+                addToCart(childSnapshot.key,childSnapshot.val());
+        });
+            $('#cTitle').html('Cart').hide().fadeIn("fast");
+        }
+    else {
+            firebase.database().ref("shoppingcart/").update({[user.uid]: "empty"});
+            console.log("created "+ user.displayName + "'s shoppingcart");
+        };
+    });
+        primedLists = true;
+    };
+} else console.log("not signed in");
+});
+function updateList() {var currentList = document.getElementsByClassName("form-control");
+    var currentListLength = currentList.length - 1;
+    var dblist = [];
+    listref.once("value").then( snapshot=> {
+        if(snapshot.exists() && snapshot.hasChildren()){
+        snapshot.forEach(childSnapshot => {
+            dblist[dblist.length] = childSnapshot.key;
+    });
+        for(a = 0; a < dblist.length; a++){
+            for(j = 0; j < currentListLength; j += 2){
+                if(currentList[j].value == undefined || currentList[j].value == null){
+                    currentList[j].value = "";
+                };
+                if(dblist[a] == currentList[j].value){
+                    dblist[a] = true;
+                };
+            };
+        };
+        for(var key of dblist){if(key !== true){
+            listref.child(key).remove();
+        };
+        };
+    };
+});
+    for(i = 0;i < currentListLength; i += 2){
+        if (user != null){
+            if(currentList[i].value != "" && currentList[i].value !=  null){
+                var qnty = null;
+                if(currentList[i+1].value == undefined || currentList[i+1].value == null || currentList[i+1].value == ""){
+                    qnty = 0;
+                }else {
+                    qnty = parseInt(currentList[i+1].value);
+                }
+                listref.update({[currentList[i].value] : qnty});
+            };
+        };
+    };
+    console.log("saved");
+};
+</script>
 
 <script>
     var listref = null;
