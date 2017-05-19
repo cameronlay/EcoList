@@ -25,7 +25,7 @@ function updateList() {
     var counterIngredients = 0;
     listref.once("value").then(snapshot => {
         if(snapshot.exists() && snapshot.hasChildren()){
-        snapshot.forEach(childSnapshot = > {
+        snapshot.forEach(childSnapshot => {
             dblist[dblist.length] = childSnapshot.key;
     });
         listref.update({
