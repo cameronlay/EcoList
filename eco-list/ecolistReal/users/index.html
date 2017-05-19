@@ -25,6 +25,7 @@
                     <span class="icon-bar"></span>                      
                 </button>
                 <a class="navbar-brand" href="../"><img class="indexNavLogo" src="../images/logo.png" alt="Logo"><div class="indexNavLogoText">EcoList</div></a>
+                <div id="t" style="font-size:15px;color:#e6e6d8;padding-top:15px;position:absolute;right:20px"></div>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
@@ -42,7 +43,7 @@
                     <li><a href="../#AboutUs">About Us</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <!-- <li id="p" style="display:none;font-size:15px;color:white;padding-top:15px"></li> -->
+                    <li id="p" style="display:none;font-size:15px;color:#e6e6d8;padding-top:15px"></li>
                     <!-- WILL BE DISAPPEARED WHEN USER ISN'T LOGGED IN -->
                     <li><a href="http://localhost/eco-list/ecolistReal/" onclick="logOut()" id="logOut"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Log Out</a></li>
                     <!-- WILL BE CHANGED TO PHP VARIABLE FOR USER NAME -->
@@ -104,12 +105,12 @@
                         <tr>
                             <td id="ErrEmail">Please enter a valid email</td>
                         </tr>
-                        <!-- <tr> -->
-                            <!-- <td><input type="text" id="SignupUsername" placeholder="Username" name="username" onblur="warnUsername()" class="form-control" required/></td> -->
-                        <!-- </tr> -->
-                        <!-- <tr> -->
-                            <!-- <td id="ErrUsername">Please enter a valid username</td> -->
-                        <!-- </tr> -->
+                        <tr>
+                            <td><input type="text" id="SignupUsername" placeholder="Username" name="username" onblur="warnUsername()" class="form-control" required/></td>
+                        </tr>
+                        <tr>
+                            <td id="ErrUsername">Please enter a valid username</td>
+                        </tr>
                         <tr>
                             <td><input type="password" placeholder="Password" onblur="warnPassword()" id="SignupPassword" name="password" class="form-control" required/></td>
                         </tr>
@@ -167,9 +168,6 @@
 
 <!-- Below is the initialisation code for firebase project.-->
 <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
-
-
-
 <script src="../loginscript.js"></script>
 
 
@@ -180,8 +178,6 @@
     <script type="text/javascript">
       // FirebaseUI config.
       var uiConfig = {
-
-
         signInSuccessUrl: 'http://localhost/eco-list/ecolistReal/',
 
         signInOptions: [
@@ -205,7 +201,7 @@
     <!-- EDMUND, EMAIL LOGIN AND SIGNUP -->
     <script>
         var emailSignUpEmail = document.getElementById('Email');
-        // <!-- var emailSignUpName = document.getElementById('SignupUsername'); -->
+        var emailSignUpName = document.getElementById('SignupUsername');
         var emailSignUpPassword = document.getElementById('SignupPassword');
         var emailLogInEmail = document.getElementById('LoginUsername');
         var emailLogInPassword = document.getElementById('Password');
@@ -221,6 +217,10 @@
             // SIGN IN
             var promise = auth.signInWithEmailAndPassword(email, password);
             promise.catch(e => console.log(e.message));
+            const user = firebase.auth().currentUser;
+			if(user != null) {
+				firebase.database().ref("users/" + user.uid).set({name:user.displayName});
+			} else console.log("not signed in");
         });
 
         // ADD SIGNUP EVENT
@@ -233,14 +233,11 @@
             promise.catch(e => console.log(e.message));
         });
 
-        // ADD A REALTIME LISTENER
-        firebase.auth().onAuthStateChanged(firebaseUser => {
-            if (firebaseUser) {
-                console.log(firebaseUser);
-            }   else {
-                console.log('not logged in');
-            }
-        });
-
-
+       firebase.auth().onAuthStateChanged( function() {
+		const user = firebase.auth().currentUser;
+			if(user != null) {
+				firebase.database().ref("users/" + user.uid).set({name:user.displayName});
+			} else console.log("not signed in");
+			
+    });
     </script>

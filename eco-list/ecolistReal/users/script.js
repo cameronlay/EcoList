@@ -20,7 +20,7 @@ function testUsername(){
     var x = $("SignupUsername").value;
     var patt = /^(?:\S\w*_*)$/i;
     var res = patt.test(x);
-       will return true if input is valid
+      // will return true if input is valid
     return res;
 }
 
@@ -126,7 +126,6 @@ function windowResize(){
     }
     if (winSize < 991.5) {
         document.getElementsByClassName('toggleForm')[1].style.display = 'none';
-
     }
 }
 
