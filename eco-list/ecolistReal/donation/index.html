@@ -23,6 +23,7 @@
                     <span class="icon-bar"></span>                      
                 </button>
                 <a class="navbar-brand" href="../"><img class="indexNavLogo" src="../images/logo.png" alt="Logo"><div class="indexNavLogoText">EcoList</div></a>
+                <div id="t" style="font-size:15px;color:#e6e6d8;padding-top:15px;position:absolute;right:20px"></div>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
@@ -40,9 +41,9 @@
                     <li><a href="../#AboutUs">About Us</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <!-- <li id="p" style="display:none;font-size:15px;color:white;padding-top:15px"></li> -->
+                    <li id="p" style="display:none;font-size:15px;color:#e6e6d8;padding-top:15px"></li>
                     <!-- WILL BE DISAPPEARED WHEN USER ISN'T LOGGED IN -->
-                    <li><a href="http://localhost/eco-list/ecolistReal/" onclick="logOut()" id="logOut"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Log Out</a></li>
+                    <li><a href="http://localhost/eco-list/ecolistReal/" onclick="logOut()" id="logOut" style="none"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Log Out</a></li>
                     <!-- WILL BE CHANGED TO PHP VARIABLE FOR USER NAME -->
                     <li><a href="../users/" id="logIn"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login/Sign up</a></li>
                 </ul>
