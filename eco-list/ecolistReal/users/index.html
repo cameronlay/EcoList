@@ -248,6 +248,16 @@
                         'displayName':name
                     });
 
+                    firebase.auth().onAuthStateChanged( function() {
+                        const user = firebase.auth().currentUser;
+                        if(user != null) {
+                            firebase.database().ref("users/" + user.uid).set({name:user.displayName});
+                        } 
+                        else 
+                            console.log("not signed in");
+            
+                    });
+
                     // REDIRECT TO HOMEPAGE
                     window.location.href = "../";
 
