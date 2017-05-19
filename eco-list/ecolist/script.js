@@ -150,4 +150,11 @@ function GetDynamicTextBox(value1, value2) {
     + '<td><button type="button" id="'+c+'" class="btn btn-danger remove"><i class="glyphicon glyphicon-minus-sign"></i></button></td>'
 }
 
-//mobile swipe delete function
+
+function dbUpdate(){
+    if(c !== 0){
+        for (i = 0; i <= count; i++){
+
+        }
+    }
+}
