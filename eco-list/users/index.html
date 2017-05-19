@@ -130,54 +130,58 @@
         </div>
     </div>
 </div>
+    <!-- Below is the initialisation code for firebase project.-->
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyC82ZRbf--52RkwFWRCvCBRN7zLSMCAqV8",
+            authDomain: "ecolist-d3e23.firebaseapp.com",
+            databaseURL: "https://ecolist-d3e23.firebaseio.com",
+            projectId: "ecolist-d3e23",
+            storageBucket: "ecolist-d3e23.appspot.com",
+            messagingSenderId: "347349975058"
+        };
+        firebase.initializeApp(config);
 
+        firebase.auth().onAuthStateChanged( function() {
+            const user = firebase.auth().currentUser;
+            if(user != null) {
+                firebase.database().ref("users/" + user.uid).set({name:user.displayName});
+            } else console.log("not signed in");
 
+        });
+    </script>
 
-<!-- Below is the initialisation code for firebase project.-->
-<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyDbbQhEgMs6GJhDRccVTWk5ibUNgzGhE2s",
-    authDomain: "comp2910-9d392.firebaseapp.com",
-    databaseURL: "https://comp2910-9d392.firebaseio.com",
-    projectId: "comp2910-9d392",
-    storageBucket: "comp2910-9d392.appspot.com",
-    messagingSenderId: "758365219906"
-  };
-  firebase.initializeApp(config);
-  
-  firebase.auth().onAuthStateChanged( function() {
-		const user = firebase.auth().currentUser;
-			if(user != null) {
-				firebase.database().ref("users/" + user.uid).set({name:user.displayName});
-			} else console.log("not signed in");
-			
-		});
-</script>
-
-<!-- The code below initialise the sign in widget. -->
-<script src="https://cdn.firebase.com/libs/firebaseui/1.0.1/firebaseui.js"></script>
+    <!-- The code below initialise the sign in widget. -->
+    <script src="https://cdn.firebase.com/libs/firebaseui/1.0.1/firebaseui.js"></script>
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/1.0.1/firebaseui.css" />
     <script type="text/javascript">
-      // FirebaseUI config.
-      var uiConfig = {
-        signInSuccessUrl: '#',
-        signInOptions: [
-          // Leave the lines as is for the providers you want to offer your users.
-          firebase.auth.GoogleAuthProvider.PROVIDER_ID
-          //firebase.auth.EmailAuthProvider.PROVIDER_ID
-        ],
-        // Terms of service url.
-        tosUrl: '<your-tos-url>'
-      };
-	  
-      // Initialize the FirebaseUI Widget using Firebase.
-      var ui = new firebaseui.auth.AuthUI(firebase.auth());
-      // The start method will wait until the DOM is loaded.
-      ui.start('#firebaseui-auth-container', uiConfig);
-		
+        // FirebaseUI config.
+        var uiConfig = {
+            signInSuccessUrl: '#',
+            signInOptions: [
+                // Leave the lines as is for the providers you want to offer your users.
+                firebase.auth.GoogleAuthProvider.PROVIDER_ID
+                //firebase.auth.EmailAuthProvider.PROVIDER_ID
+            ],
+            // Terms of service url.
+            tosUrl: '<your-tos-url>'
+        };
+
+        // Initialize the FirebaseUI Widget using Firebase.
+        var ui = new firebaseui.auth.AuthUI(firebase.auth());
+        // The start method will wait until the DOM is loaded.
+        ui.start('#firebaseui-auth-container', uiConfig);
+
     </script>
+
+
+</body>
+</html>
+
+
+
 
 
     <!--Footer currently not working-->
@@ -214,3 +218,4 @@
         <p>&copy; Copyright 2017 | EcoList, All Rights Reserved </p>
     </div>
 </div>-->
+

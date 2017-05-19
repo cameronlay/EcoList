@@ -86,7 +86,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li id="p" style="display:none;font-size:15px;color:#e6e6d8;padding-top:15px"></li>
                     <!-- WILL BE DISAPPEARED WHEN USER ISN'T LOGGED IN -->
-                    <li><a href="http://localhost/eco-list/ecolistReal/" onclick="logOut()" id="logOut"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Log Out</a></li>
+                    <li><a href="http://localhost/ecolistReal/" onclick="logOut()" id="logOut"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Log Out</a></li>
                     <!-- WILL BE CHANGED TO PHP VARIABLE FOR USER NAME -->
                     <li><a href="../users/" id="logIn"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login/Sign up</a></li>
                 </ul>
@@ -2291,11 +2291,11 @@
                 </div>
                 <!-- NEED TO ADD NAME FOR EACH INPUT!!!!! -->
                 <div class="row displayNone" id="userListContentCreate">
-                    <form action="" method="post">
+                    <form onsubmit="updateList()" method="post">
                     <div class="col-md-8 borderLeft">
-                        <h2><input type="text" class="form-control" placeholder="Recipe Name" required></h2>
+                        <h2><input type="text" class="form-control" id="CustomRecipeName" placeholder="Recipe Name" required></h2>
                         <div class="col-md-12">
-                            <textarea class="recipetextarea form-control" placeholder="Short Recipe Description" rows="8"></textarea>
+                            <textarea class="recipetextarea form-control" id="CustomRecipeDesc" placeholder="Short Recipe Description" rows="8"></textarea>
                                 <input class="recipetextarea form-control inputSteps" type="text" placeholder="Enter the simple step" required>
                                 <input class="recipetextarea form-control inputSteps" type="text" placeholder="Enter the simple step" required>
                                 <input class="recipetextarea form-control inputSteps" type="text" placeholder="Enter the simple step" required>
@@ -2316,7 +2316,7 @@
                                     </td>
                                 </tr>
                             </table>
-                                        <input type="submit" class="btn btn-info" value="Save">
+                                        <input type="submit" class="btn btn-info" value="Save" onclick="updateList()">
                         </div>
                     </div>
                     </form>
@@ -2355,8 +2355,9 @@
     </footer>
 
         <!-- Below is the initialisation code for firebase project.-->
-<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
-<script src="../loginscript.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    <script src="../loginscript.js"></script>
+    <script src="dbfunctions.js"></script>
 
     </body>
 </html>

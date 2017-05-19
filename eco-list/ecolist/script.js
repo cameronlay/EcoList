@@ -9,6 +9,7 @@ $(function () {
     //buttonclick to call add row
     $("#btnAdd").bind("click", function () {
         addRow("","");
+		updateList();
     });
     
     //removes individual rows
@@ -16,7 +17,9 @@ $(function () {
         var id = $(this).attr('id');
         //alert(id);
         var toAdd = $("#" + id + "item").val();
-		listref.child(toAdd).remove();
+		if(toAdd != "" && toAdd != null){
+			listref.child(toAdd).remove();
+		}
         //alert(toAdd);
         $(this).closest("tr").fadeTo(280,0.4, function(){
             $(this).remove();
@@ -29,10 +32,15 @@ $(function () {
       $("body").on("click",".list", function (){
                 var id = $(this).attr('id');
                 a = parseInt(id);
-                var btnCartRemove = '<button class="btnCartRemove">'+'X'+'</button>';
                 var toAdd = $("#" + a + "item").val();
                 var toAdd2 = $('#' + a + "quantity").val();
-                 $('.list-group').append('<li class="list-group-item">' + toAdd2 + " " + toAdd + btnCartRemove +'</li>');
+				if(toAdd2 == "" || toAdd2 == null){
+					toAdd2 = 0;
+				}
+				toAdd2 = parseInt(toAdd2);
+				listref.child(toAdd).remove();
+				cartref.update({[toAdd] : toAdd2});
+                 addToCart(toAdd,toAdd2);
                  $(this).closest("tr").remove();
                  var patt = /easter\s?egg/ig;
                  if(patt.test(toAdd)) {
@@ -43,16 +51,11 @@ $(function () {
                  } 
                   $('#cTitle').html('Cart').hide().fadeIn("fast");
                   $(".list-group li").find(":button").hide();
-
             });
         
     //cart title and clear transitions only once 
     $("body").one("click",".list", function(){
-                
-                $('#btnClear').css('visibility', 'visible').hide().fadeIn("fast");
-                $('#btnCart').css('visibility', 'visible').hide().fadeIn("slow");
-                $('#btnSave').css('visibility', 'visible').hide().fadeIn("fast");
-
+			loadCartButtons();
         })
 
     //View cart button scrolls down to cart list
@@ -78,9 +81,13 @@ $(function () {
         });
     });
 
-      //double click to remove list item
+      //click to remove shoppingcart item
     $("body").on('click','.btnCartRemove', function(){
         $(this).toggleClass('strike').fadeOut("fast", function(){
+			var item = $(this).parent()[0].innerText;
+			item = item.replace(/^\d+\s/,'');
+			console.log(item);
+			cartref.child(item).remove();
           $(this).parent().remove();
           if($(".list-group-item").text().length === 0){
               $('#cTitle').html('Your cart is empty!').hide().fadeIn("fast");
@@ -102,11 +109,17 @@ $(function () {
     //clears cart
      $("#btnClear").on("click", function () {
             $(".list-group").children().remove();
+			cartref.remove();
             $('#cTitle').html('Your cart is empty!').hide().fadeIn("fast");
     });
       
   //end tag    
 });
+//
+	function addToCart(item, qnty) {
+		$('.list-group').append('<li class="list-group-item">' + qnty + " " + item + '<button class="btnCartRemove">'+'X'+'</button></li>');
+		loadCartButtons();
+	}
 
 //button adds new rows to table 1
 	function addRow(value1, value2){
@@ -122,14 +135,26 @@ $(function () {
         $("#TextBoxContainer").prepend(div);
         $('#btnRemove').css('visibility', 'visible');
 	}
+	function loadCartButtons() {
+		$('#btnClear').css('visibility', 'visible').hide().fadeIn("fast");
+		$('#btnCart').css('visibility', 'visible').hide().fadeIn("slow");
+		$('#btnSave').css('visibility', 'visible').hide().fadeIn("fast");
+	}
 
 function GetDynamicTextBox(value1, value2) {
     count++;
     c++;
     return '<td><button type="button" id="'+c+'btn" class="btn btn-info list"><span class="glyphicon glyphicon-shopping-cart"></span></button></td>'
-    +'<td><input name = "DynamicTextBox" id="'+count+'item" type="text" value = "' + value1 + '" class="form-control" placeholder="Name of item"onChange="updateList()"/></td>' 
+    + '<td><input name = "DynamicTextBox" id="'+count+'item" type="text" value = "' + value1 + '" class="form-control" placeholder="Name of item"onChange="updateList()"/></td>' 
     + '<td><input name = "DynamicTextBox" id="'+count+'quantity" type="number" value = "' + value2 + '"  class="form-control" placeholder="#"onChange="updateList()"/></td>' 
     + '<td><button type="button" id="'+c+'" class="btn btn-danger remove"><i class="glyphicon glyphicon-minus-sign"></i></button></td>'
 }
 
-//mobile swipe delete function
+
+function dbUpdate(){
+    if(c !== 0){
+        for (i = 0; i <= count; i++){
+
+        }
+    }
+}
