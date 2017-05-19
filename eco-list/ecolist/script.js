@@ -6,38 +6,22 @@ var a;
 
 $(function () {
 
-    //button adds new rows to table 1
-    $("#btnAdd").on("click", function () {
-        var div = $("<tr>");
-        div.fadeIn("slow");
-        div.html(GetDynamicTextBox(""));
-        $("#TextBoxContainer").prepend(div);
-        $('#btnRemove').css('visibility', 'visible');
+    //buttonclick to call add row
+    $("#btnAdd").bind("click", function () {
+        addRow("","");
     });
-
     
     //removes individual rows
     $("body").on("click", ".remove", function () {
         var id = $(this).attr('id');
-        alert(id);
+        //alert(id);
         var toAdd = $("#" + id + "item").val();
-        alert(toAdd);
+		listref.child(toAdd).remove();
+        //alert(toAdd);
         $(this).closest("tr").fadeTo(280,0.4, function(){
             $(this).remove();
         })
     });
-
-    //empty field validation
-
-     $(document).ready(function () {
-      $('<tr>').on('blur','.list', function () {
-            if($.trim($("#" + a + "item").val()).length > 0|| $.trim($('#' + a + "quantity").val()).length > 0) {
-              $('body').prop('disabled',false);
-              alert('test');
-            }
-        });
-    });
-
 
     //shopping cart button that removes row and adds to new list
     $(document).ready(
@@ -61,15 +45,6 @@ $(function () {
                   $(".list-group li").find(":button").hide();
 
             });
-
-
-    //shows button when added to the cart list
-    $(document).ready(function () {
-      $('body').on('click', '.list', function () {
-            $(".list-group li").find(":button").show();
-        });
-    });
-
         
     //cart title and clear transitions only once 
     $("body").one("click",".list", function(){
@@ -87,12 +62,28 @@ $(function () {
         }, 1000);
     });
 
-      // click to remove list item
+    //delete prompt when hovering over list item
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip({
+          trigger:'hover'
+        });   
+    });
+
+    //mouse hover shows button and hides when leaving
+    $(document).ready(function () {
+      $(document).on('mouseenter', '.list-group li', function () {
+            $(this).find(":button").show();
+        }).on('mouseleave', '.list-group li', function () {
+            $(this).find(":button").hide();
+        });
+    });
+
+      //double click to remove list item
     $("body").on('click','.btnCartRemove', function(){
-        $(this).fadeOut("fast", function(){
+        $(this).toggleClass('strike').fadeOut("fast", function(){
           $(this).parent().remove();
           if($(".list-group-item").text().length === 0){
-              $('#cTitle').html('Cart is empty!').hide().fadeIn("fast");
+              $('#cTitle').html('Your cart is empty!').hide().fadeIn("fast");
             };
             if($(".list-group-item").text().length > 0){
               $('#cTitle').html('Cart');
@@ -105,26 +96,39 @@ $(function () {
     //removes all rows 
     $("#btnRemove").on("click", function () {
             $("#TextBoxContainer").children().remove();
+			listref.remove();
     });
 
     //clears cart
      $("#btnClear").on("click", function () {
             $(".list-group").children().remove();
-            $('#cTitle').html('Cart is empty!').hide().fadeIn("fast");
+            $('#cTitle').html('Your cart is empty!').hide().fadeIn("fast");
     });
-
       
   //end tag    
 });
 
+//button adds new rows to table 1
+	function addRow(value1, value2){
+		if(value1 == null){
+			value1 = "";
+		};
+		if(value2 == null){
+			value2 = "";
+		};
+		var div = $("<tr>");
+        div.fadeIn("slow");
+        div.html(GetDynamicTextBox(value1, value2));
+        $("#TextBoxContainer").prepend(div);
+        $('#btnRemove').css('visibility', 'visible');
+	}
 
-
-function GetDynamicTextBox(value) {
+function GetDynamicTextBox(value1, value2) {
     count++;
     c++;
     return '<td><button type="button" id="'+c+'btn" class="btn btn-info list"><span class="glyphicon glyphicon-shopping-cart"></span></button></td>'
-    +'<td><input name = "DynamicTextBox" id="'+count+'item" type="text" value = "' + value + '" class="form-control" placeholder="Name of item"onChange="updateList()"/></td>' 
-    + '<td><input name = "DynamicTextBox" id="'+count+'quantity" type="number" value = "' + value + '"  class="form-control" placeholder="#"onChange="updateList()"/></td>' 
+    +'<td><input name = "DynamicTextBox" id="'+count+'item" type="text" value = "' + value1 + '" class="form-control" placeholder="Name of item"onChange="updateList()"/></td>' 
+    + '<td><input name = "DynamicTextBox" id="'+count+'quantity" type="number" value = "' + value2 + '"  class="form-control" placeholder="#"onChange="updateList()"/></td>' 
     + '<td><button type="button" id="'+c+'" class="btn btn-danger remove"><i class="glyphicon glyphicon-minus-sign"></i></button></td>'
 }
 

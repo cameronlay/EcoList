@@ -34,8 +34,10 @@ $(function () {
                 a = parseInt(id);
                 var btnCartRemove = '<button class="btnCartRemove">'+'<p class="xToRemove">'+'X'+'</p>'+'</button>';
                 var toAdd = $("#" + a + "item").val();
+                var toAddName = $("#" + a + "item");
                 var toAdd2 = $('#' + a + "quantity").val();
-                if(toAdd === '' || toAdd2 === '' ){
+                if(toAdd === ''){
+                    toAddName.addClass('placeHolderColor').attr('placeholder', "Please enter an item!");
                   return false;
                 }
                 else{
@@ -45,15 +47,30 @@ $(function () {
                    $(".list-group li").find(":button").hide();
                  }
                  var patt = /easter\s?egg/ig;
+                 var patt2 = /turkey\s?stuffing/ig;
+                 var patt3 = /halloween\s?candy/ig;
+                 var patt4 = /christmas\s?lights/ig;
                  if(patt.test(toAdd)) {
                   $('body').css('background-image', 'url(../images/easteregg.jpg)');
                  }
-                 else{
-                  $('body').css('background-image', 'url(../images/background2.jpg)');  
-                 } 
-            });
-    
-    //shows button when added to the cart list
+                 else if(patt2.test(toAdd)){
+                     $('body').css('background-image', 'url(../images/turkey.jpg)');
+                     $('.ecolistTitle').css('color', 'black');
+                 }else if(patt3.test(toAdd)){
+                     $('body').css('background-image', 'url(../images/halloween.png)');
+                     $('.ecolistTitle').css('color', 'white');
+                 }else if(patt4.test(toAdd)){
+                     $('body').css('background-image', 'url(../images/christmas.jpg)');
+                     $('.ecolistTitle').css('color', 'black');
+                 }else {
+                     $('body').css('background-image', 'url(../images/background2.jpg)');
+                     $('.ecolistTitle').css('color', 'black');
+                 }
+
+
+      });
+
+        //shows button when added to the cart list
     
     $('body').on('click', '.list', function () {
             $(".list-group li").find(":button").show();
@@ -62,10 +79,10 @@ $(function () {
 
     //cart title and clear transitions only once 
     $("body").one("click",".list", function(){
-                
+
                 $('#btnClear').css('visibility', 'visible').hide().fadeIn("fast");
-                $('#btnCart').css('visibility', 'visible').hide().fadeIn("slow");
                 $('#btnSave').css('visibility', 'visible').hide().fadeIn("fast");
+                $('#btnCart').css('visibility', 'visible').hide().fadeIn("slow");
 
         })
 
@@ -78,7 +95,7 @@ $(function () {
 
       //double click to remove list item
     $("body").on('click','.btnCartRemove', function(){
-        $(this).toggleClass('strike').fadeOut("fast", function(){
+        $(this).fadeOut("fast", function(){
           $(this).parent().remove();
           if($(".list-group-item").text().length === 0){
               $('#cTitle').html('   Cart is empty!').hide().fadeIn("fast");

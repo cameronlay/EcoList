@@ -18,7 +18,7 @@ function $$(className) {
 // Form validation and warning functions for the register form
 function testUsername(){
     var x = $("SignupUsername").value;
-    var patt = /^(?:\S\w*_*)$/i;
+    var patt = /^\w*\s?\w*$/i;
     var res = patt.test(x);
       // will return true if input is valid
     return res;
