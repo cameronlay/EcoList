@@ -124,11 +124,12 @@
                                                             <option value="oz">Ounce
                                                             <option value="g">Gram
                                                             <option value="lb">Pound
+                                                            <option value="cup">Cup
                                                             <option value="tbsp">Table Spoon
                                                             <option value="tsp">Tea Spoon
                                                             <option value="ml">ML
                                                         </select>
-                                                        <div class="displayInline">to</div>
+                                                        <div class="displayBlock centered">to</div>
                                                             <div ng-switch="firstMeasure" class="displayInline">
                                                             <!-- 1 OUNCE = 28.3495 GRAM -->
                                                             <!-- 1 OUNCE = 0.0625 POUND -->
@@ -137,6 +138,7 @@
                                                             <!-- 1 GRAM = 0.00220462 POUND -->
                                                             <!-- 1 POUND = 16 OUNCE -->
                                                             <!-- 1 POUND = 453.592 GRAM -->
+                                                            <!-- 1 CUP = 236.588 ML -->
                                                             <!-- 1 TBSP = 3 TSP -->
                                                             <!-- 1 TBSP = 14.7868 ML -->
                                                             <!-- 1 TSP = 0.333333 TBSP -->
@@ -202,6 +204,21 @@
                                                                     </div>
                                                                     <div ng-switch-when="lb">
                                                                         <input type="text" class="form-control" value="{{firstNumber * 1 | number:2}} LB" disabled>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div ng-switch-when="cup" class="displayInline">
+                                                                <select ng-model="secondMeasure" class="form-control">
+                                                                    <option value="" selected disabled>
+                                                                    <option value="cup">Cup
+                                                                    <option value="ml">ML
+                                                                </select>
+                                                                <div ng-switch="secondMeasure" class="displayInline">
+                                                                    <div ng-switch-when="cup">
+                                                                        <input type="text" class="form-control" value="{{firstNumber * 1 | number:2}} Cup" disabled>
+                                                                    </div>
+                                                                    <div ng-switch-when="ml">
+                                                                        <input type="text" class="form-control" value="{{firstNumber * 236.588 | number:2}} ML" disabled>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -289,7 +306,7 @@
                     <li id="classicList3" onclick="classicPillsClicked('classicList3', 'classicListContent3')"><a href="javascript:void(0);">Gnocchi with Tomato</a></li>
                     <li id="classicList4" onclick="classicPillsClicked('classicList4', 'classicListContent4')"><a href="javascript:void(0);">Chicken Tetrazzini</a></li>
                     <li id="classicList5" onclick="classicPillsClicked('classicList5', 'classicListContent5')"><a href="javascript:void(0);">Southern Fried Chicken</a></li>
-                    <li id="classicList6" onclick="classicPillsClicked('classicList6', 'classicListContent6')"><a href="javascript:void(0);">ClassicLIST6</a></li>
+                    <li id="classicList6" onclick="classicPillsClicked('classicList6', 'classicListContent6')"><a href="javascript:void(0);">French Toast</a></li>
                     <li id="classicList7" onclick="classicPillsClicked('classicList7', 'classicListContent7')"><a href="javascript:void(0);">ClassicLIST7</a></li>
                 </ul>
             </div>
@@ -585,16 +602,14 @@
                 </div>
                 <div class="row displayNone" id="classicListContent6">
                     <div class="col-md-8 borderLeft">
-                        <h2>List 6</h2>
+                        <h2>French Toast</h2>
                         <div class="col-md-6 noMargin">
                             <h4 class="h4margin">Recipe Description</h4>
-                            <div class="ddmargin">I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description<br><br><br></div>
+                            <div class="ddmargin">There are many, fancy variations on this basic recipe. This recipe works with many types of bread - white, whole wheat, cinnamon-raisin, Italian or French. Serve hot with butter or margarine and maple syrup.<br><br><br></div>
                             <ol class="lessPadding">
-                                <li class="">This is Classic Content</li>
-                                <li class="">This is Classic Content</li>
-                                <li class="">This is Classic Content</li>
-                                <li class="">This is Classic Content</li>
-                                <li class="">This is Classic Content</li>
+                                <li class="">Beat together egg, milk, salt, desired spices and vanilla.</li>
+                                <li class="">Heat a lightly oiled griddle or skillet over medium-high heat.</li>
+                                <li class="">Dunk each slice of bread in egg mixture, soaking both sides. Place in pan, and cook on both sides until golden. Serve hot.</li>
                             </ol>
                             <br>
                             <table class="table table-condensed">
@@ -604,7 +619,13 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstClassic6" class="ingredientCheckbox"><label for="firstClassic6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="6classic1" class="ingredientCheckbox"><label for="6classic1" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 slices Bread</label><br>
+                                        <input type="checkbox" id="6classic2" class="ingredientCheckbox"><label for="6classic2" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 cup All-purpose Flour</label><br>
+                                        <input type="checkbox" id="6classic3" class="ingredientCheckbox"><label for="6classic3" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 tsp Paprika</label><br>
+                                        <input type="checkbox" id="6classic4" class="ingredientCheckbox"><label for="6classic4" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
+                                        <input type="checkbox" id="6classic5" class="ingredientCheckbox"><label for="6classic5" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Ground Black Pepper</label><br>
+                                        <input type="checkbox" id="6classic6" class="ingredientCheckbox"><label for="6classic6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Ground Black Pepper</label><br>
+                                        <input type="checkbox" id="6classic7" class="ingredientCheckbox"><label for="6classic7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Ground Black Pepper</label><br>
                                         <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
                                         <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
                                         </form>
