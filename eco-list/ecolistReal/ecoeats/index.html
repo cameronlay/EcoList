@@ -124,6 +124,7 @@
                                                             <option value="oz">Ounce
                                                             <option value="g">Gram
                                                             <option value="lb">Pound
+                                                            <option value="cup">Cup
                                                             <option value="tbsp">Table Spoon
                                                             <option value="tsp">Tea Spoon
                                                             <option value="ml">ML
@@ -137,6 +138,7 @@
                                                             <!-- 1 GRAM = 0.00220462 POUND -->
                                                             <!-- 1 POUND = 16 OUNCE -->
                                                             <!-- 1 POUND = 453.592 GRAM -->
+                                                            <!-- 1 CUP = 236.588 ML -->
                                                             <!-- 1 TBSP = 3 TSP -->
                                                             <!-- 1 TBSP = 14.7868 ML -->
                                                             <!-- 1 TSP = 0.333333 TBSP -->
@@ -202,6 +204,21 @@
                                                                     </div>
                                                                     <div ng-switch-when="lb">
                                                                         <input type="text" class="form-control" value="{{firstNumber * 1 | number:2}} LB" disabled>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div ng-switch-when="cup" class="displayInline">
+                                                                <select ng-model="secondMeasure" class="form-control">
+                                                                    <option value="" selected disabled>
+                                                                    <option value="cup">Cup
+                                                                    <option value="ml">ML
+                                                                </select>
+                                                                <div ng-switch="secondMeasure" class="displayInline">
+                                                                    <div ng-switch-when="cup">
+                                                                        <input type="text" class="form-control" value="{{firstNumber * 1 | number:2}} Cup" disabled>
+                                                                    </div>
+                                                                    <div ng-switch-when="ml">
+                                                                        <input type="text" class="form-control" value="{{firstNumber * 236.588 | number:2}} ML" disabled>
                                                                     </div>
                                                                 </div>
                                                             </div>
