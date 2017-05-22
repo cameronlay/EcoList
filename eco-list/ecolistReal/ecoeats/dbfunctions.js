@@ -22,7 +22,7 @@ function updateList() {
     var ingredientsListLength = ingredientsList.length - 1;
     var dblist = [];
     var counterSteps = 0;
-    var counterIngredients = 0;
+    var counterIngredients = 100000;
     listref.once("value").then(snapshot => {
         if(snapshot.exists() && snapshot.hasChildren()){
         snapshot.forEach(childSnapshot => {
@@ -48,7 +48,7 @@ function updateList() {
             }
         }
     }
-});
+
     for (i = 0; i < stepsListLength; i += 2) {
         if (user != null) {
             if (stepsList[i].value != "" && stepsList[i].value != null) {
@@ -58,7 +58,7 @@ function updateList() {
         }
     }
     console.log("saved");
-};
+
         for (a = 0; a < dblist.length; a++) {
             for (j = 0; j < ingredientsListLength; j += 2) {
                 if (j % 2 == 0) {
@@ -75,7 +75,7 @@ function updateList() {
             }
         }
     }
-});
+
     for (i = 0; i < ingredientsListLength; i += 2) {
         if (user != null) {
             if (ingredientsList[i].value != "" && ingredientsList[i].value != null) {
@@ -85,4 +85,4 @@ function updateList() {
         }
     }
     console.log("saved");
-};
+});
