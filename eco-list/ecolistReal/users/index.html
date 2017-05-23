@@ -245,17 +245,7 @@
                     // UPDATE PROFILE USING USER NAME
                     var user = firebase.auth().currentUser;
                     user.updateProfile({
-                        'displayName':name
-                    });
-
-                    firebase.auth().onAuthStateChanged( function() {
-                        const user = firebase.auth().currentUser;
-                        if(user != null) {
-                            firebase.database().ref("users/" + user.uid).set({name:user.displayName});
-                        } 
-                        else 
-                            console.log("not signed in");
-            
+                        displayName:name
                     });
 
                     // REDIRECT TO HOMEPAGE
@@ -264,6 +254,8 @@
                     // ONAUTHSTATECHANGED FUNCTION SHOULD RUN AUTOMATICALLY
 
                     // CATCH ANY ERRORS
+                    
+                    console.log(firebase.auth().currentUser.displayName + "end");
                 }).catch(function(error) {
                 
                     alert(error);
