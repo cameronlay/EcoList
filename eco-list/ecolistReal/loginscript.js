@@ -11,6 +11,20 @@ var config = {
 };
 firebase.initializeApp(config);
 
+/*firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+    user.updateProfile({
+        displayName: ""
+    });
+
+  } else {
+    // No user is signed in.
+  }
+});*/
+
+
+
 
 firebase.auth().onAuthStateChanged( function() {
 	const user = firebase.auth().currentUser;
