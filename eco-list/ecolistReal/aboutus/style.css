@@ -1,57 +1,62 @@
 * {
     box-sizing: border-box;
-    padding:0;
 }
 
-h1 {
+.titlePara {
+    margin: 10px 105px 30px;
+    text-align: center;
+}
+html, body {
+    margin:0;
+    padding:0;
+}
+body {
+    background-image:url('../images/background2.jpg');
+}
+
+#AppsHomeHeader>img {
+    width:80%;
+    height:auto;
+}
+h1, h2 {
+    text-align:center;
+    margin:20px;
+}
+#AppsHomeHeader {
     text-align:center;
     margin:auto;
-    padding:0;
-    pointer-events: none;
-    user-select:none;
-}
-
-#header {
-    margin: 80px 0 1em;
-    display: block;
-
-}
-
-body {
-    margin:0;
-    background-image: url("../images/background2.jpg");
-}
-
-main {
-    display: block;
-    width: 70%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 50px;
-}
-
-#sideList {
-    height:400px;
-    overflow-y:scroll;
-
-    padding:10px 0 10px 0;
-}
-
-#googleMap {
-    padding:0;
+    margin-top: 80px;
 }
 
 .row {
-    padding-top:10px;
-    margin: 0;
+    width: 90%;
+    margin: auto;
 }
 
-.well {
-    margin-bottom:0;
+.appIcon {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*ADDED JUST PANEL CSS FOR STYLING THE ABOUT US PAGE*/
+.panel-default {
+    min-height: 150px;
+    margin:30px 150px 30px;
 }
 
-.panel {
-    padding: 15px;
+.panel-default p {
+    margin:0px 15px 30px;
+}
+
+h2 a {
+    text-decoration: none;
+    color: #404040;
+}
+
+h2 a:hover {
+    color: #f6f6e8;
+    background-color: #404040;
+    text-decoration: none;
 }
 
 /*MAKE NAV BAR RECTANGLE, OVERLAP BOOTSTRAP*/
@@ -90,10 +95,12 @@ div#myNavbar ul.navbar-nav ul.dropdown-menu a:hover {
 }
 
 .indexNavLogoText {
-    padding: 15px 40px 15px 10px;
+    padding: 15px;
     display: block;
     float: right;
+    padding-left: 10px;
     color: #e6e6d8;
+    padding-right: 40px;
 }
 
 .navbar-brand {
@@ -148,13 +155,15 @@ footer tr td a:hover {
 }
 /*FOOTER FINISH*/
 
+
+
 @media screen and (max-width: 768px) {
 
     /*NAV BAR*/
     div#myNavbar ul.navbar-nav ul.dropdown-menu a {
         color: #f6f6e8;
     }
-    
+
     .indexNavLogo {
         margin-left: 10px;
     }
@@ -166,12 +175,20 @@ footer tr td a:hover {
     }
     /*END OF FOOTER*/
 
-    #googleMap {
-        margin-top: 50px;
+    .appIcon {
+        display: block;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:30px;
     }
 
-    main {
-        width: 90%;
+    .col-md-6 {
+        padding: 0;
+    }
+
+    .panel-default {
+        margin:10px;
     }
 
 }
