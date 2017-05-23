@@ -37,11 +37,15 @@ h1, h2 {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-top:15px;
+}
+/*ADDED JUST PANEL CSS FOR STYLING THE ABOUT US PAGE*/
+.panel-default {
+    min-height: 150px;
+    margin:30px 150px 30px;
 }
 
-.panel-default {
-    min-height: 250px;
+.panel-default p {
+    margin:0px 15px 30px;
 }
 
 h2 a {
@@ -183,9 +187,8 @@ footer tr td a:hover {
         padding: 0;
     }
 
-    .titlePara{
-        margin: 0px 25px 30px;
-        text-align: justify;
+    .panel-default {
+        margin:10px;
     }
 
 }
