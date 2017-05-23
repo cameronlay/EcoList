@@ -86,3 +86,101 @@ function updateList() {
     }
     console.log("saved");
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function() {
+    $('input.saveBtn').click(function() {
+
+        // GET FIREBASE REFERENCE
+        var fbRefList = firebase.database().ref("shoppinglist/" + user.uid);//.set({name:user.displayName});
+
+        // GET CHECKBOXES WHICH IS SIBLINGS OF SAVE BUTTON
+        // CURRENTLY, IT'S AN ARRAY WITH 400+ ELEMENTS
+        var arrayOfSiblings = $(this).siblings('.ingredientCheckbox');
+        var trueArrayOfSiblings = undefined;
+
+        // FOR LOOP FIRST
+        // IF CHECKBOXES ARE TRUE ORGANIZE ITEMS USING NAME AND QUANTITY
+        // NAME OF CHECKBOXES WILL BE #.###NAME
+        for (var i = 0; i < arrayOfSiblings.length; i++) {
+            if (arrayOfSiblings[i] == true) {
+                trueArrayOfSiblings[i] = arrayOfSiblings[i];
+            }
+        }
+
+        // IF SUCCESS TO ORGANIZE ITEMS, SEND TO FIREBASE REF
+
+    })
+})

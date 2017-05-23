@@ -30,7 +30,6 @@
         <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
         <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
         <link rel="stylesheet" href="../fonts/font.css">
         <!-- JQUERY INSTEAD OF AJAX -->
         <script>
@@ -307,7 +306,7 @@
                     <li id="classicList4" onclick="classicPillsClicked('classicList4', 'classicListContent4')"><a href="javascript:void(0);">Chicken Tetrazzini</a></li>
                     <li id="classicList5" onclick="classicPillsClicked('classicList5', 'classicListContent5')"><a href="javascript:void(0);">Southern Fried Chicken</a></li>
                     <li id="classicList6" onclick="classicPillsClicked('classicList6', 'classicListContent6')"><a href="javascript:void(0);">French Toast</a></li>
-                    <li id="classicList7" onclick="classicPillsClicked('classicList7', 'classicListContent7')"><a href="javascript:void(0);">ClassicLIST7</a></li>
+                    <li id="classicList7" onclick="classicPillsClicked('classicList7', 'classicListContent7')"><a href="javascript:void(0);">Guacamole</a></li>
                 </ul>
             </div>
             <!--Vegetarian List-->
@@ -331,7 +330,7 @@
                     <li id="ketoList4" onclick="ketoPillsClicked('ketoList4', 'ketoListContent4')"><a href="javascript:void(0);">Chicken with Spinach Pizza</a></li>
                     <li id="ketoList5" onclick="ketoPillsClicked('ketoList5', 'ketoListContent5')"><a href="javascript:void(0);">Cinnamon Butter Bites</a></li>
                     <li id="ketoList6" onclick="ketoPillsClicked('ketoList6', 'ketoListContent6')"><a href="javascript:void(0);">Grilled Cheese Sandwiches</a></li>
-                    <li id="ketoList7" onclick="ketoPillsClicked('ketoList7', 'ketoListContent7')"><a href="javascript:void(0);">KetoLIST7</a></li>
+                    <li id="ketoList7" onclick="ketoPillsClicked('ketoList7', 'ketoListContent7')"><a href="javascript:void(0);">Mushroom Omelet</a></li>
                 </ul>
             </div>
             <!--Paleo List-->
@@ -369,8 +368,8 @@
                     <li id="culturalList6" onclick="culturalPillsClicked('culturalList6', 'culturalListContent6')"><a href="javascript:void(0);">Quaq - Inuvialuit</a></li>
                     <li id="culturalList7" onclick="culturalPillsClicked('culturalList7', 'culturalListContent7')"><a href="javascript:void(0);">Eggs with Tomatoes - China</a></li>
                     <li id="culturalList8" onclick="culturalPillsClicked('culturalList8', 'culturalListContent8')"><a href="javascript:void(0);">Yakisoba Chicken - Japan</a></li>
-                    <li id="culturalList9" onclick="culturalPillsClicked('culturalList9', 'culturalListContent9')"><a href="javascript:void(0);">culturalLIST9</a></li>
-                    <li id="culturalList10" onclick="culturalPillsClicked('culturalList10', 'culturalListContent10')"><a href="javascript:void(0);">culturalLIST10</a></li>
+                    <li id="culturalList9" onclick="culturalPillsClicked('culturalList9', 'culturalListContent9')"><a href="javascript:void(0);">Steamed Eggs - Korea</a></li>
+                    <li id="culturalList10" onclick="culturalPillsClicked('culturalList10', 'culturalListContent10')"><a href="javascript:void(0);">Bulgogi - Korea</a></li>
                 </ul>
             </div>
             <!-- user List -->
@@ -620,12 +619,9 @@
                                     <td>
                                         <form action="" method="post">
                                         <input type="checkbox" id="6classic1" class="ingredientCheckbox"><label for="6classic1" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 slices Bread</label><br>
-                                        <input type="checkbox" id="6classic2" class="ingredientCheckbox"><label for="6classic2" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 cup All-purpose Flour</label><br>
-                                        <input type="checkbox" id="6classic3" class="ingredientCheckbox"><label for="6classic3" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 tsp Paprika</label><br>
+                                        <input type="checkbox" id="6classic2" class="ingredientCheckbox"><label for="6classic2" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 Egg</label><br>
+                                        <input type="checkbox" id="6classic3" class="ingredientCheckbox"><label for="6classic3" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;3 tbsp Milk</label><br>
                                         <input type="checkbox" id="6classic4" class="ingredientCheckbox"><label for="6classic4" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
-                                        <input type="checkbox" id="6classic5" class="ingredientCheckbox"><label for="6classic5" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Ground Black Pepper</label><br>
-                                        <input type="checkbox" id="6classic6" class="ingredientCheckbox"><label for="6classic6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Ground Black Pepper</label><br>
-                                        <input type="checkbox" id="6classic7" class="ingredientCheckbox"><label for="6classic7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Ground Black Pepper</label><br>
                                         <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
                                         <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
                                         </form>
@@ -640,16 +636,12 @@
                 </div>
                 <div class="row displayNone" id="classicListContent7">
                     <div class="col-md-8 borderLeft">
-                        <h2>List 7</h2>
+                        <h2>Guacamole</h2>
                         <div class="col-md-6 noMargin">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description<br><br><br></div>
                             <ol class="lessPadding">
-                                <li class="">This is Classic Content</li>
-                                <li class="">This is Classic Content</li>
-                                <li class="">This is Classic Content</li>
-                                <li class="">This is Classic Content</li>
-                                <li class="">This is Classic Content</li>
+                                <li class="">You can make this avocado salad smooth or chunky depending on your tastes.</li>
                             </ol>
                             <br>
                             <table class="table table-condensed">
@@ -659,7 +651,13 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstClassic7" class="ingredientCheckbox"><label for="firstClassic7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="7classic1" class="ingredientCheckbox"><label for="7classic1" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;3 Avocados</label><br>
+                                        <input type="checkbox" id="7classic2" class="ingredientCheckbox"><label for="7classic2" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 Lime</label><br>
+                                        <input type="checkbox" id="7classic3" class="ingredientCheckbox"><label for="7classic3" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 tbsp Onion</label><br>
+                                        <input type="checkbox" id="7classic4" class="ingredientCheckbox"><label for="7classic4" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;3 tbsp Chopped Cilantro</label><br>
+                                        <input type="checkbox" id="7classic5" class="ingredientCheckbox"><label for="7classic5" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 Tomatoes</label><br>
+                                        <input type="checkbox" id="7classic6" class="ingredientCheckbox"><label for="7classic6" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 tsp Minced Garlic</label><br>
+                                        <input type="checkbox" id="7classic7" class="ingredientCheckbox"><label for="7classic7" class="ingredientLabel" data-toggle="tooltip" title="Optional"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
                                         <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
                                         <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
                                         </form>
@@ -1237,16 +1235,16 @@
                 </div>
                 <div class="row displayNone" id="ketoListContent7">
                     <div class="col-md-8 borderLeft">
-                        <h2>List 7</h2>
+                        <h2>Mushroom Omelet</h2>
                         <div class="col-md-6 noMargin">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description<br><br><br></div>
                             <ol class="lessPadding">
-                                <li class="">This is Keto Content</li>
-                                <li class="">This is Keto Content</li>
-                                <li class="">This is Keto Content</li>
-                                <li class="">This is Keto Content</li>
-                                <li class="">This is Keto Content</li>
+                                <li class="">Crack the eggs into a mixing bowl with a pinch of salt and pepper. Whisk the eggs with a fork until smooth and frothy.</li>
+                                <li class="">Add salt and spices to taste.</li>
+                                <li class="">Melt butter in a frying pan. Once the butter has melted, pour in the egg mixture.</li>
+                                <li class="">When the omelet begins to cook and get firm, but still has a little raw egg on top, sprinkle cheese, mushrooms and onion on top.</li>
+                                <li class="">Using a spatula, carefully ease around the edges of the omelet, and then fold it over in half. When it starts to turn golden brown underneath, remove the pan from the heat and slide the omelet on to a plate.</li>
                             </ol>
                             <br>
                             <table class="table table-condensed">
@@ -1256,7 +1254,13 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstKeto7" class="ingredientCheckbox"><label for="firstKeto7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="7Keto1" class="ingredientCheckbox"><label for="7Keto1" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;3 Eggs</label><br>
+                                        <input type="checkbox" id="7Keto2" class="ingredientCheckbox"><label for="7Keto2" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 oz Butter</label><br>
+                                        <input type="checkbox" id="7Keto3" class="ingredientCheckbox"><label for="7Keto3" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 oz Cheese</label><br>
+                                        <input type="checkbox" id="7Keto4" class="ingredientCheckbox"><label for="7Keto4" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1/5 Onion</label><br>
+                                        <input type="checkbox" id="7Keto5" class="ingredientCheckbox"><label for="7Keto5" class="ingredientLabel" data-toggle="tooltip" title="Or just Lettuce"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;3 Mushrooms</label><br>
+                                        <input type="checkbox" id="7Keto6" class="ingredientCheckbox"><label for="7Keto6" class="ingredientLabel" data-toggle="tooltip" title="Or just Lettuce"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
+                                        <input type="checkbox" id="7Keto7" class="ingredientCheckbox"><label for="7Keto7" class="ingredientLabel" data-toggle="tooltip" title="Or just Lettuce"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Ground Black Pepper</label><br>
                                         <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
                                         <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
                                         </form>
@@ -2205,16 +2209,14 @@
                 </div>
                 <div class="row displayNone" id="culturalListContent9">
                     <div class="col-md-8 borderLeft">
-                        <h2>List 9</h2>
+                        <h2>Steamed Eggs(Gye-ran-jjim)</h2>
                         <div class="col-md-6 noMargin">
                             <h4 class="h4margin">Recipe Description</h4>
-                            <div class="ddmargin">I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description<br><br><br></div>
+                            <div class="ddmargin">Gyeranjjim is a popular Korean side dish. It is a custard-like steamed egg casserole.<br><br><br></div>
                             <ol class="lessPadding">
-                                <li class="">This is Cultural Content</li>
-                                <li class="">This is Cultural Content</li>
-                                <li class="">This is Cultural Content</li>
-                                <li class="">This is Cultural Content</li>
-                                <li class="">This is Cultural Content</li>
+                                <li class="">Add the egg mixture to the pot.</li>
+                                <li class="">Cover, and simmer over medium low heat on the stove for about 5 minutes.</li>
+                                <li class="">Add the chopped green onions, cover and simmer for additional 2 minutes until the mixture is set.</li>
                             </ol>
                             <br>
                             <table class="table table-condensed">
@@ -2224,7 +2226,9 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstCultural9" class="ingredientCheckbox"><label for="firstCultural9" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="9Cultural1" class="ingredientCheckbox"><label for="9Cultural1" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;2 Eggs</label><br>
+                                        <input type="checkbox" id="9Cultural2" class="ingredientCheckbox"><label for="9Cultural2" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 Green Onion</label><br>
+                                        <input type="checkbox" id="9Cultural3" class="ingredientCheckbox"><label for="9Cultural3" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Sea Salt</label><br>
                                         <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
                                         <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
                                         </form>
@@ -2239,16 +2243,13 @@
                 </div>
                 <div class="row displayNone" id="culturalListContent10">
                     <div class="col-md-8 borderLeft">
-                        <h2>List 10</h2>
+                        <h2>Korean BBQ (Bul-go-gi)</h2>
                         <div class="col-md-6 noMargin">
                             <h4 class="h4margin">Recipe Description</h4>
-                            <div class="ddmargin">I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description I am a description<br><br><br></div>
+                            <div class="ddmargin">Korean dish of thin beef slices marinated and grilled on a barbecue.<br><br><br></div>
                             <ol class="lessPadding">
-                                <li class="">This is Cultural Content</li>
-                                <li class="">This is Cultural Content</li>
-                                <li class="">This is Cultural Content</li>
-                                <li class="">This is Cultural Content</li>
-                                <li class="">This is Cultural Content</li>
+                                <li class="">Combine yellow onion, white and light green parts of green onions, soy sauce, sugar, sesame seeds, garlic, sesame oil, red pepper flakes, ginger, and black pepper in a bowl until marinade is well mixed. Add steak slices to marinade; cover and refrigerate, 1 hour to 1 day.</li>
+                                <li class="">Heat a skillet over medium heat. Working in batches, cook and stir steak and marinade together in the hot skillet, until steak is cooked through, about 5 minutes. Garnish bulgogi with green parts of green onions.</li>
                             </ol>
                             <br>
                             <table class="table table-condensed">
@@ -2258,7 +2259,16 @@
                                 <tr>
                                     <td>
                                         <form action="" method="post">
-                                        <input type="checkbox" id="firstCultural10" class="ingredientCheckbox"><label for="firstCultural10" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;ingredient1</label><br>
+                                        <input type="checkbox" id="10Cultural1" class="ingredientCheckbox"><label for="10Cultural1" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1/4 lb Beef</label><br>
+                                        <input type="checkbox" id="10Cultural2" class="ingredientCheckbox"><label for=10Cultural2" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1/4 Onion</label><br>
+                                        <input type="checkbox" id="10Cultural3" class="ingredientCheckbox"><label for="10Cultural3" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 tsp Soy Sauce</label><br>
+                                        <input type="checkbox" id="10Cultural4" class="ingredientCheckbox"><label for="10Cultural4" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 tsp Sugar</label><br>
+                                        <input type="checkbox" id="10Cultural5" class="ingredientCheckbox"><label for="10Cultural5" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 tsp Toasted Sesame Seeds</label><br>
+                                        <input type="checkbox" id="10Cultural6" class="ingredientCheckbox"><label for="10Cultural6" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1 clove Minced Garlic</label><br>
+                                        <input type="checkbox" id="10Cultural7" class="ingredientCheckbox"><label for="10Cultural7" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1/2 tbsp Sesame Oil</label><br>
+                                        <input type="checkbox" id="10Cultural8" class="ingredientCheckbox"><label for="10Cultural8" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1/8 tsp Korean Red Pepper Flakes</label><br>
+                                        <input type="checkbox" id="10Cultural9" class="ingredientCheckbox"><label for="10Cultural9" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;1/8 tsp Minced Ginger</label><br>
+                                        <input type="checkbox" id="10Cultural10" class="ingredientCheckbox"><label for="10Cultural10" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;Ground Black Pepper</label><br>
                                         <input type="submit" class="btn btn-info saveBtn" value="Add Items to List">
 
                                         <button type="button" class="resetBtn btn btn-danger">Reset Checkboxes</button>
@@ -2379,46 +2389,8 @@
     <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
     <script src="../loginscript.js"></script>
     <script src="dbfunctions.js"></script>
+    <script src="script.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-<!-- EDMUND, GET INGREDIENTS FROM PRE-DEFINED RECIPES AND ADD TO SHOPPING LIST -->
-<script>
-    $(document).ready(function() {
-        $('input.saveBtn').click(function() {
-
-            // GET FIREBASE REFERENCE
-            var fbRefList = firebase.database().ref("shoppinglist/" + user.uid);//.set({name:user.displayName});
-
-            // GET CHECKBOXES WHICH IS SIBLINGS OF SAVE BUTTON
-            // CURRENTLY, IT'S AN ARRAY WITH 400+ ELEMENTS
-            var arrayOfSiblings = $(this).siblings('.ingredientCheckbox');
-            var trueArrayOfSiblings = undefined;
-
-            // FOR LOOP FIRST
-            // IF CHECKBOXES ARE TRUE ORGANIZE ITEMS USING NAME AND QUANTITY
-            // NAME OF CHECKBOXES WILL BE #.###NAME
-            for (var i = 0; i < arrayOfSiblings.length; i++) {
-                if (arrayOfSiblings[i] == true) {
-                    trueArrayOfSiblings[i] = arrayOfSiblings[i];
-                }
-            }
-            
-
-            // IF SUCCESS TO ORGANIZE ITEMS, SEND TO FIREBASE REF
-
-        })
-    })
-</script>
 
     </body>
 </html>
