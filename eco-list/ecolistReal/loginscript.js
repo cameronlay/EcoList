@@ -11,20 +11,6 @@ var config = {
 };
 firebase.initializeApp(config);
 
-/*firebase.auth().onAuthStateChanged(function(user) {
-  if (user) {
-    // User is signed in.
-    user.updateProfile({
-        displayName: ""
-    });
-
-  } else {
-    // No user is signed in.
-  }
-});*/
-
-
-
 
 firebase.auth().onAuthStateChanged( function() {
 	const user = firebase.auth().currentUser;
@@ -40,7 +26,6 @@ firebase.auth().onAuthStateChanged( function() {
             document.getElementById("logIn").style.display="block";
         }
         
-        
         if(user && winSize > 786) {
                 document.getElementById("p").style.display = "block";
                 document.getElementById("p").innerHTML = "Welcome, " + user.displayName;
@@ -54,3 +39,4 @@ firebase.auth().onAuthStateChanged( function() {
 function logOut() {
     firebase.auth().signOut();
 }
+
