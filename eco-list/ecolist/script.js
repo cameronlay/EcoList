@@ -34,6 +34,7 @@ $(function () {
                 a = parseInt(id);
                 var toAdd = $("#" + a + "item").val();
                 var toAdd2 = $('#' + a + "quantity").val();
+
 				if(toAdd2 == "" || toAdd2 == null){
 					toAdd2 = 0;
 				}
@@ -42,6 +43,8 @@ $(function () {
 				cartref.update({[toAdd] : toAdd2});
                  addToCart(toAdd,toAdd2);
                  $(this).closest("tr").remove();
+
+
                  var patt = /easter\s?egg/ig;
                  if(patt.test(toAdd)) {
                   $('body').css('background-image', 'url(../images/easteregg.jpg)');
