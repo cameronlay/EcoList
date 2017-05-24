@@ -13,12 +13,18 @@ firebase.initializeApp(config);
 
 
 firebase.auth().onAuthStateChanged( function() {
-	const user = firebase.auth().currentUser;
+	let user = firebase.auth().currentUser;
 		if(user != null) {
 			firebase.database().ref("users/" + user.uid).set({name:user.displayName});
             document.getElementById("logIn").style.display="none";
             document.getElementById("logOut").style.display="block";
-            
+            if(winSize > 786) {
+                document.getElementById("p").style.display = "block";
+                document.getElementById("p").innerHTML = "Welcome, " + user.displayName;
+        } else if(winSize < 786) {
+                document.getElementById("p").style.display = "none";
+                document.getElementById("t").innerHTML = "Hey, " + user.displayName;
+        }
         }            
         else {
             console.log("not signed in");
@@ -26,13 +32,7 @@ firebase.auth().onAuthStateChanged( function() {
             document.getElementById("logIn").style.display="block";
         }
         
-        if(user && winSize > 786) {
-                document.getElementById("p").style.display = "block";
-                document.getElementById("p").innerHTML = "Welcome, " + user.displayName;
-        } else if(user && winSize < 786) {
-                document.getElementById("p").style.display = "none";
-                document.getElementById("t").innerHTML = "Hey, " + user.displayName;
-        }
+        
 			
 });
         
