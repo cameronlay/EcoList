@@ -18,10 +18,10 @@ firebase.auth().onAuthStateChanged( function() {
 			firebase.database().ref("users/" + user.uid).set({name:user.displayName});
             document.getElementById("logIn").style.display="none";
             document.getElementById("logOut").style.display="block";
-            if(winSize > 786) {
+            if(winSize > 768) {
                 document.getElementById("p").style.display = "block";
                 document.getElementById("p").innerHTML = "Welcome, " + user.displayName;
-        } else if(winSize < 786) {
+        } else if(winSize < 768) {
                 document.getElementById("p").style.display = "none";
                 document.getElementById("t").innerHTML = "Hey, " + user.displayName;
         }
