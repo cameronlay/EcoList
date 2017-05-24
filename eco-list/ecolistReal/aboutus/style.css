@@ -15,8 +15,9 @@ body {
 }
 
 #AppsHomeHeader>img {
-    width:80%;
+    width:52%;
     height:auto;
+    margin-top:18px;
 }
 h1, h2 {
     text-align:center;
@@ -41,11 +42,11 @@ h1, h2 {
 /*ADDED JUST PANEL CSS FOR STYLING THE ABOUT US PAGE*/
 .panel-default {
     min-height: 150px;
-    margin:30px 150px 30px;
+    margin:30px 250px 30px;
 }
 
 .panel-default p {
-    margin:0px 15px 30px;
+    margin:0 15px 30px;
 }
 
 h2 a {
@@ -189,6 +190,12 @@ footer tr td a:hover {
 
     .panel-default {
         margin:10px;
+    }
+
+    #AppsHomeHeader>img {
+        width:80%;
+        height:auto;
+        margin:0;
     }
 
 }
