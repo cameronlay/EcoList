@@ -39,15 +39,11 @@ h1, h2 {
     margin-left: auto;
     margin-right: auto;
 }
-/*ADDED JUST PANEL CSS FOR STYLING THE ABOUT US PAGE*/
-.panel-default {
-    min-height: 150px;
-    margin:30px 250px 30px;
+
+.panel p {
+    font-size: 1.3em;
 }
 
-.panel-default p {
-    margin:0 15px 30px;
-}
 
 h2 a {
     text-decoration: none;
@@ -58,6 +54,10 @@ h2 a:hover {
     color: #f6f6e8;
     background-color: #404040;
     text-decoration: none;
+}
+
+.panel-default{
+    min-height: 300px;
 }
 
 /*MAKE NAV BAR RECTANGLE, OVERLAP BOOTSTRAP*/

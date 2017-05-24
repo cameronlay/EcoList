@@ -40,7 +40,11 @@ h1, h2 {
 }
 
 .panel-default {
-    min-height: 250px;
+    min-height: 300px;
+}
+
+.panel p {
+    font-size:1.3em;
 }
 
 h2 a {
@@ -186,5 +190,9 @@ footer tr td a:hover {
         width:80%;
         height:auto;
         margin:0;
+    }
+
+    .panel p{
+        text-align: justify;
     }
 }
