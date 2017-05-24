@@ -2,10 +2,7 @@
     box-sizing: border-box;
 }
 
-.titlePara {
-    margin: 10px 105px 30px;
-    text-align: center;
-}
+
 html, body {
     margin:0;
     padding:0;
@@ -19,6 +16,8 @@ body {
     height:auto;
     margin-top:18px;
 }
+
+
 h1, h2 {
     text-align:center;
     margin:20px;
@@ -43,7 +42,11 @@ h1, h2 {
 }
 
 .panel-default {
-    min-height: 250px;
+    min-height: 300px;
+}
+
+.panel p {
+    font-size:1.3em;
 }
 
 h2 a {
@@ -56,6 +59,7 @@ h2 a:hover {
     background-color: #404040;
     text-decoration: none;
 }
+
 
 /*MAKE NAV BAR RECTANGLE, OVERLAP BOOTSTRAP*/
 .indexNavNoBorderRadius {
@@ -185,14 +189,17 @@ footer tr td a:hover {
         padding: 0;
     }
 
-    .titlePara{
-        margin: 0px 25px 30px;
-        text-align: justify;
-    }
+
     #AppsHomeHeader>img {
         width:80%;
         height:auto;
         margin:0;
     }
+
+    .panel p {
+        text-align: justify;
+    }
+
+
 
 }
