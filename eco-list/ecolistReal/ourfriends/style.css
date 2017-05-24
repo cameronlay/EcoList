@@ -2,10 +2,7 @@
     box-sizing: border-box;
 }
 
-.titlePara {
-    margin: 10px 105px 30px;
-    text-align: center;
-}
+
 html, body {
     margin:0;
     padding:0;
@@ -19,6 +16,8 @@ body {
     height:auto;
     margin-top:18px;
 }
+
+
 h1, h2 {
     text-align:center;
     margin:20px;
@@ -185,10 +184,7 @@ footer tr td a:hover {
         padding: 0;
     }
 
-    .titlePara{
-        margin: 0px 25px 30px;
-        text-align: justify;
-    }
+
     #AppsHomeHeader>img {
         width:80%;
         height:auto;
