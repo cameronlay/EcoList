@@ -327,12 +327,12 @@ function infoFunction3() {
  * FUNCTION THAT OVERRIDE ALL FUNCTIONS IF THE BROWSER
  * WIDTH IS LESS THAN 768
  */
-function widthLessThan768() {
+function widthLessThan767() {
     var width = window.innerWidth
         || document.documentElement.clientWidth
         || document.body.clientWidth;
 
-    if (width <= 768) {
+    if (width <= 767) {
         var active = document.getElementsByClassName('active');
         for (var i = 0; i < active.length; i++) {
             active[i].classList.remove('active');

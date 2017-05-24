@@ -46,7 +46,7 @@
             var app = angular.module("mealPlan", []);
         </script>
     </head>
-    <body onload="widthLessThan768()" ng-app="mealPlan">
+    <body onload="widthLessThan767()" ng-app="mealPlan">
 
     <!-- SPINNING LOADER -->
     <div id="backgroundRecipe">
@@ -98,13 +98,13 @@
             <!-- TABS -->
             <div class="panel panel-default">
             <ul class="nav nav-tabs" id="navTabs">
-                <li id="classic" class="active" onclick="TabClicked('classic', 'classicList1', 'classicList', 'classicListContent', 'classicListContent1')"><a href="javascript:void(0);">Classic</a></li>
-                <li id="vegetarian" onclick="TabClicked('vegetarian', 'vegetarianList1', 'vegetarianList', 'vegetarianListContent', 'vegetarianListContent1')"><a href="javascript:void(0);">Vegetarian</a></li>
-                <li id="keto" onclick="TabClicked('keto', 'ketoList1', 'ketoList', 'ketoListContent', 'ketoListContent1')"><a href="javascript:void(0);">Keto</a></li>
-                <li id="paleo" onclick="TabClicked('paleo', 'paleoList1', 'paleoList', 'paleoListContent', 'paleoListContent1')"><a href="javascript:void(0);">Paleo</a></li>
-                <li id="proteinRich" onclick="TabClicked('proteinRich', 'proteinList1', 'proteinList', 'proteinListContent', 'proteinListContent1')"><a href="javascript:void(0);">Protein Rich</a></li>
-                <li id="cultural" onclick="TabClicked('cultural', 'culturalList1', 'culturalList', 'culturalListContent', 'culturalListContent1')"><a href="javascript:void(0);">Cultural</a></li>
-                <li id="user" onclick="TabClicked('user', 'userList1', 'userList', 'userListContent', 'userListContent1')"><a href="javascript:void(0);">Create your Own</a></li>
+                <li id="classic" class="active" onclick="TabClicked('classic', 'classicList1', 'classicList', 'classicListContent', 'classicListContent1')"><a href="javascript:void(0);" class="tabButtons">Classic</a></li>
+                <li id="vegetarian" onclick="TabClicked('vegetarian', 'vegetarianList1', 'vegetarianList', 'vegetarianListContent', 'vegetarianListContent1')"><a href="javascript:void(0);" class="tabButtons">Vegetarian</a></li>
+                <li id="keto" onclick="TabClicked('keto', 'ketoList1', 'ketoList', 'ketoListContent', 'ketoListContent1')"><a href="javascript:void(0);" class="tabButtons">Keto</a></li>
+                <li id="paleo" onclick="TabClicked('paleo', 'paleoList1', 'paleoList', 'paleoListContent', 'paleoListContent1')"><a href="javascript:void(0);" class="tabButtons">Paleo</a></li>
+                <li id="proteinRich" onclick="TabClicked('proteinRich', 'proteinList1', 'proteinList', 'proteinListContent', 'proteinListContent1')"><a href="javascript:void(0);" class="tabButtons">Protein Rich</a></li>
+                <li id="cultural" onclick="TabClicked('cultural', 'culturalList1', 'culturalList', 'culturalListContent', 'culturalListContent1')"><a href="javascript:void(0);" class="tabButtons">Cultural</a></li>
+                <li id="user" onclick="TabClicked('user', 'userList1', 'userList', 'userListContent', 'userListContent1')"><a href="javascript:void(0);" class="tabButtons">Create your Own</a></li>
                     <!-- CONVERTER START -->
                         <span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Converter</button></span>
                             <div class="modal fade" id="myModal" role="dialog">

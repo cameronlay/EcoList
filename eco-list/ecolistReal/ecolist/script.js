@@ -40,7 +40,7 @@ $(function () {
                   return false;
                  }
                 if(toAdd2 == "" || toAdd2 == null){
-                      toAdd2 = 0;
+                      toAdd2 = 1;
                 }
                 toAdd2 = parseInt(toAdd2);
                 listref.child(toAdd).remove();
