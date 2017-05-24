@@ -149,7 +149,7 @@ footer tr td a:hover {
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     /*NAV BAR*/
     div#myNavbar ul.navbar-nav ul.dropdown-menu a {

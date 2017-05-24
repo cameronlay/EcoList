@@ -69,7 +69,7 @@
                     <table id="LoginTable">
                         <tbody>
                         <tr>
-                            <td><input type="text" id="LoginUsername" name="username" placeholder="Username" class="form-control"/></td>
+                            <td><input type="text" id="LoginUsername" name="username" placeholder="Email" class="form-control"/></td>
                         </tr>
                         <tr>
                             <td class="spacingRow">Just here for spacing</td>
@@ -173,7 +173,6 @@
 <script src="../loginscript.js"></script>
 
 
-
 <!-- The code below initialise the sign in widget. -->
 <script src="https://cdn.firebase.com/libs/firebaseui/1.0.1/firebaseui.js"></script>
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/1.0.1/firebaseui.css" />
@@ -245,23 +244,22 @@
                 firebase.auth().createUserWithEmailAndPassword(email, password).then(function() {
 
                     // UPDATE PROFILE USING USER NAME
-                firebase.auth().currentUser.updateProfile({
+                    firebase.auth().currentUser.updateProfile({
                         displayName:name
-                    });
+                    }).then( () => {
 
                     // REDIRECT TO HOMEPAGE
                     window.location.href = "../";
-
                     // ONAUTHSTATECHANGED FUNCTION SHOULD RUN AUTOMATICALLY
 
                     // CATCH ANY ERRORS
-                    
+                    });
                 }).catch(function(error) {
                 
                     alert(error);
 
                 });
-            }
+            };
 
         });
 

@@ -124,7 +124,7 @@ footer tr td a:hover {
 
 /*adjusts screen size for mobile view at 640px*/
 
-@media only screen and (min-width:769px){
+@media only screen and (min-width:768px){
   .container{
     width:50%;
   }
@@ -320,7 +320,7 @@ thead tr th {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     /*NAV BAR*/
     div#myNavbar ul.navbar-nav ul.dropdown-menu a {
