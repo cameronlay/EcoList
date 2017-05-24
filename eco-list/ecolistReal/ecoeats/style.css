@@ -380,3 +380,17 @@ footer tr td a:hover {
     }
 
 }
+
+@media only screen and (max-width: 769px) {
+    .borderLeft {
+        border-left: none;
+    }
+}
+
+.nav>li>a.tabButtons {
+    padding: 10px 8px;
+}
+
+.col-md-8 {
+    padding: 0 25px;
+}
