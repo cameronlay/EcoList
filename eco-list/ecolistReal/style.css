@@ -154,7 +154,7 @@ footer tr td a:hover {
 }
 /*FOOTER FINISH*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     /*NAV BAR*/
     div#myNavbar ul.navbar-nav ul.dropdown-menu a {
@@ -201,7 +201,7 @@ footer tr td a:hover {
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .jumbotron {
         padding-left: 100px;
         padding-right: 100px;
