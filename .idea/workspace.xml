@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7aa27a59-f748-4c7c-bc46-fab00493a4b8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eco-list/ecolistReal/aboutus/index.html" afterPath="$PROJECT_DIR$/eco-list/ecolistReal/aboutus/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eco-list/ecolistReal/aboutus/style.css" afterPath="$PROJECT_DIR$/eco-list/ecolistReal/aboutus/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eco-list/ecolistReal/ourfriends/index.html" afterPath="$PROJECT_DIR$/eco-list/ecolistReal/ourfriends/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eco-list/ecolistReal/ourfriends/style.css" afterPath="$PROJECT_DIR$/eco-list/ecolistReal/ourfriends/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eco-list/ecolistReal/services/index.html" afterPath="$PROJECT_DIR$/eco-list/ecolistReal/services/index.html" />
@@ -21,41 +22,41 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eco-list/ecolistReal/services/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1592">
-              <caret line="43" column="1" lean-forward="true" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eco-list/ecolistReal/services/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="69" column="4" lean-forward="true" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eco-list/ecolistReal/ourfriends/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="56" column="39" lean-forward="true" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
+            <state relative-caret-position="312">
+              <caret line="109" column="30" lean-forward="true" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/eco-list/ecolistReal/services/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="101" column="52" lean-forward="true" selection-start-line="101" selection-start-column="52" selection-end-line="101" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eco-list/ecolistReal/ourfriends/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="58" column="45" lean-forward="true" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
+            <state relative-caret-position="277">
+              <caret line="41" column="1" lean-forward="true" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eco-list/ecolistReal/services/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313">
+              <caret line="49" column="6" lean-forward="true" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -80,13 +81,13 @@
         <option value="$PROJECT_DIR$/eco-list/ecolistReal/donation/index.html" />
         <option value="$PROJECT_DIR$/eco-list/ecolistReal/sitemap/index.html" />
         <option value="$PROJECT_DIR$/eco-list/ecolistReal/users/index.html" />
-        <option value="$PROJECT_DIR$/eco-list/ecolistReal/aboutus/index.html" />
         <option value="$PROJECT_DIR$/eco-list/ecolistReal/ecolist/index.html" />
         <option value="$PROJECT_DIR$/eco-list/ecolistReal/ecoeats/style.css" />
         <option value="$PROJECT_DIR$/eco-list/ecolistReal/aboutus/style.css" />
-        <option value="$PROJECT_DIR$/eco-list/ecolistReal/ourfriends/index.html" />
+        <option value="$PROJECT_DIR$/eco-list/ecolistReal/aboutus/index.html" />
         <option value="$PROJECT_DIR$/eco-list/ecolistReal/ourfriends/style.css" />
         <option value="$PROJECT_DIR$/eco-list/ecolistReal/services/style.css" />
+        <option value="$PROJECT_DIR$/eco-list/ecolistReal/ourfriends/index.html" />
         <option value="$PROJECT_DIR$/eco-list/ecolistReal/services/index.html" />
       </list>
     </option>
@@ -287,12 +288,12 @@
       <updated>1495141033324</updated>
       <workItem from="1495141035050" duration="110000" />
       <workItem from="1495571051826" duration="7489000" />
-      <workItem from="1495580087489" duration="9663000" />
+      <workItem from="1495580087489" duration="13222000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17262000" />
+    <option name="totallyTimeSpent" value="20821000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="829" extended-state="6" />
@@ -421,14 +422,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eco-list/ecolistReal/aboutus/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="6" column="43" lean-forward="true" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eco-list/ecolistReal/ecolist/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="726">
@@ -447,40 +440,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/eco-list/ecolistReal/aboutus/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="189" column="0" lean-forward="true" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
+        <state relative-caret-position="-1176">
+          <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eco-list/ecolistReal/services/style.css">
+    <entry file="file://$PROJECT_DIR$/eco-list/ecolistReal/aboutus/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1592">
-          <caret line="43" column="1" lean-forward="true" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eco-list/ecolistReal/services/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="69" column="4" lean-forward="true" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eco-list/ecolistReal/ourfriends/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="56" column="39" lean-forward="true" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
+        <state relative-caret-position="356">
+          <caret line="145" column="54" lean-forward="true" selection-start-line="145" selection-start-column="54" selection-end-line="145" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eco-list/ecolistReal/ourfriends/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="58" column="45" lean-forward="true" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
+        <state relative-caret-position="277">
+          <caret line="41" column="1" lean-forward="true" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eco-list/ecolistReal/ourfriends/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="109" column="30" lean-forward="true" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eco-list/ecolistReal/services/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="49" column="6" lean-forward="true" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eco-list/ecolistReal/services/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="101" column="52" lean-forward="true" selection-start-line="101" selection-start-column="52" selection-end-line="101" selection-end-column="52" />
           <folding />
         </state>
       </provider>

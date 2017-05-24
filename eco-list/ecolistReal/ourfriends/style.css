@@ -42,7 +42,11 @@ h1, h2 {
 }
 
 .panel-default {
-    min-height: 250px;
+    min-height: 300px;
+}
+
+.panel p {
+    font-size:1.3em;
 }
 
 h2 a {
@@ -55,6 +59,7 @@ h2 a:hover {
     background-color: #404040;
     text-decoration: none;
 }
+
 
 /*MAKE NAV BAR RECTANGLE, OVERLAP BOOTSTRAP*/
 .indexNavNoBorderRadius {
@@ -190,5 +195,11 @@ footer tr td a:hover {
         height:auto;
         margin:0;
     }
+
+    .panel p {
+        text-align: justify;
+    }
+
+
 
 }
