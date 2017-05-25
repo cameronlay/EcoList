@@ -30,6 +30,10 @@ $(function () {
     $(document).ready(
     function(){
       $("body").on("click",".list", function (){
+          var user = firebase.auth().currentUser;
+          if(user == null) {
+              alert("You must be logged in to use shopping list.");
+          }
                 var id = $(this).attr('id');
                 a = parseInt(id);
                 var toAdd = $("#" + a + "item").val();
