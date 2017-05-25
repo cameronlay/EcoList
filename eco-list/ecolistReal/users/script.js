@@ -124,7 +124,7 @@ function windowResize(){
         document.getElementsByClassName('toggleForm')[1].style.display = 'block';
         document.getElementsByClassName('toggleForm')[0].style.display = 'block';
     }
-    if (winSize < 768) {
+    if (winSize <= 768) {
         document.getElementsByClassName('toggleForm')[1].style.display = 'none';
     }
 }
