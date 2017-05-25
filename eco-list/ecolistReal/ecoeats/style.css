@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, .nav-tabs, .nav-pills, button, input, textarea {
 
 /*TABS*/
 .nav-tabs {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .nav-tabs a {
@@ -194,7 +194,7 @@ ul.nav-pills {
 
 .nav-stacked a {
     color: #404040;
-    font-size: 1.3em;
+    font-size: 1.9em;
 }
 
 .recipetextarea {
@@ -395,4 +395,9 @@ footer tr td a:hover {
 
 .col-md-8 {
     padding: 0 25px;
+}
+
+#blackColor {
+    color: black;
+    font-family: Content !important;
 }
