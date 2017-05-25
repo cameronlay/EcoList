@@ -11,6 +11,10 @@ h1 {
     user-select:none;
 }
 
+p {
+    font-size: 1.3em;
+}
+
 #header {
     margin: 80px 0 1em;
     display: block;
