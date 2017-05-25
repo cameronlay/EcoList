@@ -103,7 +103,7 @@
                 <li id="paleo" onclick="TabClicked('paleo', 'paleoList1', 'paleoList', 'paleoListContent', 'paleoListContent1')"><a href="javascript:void(0);" class="tabButtons">Paleo</a></li>
                 <li id="proteinRich" onclick="TabClicked('proteinRich', 'proteinList1', 'proteinList', 'proteinListContent', 'proteinListContent1')"><a href="javascript:void(0);" class="tabButtons">Protein Rich</a></li>
                 <li id="cultural" onclick="TabClicked('cultural', 'culturalList1', 'culturalList', 'culturalListContent', 'culturalListContent1')"><a href="javascript:void(0);" class="tabButtons">Cultural</a></li>
-                <li id="user" onclick="TabClicked('user', 'userList1', 'userList', 'userListContent', 'userListContent1')"><a href="javascript:void(0);" class="tabButtons">Create your Own</a></li>
+                <!-- <li id="user" onclick="TabClicked('user', 'userList1', 'userList', 'userListContent', 'userListContent1')"><a href="javascript:void(0);" class="tabButtons">Create your Own</a></li> -->
                     <!-- CONVERTER START -->
                         <span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Converter</button></span>
                             <div class="modal fade" id="myModal" role="dialog">
@@ -374,12 +374,12 @@
             </div>
             <!-- user List -->
             <!-- NEED TO FIX FOR USER INTERACTION -->
-            <div class="col-md-3 displayNone" id="userList">
+            <!-- <div class="col-md-3 displayNone" id="userList">
                 <ul class="nav nav-pills nav-stacked">
                     <li id="userList1" class="active" onclick="userPillsClicked('userList1', 'userListContent1')"><a href="javascript:void(0);">userLIST1</a></li>
                     <li id="userList9" onclick="userPillsClicked('userList9', 'userListContentCreate')"><a href="javascript:void(0);">Create</a></li>
                 </ul>
-            </div>
+            </div> -->
             <!-- 
             ===============================================
             Classic
@@ -2310,7 +2310,7 @@
             Users Own
             ====================================
             -->
-            <div id="userListContent">
+            <!-- <div id="userListContent">
                 <div class="row displayNone recipeContent" id="userListContent1">
                     <div class="col-md-8 borderLeft">
                         <h2>List 1</h2>
@@ -2342,8 +2342,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- NEED TO ADD NAME FOR EACH INPUT!!!!! -->
-                <div class="row displayNone recipeContent" id="userListContentCreate">
+                 NEED TO ADD NAME FOR EACH INPUT!!!!! -->
+                <!-- <div class="row displayNone recipeContent" id="userListContentCreate">
                     <div>
                     <div class="col-md-8 borderLeft">
                         <h2><input type="text" class="form-control" id="CustomRecipeName" placeholder="Recipe Name" required></h2>
@@ -2374,8 +2374,8 @@
                     </div>
                     </div>
                 </div>
-                <!-- END OF USER CONTENT BOX -->
-            </div>
+                END OF USER CONTENT BOX -->
+            <!-- </div> -->
 
             </div>
         </main>
@@ -2410,7 +2410,6 @@
         <!-- Below is the initialisation code for firebase project.-->
     <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
     <script src="../loginscript.js"></script>
-    <script src="dbfunctions.js"></script>
     <script src="script.js"></script>
     <script src="ecoeats.js"></script>
 

@@ -349,14 +349,14 @@ function stopBounce() {
     
 }
 
-function widthLessThan768() {
+function widthLessThan767() {
     var width = window.innerWidth
         || document.documentElement.clientWidth
         || document.body.clientWidth;
     var info = document.getElementById('informationForDonation');
     var mapInfo = document.getElementById('googleMap');
 
-    if (width <= 768) {
+    if (width <= 767) {
         info.before(mapInfo);
     }
 }

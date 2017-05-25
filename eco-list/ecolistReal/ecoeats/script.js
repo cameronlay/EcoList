@@ -108,22 +108,22 @@ function culturalPillsClicked(id, content) {
     y.classList.add("displayBlock");
 }
 
-function userPillsClicked(id, content) {
-    var x = document.getElementById(id);
-    var y = document.getElementById(content);
-    var userList = document.getElementById('userList').getElementsByTagName('li');
-    for (var i = 0; i < userList.length; i++) {
-        userList[i].classList.remove('active');
-    }
+// function userPillsClicked(id, content) {
+//     var x = document.getElementById(id);
+//     var y = document.getElementById(content);
+//     var userList = document.getElementById('userList').getElementsByTagName('li');
+//     for (var i = 0; i < userList.length; i++) {
+//         userList[i].classList.remove('active');
+//     }
     
-    var userListContent = document.getElementById('userListContent').getElementsByClassName('row');
-    for (var i = 0; i < userListContent.length; i++) {
-        userListContent[i].classList.remove('displayBlock');
-    }
+//     var userListContent = document.getElementById('userListContent').getElementsByClassName('row');
+//     for (var i = 0; i < userListContent.length; i++) {
+//         userListContent[i].classList.remove('displayBlock');
+//     }
 
-    x.classList.add("active");
-    y.classList.add("displayBlock");
-}
+//     x.classList.add("active");
+//     y.classList.add("displayBlock");
+// }
 
 /* Pseudo:
  *      1. Remove all active from tabs
@@ -150,7 +150,7 @@ function TabClicked(id, id2, list, contentBlock, content) {
     document.getElementById("paleoList").classList.remove("displayBlock");
     document.getElementById("proteinList").classList.remove("displayBlock");
 	document.getElementById("culturalList").classList.remove("displayBlock");
-    document.getElementById("userList").classList.remove("displayBlock");
+    // document.getElementById("userList").classList.remove("displayBlock");
     listblock.classList.add("displayBlock");
 
 // =========================================
@@ -246,17 +246,17 @@ function TabClicked(id, id2, list, contentBlock, content) {
 // =========================================
 // User
 // =========================================
-    var userList = document.getElementById('userList').getElementsByTagName('li');
-    for (var i = 0; i < userList.length; i++) {
-        userList[i].classList.remove('active');
-    }
+    // var userList = document.getElementById('userList').getElementsByTagName('li');
+    // for (var i = 0; i < userList.length; i++) {
+    //     userList[i].classList.remove('active');
+    // }
     
-    var userListContent = document.getElementById('userListContent').getElementsByClassName('row');
-    for (var i = 0; i < userListContent.length; i++) {
-        userListContent[i].classList.remove('displayBlock');
-    }
+    // var userListContent = document.getElementById('userListContent').getElementsByClassName('row');
+    // for (var i = 0; i < userListContent.length; i++) {
+    //     userListContent[i].classList.remove('displayBlock');
+    // }
     
-    document.getElementById("userListContent").classList.add("displayNone");
+    // document.getElementById("userListContent").classList.add("displayNone");
 
 // ====================================
 // variables from the parameters
@@ -270,32 +270,32 @@ function TabClicked(id, id2, list, contentBlock, content) {
 }
 
 // ADDING INPUTS
-$(document).ready(function() {
-    $("#addStepId").click(function() {
-        $("#addStepId").before(GetInputRecipe());
-    });
-    $("#removeStepId").click(function() {
-        var inputArray = document.getElementsByClassName("inputSteps");
-        inputArray[inputArray.length - 1].remove();
-    });
-    $("#addIngredientId").click(function() {
-        $("#addIngredientId").before(GetIngredientsRecipe());
-    });
-    $("#removeIngredientId").click(function() {
-        var inputArray = document.getElementsByClassName("inputIngredients");
-        inputArray[inputArray.length - 1].remove();
-    })
-});
+// $(document).ready(function() {
+//     $("#addStepId").click(function() {
+//         $("#addStepId").before(GetInputRecipe());
+//     });
+//     $("#removeStepId").click(function() {
+//         var inputArray = document.getElementsByClassName("inputSteps");
+//         inputArray[inputArray.length - 1].remove();
+//     });
+//     $("#addIngredientId").click(function() {
+//         $("#addIngredientId").before(GetIngredientsRecipe());
+//     });
+//     $("#removeIngredientId").click(function() {
+//         var inputArray = document.getElementsByClassName("inputIngredients");
+//         inputArray[inputArray.length - 1].remove();
+//     })
+// });
 
 // NEED TO ADD NAME FOR SERVER
-function GetInputRecipe() {
-    return '<input class="recipetextarea form-control inputSteps" type="text" placeholder="Enter the simple step" required>';
-}
+// function GetInputRecipe() {
+//     return '<input class="recipetextarea form-control inputSteps" type="text" placeholder="Enter the simple step" required>';
+// }
 
 // NEED TO ADD NAME FOR SERVER
-function GetIngredientsRecipe() {
-    return '<input class="recipetextarea form-control inputIngredients" type="text" placeholder="Enter the ingredient" required>';
-}
+// function GetIngredientsRecipe() {
+//     return '<input class="recipetextarea form-control inputIngredients" type="text" placeholder="Enter the ingredient" required>';
+// }
 
 // RESET ALL CHECKBOXES IN INGREDIENTS
 $(document).ready(function() {
@@ -589,31 +589,31 @@ function widthLessThan767() {
         }
 
         //NEED TO FIX FOR INTERACTIVE!!!!!!!!!!!!!!!!!!!
-        userPillsClicked = function(id, content) {
-            var x = document.getElementById(id);
-            var y = document.getElementById(content);
+        // userPillsClicked = function(id, content) {
+        //     var x = document.getElementById(id);
+        //     var y = document.getElementById(content);
 
-            if (x.classList.contains('active')) {
-                x.classList.remove('active');
-                y.classList.remove('displayBlock');
-            } else {
+        //     if (x.classList.contains('active')) {
+        //         x.classList.remove('active');
+        //         y.classList.remove('displayBlock');
+        //     } else {
 
-                var userList = document.getElementById('userList').getElementsByTagName('li');
-                for (var i = 0; i < userList.length; i++) {
-                    userList[i].classList.remove('active');
-                }
+        //         var userList = document.getElementById('userList').getElementsByTagName('li');
+        //         for (var i = 0; i < userList.length; i++) {
+        //             userList[i].classList.remove('active');
+        //         }
 
-                document.getElementById('userListContent1').classList.remove('displayBlock');
-                document.getElementById('userListContentCreate').classList.remove('displayBlock');
+        //         document.getElementById('userListContent1').classList.remove('displayBlock');
+        //         document.getElementById('userListContentCreate').classList.remove('displayBlock');
 
                 //========================
                 //bring the lists right after the tab!!
                 //========================
-                x.classList.add('active');
-                y.classList.add('displayBlock');
-                x.after(y);
-            }
-        }
+        //         x.classList.add('active');
+        //         y.classList.add('displayBlock');
+        //         x.after(y);
+        //     }
+        // }
 
         /**
          * 1. if tab clicked, bring the specific lists of that tab
@@ -634,7 +634,7 @@ function widthLessThan767() {
             document.getElementById("paleoList").classList.remove("displayBlock");
             document.getElementById("proteinList").classList.remove("displayBlock");
             document.getElementById("culturalList").classList.remove("displayBlock");
-            document.getElementById("userList").classList.remove("displayBlock");
+            // document.getElementById("userList").classList.remove("displayBlock");
 
             var recipeContent = $('.recipeContent');
             for (var i = 0; i < recipeContent.length; i++) {
@@ -693,10 +693,10 @@ function widthLessThan767() {
             // =========================================
             // User
             // =========================================
-            var userList = document.getElementById('userList').getElementsByTagName('li');
-            for (var i = 0; i < userList.length; i++) {
-                userList[i].classList.remove('active');
-            }
+            // var userList = document.getElementById('userList').getElementsByTagName('li');
+            // for (var i = 0; i < userList.length; i++) {
+            //     userList[i].classList.remove('active');
+            // }
 
             if (tab.classList.contains('active')) {
                 tab.classList.remove('active');

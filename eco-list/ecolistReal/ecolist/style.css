@@ -124,7 +124,7 @@ footer tr td a:hover {
 
 /*adjusts screen size for mobile view at 640px*/
 
-@media only screen and (min-width:768px){
+@media only screen and (min-width:767px){
   .container{
     width:50%;
   }
