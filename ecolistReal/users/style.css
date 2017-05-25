@@ -77,17 +77,19 @@ table {
 }
 
 /*When the screen is made larger than 991px hides the button that toggles login/signup and displays both*/
-@media only screen and (min-width:768.1px) {
+@media only screen and (min-width:769px) {
     #RegisterButton {
         display: none;
     }
     #SignupRight {
         display: block;
+        border-left:none;
     }
 
     #SignInButton {
         display: none;
     }
+
 }
 
 /*By default hides user validation for the sign up page*/

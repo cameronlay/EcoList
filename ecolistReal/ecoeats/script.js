@@ -108,22 +108,22 @@ function culturalPillsClicked(id, content) {
     y.classList.add("displayBlock");
 }
 
-function userPillsClicked(id, content) {
-    var x = document.getElementById(id);
-    var y = document.getElementById(content);
-    var userList = document.getElementById('userList').getElementsByTagName('li');
-    for (var i = 0; i < userList.length; i++) {
-        userList[i].classList.remove('active');
-    }
+// function userPillsClicked(id, content) {
+//     var x = document.getElementById(id);
+//     var y = document.getElementById(content);
+//     var userList = document.getElementById('userList').getElementsByTagName('li');
+//     for (var i = 0; i < userList.length; i++) {
+//         userList[i].classList.remove('active');
+//     }
     
-    var userListContent = document.getElementById('userListContent').getElementsByClassName('row');
-    for (var i = 0; i < userListContent.length; i++) {
-        userListContent[i].classList.remove('displayBlock');
-    }
+//     var userListContent = document.getElementById('userListContent').getElementsByClassName('row');
+//     for (var i = 0; i < userListContent.length; i++) {
+//         userListContent[i].classList.remove('displayBlock');
+//     }
 
-    x.classList.add("active");
-    y.classList.add("displayBlock");
-}
+//     x.classList.add("active");
+//     y.classList.add("displayBlock");
+// }
 
 /* Pseudo:
  *      1. Remove all active from tabs
@@ -150,7 +150,7 @@ function TabClicked(id, id2, list, contentBlock, content) {
     document.getElementById("paleoList").classList.remove("displayBlock");
     document.getElementById("proteinList").classList.remove("displayBlock");
 	document.getElementById("culturalList").classList.remove("displayBlock");
-    document.getElementById("userList").classList.remove("displayBlock");
+    // document.getElementById("userList").classList.remove("displayBlock");
     listblock.classList.add("displayBlock");
 
 // =========================================
@@ -246,17 +246,17 @@ function TabClicked(id, id2, list, contentBlock, content) {
 // =========================================
 // User
 // =========================================
-    var userList = document.getElementById('userList').getElementsByTagName('li');
-    for (var i = 0; i < userList.length; i++) {
-        userList[i].classList.remove('active');
-    }
+    // var userList = document.getElementById('userList').getElementsByTagName('li');
+    // for (var i = 0; i < userList.length; i++) {
+    //     userList[i].classList.remove('active');
+    // }
     
-    var userListContent = document.getElementById('userListContent').getElementsByClassName('row');
-    for (var i = 0; i < userListContent.length; i++) {
-        userListContent[i].classList.remove('displayBlock');
-    }
+    // var userListContent = document.getElementById('userListContent').getElementsByClassName('row');
+    // for (var i = 0; i < userListContent.length; i++) {
+    //     userListContent[i].classList.remove('displayBlock');
+    // }
     
-    document.getElementById("userListContent").classList.add("displayNone");
+    // document.getElementById("userListContent").classList.add("displayNone");
 
 // ====================================
 // variables from the parameters
@@ -270,32 +270,32 @@ function TabClicked(id, id2, list, contentBlock, content) {
 }
 
 // ADDING INPUTS
-$(document).ready(function() {
-    $("#addStepId").click(function() {
-        $("#addStepId").before(GetInputRecipe());
-    });
-    $("#removeStepId").click(function() {
-        var inputArray = document.getElementsByClassName("inputSteps");
-        inputArray[inputArray.length - 1].remove();
-    });
-    $("#addIngredientId").click(function() {
-        $("#addIngredientId").before(GetIngredientsRecipe());
-    });
-    $("#removeIngredientId").click(function() {
-        var inputArray = document.getElementsByClassName("inputIngredients");
-        inputArray[inputArray.length - 1].remove();
-    })
-});
+// $(document).ready(function() {
+//     $("#addStepId").click(function() {
+//         $("#addStepId").before(GetInputRecipe());
+//     });
+//     $("#removeStepId").click(function() {
+//         var inputArray = document.getElementsByClassName("inputSteps");
+//         inputArray[inputArray.length - 1].remove();
+//     });
+//     $("#addIngredientId").click(function() {
+//         $("#addIngredientId").before(GetIngredientsRecipe());
+//     });
+//     $("#removeIngredientId").click(function() {
+//         var inputArray = document.getElementsByClassName("inputIngredients");
+//         inputArray[inputArray.length - 1].remove();
+//     })
+// });
 
 // NEED TO ADD NAME FOR SERVER
-function GetInputRecipe() {
-    return '<input class="recipetextarea form-control inputSteps" type="text" placeholder="Enter the simple step" required>';
-}
+// function GetInputRecipe() {
+//     return '<input class="recipetextarea form-control inputSteps" type="text" placeholder="Enter the simple step" required>';
+// }
 
 // NEED TO ADD NAME FOR SERVER
-function GetIngredientsRecipe() {
-    return '<input class="recipetextarea form-control inputIngredients" type="text" placeholder="Enter the ingredient" required>';
-}
+// function GetIngredientsRecipe() {
+//     return '<input class="recipetextarea form-control inputIngredients" type="text" placeholder="Enter the ingredient" required>';
+// }
 
 // RESET ALL CHECKBOXES IN INGREDIENTS
 $(document).ready(function() {
@@ -327,12 +327,12 @@ function infoFunction3() {
  * FUNCTION THAT OVERRIDE ALL FUNCTIONS IF THE BROWSER
  * WIDTH IS LESS THAN 768
  */
-function widthLessThan768() {
+function widthLessThan767() {
     var width = window.innerWidth
         || document.documentElement.clientWidth
         || document.body.clientWidth;
 
-    if (width <= 768) {
+    if (width <= 767) {
         var active = document.getElementsByClassName('active');
         for (var i = 0; i < active.length; i++) {
             active[i].classList.remove('active');
@@ -357,9 +357,13 @@ function widthLessThan768() {
             if (x.classList.contains('active')) {
                 x.classList.remove('active');
                 y.classList.remove('displayBlock');
+
+                // BRING IMAGE
+                var content0Img1 = y.getElementsByClassName('col-md-6');
+                content0Img1[0].before(content0Img1[1]);
             } else {
 
-                var classicList = document.getElementById('classicList').querySelectorAll('li');
+                var classicList = document.getElementById('classicList').getElementsByTagName('li');
                 for (var i = 0; i < classicList.length; i++) {
                     classicList[i].classList.remove('active');
                 }
@@ -393,9 +397,13 @@ function widthLessThan768() {
             if (x.classList.contains('active')) {
                 x.classList.remove('active');
                 y.classList.remove('displayBlock');
+
+                // BRING IMAGE
+                var content0Img1 = y.getElementsByClassName('col-md-6');
+                content0Img1[0].before(content0Img1[1]);
             } else {
 
-                var vegetarianList = document.getElementById('vegetarianList').querySelectorAll('li');
+                var vegetarianList = document.getElementById('vegetarianList').getElementsByTagName('li');
                 for (var i = 0; i < vegetarianList.length; i++) {
                     vegetarianList[i].classList.remove('active');
                 }
@@ -428,9 +436,13 @@ function widthLessThan768() {
             if (x.classList.contains('active')) {
                 x.classList.remove('active');
                 y.classList.remove('displayBlock');
+
+                // BRING IMAGE
+                var content0Img1 = y.getElementsByClassName('col-md-6');
+                content0Img1[0].before(content0Img1[1]);
             } else {
 
-                var ketoList = document.getElementById('ketoList').querySelectorAll('li');
+                var ketoList = document.getElementById('ketoList').getElementsByTagName('li');
                 for (var i = 0; i < ketoList.length; i++) {
                     ketoList[i].classList.remove('active');
                 }
@@ -463,9 +475,13 @@ function widthLessThan768() {
             if (x.classList.contains('active')) {
                 x.classList.remove('active');
                 y.classList.remove('displayBlock');
+
+                // BRING IMAGE
+                var content0Img1 = y.getElementsByClassName('col-md-6');
+                content0Img1[0].before(content0Img1[1]);
             } else {
 
-                var paleoList = document.getElementById('paleoList').querySelectorAll('li');
+                var paleoList = document.getElementById('paleoList').getElementsByTagName('li');
                 for (var i = 0; i < paleoList.length; i++) {
                     paleoList[i].classList.remove('active');
                 }
@@ -498,9 +514,13 @@ function widthLessThan768() {
             if (x.classList.contains('active')) {
                 x.classList.remove('active');
                 y.classList.remove('displayBlock');
+
+                // BRING IMAGE
+                var content0Img1 = y.getElementsByClassName('col-md-6');
+                content0Img1[0].before(content0Img1[1]);
             } else {
 
-                var proteinList = document.getElementById('proteinList').querySelectorAll('li');
+                var proteinList = document.getElementById('proteinList').getElementsByTagName('li');
                 for (var i = 0; i < proteinList.length; i++) {
                     proteinList[i].classList.remove('active');
                 }
@@ -533,9 +553,13 @@ function widthLessThan768() {
             if (x.classList.contains('active')) {
                 x.classList.remove('active');
                 y.classList.remove('displayBlock');
+
+                // BRING IMAGE
+                var content0Img1 = y.getElementsByClassName('col-md-6');
+                content0Img1[0].before(content0Img1[1]);
             } else {
 
-                var culturalList = document.getElementById('culturalList').querySelectorAll('li');
+                var culturalList = document.getElementById('culturalList').getElementsByTagName('li');
                 for (var i = 0; i < culturalList.length; i++) {
                     culturalList[i].classList.remove('active');
                 }
@@ -565,37 +589,38 @@ function widthLessThan768() {
         }
 
         //NEED TO FIX FOR INTERACTIVE!!!!!!!!!!!!!!!!!!!
-        userPillsClicked = function(id, content) {
-            var x = document.getElementById(id);
-            var y = document.getElementById(content);
+        // userPillsClicked = function(id, content) {
+        //     var x = document.getElementById(id);
+        //     var y = document.getElementById(content);
 
-            if (x.classList.contains('active')) {
-                x.classList.remove('active');
-                y.classList.remove('displayBlock');
-            } else {
+        //     if (x.classList.contains('active')) {
+        //         x.classList.remove('active');
+        //         y.classList.remove('displayBlock');
+        //     } else {
 
-                var userList = document.getElementById('userList').querySelectorAll('li');
-                for (var i = 0; i < userList.length; i++) {
-                    userList[i].classList.remove('active');
-                }
+        //         var userList = document.getElementById('userList').getElementsByTagName('li');
+        //         for (var i = 0; i < userList.length; i++) {
+        //             userList[i].classList.remove('active');
+        //         }
 
-                document.getElementById('userListContent1').classList.remove('displayBlock');
-                document.getElementById('userListContentCreate').classList.remove('displayBlock');
+        //         document.getElementById('userListContent1').classList.remove('displayBlock');
+        //         document.getElementById('userListContentCreate').classList.remove('displayBlock');
 
                 //========================
                 //bring the lists right after the tab!!
                 //========================
-                x.classList.add('active');
-                y.classList.add('displayBlock');
-                x.after(y);
-            }
-        }
+        //         x.classList.add('active');
+        //         y.classList.add('displayBlock');
+        //         x.after(y);
+        //     }
+        // }
 
         /**
          * 1. if tab clicked, bring the specific lists of that tab
          * and remove all current active and displayBlock
          * 2. if it clicked again, disappered
          */
+
         TabClicked = function(id, id2, list, contentBlock, content) {
             var tab = document.getElementById(id);
             var firstlist = document.getElementById(id2);
@@ -609,7 +634,12 @@ function widthLessThan768() {
             document.getElementById("paleoList").classList.remove("displayBlock");
             document.getElementById("proteinList").classList.remove("displayBlock");
             document.getElementById("culturalList").classList.remove("displayBlock");
-            document.getElementById("userList").classList.remove("displayBlock");
+            // document.getElementById("userList").classList.remove("displayBlock");
+
+            var recipeContent = $('.recipeContent');
+            for (var i = 0; i < recipeContent.length; i++) {
+                recipeContent[i].classList.remove('displayBlock');
+            }
 
             // =========================================
             // Classic
@@ -627,11 +657,6 @@ function widthLessThan768() {
             for (var i = 0; i < vegetarianList.length; i++) {
                 vegetarianList[i].classList.remove('active');
             }
-    
-            var vegetarianListContent = document.getElementById('vegetarianListContent').getElementsByClassName('row');
-            for (var i = 0; i < vegetarianListContent.length; i++) {
-                vegetarianListContent[i].classList.remove('displayBlock');
-            }
 
             // =========================================
             // Keto
@@ -639,11 +664,6 @@ function widthLessThan768() {
             var ketoList = document.getElementById('ketoList').getElementsByTagName('li');
             for (var i = 0; i < ketoList.length; i++) {
                 ketoList[i].classList.remove('active');
-            }
-    
-            var ketoListContent = document.getElementById('ketoListContent').getElementsByClassName('row');
-            for (var i = 0; i < ketoListContent.length; i++) {
-                ketoListContent[i].classList.remove('displayBlock');
             }
 
             // =========================================
@@ -654,22 +674,12 @@ function widthLessThan768() {
                 paleoList[i].classList.remove('active');
             }
 
-            var paleoListContent = document.getElementById('paleoListContent').getElementsByClassName('row');
-            for (var i = 0; i < paleoListContent.length; i++) {
-                paleoListContent[i].classList.remove('displayBlock');
-            }
-
             // =========================================
             // Protein Rich
             // =========================================
             var proteinList = document.getElementById('proteinList').getElementsByTagName('li');
             for (var i = 0; i < proteinList.length; i++) {
                 proteinList[i].classList.remove('active');
-            }
-   
-            var proteinListContent = document.getElementById('proteinListContent').getElementsByClassName('row');
-            for (var i = 0; i < proteinListContent.length; i++) {
-                proteinListContent[i].classList.remove('displayBlock');
             }
 
             // =========================================
@@ -679,28 +689,17 @@ function widthLessThan768() {
             for (var i = 0; i < culturalList.length; i++) {
                 culturalList[i].classList.remove('active');
             }
-    
-            var culturalListContent = document.getElementById('culturalListContent').getElementsByClassName('row');
-            for (var i = 0; i < culturalListContent.length; i++) {
-                culturalListContent[i].classList.remove('displayBlock');
-            }
 
             // =========================================
             // User
             // =========================================
-            var userList = document.getElementById('userList').getElementsByTagName('li');
-            for (var i = 0; i < userList.length; i++) {
-                userList[i].classList.remove('active');
-            }
-    
-            var userListContent = document.getElementById('userListContent').getElementsByClassName('row');
-            for (var i = 0; i < userListContent.length; i++) {
-                userListContent[i].classList.remove('displayBlock');
-            }
+            // var userList = document.getElementById('userList').getElementsByTagName('li');
+            // for (var i = 0; i < userList.length; i++) {
+            //     userList[i].classList.remove('active');
+            // }
 
             if (tab.classList.contains('active')) {
                 tab.classList.remove('active');
-                listblock.classList.remove('displayBlock');
             } else {
 
                 var navTabs = document.getElementById('navTabs').getElementsByTagName('li');

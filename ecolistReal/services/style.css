@@ -10,9 +10,12 @@ body {
 }
 
 #AppsHomeHeader>img {
-    width:80%;
+    width:52%;
     height:auto;
+    margin-top:18px;
 }
+
+
 h1, h2 {
     text-align:center;
     margin:20px;
@@ -32,10 +35,16 @@ h1, h2 {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    display:block;
+    margin-top:15px;
 }
 
 .panel-default {
-    min-height: 250px;
+    min-height: 300px;
+}
+
+.panel p {
+    font-size:1.3em;
 }
 
 h2 a {
@@ -147,7 +156,7 @@ footer tr td a:hover {
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     /*NAV BAR*/
     div#myNavbar ul.navbar-nav ul.dropdown-menu a {
@@ -174,6 +183,13 @@ footer tr td a:hover {
 
     .col-md-6 {
         padding: 0;
+    }
+
+
+    #AppsHomeHeader>img {
+        width:80%;
+        height:auto;
+        margin:0;
     }
 
 }

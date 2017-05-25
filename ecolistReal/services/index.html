@@ -30,21 +30,22 @@
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Apps<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="../ecolist/">Eco List</a></li>
-                            <li><a href="../ecoeats/">Eco Eats</a></li>
+                            <li><a href="../ecolist/">EcoList</a></li>
+                            <li><a href="../ecoeats/">EcoEats</a></li>
                             <li><a href="../donation/">Donation</a></li>
                         </ul>
                     </li>
                     <!-- FINISH DROPDOWN MENU -->
                     <li><a href="../services/">Services</a></li>
-                    <li><a href="../#AboutUs">About Us</a></li>
+                    <li><a href="../ourfriends">Our Friends</a></li>
+                    <li><a href="../aboutus">About Us</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li id="p" style="display:none;font-size:15px;color:#e6e6d8;padding-top:15px"></li>
                     <!-- WILL BE DISAPPEARED WHEN USER ISN'T LOGGED IN -->
-                    <li><a href="./" onclick="logOut()" id="logOut"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Log Out</a></li>
+                    <li><a href="./" onclick="logOut()" id="logOut" style="display:none"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Log Out</a></li>
                     <!-- WILL BE CHANGED TO PHP VARIABLE FOR USER NAME -->
-                    <li><a href="../users/" id="logIn"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login/Sign up</a></li>
+                    <li><a href="../users/" id="logIn" style="display:none"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login/Sign up</a></li>
                 </ul>
             </div>
         </div>
@@ -52,117 +53,75 @@
 			<div id="AppsHomeHeader">
 				<img src="../images/logotext.png" alt="EcoList"></img>
 			</div>
-            
-            <!--start of our friends-->
-            <h1>Our Friends</h1>
-            <!-- single app-->
-                <div class="row">
-                <div class="col-md-6">
-                    <div class="panel panel-default">
-                        <div class="row">
-                            <div class="col-md-5">
-                                <a href="https://freshness.000webhostapp.com/"><img class="appIcon" src="../images/FreshnessLogo.png" alt="appicon"/></a>
-                            </div>
-                            <div class="col-md-7">
-                                <h2><a href="https://freshness.000webhostapp.com/">Freshness</a></h2>
-                                <p>Have you ever found yourself throwing away food or having your groceries go bad sooner than you expected?
-                                    If so we recommend checking out Freshness. They provide you with the best ways to preserve your food and
-                                    keep it fresh for as long as possible.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <!--end of single app -->
-            
-            <!-- single app-->
-                <div class="col-md-6">
-                    <div class="panel panel-default">
-                        <div class="row">
-                            <div class="col-md-5">
-                                <a href="http://take2foods.com"><img class="appIcon" src="../images/Take2Logo.png" alt="appicon"/></a>
-                            </div>
-                            <div class="col-md-7">
-                                <h2><a href="http://take2foods.com">Take2</a></h2>
-                                <p>If you have any excess ingredients you can head over to our friends at Take 2. Their app allows you to input two ingredients and they will try to give you recipe recommendations that incorporates both of those ingredients.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            <!--end of single app -->
-            <!-- single app-->
-                <div class="row">
-                <div class="col-md-6">
-                    <div class="panel panel-default">
-                        <div class="row">
-                            <div class="col-md-5">
-                                <a href="http://refrigedate.me/"><img class="appIcon" src="../images/RefrigdateLogo.png" alt="appicon"/></a>
-                            </div>
-                            <div class="col-md-7">
-                                <h2><a href="http://refrigedate.me/">Refrigdate</a></h2>
-                                <p>If you are worried about keeping track of your leftovers and how old they may be we highly recommend checking out our friends at
-                                    Refrigedate. Their app tracks how long your it has been since you stored your leftovers and lets you assign ownership to
-                                    your food if you find your roommates are often eating your leftovers!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            <!--end of single app -->
-
-            <!--end of our friends-->
 
 			<!--our app start-->
-			<h2>Our Apps</h2>
+
+			<h3 class="emptySpace">&nbsp</h3>
+
 			<!-- single app-->
 				<div class="row">
                 <div class="col-md-6">
 					<div class="panel panel-default">
                         <div class="row">
                             <div class="col-md-5">
-                                <a href="../ecolist/"><img class="appIcon" src="../images/cutlery1.png" alt="appicon"></a>
+                               <img class="appIcon" src="../images/appsicon.png" alt="appicon">
                             </div>
                             <div class="col-md-7">
-                                <h2><a href="../ecolist/">EcoList</a></h2>
-                                    <p>EcoList is a shopping list which enables you to add items and quantities to your list and check them off as you go. When an item has been checked it moves down to a separate list where you can double click or swipe to delete it.</p>
+                                <h2>Our Apps</h2>
+                                    <p>EcoList, EcoEats, and Donations are our three main features. A majority of food waste occurs when consumers purchase an excessive amount of unnecessary food so we designed our apps to reduce food waste through better planning and organization of buying groceries.</p>
                             </div>
 						</div>
 					</div>
 				</div>
 			<!--end of single app -->
 			<!-- single app-->
-                <div class="col-md-6">
-					<div class="panel panel-default">
-						<div class="row">
-							<div class="col-md-5">
-                                <a href="../ecoeats/"><img class="appIcon" src="../images/calandar1.png" alt="appicon"/></a>
+                    <div class="col-md-6">
+                        <div class="panel panel-default">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <a href="../ecolist/"><img class="appIcon" src="../images/calandar1.png" alt="appicon"></a>
+                                </div>
+                                <div class="col-md-7">
+                                    <h2><a href="../ecolist/">EcoList</a></h2>
+                                    <p>EcoList is a shopping list which enables you to add items and quantities to your list and check them off as you shop. Like a traditional shopping list, you can keep track of all the items you're buying easily and efficiently.</p>
+                                </div>
                             </div>
-                            <div class="col-md-7">
-                                <h2><a href="../ecoeats/">EcoEats</a></h2>
-                                    <p>EcoEats is a meal planner that features seven different diets that you can choose from each with many simple yet
-                                        delicious recipes to choose from. The ingredients on that page can be added to your shopping list with just a couple clicks.
-                                        You are also able to make your own meal plans and save them on our site.</p>
-                            </div>
-						</div>
-					</div>
-				</div>
+                        </div>
+                    </div>
                 </div>
 			<!--end of single app -->
 			<!-- single app-->
 				<div class="row">
-                <div class="col-md-6">
-					<div class="panel panel-default">
-						<div class="row">
-							<div class="col-md-5">
-                                <a href="../donation/"><img class="appIcon" src="../images/location1.png" alt="appicon"/></a>
+                    <div class="col-md-6">
+                        <div class="panel panel-default">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <a href="../ecoeats/"><img class="appIcon" src="../images/cutlery1.png" alt="appicon"/></a>
+                                </div>
+                                <div class="col-md-7">
+                                    <h2><a href="../ecoeats/">EcoEats</a></h2>
+                                    <p>EcoEats is a meal planner that features over forty recipes from 7 different diets.
+                                        The ingredients on that page can be added to your shopping list with just a couple clicks.
+                                        You are also able to make your own meal plans and save them on our site.</p>
+                                </div>
                             </div>
-                            <div class="col-md-7">
-                                <h2><a href="../donation/">Donation</a></h2>
-                                <p>We also feature a donations page where you can find all the places in the Vancouver area where you can go to donate food.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="panel panel-default">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <a href="../donation/"><img class="appIcon" src="../images/location1.png" alt="appicon"/></a>
+                                </div>
+                                <div class="col-md-7">
+                                    <h2><a href="../donation/">Donation</a></h2>
+                                    <p>We also feature a donations page where you can find all the places in the Vancouver area where you can go to donate food.</p>
+                                </div>
                             </div>
-						</div>
-					</div>
-				</div>
+                        </div>
+                    </div>
+
                 </div>
 			<!--end of single app -->
 
@@ -170,24 +129,24 @@
             
         </div>
     <footer>
-        <div class="container-fluid">
+        <div class="container-fluid textCentered">
             <table class="textCentered">
                 <tr>
                     <td><a href="../">Home</a></td>
-                    <td><a href="../ecolist/">Eco List</a></td>
-                    <td><a href="./">Affiliated Apps</a></td>
+                    <td><a href="../ecolist/">EcoList</a></td>
+                    <td><a href="../ourfriends/">Affiliated Apps</a></td>
                     <td><a href="../users/">Login</a></td>
                 </tr>
                 <tr>
-                    <td><a href="../#OurPurpose">Our Purpose</a></td>
-                    <td><a href="../ecoeats/">Eco Eats</a></td>
-                    <td><a href="../#AboutUs">About Us</a></td>
+                    <td><a href="./">Services</a></td>
+                    <td><a href="../ecoeats/">EcoEats</a></td>
+                    <td><a href="../aboutus/#OurApps">About our Apps</a></td>
                     <td><a href="../sitemap/">Site Map</a></td>
                 </tr>
                 <tr>
-                    <td><a href="../#OurApps">About our Apps</a></td>
+                    <td><a href="../aboutus/#OurPurpose">Our Purpose</a></td>
                     <td><a href="../donation/">Donation</a></td>
-                    <td><a href="../#AboutProject">About the Project</a></td>
+                    <td><a href="../aboutus/#AboutUs">About Us</a></td>
                 </tr>
                 <tr>
                     <td colspan="4"><br>&copy; Copyright 2017 | EcoList, All Rights Reserved</td>

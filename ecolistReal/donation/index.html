@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="../fonts/font.css">
     </head>
     
-    <body onload="widthLessThan768()">
+    <body onload="widthLessThan767()">
         <nav class="navbar navbar-inverse navbar-fixed-top indexNavNoBorderRadius indexNavBackground">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -31,45 +31,46 @@
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Apps<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="../ecolist/">Eco List</a></li>
-                            <li><a href="../ecoeats/">Eco Eats</a></li>
+                            <li><a href="../ecolist/">EcoList</a></li>
+                            <li><a href="../ecoeats/">EcoEats</a></li>
                             <li><a href="../donation/">Donation</a></li>
                         </ul>
                     </li>
                     <!-- FINISH DROPDOWN MENU -->
                     <li><a href="../services/">Services</a></li>
-                    <li><a href="../#AboutUs">About Us</a></li>
+                    <li><a href="../ourfriends/">Our Friends</a></li>
+                    <li><a href="../aboutus/">About Us</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li id="p" style="display:none;font-size:15px;color:#e6e6d8;padding-top:15px"></li>
                     <!-- WILL BE DISAPPEARED WHEN USER ISN'T LOGGED IN -->
-                    <li><a href="./" onclick="logOut()" id="logOut" style="none"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Log Out</a></li>
+                    <li><a href="./" onclick="logOut()" id="logOut"  style="display:none"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Log Out</a></li>
                     <!-- WILL BE CHANGED TO PHP VARIABLE FOR USER NAME -->
-                    <li><a href="../users/" id="logIn"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login/Sign up</a></li>
+                    <li><a href="../users/" id="logIn" style="display:none"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login/Sign up</a></li>
                 </ul>
             </div>
         </div>
     </nav>
         
     
-        <header>
+        <div id="header">
                 <h1>Donate Today</h1>
-        </header>
+        </div>
         
         <main>
             <div class="panel panel-default">
             <!-- Place holder for content -->
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae lobortis est. Sed mattis pretium nibh, quis sodales eros elementum ornare. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum elit urna, ornare vel aliquet eget, laoreet non lectus. Pellentesque vulputate ultrices leo eu pharetra. Duis rhoncus arcu enim, et ornare ipsum aliquam id. Aliquam ante magna, pretium in ante blandit, vehicula porttitor felis. Mauris a libero mollis, luctus augue non, tempor turpis. Fusce eget hendrerit leo, vel semper erat. Fusce convallis finibus velit non sollicitudin.</p>
+                    <p>Every year approximately 1.3 billion tons of food is wasted, in an effort to reduce that number we encourage you to donate any
+                    excess food. Below you can find a few locations in the Lower Mainland area along with their contact information.</p>
             <div class="row" id="informationForDonation"> 
                 <!-- Addresses for places -->
                 <div class="col-sm-4" id="sideList">
-                    <p onmouseover="bounceMarker('m')" onmouseout="stopBounce()" class="well well-sm" id="1"><b>Surrey Food bank society</b><br>10732 City Pkwy<br>Surrey, BC V3T 4C7</p>
-                    <p onmouseover="bounceMarker('m1')" onmouseout="stopBounce()" class="well well-sm" ><b>Covenant House</b><br>575 Drake St<br>Vancouver, BC V6B 4K8</p>
-                    <p onmouseover="bounceMarker('m2')" onmouseout="stopBounce()" class="well well-sm" ><b>Langley Food Bank</b><br>5768 203 St<br>Langley, BC V3A 1W3</p>
-                    <p onmouseover="bounceMarker('m3')" onmouseout="stopBounce()" class="well well-sm" ><b>Quest Food Exchange</b><br>7753 Sixth St<br>New Westminster, BC V3L 3C8</p>
-                    <p onmouseover="bounceMarker('m4')" onmouseout="stopBounce()" class="well well-sm" ><b>Quest Outreach Society</b><br>346 E Hastings St<br>Vancouver, BC V6A 1P4</p>
-                    <p onmouseover="bounceMarker('m5')" onmouseout="stopBounce()" class="well well-sm" ><b>Richmond Food Bank Society</b><br>5800 Cedarbridge Way #100<br>Richmond, BC V6X 2A7</p>
-                    <p onmouseover="bounceMarker('m')" onmouseout="stopBounce()" class="well well-sm" ><b>Surrey Food bank society</b><br>10732 City Pkwy<br>Surrey, BC V3T 4C7</p>
+                    <p onmouseover="bounceMarker('m')" onmouseout="stopBounce()" class="well well-sm" id="m"><b>Surrey Food bank society</b><br>10732 City Pkwy<br>Surrey, BC V3T 4C7</p>
+                    <p onmouseover="bounceMarker('m1')" onmouseout="stopBounce()" class="well well-sm" id="m1"><b>Covenant House</b><br>575 Drake St<br>Vancouver, BC V6B 4K8</p>
+                    <p onmouseover="bounceMarker('m2')" onmouseout="stopBounce()" class="well well-sm" id="m2"><b>Langley Food Bank</b><br>5768 203 St<br>Langley, BC V3A 1W3</p>
+                    <p onmouseover="bounceMarker('m3')" onmouseout="stopBounce()" class="well well-sm" id="m3"><b>Quest Food Exchange</b><br>7753 Sixth St<br>New Westminster, BC V3L 3C8</p>
+                    <p onmouseover="bounceMarker('m4')" onmouseout="stopBounce()" class="well well-sm" id="m4"><b>Quest Outreach Society</b><br>346 E Hastings St<br>Vancouver, BC V6A 1P4</p>
+                    <p onmouseover="bounceMarker('m5')" onmouseout="stopBounce()" class="well well-sm" id="m5"><b>Richmond Food Bank Society</b><br>5800 Cedarbridge Way #100<br>Richmond, BC V6X 2A7</p>
                 </div>
                 <div class="col-sm-8" id="googleMap">
                     <div id="map" style="height:400px;"></div>
@@ -80,31 +81,31 @@
             </div>
         </main>
         <footer>
-        <div class="container-fluid textCentered">
-            <table>
-                <tr>
-                    <td><a href="../">Home</a></td>
-                    <td><a href="../ecolist/">Eco List</a></td>
-                    <td><a href="../services/">Affiliated Apps</a></td>
-                    <td><a href="../users/">Login</a></td>
-                </tr>
-                <tr>
-                    <td><a href="../#OurPurpose">Our Purpose</a></td>
-                    <td><a href="../ecoeats/">Eco Eats</a></td>
-                    <td><a href="../#AboutUs">About Us</a></td>
-                    <td><a href="../sitemap/">Site Map</a></td>
-                </tr>
-                <tr>
-                    <td><a href="../#OurApps">About our Apps</a></td>
-                    <td><a href="./">Donation</a></td>
-                    <td><a href="../#AboutProject">About the Project</a></td>
-                </tr>
-                <tr>
-                    <td colspan="4"><br>&copy; Copyright 2017 | EcoList, All Rights Reserved</td>
-                </tr>
-            </table>
-        </div>
-    </footer>
+            <div class="container-fluid textCentered">
+                <table>
+                    <tr>
+                        <td><a href="../">Home</a></td>
+                        <td><a href="../ecolist/">EcoList</a></td>
+                        <td><a href="../ourfriends/">Affiliated Apps</a></td>
+                        <td><a href="../users/">Login</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="../services/">Services</a></td>
+                        <td><a href="../ecoeats/">EcoEats</a></td>
+                        <td><a href="../aboutus/#OurApps">About our Apps</a></td>
+                        <td><a href="../sitemap/">Site Map</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="../aboutus/#OurPurpose">Our Purpose</a></td>
+                        <td><a href="./">Donation</a></td>
+                        <td><a href="../aboutus/#AboutUs">About Us</a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><br>&copy; Copyright 2017 | EcoList, All Rights Reserved</td>
+                    </tr>
+                </table>
+            </div>
+        </footer>
     <!-- Below is the initialisation code for firebase project.-->
 <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
 <script src="../loginscript.js"></script>

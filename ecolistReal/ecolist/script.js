@@ -30,6 +30,10 @@ $(function () {
     $(document).ready(
     function(){
       $("body").on("click",".list", function (){
+          var user = firebase.auth().currentUser;
+          if(user == null) {
+              alert("You must be logged in to use shopping list.");
+          }
                 var id = $(this).attr('id');
                 a = parseInt(id);
                 var toAdd = $("#" + a + "item").val();
@@ -40,11 +44,16 @@ $(function () {
                   return false;
                  }
                 if(toAdd2 == "" || toAdd2 == null){
-                      toAdd2 = 0;
+                      toAdd2 = 1;
                 }
                 toAdd2 = parseInt(toAdd2);
                 listref.child(toAdd).remove();
-                cartref.update({[toAdd] : toAdd2});
+				cartref.once("value").then( snapshot=> {
+					if(snapshot.exists() && snapshot.hasChild(toAdd)){
+						toAdd2 += snapshot.child(toAdd).val();
+					};
+					cartref.update({[toAdd] : toAdd2});
+				});
                 addToCart(toAdd,toAdd2);
                    $(this).closest("tr").remove();
                    $('#cTitle').html('Cart').hide().fadeIn("fast");
@@ -95,9 +104,17 @@ $(function () {
     $("body").on('click','.btnCartRemove', function(){
         $(this).fadeOut("fast", function(){
             var item = $(this).parent()[0].innerText;
+			var itemamount = parseInt(item.match(/^\d+/));
             item = item.replace(/^\d+\s/,'');
             console.log(item);
-            cartref.child(item).remove();
+			cartref.once("value").then( snapshot => {
+				if(snapshot.hasChild(item) && snapshot.child(item).val() - itemamount > 0){
+					newamt = snapshot.child(item).val() - itemamount;
+					cartref.update({[item] : newamt});
+				} else {
+					cartref.child(item).remove();
+				}
+			});
           $(this).parent().remove();
           if($(".list-group-item").text().length === 0){
               $('#cTitle').html('   Cart is empty!').hide().fadeIn("fast");
@@ -134,10 +151,10 @@ $(function () {
 
     //button adds new rows to table 1
     function addRow(value1, value2){
-        if(value1 == null){
+        if(value1 == null || value2 == undefined){
             value1 = "";
         };
-        if(value2 == null){
+        if(value2 == null || value2 == 0 || value2 == undefined){
             value2 = "";
         };
         var div = $("<tr>");
@@ -155,12 +172,12 @@ $(function () {
 
 
 
-function GetDynamicTextBox(value) {
+function GetDynamicTextBox(value1, value2) {
     count++;
     c++;
     return '<td><button type="button" id="'+c+'btn" class="btn btn-info list"><span class="glyphicon glyphicon-shopping-cart"></span></button></td>'
-    +'<td><input name = "DynamicTextBox" id="'+count+'item" type="text" value = "' + value + '" class="form-control" placeholder="Name of item" ></td>' 
-    + '<td><input name = "DynamicTextBox" id="'+count+'quantity" type="number" value = "' + value + '"  class="form-control" placeholder="#" ></td>' 
+    + '<td><input name = "DynamicTextBox" id="'+count+'item" type="text" value = "' + value1 + '" class="form-control" placeholder="Name of item"onChange="updateList()"/></td>' 
+    + '<td><input name = "DynamicTextBox" id="'+count+'quantity" type="number" value = "' + value2 + '"  class="form-control" placeholder="#"onChange="updateList()"/></td>' 
     + '<td><button type="button" id="'+c+'" class="btn btn-danger remove"><i class="glyphicon glyphicon-minus-sign"></i></button></td>'
 }
 
