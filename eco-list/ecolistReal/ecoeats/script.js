@@ -596,6 +596,7 @@ function widthLessThan767() {
          * and remove all current active and displayBlock
          * 2. if it clicked again, disappered
          */
+
         TabClicked = function(id, id2, list, contentBlock, content) {
             var tab = document.getElementById(id);
             var firstlist = document.getElementById(id2);
