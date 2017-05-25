@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, .nav-tabs, .nav-pills, button, input, textarea {
 
 /*TABS*/
 .nav-tabs {
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .nav-tabs a {
@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, .nav-tabs, .nav-pills, button, input, textarea {
  * @Edmund
  */
 ul.nav-pills {
-    margin-top: 20px;
+    margin-top: 20px;;
     /*margin-bottom: 170px;*/
 }
 
@@ -381,16 +381,16 @@ footer tr td a:hover {
         width: 100%;
     }
 
+    ul.nav-pills {
+
+    font-size: 0.8em;
+    }
 }
 
 @media only screen and (max-width: 769px) {
     .borderLeft {
         border-left: none;
     }
-}
-
-.nav>li>a.tabButtons {
-    padding: 10px 8px;
 }
 
 .col-md-8 {
