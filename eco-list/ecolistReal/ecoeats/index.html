@@ -2344,14 +2344,14 @@
                 </div>
                 <!-- NEED TO ADD NAME FOR EACH INPUT!!!!! -->
                 <div class="row displayNone recipeContent" id="userListContentCreate">
-                    <div onsubmit="updateList()" method="post">
+                    <div>
                     <div class="col-md-8 borderLeft">
-                        <h2><input type="text" class="div-control" id="CustomRecipeName" placeholder="Recipe Name" required></h2>
+                        <h2><input type="text" class="form-control" id="CustomRecipeName" placeholder="Recipe Name" required></h2>
                         <div class="col-md-12">
-                            <textarea class="recipetextarea div-control" id="CustomRecipeDesc" placeholder="Short Recipe Description" rows="8"></textarea>
-                                <input class="recipetextarea div-control inputSteps" type="text" placeholder="Enter the simple step" required>
-                                <input class="recipetextarea div-control inputSteps" type="text" placeholder="Enter the simple step" required>
-                                <input class="recipetextarea div-control inputSteps" type="text" placeholder="Enter the simple step" required>
+                            <textarea class="recipetextarea form-control" id="CustomRecipeDesc" placeholder="Short Recipe Description" rows="8"></textarea>
+                                <input class="recipetextarea form-control inputSteps" type="text" placeholder="Enter the simple step" required>
+                                <input class="recipetextarea form-control inputSteps" type="text" placeholder="Enter the simple step" required>
+                                <input class="recipetextarea form-control inputSteps" type="text" placeholder="Enter the simple step" required>
                                 <button type="button" id="addStepId" class="btn btn-success"><i class="glyphicon glyphicon-plus-sign"></i>  Add Step</button>
                                 <button type="button" id="removeStepId" class="btn btn-danger remove"><i class="glyphicon glyphicon-remove-sign"></i>  Delete Step</button>
                             <br><br>
@@ -2361,15 +2361,15 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input class="recipetextarea div-control inputIngredients" type="text" placeholder="Enter the ingredient" required>
-                                        <input class="recipetextarea div-control inputIngredients" type="text" placeholder="Enter the ingredient" required>
-                                        <input class="recipetextarea div-control inputIngredients" type="text" placeholder="Enter the ingredient" required>
+                                        <input class="recipetextarea form-control inputIngredients" type="text" placeholder="Enter the ingredient" required>
+                                        <input class="recipetextarea form-control inputIngredients" type="text" placeholder="Enter the ingredient" required>
+                                        <input class="recipetextarea form-control inputIngredients" type="text" placeholder="Enter the ingredient" required>
                                         <button type="button" id="addIngredientId" class="btn btn-success"><i class="glyphicon glyphicon-plus-sign"></i>  Add Ingredient</button>
                                         <button type="button" id="removeIngredientId" class="btn btn-danger remove"><i class="glyphicon glyphicon-remove-sign"></i>  Delete Ingredient</button>
                                     </td>
                                 </tr>
                             </table>
-                                        <input type="submit" class="btn btn-info" value="Save" onclick="updateList()">
+                                        <input type="submit" class="btn btn-info" value="Save">
                         </div>
                     </div>
                     </div>
@@ -2398,7 +2398,6 @@
                 <tr>s
                     <td><a href="../aboutus/#OurPurpose">Our Purpose</a></td>
                     <td><a href="../donation/">Donation</a></td>
-                    <td><a href="../aboutus/#AboutProject">About the Project</a></td>
                     <td><a href="../aboutus/#AboutUs">About Us</a></td>
                 </tr>
                 <tr>
