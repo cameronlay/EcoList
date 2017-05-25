@@ -98,6 +98,14 @@ div#myNavbar ul.navbar-nav ul.dropdown-menu a:hover {
     width: 60%;
 }
 
+.graphimg {
+    width: 100%;
+}
+
+p1{
+    font-size: 1.3em;
+}
+
 .jumbotron {
     background-color: rgba(246, 246, 232, 0.3);
     margin-top: 30px;
