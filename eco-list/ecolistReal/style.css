@@ -197,7 +197,11 @@ footer tr td a:hover {
         color: black;
         text-decoration: none;
     }
-
+    
+    #fb, #twt, #googleplus {
+        display: inline-block;
+        width: 30%;
+    }
 
 
     /*FOOTER*/
@@ -221,4 +225,9 @@ footer tr td a:hover {
         padding-left: 100px;
         padding-right: 100px;
     }
+}
+
+
+#fb, #twt, #googleplus {
+    padding-right:16px;
 }
