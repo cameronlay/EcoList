@@ -80,6 +80,7 @@ function myMap() {
             },500);
            
         }
+        document.getElementById("m").style.color = "red";
     });
     
     /* This helps to zoom the map when ckicked on markers.*/
@@ -89,6 +90,10 @@ function myMap() {
     });
     
     
+    google.maps.event.addListener(marker,'click',function() {
+        document.getElementById("m").style.color = "red";
+    });
+    
     /* This stop the marker to bounce when we mouse out. */
     google.maps.event.addListener(marker, 'mouseout', function() {
         
@@ -96,7 +101,7 @@ function myMap() {
            this.setAnimation(null);
         }
         clearTimeout(bounceTimer);
-        
+        document.getElementById("m").style.color = "black";
         
     });
     google.maps.event.addListener(marker1, 'mouseover', function() {
@@ -109,11 +114,16 @@ function myMap() {
                  this_marker.setAnimation(google.maps.Animation.BOUNCE);
             },500);
         }
+        document.getElementById("m1").style.color = "red";
     });
     
-        google.maps.event.addListener(marker1,'dblclick',function() {
+    google.maps.event.addListener(marker1,'dblclick',function() {
         map.setZoom(map.getZoom() + count);
         map.setCenter(marker1.getPosition());
+    });
+    
+    google.maps.event.addListener(marker1,'click',function() {
+        document.getElementById("m1").style.color = "red";
     });
     
     google.maps.event.addListener(marker1, 'mouseout', function() {
@@ -122,6 +132,7 @@ function myMap() {
            this.setAnimation(null);
         }
         clearTimeout(bounceTimer);
+        document.getElementById("m1").style.color = "black";
     }); 
     
     google.maps.event.addListener(marker2, 'mouseover', function() {
@@ -134,11 +145,16 @@ function myMap() {
                  this_marker.setAnimation(google.maps.Animation.BOUNCE);
             },500);
         }
+        document.getElementById("m2").style.color = "red";
     });
     
-        google.maps.event.addListener(marker2,'dblclick',function() {
+    google.maps.event.addListener(marker2,'dblclick',function() {
         map.setZoom(map.getZoom() + count);
         map.setCenter(marker2.getPosition());
+    });
+    
+    google.maps.event.addListener(marker2,'click',function() {
+        document.getElementById("m2").style.color = "red";
     });
     
     google.maps.event.addListener(marker2, 'mouseout', function() {
@@ -147,7 +163,7 @@ function myMap() {
            this.setAnimation(null);
         }
         clearTimeout(bounceTimer);
-        
+        document.getElementById("m2").style.color = "black";
     });
     
         google.maps.event.addListener(marker3, 'mouseover', function() {
@@ -160,11 +176,16 @@ function myMap() {
                  this_marker.setAnimation(google.maps.Animation.BOUNCE);
             },500);
         }
+        document.getElementById("m3").style.color = "red";
     });
     
-        google.maps.event.addListener(marker3,'dblclick',function() {
+    google.maps.event.addListener(marker3,'dblclick',function() {
         map.setZoom(map.getZoom() + count);
         map.setCenter(marker3.getPosition());
+    });
+    
+    google.maps.event.addListener(marker3,'click',function() {
+        document.getElementById("m3").style.color = "red";
     });
     
     google.maps.event.addListener(marker3, 'mouseout', function() {
@@ -173,10 +194,10 @@ function myMap() {
            this.setAnimation(null);
         }
         clearTimeout(bounceTimer);
-        
+        document.getElementById("m3").style.color = "black";
     });
     
-        google.maps.event.addListener(marker4, 'mouseover', function() {
+    google.maps.event.addListener(marker4, 'mouseover', function() {
         if (this.getAnimation() == null || typeof this.getAnimation() === 'undefined') {
             
             clearTimeout(bounceTimer);
@@ -186,11 +207,16 @@ function myMap() {
                  this_marker.setAnimation(google.maps.Animation.BOUNCE);
             },500);
         }
+        document.getElementById("m4").style.color = "red";
     });
     
-        google.maps.event.addListener(marker4,'dblclick',function() {
+    google.maps.event.addListener(marker4,'dblclick',function() {
         map.setZoom(map.getZoom() + count);
         map.setCenter(marker4.getPosition());
+    });
+    
+    google.maps.event.addListener(marker4,'click',function() {
+        document.getElementById("m4").style.color = "red";
     });
     
     google.maps.event.addListener(marker4, 'mouseout', function() {
@@ -199,7 +225,7 @@ function myMap() {
            this.setAnimation(null);
         }
         clearTimeout(bounceTimer);
-        
+        document.getElementById("m4").style.color = "black";
     });
 
     
@@ -213,11 +239,16 @@ function myMap() {
                  this_marker.setAnimation(google.maps.Animation.BOUNCE);
             },500);
         }
+        document.getElementById("m5").style.color = "red";
     });
     
     google.maps.event.addListener(marker5,'dblclick',function() {
         map.setZoom(map.getZoom() + count);
         map.setCenter(marker5.getPosition());
+    });
+    
+    google.maps.event.addListener(marker5,'click',function() {
+        document.getElementById("m5").style.color = "red";
     });
     
     google.maps.event.addListener(marker5, 'mouseout', function() {
@@ -226,6 +257,7 @@ function myMap() {
            this.setAnimation(null);
         }
         clearTimeout(bounceTimer);
+        document.getElementById("m5").style.color = "black";
     });
 
     // Officially setting the map with markers on it.
@@ -250,7 +282,8 @@ function bounceMarker(x) {
             bounceTimer = setTimeout(function(){
                  marker.setAnimation(google.maps.Animation.BOUNCE);
             },500);
-}
+    }
+    
     else if(x == 'm1'){
             clearTimeout(bounceTimer);
              
