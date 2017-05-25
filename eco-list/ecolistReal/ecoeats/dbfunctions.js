@@ -1,7 +1,7 @@
 /**
  * Created by Cameron on 2017-05-18.
  */
-var listref = null;
+/*var listref = null;
 var user = null;
 var itemName = null;
 firebase.auth().onAuthStateChanged(function () {
@@ -85,7 +85,7 @@ function updateList() {
         }
     }
     console.log("saved");
-};
+};*/
 
 
 
