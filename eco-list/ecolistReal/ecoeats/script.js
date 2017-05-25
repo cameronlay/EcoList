@@ -670,7 +670,7 @@ function widthLessThan767() {
 
             var recipeContent = $('.recipeContent');
             for (var i = 0; i < recipeContent.length; i++) {
-                recipeContent[i].removeClass('displayBlock');
+                recipeContent[i].classList.remove('displayBlock');
             }
 
             if (tab.classList.contains('active')) {
