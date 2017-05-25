@@ -357,6 +357,10 @@ function widthLessThan767() {
             if (x.classList.contains('active')) {
                 x.classList.remove('active');
                 y.classList.remove('displayBlock');
+
+                // BRING IMAGE
+                var content0Img1 = y.getElementsByClassName('col-md-6');
+                content0Img1[0].before(content0Img1[1]);
             } else {
 
                 var classicList = document.getElementById('classicList').getElementsByTagName('li');
@@ -393,6 +397,10 @@ function widthLessThan767() {
             if (x.classList.contains('active')) {
                 x.classList.remove('active');
                 y.classList.remove('displayBlock');
+
+                // BRING IMAGE
+                var content0Img1 = y.getElementsByClassName('col-md-6');
+                content0Img1[0].before(content0Img1[1]);
             } else {
 
                 var vegetarianList = document.getElementById('vegetarianList').getElementsByTagName('li');
@@ -428,6 +436,10 @@ function widthLessThan767() {
             if (x.classList.contains('active')) {
                 x.classList.remove('active');
                 y.classList.remove('displayBlock');
+
+                // BRING IMAGE
+                var content0Img1 = y.getElementsByClassName('col-md-6');
+                content0Img1[0].before(content0Img1[1]);
             } else {
 
                 var ketoList = document.getElementById('ketoList').getElementsByTagName('li');
@@ -463,6 +475,10 @@ function widthLessThan767() {
             if (x.classList.contains('active')) {
                 x.classList.remove('active');
                 y.classList.remove('displayBlock');
+
+                // BRING IMAGE
+                var content0Img1 = y.getElementsByClassName('col-md-6');
+                content0Img1[0].before(content0Img1[1]);
             } else {
 
                 var paleoList = document.getElementById('paleoList').getElementsByTagName('li');
@@ -498,6 +514,10 @@ function widthLessThan767() {
             if (x.classList.contains('active')) {
                 x.classList.remove('active');
                 y.classList.remove('displayBlock');
+
+                // BRING IMAGE
+                var content0Img1 = y.getElementsByClassName('col-md-6');
+                content0Img1[0].before(content0Img1[1]);
             } else {
 
                 var proteinList = document.getElementById('proteinList').getElementsByTagName('li');
@@ -533,6 +553,10 @@ function widthLessThan767() {
             if (x.classList.contains('active')) {
                 x.classList.remove('active');
                 y.classList.remove('displayBlock');
+
+                // BRING IMAGE
+                var content0Img1 = y.getElementsByClassName('col-md-6');
+                content0Img1[0].before(content0Img1[1]);
             } else {
 
                 var culturalList = document.getElementById('culturalList').getElementsByTagName('li');
@@ -612,6 +636,11 @@ function widthLessThan767() {
             document.getElementById("culturalList").classList.remove("displayBlock");
             document.getElementById("userList").classList.remove("displayBlock");
 
+            var recipeContent = $('.recipeContent');
+            for (var i = 0; i < recipeContent.length; i++) {
+                recipeContent[i].classList.remove('displayBlock');
+            }
+
             // =========================================
             // Classic
             // =========================================
@@ -667,11 +696,6 @@ function widthLessThan767() {
             var userList = document.getElementById('userList').getElementsByTagName('li');
             for (var i = 0; i < userList.length; i++) {
                 userList[i].classList.remove('active');
-            }
-
-            var recipeContent = $('.recipeContent');
-            for (var i = 0; i < recipeContent.length; i++) {
-                recipeContent[i].classList.remove('displayBlock');
             }
 
             if (tab.classList.contains('active')) {
