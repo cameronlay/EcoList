@@ -97,12 +97,12 @@
             <!-- TABS -->
             <div class="panel panel-default">
             <ul class="nav nav-tabs" id="navTabs">
-                <li id="classic" class="active" onclick="TabClicked('classic', 'classicList1', 'classicList', 'classicListContent', 'classicListContent1')"><a href="javascript:void(0);" class="tabButtons">Classic</a></li>
-                <li id="vegetarian" onclick="TabClicked('vegetarian', 'vegetarianList1', 'vegetarianList', 'vegetarianListContent', 'vegetarianListContent1')"><a href="javascript:void(0);" class="tabButtons">Vegetarian</a></li>
-                <li id="keto" onclick="TabClicked('keto', 'ketoList1', 'ketoList', 'ketoListContent', 'ketoListContent1')"><a href="javascript:void(0);" class="tabButtons">Keto</a></li>
-                <li id="paleo" onclick="TabClicked('paleo', 'paleoList1', 'paleoList', 'paleoListContent', 'paleoListContent1')"><a href="javascript:void(0);" class="tabButtons">Paleo</a></li>
-                <li id="proteinRich" onclick="TabClicked('proteinRich', 'proteinList1', 'proteinList', 'proteinListContent', 'proteinListContent1')"><a href="javascript:void(0);" class="tabButtons">Protein Rich</a></li>
-                <li id="cultural" onclick="TabClicked('cultural', 'culturalList1', 'culturalList', 'culturalListContent', 'culturalListContent1')"><a href="javascript:void(0);" class="tabButtons">Cultural</a></li>
+                <li id="classic" class="active" onclick="TabClicked('classic', 'classicList1', 'classicList', 'classicListContent', 'classicListContent1')"><a href="javascript:void(0);" class="tabButtons"><h4>Classic</h4></a></li>
+                <li id="vegetarian" onclick="TabClicked('vegetarian', 'vegetarianList1', 'vegetarianList', 'vegetarianListContent', 'vegetarianListContent1')"><a href="javascript:void(0);" class="tabButtons"><h4>Vegetarian</h4></a></li>
+                <li id="keto" onclick="TabClicked('keto', 'ketoList1', 'ketoList', 'ketoListContent', 'ketoListContent1')"><a href="javascript:void(0);" class="tabButtons"><h4>Keto</h4></a></li>
+                <li id="paleo" onclick="TabClicked('paleo', 'paleoList1', 'paleoList', 'paleoListContent', 'paleoListContent1')"><a href="javascript:void(0);" class="tabButtons"><h4>Paleo</h4></a></li>
+                <li id="proteinRich" onclick="TabClicked('proteinRich', 'proteinList1', 'proteinList', 'proteinListContent', 'proteinListContent1')"><a href="javascript:void(0);" class="tabButtons"><h4>Protein Rich</h4></a></li>
+                <li id="cultural" onclick="TabClicked('cultural', 'culturalList1', 'culturalList', 'culturalListContent', 'culturalListContent1')"><a href="javascript:void(0);" class="tabButtons"><h4>Cultural</h4></a></li>
                 <!-- <li id="user" onclick="TabClicked('user', 'userList1', 'userList', 'userListContent', 'userListContent1')"><a href="javascript:void(0);" class="tabButtons">Create your Own</a></li> -->
                     <!-- CONVERTER START -->
                         <span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Converter</button></span>
@@ -389,7 +389,7 @@
                 <div class="row displayNone displayBlock recipeContent" id="classicListContent1">
                     <div class="col-md-8 borderLeft borderLeft">
                         <h2>Steak</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">Gordon Ramsay’s method for cooking a perfect, yet simple fillet that pairs well with many sides of your liking.<br><br><br></div>
                             <ol class="lessPadding">
@@ -434,7 +434,7 @@
                 <div class="row displayNone recipeContent" id="classicListContent2">
                     <div class="col-md-8 borderLeft">
                         <h2>Curry Korokke</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">Based on French croquettes, Curry Korokke uses Japanese curry sauce to for a distinctly spicy, mouthwatering flavour.<br><br><br></div>
                             <ol class="lessPadding">
@@ -479,7 +479,7 @@
                 <div class="row displayNone recipeContent" id="classicListContent3">
                     <div class="col-md-8 borderLeft">
                         <h2>Gnocchi with Tomato</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">Ready-made gnocchi in a spicy tomato sauce makes a change from pasta and is just as easy to prepare.<br><br><br></div>
                             <ol class="lessPadding">
@@ -522,7 +522,7 @@
                 <div class="row displayNone recipeContent" id="classicListContent4">
                     <div class="col-md-8 borderLeft">
                         <h2>Chicken Tetrazzini</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">Tetrazzini is an American dish made with diced poultry or seafood and mushroom in a butter or cream and parmesan sauce flavored with wine or sherry.<br><br><br></div>
                             <ol class="lessPadding">
@@ -564,7 +564,7 @@
                 <div class="row displayNone recipeContent" id="classicListContent5">
                     <div class="col-md-8 borderLeft">
                         <h2>Southern Fried Chicken</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">Cindy Garricks’ recipe from Alabama combines simple ingredients yet a perfect and simple technique for making the crispiest southern fried chicken that anyone at home can make.<br><br><br></div>
                             <ol class="lessPadding">
@@ -603,7 +603,7 @@
                 <div class="row displayNone recipeContent" id="classicListContent6">
                     <div class="col-md-8 borderLeft">
                         <h2>French Toast</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">This recipe works with many types of bread - white, whole wheat, cinnamon-raisin, Italian or French. Serve hot with butter or margarine and maple syrup.<br><br><br></div>
                             <ol class="lessPadding">
@@ -638,7 +638,7 @@
                 <div class="row displayNone recipeContent" id="classicListContent7">
                     <div class="col-md-8 borderLeft">
                         <h2>Guacamole</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">Guacamole is an avocado-based dip or salad first created by the Aztecs in what is now Mexico.<br><br><br></div>
                             <ol class="lessPadding">
@@ -682,7 +682,7 @@
                 <div class="row displayNone recipeContent" id="vegetarianListContent1">
                     <div class="col-md-8 borderLeft">
                         <h2>Mung Sprout Salad</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">Sprout Salad is a very easy as well as a very healthy salad recipe.<br><br><br></div>
                             <ol class="lessPadding">
@@ -727,7 +727,7 @@
                 <div class="row displayNone recipeContent" id="vegetarianListContent2">
                     <div class="col-md-8 borderLeft">
                         <h2>Egg Curry</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">This egg curry is made by giving tempering and then adding ingredients like chopped onions and coconut paste and making a wonderful south indian egg curry that is perfect with rice or chapathi or paratha.<br><br><br></div>
                             <ol class="lessPadding">
@@ -769,7 +769,7 @@
                 <div class="row displayNone recipeContent" id="vegetarianListContent3">
                     <div class="col-md-8 borderLeft">
                         <h2>Vegetarian quiche</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">Quiche is a quick and versatile dish that is so easy to make. Fresh wild fiddle heads are in season and go really well in a quiche, or simply add any veggies you have laying around!<br><br><br></div>
                             <ol class="lessPadding">
@@ -820,7 +820,7 @@
                 <div class="row displayNone recipeContent" id="vegetarianListContent4">
                     <div class="col-md-8 borderLeft">
                         <h2>Spinach with Yogurt</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">This quick and easy side dish is a real delight.<br><br><br></div>
                             <ol class="lessPadding">
@@ -857,7 +857,7 @@
                 <div class="row displayNone recipeContent" id="vegetarianListContent5">
                     <div class="col-md-8 borderLeft">
                         <h2>Tomato Fettuccine</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">Using a variety of tomatoes brings a depth of flavour and great colour to this dish.<br><br><br></div>
                             <ol class="lessPadding">
@@ -905,7 +905,7 @@
                 <div class="row displayNone recipeContent" id="vegetarianListContent6">
                     <div class="col-md-8 borderLeft">
                         <h2>Mushroom Soup</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">Creamy mushroom soup that is not full of crazy ingredients can be hard to come by.<br><br><br></div>
                             <ol class="lessPadding">
@@ -951,7 +951,7 @@
                 <div class="row displayNone recipeContent" id="vegetarianListContent7">
                     <div class="col-md-8 borderLeft">
                         <h2>Butternut Squash Porter Chilli</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">This recipe takes a cozy cue from fall, with butternut squash, black beans and a jolt of straight-up beer.<br><br><br></div>
                             <ol class="lessPadding">
@@ -998,7 +998,7 @@
                 <div class="row displayNone recipeContent" id="ketoListContent1">
                     <div class="col-md-8 borderLeft">
                         <h2>Bacon Avocado Salad</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">A delicious and strict low-carb salad for those who love avocados, goat cheese and nuts.<br><br><br></div>
                             <ol class="lessPadding">
@@ -1039,7 +1039,7 @@
                 <div class="row displayNone recipeContent" id="ketoListContent2">
                     <div class="col-md-8 borderLeft">
                         <h2>Baked Salmon</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">This lip-smacking Lemon Butter Salmon from Karla Seville of Waynesboro, Pennsylvania makes for an easy, breezy supper to serve family or friends out on the patio some warm night.<br><br><br></div>
                             <ol class="lessPadding">
@@ -1078,7 +1078,7 @@
                 <div class="row displayNone recipeContent" id="ketoListContent3">
                     <div class="col-md-8 borderLeft">
                         <h2>Scrambled Eggs</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">Butter plus eggs equals the perfect breakfast.<br><br><br></div>
                             <ol class="lessPadding">
@@ -1114,7 +1114,7 @@
                 <div class="row displayNone recipeContent" id="ketoListContent4">
                     <div class="col-md-8 borderLeft">
                         <h2>x</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">Soft crust pizza brushed with herbed garlic, layered with spinach, mozzarella, and chicken.<br><br><br></div>
                             <ol class="lessPadding">
@@ -1167,7 +1167,7 @@
                 <div class="row displayNone recipeContent" id="ketoListContent5">
                     <div class="col-md-8 borderLeft">
                         <h2>Cinnamon Butter Bites</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">Flavorful, slightly sweet, and with a whipped taste vaguely reminiscent of frosting, these cinnamon butter bites are a delicious way to eat your healthy fats.<br><br><br></div>
                             <ol class="lessPadding">
@@ -1205,7 +1205,7 @@
                 <div class="row displayNone recipeContent" id="ketoListContent6">
                     <div class="col-md-8 borderLeft">
                         <h2>Grilled Cheese Sandwiches</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">This is a great low carb solution that still allows you to enjoy a comforting grilled cheese sandwich.<br><br><br></div>
                             <ol class="lessPadding">
@@ -1249,7 +1249,7 @@
                 <div class="row displayNone recipeContent" id="ketoListContent7">
                     <div class="col-md-8 borderLeft">
                         <h2>Mushroom Omelet</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">Mushrooms are a great omelette filling, and can be easily upgraded with other things, such as cheese or onion.<br><br><br></div>
                             <ol class="lessPadding">
@@ -1297,7 +1297,7 @@
                 <div class="row displayNone recipeContent" id="paleoListContent1">
                     <div class="col-md-8 borderLeft">
                         <h2>Salmon with Vegetables</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">Chopped cucumbers, tomatoes, and crunchy red onions are a classic chopped salad base for a simple vinaigrette and some fresh herbs.<br><br><br></div>
                             <ol class="lessPadding">
@@ -1343,7 +1343,7 @@
                 <div class="row displayNone recipeContent" id="paleoListContent2">
                     <div class="col-md-8 borderLeft">
                         <h2>Tomato Basil Frittata</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">The recipe here is very simple and minimalist, and really brings out the flavor of the tomatoes, but you can switch it up a little with other vegetables as well.<br><br><br></div>
                             <ol class="lessPadding">
@@ -1387,7 +1387,7 @@
                 <div class="row displayNone recipeContent" id="paleoListContent3">
                     <div class="col-md-8 borderLeft">
                         <h2>Crock Pot Chili</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">Crock pot chili is a super simple yet warm and comforting dish.<br><br><br></div>
                             <ol class="lessPadding">
@@ -1429,7 +1429,7 @@
                 <div class="row displayNone recipeContent" id="paleoListContent4">
                     <div class="col-md-8 borderLeft">
                         <h2>Chipotle Chicken Wings</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">This wing recipe is the perfect thing to prepare for a ton of events whether it’s a night in with the family or a party with friends.<br><br><br></div>
                             <ol class="lessPadding">
@@ -1469,7 +1469,7 @@
                 <div class="row displayNone recipeContent" id="paleoListContent5">
                     <div class="col-md-8 borderLeft">
                         <h2>Beets &amp; Berry Smoothie</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">A smoothie is a thick beverage made from blended raw fruit or vegetables with other ingredients such as water, ice, dairy products or sweeteners.<br><br><br></div>
                             <ol class="lessPadding">
@@ -1503,7 +1503,7 @@
                 <div class="row displayNone recipeContent" id="paleoListContent6">
                     <div class="col-md-8 borderLeft">
                         <h2>Chipotle Lime Salmon</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">Chipotle, lime and honey come together in a glaze for this salmon.<br><br><br></div>
                             <ol class="lessPadding">
@@ -1541,7 +1541,7 @@
                 <div class="row displayNone recipeContent" id="paleoListContent7">
                     <div class="col-md-8 borderLeft">
                         <h2>Baked chicken on cauliflower rice</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">This baked chicken on cauliflower rice dish is a perfect meal for paleo diets.<br><br><br></div>
                             <ol class="lessPadding">
@@ -1591,7 +1591,7 @@
                 <div class="row displayNone recipeContent" id="proteinListContent1">
                     <div class="col-md-8 borderLeft">
                         <h2>Mac and Cheese</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">The recipe consisting of cooked macaroni pasta and a cheese sauce, most commonly cheddar.<br><br><br></div>
                             <ol class="lessPadding">
@@ -1639,7 +1639,7 @@
                 <div class="row displayNone recipeContent" id="proteinListContent2">
                     <div class="col-md-8 borderLeft">
                         <h2>Braised Paprika Chicken</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">Sweet Hungarian paprika gives this creamy braised chicken the best flavor.<br><br><br></div>
                             <ol class="lessPadding">
@@ -1692,7 +1692,7 @@
                 <div class="row displayNone recipeContent" id="proteinListContent3">
                     <div class="col-md-8 borderLeft">
                         <h2>Spiced Scrambled Eggs</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">Spiced Scrambled Eggs is a dish made from whites and yolks of eggs stirred or beaten together in a pan while being gently heated with spices that enriches the flavor of it.<br><br><br></div>
                             <ol class="lessPadding">
@@ -1734,7 +1734,7 @@
                 <div class="row displayNone recipeContent" id="proteinListContent4">
                     <div class="col-md-8 borderLeft">
                         <h2>Fruit &amp; Nut Yogurt</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">An energy-boosting breakfast pot that makes a great alternative to cereal and will keep you full until lunch.<br><br><br></div>
                             <ol class="lessPadding">
@@ -1769,7 +1769,7 @@
                 <div class="row displayNone recipeContent" id="proteinListContent5">
                     <div class="col-md-8 borderLeft">
                         <h2>Corned Beef and Cabbage</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">Inexpensive, easy to cook, and delightfully tender and satisfying, Corned Beef and Cabbage proves a pleasing meal any time—not just on St. Patrick’s Day.<br><br><br></div>
                             <ol class="lessPadding">
@@ -1808,7 +1808,7 @@
                 <div class="row displayNone recipeContent" id="proteinListContent6">
                     <div class="col-md-8 borderLeft">
                         <h2>Griddled chicken with Greek salad</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">A light dish of grilled chicken fillets and authentic salad with Kalamata olives, feta cheese, tomato and mint.<br><br><br></div>
                             <ol class="lessPadding">
@@ -1854,7 +1854,7 @@
                 <div class="row displayNone recipeContent" id="proteinListContent7">
                     <div class="col-md-8 borderLeft">
                         <h2>Thai salmon kebabs &amp; lime dip</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">These Asian inspired salmon kebabs are a simple, easy to make, protein rich dish that is great for all occasions.<br><br><br></div>
                             <ol class="lessPadding">
@@ -1896,7 +1896,7 @@
                 <div class="row displayNone recipeContent" id="culturalListContent1">
                     <div class="col-md-8 borderLeft">
                         <h2>Chicken Tikka</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">This is an easy recipe for Chicken Tikka, marinated chicken in yogurt and spices and then served in a tomato cream sauce. Serve with rice or warm pita bread.<br><br><br></div>
                             <ol class="lessPadding">
@@ -1946,7 +1946,7 @@
                 <div class="row displayNone recipeContent" id="culturalListContent2">
                     <div class="col-md-8 borderLeft">
                         <h2>Butter Chicken</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">Butter chicken or murgh makhani is an Indian dish of chicken in a mildly spiced curry sauce.<br><br><br></div>
                             <ol class="lessPadding">
@@ -1996,7 +1996,7 @@
                 <div class="row displayNone recipeContent" id="culturalListContent3">
                     <div class="col-md-8 borderLeft">
                         <h2>Yang Chow</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">Yangzhou fried rice or Yang Chow fried rice is a popular Chinese-style wok fried rice dish in many Chinese restaurants throughout the world.<br><br><br></div>
                             <ol class="lessPadding">
@@ -2035,7 +2035,7 @@
                 <div class="row displayNone recipeContent" id="culturalListContent4">
                     <div class="col-md-8 borderLeft">
                         <h2>Chow Mien</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">Chow mein and in Chinese and Chinese English are stir-fried noodles, the name being the romanization of the Taishanese chāu-mèing.<br><br><br></div>
                             <ol class="lessPadding">
@@ -2076,7 +2076,7 @@
                 <div class="row displayNone recipeContent" id="culturalListContent5">
                     <div class="col-md-8 borderLeft">
                         <h2>Bannock</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">Bannock is a traditional Inuvialuit bread often served with butter and/or jam.<br><br><br></div>
                             <ol class="lessPadding">
@@ -2115,7 +2115,7 @@
                 <div class="row displayNone recipeContent" id="culturalListContent6">
                     <div class="col-md-8 borderLeft">
                         <h2>Quaq</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">Quaq  is a inuvialuit traditional meal which consists of frozen meat usually caribou or fish.<br><br><br></div>
                             <ol class="lessPadding">
@@ -2148,7 +2148,7 @@
                 <div class="row displayNone recipeContent" id="culturalListContent7">
                     <div class="col-md-8 borderLeft">
                         <h2>Eggs with Tomatoes</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">There were simple recipes and difficult recipes that included very foreign ingredients, but this dish is one of the best that anyone at home could make.<br><br><br></div>
                             <ol class="lessPadding">
@@ -2188,7 +2188,7 @@
                 <div class="row displayNone recipeContent" id="culturalListContent8">
                     <div class="col-md-8 borderLeft">
                         <h2>Yakisoba Chicken</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">Japanese buckwheat flour noodles with chicken at their best! Noodles can be found in an Asian foods market.<br><br><br></div>
                             <ol class="lessPadding">
@@ -2230,7 +2230,7 @@
                 <div class="row displayNone recipeContent" id="culturalListContent9">
                     <div class="col-md-8 borderLeft">
                         <h2>Steamed Eggs</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">Gyeranjjim(Steamd Eggs) is a popular Korean side dish. It is a custard-like steamed egg casserole.<br><br><br></div>
                             <ol class="lessPadding">
@@ -2264,7 +2264,7 @@
                 <div class="row displayNone recipeContent" id="culturalListContent10">
                     <div class="col-md-8 borderLeft">
                         <h2>Korean BBQ</h2>
-                        <div class="col-md-6 noMargin">
+                        <div class="col-md-6 noMargin" id="blackColor">
                             <h4 class="h4margin">Recipe Description</h4>
                             <div class="ddmargin">Korean dish of thin beef slices marinated and grilled on a barbecue.<br><br><br></div>
                             <ol class="lessPadding">
