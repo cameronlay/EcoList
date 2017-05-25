@@ -340,6 +340,7 @@ footer tr td a:hover {
     /*OVERRDING BOOTSTRAP*/
     .nav-tabs > li{
         float: none;
+        font-size: 1.4em;
     }
 
     [class*="col-"] {
@@ -383,7 +384,15 @@ footer tr td a:hover {
 
     ul.nav-pills {
 
-    font-size: 1em;
+    font-size: 1.2em;
+    }
+
+    .recipeContent h2 {
+        font-size: 1.5em;
+    }
+
+    img.recipeImage {
+        padding-bottom: 20px;
     }
 }
 

@@ -117,8 +117,8 @@
                                         </div>
                                         <div class="modal-body">
                                             <div class="div-group">
-                                                <input type="text" class="div-control" ng-model="firstNumber" placeholder="#" required>
-                                                        <select ng-model="firstMeasure" class="div-control">
+                                                <input type="text" class="form-control" ng-model="firstNumber" placeholder="#" required>
+                                                        <select ng-model="firstMeasure" class="form-control">
                                                             <option value="" selected disabled>
                                                             <option value="oz">Ounce
                                                             <option value="g">Gram
@@ -146,7 +146,7 @@
                                                             <!-- 1 ML = 0.067628 TBSP -->
                                                             <!-- 1 ML = 0.202884 ML -->
                                                             <div ng-switch-when="oz" class="displayInline">
-                                                                <select ng-model="secondMeasure" class="div-control">
+                                                                <select ng-model="secondMeasure" class="form-control">
                                                                     <option value="" selected disabled>
                                                                     <option value="oz">Ounce
                                                                     <option value="g">Gram
@@ -155,21 +155,21 @@
                                                                 </select>
                                                                 <div ng-switch="secondMeasure" class="displayInline">
                                                                     <div ng-switch-when="oz">
-                                                                        <input type="text" class="div-control" value="{{firstNumber * 1 | number:2}} OZ" disabled>
+                                                                        <input type="text" class="form-control" value="{{firstNumber * 1 | number:2}} OZ" disabled>
                                                                     </div>
                                                                     <div ng-switch-when="g">
-                                                                        <input type="text" class="div-control" value="{{firstNumber * 28.3495 | number:2}} G" disabled>
+                                                                        <input type="text" class="form-control" value="{{firstNumber * 28.3495 | number:2}} G" disabled>
                                                                     </div>
                                                                     <div ng-switch-when="lb">
-                                                                        <input type="text" class="div-control" value="{{firstNumber * 0.0625 | number:2}} LB" disabled>
+                                                                        <input type="text" class="form-control" value="{{firstNumber * 0.0625 | number:2}} LB" disabled>
                                                                     </div>
                                                                     <div ng-switch-when="ml">
-                                                                        <input type="text" class="div-control" value="{{firstNumber * 29.5735 | number:2}} ML" disabled>
+                                                                        <input type="text" class="form-control" value="{{firstNumber * 29.5735 | number:2}} ML" disabled>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div ng-switch-when="g" class="displayInline">
-                                                                <select ng-model="secondMeasure" class="div-control">
+                                                                <select ng-model="secondMeasure" class="form-control">
                                                                     <option value="" selected disabled>
                                                                     <option value="oz">Ounce
                                                                     <option value="g">Gram
@@ -177,18 +177,18 @@
                                                                 </select>
                                                                 <div ng-switch="secondMeasure" class="displayInline">
                                                                     <div ng-switch-when="oz">
-                                                                        <input type="text" class="div-control" value="{{firstNumber * 0.035274 | number:2}} OZ" disabled>
+                                                                        <input type="text" class="form-control" value="{{firstNumber * 0.035274 | number:2}} OZ" disabled>
                                                                     </div>
                                                                     <div ng-switch-when="g">
-                                                                        <input type="text" class="div-control" value="{{firstNumber * 1 | number:2}} G" disabled>
+                                                                        <input type="text" class="form-control" value="{{firstNumber * 1 | number:2}} G" disabled>
                                                                     </div>
                                                                     <div ng-switch-when="lb">
-                                                                        <input type="text" class="div-control" value="{{firstNumber * 0.00220462 | number:2}} LB" disabled>
+                                                                        <input type="text" class="form-control" value="{{firstNumber * 0.00220462 | number:2}} LB" disabled>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div ng-switch-when="lb" class="displayInline">
-                                                                <select ng-model="secondMeasure" class="div-control">
+                                                                <select ng-model="secondMeasure" class="form-control">
                                                                     <option value="" selected disabled>
                                                                     <option value="oz">Ounce
                                                                     <option value="g">Gram
@@ -196,33 +196,33 @@
                                                                 </select>
                                                                 <div ng-switch="secondMeasure" class="displayInline">
                                                                     <div ng-switch-when="oz">
-                                                                        <input type="text" class="div-control" value="{{firstNumber * 16 | number:2}} OZ" disabled>
+                                                                        <input type="text" class="form-control" value="{{firstNumber * 16 | number:2}} OZ" disabled>
                                                                     </div>
                                                                     <div ng-switch-when="g">
-                                                                        <input type="text" class="div-control" value="{{firstNumber * 453.592 | number:2}} G" disabled>
+                                                                        <input type="text" class="form-control" value="{{firstNumber * 453.592 | number:2}} G" disabled>
                                                                     </div>
                                                                     <div ng-switch-when="lb">
-                                                                        <input type="text" class="div-control" value="{{firstNumber * 1 | number:2}} LB" disabled>
+                                                                        <input type="text" class="form-control" value="{{firstNumber * 1 | number:2}} LB" disabled>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div ng-switch-when="cup" class="displayInline">
-                                                                <select ng-model="secondMeasure" class="div-control">
+                                                                <select ng-model="secondMeasure" class="form-control">
                                                                     <option value="" selected disabled>
                                                                     <option value="cup">Cup
                                                                     <option value="ml">ML
                                                                 </select>
                                                                 <div ng-switch="secondMeasure" class="displayInline">
                                                                     <div ng-switch-when="cup">
-                                                                        <input type="text" class="div-control" value="{{firstNumber * 1 | number:2}} Cup" disabled>
+                                                                        <input type="text" class="form-control" value="{{firstNumber * 1 | number:2}} Cup" disabled>
                                                                     </div>
                                                                     <div ng-switch-when="ml">
-                                                                        <input type="text" class="div-control" value="{{firstNumber * 236.588 | number:2}} ML" disabled>
+                                                                        <input type="text" class="form-control" value="{{firstNumber * 236.588 | number:2}} ML" disabled>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div ng-switch-when="tbsp" class="displayInline">
-                                                                <select ng-model="secondMeasure" class="div-control">
+                                                                <select ng-model="secondMeasure" class="form-control">
                                                                     <option value="" selected disabled>
                                                                     <option value="tbsp">Table Spoon
                                                                     <option value="tsp">Tea Spoon
@@ -230,18 +230,18 @@
                                                                 </select>
                                                                 <div ng-switch="secondMeasure" class="displayInline">
                                                                     <div ng-switch-when="tbsp">
-                                                                        <input type="text" class="div-control" value="{{firstNumber * 1 | number:2}} Table Spoon" disabled>
+                                                                        <input type="text" class="form-control" value="{{firstNumber * 1 | number:2}} Table Spoon" disabled>
                                                                     </div>
                                                                     <div ng-switch-when="tsp">
-                                                                        <input type="text" class="div-control" value="{{firstNumber * 3 | number:2}} Tea Spoon" disabled>
+                                                                        <input type="text" class="form-control" value="{{firstNumber * 3 | number:2}} Tea Spoon" disabled>
                                                                     </div>
                                                                     <div ng-switch-when="ml">
-                                                                        <input type="text" class="div-control" value="{{firstNumber * 14.7868 | number:2}} ML" disabled>
+                                                                        <input type="text" class="form-control" value="{{firstNumber * 14.7868 | number:2}} ML" disabled>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div ng-switch-when="tsp" class="displayInline">
-                                                                <select ng-model="secondMeasure" class="div-control">
+                                                                <select ng-model="secondMeasure" class="form-control">
                                                                     <option value="" selected disabled>
                                                                     <option value="tbsp">Table Spoon
                                                                     <option value="tsp">Tea Spoon
@@ -249,18 +249,18 @@
                                                                 </select>
                                                                 <div ng-switch="secondMeasure" class="displayInline">
                                                                     <div ng-switch-when="tbsp">
-                                                                        <input type="text" class="div-control" value="{{firstNumber * 0.333333 | number:2}} Table Spoon" disabled>
+                                                                        <input type="text" class="form-control" value="{{firstNumber * 0.333333 | number:2}} Table Spoon" disabled>
                                                                     </div>
                                                                     <div ng-switch-when="tsp">
-                                                                        <input type="text" class="div-control" value="{{firstNumber * 1 | number:2}} Tea Spoon" disabled>
+                                                                        <input type="text" class="form-control" value="{{firstNumber * 1 | number:2}} Tea Spoon" disabled>
                                                                     </div>
                                                                     <div ng-switch-when="ml">
-                                                                        <input type="text" class="div-control" value="{{firstNumber * 4.92892 | number:2}} ML" disabled>
+                                                                        <input type="text" class="form-control" value="{{firstNumber * 4.92892 | number:2}} ML" disabled>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div ng-switch-when="ml" class="displayInline">
-                                                                <select ng-model="secondMeasure" class="div-control">
+                                                                <select ng-model="secondMeasure" class="form-control">
                                                                     <option value="" selected disabled>
                                                                     <option value="oz">Ounce
                                                                     <option value="tbsp">Table Spoon
@@ -269,16 +269,16 @@
                                                                 </select>
                                                                 <div ng-switch="secondMeasure" class="displayInline">
                                                                     <div ng-switch-when="oz">
-                                                                        <input type="text" class="div-control" value="{{firstNumber * 0.033814 | number:2}} OZ" disabled>
+                                                                        <input type="text" class="form-control" value="{{firstNumber * 0.033814 | number:2}} OZ" disabled>
                                                                     </div>
                                                                     <div ng-switch-when="tbsp">
-                                                                        <input type="text" class="div-control" value="{{firstNumber * 0.067628 | number:2}} Table Spoon" disabled>
+                                                                        <input type="text" class="form-control" value="{{firstNumber * 0.067628 | number:2}} Table Spoon" disabled>
                                                                     </div>
                                                                     <div ng-switch-when="tsp">
-                                                                        <input type="text" class="div-control" value="{{firstNumber * 0.202884 | number:2}} Tea Spoon" disabled>
+                                                                        <input type="text" class="form-control" value="{{firstNumber * 0.202884 | number:2}} Tea Spoon" disabled>
                                                                     </div>
                                                                     <div ng-switch-when="ml">
-                                                                        <input type="text" class="div-control" value="{{firstNumber * 1 | number:2}} ML" disabled>
+                                                                        <input type="text" class="form-control" value="{{firstNumber * 1 | number:2}} ML" disabled>
                                                                     </div>
                                                                 </div>
                                                             </div>
