@@ -18,12 +18,13 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="118" column="52" lean-forward="false" selection-start-line="118" selection-start-column="52" selection-end-line="118" selection-end-column="52" />
+            <state relative-caret-position="553">
+              <caret line="84" column="29" lean-forward="false" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="29" />
               <folding>
                 <element signature="n#style#0;n#li#0;n#ul#1;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1495736802595" expanded="true" signature="7570:7803" ph="..." />
-                <marker date="1495736802595" expanded="false" signature="7866:7872" ph="©" />
+                <element signature="n#style#0;n#hr#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1495737809803" expanded="true" signature="8356:8589" ph="..." />
+                <marker date="1495737809803" expanded="false" signature="8652:8658" ph="©" />
               </folding>
             </state>
           </provider>
@@ -84,8 +85,8 @@
         <option value="$PROJECT_DIR$/loginscript.js" />
         <option value="$PROJECT_DIR$/ecolist/script.js" />
         <option value="$PROJECT_DIR$/style.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/ourfriends/index.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -366,12 +367,12 @@
       <workItem from="1495170576593" duration="1848000" />
       <workItem from="1495571017008" duration="9702000" />
       <workItem from="1495649080403" duration="2693000" />
-      <workItem from="1495733873717" duration="3048000" />
+      <workItem from="1495733873717" duration="3642000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27190000" />
+    <option name="totallyTimeSpent" value="27784000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -844,12 +845,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="118" column="52" lean-forward="false" selection-start-line="118" selection-start-column="52" selection-end-line="118" selection-end-column="52" />
+        <state relative-caret-position="553">
+          <caret line="84" column="29" lean-forward="false" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="29" />
           <folding>
             <element signature="n#style#0;n#li#0;n#ul#1;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1495736802595" expanded="true" signature="7570:7803" ph="..." />
-            <marker date="1495736802595" expanded="false" signature="7866:7872" ph="©" />
+            <element signature="n#style#0;n#hr#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1495737809803" expanded="true" signature="8356:8589" ph="..." />
+            <marker date="1495737809803" expanded="false" signature="8652:8658" ph="©" />
           </folding>
         </state>
       </provider>
