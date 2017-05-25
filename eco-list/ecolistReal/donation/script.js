@@ -91,7 +91,10 @@ function myMap() {
     
     
     google.maps.event.addListener(marker,'click',function() {
-        document.getElementById("m").style.color = "red";
+        if (document.getElementById("m").style.color == "red")
+            document.getElementById("m").style.color = "black";
+        else
+            document.getElementById("m").style.color = "red";
     });
     
     /* This stop the marker to bounce when we mouse out. */
@@ -123,7 +126,10 @@ function myMap() {
     });
     
     google.maps.event.addListener(marker1,'click',function() {
-        document.getElementById("m1").style.color = "red";
+        if (document.getElementById("m1").style.color == "red")
+            document.getElementById("m1").style.color = "black";
+        else
+            document.getElementById("m1").style.color = "red";
     });
     
     google.maps.event.addListener(marker1, 'mouseout', function() {
@@ -154,7 +160,10 @@ function myMap() {
     });
     
     google.maps.event.addListener(marker2,'click',function() {
-        document.getElementById("m2").style.color = "red";
+        if (document.getElementById("m2").style.color == "red")
+            document.getElementById("m2").style.color = "black";
+        else
+            document.getElementById("m2").style.color = "red";
     });
     
     google.maps.event.addListener(marker2, 'mouseout', function() {
@@ -185,7 +194,10 @@ function myMap() {
     });
     
     google.maps.event.addListener(marker3,'click',function() {
-        document.getElementById("m3").style.color = "red";
+        if (document.getElementById("m3").style.color == "red")
+            document.getElementById("m3").style.color = "black";
+        else
+            document.getElementById("m3").style.color = "red";
     });
     
     google.maps.event.addListener(marker3, 'mouseout', function() {
@@ -216,7 +228,10 @@ function myMap() {
     });
     
     google.maps.event.addListener(marker4,'click',function() {
-        document.getElementById("m4").style.color = "red";
+        if (document.getElementById("m4").style.color == "red")
+            document.getElementById("m4").style.color = "black";
+        else
+            document.getElementById("m4").style.color = "red";
     });
     
     google.maps.event.addListener(marker4, 'mouseout', function() {
@@ -248,7 +263,10 @@ function myMap() {
     });
     
     google.maps.event.addListener(marker5,'click',function() {
-        document.getElementById("m5").style.color = "red";
+        if (document.getElementById("m5").style.color == "red")
+            document.getElementById("m5").style.color = "black";
+        else
+            document.getElementById("m5").style.color = "red";
     });
     
     google.maps.event.addListener(marker5, 'mouseout', function() {
