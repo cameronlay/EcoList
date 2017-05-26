@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EcoList</title>
+    <!-- THIRD PARTY BOOTSTRAP, JQUERY, BOOTSTRAPJAVSCRIPT-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- FINISH IMPORTING -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./fonts/font.css">
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top indexNavNoBorderRadius indexNavBackground">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                      
+                </button>
+                <a class="navbar-brand" href="./"><img class="indexNavLogo" src="./images/logo.png" alt="Logo"><div class="indexNavLogoText">EcoList</div></a>
+                <div id="t" style="font-size:15px;color:#e6e6d8;padding-top:15px;position:absolute;right:20px"></div>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <!-- DROPDOWN MENU -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Apps<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./ecolist/">EcoList</a></li>
+                            <li><a href="./ecoeats/">EcoEats</a></li>
+                            <li><a href="./donation/">Donation</a></li>
+                        </ul>
+                    </li>
+                    <!-- FINISH DROPDOWN MENU -->
+                    <li><a href="./services/">Services</a></li>
+                    <li><a href="./ourfriends/">Our Friends</a></li>
+                    <li><a href="./aboutus/">About Us</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li id="p" style="display:none;font-size:15px;color:#e6e6d8;padding-top:15px"></li>
+                    <!-- WILL BE DISAPPEARED WHEN USER ISN'T LOGGED IN -->
+                    <li><a href="./" onclick="logOut()" id="logOut" style="display:none"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Log Out</a></li>
+                    <!-- WILL BE CHANGED TO PHP VARIABLE FOR USER NAME -->
+                    <li><a href="./users/" id="logIn" style="display:none"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login/Sign up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- MAIN HEADER -->
+        <div class="jumbotron textCentered" id="OurPurpose">
+            <h1><img class="limitedWidthForIndex" src="./images/logotext.png" alt="logo"></h1>
+            <p>Our goal is to help reduce food waste through good planning and organization.</p>
+            <a href="./ecolist/"><button type="button" class="btn btn-success">Try Your Shopping List</button></a>
+        </div>
+        <div class="container-fluid onlyVisibleDesktop">
+            <div class="row textCentered">
+                <div class="col-md-4">
+                    <h1>EcoList</h1>
+                    <p1>Plan out your shopping trip using our easy and efficient EcoList application.</p1>
+                    <a class="displayBlock" href="./ecolist/"><button type="button" class="btn btn-info">Make your List</button></a>
+                    <br>
+                    <p>Food thrown away everyday in metro Vancouver.</p>
+                    <img src="./images/info2-3.jpg" class="graphimg">
+                </div>
+                <div class="col-md-4">
+                    <h1>EcoEats</h1>
+                    <p1>Check out over forty recipes ranging from 7 different diets using our EcoEats recipe planner.</p1>
+                    <a class="displayBlock" href="./ecoeats/"><button type="button" class="btn btn-info">Make your Recipe</button></a>
+                    <br>
+                    <p>Where food is wasted in Canada's food chain.</p>
+                    <img src="./images/info1-3.jpg" class="graphimg">
+                </div>
+                <div class="col-md-4">
+                    <h1>Donation</h1>
+                    <p1>If you have excess food check out our Donations page on where you can donate!</p1>
+                    <a class="displayBlock" href="./donation/"><button type="button" class="btn btn-info">Donate Food</button></a>
+                    <br>
+                    <p>Reasons why food is wasted.</p>
+                    <img src="./images/info3-3.jpg" class="graphimg">
+                </div>
+            </div>
+        </div>
+        <hr class="onlyVisibleDesktop" style="width:80%;">
+        <div class="container-fluid textCentered onlyVisibleDesktop">
+            <div >
+                <div class="socialMedia">
+                    <h1>Share our site</h1>
+                    <p>If you found our site useful share with your friends and family.</p>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//eco-list.ca/" target="_blank"><img src="./images/facebook1.png" id="fb"></a>
+                    <a href="https://twitter.com/home?status=Check%20out%20this%20awesome%20app%20I've%20been%20using%20to%20organize%20my%20shopping%20trips!%20%23gogreen%20%23zerofoodwaste%20%23ecolist" target="_blank"><img src="./images/twitter1.png" id="twt"></a>
+                    <a href="https://plus.google.com/share?url=https%3A//eco-list.ca/" target="_blank"><img src="./images/googleplus1.png" id="googleplus"></a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid onlyVisibleMobile textCentered">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="ecolist/">
+                    <h1>EcoList</h1>
+                    <p>Create a shopping list.</p>
+                    <img src="./images/calandar1.png">
+                    </a>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="ecoeats/">
+                    <h1>EcoEats</h1>
+                    <p>Build your own recipes or use one of ours!</p>
+                    <img src="./images/cutlery1.png">
+                    </a>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="donation/">
+                    <h1>Donation</h1>
+                    <p>Donate extra food here.</p>
+                    <img src="./images/location1.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid textCentered onlyVisibleMobile">
+            <div class="panel panel-default">
+                <div class="panel-body socialMedia">
+                    <h1>Share our site</h1>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//eco-list.ca/" target="_blank"><img src="./images/facebook1.png" id="fb"></a>
+                    <a href="https://twitter.com/home?status=Check%20out%20this%20awesome%20app%20I've%20been%20using%20to%20organize%20my%20shopping%20trips!%20%23gogreen%20%23zerofoodwaste%20%23ecolist" target="_blank"><img src="./images/twitter1.png" id="twt"></a>
+                    <a href="https://plus.google.com/share?url=https%3A//eco-list.ca/" target="_blank"><img src="./images/googleplus1.png" id="googleplus"></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-fluid textCentered">
+            <table>
+                <tr>
+                    <td><a href="./">Home</a></td>
+                    <td><a href="./ecolist/">EcoList</a></td>
+                    <td><a href="./ourfriends/">Affiliated Apps</a></td>
+                    <td><a href="./users/">Login</a></td>
+                </tr>
+                <tr>
+                    <td><a href="./services/">Services</a></td>
+                    <td><a href="./ecoeats/">EcoEats</a></td>
+                    <td><a href="./aboutus/#OurApps">About our Apps</a></td>
+                    <td><a href="./sitemap/">Site Map</a></td>
+                </tr>
+                <tr>
+                    <td><a href="./aboutus/#OurPurpose">Our Purpose</a></td>
+                    <td><a href="./donation/">Donation</a></td>
+                    <td><a href="./aboutus/#AboutUs">About Us</a></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><br>&copy; Copyright 2017 | EcoList, All Rights Reserved</td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+
+    <!-- Below is the initialisation code for firebase project.-->
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+<script src="loginscript.js"></script>
+
+    
+</body>
+</html>

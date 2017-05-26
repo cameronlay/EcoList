@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EcoList - EcoList</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../fonts/font.css">
+
+</head>
+
+<!--The burger navigation in the top left of the page-->
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top indexNavNoBorderRadius indexNavBackground">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                      
+                </button>
+                <a class="navbar-brand" href="../"><img class="indexNavLogo" src="../images/logo.png" alt="Logo"><div class="indexNavLogoText">EcoList</div></a>
+                <div id="t" style="font-size:15px;color:#e6e6d8;padding-top:15px;position:absolute;right:20px"></div>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <!-- DROPDOWN MENU -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Apps<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../ecolist/">EcoList</a></li>
+                            <li><a href="../ecoeats/">EcoEats</a></li>
+                            <li><a href="../donation/">Donation</a></li>
+                        </ul>
+                    </li>
+                    <!-- FINISH DROPDOWN MENU -->
+                    <li><a href="../services/">Services</a></li>
+                    <li><a href="../ourfriends">Our Friends</a></li>
+                    <li><a href="../aboutus">About Us</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li id="p" style="display:none;font-size:15px;color:#e6e6d8;padding-top:15px"></li>
+                    <!-- WILL BE DISAPPEARED WHEN USER ISN'T LOGGED IN -->
+                    <li><a href="./" onclick="logOut()" id="logOut" style="display:none"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Log Out</a></li>
+                    <!-- WILL BE CHANGED TO PHP VARIABLE FOR USER NAME -->
+                    <li><a href="../users/" id="logIn" style="display:none"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login/Sign up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!--Title of the page-->
+<p>&nbsp;</p>
+<h1 class="text-center ecolistTitle">My EcoList</h1>
+<p>&nbsp;</p>
+
+  <section class="container">
+
+<!--Buttons at the top of the table-->
+
+    <div id="btnAddContainer">
+      <button id="btnAdd" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp; Add Item&nbsp;</button>
+    </div>
+
+    <div id="btnCartContainer">
+      <button id="btnCart" type="button" class="btn btn-info"><i class="glyphicon glyphicon-shopping-cart"></i>&nbsp; View Cart&nbsp;</button>
+    </div>
+
+<!--The table/shopping list main component-->
+
+    <div class="TableWrapper">
+      <div class="table table-responsive" id="TableOne">
+        <table class="table table-responsive table-striped table-bordered">
+          <thead>
+      	     <tr>
+          	    <th class="checkBoxTableHead">Cart</th>
+               	<th class="nameTableHead">Name</th>
+              	<th class="smallTableHead"><span id="quantity">Quantity</span><span id="qty">Qty</span></th>
+              	<th class="smallTableHead"><span id="delete">Delete</span><span id="del">Del</span></th>
+              </tr>
+          </thead>
+
+          <tbody id="TextBoxContainer">
+          <!--new rows appear here-->
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <th colspan="4">
+                  <button id="btnRemove" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-minus-sign"></i>&nbsp; Remove All Items&nbsp;</button>
+              </th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <!--The container for the cart list-->
+      <div class="panel panel-default">
+        <div id="cartContainer">
+               <div id="cartTitle">
+                <h1 class="text-center"><span><p><i id ="bigCartIcon" class="glyphicon glyphicon-shopping-cart"></i><p id="cTitle">Cart is empty!</p></p></span></h1>
+                </div>
+
+
+              <div id="removeWarning">
+               <p>double tap to remove</p>
+              </div>
+                 
+              <div id="listContainer">
+                 <ul class="list-group" data-toggle="tooltip" title="x to remove" data-placement="top">
+                 </ul>
+
+                 <div id="btnSaveContainer">
+                   <button id="btnSave" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-ok-circle"></i>&nbsp; Save Cart&nbsp;</button>
+                 </div>
+
+                 <div id="btnClearContainer">
+                   <button id="btnClear" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-minus-sign"></i>&nbsp; Clear Cart&nbsp;</button>
+                </div>
+
+              </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<footer>
+    <div class="container-fluid textCentered">
+        <table>
+            <tr>
+                <td><a href="../">Home</a></td>
+                <td><a href="./">EcoList</a></td>
+                <td><a href="../ourfriends/">Affiliated Apps</a></td>
+                <td><a href="../users/">Login</a></td>
+            </tr>
+            <tr>
+                <td><a href="../services/">Services</a></td>
+                <td><a href="../ecoeats/">EcoEats</a></td>
+                <td><a href="../aboutus/#OurApps">About our Apps</a></td>
+                <td><a href="../sitemap/">Site Map</a></td>
+            </tr>
+            <tr>
+                <td><a href="../aboutus/#OurPurpose">Our Purpose</a></td>
+                <td><a href="../donation/">Donation</a></td>
+                <td><a href="../aboutus/#AboutUs">About Us</a></td>
+            </tr>
+            <tr>
+                <td colspan="4"><br>&copy; Copyright 2017 | EcoList, All Rights Reserved</td>
+            </tr>
+        </table>
+    </div>
+</footer>
+
+    <!-- Below is the initialisation code for firebase project.-->
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+<script src="../loginscript.js"></script>
+
+<script src = "ecolist.js"></script>
+<script src = "script.js"></script>
+
+  </body>
+<html>
