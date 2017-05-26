@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EcoList - Account</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="../fonts/font.css">
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top indexNavNoBorderRadius indexNavBackground">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                      
+                </button>
+                <a class="navbar-brand" href="../"><img class="indexNavLogo" src="../images/logo.png" alt="Logo"><div class="indexNavLogoText">EcoList</div></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <!-- DROPDOWN MENU -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Apps<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../ecolist/">EcoList</a></li>
+                            <li><a href="../ecoeats/">EcoEats</a></li>
+                            <li><a href="../donation/">Donation</a></li>
+                        </ul>
+                    </li>
+                    <!-- FINISH DROPDOWN MENU -->
+                    <li><a href="../services/">Services</a></li>
+                    <li><a href="../ourfriends/">Our Friends</a></li>
+                    <li><a href="../aboutus/">About Us</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li id="p" style="display:none;font-size:15px;color:#e6e6d8;padding-top:15px"></li>
+                    <!-- WILL BE DISAPPEARED WHEN USER ISN'T LOGGED IN -->
+                    <li><a href="../" onclick="logOut()" id="logOut"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Log Out</a></li>
+                    <!-- WILL BE CHANGED TO PHP VARIABLE FOR USER NAME -->
+                    <li><a href="../users/" id="logIn"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login/Sign up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container-fluid imageForAccount">
+            <img src="../images/logotext.png" alt="Logo">
+        </div>
+        <div class="container-fluid userInfoSeciont">
+            <div class="panel panel-default">
+                <h3>USER NAME or EMAIL</h4>
+                <h4>MY ACCOUNT</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 panel panel-default">
+                <h2>Services</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">EcoList</li>
+                    <li class="list-group-item">EcoEats</li>
+                    <li class="list-group-item"></li>
+                </ul>
+            </div>
+            <div class="col-md-6 panel panel-default">
+                <ul class="list-group">
+                    <li class="list-group-item">Deregister</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-fluid textCentered">
+            <table>
+                <tr>
+                    <td><a href="../">Home</a></td>
+                    <td><a href="../ecolist/">EcoList</a></td>
+                    <td><a href="../services/">Affiliated Apps</a></td>
+                    <td><a href="./">Login</a></td>
+                </tr>
+                <tr>
+                    <td><a href="../#OurPurpose">Our Purpose</a></td>
+                    <td><a href="../ecoeats/">EcoEats</a></td>
+                    <td><a href="../#AboutUs">About Us</a></td>
+                    <td><a href="../sitemap/">Site Map</a></td>
+                </tr>
+                <tr>
+                    <td><a href="../#OurApps">About our Apps</a></td>
+                    <td><a href="../donation/">Donation</a></td>
+                    <td><a href="../#AboutProject">About the Project</a></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><br>&copy; Copyright 2017 | EcoList, All Rights Reserved</td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+
+</body>
+</html>
