@@ -589,31 +589,30 @@ function widthLessThan767() {
         }
 
         //NEED TO FIX FOR INTERACTIVE!!!!!!!!!!!!!!!!!!!
-        // userPillsClicked = function(id, content) {
-        //     var x = document.getElementById(id);
-        //     var y = document.getElementById(content);
+         userPillsClicked = function(id, content) {
+             var x = document.getElementById(id);
+             var y = document.getElementById(content);
 
-        //     if (x.classList.contains('active')) {
-        //         x.classList.remove('active');
-        //         y.classList.remove('displayBlock');
-        //     } else {
+             if (x.classList.contains('active')) {
+                 x.classList.remove('active');
+                 y.classList.remove('displayBlock');
+             } else {
 
-        //         var userList = document.getElementById('userList').getElementsByTagName('li');
-        //         for (var i = 0; i < userList.length; i++) {
-        //             userList[i].classList.remove('active');
-        //         }
+                 var userList = document.getElementById('userList').getElementsByTagName('li');
+                 for (var i = 0; i < userList.length; i++) {
+                     userList[i].classList.remove('active');
+                }
 
-        //         document.getElementById('userListContent1').classList.remove('displayBlock');
-        //         document.getElementById('userListContentCreate').classList.remove('displayBlock');
+                document.getElementsByClassName('recipeContent').classList.remove('displayBlock');
 
-                //========================
-                //bring the lists right after the tab!!
-                //========================
-        //         x.classList.add('active');
-        //         y.classList.add('displayBlock');
-        //         x.after(y);
-        //     }
-        // }
+                // ========================
+                // bring the lists right after the tab!!
+                // ========================
+                x.classList.add('active');
+                y.classList.add('displayBlock');
+                x.after(y);
+            }
+        }
 
         /**
          * 1. if tab clicked, bring the specific lists of that tab
