@@ -35,7 +35,6 @@
             $(window).on("load", function() {
                 $("#backgroundRecipe").fadeOut("fast");
                 $(".wholeBody").fadeIn("slow");
-                $("#GUI").fadeIn("slow");
             });
             // INFO OF INGREDIENTS
             $(document).ready(function(){
@@ -103,7 +102,7 @@
                 <li id="paleo" onclick="TabClicked('paleo', 'paleoList1', 'paleoList', 'paleoListContent', 'paleoListContent1')"><a href="javascript:void(0);" class="tabButtons"><h4>Paleo</h4></a></li>
                 <li id="proteinRich" onclick="TabClicked('proteinRich', 'proteinList1', 'proteinList', 'proteinListContent', 'proteinListContent1')"><a href="javascript:void(0);" class="tabButtons"><h4>Protein Rich</h4></a></li>
                 <li id="cultural" onclick="TabClicked('cultural', 'culturalList1', 'culturalList', 'culturalListContent', 'culturalListContent1')"><a href="javascript:void(0);" class="tabButtons"><h4>Cultural</h4></a></li>
-                <li id="user" onclick="TabClicked('user', 'userList1', 'userList', 'userListContent', 'userListContentCreate')"><a href="javascript:void(0);" class="tabButtons">Create your Own</a></li>
+                <li id="user" onclick="TabClicked('user', 'userList9', 'userList', 'userListContent', 'userListContentCreate')"><a href="javascript:void(0);" class="tabButtons"><h4>Create your Own</h4></a></li>
                     <!-- CONVERTER START -->
                         <span><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Converter</button></span>
                             <div class="modal fade" id="myModal" role="dialog">
@@ -2281,7 +2280,7 @@
                                     <td>
                                         <div>
                                         <input type="checkbox" id="10Cultural1" class="ingredientCheckbox"><label for="10Cultural1" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span> 1/4 lb sliced Beef</label><br>
-                                        <input type="checkbox" id="10Cultural2" class="ingredientCheckbox"><label for=10Cultural2" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span> 1/4 Onion</label><br>
+                                        <input type="checkbox" id="10Cultural2" class="ingredientCheckbox"><label for="10Cultural2" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span> 1/4 Onion</label><br>
                                         <input type="checkbox" id="10Cultural3" class="ingredientCheckbox"><label for="10Cultural3" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span> 1 tsp Soy Sauce</label><br>
                                         <input type="checkbox" id="10Cultural4" class="ingredientCheckbox"><label for="10Cultural4" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span> 1 tsp Sugar</label><br>
                                         <input type="checkbox" id="10Cultural5" class="ingredientCheckbox"><label for="10Cultural5" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span> 1 tsp toasted Sesame Seeds</label><br>
@@ -2347,7 +2346,6 @@
 
             </div>
         </main>
-    </div>
     <footer>
         <div class="container-fluid textCentered">
             <table>
@@ -2375,6 +2373,7 @@
             </table>
         </div>
     </footer>
+    </div>
 
         <!-- Below is the initialisation code for firebase project.-->
     <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>

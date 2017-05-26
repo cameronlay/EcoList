@@ -1,6 +1,7 @@
 var user = null;
 var recipeList = null;
 var listref = null;
+let loadedOnceAlready = false;
 firebase.auth().onAuthStateChanged( () => {
 	user = firebase.auth().currentUser;
 	if(user != null){
@@ -8,38 +9,41 @@ firebase.auth().onAuthStateChanged( () => {
 		listref = firebase.database().ref("shoppinglist/" + user.uid + "/");
 		recipeList = firebase.database().ref("customrecipes/" + user.uid + "/");
 		console.log("logged in");
-		recipeList.once("value").then( snapshot => {
-			if(snapshot.exists() && snapshot.hasChildren()){
-				snapshot.forEach( childSnapshot => {
-					recipeName = childSnapshot.key;
-					recipeID = recipeName.replace(/\b/,"") + "content";
-					dbDescription = childSnapshot.child("description").val();
-					a = 0;
-					dbIngredients = [];
-					b = 0;
-					dbSteps = [];
-					childSnapshot.child("ingredients").forEach( ing => {
-						dbIngredients[a++] = ing.val();
+		if(!loadedOnceAlready){
+			recipeList.once("value").then( snapshot => {
+				if(snapshot.exists() && snapshot.hasChildren()){
+					snapshot.forEach( childSnapshot => {
+						recipeName = childSnapshot.key;
+						recipeID = recipeName.replace(/\b/,"") + "content";
+						dbDescription = childSnapshot.child("description").val();
+						a = 0;
+						dbIngredients = [];
+						b = 0;
+						dbSteps = [];
+						childSnapshot.child("ingredients").forEach( ing => {
+							dbIngredients[a++] = ing.val();
+						});
+						childSnapshot.child("steps").forEach( stp =>{
+							dbSteps[b++] = stp.val();
+						});
+						template.createListEntry(recipeName, recipeID);
+						template.createFromTemplate(recipeID,recipeName,dbDescription,
+						dbSteps,dbIngredients);
 					});
-					childSnapshot.child("steps").forEach( stp =>{
-						dbSteps[b++] = stp.val();
-					});
-					template.createListEntry(recipeName, recipeID);
-					template.createFromTemplate(recipeID,recipeName,dbDescription,
-					dbSteps,dbIngredients);
-				});
-			} 
-			else {
-				recipeList.parent.update({[user.uid]: "empty"});
-				console.log("created " + user.uid + "'s custom recipes folder");
-			};
-		});
-		listref.once("value").then(snapshot => {
-			if(!snapshot.exists() || !snapshot.hasChildren()){
-				firebase.database().ref("shoppinglist/").update({[user.uid]: "empty"});
-				console.log("created " + user.uid + "'s shopping list");
-			};
-		});
+				} 
+				else {
+					recipeList.parent.update({[user.uid]: "empty"});
+					console.log("created " + user.uid + "'s custom recipes folder");
+				};
+			});
+			listref.once("value").then(snapshot => {
+				if(!snapshot.exists() || !snapshot.hasChildren()){
+					firebase.database().ref("shoppinglist/").update({[user.uid]: "empty"});
+					console.log("created " + user.uid + "'s shopping list");
+				};
+			});
+			loadedOnceAlready = true;
+		};
 	}
 	else {
 		console.log("not signed in");
@@ -79,7 +83,7 @@ $(document).ready(() =>{
 
 
 var template = {
-	createListEntry: (NAME, LIST) => {$("#UserCustomRecipes").prepend('<li id=' + NAME + ' class="active" onclick="userPillsClicked(\'' + NAME +'\', \'' + LIST + '\')"><a href="javascript:void(0);">'+ NAME + '</a></li>');},
+	createListEntry: (NAME, LIST) => {$("#UserCustomRecipes").prepend('<li id=' + NAME + ' onclick="userPillsClicked(\'' + NAME +'\', \'' + LIST + '\')"><a href="javascript:void(0);">'+ NAME + '</a></li>');},
 	list: step => {return "<li class=''>"+ step +"</li>"},
 	ingredient: item => {return '<input type="checkbox" id="' + (item + "zgh")  +'" class="ingredientCheckbox"><label for="' + (item + "zgh") + '" class="ingredientLabel"><span class="glyphicon glyphicon-unchecked"></span><span class="glyphicon glyphicon-check"></span>&nbsp;' + item + '</label><br>'},
 	createListItem: listSteps => {
@@ -175,15 +179,18 @@ function makeRecipe(){
 				function write(){
 					recipeList.child(Title + "/").update({description: [Description]});
 					for(i = 0;i < Steps.length; ++i){
-						if(Steps[i].value == "" || Steps[i].value == null || Steps[i].value == undefined){
+						if(Steps[i].value != "" && Steps[i].value != null && Steps[i].value != undefined){
 							recipeList.child(Title + "/steps/").update({[i]:Steps[i].value});
 						};
 					};
 					for(j = 0;j < Ingreds.length; ++j){
-						if(Ingreds[j].value == "" || Ingreds[j].value == null || Ingreds[j].value == undefined){
-							recipeList.child(Title + "/ingredients/").update({[j]:Ingreds[j].value});
+						if(Ingreds[j].value != "" && Ingreds[j].value != null && Ingreds[j].value != undefined){
+							currentIngredient = Ingreds[j].value.toLowerCase();
+							currentIngredient = currentIngredient.replace(/\b[a-z]/g,function(f){return f.toUpperCase();});
+							recipeList.child(Title + "/ingredients/").update({[j]:currentIngredient});
 						};
 					};
+					location.reload();
 				};
 			});
 		};
